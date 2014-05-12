@@ -1,0 +1,69 @@
+Revmarapp Møte 2014-04-29
+
+Tilstedet: Flere personer med 'K'-navner… og Trenton.
+
+Møte begynte kl. 09.04
+
+Agenda var godkjent, men det var et spørsmål om informasjonskrive. Kristin (NR) skal sende utkast i løpet av uken.
+
+# Fokusgrupper
+
+Det blir to fokusgrupper. En med fagpersoner og en med bruker. Vi diskuterte hensikten og rekruttering.
+
+## Fagpersonfokusgruppe ##
+
+Hensikten med denne gruppen er å input til gode spørsmål til refleksjon og selve registrering og bruk av data etterpå. De nåværende spørsmålene dekke temaene, men Stavanger skal se på den en gang til for å ferdigstille.
+
+## Brukerfokusgruppe ##
+
+Målgruppen for fokusgruppen er folk med erfaring med app'er, eller registrering av aktiviteter med andre «verktøy». Det var noen diskusjon om spørsmålene, men Kristin, Kristin og Trenton gikk gjennom spørsmålene etter møtet.
+
+## Deltagere ##
+
+Vi har fått flere forslag til fagpersoner. Idéen er å ha rundt 4–5 personer i hver gruppe. Til brukerfokusgruppen er det tre tema for deltagere:
+
+	* Fatigue (ME og MS)
+	* smerte (revmatisme)
+	* bevegelighet (revmatisme)
+
+Etter diskusjon, blir alle enig at holde fokus på revmatiker og bevegelighetaktiviteter i stedet for energiøkonomisering.
+
+Til fagpersoner får alle spør dere som var foreslått etter informasjonsskrivet er klart. Anbefaling er å ta kontakt på telefonen og deretter sender informasjonsskrivet. Det er også greit å spør etter andre som kan kontaktes med erfaring i aktivitets og energiøkonomisering.
+
+Tidspunktet til fokusgruppen er midten i juni; brukerfokusgruppen skje i juni. Vi ta et statusmøte om et par uker for å se hvordan det går med deltagere.
+
+Når informasjonsskrivet og intervjuguiden er ferdig sender Kristin disse videre til NSD.
+
+# Referansegruppen #
+
+Vi gikk gjennom mulige deltagere til referansegruppen.
+
+* Jorunn (XXX) har vært nevnt til både fokusgruppen og referansegruppen, men det er kanskje best at hun er med på fokusgruppen.
+* Ingvild (XXX) har satt «ja» på søknaden, så det er bare å ta kontakt igjen.
+* Elin Fjerstad—psykolog i NKRR.
+* Marianne Hauknes—En bruker, tidligere medlem i revmatikerforbundet.
+* Noen fra CuteHacks (en bedrift som jobber med mobile app'er, tidligere kolleger av Trenton)
+* Noen mulige personer fra Moskus prosjektet:
+	* Bruker representanter i revmatikerforbundet
+	* Lars Thomas XXX (utvikler i Moskus, mulig "andre valg")
+	* Vebjørn (sensor utvikler)
+
+Det var avtalt tre møter:
+
+* En gang før eller etter sommer
+* En gang i vinter
+* En gang i vår eller sommer 2015
+
+Kristin skrev ned hvem ringte hvem.
+
+Hensikten med gruppen er å få andre synspunkter. Før vi ta kontakt med personene trenger vi en sammendrag eller informasjonskriv til referansegruppen. Kristin skal sende ut en utkast til skrivet neste uke.
+
+# Rapportering #
+
+Kristin be alle å føre timene og sende dem til NR. Prosjektet lovde fakturering på kvartalet, men det går greit å sende flere måneder så lenge de ikke overlappe. Bruk gjerne aktivitets nummer fra søknaden for å føre timene.
+
+# Annet prosjekt #
+
+Kristin blir kontaktet av NKRR angående et IP prosjekt som kjøres av Frisk og NKRR. De vil lage en app for individuelle behandlingsplan med mål og delmål. Det skal registrerer aktiviteter for ulike delmål for rehabilitering og holde inspirasjonen.
+
+De lurte på det var noen konkurrerer med vårt prosjekt. Det gjør det ikke direkte. Vår app'en er mer om å bare kartlegge og ikke relatert til en bestemt plan. I tillegge holder vi oss til en «mer friske» målgruppen, og en IP prosjekt er rettet mot et mer sammensatt problem og «sykere» folk. Prosjektet er lovende og det var fint å bli kontaktet. Kristin (NR) anbefalt at vi holder kontakt.
