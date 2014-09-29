@@ -34,7 +34,7 @@
 	<key>MasterSheets</key>
 	<array/>
 	<key>ModificationDate</key>
-	<string>2014-09-29 07:13:08 +0000</string>
+	<string>2014-09-29 07:18:45 +0000</string>
 	<key>Modifier</key>
 	<string>Trenton Schulz</string>
 	<key>NotesVisible</key>
@@ -10114,7 +10114,7 @@ St\'e5 opp}</string>
 									<key>Type</key>
 									<integer>6</integer>
 									<key>Worksheet</key>
-									<integer>2</integer>
+									<integer>10</integer>
 								</dict>
 							</dict>
 							<key>Shape</key>
@@ -61368,8 +61368,8 @@ AT&amp;T}</string>
 					<integer>0</integer>
 					<key>Points</key>
 					<array>
-						<string>{860.66904632161436, 520.58825574278671}</string>
-						<string>{972.50018310546875, 520.86179191721544}</string>
+						<string>{860.66904632161436, 520.60307601145348}</string>
+						<string>{972.50018310546875, 520.91187532401943}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -61405,8 +61405,8 @@ AT&amp;T}</string>
 					<integer>0</integer>
 					<key>Points</key>
 					<array>
-						<string>{272.66744632161431, 520.48276402170529}</string>
-						<string>{161.0001220703125, 520.82118373103867}</string>
+						<string>{272.66744632161425, 520.49940308968678}</string>
+						<string>{161.0001220703125, 520.87653196984343}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -66357,7 +66357,7 @@ AT&amp;T}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
-							<string>YES</string>
+							<string>Vertical</string>
 							<key>Flow</key>
 							<string>Resize</string>
 							<key>ID</key>
@@ -66458,16 +66458,14 @@ Endre Aktivitet}</string>
 								<key>VerticalPad</key>
 								<integer>0</integer>
 							</dict>
-							<key>Wrap</key>
-							<string>NO</string>
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{766.66904632161436, 499.97329491373785}, {94, 41}}</string>
+							<string>{{766.66904632161436, 499.97329491373785}, {94.000000000000014, 41}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
-							<string>YES</string>
+							<string>Vertical</string>
 							<key>Flow</key>
 							<string>Resize</string>
 							<key>ID</key>
@@ -66479,7 +66477,7 @@ Endre Aktivitet}</string>
 									<key>Type</key>
 									<integer>6</integer>
 									<key>Worksheet</key>
-									<integer>0</integer>
+									<integer>1</integer>
 								</dict>
 							</dict>
 							<key>Shape</key>
@@ -66576,35 +66574,26 @@ Ferdig}</string>
 								<key>VerticalPad</key>
 								<integer>0</integer>
 							</dict>
-							<key>Wrap</key>
-							<string>NO</string>
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{272.66744632161431, 499.83729491373742}, {96, 41}}</string>
+							<string>{{272.66744632161425, 499.83729491373742}, {96, 41}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FitText</key>
-							<string>YES</string>
+							<string>Vertical</string>
 							<key>Flow</key>
 							<string>Resize</string>
 							<key>ID</key>
 							<integer>1498</integer>
 							<key>Link</key>
 							<dict>
-								<key>layersActionLink</key>
+								<key>documentJump</key>
 								<dict>
-									<key>ActionItems</key>
-									<array>
-										<dict>
-											<key>Layer</key>
-											<integer>2</integer>
-											<key>Type</key>
-											<integer>1</integer>
-										</dict>
-									</array>
+									<key>Type</key>
+									<integer>6</integer>
 									<key>Worksheet</key>
-									<integer>10</integer>
+									<integer>1</integer>
 								</dict>
 							</dict>
 							<key>Shape</key>
@@ -66701,12 +66690,10 @@ Avbryt}</string>
 								<key>VerticalPad</key>
 								<integer>0</integer>
 							</dict>
-							<key>Wrap</key>
-							<string>NO</string>
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{241.66664632161445, 564.49999491373705}, {640.00000000000011, 1}}</string>
+							<string>{{241.66664632161439, 564.49999491373705}, {640.00000000000023, 1}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FontInfo</key>
@@ -66771,7 +66758,7 @@ Avbryt}</string>
 						</dict>
 						<dict>
 							<key>Bounds</key>
-							<string>{{241.66664632161451, 476.49999491373705}, {640, 88}}</string>
+							<string>{{241.66664632161445, 476.49999491373705}, {640.00000000000011, 88}}</string>
 							<key>Class</key>
 							<string>ShapedGraphic</string>
 							<key>FontInfo</key>
@@ -67223,16 +67210,6 @@ Avbryt}</string>
 					<key>View</key>
 					<string>YES</string>
 				</dict>
-				<dict>
-					<key>Lock</key>
-					<string>NO</string>
-					<key>Name</key>
-					<string>Cancel</string>
-					<key>Print</key>
-					<string>YES</string>
-					<key>View</key>
-					<string>NO</string>
-				</dict>
 			</array>
 			<key>LayoutInfo</key>
 			<dict>
@@ -67274,7 +67251,7 @@ Avbryt}</string>
 	<key>WindowInfo</key>
 	<dict>
 		<key>CurrentSheet</key>
-		<integer>10</integer>
+		<integer>1</integer>
 		<key>ExpandedCanvases</key>
 		<array>
 			<dict>
