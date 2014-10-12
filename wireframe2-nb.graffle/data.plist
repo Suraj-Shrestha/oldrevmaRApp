@@ -34,7 +34,7 @@
 	<key>MasterSheets</key>
 	<array/>
 	<key>ModificationDate</key>
-	<string>2014-09-29 07:18:45 +0000</string>
+	<string>2014-10-12 17:09:15 +0000</string>
 	<key>Modifier</key>
 	<string>Trenton Schulz</string>
 	<key>NotesVisible</key>
@@ -2435,8 +2435,8 @@
 					<integer>0</integer>
 					<key>Points</key>
 					<array>
-						<string>{852.08414872960759, 678.79622063405009}</string>
-						<string>{963, 679.9071179335258}</string>
+						<string>{852.08406781295002, 678.79630321777029}</string>
+						<string>{963, 679.90842382703977}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -2566,8 +2566,8 @@
 					<integer>0</integer>
 					<key>Points</key>
 					<array>
-						<string>{639.09776256022678, 1563.1395999999995}</string>
-						<string>{640.3693059645891, 1850}</string>
+						<string>{639.34280430672038, 1563.1395999999995}</string>
+						<string>{640.39140059402837, 1850}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -2811,8 +2811,8 @@
 					<integer>0</integer>
 					<key>Points</key>
 					<array>
-						<string>{862.5, 536.11622771052737}</string>
-						<string>{963.5, 536.35740728259498}</string>
+						<string>{862.5, 536.11699634694548}</string>
+						<string>{963.5, 536.35949172033907}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -3219,27 +3219,27 @@
 								hJ+eAIEYAYaS
 								hJ+eAIE0AYaS
 								hJ+eAIFQAYaG
-								AIaShJaWBk5T
-								S2VyboaShISE
-								CE5TTnVtYmVy
-								AISEB05TVmFs
-								dWUAlIQBKoSE
-								AWSigzMzMzMz
-								M9O/hpKElpYG
-								TlNGb250hpKE
-								hIQGTlNGb250
-								HpSZJIQFWzM2
-								Y10GAAAAHAAA
-								AP/+SABlAGwA
-								dgBlAHQAaQBj
-								AGEATgBlAHUA
-								ZQCEAWYihAFj
-								AKYBpgCmAIaS
-								hJaWB05TQ29s
-								b3KGkoSEhAdO
-								U0NvbG9yAJSm
-								AoQEZmZmZgAA
-								AAGGhoY=
+								AIaShJaWB05T
+								Q29sb3KGkoSE
+								hAdOU0NvbG9y
+								AJSEAWMChARm
+								ZmZmAAAAAYaS
+								hJaWBk5TRm9u
+								dIaShISEBk5T
+								Rm9udB6UmSSE
+								BVszNmNdBgAA
+								ABwAAAD//kgA
+								ZQBsAHYAZQB0
+								AGkAYwBhAE4A
+								ZQB1AGUAhAFm
+								IqAAoAGgAKAA
+								hpKElpYGTlNL
+								ZXJuhpKEhIQI
+								TlNOdW1iZXIA
+								hIQHTlNWYWx1
+								ZQCUhAEqhIQB
+								ZKiDMzMzMzMz
+								07+GhoY=
 										</data>
 										<key>Text</key>
 										<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -3390,28 +3390,28 @@ St\'e5 opp}</string>
 								n54AgRgBhpKE
 								n54AgTQBhpKE
 								n54AgVABhoYA
-								hpKElpYHTlND
-								b2xvcoaShISE
-								B05TQ29sb3IA
-								lIQBYwKEBGZm
-								ZmaDsp0PP4Oy
-								nQ8/g+F6FD8B
-								hpKElpYGTlNG
-								b250hpKEhIQG
-								TlNGb250HpSZ
-								JIQFWzM2Y10G
-								AAAAHAAAAP/+
-								SABlAGwAdgBl
-								AHQAaQBjAGEA
-								TgBlAHUAZQCE
-								AWYeoACgAaAA
-								oACGkoSWlgZO
-								U0tlcm6GkoSE
-								hAhOU051bWJl
-								cgCEhAdOU1Zh
-								bHVlAJSEASqE
-								hAFkqIPNzMzM
-								zMzcv4aGhg==
+								hpKElpYGTlNL
+								ZXJuhpKEhIQI
+								TlNOdW1iZXIA
+								hIQHTlNWYWx1
+								ZQCUhAEqhIQB
+								ZKKDzczMzMzM
+								3L+GkoSWlgZO
+								U0ZvbnSGkoSE
+								hAZOU0ZvbnQe
+								lJkkhAVbMzZj
+								XQYAAAAcAAAA
+								//5IAGUAbAB2
+								AGUAdABpAGMA
+								YQBOAGUAdQBl
+								AIQBZh6EAWMA
+								pgGmAKYAhpKE
+								lpYHTlNDb2xv
+								coaShISEB05T
+								Q29sb3IAlKYC
+								hARmZmZmg7Kd
+								Dz+Dsp0PP4Ph
+								ehQ/AYaGhg==
 										</data>
 										<key>Text</key>
 										<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -3855,15 +3855,15 @@ tirsdag}</string>
 						ngCBjACGkoSfngCBqACGkoSfngCB
 						xACGkoSfngCB4ACGkoSfngCB/ACG
 						koSfngCBGAGGkoSfngCBNAGGkoSf
-						ngCBUAGGhgCGkoSWlgZOU0tlcm6G
-						koSEhAhOU051bWJlcgCEhAdOU1Zh
-						bHVlAJSEASqEhAFkooMzMzMzMzPT
-						v4aShJaWBk5TRm9udIaShISEBk5T
-						Rm9udB6UmSSEBVszNmNdBgAAABwA
-						AAD//kgAZQBsAHYAZQB0AGkAYwBh
-						AE4AZQB1AGUAhAFmIoQBYwCmAaYA
-						pgCGkoSWlgdOU0NvbG9yhpKEhIQH
-						TlNDb2xvcgCUpgKEBGZmZmYAAAAB
+						ngCBUAGGhgCGkoSWlgdOU0NvbG9y
+						hpKEhIQHTlNDb2xvcgCUhAFjAoQE
+						ZmZmZgAAAAGGkoSWlgZOU0ZvbnSG
+						koSEhAZOU0ZvbnQelJkkhAVbMzZj
+						XQYAAAAcAAAA//5IAGUAbAB2AGUA
+						dABpAGMAYQBOAGUAdQBlAIQBZiKg
+						AKABoACgAIaShJaWBk5TS2VyboaS
+						hISECE5TTnVtYmVyAISEB05TVmFs
+						dWUAlIQBKoSEAWSogzMzMzMzM9O/
 						hoaG
 						</data>
 						<key>Text</key>
@@ -4300,27 +4300,27 @@ Lage frokost}</string>
 								hJ+eAIEYAYaS
 								hJ+eAIE0AYaS
 								hJ+eAIFQAYaG
-								AIaShJaWBk5T
-								S2VyboaShISE
-								CE5TTnVtYmVy
-								AISEB05TVmFs
-								dWUAlIQBKoSE
-								AWSigzMzMzMz
-								M9O/hpKElpYG
-								TlNGb250hpKE
-								hIQGTlNGb250
-								HpSZJIQFWzM2
-								Y10GAAAAHAAA
-								AP/+SABlAGwA
-								dgBlAHQAaQBj
-								AGEATgBlAHUA
-								ZQCEAWYihAFj
-								AKYBpgCmAIaS
-								hJaWB05TQ29s
-								b3KGkoSEhAdO
-								U0NvbG9yAJSm
-								AoQEZmZmZgAA
-								AAGGhoY=
+								AIaShJaWB05T
+								Q29sb3KGkoSE
+								hAdOU0NvbG9y
+								AJSEAWMChARm
+								ZmZmAAAAAYaS
+								hJaWBk5TRm9u
+								dIaShISEBk5T
+								Rm9udB6UmSSE
+								BVszNmNdBgAA
+								ABwAAAD//kgA
+								ZQBsAHYAZQB0
+								AGkAYwBhAE4A
+								ZQB1AGUAhAFm
+								IqAAoAGgAKAA
+								hpKElpYGTlNL
+								ZXJuhpKEhIQI
+								TlNOdW1iZXIA
+								hIQHTlNWYWx1
+								ZQCUhAEqhIQB
+								ZKiDMzMzMzMz
+								07+GhoY=
 								</data>
 								<key>Text</key>
 								<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -4619,26 +4619,26 @@ St\'e5 opp}</string>
 								AIEYAYaShJ+e
 								AIE0AYaShJ+e
 								AIFQAYaGAIaS
-								hJaWBk5TS2Vy
-								boaShISECE5T
-								TnVtYmVyAISE
-								B05TVmFsdWUA
-								lIQBKoSEAWSi
-								gzMzMzMzM9O/
-								hpKElpYGTlNG
-								b250hpKEhIQG
-								TlNGb250HpSZ
-								JIQFWzM2Y10G
-								AAAAHAAAAP/+
-								SABlAGwAdgBl
-								AHQAaQBjAGEA
-								TgBlAHUAZQCE
-								AWYihAFjAKYB
-								pgCmAIaShJaW
-								B05TQ29sb3KG
-								koSEhAdOU0Nv
-								bG9yAJSmAoQE
-								ZmZmZgAAAAGG
+								hJaWB05TQ29s
+								b3KGkoSEhAdO
+								U0NvbG9yAJSE
+								AWMChARmZmZm
+								AAAAAYaShJaW
+								Bk5TRm9udIaS
+								hISEBk5TRm9u
+								dB6UmSSEBVsz
+								NmNdBgAAABwA
+								AAD//kgAZQBs
+								AHYAZQB0AGkA
+								YwBhAE4AZQB1
+								AGUAhAFmIqAA
+								oAGgAKAAhpKE
+								lpYGTlNLZXJu
+								hpKEhIQITlNO
+								dW1iZXIAhIQH
+								TlNWYWx1ZQCU
+								hAEqhIQBZKiD
+								MzMzMzMz07+G
 								hoY=
 								</data>
 								<key>Text</key>
@@ -4790,28 +4790,28 @@ Dusje}</string>
 								ngCBGAGGkoSf
 								ngCBNAGGkoSf
 								ngCBUAGGhgCG
-								koSWlgdOU0Nv
-								bG9yhpKEhIQH
-								TlNDb2xvcgCU
-								hAFjAoQEZmZm
-								ZoOynQ8/g7Kd
-								Dz+D4XoUPwGG
-								koSWlgZOU0Zv
-								bnSGkoSEhAZO
-								U0ZvbnQelJkk
-								hAVbMzZjXQYA
-								AAAcAAAA//5I
-								AGUAbAB2AGUA
-								dABpAGMAYQBO
-								AGUAdQBlAIQB
-								Zh6gAKABoACg
-								AIaShJaWBk5T
-								S2VyboaShISE
-								CE5TTnVtYmVy
-								AISEB05TVmFs
-								dWUAlIQBKoSE
-								AWSog83MzMzM
-								zNy/hoaG
+								koSWlgZOU0tl
+								cm6GkoSEhAhO
+								U051bWJlcgCE
+								hAdOU1ZhbHVl
+								AJSEASqEhAFk
+								ooPNzMzMzMzc
+								v4aShJaWBk5T
+								Rm9udIaShISE
+								Bk5TRm9udB6U
+								mSSEBVszNmNd
+								BgAAABwAAAD/
+								/kgAZQBsAHYA
+								ZQB0AGkAYwBh
+								AE4AZQB1AGUA
+								hAFmHoQBYwCm
+								AaYApgCGkoSW
+								lgdOU0NvbG9y
+								hpKEhIQHTlND
+								b2xvcgCUpgKE
+								BGZmZmaDsp0P
+								P4OynQ8/g+F6
+								FD8BhoaG
 								</data>
 								<key>Text</key>
 								<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -5041,26 +5041,26 @@ mandag}</string>
 								AYaShJ+eAIE0
 								AYaShJ+eAIFQ
 								AYaGAIaShJaW
-								Bk5TS2VyboaS
-								hISECE5TTnVt
-								YmVyAISEB05T
-								VmFsdWUAlIQB
-								KoSEAWSigzMz
-								MzMzM9O/hpKE
-								lpYGTlNGb250
-								hpKEhIQGTlNG
-								b250HpSZJIQF
-								WzM2Y10GAAAA
-								HAAAAP/+SABl
-								AGwAdgBlAHQA
-								aQBjAGEATgBl
-								AHUAZQCEAWYi
-								hAFjAKYBpgCm
-								AIaShJaWB05T
-								Q29sb3KGkoSE
-								hAdOU0NvbG9y
-								AJSmAoQEZmZm
-								ZgAAAAGGhoY=
+								B05TQ29sb3KG
+								koSEhAdOU0Nv
+								bG9yAJSEAWMC
+								hARmZmZmAAAA
+								AYaShJaWBk5T
+								Rm9udIaShISE
+								Bk5TRm9udB6U
+								mSSEBVszNmNd
+								BgAAABwAAAD/
+								/kgAZQBsAHYA
+								ZQB0AGkAYwBh
+								AE4AZQB1AGUA
+								hAFmIqAAoAGg
+								AKAAhpKElpYG
+								TlNLZXJuhpKE
+								hIQITlNOdW1i
+								ZXIAhIQHTlNW
+								YWx1ZQCUhAEq
+								hIQBZKiDMzMz
+								MzMz07+GhoY=
 								</data>
 								<key>Text</key>
 								<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -5465,27 +5465,27 @@ Kle p\'e5 seg}</string>
 								AYaShJ+eAIE0
 								AYaShJ+eAIFQ
 								AYaGAIaShJaW
-								Bk5TS2VyboaS
-								hISECE5TTnVt
-								YmVyAISEB05T
-								VmFsdWUAlIQB
-								KoSEAWSig5qZ
-								mZmZmck/hpKE
-								lpYGTlNGb250
-								hpKEhIQGTlNG
-								b250HpSZMIQF
-								WzQ4Y10GAAAA
-								JgAAAP/+SABl
-								AGwAdgBlAHQA
-								aQBjAGEATgBl
-								AHUAZQAtAEIA
-								bwBsAGQAAACE
-								AWYihAFjAKYB
-								pgCmAIaShJaW
 								B05TQ29sb3KG
 								koSEhAdOU0Nv
-								bG9yAJSmAoQE
-								ZmZmZgAAAAGG
+								bG9yAJSEAWMC
+								hARmZmZmAAAA
+								AYaShJaWBk5T
+								Rm9udIaShISE
+								Bk5TRm9udB6U
+								mTCEBVs0OGNd
+								BgAAACYAAAD/
+								/kgAZQBsAHYA
+								ZQB0AGkAYwBh
+								AE4AZQB1AGUA
+								LQBCAG8AbABk
+								AAAAhAFmIqAA
+								oAGgAKAAhpKE
+								lpYGTlNLZXJu
+								hpKEhIQITlNO
+								dW1iZXIAhIQH
+								TlNWYWx1ZQCU
+								hAEqhIQBZKiD
+								mpmZmZmZyT+G
 								hoY=
 								</data>
 								<key>Text</key>
@@ -5584,27 +5584,27 @@ Aktiviteter}</string>
 								koSfngCBGAGG
 								koSfngCBNAGG
 								koSfngCBUAGG
-								hgCGkoSWlgZO
-								U0tlcm6GkoSE
-								hAhOU051bWJl
-								cgCEhAdOU1Zh
-								bHVlAJSEASqE
-								hAFkooOamZmZ
-								mZnJv4aShJaW
-								Bk5TRm9udIaS
-								hISEBk5TRm9u
-								dB6UmSSEBVsz
-								NmNdBgAAABwA
-								AAD//kgAZQBs
-								AHYAZQB0AGkA
-								YwBhAE4AZQB1
-								AGUAhAFmIoQB
-								YwCmAaYApgCG
-								koSWlgdOU0Nv
-								bG9yhpKEhIQH
-								TlNDb2xvcgCU
-								pgKEBGZmZmYA
-								AAABhoaG
+								hgCGkoSWlgdO
+								U0NvbG9yhpKE
+								hIQHTlNDb2xv
+								cgCUhAFjAoQE
+								ZmZmZgAAAAGG
+								koSWlgZOU0Zv
+								bnSGkoSEhAZO
+								U0ZvbnQelJkk
+								hAVbMzZjXQYA
+								AAAcAAAA//5I
+								AGUAbAB2AGUA
+								dABpAGMAYQBO
+								AGUAdQBlAIQB
+								ZiKgAKABoACg
+								AIaShJaWBk5T
+								S2VyboaShISE
+								CE5TTnVtYmVy
+								AISEB05TVmFs
+								dWUAlIQBKoSE
+								AWSog5qZmZmZ
+								mcm/hoaG
 								</data>
 								<key>Text</key>
 								<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -5822,28 +5822,28 @@ Legg till}</string>
 								hJ+eAIEYAYaS
 								hJ+eAIE0AYaS
 								hJ+eAIFQAYaG
-								AIaShJaWBk5T
-								S2VyboaShISE
-								CE5TTnVtYmVy
-								AISEB05TVmFs
-								dWUAlIQBKoSE
-								AWSig2ZmZmZm
-								Zta/hpKElpYG
-								TlNGb250hpKE
-								hIQGTlNGb250
-								HpSZMIQFWzQ4
-								Y10GAAAAJgAA
-								AP/+SABlAGwA
-								dgBlAHQAaQBj
-								AGEATgBlAHUA
-								ZQAtAEIAbwBs
-								AGQAAACEAWYY
-								hAFjAKYBpgCm
 								AIaShJaWB05T
 								Q29sb3KGkoSE
 								hAdOU0NvbG9y
-								AJSmAoQEZmZm
-								ZgAAAAGGhoY=
+								AJSEAWMChARm
+								ZmZmAAAAAYaS
+								hJaWBk5TRm9u
+								dIaShISEBk5T
+								Rm9udB6UmTCE
+								BVs0OGNdBgAA
+								ACYAAAD//kgA
+								ZQBsAHYAZQB0
+								AGkAYwBhAE4A
+								ZQB1AGUALQBC
+								AG8AbABkAAAA
+								hAFmGKAAoAGg
+								AKAAhpKElpYG
+								TlNLZXJuhpKE
+								hIQITlNOdW1i
+								ZXIAhIQHTlNW
+								YWx1ZQCUhAEq
+								hIQBZKiDZmZm
+								ZmZm1r+GhoY=
 								</data>
 								<key>Text</key>
 								<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -5931,26 +5931,26 @@ Legg till}</string>
 								gRgBhpKEn54A
 								gTQBhpKEn54A
 								gVABhoYAhpKE
-								lpYGTlNLZXJu
-								hpKEhIQITlNO
-								dW1iZXIAhIQH
-								TlNWYWx1ZQCU
-								hAEqhIQBZKKD
-								MzMzMzMzw7+G
-								koSWlgZOU0Zv
-								bnSGkoSEhAZO
-								U0ZvbnQelJkk
-								hAVbMzZjXQYA
-								AAAcAAAA//5I
-								AGUAbAB2AGUA
-								dABpAGMAYQBO
-								AGUAdQBlAIQB
-								ZhiEAWMApgGm
-								AKYAhpKElpYH
-								TlNDb2xvcoaS
-								hISEB05TQ29s
-								b3IAlKYChARm
-								ZmZmAAAAAYaG
+								lpYHTlNDb2xv
+								coaShISEB05T
+								Q29sb3IAlIQB
+								YwKEBGZmZmYA
+								AAABhpKElpYG
+								TlNGb250hpKE
+								hIQGTlNGb250
+								HpSZJIQFWzM2
+								Y10GAAAAHAAA
+								AP/+SABlAGwA
+								dgBlAHQAaQBj
+								AGEATgBlAHUA
+								ZQCEAWYYoACg
+								AaAAoACGkoSW
+								lgZOU0tlcm6G
+								koSEhAhOU051
+								bWJlcgCEhAdO
+								U1ZhbHVlAJSE
+								ASqEhAFkqIMz
+								MzMzMzPDv4aG
 								hg==
 								</data>
 								<key>Text</key>
@@ -6938,47 +6938,47 @@ AT&amp;T}</string>
 								aUkBA5KEhIQM
 								TlNEaWN0aW9u
 								YXJ5AJSEAWkE
-								koSWlgZOU0tl
-								cm6GkoSEhAhO
-								U051bWJlcgCE
-								hAdOU1ZhbHVl
-								AJSEASqEhAFk
-								nYMAAAAAAADg
-								v4aShJaWEE5T
-								UGFyYWdyYXBo
-								U3R5bGWGkoSE
-								hBBOU1BhcmFn
+								koSWlgdOU0Nv
+								bG9yhpKEhIQH
+								TlNDb2xvcgCU
+								hAFjAoQEZmZm
+								ZgAAAAGGkoSW
+								lhBOU1BhcmFn
 								cmFwaFN0eWxl
-								AJSEBENDQFMA
-								AISEhAdOU0Fy
-								cmF5AJSZDJKE
-								hIQJTlNUZXh0
-								VGFiAJSEAkNm
-								AByGkoSkogA4
-								hpKEpKIAVIaS
-								hKSiAHCGkoSk
-								ogCBjACGkoSk
-								ogCBqACGkoSk
-								ogCBxACGkoSk
-								ogCB4ACGkoSk
-								ogCB/ACGkoSk
-								ogCBGAGGkoSk
-								ogCBNAGGkoSk
-								ogCBUAGGhgCG
-								koSWlgZOU0Zv
-								bnSGkoSEhAZO
-								U0ZvbnQelJkk
-								hAVbMzZjXQYA
-								AAAcAAAA//5I
-								AGUAbAB2AGUA
-								dABpAGMAYQBO
-								AGUAdQBlAIQB
-								ZhSEAWMApgGm
-								AKYAhpKElpYH
-								TlNDb2xvcoaS
-								hISEB05TQ29s
-								b3IAlKYChARm
-								ZmZmAAAAAYaG
+								hpKEhIQQTlNQ
+								YXJhZ3JhcGhT
+								dHlsZQCUhARD
+								Q0BTAACEhIQH
+								TlNBcnJheQCU
+								mQyShISECU5T
+								VGV4dFRhYgCU
+								hAJDZgAchpKE
+								oqEAOIaShKKh
+								AFSGkoSioQBw
+								hpKEoqEAgYwA
+								hpKEoqEAgagA
+								hpKEoqEAgcQA
+								hpKEoqEAgeAA
+								hpKEoqEAgfwA
+								hpKEoqEAgRgB
+								hpKEoqEAgTQB
+								hpKEoqEAgVAB
+								hoYAhpKElpYG
+								TlNGb250hpKE
+								hIQGTlNGb250
+								HpSZJIQFWzM2
+								Y10GAAAAHAAA
+								AP/+SABlAGwA
+								dgBlAHQAaQBj
+								AGEATgBlAHUA
+								ZQCEAWYUmwCb
+								AZsAmwCGkoSW
+								lgZOU0tlcm6G
+								koSEhAhOU051
+								bWJlcgCEhAdO
+								U1ZhbHVlAJSE
+								ASqEhAFkqIMA
+								AAAAAADgv4aG
 								hg==
 												</data>
 												<key>Text</key>
@@ -7045,47 +7045,47 @@ M\'e5l}</string>
 								AQuShISEDE5T
 								RGljdGlvbmFy
 								eQCUhAFpBJKE
-								lpYGTlNLZXJu
-								hpKEhIQITlNO
-								dW1iZXIAhIQH
-								TlNWYWx1ZQCU
-								hAEqhIQBZJ2D
-								AAAAAAAA4L+G
-								koSWlhBOU1Bh
-								cmFncmFwaFN0
-								eWxlhpKEhIQQ
+								lpYHTlNDb2xv
+								coaShISEB05T
+								Q29sb3IAlIQB
+								YwKEBGZmZmYA
+								AAABhpKElpYQ
 								TlNQYXJhZ3Jh
-								cGhTdHlsZQCU
-								hARDQ0BTAACE
-								hIQHTlNBcnJh
-								eQCUmQyShISE
-								CU5TVGV4dFRh
-								YgCUhAJDZgAc
-								hpKEpKIAOIaS
-								hKSiAFSGkoSk
-								ogBwhpKEpKIA
-								gYwAhpKEpKIA
-								gagAhpKEpKIA
-								gcQAhpKEpKIA
-								geAAhpKEpKIA
-								gfwAhpKEpKIA
-								gRgBhpKEpKIA
-								gTQBhpKEpKIA
-								gVABhoYAhpKE
-								lpYGTlNGb250
-								hpKEhIQGTlNG
-								b250HpSZJIQF
-								WzM2Y10GAAAA
-								HAAAAP/+SABl
-								AGwAdgBlAHQA
-								aQBjAGEATgBl
-								AHUAZQCEAWYU
-								hAFjAKYBpgCm
-								AIaShJaWB05T
-								Q29sb3KGkoSE
-								hAdOU0NvbG9y
-								AJSmAoQEZmZm
-								ZgAAAAGGhoY=
+								cGhTdHlsZYaS
+								hISEEE5TUGFy
+								YWdyYXBoU3R5
+								bGUAlIQEQ0NA
+								UwAAhISEB05T
+								QXJyYXkAlJkM
+								koSEhAlOU1Rl
+								eHRUYWIAlIQC
+								Q2YAHIaShKKh
+								ADiGkoSioQBU
+								hpKEoqEAcIaS
+								hKKhAIGMAIaS
+								hKKhAIGoAIaS
+								hKKhAIHEAIaS
+								hKKhAIHgAIaS
+								hKKhAIH8AIaS
+								hKKhAIEYAYaS
+								hKKhAIE0AYaS
+								hKKhAIFQAYaG
+								AIaShJaWBk5T
+								Rm9udIaShISE
+								Bk5TRm9udB6U
+								mSSEBVszNmNd
+								BgAAABwAAAD/
+								/kgAZQBsAHYA
+								ZQB0AGkAYwBh
+								AE4AZQB1AGUA
+								hAFmFJsAmwGb
+								AJsAhpKElpYG
+								TlNLZXJuhpKE
+								hIQITlNOdW1i
+								ZXIAhIQHTlNW
+								YWx1ZQCUhAEq
+								hIQBZKiDAAAA
+								AAAA4L+GhoY=
 												</data>
 												<key>Text</key>
 												<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -7161,47 +7161,47 @@ Aktiviteter}</string>
 								koSEhAxOU0Rp
 								Y3Rpb25hcnkA
 								lIQBaQSShJaW
-								Bk5TS2VyboaS
-								hISECE5TTnVt
-								YmVyAISEB05T
-								VmFsdWUAlIQB
-								KoSEAWSdgwAA
-								AAAAAOC/hpKE
-								lpYQTlNQYXJh
-								Z3JhcGhTdHls
-								ZYaShISEEE5T
+								B05TQ29sb3KG
+								koSEhAdOU0Nv
+								bG9yAJSEAWMC
+								hARmZmZmAAAA
+								AYaShJaWEE5T
 								UGFyYWdyYXBo
-								U3R5bGUAlIQE
-								Q0NAUwAAhISE
-								B05TQXJyYXkA
-								lJkMkoSEhAlO
-								U1RleHRUYWIA
-								lIQCQ2YAHIaS
-								hKSiADiGkoSk
-								ogBUhpKEpKIA
-								cIaShKSiAIGM
-								AIaShKSiAIGo
-								AIaShKSiAIHE
-								AIaShKSiAIHg
-								AIaShKSiAIH8
-								AIaShKSiAIEY
-								AYaShKSiAIE0
-								AYaShKSiAIFQ
-								AYaGAIaShJaW
-								Bk5TRm9udIaS
-								hISEBk5TRm9u
-								dB6UmSSEBVsz
-								NmNdBgAAABwA
-								AAD//kgAZQBs
-								AHYAZQB0AGkA
-								YwBhAE4AZQB1
-								AGUAhAFmFIQB
-								YwCmAaYApgCG
-								koSWlgdOU0Nv
-								bG9yhpKEhIQH
-								TlNDb2xvcgCU
-								pgKEBGZmZmYA
-								AAABhoaG
+								U3R5bGWGkoSE
+								hBBOU1BhcmFn
+								cmFwaFN0eWxl
+								AJSEBENDQFMA
+								AISEhAdOU0Fy
+								cmF5AJSZDJKE
+								hIQJTlNUZXh0
+								VGFiAJSEAkNm
+								AByGkoSioQA4
+								hpKEoqEAVIaS
+								hKKhAHCGkoSi
+								oQCBjACGkoSi
+								oQCBqACGkoSi
+								oQCBxACGkoSi
+								oQCB4ACGkoSi
+								oQCB/ACGkoSi
+								oQCBGAGGkoSi
+								oQCBNAGGkoSi
+								oQCBUAGGhgCG
+								koSWlgZOU0Zv
+								bnSGkoSEhAZO
+								U0ZvbnQelJkk
+								hAVbMzZjXQYA
+								AAAcAAAA//5I
+								AGUAbAB2AGUA
+								dABpAGMAYQBO
+								AGUAdQBlAIQB
+								ZhSbAJsBmwCb
+								AIaShJaWBk5T
+								S2VyboaShISE
+								CE5TTnVtYmVy
+								AISEB05TVmFs
+								dWUAlIQBKoSE
+								AWSogwAAAAAA
+								AOC/hoaG
 												</data>
 												<key>Text</key>
 												<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -7217,7 +7217,7 @@ Historikk}</string>
 										</dict>
 										<dict>
 											<key>Bounds</key>
-											<string>{{605.369384765625, 1538.1395999999995}, {67.345940066708977, 25}}</string>
+											<string>{{596.73876953125, 1538.1395999999995}, {85.116683959960938, 25}}</string>
 											<key>Class</key>
 											<string>ShapedGraphic</string>
 											<key>FitText</key>
@@ -7272,52 +7272,52 @@ Historikk}</string>
 								TlNPYmplY3QA
 								hZKEhIQITlNT
 								dHJpbmcBlIQB
-								KwdBbmFseXNl
-								hoQCaUkBB5KE
-								hIQMTlNEaWN0
-								aW9uYXJ5AJSE
-								AWkEkoSWlgZO
-								U0tlcm6GkoSE
-								hAhOU051bWJl
-								cgCEhAdOU1Zh
-								bHVlAJSEASqE
-								hAFknYMAAAAA
-								AADgv4aShJaW
+								KwhDb2FjaGlu
+								Z4aEAmlJAQiS
+								hISEDE5TRGlj
+								dGlvbmFyeQCU
+								hAFpBJKElpYH
+								TlNDb2xvcoaS
+								hISEB05TQ29s
+								b3IAlIQBYwKE
+								BGZmZmYAAAAB
+								hpKElpYQTlNQ
+								YXJhZ3JhcGhT
+								dHlsZYaShISE
 								EE5TUGFyYWdy
-								YXBoU3R5bGWG
-								koSEhBBOU1Bh
-								cmFncmFwaFN0
-								eWxlAJSEBEND
-								QFMAAISEhAdO
-								U0FycmF5AJSZ
-								DJKEhIQJTlNU
-								ZXh0VGFiAJSE
-								AkNmAByGkoSk
-								ogA4hpKEpKIA
-								VIaShKSiAHCG
-								koSkogCBjACG
-								koSkogCBqACG
-								koSkogCBxACG
-								koSkogCB4ACG
-								koSkogCB/ACG
-								koSkogCBGAGG
-								koSkogCBNAGG
-								koSkogCBUAGG
-								hgCGkoSWlgZO
-								U0ZvbnSGkoSE
-								hAZOU0ZvbnQe
-								lJkkhAVbMzZj
-								XQYAAAAcAAAA
-								//5IAGUAbAB2
-								AGUAdABpAGMA
-								YQBOAGUAdQBl
-								AIQBZhSEAWMA
-								pgGmAKYAhpKE
-								lpYHTlNDb2xv
-								coaShISEB05T
-								Q29sb3IAlKYC
-								hARmZmZmAAAA
-								AYaGhg==
+								YXBoU3R5bGUA
+								lIQEQ0NAUwAA
+								hISEB05TQXJy
+								YXkAlJkMkoSE
+								hAlOU1RleHRU
+								YWIAlIQCQ2YA
+								HIaShKKhADiG
+								koSioQBUhpKE
+								oqEAcIaShKKh
+								AIGMAIaShKKh
+								AIGoAIaShKKh
+								AIHEAIaShKKh
+								AIHgAIaShKKh
+								AIH8AIaShKKh
+								AIEYAYaShKKh
+								AIE0AYaShKKh
+								AIFQAYaGAIaS
+								hJaWBk5TRm9u
+								dIaShISEBk5T
+								Rm9udB6UmSSE
+								BVszNmNdBgAA
+								ABwAAAD//kgA
+								ZQBsAHYAZQB0
+								AGkAYwBhAE4A
+								ZQB1AGUAhAFm
+								FJsAmwGbAJsA
+								hpKElpYGTlNL
+								ZXJuhpKEhIQI
+								TlNOdW1iZXIA
+								hIQHTlNWYWx1
+								ZQCUhAEqhIQB
+								ZKiDAAAAAAAA
+								4L+GhoY=
 												</data>
 												<key>Text</key>
 												<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -7326,7 +7326,7 @@ Historikk}</string>
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
 \f0\fs40 \cf2 \kerning1\expnd-2\expndtw-10
-Analyse}</string>
+Coaching}</string>
 												<key>VerticalPad</key>
 												<integer>0</integer>
 											</dict>
@@ -10059,28 +10059,28 @@ Smerte:
 								hJ+eAIEYAYaS
 								hJ+eAIE0AYaS
 								hJ+eAIFQAYaG
-								AIaShJaWBk5T
-								S2VyboaShISE
-								CE5TTnVtYmVy
-								AISEB05TVmFs
-								dWUAlIQBKoSE
-								AWSig5qZmZmZ
-								mck/hpKElpYG
-								TlNGb250hpKE
-								hIQGTlNGb250
-								HpSZMIQFWzQ4
-								Y10GAAAAJgAA
-								AP/+SABlAGwA
-								dgBlAHQAaQBj
-								AGEATgBlAHUA
-								ZQAtAEIAbwBs
-								AGQAAACEAWYi
-								hAFjAKYBpgCm
 								AIaShJaWB05T
 								Q29sb3KGkoSE
 								hAdOU0NvbG9y
-								AJSmAoQEZmZm
-								ZgAAAAGGhoY=
+								AJSEAWMChARm
+								ZmZmAAAAAYaS
+								hJaWBk5TRm9u
+								dIaShISEBk5T
+								Rm9udB6UmTCE
+								BVs0OGNdBgAA
+								ACYAAAD//kgA
+								ZQBsAHYAZQB0
+								AGkAYwBhAE4A
+								ZQB1AGUALQBC
+								AG8AbABkAAAA
+								hAFmIqAAoAGg
+								AKAAhpKElpYG
+								TlNLZXJuhpKE
+								hIQITlNOdW1i
+								ZXIAhIQHTlNW
+								YWx1ZQCUhAEq
+								hIQBZKiDmpmZ
+								mZmZyT+GhoY=
 								</data>
 								<key>Text</key>
 								<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -10178,26 +10178,26 @@ St\'e5 opp}</string>
 								AIEYAYaShJ+e
 								AIE0AYaShJ+e
 								AIFQAYaGAIaS
-								hJaWBk5TS2Vy
-								boaShISECE5T
-								TnVtYmVyAISE
-								B05TVmFsdWUA
-								lIQBKoSEAWSi
-								gzMzMzMzM9O/
-								hpKElpYGTlNG
-								b250hpKEhIQG
-								TlNGb250HpSZ
-								JIQFWzM2Y10G
-								AAAAHAAAAP/+
-								SABlAGwAdgBl
-								AHQAaQBjAGEA
-								TgBlAHUAZQCE
-								AWYihAFjAKYB
-								pgCmAIaShJaW
-								B05TQ29sb3KG
-								koSEhAdOU0Nv
-								bG9yAJSmAoQE
-								ZmZmZgAAAAGG
+								hJaWB05TQ29s
+								b3KGkoSEhAdO
+								U0NvbG9yAJSE
+								AWMChARmZmZm
+								AAAAAYaShJaW
+								Bk5TRm9udIaS
+								hISEBk5TRm9u
+								dB6UmSSEBVsz
+								NmNdBgAAABwA
+								AAD//kgAZQBs
+								AHYAZQB0AGkA
+								YwBhAE4AZQB1
+								AGUAhAFmIqAA
+								oAGgAKAAhpKE
+								lpYGTlNLZXJu
+								hpKEhIQITlNO
+								dW1iZXIAhIQH
+								TlNWYWx1ZQCU
+								hAEqhIQBZKiD
+								MzMzMzMz07+G
 								hoY=
 								</data>
 								<key>Text</key>
@@ -10297,26 +10297,26 @@ Endre}</string>
 								AYaShJ+eAIE0
 								AYaShJ+eAIFQ
 								AYaGAIaShJaW
-								Bk5TS2VyboaS
-								hISECE5TTnVt
-								YmVyAISEB05T
-								VmFsdWUAlIQB
-								KoSEAWSigzMz
-								MzMzM9O/hpKE
-								lpYGTlNGb250
-								hpKEhIQGTlNG
-								b250HpSZJIQF
-								WzM2Y10GAAAA
-								HAAAAP/+SABl
-								AGwAdgBlAHQA
-								aQBjAGEATgBl
-								AHUAZQCEAWYi
-								hAFjAKYBpgCm
-								AIaShJaWB05T
-								Q29sb3KGkoSE
-								hAdOU0NvbG9y
-								AJSmAoQEZmZm
-								ZgAAAAGGhoY=
+								B05TQ29sb3KG
+								koSEhAdOU0Nv
+								bG9yAJSEAWMC
+								hARmZmZmAAAA
+								AYaShJaWBk5T
+								Rm9udIaShISE
+								Bk5TRm9udB6U
+								mSSEBVszNmNd
+								BgAAABwAAAD/
+								/kgAZQBsAHYA
+								ZQB0AGkAYwBh
+								AE4AZQB1AGUA
+								hAFmIqAAoAGg
+								AKAAhpKElpYG
+								TlNLZXJuhpKE
+								hIQITlNOdW1i
+								ZXIAhIQHTlNW
+								YWx1ZQCUhAEq
+								hIQBZKiDMzMz
+								MzMz07+GhoY=
 								</data>
 								<key>Text</key>
 								<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -10673,28 +10673,28 @@ Aktiviteter}</string>
 								hJ+eAIEYAYaS
 								hJ+eAIE0AYaS
 								hJ+eAIFQAYaG
-								AIaShJaWBk5T
-								S2VyboaShISE
-								CE5TTnVtYmVy
-								AISEB05TVmFs
-								dWUAlIQBKoSE
-								AWSig2ZmZmZm
-								Zta/hpKElpYG
-								TlNGb250hpKE
-								hIQGTlNGb250
-								HpSZMIQFWzQ4
-								Y10GAAAAJgAA
-								AP/+SABlAGwA
-								dgBlAHQAaQBj
-								AGEATgBlAHUA
-								ZQAtAEIAbwBs
-								AGQAAACEAWYY
-								hAFjAKYBpgCm
 								AIaShJaWB05T
 								Q29sb3KGkoSE
 								hAdOU0NvbG9y
-								AJSmAoQEZmZm
-								ZgAAAAGGhoY=
+								AJSEAWMChARm
+								ZmZmAAAAAYaS
+								hJaWBk5TRm9u
+								dIaShISEBk5T
+								Rm9udB6UmTCE
+								BVs0OGNdBgAA
+								ACYAAAD//kgA
+								ZQBsAHYAZQB0
+								AGkAYwBhAE4A
+								ZQB1AGUALQBC
+								AG8AbABkAAAA
+								hAFmGKAAoAGg
+								AKAAhpKElpYG
+								TlNLZXJuhpKE
+								hIQITlNOdW1i
+								ZXIAhIQHTlNW
+								YWx1ZQCUhAEq
+								hIQBZKiDZmZm
+								ZmZm1r+GhoY=
 								</data>
 								<key>Text</key>
 								<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -10782,26 +10782,26 @@ Aktiviteter}</string>
 								gRgBhpKEn54A
 								gTQBhpKEn54A
 								gVABhoYAhpKE
-								lpYGTlNLZXJu
-								hpKEhIQITlNO
-								dW1iZXIAhIQH
-								TlNWYWx1ZQCU
-								hAEqhIQBZKKD
-								MzMzMzMzw7+G
-								koSWlgZOU0Zv
-								bnSGkoSEhAZO
-								U0ZvbnQelJkk
-								hAVbMzZjXQYA
-								AAAcAAAA//5I
-								AGUAbAB2AGUA
-								dABpAGMAYQBO
-								AGUAdQBlAIQB
-								ZhiEAWMApgGm
-								AKYAhpKElpYH
-								TlNDb2xvcoaS
-								hISEB05TQ29s
-								b3IAlKYChARm
-								ZmZmAAAAAYaG
+								lpYHTlNDb2xv
+								coaShISEB05T
+								Q29sb3IAlIQB
+								YwKEBGZmZmYA
+								AAABhpKElpYG
+								TlNGb250hpKE
+								hIQGTlNGb250
+								HpSZJIQFWzM2
+								Y10GAAAAHAAA
+								AP/+SABlAGwA
+								dgBlAHQAaQBj
+								AGEATgBlAHUA
+								ZQCEAWYYoACg
+								AaAAoACGkoSW
+								lgZOU0tlcm6G
+								koSEhAhOU051
+								bWJlcgCEhAdO
+								U1ZhbHVlAJSE
+								ASqEhAFkqIMz
+								MzMzMzPDv4aG
 								hg==
 								</data>
 								<key>Text</key>
@@ -11903,7 +11903,7 @@ AT&amp;T}</string>
 		</dict>
 		<dict>
 			<key>ActiveLayerIndex</key>
-			<integer>0</integer>
+			<integer>3</integer>
 			<key>AutoAdjust</key>
 			<true/>
 			<key>BackgroundGraphic</key>
@@ -14273,8 +14273,8 @@ AT&amp;T}</string>
 					<integer>0</integer>
 					<key>Points</key>
 					<array>
-						<string>{865.6666259765625, 1505.1055223953233}</string>
-						<string>{963.00006103515625, 1505.3528237652451}</string>
+						<string>{865.6666259765625, 1505.1046361288936}</string>
+						<string>{963.00006103515625, 1505.3516537377759}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -14310,8 +14310,8 @@ AT&amp;T}</string>
 					<integer>0</integer>
 					<key>Points</key>
 					<array>
-						<string>{257.6666259765625, 1403.7098060082617}</string>
-						<string>{155, 1404.8501742477863}</string>
+						<string>{257.6666259765625, 1403.7233831623953}</string>
+						<string>{155, 1404.8683366670687}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -14783,8 +14783,8 @@ Avsl\'e5 Aktivitet}</string>
 					<integer>2</integer>
 					<key>Points</key>
 					<array>
-						<string>{860.66904632161436, 520.58825574278694}</string>
-						<string>{972.50018310546875, 520.86179191721601}</string>
+						<string>{860.66904632161436, 520.58825574278671}</string>
+						<string>{972.50018310546875, 520.86179191721533}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -14956,6 +14956,229 @@ Avsl\'e5 Aktivitet}</string>
 					</dict>
 					<key>Wrap</key>
 					<string>NO</string>
+				</dict>
+				<dict>
+					<key>Bounds</key>
+					<string>{{268.99998610534658, 928.16678619384766}, {50.999759674072266, 50.999759674072266}}</string>
+					<key>Class</key>
+					<string>ShapedGraphic</string>
+					<key>ID</key>
+					<integer>191801</integer>
+					<key>Layer</key>
+					<integer>3</integer>
+					<key>Shape</key>
+					<string>pdfImport-333.3</string>
+					<key>Style</key>
+					<dict>
+						<key>fill</key>
+						<dict>
+							<key>Color</key>
+							<dict>
+								<key>b</key>
+								<string>0.191994</string>
+								<key>g</key>
+								<string>0.191991</string>
+								<key>r</key>
+								<string>0.191997</string>
+							</dict>
+						</dict>
+						<key>shadow</key>
+						<dict>
+							<key>Draws</key>
+							<string>NO</string>
+						</dict>
+						<key>stroke</key>
+						<dict>
+							<key>Draws</key>
+							<string>NO</string>
+						</dict>
+					</dict>
+				</dict>
+				<dict>
+					<key>Bounds</key>
+					<string>{{808, 930.66661998291033}, {51, 51}}</string>
+					<key>Class</key>
+					<string>ShapedGraphic</string>
+					<key>ID</key>
+					<integer>191800</integer>
+					<key>Layer</key>
+					<integer>3</integer>
+					<key>Shape</key>
+					<string>pdfImport-329.1</string>
+					<key>Style</key>
+					<dict>
+						<key>fill</key>
+						<dict>
+							<key>Color</key>
+							<dict>
+								<key>b</key>
+								<string>0.191994</string>
+								<key>g</key>
+								<string>0.191991</string>
+								<key>r</key>
+								<string>0.191997</string>
+							</dict>
+						</dict>
+						<key>shadow</key>
+						<dict>
+							<key>Draws</key>
+							<string>NO</string>
+						</dict>
+						<key>stroke</key>
+						<dict>
+							<key>Draws</key>
+							<string>NO</string>
+						</dict>
+					</dict>
+				</dict>
+				<dict>
+					<key>Class</key>
+					<string>Group</string>
+					<key>Graphics</key>
+					<array>
+						<dict>
+							<key>Bounds</key>
+							<string>{{475.00012302398682, 925.66662154693631}, {56, 56}}</string>
+							<key>Class</key>
+							<string>ShapedGraphic</string>
+							<key>FontInfo</key>
+							<dict>
+								<key>Color</key>
+								<dict>
+									<key>w</key>
+									<string>0</string>
+								</dict>
+								<key>Font</key>
+								<string>Helvetica</string>
+								<key>Size</key>
+								<real>12</real>
+							</dict>
+							<key>ID</key>
+							<integer>191798</integer>
+							<key>Shape</key>
+							<string>Bezier</string>
+							<key>ShapeData</key>
+							<dict>
+								<key>UnitPoints</key>
+								<array>
+									<string>{0.5, 0}</string>
+									<string>{0.5, 0.27614285714285813}</string>
+									<string>{0.27616071428571409, 0.5}</string>
+									<string>{0, 0.5}</string>
+									<string>{-0.27614285714285725, 0.5}</string>
+									<string>{-0.5, 0.27614285714285813}</string>
+									<string>{-0.5, 0}</string>
+									<string>{-0.5, -0.27614285714285813}</string>
+									<string>{-0.27614285714285725, -0.5}</string>
+									<string>{0, -0.5}</string>
+									<string>{0.27616071428571409, -0.5}</string>
+									<string>{0.5, -0.27614285714285813}</string>
+								</array>
+							</dict>
+							<key>Style</key>
+							<dict>
+								<key>fill</key>
+								<dict>
+									<key>Color</key>
+									<dict>
+										<key>b</key>
+										<string>0.999991</string>
+										<key>g</key>
+										<string>0.999974</string>
+										<key>r</key>
+										<string>1</string>
+									</dict>
+								</dict>
+								<key>shadow</key>
+								<dict>
+									<key>Beneath</key>
+									<string>YES</string>
+									<key>Fuzziness</key>
+									<real>15</real>
+								</dict>
+								<key>stroke</key>
+								<dict>
+									<key>Draws</key>
+									<string>NO</string>
+								</dict>
+							</dict>
+						</dict>
+						<dict>
+							<key>Bounds</key>
+							<string>{{340.00012302398682, 952.66662154693631}, {453, 4}}</string>
+							<key>Class</key>
+							<string>ShapedGraphic</string>
+							<key>FontInfo</key>
+							<dict>
+								<key>Color</key>
+								<dict>
+									<key>w</key>
+									<string>0</string>
+								</dict>
+								<key>Font</key>
+								<string>Helvetica</string>
+								<key>Size</key>
+								<real>12</real>
+							</dict>
+							<key>ID</key>
+							<integer>191799</integer>
+							<key>Shape</key>
+							<string>Bezier</string>
+							<key>ShapeData</key>
+							<dict>
+								<key>UnitPoints</key>
+								<array>
+									<string>{0.5, 0}</string>
+									<string>{0.5, 0.27599999999995362}</string>
+									<string>{0.49802207505518781, 0.5}</string>
+									<string>{0.49558498896247238, 0.5}</string>
+									<string>{0.49558498896247238, 0.5}</string>
+									<string>{-0.49558498896247238, 0.5}</string>
+									<string>{-0.49558498896247238, 0.5}</string>
+									<string>{-0.49802428256070641, 0.5}</string>
+									<string>{-0.5, 0.27599999999995362}</string>
+									<string>{-0.5, 0}</string>
+									<string>{-0.5, -0.27599999999995362}</string>
+									<string>{-0.49802428256070641, -0.5}</string>
+									<string>{-0.49558498896247238, -0.5}</string>
+									<string>{-0.49558498896247238, -0.5}</string>
+									<string>{0.49558498896247238, -0.5}</string>
+									<string>{0.49558498896247238, -0.5}</string>
+									<string>{0.49802207505518781, -0.5}</string>
+									<string>{0.5, -0.27599999999995362}</string>
+								</array>
+							</dict>
+							<key>Style</key>
+							<dict>
+								<key>fill</key>
+								<dict>
+									<key>Color</key>
+									<dict>
+										<key>b</key>
+										<string>0</string>
+										<key>g</key>
+										<string>0</string>
+										<key>r</key>
+										<string>0</string>
+									</dict>
+								</dict>
+								<key>shadow</key>
+								<dict>
+									<key>Draws</key>
+									<string>NO</string>
+								</dict>
+								<key>stroke</key>
+								<dict>
+									<key>Draws</key>
+									<string>NO</string>
+								</dict>
+							</dict>
+						</dict>
+					</array>
+					<key>ID</key>
+					<integer>191797</integer>
+					<key>Layer</key>
+					<integer>3</integer>
 				</dict>
 				<dict>
 					<key>Bounds</key>
@@ -15165,27 +15388,27 @@ Avsl\'e5 Aktivitet}</string>
 								hpKEn54AgRgB
 								hpKEn54AgTQB
 								hpKEn54AgVAB
-								hoYAhpKElpYG
-								TlNLZXJuhpKE
-								hIQITlNOdW1i
-								ZXIAhIQHTlNW
-								YWx1ZQCUhAEq
-								hIQBZKKDmpmZ
-								mZmZqT+GkoSW
-								lgZOU0ZvbnSG
-								koSEhAZOU0Zv
-								bnQelJkkhAVb
-								MzZjXQYAAAAc
-								AAAA//5IAGUA
-								bAB2AGUAdABp
-								AGMAYQBOAGUA
-								dQBlAIQBZhSE
-								AWMApgGmAKYA
-								hpKElpYHTlND
-								b2xvcoaShISE
-								B05TQ29sb3IA
-								lKYChARmZmZm
-								AAAAAYaGhg==
+								hoYAhpKElpYH
+								TlNDb2xvcoaS
+								hISEB05TQ29s
+								b3IAlIQBYwKE
+								BGZmZmYAAAAB
+								hpKElpYGTlNG
+								b250hpKEhIQG
+								TlNGb250HpSZ
+								JIQFWzM2Y10G
+								AAAAHAAAAP/+
+								SABlAGwAdgBl
+								AHQAaQBjAGEA
+								TgBlAHUAZQCE
+								AWYUoACgAaAA
+								oACGkoSWlgZO
+								U0tlcm6GkoSE
+								hAhOU051bWJl
+								cgCEhAdOU1Zh
+								bHVlAJSEASqE
+								hAFkqIOamZmZ
+								mZmpP4aGhg==
 								</data>
 								<key>Text</key>
 								<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -15344,26 +15567,26 @@ M\'e5 gj\'f8re}</string>
 								AYaShJ+eAIE0
 								AYaShJ+eAIFQ
 								AYaGAIaShJaW
-								Bk5TS2VyboaS
-								hISECE5TTnVt
-								YmVyAISEB05T
-								VmFsdWUAlIQB
-								KoSEAWSig5qZ
-								mZmZmak/hpKE
-								lpYGTlNGb250
-								hpKEhIQGTlNG
-								b250HpSZJIQF
-								WzM2Y10GAAAA
-								HAAAAP/+SABl
-								AGwAdgBlAHQA
-								aQBjAGEATgBl
-								AHUAZQCEAWYU
-								hAFjAKYBpgCm
-								AIaShJaWB05T
-								Q29sb3KGkoSE
-								hAdOU0NvbG9y
-								AJSmAoQEZmZm
-								ZgAAAAGGhoY=
+								B05TQ29sb3KG
+								koSEhAdOU0Nv
+								bG9yAJSEAWMC
+								hARmZmZmAAAA
+								AYaShJaWBk5T
+								Rm9udIaShISE
+								Bk5TRm9udB6U
+								mSSEBVszNmNd
+								BgAAABwAAAD/
+								/kgAZQBsAHYA
+								ZQB0AGkAYwBh
+								AE4AZQB1AGUA
+								hAFmFKAAoAGg
+								AKAAhpKElpYG
+								TlNLZXJuhpKE
+								hIQITlNOdW1i
+								ZXIAhIQHTlNW
+								YWx1ZQCUhAEq
+								hIQBZKiDmpmZ
+								mZmZqT+GhoY=
 								</data>
 								<key>Text</key>
 								<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -15456,27 +15679,27 @@ B\'f8r gj\'f8re}</string>
 								hpKEn54AgRgB
 								hpKEn54AgTQB
 								hpKEn54AgVAB
-								hoYAhpKElpYH
-								TlNDb2xvcoaS
-								hISEB05TQ29s
-								b3IAlIQBYwKE
-								BGZmZmYBAQEB
-								hpKElpYGTlNG
-								b250hpKEhIQG
-								TlNGb250HpSZ
-								JIQFWzM2Y10G
-								AAAAHAAAAP/+
-								SABlAGwAdgBl
-								AHQAaQBjAGEA
-								TgBlAHUAZQCE
-								AWYUoACgAaAA
-								oACGkoSWlgZO
-								U0tlcm6GkoSE
-								hAhOU051bWJl
-								cgCEhAdOU1Zh
-								bHVlAJSEASqE
-								hAFkqIOamZmZ
-								mZmpP4aGhg==
+								hoYAhpKElpYG
+								TlNLZXJuhpKE
+								hIQITlNOdW1i
+								ZXIAhIQHTlNW
+								YWx1ZQCUhAEq
+								hIQBZKKDmpmZ
+								mZmZqT+GkoSW
+								lgZOU0ZvbnSG
+								koSEhAZOU0Zv
+								bnQelJkkhAVb
+								MzZjXQYAAAAc
+								AAAA//5IAGUA
+								bAB2AGUAdABp
+								AGMAYQBOAGUA
+								dQBlAIQBZhSE
+								AWMApgGmAKYA
+								hpKElpYHTlND
+								b2xvcoaShISE
+								B05TQ29sb3IA
+								lKYChARmZmZm
+								AQEBAYaGhg==
 								</data>
 								<key>Text</key>
 								<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -15618,7 +15841,7 @@ Vil gj\'f8re}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{813.00023024597158, 1060.83349609375}, {50.999759674072266, 50.999759674072266}}</string>
+					<string>{{268.99998610534658, 1060.8333740234375}, {50.999759674072266, 50.999759674072266}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
@@ -15655,7 +15878,7 @@ Vil gj\'f8re}</string>
 				</dict>
 				<dict>
 					<key>Bounds</key>
-					<string>{{268.99998637695313, 1060.8334519531252}, {51, 51}}</string>
+					<string>{{808, 1063.3332078125002}, {51, 51}}</string>
 					<key>Class</key>
 					<string>ShapedGraphic</string>
 					<key>ID</key>
@@ -15689,541 +15912,6 @@ Vil gj\'f8re}</string>
 							<string>NO</string>
 						</dict>
 					</dict>
-				</dict>
-				<dict>
-					<key>Class</key>
-					<string>Group</string>
-					<key>Graphics</key>
-					<array>
-						<dict>
-							<key>Bounds</key>
-							<string>{{704, 938.66745755767852}, {87, 25}}</string>
-							<key>Class</key>
-							<string>ShapedGraphic</string>
-							<key>FitText</key>
-							<string>YES</string>
-							<key>Flow</key>
-							<string>Resize</string>
-							<key>FontInfo</key>
-							<dict>
-								<key>Font</key>
-								<string>HelveticaNeue</string>
-								<key>Size</key>
-								<real>20</real>
-							</dict>
-							<key>ID</key>
-							<integer>750</integer>
-							<key>Shape</key>
-							<string>Rectangle</string>
-							<key>Style</key>
-							<dict>
-								<key>fill</key>
-								<dict>
-									<key>Draws</key>
-									<string>NO</string>
-								</dict>
-								<key>shadow</key>
-								<dict>
-									<key>Draws</key>
-									<string>NO</string>
-								</dict>
-								<key>stroke</key>
-								<dict>
-									<key>Draws</key>
-									<string>NO</string>
-								</dict>
-							</dict>
-							<key>Text</key>
-							<dict>
-								<key>Align</key>
-								<integer>0</integer>
-								<key>Pad</key>
-								<integer>0</integer>
-								<key>RTFD</key>
-								<data>
-								BAtzdHJlYW10
-								eXBlZIHoA4QB
-								QISEhBJOU0F0
-								dHJpYnV0ZWRT
-								dHJpbmcAhIQI
-								TlNPYmplY3QA
-								hZKEhIQITlNT
-								dHJpbmcBlIQB
-								KwlHYSBlbmVy
-								Z2mGhAJpSQEJ
-								koSEhAxOU0Rp
-								Y3Rpb25hcnkA
-								lIQBaQSShJaW
-								EE5TUGFyYWdy
-								YXBoU3R5bGWG
-								koSEhBBOU1Bh
-								cmFncmFwaFN0
-								eWxlAJSEBEND
-								QFMAAISEhAdO
-								U0FycmF5AJSZ
-								DJKEhIQJTlNU
-								ZXh0VGFiAJSE
-								AkNmAByGkoSf
-								ngA4hpKEn54A
-								VIaShJ+eAHCG
-								koSfngCBjACG
-								koSfngCBqACG
-								koSfngCBxACG
-								koSfngCB4ACG
-								koSfngCB/ACG
-								koSfngCBGAGG
-								koSfngCBNAGG
-								koSfngCBUAGG
-								hgCGkoSWlgZO
-								U0tlcm6GkoSE
-								hAhOU051bWJl
-								cgCEhAdOU1Zh
-								bHVlAJSEASqE
-								hAFkooOamZmZ
-								mZmpP4aShJaW
-								Bk5TRm9udIaS
-								hISEBk5TRm9u
-								dB6UmSSEBVsz
-								NmNdBgAAABwA
-								AAD//kgAZQBs
-								AHYAZQB0AGkA
-								YwBhAE4AZQB1
-								AGUAhAFmFIQB
-								YwCmAaYApgCG
-								koSWlgdOU0Nv
-								bG9yhpKEhIQH
-								TlNDb2xvcgCU
-								pgKEBGZmZmYA
-								AAABhoaG
-								</data>
-								<key>Text</key>
-								<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
-\cocoascreenfonts1{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
-{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
-
-\f0\fs40 \cf2 \kerning1\expnd0\expndtw1
-Ga energi}</string>
-								<key>VerticalPad</key>
-								<integer>0</integer>
-							</dict>
-							<key>Wrap</key>
-							<string>NO</string>
-						</dict>
-						<dict>
-							<key>Bounds</key>
-							<string>{{650.99959999999999, 924.16700404205312}, {2, 54.001000000000204}}</string>
-							<key>Class</key>
-							<string>ShapedGraphic</string>
-							<key>FontInfo</key>
-							<dict>
-								<key>Color</key>
-								<dict>
-									<key>w</key>
-									<string>0</string>
-								</dict>
-								<key>Font</key>
-								<string>Helvetica</string>
-								<key>Size</key>
-								<real>12</real>
-							</dict>
-							<key>ID</key>
-							<integer>751</integer>
-							<key>Shape</key>
-							<string>Bezier</string>
-							<key>ShapeData</key>
-							<dict>
-								<key>UnitPoints</key>
-								<array>
-									<string>{0.5, 0.5}</string>
-									<string>{0.5, 0.5}</string>
-									<string>{-0.5, 0.5}</string>
-									<string>{-0.5, 0.5}</string>
-									<string>{-0.5, 0.5}</string>
-									<string>{-0.5, -0.5}</string>
-									<string>{-0.5, -0.5}</string>
-									<string>{-0.5, -0.5}</string>
-									<string>{0.5, -0.5}</string>
-									<string>{0.5, -0.5}</string>
-									<string>{0.5, -0.5}</string>
-									<string>{0.5, 0.5}</string>
-								</array>
-							</dict>
-							<key>Style</key>
-							<dict>
-								<key>fill</key>
-								<dict>
-									<key>Color</key>
-									<dict>
-										<key>b</key>
-										<string>0</string>
-										<key>g</key>
-										<string>0</string>
-										<key>r</key>
-										<string>0</string>
-									</dict>
-								</dict>
-								<key>shadow</key>
-								<dict>
-									<key>Draws</key>
-									<string>NO</string>
-								</dict>
-								<key>stroke</key>
-								<dict>
-									<key>Draws</key>
-									<string>NO</string>
-								</dict>
-							</dict>
-						</dict>
-						<dict>
-							<key>Bounds</key>
-							<string>{{492.99996952514653, 935.99995420074492}, {124, 25}}</string>
-							<key>Class</key>
-							<string>ShapedGraphic</string>
-							<key>FitText</key>
-							<string>YES</string>
-							<key>Flow</key>
-							<string>Resize</string>
-							<key>FontInfo</key>
-							<dict>
-								<key>Font</key>
-								<string>HelveticaNeue</string>
-								<key>Size</key>
-								<real>20</real>
-							</dict>
-							<key>ID</key>
-							<integer>752</integer>
-							<key>Shape</key>
-							<string>Rectangle</string>
-							<key>Style</key>
-							<dict>
-								<key>fill</key>
-								<dict>
-									<key>Draws</key>
-									<string>NO</string>
-								</dict>
-								<key>shadow</key>
-								<dict>
-									<key>Draws</key>
-									<string>NO</string>
-								</dict>
-								<key>stroke</key>
-								<dict>
-									<key>Draws</key>
-									<string>NO</string>
-								</dict>
-							</dict>
-							<key>Text</key>
-							<dict>
-								<key>Align</key>
-								<integer>0</integer>
-								<key>Pad</key>
-								<integer>0</integer>
-								<key>RTFD</key>
-								<data>
-								BAtzdHJlYW10
-								eXBlZIHoA4QB
-								QISEhBJOU0F0
-								dHJpYnV0ZWRT
-								dHJpbmcAhIQI
-								TlNPYmplY3QA
-								hZKEhIQITlNT
-								dHJpbmcBlIQB
-								Kw1JbmdlbiBl
-								bmRyaW5nhoQC
-								aUkBDZKEhIQM
-								TlNEaWN0aW9u
-								YXJ5AJSEAWkE
-								koSWlhBOU1Bh
-								cmFncmFwaFN0
-								eWxlhpKEhIQQ
-								TlNQYXJhZ3Jh
-								cGhTdHlsZQCU
-								hARDQ0BTAACE
-								hIQHTlNBcnJh
-								eQCUmQyShISE
-								CU5TVGV4dFRh
-								YgCUhAJDZgAc
-								hpKEn54AOIaS
-								hJ+eAFSGkoSf
-								ngBwhpKEn54A
-								gYwAhpKEn54A
-								gagAhpKEn54A
-								gcQAhpKEn54A
-								geAAhpKEn54A
-								gfwAhpKEn54A
-								gRgBhpKEn54A
-								gTQBhpKEn54A
-								gVABhoYAhpKE
-								lpYGTlNLZXJu
-								hpKEhIQITlNO
-								dW1iZXIAhIQH
-								TlNWYWx1ZQCU
-								hAEqhIQBZKKD
-								mpmZmZmZqT+G
-								koSWlgZOU0Zv
-								bnSGkoSEhAZO
-								U0ZvbnQelJkk
-								hAVbMzZjXQYA
-								AAAcAAAA//5I
-								AGUAbAB2AGUA
-								dABpAGMAYQBO
-								AGUAdQBlAIQB
-								ZhSEAWMApgGm
-								AKYAhpKElpYH
-								TlNDb2xvcoaS
-								hISEB05TQ29s
-								b3IAlKYChARm
-								ZmZmAAAAAYaG
-								hg==
-								</data>
-								<key>Text</key>
-								<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
-\cocoascreenfonts1{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
-{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
-
-\f0\fs40 \cf2 \kerning1\expnd0\expndtw1
-Ingen endring}</string>
-								<key>VerticalPad</key>
-								<integer>0</integer>
-							</dict>
-							<key>Wrap</key>
-							<string>NO</string>
-						</dict>
-						<dict>
-							<key>Bounds</key>
-							<string>{{311, 935.99995420074492}, {92, 25}}</string>
-							<key>Class</key>
-							<string>ShapedGraphic</string>
-							<key>FitText</key>
-							<string>YES</string>
-							<key>Flow</key>
-							<string>Resize</string>
-							<key>ID</key>
-							<integer>753</integer>
-							<key>Shape</key>
-							<string>Rectangle</string>
-							<key>Style</key>
-							<dict>
-								<key>fill</key>
-								<dict>
-									<key>Draws</key>
-									<string>NO</string>
-								</dict>
-								<key>shadow</key>
-								<dict>
-									<key>Draws</key>
-									<string>NO</string>
-								</dict>
-								<key>stroke</key>
-								<dict>
-									<key>Draws</key>
-									<string>NO</string>
-								</dict>
-							</dict>
-							<key>Text</key>
-							<dict>
-								<key>Align</key>
-								<integer>0</integer>
-								<key>Pad</key>
-								<integer>0</integer>
-								<key>RTFD</key>
-								<data>
-								BAtzdHJlYW10
-								eXBlZIHoA4QB
-								QISEhBJOU0F0
-								dHJpYnV0ZWRT
-								dHJpbmcAhIQI
-								TlNPYmplY3QA
-								hZKEhIQITlNT
-								dHJpbmcBlIQB
-								KwpUb2sgZW5l
-								cmdphoQCaUkB
-								CpKEhIQMTlNE
-								aWN0aW9uYXJ5
-								AJSEAWkEkoSW
-								lhBOU1BhcmFn
-								cmFwaFN0eWxl
-								hpKEhIQQTlNQ
-								YXJhZ3JhcGhT
-								dHlsZQCUhARD
-								Q0BTAACEhIQH
-								TlNBcnJheQCU
-								mQyShISECU5T
-								VGV4dFRhYgCU
-								hAJDZgAchpKE
-								n54AOIaShJ+e
-								AFSGkoSfngBw
-								hpKEn54AgYwA
-								hpKEn54AgagA
-								hpKEn54AgcQA
-								hpKEn54AgeAA
-								hpKEn54AgfwA
-								hpKEn54AgRgB
-								hpKEn54AgTQB
-								hpKEn54AgVAB
-								hoYAhpKElpYH
-								TlNDb2xvcoaS
-								hISEB05TQ29s
-								b3IAlIQBYwKE
-								BGZmZmYBAQEB
-								hpKElpYGTlNG
-								b250hpKEhIQG
-								TlNGb250HpSZ
-								JIQFWzM2Y10G
-								AAAAHAAAAP/+
-								SABlAGwAdgBl
-								AHQAaQBjAGEA
-								TgBlAHUAZQCE
-								AWYUoACgAaAA
-								oACGkoSWlgZO
-								U0tlcm6GkoSE
-								hAhOU051bWJl
-								cgCEhAdOU1Zh
-								bHVlAJSEASqE
-								hAFkqIOamZmZ
-								mZmpP4aGhg==
-								</data>
-								<key>Text</key>
-								<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
-\cocoascreenfonts1{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
-{\colortbl;\red255\green255\blue255;\red255\green255\blue255;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
-
-\f0\fs40 \cf2 \kerning1\expnd0\expndtw1
-Tok energi}</string>
-								<key>VerticalPad</key>
-								<integer>0</integer>
-							</dict>
-							<key>Wrap</key>
-							<string>NO</string>
-						</dict>
-						<dict>
-							<key>Bounds</key>
-							<string>{{267.00009999999997, 924.16660404205322}, {191.99999999999994, 54}}</string>
-							<key>Class</key>
-							<string>ShapedGraphic</string>
-							<key>FontInfo</key>
-							<dict>
-								<key>Color</key>
-								<dict>
-									<key>w</key>
-									<string>0</string>
-								</dict>
-								<key>Font</key>
-								<string>Helvetica</string>
-								<key>Size</key>
-								<real>12</real>
-							</dict>
-							<key>ID</key>
-							<integer>754</integer>
-							<key>Shape</key>
-							<string>Bezier</string>
-							<key>ShapeData</key>
-							<dict>
-								<key>UnitPoints</key>
-								<array>
-									<string>{0.5, 0.5}</string>
-									<string>{0.5, 0.5}</string>
-									<string>{-0.46880729166666668, 0.5}</string>
-									<string>{-0.46880729166666668, 0.5}</string>
-									<string>{-0.48603125000000014, 0.5}</string>
-									<string>{-0.50000000000000011, 0.45024074074073894}</string>
-									<string>{-0.50000000000000011, 0.38888888888888573}</string>
-									<string>{-0.50000000000000011, 0.38888888888888573}</string>
-									<string>{-0.50000000000000011, -0.38888888888889284}</string>
-									<string>{-0.50000000000000011, -0.38888888888889284}</string>
-									<string>{-0.50000000000000011, -0.45024074074074605}</string>
-									<string>{-0.48603125000000014, -0.5}</string>
-									<string>{-0.46880729166666668, -0.5}</string>
-									<string>{-0.46880729166666668, -0.5}</string>
-									<string>{0.5, -0.5}</string>
-									<string>{0.5, -0.5}</string>
-									<string>{0.5, -0.5}</string>
-									<string>{0.5, 0.5}</string>
-								</array>
-							</dict>
-							<key>Style</key>
-							<dict>
-								<key>fill</key>
-								<dict>
-									<key>Color</key>
-									<dict>
-										<key>b</key>
-										<string>0</string>
-										<key>g</key>
-										<string>0</string>
-										<key>r</key>
-										<string>0</string>
-									</dict>
-								</dict>
-								<key>shadow</key>
-								<dict>
-									<key>Draws</key>
-									<string>NO</string>
-								</dict>
-								<key>stroke</key>
-								<dict>
-									<key>Draws</key>
-									<string>NO</string>
-								</dict>
-							</dict>
-						</dict>
-						<dict>
-							<key>Bounds</key>
-							<string>{{265, 922.16660404205322}, {580, 58}}</string>
-							<key>Class</key>
-							<string>ShapedGraphic</string>
-							<key>FontInfo</key>
-							<dict>
-								<key>Color</key>
-								<dict>
-									<key>w</key>
-									<string>0</string>
-								</dict>
-								<key>Font</key>
-								<string>Helvetica</string>
-								<key>Size</key>
-								<real>12</real>
-							</dict>
-							<key>ID</key>
-							<integer>755</integer>
-							<key>Shape</key>
-							<string>pdfImport-305.1</string>
-							<key>Style</key>
-							<dict>
-								<key>fill</key>
-								<dict>
-									<key>Color</key>
-									<dict>
-										<key>b</key>
-										<string>0</string>
-										<key>g</key>
-										<string>0</string>
-										<key>r</key>
-										<string>0</string>
-									</dict>
-								</dict>
-								<key>shadow</key>
-								<dict>
-									<key>Draws</key>
-									<string>NO</string>
-								</dict>
-								<key>stroke</key>
-								<dict>
-									<key>Draws</key>
-									<string>NO</string>
-								</dict>
-							</dict>
-							<key>TextRelativeArea</key>
-							<string>{{0, 0}, {1, 1}}</string>
-						</dict>
-					</array>
-					<key>ID</key>
-					<integer>749</integer>
-					<key>Layer</key>
-					<integer>3</integer>
 				</dict>
 				<dict>
 					<key>Class</key>
@@ -16523,27 +16211,27 @@ Hvor n\'f8dvendig var denne aktiviteten?}</string>
 								hpKEn54AgRgB
 								hpKEn54AgTQB
 								hpKEn54AgVAB
-								hoYAhpKElpYG
-								TlNLZXJuhpKE
-								hIQITlNOdW1i
-								ZXIAhIQHTlNW
-								YWx1ZQCUhAEq
-								hIQBZKKDmpmZ
-								mZmZqT+GkoSW
-								lgZOU0ZvbnSG
-								koSEhAZOU0Zv
-								bnQelJkkhAVb
-								MzZjXQYAAAAc
-								AAAA//5IAGUA
-								bAB2AGUAdABp
-								AGMAYQBOAGUA
-								dQBlAIQBZhSE
-								AWMApgGmAKYA
-								hpKElpYHTlND
-								b2xvcoaShISE
-								B05TQ29sb3IA
-								lKYChARmZmZm
-								AAAAAYaGhg==
+								hoYAhpKElpYH
+								TlNDb2xvcoaS
+								hISEB05TQ29s
+								b3IAlIQBYwKE
+								BGZmZmYAAAAB
+								hpKElpYGTlNG
+								b250hpKEhIQG
+								TlNGb250HpSZ
+								JIQFWzM2Y10G
+								AAAAHAAAAP/+
+								SABlAGwAdgBl
+								AHQAaQBjAGEA
+								TgBlAHUAZQCE
+								AWYUoACgAaAA
+								oACGkoSWlgZO
+								U0tlcm6GkoSE
+								hAhOU051bWJl
+								cgCEhAdOU1Zh
+								bHVlAJSEASqE
+								hAFkqIOamZmZ
+								mZmpP4aGhg==
 								</data>
 								<key>Text</key>
 								<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -16642,27 +16330,27 @@ Stressende}</string>
 								hJ+eAIEYAYaS
 								hJ+eAIE0AYaS
 								hJ+eAIFQAYaG
-								AIaShJaWBk5T
-								S2VyboaShISE
-								CE5TTnVtYmVy
-								AISEB05TVmFs
-								dWUAlIQBKoSE
-								AWSig5qZmZmZ
-								mak/hpKElpYG
-								TlNGb250hpKE
-								hIQGTlNGb250
-								HpSZJIQFWzM2
-								Y10GAAAAHAAA
-								AP/+SABlAGwA
-								dgBlAHQAaQBj
-								AGEATgBlAHUA
-								ZQCEAWYUhAFj
-								AKYBpgCmAIaS
-								hJaWB05TQ29s
-								b3KGkoSEhAdO
-								U0NvbG9yAJSm
-								AoQEZmZmZgAA
-								AAGGhoY=
+								AIaShJaWB05T
+								Q29sb3KGkoSE
+								hAdOU0NvbG9y
+								AJSEAWMChARm
+								ZmZmAAAAAYaS
+								hJaWBk5TRm9u
+								dIaShISEBk5T
+								Rm9udB6UmSSE
+								BVszNmNdBgAA
+								ABwAAAD//kgA
+								ZQBsAHYAZQB0
+								AGkAYwBhAE4A
+								ZQB1AGUAhAFm
+								FKAAoAGgAKAA
+								hpKElpYGTlNL
+								ZXJuhpKEhIQI
+								TlNOdW1iZXIA
+								hIQHTlNWYWx1
+								ZQCUhAEqhIQB
+								ZKiDmpmZmZmZ
+								qT+GhoY=
 										</data>
 										<key>Text</key>
 										<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -16821,26 +16509,26 @@ Veldig stressende}</string>
 								AIEYAYaShJ+e
 								AIE0AYaShJ+e
 								AIFQAYaGAIaS
-								hJaWBk5TS2Vy
-								boaShISECE5T
-								TnVtYmVyAISE
-								B05TVmFsdWUA
-								lIQBKoSEAWSi
-								g5qZmZmZmak/
-								hpKElpYGTlNG
-								b250hpKEhIQG
-								TlNGb250HpSZ
-								JIQFWzM2Y10G
-								AAAAHAAAAP/+
-								SABlAGwAdgBl
-								AHQAaQBjAGEA
-								TgBlAHUAZQCE
-								AWYUhAFjAKYB
-								pgCmAIaShJaW
-								B05TQ29sb3KG
-								koSEhAdOU0Nv
-								bG9yAJSmAoQE
-								ZmZmZgAAAAGG
+								hJaWB05TQ29s
+								b3KGkoSEhAdO
+								U0NvbG9yAJSE
+								AWMChARmZmZm
+								AAAAAYaShJaW
+								Bk5TRm9udIaS
+								hISEBk5TRm9u
+								dB6UmSSEBVsz
+								NmNdBgAAABwA
+								AAD//kgAZQBs
+								AHYAZQB0AGkA
+								YwBhAE4AZQB1
+								AGUAhAFmFKAA
+								oAGgAKAAhpKE
+								lpYGTlNLZXJu
+								hpKEhIQITlNO
+								dW1iZXIAhIQH
+								TlNWYWx1ZQCU
+								hAEqhIQBZKiD
+								mpmZmZmZqT+G
 								hoY=
 										</data>
 										<key>Text</key>
@@ -16935,26 +16623,26 @@ Noe stressende}</string>
 								ngCBGAGGkoSf
 								ngCBNAGGkoSf
 								ngCBUAGGhgCG
-								koSWlgdOU0Nv
-								bG9yhpKEhIQH
-								TlNDb2xvcgCU
-								hAFjAoQEZmZm
-								ZgEBAQGGkoSW
-								lgZOU0ZvbnSG
-								koSEhAZOU0Zv
-								bnQelJkkhAVb
-								MzZjXQYAAAAc
-								AAAA//5IAGUA
-								bAB2AGUAdABp
-								AGMAYQBOAGUA
-								dQBlAIQBZhSg
-								AKABoACgAIaS
-								hJaWBk5TS2Vy
-								boaShISECE5T
-								TnVtYmVyAISE
-								B05TVmFsdWUA
-								lIQBKoSEAWSo
-								g5qZmZmZmak/
+								koSWlgZOU0tl
+								cm6GkoSEhAhO
+								U051bWJlcgCE
+								hAdOU1ZhbHVl
+								AJSEASqEhAFk
+								ooOamZmZmZmp
+								P4aShJaWBk5T
+								Rm9udIaShISE
+								Bk5TRm9udB6U
+								mSSEBVszNmNd
+								BgAAABwAAAD/
+								/kgAZQBsAHYA
+								ZQB0AGkAYwBh
+								AE4AZQB1AGUA
+								hAFmFIQBYwCm
+								AaYApgCGkoSW
+								lgdOU0NvbG9y
+								hpKEhIQHTlND
+								b2xvcgCUpgKE
+								BGZmZmYBAQEB
 								hoaG
 										</data>
 										<key>Text</key>
@@ -17311,26 +16999,26 @@ I f\'f8lte at aktiviteten var:}</string>
 								GAGGkoSfngCB
 								NAGGkoSfngCB
 								UAGGhgCGkoSW
-								lgZOU0tlcm6G
-								koSEhAhOU051
-								bWJlcgCEhAdO
-								U1ZhbHVlAJSE
-								ASqEhAFkooOa
-								mZmZmZmpP4aS
-								hJaWBk5TRm9u
-								dIaShISEBk5T
-								Rm9udB6UmSSE
-								BVszNmNdBgAA
-								ABwAAAD//kgA
-								ZQBsAHYAZQB0
-								AGkAYwBhAE4A
-								ZQB1AGUAhAFm
-								FIQBYwCmAaYA
-								pgCGkoSWlgdO
-								U0NvbG9yhpKE
-								hIQHTlNDb2xv
-								cgCUpgKEBGZm
-								ZmYAAAABhoaG
+								lgdOU0NvbG9y
+								hpKEhIQHTlND
+								b2xvcgCUhAFj
+								AoQEZmZmZgAA
+								AAGGkoSWlgZO
+								U0ZvbnSGkoSE
+								hAZOU0ZvbnQe
+								lJkkhAVbMzZj
+								XQYAAAAcAAAA
+								//5IAGUAbAB2
+								AGUAdABpAGMA
+								YQBOAGUAdQBl
+								AIQBZhSgAKAB
+								oACgAIaShJaW
+								Bk5TS2VyboaS
+								hISECE5TTnVt
+								YmVyAISEB05T
+								VmFsdWUAlIQB
+								KoSEAWSog5qZ
+								mZmZmak/hoaG
 								</data>
 								<key>Text</key>
 								<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -17493,27 +17181,27 @@ Bra}</string>
 								hpKEn54AgRgB
 								hpKEn54AgTQB
 								hpKEn54AgVAB
-								hoYAhpKElpYG
-								TlNLZXJuhpKE
-								hIQITlNOdW1i
-								ZXIAhIQHTlNW
-								YWx1ZQCUhAEq
-								hIQBZKKDmpmZ
-								mZmZqT+GkoSW
-								lgZOU0ZvbnSG
-								koSEhAZOU0Zv
-								bnQelJkkhAVb
-								MzZjXQYAAAAc
-								AAAA//5IAGUA
-								bAB2AGUAdABp
-								AGMAYQBOAGUA
-								dQBlAIQBZhSE
-								AWMApgGmAKYA
-								hpKElpYHTlND
-								b2xvcoaShISE
-								B05TQ29sb3IA
-								lKYChARmZmZm
-								AAAAAYaGhg==
+								hoYAhpKElpYH
+								TlNDb2xvcoaS
+								hISEB05TQ29s
+								b3IAlIQBYwKE
+								BGZmZmYAAAAB
+								hpKElpYGTlNG
+								b250hpKEhIQG
+								TlNGb250HpSZ
+								JIQFWzM2Y10G
+								AAAAHAAAAP/+
+								SABlAGwAdgBl
+								AHQAaQBjAGEA
+								TgBlAHUAZQCE
+								AWYUoACgAaAA
+								oACGkoSWlgZO
+								U0tlcm6GkoSE
+								hAhOU051bWJl
+								cgCEhAdOU1Zh
+								bHVlAJSEASqE
+								hAFkqIOamZmZ
+								mZmpP4aGhg==
 										</data>
 										<key>Text</key>
 										<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -17671,27 +17359,27 @@ Veldig bra}</string>
 								n54AgRgBhpKE
 								n54AgTQBhpKE
 								n54AgVABhoYA
-								hpKElpYGTlNL
-								ZXJuhpKEhIQI
-								TlNOdW1iZXIA
-								hIQHTlNWYWx1
-								ZQCUhAEqhIQB
-								ZKKDmpmZmZmZ
-								qT+GkoSWlgZO
-								U0ZvbnSGkoSE
-								hAZOU0ZvbnQe
-								lJkkhAVbMzZj
-								XQYAAAAcAAAA
-								//5IAGUAbAB2
-								AGUAdABpAGMA
-								YQBOAGUAdQBl
-								AIQBZhSEAWMA
-								pgGmAKYAhpKE
-								lpYHTlNDb2xv
-								coaShISEB05T
-								Q29sb3IAlKYC
-								hARmZmZmAAAA
-								AYaGhg==
+								hpKElpYHTlND
+								b2xvcoaShISE
+								B05TQ29sb3IA
+								lIQBYwKEBGZm
+								ZmYAAAABhpKE
+								lpYGTlNGb250
+								hpKEhIQGTlNG
+								b250HpSZJIQF
+								WzM2Y10GAAAA
+								HAAAAP/+SABl
+								AGwAdgBlAHQA
+								aQBjAGEATgBl
+								AHUAZQCEAWYU
+								oACgAaAAoACG
+								koSWlgZOU0tl
+								cm6GkoSEhAhO
+								U051bWJlcgCE
+								hAdOU1ZhbHVl
+								AJSEASqEhAFk
+								qIOamZmZmZmp
+								P4aGhg==
 										</data>
 										<key>Text</key>
 										<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -17785,26 +17473,26 @@ D\'e5rlig}</string>
 								gRgBhpKEn54A
 								gTQBhpKEn54A
 								gVABhoYAhpKE
-								lpYHTlNDb2xv
-								coaShISEB05T
-								Q29sb3IAlIQB
-								YwKEBGZmZmYB
-								AQEBhpKElpYG
-								TlNGb250hpKE
-								hIQGTlNGb250
-								HpSZJIQFWzM2
-								Y10GAAAAHAAA
-								AP/+SABlAGwA
-								dgBlAHQAaQBj
-								AGEATgBlAHUA
-								ZQCEAWYUoACg
-								AaAAoACGkoSW
-								lgZOU0tlcm6G
-								koSEhAhOU051
-								bWJlcgCEhAdO
-								U1ZhbHVlAJSE
-								ASqEhAFkqIOa
-								mZmZmZmpP4aG
+								lpYGTlNLZXJu
+								hpKEhIQITlNO
+								dW1iZXIAhIQH
+								TlNWYWx1ZQCU
+								hAEqhIQBZKKD
+								mpmZmZmZqT+G
+								koSWlgZOU0Zv
+								bnSGkoSEhAZO
+								U0ZvbnQelJkk
+								hAVbMzZjXQYA
+								AAAcAAAA//5I
+								AGUAbAB2AGUA
+								dABpAGMAYQBO
+								AGUAdQBlAIQB
+								ZhSEAWMApgGm
+								AKYAhpKElpYH
+								TlNDb2xvcoaS
+								hISEB05TQ29s
+								b3IAlKYChARm
+								ZmZmAQEBAYaG
 								hg==
 										</data>
 										<key>Text</key>
@@ -19012,28 +18700,28 @@ Aktivitet}</string>
 								hJ+eAIEYAYaS
 								hJ+eAIE0AYaS
 								hJ+eAIFQAYaG
-								AIaShJaWBk5T
-								S2VyboaShISE
-								CE5TTnVtYmVy
-								AISEB05TVmFs
-								dWUAlIQBKoSE
-								AWSig2ZmZmZm
-								Zta/hpKElpYG
-								TlNGb250hpKE
-								hIQGTlNGb250
-								HpSZMIQFWzQ4
-								Y10GAAAAJgAA
-								AP/+SABlAGwA
-								dgBlAHQAaQBj
-								AGEATgBlAHUA
-								ZQAtAEIAbwBs
-								AGQAAACEAWYY
-								hAFjAKYBpgCm
 								AIaShJaWB05T
 								Q29sb3KGkoSE
 								hAdOU0NvbG9y
-								AJSmAoQEZmZm
-								ZgAAAAGGhoY=
+								AJSEAWMChARm
+								ZmZmAAAAAYaS
+								hJaWBk5TRm9u
+								dIaShISEBk5T
+								Rm9udB6UmTCE
+								BVs0OGNdBgAA
+								ACYAAAD//kgA
+								ZQBsAHYAZQB0
+								AGkAYwBhAE4A
+								ZQB1AGUALQBC
+								AG8AbABkAAAA
+								hAFmGKAAoAGg
+								AKAAhpKElpYG
+								TlNLZXJuhpKE
+								hIQITlNOdW1i
+								ZXIAhIQHTlNW
+								YWx1ZQCUhAEq
+								hIQBZKiDZmZm
+								ZmZm1r+GhoY=
 								</data>
 								<key>Text</key>
 								<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -19121,26 +18809,26 @@ Aktivitet}</string>
 								gRgBhpKEn54A
 								gTQBhpKEn54A
 								gVABhoYAhpKE
-								lpYGTlNLZXJu
-								hpKEhIQITlNO
-								dW1iZXIAhIQH
-								TlNWYWx1ZQCU
-								hAEqhIQBZKKD
-								MzMzMzMzw7+G
-								koSWlgZOU0Zv
-								bnSGkoSEhAZO
-								U0ZvbnQelJkk
-								hAVbMzZjXQYA
-								AAAcAAAA//5I
-								AGUAbAB2AGUA
-								dABpAGMAYQBO
-								AGUAdQBlAIQB
-								ZhiEAWMApgGm
-								AKYAhpKElpYH
-								TlNDb2xvcoaS
-								hISEB05TQ29s
-								b3IAlKYChARm
-								ZmZmAAAAAYaG
+								lpYHTlNDb2xv
+								coaShISEB05T
+								Q29sb3IAlIQB
+								YwKEBGZmZmYA
+								AAABhpKElpYG
+								TlNGb250hpKE
+								hIQGTlNGb250
+								HpSZJIQFWzM2
+								Y10GAAAAHAAA
+								AP/+SABlAGwA
+								dgBlAHQAaQBj
+								AGEATgBlAHUA
+								ZQCEAWYYoACg
+								AaAAoACGkoSW
+								lgZOU0tlcm6G
+								koSEhAhOU051
+								bWJlcgCEhAdO
+								U1ZhbHVlAJSE
+								ASqEhAFkqIMz
+								MzMzMzPDv4aG
 								hg==
 								</data>
 								<key>Text</key>
@@ -19839,27 +19527,27 @@ AT&amp;T}</string>
 								GAGGkoSfngCB
 								NAGGkoSfngCB
 								UAGGhgCGkoSW
-								lgZOU0tlcm6G
-								koSEhAhOU051
-								bWJlcgCEhAdO
-								U1ZhbHVlAJSE
-								ASqEhAFkooOa
-								mZmZmZnJP4aS
-								hJaWBk5TRm9u
-								dIaShISEBk5T
-								Rm9udB6UmTCE
-								BVs0OGNdBgAA
-								ACYAAAD//kgA
-								ZQBsAHYAZQB0
-								AGkAYwBhAE4A
-								ZQB1AGUALQBC
-								AG8AbABkAAAA
-								hAFmIoQBYwCm
-								AaYApgCGkoSW
 								lgdOU0NvbG9y
 								hpKEhIQHTlND
-								b2xvcgCUpgKE
-								BGZmZmYAAAAB
+								b2xvcgCUhAFj
+								AoQEZmZmZgAA
+								AAGGkoSWlgZO
+								U0ZvbnSGkoSE
+								hAZOU0ZvbnQe
+								lJkwhAVbNDhj
+								XQYAAAAmAAAA
+								//5IAGUAbAB2
+								AGUAdABpAGMA
+								YQBOAGUAdQBl
+								AC0AQgBvAGwA
+								ZAAAAIQBZiKg
+								AKABoACgAIaS
+								hJaWBk5TS2Vy
+								boaShISECE5T
+								TnVtYmVyAISE
+								B05TVmFsdWUA
+								lIQBKoSEAWSo
+								g5qZmZmZmck/
 								hoaG
 								</data>
 								<key>Text</key>
@@ -19958,26 +19646,26 @@ Ny Aktivitet}</string>
 								ngCBGAGGkoSf
 								ngCBNAGGkoSf
 								ngCBUAGGhgCG
-								koSWlgZOU0tl
-								cm6GkoSEhAhO
-								U051bWJlcgCE
-								hAdOU1ZhbHVl
-								AJSEASqEhAFk
-								ooMzMzMzMzPT
-								v4aShJaWBk5T
-								Rm9udIaShISE
-								Bk5TRm9udB6U
-								mSSEBVszNmNd
-								BgAAABwAAAD/
-								/kgAZQBsAHYA
-								ZQB0AGkAYwBh
-								AE4AZQB1AGUA
-								hAFmIoQBYwCm
-								AaYApgCGkoSW
-								lgdOU0NvbG9y
-								hpKEhIQHTlND
-								b2xvcgCUpgKE
-								BGZmZmYAAAAB
+								koSWlgdOU0Nv
+								bG9yhpKEhIQH
+								TlNDb2xvcgCU
+								hAFjAoQEZmZm
+								ZgAAAAGGkoSW
+								lgZOU0ZvbnSG
+								koSEhAZOU0Zv
+								bnQelJkkhAVb
+								MzZjXQYAAAAc
+								AAAA//5IAGUA
+								bAB2AGUAdABp
+								AGMAYQBOAGUA
+								dQBlAIQBZiKg
+								AKABoACgAIaS
+								hJaWBk5TS2Vy
+								boaShISECE5T
+								TnVtYmVyAISE
+								B05TVmFsdWUA
+								lIQBKoSEAWSo
+								gzMzMzMzM9O/
 								hoaG
 								</data>
 								<key>Text</key>
@@ -20083,26 +19771,26 @@ Ferdig}</string>
 								ngCBGAGGkoSf
 								ngCBNAGGkoSf
 								ngCBUAGGhgCG
-								koSWlgZOU0tl
-								cm6GkoSEhAhO
-								U051bWJlcgCE
-								hAdOU1ZhbHVl
-								AJSEASqEhAFk
-								ooMzMzMzMzPT
-								v4aShJaWBk5T
-								Rm9udIaShISE
-								Bk5TRm9udB6U
-								mSSEBVszNmNd
-								BgAAABwAAAD/
-								/kgAZQBsAHYA
-								ZQB0AGkAYwBh
-								AE4AZQB1AGUA
-								hAFmIoQBYwCm
-								AaYApgCGkoSW
-								lgdOU0NvbG9y
-								hpKEhIQHTlND
-								b2xvcgCUpgKE
-								BGZmZmYAAAAB
+								koSWlgdOU0Nv
+								bG9yhpKEhIQH
+								TlNDb2xvcgCU
+								hAFjAoQEZmZm
+								ZgAAAAGGkoSW
+								lgZOU0ZvbnSG
+								koSEhAZOU0Zv
+								bnQelJkkhAVb
+								MzZjXQYAAAAc
+								AAAA//5IAGUA
+								bAB2AGUAdABp
+								AGMAYQBOAGUA
+								dQBlAIQBZiKg
+								AKABoACgAIaS
+								hJaWBk5TS2Vy
+								boaShISECE5T
+								TnVtYmVyAISE
+								B05TVmFsdWUA
+								lIQBKoSEAWSo
+								gzMzMzMzM9O/
 								hoaG
 								</data>
 								<key>Text</key>
@@ -23046,8 +22734,8 @@ Avbryt}</string>
 					<integer>0</integer>
 					<key>Points</key>
 					<array>
-						<string>{805.32185022720432, 1563.1395999999995}</string>
-						<string>{804.6052895641368, 1854.0000484375005}</string>
+						<string>{805.32185402609059, 1563.1395999999995}</string>
+						<string>{804.60538175868589, 1854.0000484375005}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -23083,8 +22771,8 @@ Avbryt}</string>
 					<integer>0</integer>
 					<key>Points</key>
 					<array>
-						<string>{641.57412472307283, 1563.1395999999997}</string>
-						<string>{638.78231882658486, 1854.8604000000007}</string>
+						<string>{639.02211731230534, 1563.1395999999995}</string>
+						<string>{638.54915853833688, 1854.8604000000007}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -23120,8 +22808,8 @@ Avbryt}</string>
 					<integer>0</integer>
 					<key>Points</key>
 					<array>
-						<string>{322.86347526791309, 1563.1395999999995}</string>
-						<string>{319.35481047568516, 1854.8604000000003}</string>
+						<string>{322.86347526991034, 1563.1395999999995}</string>
+						<string>{319.35481052429401, 1854.8604000000003}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -23527,28 +23215,28 @@ Avbryt}</string>
 								koSfngCBGAGG
 								koSfngCBNAGG
 								koSfngCBUAGG
-								hgCGkoSWlgZO
-								U0tlcm6GkoSE
-								hAhOU051bWJl
-								cgCEhAdOU1Zh
-								bHVlAJSEASqE
-								hAFkooOamZmZ
-								mZnJP4aShJaW
-								Bk5TRm9udIaS
-								hISEBk5TRm9u
-								dB6UmTCEBVs0
-								OGNdBgAAACYA
-								AAD//kgAZQBs
-								AHYAZQB0AGkA
-								YwBhAE4AZQB1
-								AGUALQBCAG8A
-								bABkAAAAhAFm
-								IoQBYwCmAaYA
-								pgCGkoSWlgdO
+								hgCGkoSWlgdO
 								U0NvbG9yhpKE
 								hIQHTlNDb2xv
-								cgCUpgKEBGZm
-								ZmYAAAABhoaG
+								cgCUhAFjAoQE
+								ZmZmZgAAAAGG
+								koSWlgZOU0Zv
+								bnSGkoSEhAZO
+								U0ZvbnQelJkw
+								hAVbNDhjXQYA
+								AAAmAAAA//5I
+								AGUAbAB2AGUA
+								dABpAGMAYQBO
+								AGUAdQBlAC0A
+								QgBvAGwAZAAA
+								AIQBZiKgAKAB
+								oACgAIaShJaW
+								Bk5TS2VyboaS
+								hISECE5TTnVt
+								YmVyAISEB05T
+								VmFsdWUAlIQB
+								KoSEAWSog5qZ
+								mZmZmck/hoaG
 								</data>
 								<key>Text</key>
 								<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -23646,26 +23334,26 @@ Historikk}</string>
 								AIEYAYaShJ+e
 								AIE0AYaShJ+e
 								AIFQAYaGAIaS
-								hJaWBk5TS2Vy
-								boaShISECE5T
-								TnVtYmVyAISE
-								B05TVmFsdWUA
-								lIQBKoSEAWSi
-								g5qZmZmZmcm/
-								hpKElpYGTlNG
-								b250hpKEhIQG
-								TlNGb250HpSZ
-								JIQFWzM2Y10G
-								AAAAHAAAAP/+
-								SABlAGwAdgBl
-								AHQAaQBjAGEA
-								TgBlAHUAZQCE
-								AWYihAFjAKYB
-								pgCmAIaShJaW
-								B05TQ29sb3KG
-								koSEhAdOU0Nv
-								bG9yAJSmAoQE
-								ZmZmZgAAAAGG
+								hJaWB05TQ29s
+								b3KGkoSEhAdO
+								U0NvbG9yAJSE
+								AWMChARmZmZm
+								AAAAAYaShJaW
+								Bk5TRm9udIaS
+								hISEBk5TRm9u
+								dB6UmSSEBVsz
+								NmNdBgAAABwA
+								AAD//kgAZQBs
+								AHYAZQB0AGkA
+								YwBhAE4AZQB1
+								AGUAhAFmIqAA
+								oAGgAKAAhpKE
+								lpYGTlNLZXJu
+								hpKEhIQITlNO
+								dW1iZXIAhIQH
+								TlNWYWx1ZQCU
+								hAEqhIQBZKiD
+								mpmZmZmZyb+G
 								hoY=
 								</data>
 								<key>Text</key>
@@ -23884,28 +23572,28 @@ Endre}</string>
 								hJ+eAIEYAYaS
 								hJ+eAIE0AYaS
 								hJ+eAIFQAYaG
-								AIaShJaWBk5T
-								S2VyboaShISE
-								CE5TTnVtYmVy
-								AISEB05TVmFs
-								dWUAlIQBKoSE
-								AWSig2ZmZmZm
-								Zta/hpKElpYG
-								TlNGb250hpKE
-								hIQGTlNGb250
-								HpSZMIQFWzQ4
-								Y10GAAAAJgAA
-								AP/+SABlAGwA
-								dgBlAHQAaQBj
-								AGEATgBlAHUA
-								ZQAtAEIAbwBs
-								AGQAAACEAWYY
-								hAFjAKYBpgCm
 								AIaShJaWB05T
 								Q29sb3KGkoSE
 								hAdOU0NvbG9y
-								AJSmAoQEZmZm
-								ZgAAAAGGhoY=
+								AJSEAWMChARm
+								ZmZmAAAAAYaS
+								hJaWBk5TRm9u
+								dIaShISEBk5T
+								Rm9udB6UmTCE
+								BVs0OGNdBgAA
+								ACYAAAD//kgA
+								ZQBsAHYAZQB0
+								AGkAYwBhAE4A
+								ZQB1AGUALQBC
+								AG8AbABkAAAA
+								hAFmGKAAoAGg
+								AKAAhpKElpYG
+								TlNLZXJuhpKE
+								hIQITlNOdW1i
+								ZXIAhIQHTlNW
+								YWx1ZQCUhAEq
+								hIQBZKiDZmZm
+								ZmZm1r+GhoY=
 								</data>
 								<key>Text</key>
 								<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -23993,26 +23681,26 @@ Endre}</string>
 								gRgBhpKEn54A
 								gTQBhpKEn54A
 								gVABhoYAhpKE
-								lpYGTlNLZXJu
-								hpKEhIQITlNO
-								dW1iZXIAhIQH
-								TlNWYWx1ZQCU
-								hAEqhIQBZKKD
-								MzMzMzMzw7+G
-								koSWlgZOU0Zv
-								bnSGkoSEhAZO
-								U0ZvbnQelJkk
-								hAVbMzZjXQYA
-								AAAcAAAA//5I
-								AGUAbAB2AGUA
-								dABpAGMAYQBO
-								AGUAdQBlAIQB
-								ZhiEAWMApgGm
-								AKYAhpKElpYH
-								TlNDb2xvcoaS
-								hISEB05TQ29s
-								b3IAlKYChARm
-								ZmZmAAAAAYaG
+								lpYHTlNDb2xv
+								coaShISEB05T
+								Q29sb3IAlIQB
+								YwKEBGZmZmYA
+								AAABhpKElpYG
+								TlNGb250hpKE
+								hIQGTlNGb250
+								HpSZJIQFWzM2
+								Y10GAAAAHAAA
+								AP/+SABlAGwA
+								dgBlAHQAaQBj
+								AGEATgBlAHUA
+								ZQCEAWYYoACg
+								AaAAoACGkoSW
+								lgZOU0tlcm6G
+								koSEhAhOU051
+								bWJlcgCEhAdO
+								U1ZhbHVlAJSE
+								ASqEhAFkqIMz
+								MzMzMzPDv4aG
 								hg==
 								</data>
 								<key>Text</key>
@@ -25000,47 +24688,47 @@ AT&amp;T}</string>
 								aUkBA5KEhIQM
 								TlNEaWN0aW9u
 								YXJ5AJSEAWkE
-								koSWlgZOU0tl
-								cm6GkoSEhAhO
-								U051bWJlcgCE
-								hAdOU1ZhbHVl
-								AJSEASqEhAFk
-								nYMAAAAAAADg
-								v4aShJaWEE5T
-								UGFyYWdyYXBo
-								U3R5bGWGkoSE
-								hBBOU1BhcmFn
+								koSWlgdOU0Nv
+								bG9yhpKEhIQH
+								TlNDb2xvcgCU
+								hAFjAoQEZmZm
+								ZgAAAAGGkoSW
+								lhBOU1BhcmFn
 								cmFwaFN0eWxl
-								AJSEBENDQFMA
-								AISEhAdOU0Fy
-								cmF5AJSZDJKE
-								hIQJTlNUZXh0
-								VGFiAJSEAkNm
-								AByGkoSkogA4
-								hpKEpKIAVIaS
-								hKSiAHCGkoSk
-								ogCBjACGkoSk
-								ogCBqACGkoSk
-								ogCBxACGkoSk
-								ogCB4ACGkoSk
-								ogCB/ACGkoSk
-								ogCBGAGGkoSk
-								ogCBNAGGkoSk
-								ogCBUAGGhgCG
-								koSWlgZOU0Zv
-								bnSGkoSEhAZO
-								U0ZvbnQelJkk
-								hAVbMzZjXQYA
-								AAAcAAAA//5I
-								AGUAbAB2AGUA
-								dABpAGMAYQBO
-								AGUAdQBlAIQB
-								ZhSEAWMApgGm
-								AKYAhpKElpYH
-								TlNDb2xvcoaS
-								hISEB05TQ29s
-								b3IAlKYChARm
-								ZmZmAAAAAYaG
+								hpKEhIQQTlNQ
+								YXJhZ3JhcGhT
+								dHlsZQCUhARD
+								Q0BTAACEhIQH
+								TlNBcnJheQCU
+								mQyShISECU5T
+								VGV4dFRhYgCU
+								hAJDZgAchpKE
+								oqEAOIaShKKh
+								AFSGkoSioQBw
+								hpKEoqEAgYwA
+								hpKEoqEAgagA
+								hpKEoqEAgcQA
+								hpKEoqEAgeAA
+								hpKEoqEAgfwA
+								hpKEoqEAgRgB
+								hpKEoqEAgTQB
+								hpKEoqEAgVAB
+								hoYAhpKElpYG
+								TlNGb250hpKE
+								hIQGTlNGb250
+								HpSZJIQFWzM2
+								Y10GAAAAHAAA
+								AP/+SABlAGwA
+								dgBlAHQAaQBj
+								AGEATgBlAHUA
+								ZQCEAWYUmwCb
+								AZsAmwCGkoSW
+								lgZOU0tlcm6G
+								koSEhAhOU051
+								bWJlcgCEhAdO
+								U1ZhbHVlAJSE
+								ASqEhAFkqIMA
+								AAAAAADgv4aG
 								hg==
 												</data>
 												<key>Text</key>
@@ -25117,47 +24805,47 @@ M\'e5l}</string>
 								AQuShISEDE5T
 								RGljdGlvbmFy
 								eQCUhAFpBJKE
-								lpYGTlNLZXJu
-								hpKEhIQITlNO
-								dW1iZXIAhIQH
-								TlNWYWx1ZQCU
-								hAEqhIQBZJ2D
-								AAAAAAAA4L+G
-								koSWlhBOU1Bh
-								cmFncmFwaFN0
-								eWxlhpKEhIQQ
+								lpYHTlNDb2xv
+								coaShISEB05T
+								Q29sb3IAlIQB
+								YwKEBGZmZmYA
+								AAABhpKElpYQ
 								TlNQYXJhZ3Jh
-								cGhTdHlsZQCU
-								hARDQ0BTAACE
-								hIQHTlNBcnJh
-								eQCUmQyShISE
-								CU5TVGV4dFRh
-								YgCUhAJDZgAc
-								hpKEpKIAOIaS
-								hKSiAFSGkoSk
-								ogBwhpKEpKIA
-								gYwAhpKEpKIA
-								gagAhpKEpKIA
-								gcQAhpKEpKIA
-								geAAhpKEpKIA
-								gfwAhpKEpKIA
-								gRgBhpKEpKIA
-								gTQBhpKEpKIA
-								gVABhoYAhpKE
-								lpYGTlNGb250
-								hpKEhIQGTlNG
-								b250HpSZJIQF
-								WzM2Y10GAAAA
-								HAAAAP/+SABl
-								AGwAdgBlAHQA
-								aQBjAGEATgBl
-								AHUAZQCEAWYU
-								hAFjAKYBpgCm
-								AIaShJaWB05T
-								Q29sb3KGkoSE
-								hAdOU0NvbG9y
-								AJSmAoQEZmZm
-								ZgAAAAGGhoY=
+								cGhTdHlsZYaS
+								hISEEE5TUGFy
+								YWdyYXBoU3R5
+								bGUAlIQEQ0NA
+								UwAAhISEB05T
+								QXJyYXkAlJkM
+								koSEhAlOU1Rl
+								eHRUYWIAlIQC
+								Q2YAHIaShKKh
+								ADiGkoSioQBU
+								hpKEoqEAcIaS
+								hKKhAIGMAIaS
+								hKKhAIGoAIaS
+								hKKhAIHEAIaS
+								hKKhAIHgAIaS
+								hKKhAIH8AIaS
+								hKKhAIEYAYaS
+								hKKhAIE0AYaS
+								hKKhAIFQAYaG
+								AIaShJaWBk5T
+								Rm9udIaShISE
+								Bk5TRm9udB6U
+								mSSEBVszNmNd
+								BgAAABwAAAD/
+								/kgAZQBsAHYA
+								ZQB0AGkAYwBh
+								AE4AZQB1AGUA
+								hAFmFJsAmwGb
+								AJsAhpKElpYG
+								TlNLZXJuhpKE
+								hIQITlNOdW1i
+								ZXIAhIQHTlNW
+								YWx1ZQCUhAEq
+								hIQBZKiDAAAA
+								AAAA4L+GhoY=
 												</data>
 												<key>Text</key>
 												<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -25223,47 +24911,47 @@ Aktiviteter}</string>
 								koSEhAxOU0Rp
 								Y3Rpb25hcnkA
 								lIQBaQSShJaW
-								Bk5TS2VyboaS
-								hISECE5TTnVt
-								YmVyAISEB05T
-								VmFsdWUAlIQB
-								KoSEAWSdgwAA
-								AAAAAOC/hpKE
-								lpYQTlNQYXJh
-								Z3JhcGhTdHls
-								ZYaShISEEE5T
+								B05TQ29sb3KG
+								koSEhAdOU0Nv
+								bG9yAJSEAWMC
+								hARmZmZmAAAA
+								AYaShJaWEE5T
 								UGFyYWdyYXBo
-								U3R5bGUAlIQE
-								Q0NAUwAAhISE
-								B05TQXJyYXkA
-								lJkMkoSEhAlO
-								U1RleHRUYWIA
-								lIQCQ2YAHIaS
-								hKSiADiGkoSk
-								ogBUhpKEpKIA
-								cIaShKSiAIGM
-								AIaShKSiAIGo
-								AIaShKSiAIHE
-								AIaShKSiAIHg
-								AIaShKSiAIH8
-								AIaShKSiAIEY
-								AYaShKSiAIE0
-								AYaShKSiAIFQ
-								AYaGAIaShJaW
-								Bk5TRm9udIaS
-								hISEBk5TRm9u
-								dB6UmSSEBVsz
-								NmNdBgAAABwA
-								AAD//kgAZQBs
-								AHYAZQB0AGkA
-								YwBhAE4AZQB1
-								AGUAhAFmFIQB
-								YwCmAaYApgCG
-								koSWlgdOU0Nv
-								bG9yhpKEhIQH
-								TlNDb2xvcgCU
-								pgKEBGZmZmYA
-								AAABhoaG
+								U3R5bGWGkoSE
+								hBBOU1BhcmFn
+								cmFwaFN0eWxl
+								AJSEBENDQFMA
+								AISEhAdOU0Fy
+								cmF5AJSZDJKE
+								hIQJTlNUZXh0
+								VGFiAJSEAkNm
+								AByGkoSioQA4
+								hpKEoqEAVIaS
+								hKKhAHCGkoSi
+								oQCBjACGkoSi
+								oQCBqACGkoSi
+								oQCBxACGkoSi
+								oQCB4ACGkoSi
+								oQCB/ACGkoSi
+								oQCBGAGGkoSi
+								oQCBNAGGkoSi
+								oQCBUAGGhgCG
+								koSWlgZOU0Zv
+								bnSGkoSEhAZO
+								U0ZvbnQelJkk
+								hAVbMzZjXQYA
+								AAAcAAAA//5I
+								AGUAbAB2AGUA
+								dABpAGMAYQBO
+								AGUAdQBlAIQB
+								ZhSbAJsBmwCb
+								AIaShJaWBk5T
+								S2VyboaShISE
+								CE5TTnVtYmVy
+								AISEB05TVmFs
+								dWUAlIQBKoSE
+								AWSogwAAAAAA
+								AOC/hoaG
 												</data>
 												<key>Text</key>
 												<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -25279,7 +24967,7 @@ Historikk}</string>
 										</dict>
 										<dict>
 											<key>Bounds</key>
-											<string>{{604, 1538.1395999999995}, {75.387502689014184, 25}}</string>
+											<string>{{596.34863092387741, 1538.1395999999995}, {85.387504577636719, 25}}</string>
 											<key>Class</key>
 											<string>ShapedGraphic</string>
 											<key>FitText</key>
@@ -25334,52 +25022,52 @@ Historikk}</string>
 								TlNPYmplY3QA
 								hZKEhIQITlNT
 								dHJpbmcBlIQB
-								KwdBbmFseXNl
-								hoQCaUkBB5KE
-								hIQMTlNEaWN0
-								aW9uYXJ5AJSE
-								AWkEkoSWlgZO
-								U0tlcm6GkoSE
-								hAhOU051bWJl
-								cgCEhAdOU1Zh
-								bHVlAJSEASqE
-								hAFknYMAAAAA
-								AADgv4aShJaW
+								KwhDb2FjaGlu
+								Z4aEAmlJAQiS
+								hISEDE5TRGlj
+								dGlvbmFyeQCU
+								hAFpBJKElpYH
+								TlNDb2xvcoaS
+								hISEB05TQ29s
+								b3IAlIQBYwKE
+								BGZmZmYAAAAB
+								hpKElpYQTlNQ
+								YXJhZ3JhcGhT
+								dHlsZYaShISE
 								EE5TUGFyYWdy
-								YXBoU3R5bGWG
-								koSEhBBOU1Bh
-								cmFncmFwaFN0
-								eWxlAJSEBEND
-								QFMAAISEhAdO
-								U0FycmF5AJSZ
-								DJKEhIQJTlNU
-								ZXh0VGFiAJSE
-								AkNmAByGkoSk
-								ogA4hpKEpKIA
-								VIaShKSiAHCG
-								koSkogCBjACG
-								koSkogCBqACG
-								koSkogCBxACG
-								koSkogCB4ACG
-								koSkogCB/ACG
-								koSkogCBGAGG
-								koSkogCBNAGG
-								koSkogCBUAGG
-								hgCGkoSWlgZO
-								U0ZvbnSGkoSE
-								hAZOU0ZvbnQe
-								lJkkhAVbMzZj
-								XQYAAAAcAAAA
-								//5IAGUAbAB2
-								AGUAdABpAGMA
-								YQBOAGUAdQBl
-								AIQBZhSEAWMA
-								pgGmAKYAhpKE
-								lpYHTlNDb2xv
-								coaShISEB05T
-								Q29sb3IAlKYC
-								hARmZmZmAAAA
-								AYaGhg==
+								YXBoU3R5bGUA
+								lIQEQ0NAUwAA
+								hISEB05TQXJy
+								YXkAlJkMkoSE
+								hAlOU1RleHRU
+								YWIAlIQCQ2YA
+								HIaShKKhADiG
+								koSioQBUhpKE
+								oqEAcIaShKKh
+								AIGMAIaShKKh
+								AIGoAIaShKKh
+								AIHEAIaShKKh
+								AIHgAIaShKKh
+								AIH8AIaShKKh
+								AIEYAYaShKKh
+								AIE0AYaShKKh
+								AIFQAYaGAIaS
+								hJaWBk5TRm9u
+								dIaShISEBk5T
+								Rm9udB6UmSSE
+								BVszNmNdBgAA
+								ABwAAAD//kgA
+								ZQBsAHYAZQB0
+								AGkAYwBhAE4A
+								ZQB1AGUAhAFm
+								FJsAmwGbAJsA
+								hpKElpYGTlNL
+								ZXJuhpKEhIQI
+								TlNOdW1iZXIA
+								hIQHTlNWYWx1
+								ZQCUhAEqhIQB
+								ZKiDAAAAAAAA
+								4L+GhoY=
 												</data>
 												<key>Text</key>
 												<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -25388,7 +25076,7 @@ Historikk}</string>
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
 \f0\fs40 \cf2 \kerning1\expnd-2\expndtw-10
-Analyse}</string>
+Coaching}</string>
 												<key>VerticalPad</key>
 												<integer>0</integer>
 											</dict>
@@ -28785,8 +28473,8 @@ Analyse}</string>
 					<integer>0</integer>
 					<key>Points</key>
 					<array>
-						<string>{853.87952264104251, 626.21942182209023}</string>
-						<string>{968.130859375, 624.41624694563529}</string>
+						<string>{853.87948645269273, 626.21938599281509}</string>
+						<string>{968.130859375, 624.41566428995031}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -28879,8 +28567,8 @@ Analyse}</string>
 					<integer>0</integer>
 					<key>Points</key>
 					<array>
-						<string>{845, 531.96177112659586}</string>
-						<string>{955.630859375, 531.67981825208653}</string>
+						<string>{845, 531.96176024820306}</string>
+						<string>{955.630859375, 531.67972714129746}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -28973,8 +28661,8 @@ Analyse}</string>
 					<integer>0</integer>
 					<key>Points</key>
 					<array>
-						<string>{805.32178034360777, 1563.1395999999995}</string>
-						<string>{804.60570024144454, 1852.8604000000007}</string>
+						<string>{805.32177760907553, 1563.1395999999995}</string>
+						<string>{804.60563412684269, 1852.8604000000007}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -29497,26 +29185,26 @@ Analyse}</string>
 								GAGGkoSfngCB
 								NAGGkoSfngCB
 								UAGGhgCGkoSW
-								lgZOU0tlcm6G
-								koSEhAhOU051
-								bWJlcgCEhAdO
-								U1ZhbHVlAJSE
-								ASqEhAFkooMz
-								MzMzMzPTv4aS
-								hJaWBk5TRm9u
-								dIaShISEBk5T
-								Rm9udB6UmSSE
-								BVszNmNdBgAA
-								ABwAAAD//kgA
-								ZQBsAHYAZQB0
-								AGkAYwBhAE4A
-								ZQB1AGUAhAFm
-								IoQBYwCmAaYA
-								pgCGkoSWlgdO
-								U0NvbG9yhpKE
-								hIQHTlNDb2xv
-								cgCUpgKEBGZm
-								ZmYAAAABhoaG
+								lgdOU0NvbG9y
+								hpKEhIQHTlND
+								b2xvcgCUhAFj
+								AoQEZmZmZgAA
+								AAGGkoSWlgZO
+								U0ZvbnSGkoSE
+								hAZOU0ZvbnQe
+								lJkkhAVbMzZj
+								XQYAAAAcAAAA
+								//5IAGUAbAB2
+								AGUAdABpAGMA
+								YQBOAGUAdQBl
+								AIQBZiKgAKAB
+								oACgAIaShJaW
+								Bk5TS2VyboaS
+								hISECE5TTnVt
+								YmVyAISEB05T
+								VmFsdWUAlIQB
+								KoSEAWSogzMz
+								MzMzM9O/hoaG
 								</data>
 								<key>Text</key>
 								<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -29886,26 +29574,26 @@ Analyse 9 August 2014}</string>
 								GAGGkoSfngCB
 								NAGGkoSfngCB
 								UAGGhgCGkoSW
-								lgZOU0tlcm6G
-								koSEhAhOU051
-								bWJlcgCEhAdO
-								U1ZhbHVlAJSE
-								ASqEhAFkooMz
-								MzMzMzPTv4aS
-								hJaWBk5TRm9u
-								dIaShISEBk5T
-								Rm9udB6UmSSE
-								BVszNmNdBgAA
-								ABwAAAD//kgA
-								ZQBsAHYAZQB0
-								AGkAYwBhAE4A
-								ZQB1AGUAhAFm
-								IoQBYwCmAaYA
-								pgCGkoSWlgdO
-								U0NvbG9yhpKE
-								hIQHTlNDb2xv
-								cgCUpgKEBGZm
-								ZmYAAAABhoaG
+								lgdOU0NvbG9y
+								hpKEhIQHTlND
+								b2xvcgCUhAFj
+								AoQEZmZmZgAA
+								AAGGkoSWlgZO
+								U0ZvbnSGkoSE
+								hAZOU0ZvbnQe
+								lJkkhAVbMzZj
+								XQYAAAAcAAAA
+								//5IAGUAbAB2
+								AGUAdABpAGMA
+								YQBOAGUAdQBl
+								AIQBZiKgAKAB
+								oACgAIaShJaW
+								Bk5TS2VyboaS
+								hISECE5TTnVt
+								YmVyAISEB05T
+								VmFsdWUAlIQB
+								KoSEAWSogzMz
+								MzMzM9O/hoaG
 								</data>
 								<key>Text</key>
 								<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -30336,8 +30024,6 @@ Analyse 8 August 2014}</string>
 									</dict>
 									<key>Text</key>
 									<dict>
-										<key>Align</key>
-										<integer>0</integer>
 										<key>Pad</key>
 										<integer>0</integer>
 										<key>RTFD</key>
@@ -30350,64 +30036,67 @@ Analyse 8 August 2014}</string>
 								TlNPYmplY3QA
 								hZKEhIQITlNT
 								dHJpbmcBlIQB
-								KxtBbmFseXNl
-								L2VuZXJnacO4
-								a29ubWlzZXJp
-								bmeGhAJpSQEa
-								koSEhAxOU0Rp
-								Y3Rpb25hcnkA
-								lIQBaQSShJaW
-								EE5TUGFyYWdy
-								YXBoU3R5bGWG
-								koSEhBBOU1Bh
-								cmFncmFwaFN0
-								eWxlAJSEBEND
-								QFMAAISEhAdO
-								U0FycmF5AJSZ
-								DJKEhIQJTlNU
-								ZXh0VGFiAJSE
-								AkNmAByGkoSf
-								ngA4hpKEn54A
-								VIaShJ+eAHCG
-								koSfngCBjACG
-								koSfngCBqACG
-								koSfngCBxACG
-								koSfngCB4ACG
-								koSfngCB/ACG
-								koSfngCBGAGG
-								koSfngCBNAGG
-								koSfngCBUAGG
-								hgCGkoSWlgZO
-								U0tlcm6GkoSE
-								hAhOU051bWJl
-								cgCEhAdOU1Zh
-								bHVlAJSEASqE
-								hAFkooOamZmZ
-								mZnJP4aShJaW
-								Bk5TRm9udIaS
-								hISEBk5TRm9u
-								dB6UmTCEBVs0
-								OGNdBgAAACYA
-								AAD//kgAZQBs
-								AHYAZQB0AGkA
-								YwBhAE4AZQB1
-								AGUALQBCAG8A
-								bABkAAAAhAFm
-								IoQBYwCmAaYA
-								pgCGkoSWlgdO
-								U0NvbG9yhpKE
-								hIQHTlNDb2xv
-								cgCUpgKEBGZm
-								ZmYAAAABhoaG
+								KwhDb2FjaGlu
+								Z4aEAmlJAQiS
+								hISEDE5TRGlj
+								dGlvbmFyeQCU
+								hAFpBJKElpYG
+								TlNLZXJuhpKE
+								hIQITlNOdW1i
+								ZXIAhIQHTlNW
+								YWx1ZQCUhAEq
+								hIQBZJ2DmpmZ
+								mZmZyT+GkoSW
+								lhBOU1BhcmFn
+								cmFwaFN0eWxl
+								hpKEhIQXTlNN
+								dXRhYmxlUGFy
+								YWdyYXBoU3R5
+								bGUAhIQQTlNQ
+								YXJhZ3JhcGhT
+								dHlsZQCUhARD
+								Q0BTAgCEhIQO
+								TlNNdXRhYmxl
+								QXJyYXkAhIQH
+								TlNBcnJheQCU
+								mQyShISECU5T
+								VGV4dFRhYgCU
+								hAJDZgAchpKE
+								pqQAOIaShKak
+								AFSGkoSmpABw
+								hpKEpqQAgYwA
+								hpKEpqQAgagA
+								hpKEpqQAgcQA
+								hpKEpqQAgeAA
+								hpKEpqQAgfwA
+								hpKEpqQAgRgB
+								hpKEpqQAgTQB
+								hpKEpqQAgVAB
+								hoYAhpKElpYG
+								TlNGb250hpKE
+								hIQGTlNGb250
+								HpSZMIQFWzQ4
+								Y10GAAAAJgAA
+								AP/+SABlAGwA
+								dgBlAHQAaQBj
+								AGEATgBlAHUA
+								ZQAtAEIAbwBs
+								AGQAAACEAWYi
+								hAFjAKgBqACo
+								AIaShJaWB05T
+								Q29sb3KGkoSE
+								hAdOU0NvbG9y
+								AJSoAoQEZmZm
+								ZgAAAAGGhoY=
 										</data>
 										<key>Text</key>
 										<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
 \cocoascreenfonts1{\fonttbl\f0\fnil\fcharset0 HelveticaNeue;}
 {\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
-\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\qc
 
 \f0\b\fs68 \cf2 \kerning1\expnd0\expndtw4
-Analyse/energi\'f8konmisering}</string>
+Coaching}</string>
 										<key>VerticalPad</key>
 										<integer>0</integer>
 									</dict>
@@ -30614,28 +30303,28 @@ Analyse/energi\'f8konmisering}</string>
 								hJ+eAIEYAYaS
 								hJ+eAIE0AYaS
 								hJ+eAIFQAYaG
-								AIaShJaWBk5T
-								S2VyboaShISE
-								CE5TTnVtYmVy
-								AISEB05TVmFs
-								dWUAlIQBKoSE
-								AWSig2ZmZmZm
-								Zta/hpKElpYG
-								TlNGb250hpKE
-								hIQGTlNGb250
-								HpSZMIQFWzQ4
-								Y10GAAAAJgAA
-								AP/+SABlAGwA
-								dgBlAHQAaQBj
-								AGEATgBlAHUA
-								ZQAtAEIAbwBs
-								AGQAAACEAWYY
-								hAFjAKYBpgCm
 								AIaShJaWB05T
 								Q29sb3KGkoSE
 								hAdOU0NvbG9y
-								AJSmAoQEZmZm
-								ZgAAAAGGhoY=
+								AJSEAWMChARm
+								ZmZmAAAAAYaS
+								hJaWBk5TRm9u
+								dIaShISEBk5T
+								Rm9udB6UmTCE
+								BVs0OGNdBgAA
+								ACYAAAD//kgA
+								ZQBsAHYAZQB0
+								AGkAYwBhAE4A
+								ZQB1AGUALQBC
+								AG8AbABkAAAA
+								hAFmGKAAoAGg
+								AKAAhpKElpYG
+								TlNLZXJuhpKE
+								hIQITlNOdW1i
+								ZXIAhIQHTlNW
+								YWx1ZQCUhAEq
+								hIQBZKiDZmZm
+								ZmZm1r+GhoY=
 										</data>
 										<key>Text</key>
 										<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -30723,26 +30412,26 @@ Analyse/energi\'f8konmisering}</string>
 								gRgBhpKEn54A
 								gTQBhpKEn54A
 								gVABhoYAhpKE
-								lpYGTlNLZXJu
-								hpKEhIQITlNO
-								dW1iZXIAhIQH
-								TlNWYWx1ZQCU
-								hAEqhIQBZKKD
-								MzMzMzMzw7+G
-								koSWlgZOU0Zv
-								bnSGkoSEhAZO
-								U0ZvbnQelJkk
-								hAVbMzZjXQYA
-								AAAcAAAA//5I
-								AGUAbAB2AGUA
-								dABpAGMAYQBO
-								AGUAdQBlAIQB
-								ZhiEAWMApgGm
-								AKYAhpKElpYH
-								TlNDb2xvcoaS
-								hISEB05TQ29s
-								b3IAlKYChARm
-								ZmZmAAAAAYaG
+								lpYHTlNDb2xv
+								coaShISEB05T
+								Q29sb3IAlIQB
+								YwKEBGZmZmYA
+								AAABhpKElpYG
+								TlNGb250hpKE
+								hIQGTlNGb250
+								HpSZJIQFWzM2
+								Y10GAAAAHAAA
+								AP/+SABlAGwA
+								dgBlAHQAaQBj
+								AGEATgBlAHUA
+								ZQCEAWYYoACg
+								AaAAoACGkoSW
+								lgZOU0tlcm6G
+								koSEhAhOU051
+								bWJlcgCEhAdO
+								U1ZhbHVlAJSE
+								ASqEhAFkqIMz
+								MzMzMzPDv4aG
 								hg==
 										</data>
 										<key>Text</key>
@@ -31734,47 +31423,47 @@ AT&amp;T}</string>
 								aUkBA5KEhIQM
 								TlNEaWN0aW9u
 								YXJ5AJSEAWkE
-								koSWlgZOU0tl
-								cm6GkoSEhAhO
-								U051bWJlcgCE
-								hAdOU1ZhbHVl
-								AJSEASqEhAFk
-								nYMAAAAAAADg
-								v4aShJaWEE5T
-								UGFyYWdyYXBo
-								U3R5bGWGkoSE
-								hBBOU1BhcmFn
+								koSWlgdOU0Nv
+								bG9yhpKEhIQH
+								TlNDb2xvcgCU
+								hAFjAoQEZmZm
+								ZgAAAAGGkoSW
+								lhBOU1BhcmFn
 								cmFwaFN0eWxl
-								AJSEBENDQFMA
-								AISEhAdOU0Fy
-								cmF5AJSZDJKE
-								hIQJTlNUZXh0
-								VGFiAJSEAkNm
-								AByGkoSkogA4
-								hpKEpKIAVIaS
-								hKSiAHCGkoSk
-								ogCBjACGkoSk
-								ogCBqACGkoSk
-								ogCBxACGkoSk
-								ogCB4ACGkoSk
-								ogCB/ACGkoSk
-								ogCBGAGGkoSk
-								ogCBNAGGkoSk
-								ogCBUAGGhgCG
-								koSWlgZOU0Zv
-								bnSGkoSEhAZO
-								U0ZvbnQelJkk
-								hAVbMzZjXQYA
-								AAAcAAAA//5I
-								AGUAbAB2AGUA
-								dABpAGMAYQBO
-								AGUAdQBlAIQB
-								ZhSEAWMApgGm
-								AKYAhpKElpYH
-								TlNDb2xvcoaS
-								hISEB05TQ29s
-								b3IAlKYChARm
-								ZmZmAAAAAYaG
+								hpKEhIQQTlNQ
+								YXJhZ3JhcGhT
+								dHlsZQCUhARD
+								Q0BTAACEhIQH
+								TlNBcnJheQCU
+								mQyShISECU5T
+								VGV4dFRhYgCU
+								hAJDZgAchpKE
+								oqEAOIaShKKh
+								AFSGkoSioQBw
+								hpKEoqEAgYwA
+								hpKEoqEAgagA
+								hpKEoqEAgcQA
+								hpKEoqEAgeAA
+								hpKEoqEAgfwA
+								hpKEoqEAgRgB
+								hpKEoqEAgTQB
+								hpKEoqEAgVAB
+								hoYAhpKElpYG
+								TlNGb250hpKE
+								hIQGTlNGb250
+								HpSZJIQFWzM2
+								Y10GAAAAHAAA
+								AP/+SABlAGwA
+								dgBlAHQAaQBj
+								AGEATgBlAHUA
+								ZQCEAWYUmwCb
+								AZsAmwCGkoSW
+								lgZOU0tlcm6G
+								koSEhAhOU051
+								bWJlcgCEhAdO
+								U1ZhbHVlAJSE
+								ASqEhAFkqIMA
+								AAAAAADgv4aG
 								hg==
 												</data>
 												<key>Text</key>
@@ -31851,47 +31540,47 @@ M\'e5l}</string>
 								AQuShISEDE5T
 								RGljdGlvbmFy
 								eQCUhAFpBJKE
-								lpYGTlNLZXJu
-								hpKEhIQITlNO
-								dW1iZXIAhIQH
-								TlNWYWx1ZQCU
-								hAEqhIQBZJ2D
-								AAAAAAAA4L+G
-								koSWlhBOU1Bh
-								cmFncmFwaFN0
-								eWxlhpKEhIQQ
+								lpYHTlNDb2xv
+								coaShISEB05T
+								Q29sb3IAlIQB
+								YwKEBGZmZmYA
+								AAABhpKElpYQ
 								TlNQYXJhZ3Jh
-								cGhTdHlsZQCU
-								hARDQ0BTAACE
-								hIQHTlNBcnJh
-								eQCUmQyShISE
-								CU5TVGV4dFRh
-								YgCUhAJDZgAc
-								hpKEpKIAOIaS
-								hKSiAFSGkoSk
-								ogBwhpKEpKIA
-								gYwAhpKEpKIA
-								gagAhpKEpKIA
-								gcQAhpKEpKIA
-								geAAhpKEpKIA
-								gfwAhpKEpKIA
-								gRgBhpKEpKIA
-								gTQBhpKEpKIA
-								gVABhoYAhpKE
-								lpYGTlNGb250
-								hpKEhIQGTlNG
-								b250HpSZJIQF
-								WzM2Y10GAAAA
-								HAAAAP/+SABl
-								AGwAdgBlAHQA
-								aQBjAGEATgBl
-								AHUAZQCEAWYU
-								hAFjAKYBpgCm
-								AIaShJaWB05T
-								Q29sb3KGkoSE
-								hAdOU0NvbG9y
-								AJSmAoQEZmZm
-								ZgAAAAGGhoY=
+								cGhTdHlsZYaS
+								hISEEE5TUGFy
+								YWdyYXBoU3R5
+								bGUAlIQEQ0NA
+								UwAAhISEB05T
+								QXJyYXkAlJkM
+								koSEhAlOU1Rl
+								eHRUYWIAlIQC
+								Q2YAHIaShKKh
+								ADiGkoSioQBU
+								hpKEoqEAcIaS
+								hKKhAIGMAIaS
+								hKKhAIGoAIaS
+								hKKhAIHEAIaS
+								hKKhAIHgAIaS
+								hKKhAIH8AIaS
+								hKKhAIEYAYaS
+								hKKhAIE0AYaS
+								hKKhAIFQAYaG
+								AIaShJaWBk5T
+								Rm9udIaShISE
+								Bk5TRm9udB6U
+								mSSEBVszNmNd
+								BgAAABwAAAD/
+								/kgAZQBsAHYA
+								ZQB0AGkAYwBh
+								AE4AZQB1AGUA
+								hAFmFJsAmwGb
+								AJsAhpKElpYG
+								TlNLZXJuhpKE
+								hIQITlNOdW1i
+								ZXIAhIQHTlNW
+								YWx1ZQCUhAEq
+								hIQBZKiDAAAA
+								AAAA4L+GhoY=
 												</data>
 												<key>Text</key>
 												<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -31967,47 +31656,47 @@ Aktiviteter}</string>
 								koSEhAxOU0Rp
 								Y3Rpb25hcnkA
 								lIQBaQSShJaW
-								Bk5TS2VyboaS
-								hISECE5TTnVt
-								YmVyAISEB05T
-								VmFsdWUAlIQB
-								KoSEAWSdgwAA
-								AAAAAOC/hpKE
-								lpYQTlNQYXJh
-								Z3JhcGhTdHls
-								ZYaShISEEE5T
+								B05TQ29sb3KG
+								koSEhAdOU0Nv
+								bG9yAJSEAWMC
+								hARmZmZmAAAA
+								AYaShJaWEE5T
 								UGFyYWdyYXBo
-								U3R5bGUAlIQE
-								Q0NAUwAAhISE
-								B05TQXJyYXkA
-								lJkMkoSEhAlO
-								U1RleHRUYWIA
-								lIQCQ2YAHIaS
-								hKSiADiGkoSk
-								ogBUhpKEpKIA
-								cIaShKSiAIGM
-								AIaShKSiAIGo
-								AIaShKSiAIHE
-								AIaShKSiAIHg
-								AIaShKSiAIH8
-								AIaShKSiAIEY
-								AYaShKSiAIE0
-								AYaShKSiAIFQ
-								AYaGAIaShJaW
-								Bk5TRm9udIaS
-								hISEBk5TRm9u
-								dB6UmSSEBVsz
-								NmNdBgAAABwA
-								AAD//kgAZQBs
-								AHYAZQB0AGkA
-								YwBhAE4AZQB1
-								AGUAhAFmFIQB
-								YwCmAaYApgCG
-								koSWlgdOU0Nv
-								bG9yhpKEhIQH
-								TlNDb2xvcgCU
-								pgKEBGZmZmYA
-								AAABhoaG
+								U3R5bGWGkoSE
+								hBBOU1BhcmFn
+								cmFwaFN0eWxl
+								AJSEBENDQFMA
+								AISEhAdOU0Fy
+								cmF5AJSZDJKE
+								hIQJTlNUZXh0
+								VGFiAJSEAkNm
+								AByGkoSioQA4
+								hpKEoqEAVIaS
+								hKKhAHCGkoSi
+								oQCBjACGkoSi
+								oQCBqACGkoSi
+								oQCBxACGkoSi
+								oQCB4ACGkoSi
+								oQCB/ACGkoSi
+								oQCBGAGGkoSi
+								oQCBNAGGkoSi
+								oQCBUAGGhgCG
+								koSWlgZOU0Zv
+								bnSGkoSEhAZO
+								U0ZvbnQelJkk
+								hAVbMzZjXQYA
+								AAAcAAAA//5I
+								AGUAbAB2AGUA
+								dABpAGMAYQBO
+								AGUAdQBlAIQB
+								ZhSbAJsBmwCb
+								AIaShJaWBk5T
+								S2VyboaShISE
+								CE5TTnVtYmVy
+								AISEB05TVmFs
+								dWUAlIQBKoSE
+								AWSogwAAAAAA
+								AOC/hoaG
 												</data>
 												<key>Text</key>
 												<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -32023,7 +31712,7 @@ Historikk}</string>
 										</dict>
 										<dict>
 											<key>Bounds</key>
-											<string>{{604, 1538.1395999999995}, {114.41695776493391, 25}}</string>
+											<string>{{595.19802856445312, 1538.1395999999995}, {87.688629150390625, 25}}</string>
 											<key>Class</key>
 											<string>ShapedGraphic</string>
 											<key>FitText</key>
@@ -32068,52 +31757,52 @@ Historikk}</string>
 								TlNPYmplY3QA
 								hZKEhIQITlNT
 								dHJpbmcBlIQB
-								KwdBbmFseXNl
-								hoQCaUkBB5KE
-								hIQMTlNEaWN0
-								aW9uYXJ5AJSE
-								AWkEkoSWlgZO
-								U0tlcm6GkoSE
-								hAhOU051bWJl
-								cgCEhAdOU1Zh
-								bHVlAJSEASqE
-								hAFknYMAAAAA
-								AADgv4aShJaW
+								KwhDb2FjaGlu
+								Z4aEAmlJAQiS
+								hISEDE5TRGlj
+								dGlvbmFyeQCU
+								hAFpBJKElpYH
+								TlNDb2xvcoaS
+								hISEB05TQ29s
+								b3IAlIQBYwKE
+								BGZmZmYAAAAB
+								hpKElpYQTlNQ
+								YXJhZ3JhcGhT
+								dHlsZYaShISE
 								EE5TUGFyYWdy
-								YXBoU3R5bGWG
-								koSEhBBOU1Bh
-								cmFncmFwaFN0
-								eWxlAJSEBEND
-								QFMAAISEhAdO
-								U0FycmF5AJSZ
-								DJKEhIQJTlNU
-								ZXh0VGFiAJSE
-								AkNmAByGkoSk
-								ogA4hpKEpKIA
-								VIaShKSiAHCG
-								koSkogCBjACG
-								koSkogCBqACG
-								koSkogCBxACG
-								koSkogCB4ACG
-								koSkogCB/ACG
-								koSkogCBGAGG
-								koSkogCBNAGG
-								koSkogCBUAGG
-								hgCGkoSWlgZO
-								U0ZvbnSGkoSE
-								hAZOU0ZvbnQe
-								lJkkhAVbMzZj
-								XQYAAAAcAAAA
-								//5IAGUAbAB2
-								AGUAdABpAGMA
-								YQBOAGUAdQBl
-								AIQBZhSEAWMA
-								pgGmAKYAhpKE
-								lpYHTlNDb2xv
-								coaShISEB05T
-								Q29sb3IAlKYC
-								hARmZmZmAAAA
-								AYaGhg==
+								YXBoU3R5bGUA
+								lIQEQ0NAUwAA
+								hISEB05TQXJy
+								YXkAlJkMkoSE
+								hAlOU1RleHRU
+								YWIAlIQCQ2YA
+								HIaShKKhADiG
+								koSioQBUhpKE
+								oqEAcIaShKKh
+								AIGMAIaShKKh
+								AIGoAIaShKKh
+								AIHEAIaShKKh
+								AIHgAIaShKKh
+								AIH8AIaShKKh
+								AIEYAYaShKKh
+								AIE0AYaShKKh
+								AIFQAYaGAIaS
+								hJaWBk5TRm9u
+								dIaShISEBk5T
+								Rm9udB6UmSSE
+								BVszNmNdBgAA
+								ABwAAAD//kgA
+								ZQBsAHYAZQB0
+								AGkAYwBhAE4A
+								ZQB1AGUAhAFm
+								FJsAmwGbAJsA
+								hpKElpYGTlNL
+								ZXJuhpKEhIQI
+								TlNOdW1iZXIA
+								hIQHTlNWYWx1
+								ZQCUhAEqhIQB
+								ZKiDAAAAAAAA
+								4L+GhoY=
 												</data>
 												<key>Text</key>
 												<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -32122,7 +31811,7 @@ Historikk}</string>
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
 \f0\fs40 \cf2 \kerning1\expnd-2\expndtw-10
-Analyse}</string>
+Coaching}</string>
 												<key>VerticalPad</key>
 												<integer>0</integer>
 											</dict>
@@ -34848,49 +34537,49 @@ Analyse}</string>
 								coaEAmlJAQiS
 								hISEDE5TRGlj
 								dGlvbmFyeQCU
-								hAFpBJKElpYG
-								TlNLZXJuhpKE
-								hIQITlNOdW1i
-								ZXIAhIQHTlNW
-								YWx1ZQCUhAEq
-								hIQBZJ2DmpmZ
-								mZmZuT+GkoSW
-								lhBOU1BhcmFn
-								cmFwaFN0eWxl
-								hpKEhIQQTlNQ
-								YXJhZ3JhcGhT
-								dHlsZQCUhARD
-								Q0BTAACEhIQH
-								TlNBcnJheQCU
-								mQyShISECU5T
-								VGV4dFRhYgCU
-								hAJDZgAchpKE
-								pKIAOIaShKSi
-								AFSGkoSkogBw
-								hpKEpKIAgYwA
-								hpKEpKIAgagA
-								hpKEpKIAgcQA
-								hpKEpKIAgeAA
-								hpKEpKIAgfwA
-								hpKEpKIAgRgB
-								hpKEpKIAgTQB
-								hpKEpKIAgVAB
-								hoYAhpKElpYG
-								TlNGb250hpKE
-								hIQGTlNGb250
-								HpSZNIQFWzUy
-								Y10GAAAAKgAA
-								AP/+SABlAGwA
-								dgBlAHQAaQBj
-								AGEATgBlAHUA
-								ZQAtAE0AZQBk
-								AGkAdQBtAAAA
-								hAFmIoQBYwCm
-								AaYApgCGkoSW
-								lgdOU0NvbG9y
-								hpKEhIQHTlND
-								b2xvcgCUpgKE
+								hAFpBJKElpYH
+								TlNDb2xvcoaS
+								hISEB05TQ29s
+								b3IAlIQBYwKE
 								BGZmZmYAAAAB
+								hpKElpYQTlNQ
+								YXJhZ3JhcGhT
+								dHlsZYaShISE
+								EE5TUGFyYWdy
+								YXBoU3R5bGUA
+								lIQEQ0NAUwAA
+								hISEB05TQXJy
+								YXkAlJkMkoSE
+								hAlOU1RleHRU
+								YWIAlIQCQ2YA
+								HIaShKKhADiG
+								koSioQBUhpKE
+								oqEAcIaShKKh
+								AIGMAIaShKKh
+								AIGoAIaShKKh
+								AIHEAIaShKKh
+								AIHgAIaShKKh
+								AIH8AIaShKKh
+								AIEYAYaShKKh
+								AIE0AYaShKKh
+								AIFQAYaGAIaS
+								hJaWBk5TRm9u
+								dIaShISEBk5T
+								Rm9udB6UmTSE
+								BVs1MmNdBgAA
+								ACoAAAD//kgA
+								ZQBsAHYAZQB0
+								AGkAYwBhAE4A
+								ZQB1AGUALQBN
+								AGUAZABpAHUA
+								bQAAAIQBZiKb
+								AJsBmwCbAIaS
+								hJaWBk5TS2Vy
+								boaShISECE5T
+								TnVtYmVyAISE
+								B05TVmFsdWUA
+								lIQBKoSEAWSo
+								g5qZmZmZmbk/
 								hoaG
 										</data>
 										<key>Text</key>
@@ -34980,28 +34669,28 @@ Begynner}</string>
 								ngCBGAGGkoSf
 								ngCBNAGGkoSf
 								ngCBUAGGhgCG
-								koSWlgZOU0tl
-								cm6GkoSEhAhO
-								U051bWJlcgCE
-								hAdOU1ZhbHVl
-								AJSEASqEhAFk
-								ooOamZmZmZnJ
-								P4aShJaWBk5T
-								Rm9udIaShISE
-								Bk5TRm9udB6U
-								mTCEBVs0OGNd
-								BgAAACYAAAD/
-								/kgAZQBsAHYA
-								ZQB0AGkAYwBh
-								AE4AZQB1AGUA
-								LQBCAG8AbABk
-								AAAAhAFmIoQB
-								YwCmAaYApgCG
 								koSWlgdOU0Nv
 								bG9yhpKEhIQH
 								TlNDb2xvcgCU
-								pgKEBGZmZmYA
-								AAABhoaG
+								hAFjAoQEZmZm
+								ZgAAAAGGkoSW
+								lgZOU0ZvbnSG
+								koSEhAZOU0Zv
+								bnQelJkwhAVb
+								NDhjXQYAAAAm
+								AAAA//5IAGUA
+								bAB2AGUAdABp
+								AGMAYQBOAGUA
+								dQBlAC0AQgBv
+								AGwAZAAAAIQB
+								ZiKgAKABoACg
+								AIaShJaWBk5T
+								S2VyboaShISE
+								CE5TTnVtYmVy
+								AISEB05TVmFs
+								dWUAlIQBKoSE
+								AWSog5qZmZmZ
+								mck/hoaG
 										</data>
 										<key>Text</key>
 										<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -35329,8 +35018,8 @@ Her ser vi p\'e5 aktivitetene dine og stiller sp\'f8rsm\'e5l basert p\'e5 m\'e5l
 					<integer>2</integer>
 					<key>Points</key>
 					<array>
-						<string>{259.5, 1416.4241942036281}</string>
-						<string>{161, 1417.5336781807905}</string>
+						<string>{259.5, 1416.424194203679}</string>
+						<string>{161, 1417.533678180858}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -35933,8 +35622,8 @@ Avsl\'e5 sessjonen}</string>
 					<integer>4</integer>
 					<key>Points</key>
 					<array>
-						<string>{876.74999637044243, 535.14992513235268}</string>
-						<string>{970, 535.1009893257642}</string>
+						<string>{876.74999637044243, 535.17416707372911}</string>
+						<string>{970, 535.17332831227532}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -36127,47 +35816,47 @@ Avsl\'e5 sessjonen}</string>
 								CpKEhIQMTlNE
 								aWN0aW9uYXJ5
 								AJSEAWkEkoSW
-								lgdOU0NvbG9y
-								hpKEhIQHTlND
-								b2xvcgCUhAFj
-								AoQEZmZmZgEB
-								AQGGkoSWlhBO
+								lgZOU0tlcm6G
+								koSEhAhOU051
+								bWJlcgCEhAdO
+								U1ZhbHVlAJSE
+								ASqEhAFknYOa
+								mZmZmZmpP4aS
+								hJaWEE5TUGFy
+								YWdyYXBoU3R5
+								bGWGkoSEhBBO
 								U1BhcmFncmFw
-								aFN0eWxlhpKE
-								hIQQTlNQYXJh
-								Z3JhcGhTdHls
-								ZQCUhARDQ0BT
-								AACEhIQHTlNB
-								cnJheQCUmQyS
-								hISECU5TVGV4
-								dFRhYgCUhAJD
-								ZgAchpKEoqEA
-								OIaShKKhAFSG
-								koSioQBwhpKE
-								oqEAgYwAhpKE
-								oqEAgagAhpKE
-								oqEAgcQAhpKE
-								oqEAgeAAhpKE
-								oqEAgfwAhpKE
-								oqEAgRgBhpKE
-								oqEAgTQBhpKE
-								oqEAgVABhoYA
-								hpKElpYGTlNG
-								b250hpKEhIQG
-								TlNGb250HpSZ
-								JIQFWzM2Y10G
-								AAAAHAAAAP/+
-								SABlAGwAdgBl
-								AHQAaQBjAGEA
-								TgBlAHUAZQCE
-								AWYamwCbAZsA
-								mwCGkoSWlgZO
-								U0tlcm6GkoSE
-								hAhOU051bWJl
-								cgCEhAdOU1Zh
-								bHVlAJSEASqE
-								hAFkqIOamZmZ
-								mZmpP4aGhg==
+								aFN0eWxlAJSE
+								BENDQFMAAISE
+								hAdOU0FycmF5
+								AJSZDJKEhIQJ
+								TlNUZXh0VGFi
+								AJSEAkNmAByG
+								koSkogA4hpKE
+								pKIAVIaShKSi
+								AHCGkoSkogCB
+								jACGkoSkogCB
+								qACGkoSkogCB
+								xACGkoSkogCB
+								4ACGkoSkogCB
+								/ACGkoSkogCB
+								GAGGkoSkogCB
+								NAGGkoSkogCB
+								UAGGhgCGkoSW
+								lgZOU0ZvbnSG
+								koSEhAZOU0Zv
+								bnQelJkkhAVb
+								MzZjXQYAAAAc
+								AAAA//5IAGUA
+								bAB2AGUAdABp
+								AGMAYQBOAGUA
+								dQBlAIQBZhqE
+								AWMApgGmAKYA
+								hpKElpYHTlND
+								b2xvcoaShISE
+								B05TQ29sb3IA
+								lKYChARmZmZm
+								AQEBAYaGhg==
 								</data>
 								<key>Text</key>
 								<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -36234,47 +35923,47 @@ Ikke mulig}</string>
 								AmlJAQWShISE
 								DE5TRGljdGlv
 								bmFyeQCUhAFp
-								BJKElpYGTlNL
-								ZXJuhpKEhIQI
-								TlNOdW1iZXIA
-								hIQHTlNWYWx1
-								ZQCUhAEqhIQB
-								ZJ2DmpmZmZmZ
-								qT+GkoSWlhBO
-								U1BhcmFncmFw
-								aFN0eWxlhpKE
-								hIQQTlNQYXJh
+								BJKElpYHTlND
+								b2xvcoaShISE
+								B05TQ29sb3IA
+								lIQBYwKEBGZm
+								ZmYAAAABhpKE
+								lpYQTlNQYXJh
 								Z3JhcGhTdHls
-								ZQCUhARDQ0BT
-								AACEhIQHTlNB
-								cnJheQCUmQyS
-								hISECU5TVGV4
-								dFRhYgCUhAJD
-								ZgAchpKEpKIA
-								OIaShKSiAFSG
-								koSkogBwhpKE
-								pKIAgYwAhpKE
-								pKIAgagAhpKE
-								pKIAgcQAhpKE
-								pKIAgeAAhpKE
-								pKIAgfwAhpKE
-								pKIAgRgBhpKE
-								pKIAgTQBhpKE
-								pKIAgVABhoYA
-								hpKElpYGTlNG
-								b250hpKEhIQG
-								TlNGb250HpSZ
-								JIQFWzM2Y10G
-								AAAAHAAAAP/+
-								SABlAGwAdgBl
-								AHQAaQBjAGEA
-								TgBlAHUAZQCE
-								AWYahAFjAKYB
-								pgCmAIaShJaW
-								B05TQ29sb3KG
-								koSEhAdOU0Nv
-								bG9yAJSmAoQE
-								ZmZmZgAAAAGG
+								ZYaShISEEE5T
+								UGFyYWdyYXBo
+								U3R5bGUAlIQE
+								Q0NAUwAAhISE
+								B05TQXJyYXkA
+								lJkMkoSEhAlO
+								U1RleHRUYWIA
+								lIQCQ2YAHIaS
+								hKKhADiGkoSi
+								oQBUhpKEoqEA
+								cIaShKKhAIGM
+								AIaShKKhAIGo
+								AIaShKKhAIHE
+								AIaShKKhAIHg
+								AIaShKKhAIH8
+								AIaShKKhAIEY
+								AYaShKKhAIE0
+								AYaShKKhAIFQ
+								AYaGAIaShJaW
+								Bk5TRm9udIaS
+								hISEBk5TRm9u
+								dB6UmSSEBVsz
+								NmNdBgAAABwA
+								AAD//kgAZQBs
+								AHYAZQB0AGkA
+								YwBhAE4AZQB1
+								AGUAhAFmGpsA
+								mwGbAJsAhpKE
+								lpYGTlNLZXJu
+								hpKEhIQITlNO
+								dW1iZXIAhIQH
+								TlNWYWx1ZQCU
+								hAEqhIQBZKiD
+								mpmZmZmZqT+G
 								hoY=
 								</data>
 								<key>Text</key>
@@ -36620,15 +36309,15 @@ Du sa ogs\'e5 at du
 						koSfngCBqACGkoSfngCBxACGkoSf
 						ngCB4ACGkoSfngCB/ACGkoSfngCB
 						GAGGkoSfngCBNAGGkoSfngCBUAGG
-						hgCGkoSWlgZOU0tlcm6GkoSEhAhO
-						U051bWJlcgCEhAdOU1ZhbHVlAJSE
-						ASqEhAFkooMzMzMzMzPTv4aShJaW
-						Bk5TRm9udIaShISEBk5TRm9udB6U
-						mSSEBVszNmNdBgAAABwAAAD//kgA
-						ZQBsAHYAZQB0AGkAYwBhAE4AZQB1
-						AGUAhAFmIoQBYwCmAaYApgCGkoSW
-						lgdOU0NvbG9yhpKEhIQHTlNDb2xv
-						cgCUpgKEBGZmZmYAAAABhoaG
+						hgCGkoSWlgdOU0NvbG9yhpKEhIQH
+						TlNDb2xvcgCUhAFjAoQEZmZmZgAA
+						AAGGkoSWlgZOU0ZvbnSGkoSEhAZO
+						U0ZvbnQelJkkhAVbMzZjXQYAAAAc
+						AAAA//5IAGUAbAB2AGUAdABpAGMA
+						YQBOAGUAdQBlAIQBZiKgAKABoACg
+						AIaShJaWBk5TS2VyboaShISECE5T
+						TnVtYmVyAISEB05TVmFsdWUAlIQB
+						KoSEAWSogzMzMzMzM9O/hoaG
 						</data>
 						<key>Text</key>
 						<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -36716,15 +36405,15 @@ Ferdig}</string>
 						koSfngCBqACGkoSfngCBxACGkoSf
 						ngCB4ACGkoSfngCB/ACGkoSfngCB
 						GAGGkoSfngCBNAGGkoSfngCBUAGG
-						hgCGkoSWlgZOU0tlcm6GkoSEhAhO
-						U051bWJlcgCEhAdOU1ZhbHVlAJSE
-						ASqEhAFkooMzMzMzMzPTv4aShJaW
-						Bk5TRm9udIaShISEBk5TRm9udB6U
-						mSSEBVszNmNdBgAAABwAAAD//kgA
-						ZQBsAHYAZQB0AGkAYwBhAE4AZQB1
-						AGUAhAFmIoQBYwCmAaYApgCGkoSW
-						lgdOU0NvbG9yhpKEhIQHTlNDb2xv
-						cgCUpgKEBGZmZmYAAAABhoaG
+						hgCGkoSWlgdOU0NvbG9yhpKEhIQH
+						TlNDb2xvcgCUhAFjAoQEZmZmZgAA
+						AAGGkoSWlgZOU0ZvbnSGkoSEhAZO
+						U0ZvbnQelJkkhAVbMzZjXQYAAAAc
+						AAAA//5IAGUAbAB2AGUAdABpAGMA
+						YQBOAGUAdQBlAIQBZiKgAKABoACg
+						AIaShJaWBk5TS2VyboaShISECE5T
+						TnVtYmVyAISEB05TVmFsdWUAlIQB
+						KoSEAWSogzMzMzMzM9O/hoaG
 						</data>
 						<key>Text</key>
 						<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -36796,47 +36485,47 @@ Avbryt}</string>
 								SQEDkoSEhAxO
 								U0RpY3Rpb25h
 								cnkAlIQBaQSS
-								hJaWB05TQ29s
-								b3KGkoSEhAdO
-								U0NvbG9yAJSE
-								AWMChARmZmZm
-								AQEBAYaShJaW
+								hJaWBk5TS2Vy
+								boaShISECE5T
+								TnVtYmVyAISE
+								B05TVmFsdWUA
+								lIQBKoSEAWSd
+								g5qZmZmZmak/
+								hpKElpYQTlNQ
+								YXJhZ3JhcGhT
+								dHlsZYaShISE
 								EE5TUGFyYWdy
-								YXBoU3R5bGWG
-								koSEhBBOU1Bh
-								cmFncmFwaFN0
-								eWxlAJSEBEND
-								QFMAAISEhAdO
-								U0FycmF5AJSZ
-								DJKEhIQJTlNU
-								ZXh0VGFiAJSE
-								AkNmAByGkoSi
-								oQA4hpKEoqEA
-								VIaShKKhAHCG
-								koSioQCBjACG
-								koSioQCBqACG
-								koSioQCBxACG
-								koSioQCB4ACG
-								koSioQCB/ACG
-								koSioQCBGAGG
-								koSioQCBNAGG
-								koSioQCBUAGG
-								hgCGkoSWlgZO
-								U0ZvbnSGkoSE
-								hAZOU0ZvbnQe
-								lJkkhAVbMzZj
-								XQYAAAAcAAAA
-								//5IAGUAbAB2
-								AGUAdABpAGMA
-								YQBOAGUAdQBl
-								AIQBZhqbAJsB
-								mwCbAIaShJaW
-								Bk5TS2VyboaS
-								hISECE5TTnVt
-								YmVyAISEB05T
-								VmFsdWUAlIQB
-								KoSEAWSog5qZ
-								mZmZmak/hoaG
+								YXBoU3R5bGUA
+								lIQEQ0NAUwAA
+								hISEB05TQXJy
+								YXkAlJkMkoSE
+								hAlOU1RleHRU
+								YWIAlIQCQ2YA
+								HIaShKSiADiG
+								koSkogBUhpKE
+								pKIAcIaShKSi
+								AIGMAIaShKSi
+								AIGoAIaShKSi
+								AIHEAIaShKSi
+								AIHgAIaShKSi
+								AIH8AIaShKSi
+								AIEYAYaShKSi
+								AIE0AYaShKSi
+								AIFQAYaGAIaS
+								hJaWBk5TRm9u
+								dIaShISEBk5T
+								Rm9udB6UmSSE
+								BVszNmNdBgAA
+								ABwAAAD//kgA
+								ZQBsAHYAZQB0
+								AGkAYwBhAE4A
+								ZQB1AGUAhAFm
+								GoQBYwCmAaYA
+								pgCGkoSWlgdO
+								U0NvbG9yhpKE
+								hIQHTlNDb2xv
+								cgCUpgKEBGZm
+								ZmYBAQEBhoaG
 								</data>
 								<key>Text</key>
 								<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -36903,48 +36592,48 @@ Nok}</string>
 								hoQCaUkBB5KE
 								hIQMTlNEaWN0
 								aW9uYXJ5AJSE
-								AWkEkoSWlgZO
-								U0tlcm6GkoSE
-								hAhOU051bWJl
-								cgCEhAdOU1Zh
-								bHVlAJSEASqE
-								hAFknYOamZmZ
-								mZmpP4aShJaW
-								EE5TUGFyYWdy
-								YXBoU3R5bGWG
-								koSEhBBOU1Bh
+								AWkEkoSWlgdO
+								U0NvbG9yhpKE
+								hIQHTlNDb2xv
+								cgCUhAFjAoQE
+								ZmZmZgAAAAGG
+								koSWlhBOU1Bh
 								cmFncmFwaFN0
-								eWxlAJSEBEND
-								QFMAAISEhAdO
-								U0FycmF5AJSZ
-								DJKEhIQJTlNU
-								ZXh0VGFiAJSE
-								AkNmAByGkoSk
-								ogA4hpKEpKIA
-								VIaShKSiAHCG
-								koSkogCBjACG
-								koSkogCBqACG
-								koSkogCBxACG
-								koSkogCB4ACG
-								koSkogCB/ACG
-								koSkogCBGAGG
-								koSkogCBNAGG
-								koSkogCBUAGG
-								hgCGkoSWlgZO
-								U0ZvbnSGkoSE
-								hAZOU0ZvbnQe
-								lJkkhAVbMzZj
-								XQYAAAAcAAAA
-								//5IAGUAbAB2
-								AGUAdABpAGMA
-								YQBOAGUAdQBl
-								AIQBZhqEAWMA
-								pgGmAKYAhpKE
-								lpYHTlNDb2xv
-								coaShISEB05T
-								Q29sb3IAlKYC
-								hARmZmZmAAAA
-								AYaGhg==
+								eWxlhpKEhIQQ
+								TlNQYXJhZ3Jh
+								cGhTdHlsZQCU
+								hARDQ0BTAACE
+								hIQHTlNBcnJh
+								eQCUmQyShISE
+								CU5TVGV4dFRh
+								YgCUhAJDZgAc
+								hpKEoqEAOIaS
+								hKKhAFSGkoSi
+								oQBwhpKEoqEA
+								gYwAhpKEoqEA
+								gagAhpKEoqEA
+								gcQAhpKEoqEA
+								geAAhpKEoqEA
+								gfwAhpKEoqEA
+								gRgBhpKEoqEA
+								gTQBhpKEoqEA
+								gVABhoYAhpKE
+								lpYGTlNGb250
+								hpKEhIQGTlNG
+								b250HpSZJIQF
+								WzM2Y10GAAAA
+								HAAAAP/+SABl
+								AGwAdgBlAHQA
+								aQBjAGEATgBl
+								AHUAZQCEAWYa
+								mwCbAZsAmwCG
+								koSWlgZOU0tl
+								cm6GkoSEhAhO
+								U051bWJlcgCE
+								hAdOU1ZhbHVl
+								AJSEASqEhAFk
+								qIOamZmZmZmp
+								P4aGhg==
 								</data>
 								<key>Text</key>
 								<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -37536,26 +37225,26 @@ Forklar hvorfor du svarte slik?}</string>
 								GAGGkoSfngCB
 								NAGGkoSfngCB
 								UAGGhgCGkoSW
-								lgZOU0tlcm6G
-								koSEhAhOU051
-								bWJlcgCEhAdO
-								U1ZhbHVlAJSE
-								ASqEhAFkooMz
-								MzMzMzPTv4aS
-								hJaWBk5TRm9u
-								dIaShISEBk5T
-								Rm9udB6UmSSE
-								BVszNmNdBgAA
-								ABwAAAD//kgA
-								ZQBsAHYAZQB0
-								AGkAYwBhAE4A
-								ZQB1AGUAhAFm
-								IoQBYwCmAaYA
-								pgCGkoSWlgdO
-								U0NvbG9yhpKE
-								hIQHTlNDb2xv
-								cgCUpgKEBGZm
-								ZmYAAAABhoaG
+								lgdOU0NvbG9y
+								hpKEhIQHTlND
+								b2xvcgCUhAFj
+								AoQEZmZmZgAA
+								AAGGkoSWlgZO
+								U0ZvbnSGkoSE
+								hAZOU0ZvbnQe
+								lJkkhAVbMzZj
+								XQYAAAAcAAAA
+								//5IAGUAbAB2
+								AGUAdABpAGMA
+								YQBOAGUAdQBl
+								AIQBZiKgAKAB
+								oACgAIaShJaW
+								Bk5TS2VyboaS
+								hISECE5TTnVt
+								YmVyAISEB05T
+								VmFsdWUAlIQB
+								KoSEAWSogzMz
+								MzMzM9O/hoaG
 										</data>
 										<key>Text</key>
 										<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -37963,28 +37652,28 @@ La oss se p\'e5 f\'f8lgende aktivitet:}</string>
 								hpKEn54AgRgB
 								hpKEn54AgTQB
 								hpKEn54AgVAB
-								hoYAhpKElpYG
-								TlNLZXJuhpKE
-								hIQITlNOdW1i
-								ZXIAhIQHTlNW
-								YWx1ZQCUhAEq
-								hIQBZKKDmpmZ
-								mZmZyT+GkoSW
-								lgZOU0ZvbnSG
-								koSEhAZOU0Zv
-								bnQelJkwhAVb
-								NDhjXQYAAAAm
-								AAAA//5IAGUA
-								bAB2AGUAdABp
-								AGMAYQBOAGUA
-								dQBlAC0AQgBv
-								AGwAZAAAAIQB
-								ZiKEAWMApgGm
-								AKYAhpKElpYH
+								hoYAhpKElpYH
 								TlNDb2xvcoaS
 								hISEB05TQ29s
-								b3IAlKYChARm
-								ZmZmAAAAAYaG
+								b3IAlIQBYwKE
+								BGZmZmYAAAAB
+								hpKElpYGTlNG
+								b250hpKEhIQG
+								TlNGb250HpSZ
+								MIQFWzQ4Y10G
+								AAAAJgAAAP/+
+								SABlAGwAdgBl
+								AHQAaQBjAGEA
+								TgBlAHUAZQAt
+								AEIAbwBsAGQA
+								AACEAWYioACg
+								AaAAoACGkoSW
+								lgZOU0tlcm6G
+								koSEhAhOU051
+								bWJlcgCEhAdO
+								U1ZhbHVlAJSE
+								ASqEhAFkqIOa
+								mZmZmZnJP4aG
 								hg==
 								</data>
 								<key>Text</key>
@@ -38203,28 +37892,28 @@ Ny sessjon}</string>
 								hJ+eAIEYAYaS
 								hJ+eAIE0AYaS
 								hJ+eAIFQAYaG
-								AIaShJaWBk5T
-								S2VyboaShISE
-								CE5TTnVtYmVy
-								AISEB05TVmFs
-								dWUAlIQBKoSE
-								AWSig2ZmZmZm
-								Zta/hpKElpYG
-								TlNGb250hpKE
-								hIQGTlNGb250
-								HpSZMIQFWzQ4
-								Y10GAAAAJgAA
-								AP/+SABlAGwA
-								dgBlAHQAaQBj
-								AGEATgBlAHUA
-								ZQAtAEIAbwBs
-								AGQAAACEAWYY
-								hAFjAKYBpgCm
 								AIaShJaWB05T
 								Q29sb3KGkoSE
 								hAdOU0NvbG9y
-								AJSmAoQEZmZm
-								ZgAAAAGGhoY=
+								AJSEAWMChARm
+								ZmZmAAAAAYaS
+								hJaWBk5TRm9u
+								dIaShISEBk5T
+								Rm9udB6UmTCE
+								BVs0OGNdBgAA
+								ACYAAAD//kgA
+								ZQBsAHYAZQB0
+								AGkAYwBhAE4A
+								ZQB1AGUALQBC
+								AG8AbABkAAAA
+								hAFmGKAAoAGg
+								AKAAhpKElpYG
+								TlNLZXJuhpKE
+								hIQITlNOdW1i
+								ZXIAhIQHTlNW
+								YWx1ZQCUhAEq
+								hIQBZKiDZmZm
+								ZmZm1r+GhoY=
 								</data>
 								<key>Text</key>
 								<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -38312,26 +38001,26 @@ Ny sessjon}</string>
 								gRgBhpKEn54A
 								gTQBhpKEn54A
 								gVABhoYAhpKE
-								lpYGTlNLZXJu
-								hpKEhIQITlNO
-								dW1iZXIAhIQH
-								TlNWYWx1ZQCU
-								hAEqhIQBZKKD
-								MzMzMzMzw7+G
-								koSWlgZOU0Zv
-								bnSGkoSEhAZO
-								U0ZvbnQelJkk
-								hAVbMzZjXQYA
-								AAAcAAAA//5I
-								AGUAbAB2AGUA
-								dABpAGMAYQBO
-								AGUAdQBlAIQB
-								ZhiEAWMApgGm
-								AKYAhpKElpYH
-								TlNDb2xvcoaS
-								hISEB05TQ29s
-								b3IAlKYChARm
-								ZmZmAAAAAYaG
+								lpYHTlNDb2xv
+								coaShISEB05T
+								Q29sb3IAlIQB
+								YwKEBGZmZmYA
+								AAABhpKElpYG
+								TlNGb250hpKE
+								hIQGTlNGb250
+								HpSZJIQFWzM2
+								Y10GAAAAHAAA
+								AP/+SABlAGwA
+								dgBlAHQAaQBj
+								AGEATgBlAHUA
+								ZQCEAWYYoACg
+								AaAAoACGkoSW
+								lgZOU0tlcm6G
+								koSEhAhOU051
+								bWJlcgCEhAdO
+								U1ZhbHVlAJSE
+								ASqEhAFkqIMz
+								MzMzMzPDv4aG
 								hg==
 								</data>
 								<key>Text</key>
@@ -39398,7 +39087,7 @@ AT&amp;T}</string>
 					<key>Print</key>
 					<string>YES</string>
 					<key>View</key>
-					<string>YES</string>
+					<string>NO</string>
 				</dict>
 				<dict>
 					<key>Lock</key>
@@ -41463,15 +41152,15 @@ AT&amp;T}</string>
 						ngCBjACGkoSfngCBqACGkoSfngCB
 						xACGkoSfngCB4ACGkoSfngCB/ACG
 						koSfngCBGAGGkoSfngCBNAGGkoSf
-						ngCBUAGGhgCGkoSWlgZOU0tlcm6G
-						koSEhAhOU051bWJlcgCEhAdOU1Zh
-						bHVlAJSEASqEhAFkooMzMzMzMzPT
-						v4aShJaWBk5TRm9udIaShISEBk5T
-						Rm9udB6UmSSEBVszNmNdBgAAABwA
-						AAD//kgAZQBsAHYAZQB0AGkAYwBh
-						AE4AZQB1AGUAhAFmIoQBYwCmAaYA
-						pgCGkoSWlgdOU0NvbG9yhpKEhIQH
-						TlNDb2xvcgCUpgKEBGZmZmYAAAAB
+						ngCBUAGGhgCGkoSWlgdOU0NvbG9y
+						hpKEhIQHTlNDb2xvcgCUhAFjAoQE
+						ZmZmZgAAAAGGkoSWlgZOU0ZvbnSG
+						koSEhAZOU0ZvbnQelJkkhAVbMzZj
+						XQYAAAAcAAAA//5IAGUAbAB2AGUA
+						dABpAGMAYQBOAGUAdQBlAIQBZiKg
+						AKABoACgAIaShJaWBk5TS2VyboaS
+						hISECE5TTnVtYmVyAISEB05TVmFs
+						dWUAlIQBKoSEAWSogzMzMzMzM9O/
 						hoaG
 						</data>
 						<key>Text</key>
@@ -41764,28 +41453,28 @@ Slett Sesjon}</string>
 								ngCBGAGGkoSf
 								ngCBNAGGkoSf
 								ngCBUAGGhgCG
-								koSWlgZOU0tl
-								cm6GkoSEhAhO
-								U051bWJlcgCE
-								hAdOU1ZhbHVl
-								AJSEASqEhAFk
-								ooOamZmZmZnJ
-								P4aShJaWBk5T
-								Rm9udIaShISE
-								Bk5TRm9udB6U
-								mTCEBVs0OGNd
-								BgAAACYAAAD/
-								/kgAZQBsAHYA
-								ZQB0AGkAYwBh
-								AE4AZQB1AGUA
-								LQBCAG8AbABk
-								AAAAhAFmIoQB
-								YwCmAaYApgCG
 								koSWlgdOU0Nv
 								bG9yhpKEhIQH
 								TlNDb2xvcgCU
-								pgKEBGZmZmYA
-								AAABhoaG
+								hAFjAoQEZmZm
+								ZgAAAAGGkoSW
+								lgZOU0ZvbnSG
+								koSEhAZOU0Zv
+								bnQelJkwhAVb
+								NDhjXQYAAAAm
+								AAAA//5IAGUA
+								bAB2AGUAdABp
+								AGMAYQBOAGUA
+								dQBlAC0AQgBv
+								AGwAZAAAAIQB
+								ZiKgAKABoACg
+								AIaShJaWBk5T
+								S2VyboaShISE
+								CE5TTnVtYmVy
+								AISEB05TVmFs
+								dWUAlIQBKoSE
+								AWSog5qZmZmZ
+								mck/hoaG
 								</data>
 								<key>Text</key>
 								<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -41883,27 +41572,27 @@ Sesjon}</string>
 								n54AgRgBhpKE
 								n54AgTQBhpKE
 								n54AgVABhoYA
-								hpKElpYGTlNL
-								ZXJuhpKEhIQI
-								TlNOdW1iZXIA
-								hIQHTlNWYWx1
-								ZQCUhAEqhIQB
-								ZKKDMzMzMzMz
-								07+GkoSWlgZO
-								U0ZvbnSGkoSE
-								hAZOU0ZvbnQe
-								lJkkhAVbMzZj
-								XQYAAAAcAAAA
-								//5IAGUAbAB2
-								AGUAdABpAGMA
-								YQBOAGUAdQBl
-								AIQBZiKEAWMA
-								pgGmAKYAhpKE
-								lpYHTlNDb2xv
-								coaShISEB05T
-								Q29sb3IAlKYC
-								hARmZmZmAAAA
-								AYaGhg==
+								hpKElpYHTlND
+								b2xvcoaShISE
+								B05TQ29sb3IA
+								lIQBYwKEBGZm
+								ZmYAAAABhpKE
+								lpYGTlNGb250
+								hpKEhIQGTlNG
+								b250HpSZJIQF
+								WzM2Y10GAAAA
+								HAAAAP/+SABl
+								AGwAdgBlAHQA
+								aQBjAGEATgBl
+								AHUAZQCEAWYi
+								oACgAaAAoACG
+								koSWlgZOU0tl
+								cm6GkoSEhAhO
+								U051bWJlcgCE
+								hAdOU1ZhbHVl
+								AJSEASqEhAFk
+								qIMzMzMzMzPT
+								v4aGhg==
 								</data>
 								<key>Text</key>
 								<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -42260,28 +41949,28 @@ Analyse}</string>
 								hJ+eAIEYAYaS
 								hJ+eAIE0AYaS
 								hJ+eAIFQAYaG
-								AIaShJaWBk5T
-								S2VyboaShISE
-								CE5TTnVtYmVy
-								AISEB05TVmFs
-								dWUAlIQBKoSE
-								AWSig2ZmZmZm
-								Zta/hpKElpYG
-								TlNGb250hpKE
-								hIQGTlNGb250
-								HpSZMIQFWzQ4
-								Y10GAAAAJgAA
-								AP/+SABlAGwA
-								dgBlAHQAaQBj
-								AGEATgBlAHUA
-								ZQAtAEIAbwBs
-								AGQAAACEAWYY
-								hAFjAKYBpgCm
 								AIaShJaWB05T
 								Q29sb3KGkoSE
 								hAdOU0NvbG9y
-								AJSmAoQEZmZm
-								ZgAAAAGGhoY=
+								AJSEAWMChARm
+								ZmZmAAAAAYaS
+								hJaWBk5TRm9u
+								dIaShISEBk5T
+								Rm9udB6UmTCE
+								BVs0OGNdBgAA
+								ACYAAAD//kgA
+								ZQBsAHYAZQB0
+								AGkAYwBhAE4A
+								ZQB1AGUALQBC
+								AG8AbABkAAAA
+								hAFmGKAAoAGg
+								AKAAhpKElpYG
+								TlNLZXJuhpKE
+								hIQITlNOdW1i
+								ZXIAhIQHTlNW
+								YWx1ZQCUhAEq
+								hIQBZKiDZmZm
+								ZmZm1r+GhoY=
 								</data>
 								<key>Text</key>
 								<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -42369,26 +42058,26 @@ Analyse}</string>
 								gRgBhpKEn54A
 								gTQBhpKEn54A
 								gVABhoYAhpKE
-								lpYGTlNLZXJu
-								hpKEhIQITlNO
-								dW1iZXIAhIQH
-								TlNWYWx1ZQCU
-								hAEqhIQBZKKD
-								MzMzMzMzw7+G
-								koSWlgZOU0Zv
-								bnSGkoSEhAZO
-								U0ZvbnQelJkk
-								hAVbMzZjXQYA
-								AAAcAAAA//5I
-								AGUAbAB2AGUA
-								dABpAGMAYQBO
-								AGUAdQBlAIQB
-								ZhiEAWMApgGm
-								AKYAhpKElpYH
-								TlNDb2xvcoaS
-								hISEB05TQ29s
-								b3IAlKYChARm
-								ZmZmAAAAAYaG
+								lpYHTlNDb2xv
+								coaShISEB05T
+								Q29sb3IAlIQB
+								YwKEBGZmZmYA
+								AAABhpKElpYG
+								TlNGb250hpKE
+								hIQGTlNGb250
+								HpSZJIQFWzM2
+								Y10GAAAAHAAA
+								AP/+SABlAGwA
+								dgBlAHQAaQBj
+								AGEATgBlAHUA
+								ZQCEAWYYoACg
+								AaAAoACGkoSW
+								lgZOU0tlcm6G
+								koSEhAhOU051
+								bWJlcgCEhAdO
+								U1ZhbHVlAJSE
+								ASqEhAFkqIMz
+								MzMzMzPDv4aG
 								hg==
 								</data>
 								<key>Text</key>
@@ -45845,8 +45534,8 @@ AT&amp;T}</string>
 					<integer>0</integer>
 					<key>Points</key>
 					<array>
-						<string>{850.01427246043295, 709.34861920057449}</string>
-						<string>{957.99999999999989, 709.43973006120825}</string>
+						<string>{850.01428723868571, 709.34863408807064}</string>
+						<string>{958, 709.43995606434999}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -45939,8 +45628,8 @@ AT&amp;T}</string>
 					<integer>0</integer>
 					<key>Points</key>
 					<array>
-						<string>{646.3967421584523, 1563.1395999999995}</string>
-						<string>{646.54984082044382, 1852.8604000000007}</string>
+						<string>{635.38980901500508, 1563.1395999999995}</string>
+						<string>{645.53300500019327, 1852.8604000000007}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -46496,26 +46185,26 @@ AT&amp;T}</string>
 								ngCBGAGGkoSf
 								ngCBNAGGkoSf
 								ngCBUAGGhgCG
-								koSWlgZOU0tl
-								cm6GkoSEhAhO
-								U051bWJlcgCE
-								hAdOU1ZhbHVl
-								AJSEASqEhAFk
-								ooMzMzMzMzPT
-								v4aShJaWBk5T
-								Rm9udIaShISE
-								Bk5TRm9udB6U
-								mSSEBVszNmNd
-								BgAAABwAAAD/
-								/kgAZQBsAHYA
-								ZQB0AGkAYwBh
-								AE4AZQB1AGUA
-								hAFmIoQBYwCm
-								AaYApgCGkoSW
-								lgdOU0NvbG9y
-								hpKEhIQHTlND
-								b2xvcgCUpgKE
-								BGZmZmYAAAAB
+								koSWlgdOU0Nv
+								bG9yhpKEhIQH
+								TlNDb2xvcgCU
+								hAFjAoQEZmZm
+								ZgAAAAGGkoSW
+								lgZOU0ZvbnSG
+								koSEhAZOU0Zv
+								bnQelJkkhAVb
+								MzZjXQYAAAAc
+								AAAA//5IAGUA
+								bAB2AGUAdABp
+								AGMAYQBOAGUA
+								dQBlAIQBZiKg
+								AKABoACgAIaS
+								hJaWBk5TS2Vy
+								boaShISECE5T
+								TnVtYmVyAISE
+								B05TVmFsdWUA
+								lIQBKoSEAWSo
+								gzMzMzMzM9O/
 								hoaG
 								</data>
 								<key>Text</key>
@@ -46803,26 +46492,26 @@ M\'e5l 2}</string>
 								ngCBGAGGkoSf
 								ngCBNAGGkoSf
 								ngCBUAGGhgCG
-								koSWlgZOU0tl
-								cm6GkoSEhAhO
-								U051bWJlcgCE
-								hAdOU1ZhbHVl
-								AJSEASqEhAFk
-								ooMzMzMzMzPT
-								v4aShJaWBk5T
-								Rm9udIaShISE
-								Bk5TRm9udB6U
-								mSSEBVszNmNd
-								BgAAABwAAAD/
-								/kgAZQBsAHYA
-								ZQB0AGkAYwBh
-								AE4AZQB1AGUA
-								hAFmIoQBYwCm
-								AaYApgCGkoSW
-								lgdOU0NvbG9y
-								hpKEhIQHTlND
-								b2xvcgCUpgKE
-								BGZmZmYAAAAB
+								koSWlgdOU0Nv
+								bG9yhpKEhIQH
+								TlNDb2xvcgCU
+								hAFjAoQEZmZm
+								ZgAAAAGGkoSW
+								lgZOU0ZvbnSG
+								koSEhAZOU0Zv
+								bnQelJkkhAVb
+								MzZjXQYAAAAc
+								AAAA//5IAGUA
+								bAB2AGUAdABp
+								AGMAYQBOAGUA
+								dQBlAIQBZiKg
+								AKABoACgAIaS
+								hJaWBk5TS2Vy
+								boaShISECE5T
+								TnVtYmVyAISE
+								B05TVmFsdWUA
+								lIQBKoSEAWSo
+								gzMzMzMzM9O/
 								hoaG
 								</data>
 								<key>Text</key>
@@ -47292,28 +46981,28 @@ Mine m\'e5l er:}</string>
 								gRgBhpKEn54A
 								gTQBhpKEn54A
 								gVABhoYAhpKE
-								lpYGTlNLZXJu
-								hpKEhIQITlNO
-								dW1iZXIAhIQH
-								TlNWYWx1ZQCU
-								hAEqhIQBZKKD
-								mpmZmZmZyT+G
-								koSWlgZOU0Zv
-								bnSGkoSEhAZO
-								U0ZvbnQelJkw
-								hAVbNDhjXQYA
-								AAAmAAAA//5I
-								AGUAbAB2AGUA
-								dABpAGMAYQBO
-								AGUAdQBlAC0A
-								QgBvAGwAZAAA
-								AIQBZiKEAWMA
-								pgGmAKYAhpKE
 								lpYHTlNDb2xv
 								coaShISEB05T
-								Q29sb3IAlKYC
-								hARmZmZmAAAA
-								AYaGhg==
+								Q29sb3IAlIQB
+								YwKEBGZmZmYA
+								AAABhpKElpYG
+								TlNGb250hpKE
+								hIQGTlNGb250
+								HpSZMIQFWzQ4
+								Y10GAAAAJgAA
+								AP/+SABlAGwA
+								dgBlAHQAaQBj
+								AGEATgBlAHUA
+								ZQAtAEIAbwBs
+								AGQAAACEAWYi
+								oACgAaAAoACG
+								koSWlgZOU0tl
+								cm6GkoSEhAhO
+								U051bWJlcgCE
+								hAdOU1ZhbHVl
+								AJSEASqEhAFk
+								qIOamZmZmZnJ
+								P4aGhg==
 								</data>
 								<key>Text</key>
 								<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -47411,27 +47100,27 @@ M\'e5l}</string>
 								hJ+eAIEYAYaS
 								hJ+eAIE0AYaS
 								hJ+eAIFQAYaG
-								AIaShJaWBk5T
-								S2VyboaShISE
-								CE5TTnVtYmVy
-								AISEB05TVmFs
-								dWUAlIQBKoSE
-								AWSig5qZmZmZ
-								mcm/hpKElpYG
-								TlNGb250hpKE
-								hIQGTlNGb250
-								HpSZJIQFWzM2
-								Y10GAAAAHAAA
-								AP/+SABlAGwA
-								dgBlAHQAaQBj
-								AGEATgBlAHUA
-								ZQCEAWYihAFj
-								AKYBpgCmAIaS
-								hJaWB05TQ29s
-								b3KGkoSEhAdO
-								U0NvbG9yAJSm
-								AoQEZmZmZgAA
-								AAGGhoY=
+								AIaShJaWB05T
+								Q29sb3KGkoSE
+								hAdOU0NvbG9y
+								AJSEAWMChARm
+								ZmZmAAAAAYaS
+								hJaWBk5TRm9u
+								dIaShISEBk5T
+								Rm9udB6UmSSE
+								BVszNmNdBgAA
+								ABwAAAD//kgA
+								ZQBsAHYAZQB0
+								AGkAYwBhAE4A
+								ZQB1AGUAhAFm
+								IqAAoAGgAKAA
+								hpKElpYGTlNL
+								ZXJuhpKEhIQI
+								TlNOdW1iZXIA
+								hIQHTlNWYWx1
+								ZQCUhAEqhIQB
+								ZKiDmpmZmZmZ
+								yb+GhoY=
 								</data>
 								<key>Text</key>
 								<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -47649,28 +47338,28 @@ Legg til}</string>
 								hJ+eAIEYAYaS
 								hJ+eAIE0AYaS
 								hJ+eAIFQAYaG
-								AIaShJaWBk5T
-								S2VyboaShISE
-								CE5TTnVtYmVy
-								AISEB05TVmFs
-								dWUAlIQBKoSE
-								AWSig2ZmZmZm
-								Zta/hpKElpYG
-								TlNGb250hpKE
-								hIQGTlNGb250
-								HpSZMIQFWzQ4
-								Y10GAAAAJgAA
-								AP/+SABlAGwA
-								dgBlAHQAaQBj
-								AGEATgBlAHUA
-								ZQAtAEIAbwBs
-								AGQAAACEAWYY
-								hAFjAKYBpgCm
 								AIaShJaWB05T
 								Q29sb3KGkoSE
 								hAdOU0NvbG9y
-								AJSmAoQEZmZm
-								ZgAAAAGGhoY=
+								AJSEAWMChARm
+								ZmZmAAAAAYaS
+								hJaWBk5TRm9u
+								dIaShISEBk5T
+								Rm9udB6UmTCE
+								BVs0OGNdBgAA
+								ACYAAAD//kgA
+								ZQBsAHYAZQB0
+								AGkAYwBhAE4A
+								ZQB1AGUALQBC
+								AG8AbABkAAAA
+								hAFmGKAAoAGg
+								AKAAhpKElpYG
+								TlNLZXJuhpKE
+								hIQITlNOdW1i
+								ZXIAhIQHTlNW
+								YWx1ZQCUhAEq
+								hIQBZKiDZmZm
+								ZmZm1r+GhoY=
 								</data>
 								<key>Text</key>
 								<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -47758,26 +47447,26 @@ Legg til}</string>
 								gRgBhpKEn54A
 								gTQBhpKEn54A
 								gVABhoYAhpKE
-								lpYGTlNLZXJu
-								hpKEhIQITlNO
-								dW1iZXIAhIQH
-								TlNWYWx1ZQCU
-								hAEqhIQBZKKD
-								MzMzMzMzw7+G
-								koSWlgZOU0Zv
-								bnSGkoSEhAZO
-								U0ZvbnQelJkk
-								hAVbMzZjXQYA
-								AAAcAAAA//5I
-								AGUAbAB2AGUA
-								dABpAGMAYQBO
-								AGUAdQBlAIQB
-								ZhiEAWMApgGm
-								AKYAhpKElpYH
-								TlNDb2xvcoaS
-								hISEB05TQ29s
-								b3IAlKYChARm
-								ZmZmAAAAAYaG
+								lpYHTlNDb2xv
+								coaShISEB05T
+								Q29sb3IAlIQB
+								YwKEBGZmZmYA
+								AAABhpKElpYG
+								TlNGb250hpKE
+								hIQGTlNGb250
+								HpSZJIQFWzM2
+								Y10GAAAAHAAA
+								AP/+SABlAGwA
+								dgBlAHQAaQBj
+								AGEATgBlAHUA
+								ZQCEAWYYoACg
+								AaAAoACGkoSW
+								lgZOU0tlcm6G
+								koSEhAhOU051
+								bWJlcgCEhAdO
+								U1ZhbHVlAJSE
+								ASqEhAFkqIMz
+								MzMzMzPDv4aG
 								hg==
 								</data>
 								<key>Text</key>
@@ -48755,47 +48444,47 @@ AT&amp;T}</string>
 								aUkBA5KEhIQM
 								TlNEaWN0aW9u
 								YXJ5AJSEAWkE
-								koSWlgZOU0tl
-								cm6GkoSEhAhO
-								U051bWJlcgCE
-								hAdOU1ZhbHVl
-								AJSEASqEhAFk
-								nYMAAAAAAADg
-								v4aShJaWEE5T
-								UGFyYWdyYXBo
-								U3R5bGWGkoSE
-								hBBOU1BhcmFn
+								koSWlgdOU0Nv
+								bG9yhpKEhIQH
+								TlNDb2xvcgCU
+								hAFjAoQEZmZm
+								ZgAAAAGGkoSW
+								lhBOU1BhcmFn
 								cmFwaFN0eWxl
-								AJSEBENDQFMA
-								AISEhAdOU0Fy
-								cmF5AJSZDJKE
-								hIQJTlNUZXh0
-								VGFiAJSEAkNm
-								AByGkoSkogA4
-								hpKEpKIAVIaS
-								hKSiAHCGkoSk
-								ogCBjACGkoSk
-								ogCBqACGkoSk
-								ogCBxACGkoSk
-								ogCB4ACGkoSk
-								ogCB/ACGkoSk
-								ogCBGAGGkoSk
-								ogCBNAGGkoSk
-								ogCBUAGGhgCG
-								koSWlgZOU0Zv
-								bnSGkoSEhAZO
-								U0ZvbnQelJkk
-								hAVbMzZjXQYA
-								AAAcAAAA//5I
-								AGUAbAB2AGUA
-								dABpAGMAYQBO
-								AGUAdQBlAIQB
-								ZhSEAWMApgGm
-								AKYAhpKElpYH
-								TlNDb2xvcoaS
-								hISEB05TQ29s
-								b3IAlKYChARm
-								ZmZmAAAAAYaG
+								hpKEhIQQTlNQ
+								YXJhZ3JhcGhT
+								dHlsZQCUhARD
+								Q0BTAACEhIQH
+								TlNBcnJheQCU
+								mQyShISECU5T
+								VGV4dFRhYgCU
+								hAJDZgAchpKE
+								oqEAOIaShKKh
+								AFSGkoSioQBw
+								hpKEoqEAgYwA
+								hpKEoqEAgagA
+								hpKEoqEAgcQA
+								hpKEoqEAgeAA
+								hpKEoqEAgfwA
+								hpKEoqEAgRgB
+								hpKEoqEAgTQB
+								hpKEoqEAgVAB
+								hoYAhpKElpYG
+								TlNGb250hpKE
+								hIQGTlNGb250
+								HpSZJIQFWzM2
+								Y10GAAAAHAAA
+								AP/+SABlAGwA
+								dgBlAHQAaQBj
+								AGEATgBlAHUA
+								ZQCEAWYUmwCb
+								AZsAmwCGkoSW
+								lgZOU0tlcm6G
+								koSEhAhOU051
+								bWJlcgCEhAdO
+								U1ZhbHVlAJSE
+								ASqEhAFkqIMA
+								AAAAAADgv4aG
 								hg==
 												</data>
 												<key>Text</key>
@@ -48872,47 +48561,47 @@ M\'e5l}</string>
 								AQuShISEDE5T
 								RGljdGlvbmFy
 								eQCUhAFpBJKE
-								lpYGTlNLZXJu
-								hpKEhIQITlNO
-								dW1iZXIAhIQH
-								TlNWYWx1ZQCU
-								hAEqhIQBZJ2D
-								AAAAAAAA4L+G
-								koSWlhBOU1Bh
-								cmFncmFwaFN0
-								eWxlhpKEhIQQ
+								lpYHTlNDb2xv
+								coaShISEB05T
+								Q29sb3IAlIQB
+								YwKEBGZmZmYA
+								AAABhpKElpYQ
 								TlNQYXJhZ3Jh
-								cGhTdHlsZQCU
-								hARDQ0BTAACE
-								hIQHTlNBcnJh
-								eQCUmQyShISE
-								CU5TVGV4dFRh
-								YgCUhAJDZgAc
-								hpKEpKIAOIaS
-								hKSiAFSGkoSk
-								ogBwhpKEpKIA
-								gYwAhpKEpKIA
-								gagAhpKEpKIA
-								gcQAhpKEpKIA
-								geAAhpKEpKIA
-								gfwAhpKEpKIA
-								gRgBhpKEpKIA
-								gTQBhpKEpKIA
-								gVABhoYAhpKE
-								lpYGTlNGb250
-								hpKEhIQGTlNG
-								b250HpSZJIQF
-								WzM2Y10GAAAA
-								HAAAAP/+SABl
-								AGwAdgBlAHQA
-								aQBjAGEATgBl
-								AHUAZQCEAWYU
-								hAFjAKYBpgCm
-								AIaShJaWB05T
-								Q29sb3KGkoSE
-								hAdOU0NvbG9y
-								AJSmAoQEZmZm
-								ZgAAAAGGhoY=
+								cGhTdHlsZYaS
+								hISEEE5TUGFy
+								YWdyYXBoU3R5
+								bGUAlIQEQ0NA
+								UwAAhISEB05T
+								QXJyYXkAlJkM
+								koSEhAlOU1Rl
+								eHRUYWIAlIQC
+								Q2YAHIaShKKh
+								ADiGkoSioQBU
+								hpKEoqEAcIaS
+								hKKhAIGMAIaS
+								hKKhAIGoAIaS
+								hKKhAIHEAIaS
+								hKKhAIHgAIaS
+								hKKhAIH8AIaS
+								hKKhAIEYAYaS
+								hKKhAIE0AYaS
+								hKKhAIFQAYaG
+								AIaShJaWBk5T
+								Rm9udIaShISE
+								Bk5TRm9udB6U
+								mSSEBVszNmNd
+								BgAAABwAAAD/
+								/kgAZQBsAHYA
+								ZQB0AGkAYwBh
+								AE4AZQB1AGUA
+								hAFmFJsAmwGb
+								AJsAhpKElpYG
+								TlNLZXJuhpKE
+								hIQITlNOdW1i
+								ZXIAhIQHTlNW
+								YWx1ZQCUhAEq
+								hIQBZKiDAAAA
+								AAAA4L+GhoY=
 												</data>
 												<key>Text</key>
 												<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -48988,47 +48677,47 @@ Aktiviteter}</string>
 								koSEhAxOU0Rp
 								Y3Rpb25hcnkA
 								lIQBaQSShJaW
-								Bk5TS2VyboaS
-								hISECE5TTnVt
-								YmVyAISEB05T
-								VmFsdWUAlIQB
-								KoSEAWSdgwAA
-								AAAAAOC/hpKE
-								lpYQTlNQYXJh
-								Z3JhcGhTdHls
-								ZYaShISEEE5T
+								B05TQ29sb3KG
+								koSEhAdOU0Nv
+								bG9yAJSEAWMC
+								hARmZmZmAAAA
+								AYaShJaWEE5T
 								UGFyYWdyYXBo
-								U3R5bGUAlIQE
-								Q0NAUwAAhISE
-								B05TQXJyYXkA
-								lJkMkoSEhAlO
-								U1RleHRUYWIA
-								lIQCQ2YAHIaS
-								hKSiADiGkoSk
-								ogBUhpKEpKIA
-								cIaShKSiAIGM
-								AIaShKSiAIGo
-								AIaShKSiAIHE
-								AIaShKSiAIHg
-								AIaShKSiAIH8
-								AIaShKSiAIEY
-								AYaShKSiAIE0
-								AYaShKSiAIFQ
-								AYaGAIaShJaW
-								Bk5TRm9udIaS
-								hISEBk5TRm9u
-								dB6UmSSEBVsz
-								NmNdBgAAABwA
-								AAD//kgAZQBs
-								AHYAZQB0AGkA
-								YwBhAE4AZQB1
-								AGUAhAFmFIQB
-								YwCmAaYApgCG
-								koSWlgdOU0Nv
-								bG9yhpKEhIQH
-								TlNDb2xvcgCU
-								pgKEBGZmZmYA
-								AAABhoaG
+								U3R5bGWGkoSE
+								hBBOU1BhcmFn
+								cmFwaFN0eWxl
+								AJSEBENDQFMA
+								AISEhAdOU0Fy
+								cmF5AJSZDJKE
+								hIQJTlNUZXh0
+								VGFiAJSEAkNm
+								AByGkoSioQA4
+								hpKEoqEAVIaS
+								hKKhAHCGkoSi
+								oQCBjACGkoSi
+								oQCBqACGkoSi
+								oQCBxACGkoSi
+								oQCB4ACGkoSi
+								oQCB/ACGkoSi
+								oQCBGAGGkoSi
+								oQCBNAGGkoSi
+								oQCBUAGGhgCG
+								koSWlgZOU0Zv
+								bnSGkoSEhAZO
+								U0ZvbnQelJkk
+								hAVbMzZjXQYA
+								AAAcAAAA//5I
+								AGUAbAB2AGUA
+								dABpAGMAYQBO
+								AGUAdQBlAIQB
+								ZhSbAJsBmwCb
+								AIaShJaWBk5T
+								S2VyboaShISE
+								CE5TTnVtYmVy
+								AISEB05TVmFs
+								dWUAlIQBKoSE
+								AWSogwAAAAAA
+								AOC/hoaG
 												</data>
 												<key>Text</key>
 												<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -49044,7 +48733,7 @@ Historikk}</string>
 										</dict>
 										<dict>
 											<key>Bounds</key>
-											<string>{{609.39013671875, 1538.1395999999995}, {74, 25}}</string>
+											<string>{{593.90436373109969, 1538.1395999999995}, {82.095634460449219, 25}}</string>
 											<key>Class</key>
 											<string>ShapedGraphic</string>
 											<key>FitText</key>
@@ -49099,52 +48788,52 @@ Historikk}</string>
 								TlNPYmplY3QA
 								hZKEhIQITlNT
 								dHJpbmcBlIQB
-								KwdBbmFseXNl
-								hoQCaUkBB5KE
-								hIQMTlNEaWN0
-								aW9uYXJ5AJSE
-								AWkEkoSWlgZO
-								U0tlcm6GkoSE
-								hAhOU051bWJl
-								cgCEhAdOU1Zh
-								bHVlAJSEASqE
-								hAFknYMAAAAA
-								AADgv4aShJaW
+								KwhDb2FjaGlu
+								Z4aEAmlJAQiS
+								hISEDE5TRGlj
+								dGlvbmFyeQCU
+								hAFpBJKElpYH
+								TlNDb2xvcoaS
+								hISEB05TQ29s
+								b3IAlIQBYwKE
+								BGZmZmYAAAAB
+								hpKElpYQTlNQ
+								YXJhZ3JhcGhT
+								dHlsZYaShISE
 								EE5TUGFyYWdy
-								YXBoU3R5bGWG
-								koSEhBBOU1Bh
-								cmFncmFwaFN0
-								eWxlAJSEBEND
-								QFMAAISEhAdO
-								U0FycmF5AJSZ
-								DJKEhIQJTlNU
-								ZXh0VGFiAJSE
-								AkNmAByGkoSk
-								ogA4hpKEpKIA
-								VIaShKSiAHCG
-								koSkogCBjACG
-								koSkogCBqACG
-								koSkogCBxACG
-								koSkogCB4ACG
-								koSkogCB/ACG
-								koSkogCBGAGG
-								koSkogCBNAGG
-								koSkogCBUAGG
-								hgCGkoSWlgZO
-								U0ZvbnSGkoSE
-								hAZOU0ZvbnQe
-								lJkkhAVbMzZj
-								XQYAAAAcAAAA
-								//5IAGUAbAB2
-								AGUAdABpAGMA
-								YQBOAGUAdQBl
-								AIQBZhSEAWMA
-								pgGmAKYAhpKE
-								lpYHTlNDb2xv
-								coaShISEB05T
-								Q29sb3IAlKYC
-								hARmZmZmAAAA
-								AYaGhg==
+								YXBoU3R5bGUA
+								lIQEQ0NAUwAA
+								hISEB05TQXJy
+								YXkAlJkMkoSE
+								hAlOU1RleHRU
+								YWIAlIQCQ2YA
+								HIaShKKhADiG
+								koSioQBUhpKE
+								oqEAcIaShKKh
+								AIGMAIaShKKh
+								AIGoAIaShKKh
+								AIHEAIaShKKh
+								AIHgAIaShKKh
+								AIH8AIaShKKh
+								AIEYAYaShKKh
+								AIE0AYaShKKh
+								AIFQAYaGAIaS
+								hJaWBk5TRm9u
+								dIaShISEBk5T
+								Rm9udB6UmSSE
+								BVszNmNdBgAA
+								ABwAAAD//kgA
+								ZQBsAHYAZQB0
+								AGkAYwBhAE4A
+								ZQB1AGUAhAFm
+								FJsAmwGbAJsA
+								hpKElpYGTlNL
+								ZXJuhpKEhIQI
+								TlNOdW1iZXIA
+								hIQHTlNWYWx1
+								ZQCUhAEqhIQB
+								ZKiDAAAAAAAA
+								4L+GhoY=
 												</data>
 												<key>Text</key>
 												<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -49153,7 +48842,7 @@ Historikk}</string>
 \pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
 
 \f0\fs40 \cf2 \kerning1\expnd-2\expndtw-10
-Analyse}</string>
+Coaching}</string>
 												<key>VerticalPad</key>
 												<integer>0</integer>
 											</dict>
@@ -51506,8 +51195,8 @@ Analyse}</string>
 					<integer>0</integer>
 					<key>Points</key>
 					<array>
-						<string>{867.5, 1516.0119176598014}</string>
-						<string>{966, 1515.6917659804935}</string>
+						<string>{867.5, 1516.0119176598048}</string>
+						<string>{966, 1515.6917659804981}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -51543,8 +51232,8 @@ Analyse}</string>
 					<integer>0</integer>
 					<key>Points</key>
 					<array>
-						<string>{259.5, 1414.6616944655957}</string>
-						<string>{160, 1415.2055714370654}</string>
+						<string>{259.5, 1414.6463190236032}</string>
+						<string>{160, 1415.185163572447}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -52312,15 +52001,15 @@ Avsl\'e5 M\'e5l}</string>
 						koSfngCBqACGkoSfngCBxACGkoSf
 						ngCB4ACGkoSfngCB/ACGkoSfngCB
 						GAGGkoSfngCBNAGGkoSfngCBUAGG
-						hgCGkoSWlgZOU0tlcm6GkoSEhAhO
-						U051bWJlcgCEhAdOU1ZhbHVlAJSE
-						ASqEhAFkooMzMzMzMzPTv4aShJaW
-						Bk5TRm9udIaShISEBk5TRm9udB6U
-						mSSEBVszNmNdBgAAABwAAAD//kgA
-						ZQBsAHYAZQB0AGkAYwBhAE4AZQB1
-						AGUAhAFmIoQBYwCmAaYApgCGkoSW
-						lgdOU0NvbG9yhpKEhIQHTlNDb2xv
-						cgCUpgKEBGZmZmYAAAABhoaG
+						hgCGkoSWlgdOU0NvbG9yhpKEhIQH
+						TlNDb2xvcgCUhAFjAoQEZmZmZgAA
+						AAGGkoSWlgZOU0ZvbnSGkoSEhAZO
+						U0ZvbnQelJkkhAVbMzZjXQYAAAAc
+						AAAA//5IAGUAbAB2AGUAdABpAGMA
+						YQBOAGUAdQBlAIQBZiKgAKABoACg
+						AIaShJaWBk5TS2VyboaShISECE5T
+						TnVtYmVyAISEB05TVmFsdWUAlIQB
+						KoSEAWSogzMzMzMzM9O/hoaG
 						</data>
 						<key>Text</key>
 						<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -52408,15 +52097,15 @@ Ferdig}</string>
 						koSfngCBqACGkoSfngCBxACGkoSf
 						ngCB4ACGkoSfngCB/ACGkoSfngCB
 						GAGGkoSfngCBNAGGkoSfngCBUAGG
-						hgCGkoSWlgZOU0tlcm6GkoSEhAhO
-						U051bWJlcgCEhAdOU1ZhbHVlAJSE
-						ASqEhAFkooMzMzMzMzPTv4aShJaW
-						Bk5TRm9udIaShISEBk5TRm9udB6U
-						mSSEBVszNmNdBgAAABwAAAD//kgA
-						ZQBsAHYAZQB0AGkAYwBhAE4AZQB1
-						AGUAhAFmIoQBYwCmAaYApgCGkoSW
-						lgdOU0NvbG9yhpKEhIQHTlNDb2xv
-						cgCUpgKEBGZmZmYAAAABhoaG
+						hgCGkoSWlgdOU0NvbG9yhpKEhIQH
+						TlNDb2xvcgCUhAFjAoQEZmZmZgAA
+						AAGGkoSWlgZOU0ZvbnSGkoSEhAZO
+						U0ZvbnQelJkkhAVbMzZjXQYAAAAc
+						AAAA//5IAGUAbAB2AGUAdABpAGMA
+						YQBOAGUAdQBlAIQBZiKgAKABoACg
+						AIaShJaWBk5TS2VyboaShISECE5T
+						TnVtYmVyAISEB05TVmFsdWUAlIQB
+						KoSEAWSogzMzMzMzM9O/hoaG
 						</data>
 						<key>Text</key>
 						<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -52669,28 +52358,28 @@ Jeg har et m\'e5l:}</string>
 								koSfngCBGAGG
 								koSfngCBNAGG
 								koSfngCBUAGG
-								hgCGkoSWlgZO
-								U0tlcm6GkoSE
-								hAhOU051bWJl
-								cgCEhAdOU1Zh
-								bHVlAJSEASqE
-								hAFkooOamZmZ
-								mZnJP4aShJaW
-								Bk5TRm9udIaS
-								hISEBk5TRm9u
-								dB6UmTCEBVs0
-								OGNdBgAAACYA
-								AAD//kgAZQBs
-								AHYAZQB0AGkA
-								YwBhAE4AZQB1
-								AGUALQBCAG8A
-								bABkAAAAhAFm
-								IoQBYwCmAaYA
-								pgCGkoSWlgdO
+								hgCGkoSWlgdO
 								U0NvbG9yhpKE
 								hIQHTlNDb2xv
-								cgCUpgKEBGZm
-								ZmYAAAABhoaG
+								cgCUhAFjAoQE
+								ZmZmZgAAAAGG
+								koSWlgZOU0Zv
+								bnSGkoSEhAZO
+								U0ZvbnQelJkw
+								hAVbNDhjXQYA
+								AAAmAAAA//5I
+								AGUAbAB2AGUA
+								dABpAGMAYQBO
+								AGUAdQBlAC0A
+								QgBvAGwAZAAA
+								AIQBZiKgAKAB
+								oACgAIaShJaW
+								Bk5TS2VyboaS
+								hISECE5TTnVt
+								YmVyAISEB05T
+								VmFsdWUAlIQB
+								KoSEAWSog5qZ
+								mZmZmck/hoaG
 								</data>
 								<key>Text</key>
 								<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -52908,28 +52597,28 @@ Nytt M\'e5l}</string>
 								hJ+eAIEYAYaS
 								hJ+eAIE0AYaS
 								hJ+eAIFQAYaG
-								AIaShJaWBk5T
-								S2VyboaShISE
-								CE5TTnVtYmVy
-								AISEB05TVmFs
-								dWUAlIQBKoSE
-								AWSig2ZmZmZm
-								Zta/hpKElpYG
-								TlNGb250hpKE
-								hIQGTlNGb250
-								HpSZMIQFWzQ4
-								Y10GAAAAJgAA
-								AP/+SABlAGwA
-								dgBlAHQAaQBj
-								AGEATgBlAHUA
-								ZQAtAEIAbwBs
-								AGQAAACEAWYY
-								hAFjAKYBpgCm
 								AIaShJaWB05T
 								Q29sb3KGkoSE
 								hAdOU0NvbG9y
-								AJSmAoQEZmZm
-								ZgAAAAGGhoY=
+								AJSEAWMChARm
+								ZmZmAAAAAYaS
+								hJaWBk5TRm9u
+								dIaShISEBk5T
+								Rm9udB6UmTCE
+								BVs0OGNdBgAA
+								ACYAAAD//kgA
+								ZQBsAHYAZQB0
+								AGkAYwBhAE4A
+								ZQB1AGUALQBC
+								AG8AbABkAAAA
+								hAFmGKAAoAGg
+								AKAAhpKElpYG
+								TlNLZXJuhpKE
+								hIQITlNOdW1i
+								ZXIAhIQHTlNW
+								YWx1ZQCUhAEq
+								hIQBZKiDZmZm
+								ZmZm1r+GhoY=
 								</data>
 								<key>Text</key>
 								<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -53017,26 +52706,26 @@ Nytt M\'e5l}</string>
 								gRgBhpKEn54A
 								gTQBhpKEn54A
 								gVABhoYAhpKE
-								lpYGTlNLZXJu
-								hpKEhIQITlNO
-								dW1iZXIAhIQH
-								TlNWYWx1ZQCU
-								hAEqhIQBZKKD
-								MzMzMzMzw7+G
-								koSWlgZOU0Zv
-								bnSGkoSEhAZO
-								U0ZvbnQelJkk
-								hAVbMzZjXQYA
-								AAAcAAAA//5I
-								AGUAbAB2AGUA
-								dABpAGMAYQBO
-								AGUAdQBlAIQB
-								ZhiEAWMApgGm
-								AKYAhpKElpYH
-								TlNDb2xvcoaS
-								hISEB05TQ29s
-								b3IAlKYChARm
-								ZmZmAAAAAYaG
+								lpYHTlNDb2xv
+								coaShISEB05T
+								Q29sb3IAlIQB
+								YwKEBGZmZmYA
+								AAABhpKElpYG
+								TlNGb250hpKE
+								hIQGTlNGb250
+								HpSZJIQFWzM2
+								Y10GAAAAHAAA
+								AP/+SABlAGwA
+								dgBlAHQAaQBj
+								AGEATgBlAHUA
+								ZQCEAWYYoACg
+								AaAAoACGkoSW
+								lgZOU0tlcm6G
+								koSEhAhOU051
+								bWJlcgCEhAdO
+								U1ZhbHVlAJSE
+								ASqEhAFkqIMz
+								MzMzMzPDv4aG
 								hg==
 								</data>
 								<key>Text</key>
@@ -55946,8 +55635,8 @@ AT&amp;T}</string>
 					<integer>0</integer>
 					<key>Points</key>
 					<array>
-						<string>{867.5, 1411.7963419779649}</string>
-						<string>{964, 1411.4142597439966}</string>
+						<string>{867.5, 1411.9892850891445}</string>
+						<string>{964, 1411.6684495993497}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -56040,8 +55729,8 @@ AT&amp;T}</string>
 					<integer>0</integer>
 					<key>Points</key>
 					<array>
-						<string>{259.5, 1515.3128028465142}</string>
-						<string>{169.5, 1514.813303689232}</string>
+						<string>{259.5, 1514.7814066065321}</string>
+						<string>{169.5, 1514.1245861939922}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -56910,15 +56599,15 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 						AIGMAIaShJ+eAIGoAIaShJ+eAIHE
 						AIaShJ+eAIHgAIaShJ+eAIH8AIaS
 						hJ+eAIEYAYaShJ+eAIE0AYaShJ+e
-						AIFQAYaGAIaShJaWBk5TS2VyboaS
-						hISECE5TTnVtYmVyAISEB05TVmFs
-						dWUAlIQBKoSEAWSigzMzMzMzM9O/
-						hpKElpYGTlNGb250hpKEhIQGTlNG
-						b250HpSZJIQFWzM2Y10GAAAAHAAA
-						AP/+SABlAGwAdgBlAHQAaQBjAGEA
-						TgBlAHUAZQCEAWYihAFjAKYBpgCm
-						AIaShJaWB05TQ29sb3KGkoSEhAdO
-						U0NvbG9yAJSmAoQEZmZmZgAAAAGG
+						AIFQAYaGAIaShJaWB05TQ29sb3KG
+						koSEhAdOU0NvbG9yAJSEAWMChARm
+						ZmZmAAAAAYaShJaWBk5TRm9udIaS
+						hISEBk5TRm9udB6UmSSEBVszNmNd
+						BgAAABwAAAD//kgAZQBsAHYAZQB0
+						AGkAYwBhAE4AZQB1AGUAhAFmIqAA
+						oAGgAKAAhpKElpYGTlNLZXJuhpKE
+						hIQITlNOdW1iZXIAhIQHTlNWYWx1
+						ZQCUhAEqhIQBZKiDMzMzMzMz07+G
 						hoY=
 						</data>
 						<key>Text</key>
@@ -57158,15 +56847,15 @@ Slette M\'e5l}</string>
 						koSfngCBqACGkoSfngCBxACGkoSf
 						ngCB4ACGkoSfngCB/ACGkoSfngCB
 						GAGGkoSfngCBNAGGkoSfngCBUAGG
-						hgCGkoSWlgZOU0tlcm6GkoSEhAhO
-						U051bWJlcgCEhAdOU1ZhbHVlAJSE
-						ASqEhAFkooMzMzMzMzPTv4aShJaW
-						Bk5TRm9udIaShISEBk5TRm9udB6U
-						mSSEBVszNmNdBgAAABwAAAD//kgA
-						ZQBsAHYAZQB0AGkAYwBhAE4AZQB1
-						AGUAhAFmIoQBYwCmAaYApgCGkoSW
-						lgdOU0NvbG9yhpKEhIQHTlNDb2xv
-						cgCUpgKEBGZmZmYAAAABhoaG
+						hgCGkoSWlgdOU0NvbG9yhpKEhIQH
+						TlNDb2xvcgCUhAFjAoQEZmZmZgAA
+						AAGGkoSWlgZOU0ZvbnSGkoSEhAZO
+						U0ZvbnQelJkkhAVbMzZjXQYAAAAc
+						AAAA//5IAGUAbAB2AGUAdABpAGMA
+						YQBOAGUAdQBlAIQBZiKgAKABoACg
+						AIaShJaWBk5TS2VyboaShISECE5T
+						TnVtYmVyAISEB05TVmFsdWUAlIQB
+						KoSEAWSogzMzMzMzM9O/hoaG
 						</data>
 						<key>Text</key>
 						<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -57247,15 +56936,15 @@ Ferdig}</string>
 						koSfngCBqACGkoSfngCBxACGkoSf
 						ngCB4ACGkoSfngCB/ACGkoSfngCB
 						GAGGkoSfngCBNAGGkoSfngCBUAGG
-						hgCGkoSWlgZOU0tlcm6GkoSEhAhO
-						U051bWJlcgCEhAdOU1ZhbHVlAJSE
-						ASqEhAFkooMzMzMzMzPTv4aShJaW
-						Bk5TRm9udIaShISEBk5TRm9udB6U
-						mSSEBVszNmNdBgAAABwAAAD//kgA
-						ZQBsAHYAZQB0AGkAYwBhAE4AZQB1
-						AGUAhAFmIoQBYwCmAaYApgCGkoSW
-						lgdOU0NvbG9yhpKEhIQHTlNDb2xv
-						cgCUpgKEBGZmZmYAAAABhoaG
+						hgCGkoSWlgdOU0NvbG9yhpKEhIQH
+						TlNDb2xvcgCUhAFjAoQEZmZmZgAA
+						AAGGkoSWlgZOU0ZvbnSGkoSEhAZO
+						U0ZvbnQelJkkhAVbMzZjXQYAAAAc
+						AAAA//5IAGUAbAB2AGUAdABpAGMA
+						YQBOAGUAdQBlAIQBZiKgAKABoACg
+						AIaShJaWBk5TS2VyboaShISECE5T
+						TnVtYmVyAISEB05TVmFsdWUAlIQB
+						KoSEAWSogzMzMzMzM9O/hoaG
 						</data>
 						<key>Text</key>
 						<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -57508,28 +57197,28 @@ Jeg har et m\'e5l}</string>
 								hpKEn54AgRgB
 								hpKEn54AgTQB
 								hpKEn54AgVAB
-								hoYAhpKElpYG
-								TlNLZXJuhpKE
-								hIQITlNOdW1i
-								ZXIAhIQHTlNW
-								YWx1ZQCUhAEq
-								hIQBZKKDmpmZ
-								mZmZyT+GkoSW
-								lgZOU0ZvbnSG
-								koSEhAZOU0Zv
-								bnQelJkwhAVb
-								NDhjXQYAAAAm
-								AAAA//5IAGUA
-								bAB2AGUAdABp
-								AGMAYQBOAGUA
-								dQBlAC0AQgBv
-								AGwAZAAAAIQB
-								ZiKEAWMApgGm
-								AKYAhpKElpYH
+								hoYAhpKElpYH
 								TlNDb2xvcoaS
 								hISEB05TQ29s
-								b3IAlKYChARm
-								ZmZmAAAAAYaG
+								b3IAlIQBYwKE
+								BGZmZmYAAAAB
+								hpKElpYGTlNG
+								b250hpKEhIQG
+								TlNGb250HpSZ
+								MIQFWzQ4Y10G
+								AAAAJgAAAP/+
+								SABlAGwAdgBl
+								AHQAaQBjAGEA
+								TgBlAHUAZQAt
+								AEIAbwBsAGQA
+								AACEAWYioACg
+								AaAAoACGkoSW
+								lgZOU0tlcm6G
+								koSEhAhOU051
+								bWJlcgCEhAdO
+								U1ZhbHVlAJSE
+								ASqEhAFkqIOa
+								mZmZmZnJP4aG
 								hg==
 								</data>
 								<key>Text</key>
@@ -57748,28 +57437,28 @@ Endre M\'e5l}</string>
 								hJ+eAIEYAYaS
 								hJ+eAIE0AYaS
 								hJ+eAIFQAYaG
-								AIaShJaWBk5T
-								S2VyboaShISE
-								CE5TTnVtYmVy
-								AISEB05TVmFs
-								dWUAlIQBKoSE
-								AWSig2ZmZmZm
-								Zta/hpKElpYG
-								TlNGb250hpKE
-								hIQGTlNGb250
-								HpSZMIQFWzQ4
-								Y10GAAAAJgAA
-								AP/+SABlAGwA
-								dgBlAHQAaQBj
-								AGEATgBlAHUA
-								ZQAtAEIAbwBs
-								AGQAAACEAWYY
-								hAFjAKYBpgCm
 								AIaShJaWB05T
 								Q29sb3KGkoSE
 								hAdOU0NvbG9y
-								AJSmAoQEZmZm
-								ZgAAAAGGhoY=
+								AJSEAWMChARm
+								ZmZmAAAAAYaS
+								hJaWBk5TRm9u
+								dIaShISEBk5T
+								Rm9udB6UmTCE
+								BVs0OGNdBgAA
+								ACYAAAD//kgA
+								ZQBsAHYAZQB0
+								AGkAYwBhAE4A
+								ZQB1AGUALQBC
+								AG8AbABkAAAA
+								hAFmGKAAoAGg
+								AKAAhpKElpYG
+								TlNLZXJuhpKE
+								hIQITlNOdW1i
+								ZXIAhIQHTlNW
+								YWx1ZQCUhAEq
+								hIQBZKiDZmZm
+								ZmZm1r+GhoY=
 								</data>
 								<key>Text</key>
 								<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -57857,26 +57546,26 @@ Endre M\'e5l}</string>
 								gRgBhpKEn54A
 								gTQBhpKEn54A
 								gVABhoYAhpKE
-								lpYGTlNLZXJu
-								hpKEhIQITlNO
-								dW1iZXIAhIQH
-								TlNWYWx1ZQCU
-								hAEqhIQBZKKD
-								MzMzMzMzw7+G
-								koSWlgZOU0Zv
-								bnSGkoSEhAZO
-								U0ZvbnQelJkk
-								hAVbMzZjXQYA
-								AAAcAAAA//5I
-								AGUAbAB2AGUA
-								dABpAGMAYQBO
-								AGUAdQBlAIQB
-								ZhiEAWMApgGm
-								AKYAhpKElpYH
-								TlNDb2xvcoaS
-								hISEB05TQ29s
-								b3IAlKYChARm
-								ZmZmAAAAAYaG
+								lpYHTlNDb2xv
+								coaShISEB05T
+								Q29sb3IAlIQB
+								YwKEBGZmZmYA
+								AAABhpKElpYG
+								TlNGb250hpKE
+								hIQGTlNGb250
+								HpSZJIQFWzM2
+								Y10GAAAAHAAA
+								AP/+SABlAGwA
+								dgBlAHQAaQBj
+								AGEATgBlAHUA
+								ZQCEAWYYoACg
+								AaAAoACGkoSW
+								lgZOU0tlcm6G
+								koSEhAhOU051
+								bWJlcgCEhAdO
+								U1ZhbHVlAJSE
+								ASqEhAFkqIMz
+								MzMzMzPDv4aG
 								hg==
 								</data>
 								<key>Text</key>
@@ -61368,8 +61057,8 @@ AT&amp;T}</string>
 					<integer>0</integer>
 					<key>Points</key>
 					<array>
-						<string>{860.66904632161436, 520.60307601145348}</string>
-						<string>{972.50018310546875, 520.91187532401943}</string>
+						<string>{860.66904632161436, 520.5884019431619}</string>
+						<string>{972.50018310546875, 520.86228598470018}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -61405,8 +61094,8 @@ AT&amp;T}</string>
 					<integer>0</integer>
 					<key>Points</key>
 					<array>
-						<string>{272.66744632161425, 520.49940308968678}</string>
-						<string>{161.0001220703125, 520.87653196984343}</string>
+						<string>{272.66744632161425, 520.48294373600731}</string>
+						<string>{161.0001220703125, 520.82178153315783}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -61750,27 +61439,27 @@ AT&amp;T}</string>
 								hpKEn54AgRgB
 								hpKEn54AgTQB
 								hpKEn54AgVAB
-								hoYAhpKElpYG
-								TlNLZXJuhpKE
-								hIQITlNOdW1i
-								ZXIAhIQHTlNW
-								YWx1ZQCUhAEq
-								hIQBZKKDmpmZ
-								mZmZqT+GkoSW
-								lgZOU0ZvbnSG
-								koSEhAZOU0Zv
-								bnQelJkkhAVb
-								MzZjXQYAAAAc
-								AAAA//5IAGUA
-								bAB2AGUAdABp
-								AGMAYQBOAGUA
-								dQBlAIQBZhSE
-								AWMApgGmAKYA
-								hpKElpYHTlND
-								b2xvcoaShISE
-								B05TQ29sb3IA
-								lKYChARmZmZm
-								AAAAAYaGhg==
+								hoYAhpKElpYH
+								TlNDb2xvcoaS
+								hISEB05TQ29s
+								b3IAlIQBYwKE
+								BGZmZmYAAAAB
+								hpKElpYGTlNG
+								b250hpKEhIQG
+								TlNGb250HpSZ
+								JIQFWzM2Y10G
+								AAAAHAAAAP/+
+								SABlAGwAdgBl
+								AHQAaQBjAGEA
+								TgBlAHUAZQCE
+								AWYUoACgAaAA
+								oACGkoSWlgZO
+								U0tlcm6GkoSE
+								hAhOU051bWJl
+								cgCEhAdOU1Zh
+								bHVlAJSEASqE
+								hAFkqIOamZmZ
+								mZmpP4aGhg==
 								</data>
 								<key>Text</key>
 								<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -61929,26 +61618,26 @@ M\'e5 gj\'f8re}</string>
 								AYaShJ+eAIE0
 								AYaShJ+eAIFQ
 								AYaGAIaShJaW
-								Bk5TS2VyboaS
-								hISECE5TTnVt
-								YmVyAISEB05T
-								VmFsdWUAlIQB
-								KoSEAWSig5qZ
-								mZmZmak/hpKE
-								lpYGTlNGb250
-								hpKEhIQGTlNG
-								b250HpSZJIQF
-								WzM2Y10GAAAA
-								HAAAAP/+SABl
-								AGwAdgBlAHQA
-								aQBjAGEATgBl
-								AHUAZQCEAWYU
-								hAFjAKYBpgCm
-								AIaShJaWB05T
-								Q29sb3KGkoSE
-								hAdOU0NvbG9y
-								AJSmAoQEZmZm
-								ZgAAAAGGhoY=
+								B05TQ29sb3KG
+								koSEhAdOU0Nv
+								bG9yAJSEAWMC
+								hARmZmZmAAAA
+								AYaShJaWBk5T
+								Rm9udIaShISE
+								Bk5TRm9udB6U
+								mSSEBVszNmNd
+								BgAAABwAAAD/
+								/kgAZQBsAHYA
+								ZQB0AGkAYwBh
+								AE4AZQB1AGUA
+								hAFmFKAAoAGg
+								AKAAhpKElpYG
+								TlNLZXJuhpKE
+								hIQITlNOdW1i
+								ZXIAhIQHTlNW
+								YWx1ZQCUhAEq
+								hIQBZKiDmpmZ
+								mZmZqT+GhoY=
 								</data>
 								<key>Text</key>
 								<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -62041,27 +61730,27 @@ B\'f8r gj\'f8re}</string>
 								hpKEn54AgRgB
 								hpKEn54AgTQB
 								hpKEn54AgVAB
-								hoYAhpKElpYH
-								TlNDb2xvcoaS
-								hISEB05TQ29s
-								b3IAlIQBYwKE
-								BGZmZmYBAQEB
-								hpKElpYGTlNG
-								b250hpKEhIQG
-								TlNGb250HpSZ
-								JIQFWzM2Y10G
-								AAAAHAAAAP/+
-								SABlAGwAdgBl
-								AHQAaQBjAGEA
-								TgBlAHUAZQCE
-								AWYUoACgAaAA
-								oACGkoSWlgZO
-								U0tlcm6GkoSE
-								hAhOU051bWJl
-								cgCEhAdOU1Zh
-								bHVlAJSEASqE
-								hAFkqIOamZmZ
-								mZmpP4aGhg==
+								hoYAhpKElpYG
+								TlNLZXJuhpKE
+								hIQITlNOdW1i
+								ZXIAhIQHTlNW
+								YWx1ZQCUhAEq
+								hIQBZKKDmpmZ
+								mZmZqT+GkoSW
+								lgZOU0ZvbnSG
+								koSEhAZOU0Zv
+								bnQelJkkhAVb
+								MzZjXQYAAAAc
+								AAAA//5IAGUA
+								bAB2AGUAdABp
+								AGMAYQBOAGUA
+								dQBlAIQBZhSE
+								AWMApgGmAKYA
+								hpKElpYHTlND
+								b2xvcoaShISE
+								B05TQ29sb3IA
+								lKYChARmZmZm
+								AQEBAYaGhg==
 								</data>
 								<key>Text</key>
 								<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -62359,27 +62048,27 @@ Vil gj\'f8re}</string>
 								koSfngCBGAGG
 								koSfngCBNAGG
 								koSfngCBUAGG
-								hgCGkoSWlgZO
-								U0tlcm6GkoSE
-								hAhOU051bWJl
-								cgCEhAdOU1Zh
-								bHVlAJSEASqE
-								hAFkooOamZmZ
-								mZmpP4aShJaW
-								Bk5TRm9udIaS
-								hISEBk5TRm9u
-								dB6UmSSEBVsz
-								NmNdBgAAABwA
-								AAD//kgAZQBs
-								AHYAZQB0AGkA
-								YwBhAE4AZQB1
-								AGUAhAFmFIQB
-								YwCmAaYApgCG
-								koSWlgdOU0Nv
-								bG9yhpKEhIQH
-								TlNDb2xvcgCU
-								pgKEBGZmZmYA
-								AAABhoaG
+								hgCGkoSWlgdO
+								U0NvbG9yhpKE
+								hIQHTlNDb2xv
+								cgCUhAFjAoQE
+								ZmZmZgAAAAGG
+								koSWlgZOU0Zv
+								bnSGkoSEhAZO
+								U0ZvbnQelJkk
+								hAVbMzZjXQYA
+								AAAcAAAA//5I
+								AGUAbAB2AGUA
+								dABpAGMAYQBO
+								AGUAdQBlAIQB
+								ZhSgAKABoACg
+								AIaShJaWBk5T
+								S2VyboaShISE
+								CE5TTnVtYmVy
+								AISEB05TVmFs
+								dWUAlIQBKoSE
+								AWSog5qZmZmZ
+								mak/hoaG
 								</data>
 								<key>Text</key>
 								<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -62540,26 +62229,26 @@ Ga energi}</string>
 								gRgBhpKEn54A
 								gTQBhpKEn54A
 								gVABhoYAhpKE
-								lpYGTlNLZXJu
-								hpKEhIQITlNO
-								dW1iZXIAhIQH
-								TlNWYWx1ZQCU
-								hAEqhIQBZKKD
-								mpmZmZmZqT+G
-								koSWlgZOU0Zv
-								bnSGkoSEhAZO
-								U0ZvbnQelJkk
-								hAVbMzZjXQYA
-								AAAcAAAA//5I
-								AGUAbAB2AGUA
-								dABpAGMAYQBO
-								AGUAdQBlAIQB
-								ZhSEAWMApgGm
-								AKYAhpKElpYH
-								TlNDb2xvcoaS
-								hISEB05TQ29s
-								b3IAlKYChARm
-								ZmZmAAAAAYaG
+								lpYHTlNDb2xv
+								coaShISEB05T
+								Q29sb3IAlIQB
+								YwKEBGZmZmYA
+								AAABhpKElpYG
+								TlNGb250hpKE
+								hIQGTlNGb250
+								HpSZJIQFWzM2
+								Y10GAAAAHAAA
+								AP/+SABlAGwA
+								dgBlAHQAaQBj
+								AGEATgBlAHUA
+								ZQCEAWYUoACg
+								AaAAoACGkoSW
+								lgZOU0tlcm6G
+								koSEhAhOU051
+								bWJlcgCEhAdO
+								U1ZhbHVlAJSE
+								ASqEhAFkqIOa
+								mZmZmZmpP4aG
 								hg==
 								</data>
 								<key>Text</key>
@@ -62648,27 +62337,27 @@ Ingen endring}</string>
 								hpKEn54AgRgB
 								hpKEn54AgTQB
 								hpKEn54AgVAB
-								hoYAhpKElpYH
-								TlNDb2xvcoaS
-								hISEB05TQ29s
-								b3IAlIQBYwKE
-								BGZmZmYBAQEB
-								hpKElpYGTlNG
-								b250hpKEhIQG
-								TlNGb250HpSZ
-								JIQFWzM2Y10G
-								AAAAHAAAAP/+
-								SABlAGwAdgBl
-								AHQAaQBjAGEA
-								TgBlAHUAZQCE
-								AWYUoACgAaAA
-								oACGkoSWlgZO
-								U0tlcm6GkoSE
-								hAhOU051bWJl
-								cgCEhAdOU1Zh
-								bHVlAJSEASqE
-								hAFkqIOamZmZ
-								mZmpP4aGhg==
+								hoYAhpKElpYG
+								TlNLZXJuhpKE
+								hIQITlNOdW1i
+								ZXIAhIQHTlNW
+								YWx1ZQCUhAEq
+								hIQBZKKDmpmZ
+								mZmZqT+GkoSW
+								lgZOU0ZvbnSG
+								koSEhAZOU0Zv
+								bnQelJkkhAVb
+								MzZjXQYAAAAc
+								AAAA//5IAGUA
+								bAB2AGUAdABp
+								AGMAYQBOAGUA
+								dQBlAIQBZhSE
+								AWMApgGmAKYA
+								hpKElpYHTlND
+								b2xvcoaShISE
+								B05TQ29sb3IA
+								lKYChARmZmZm
+								AQEBAYaGhg==
 								</data>
 								<key>Text</key>
 								<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -63108,27 +62797,27 @@ Hvor n\'f8dvendig var denne aktiviteten?}</string>
 								hpKEn54AgRgB
 								hpKEn54AgTQB
 								hpKEn54AgVAB
-								hoYAhpKElpYG
-								TlNLZXJuhpKE
-								hIQITlNOdW1i
-								ZXIAhIQHTlNW
-								YWx1ZQCUhAEq
-								hIQBZKKDmpmZ
-								mZmZqT+GkoSW
-								lgZOU0ZvbnSG
-								koSEhAZOU0Zv
-								bnQelJkkhAVb
-								MzZjXQYAAAAc
-								AAAA//5IAGUA
-								bAB2AGUAdABp
-								AGMAYQBOAGUA
-								dQBlAIQBZhSE
-								AWMApgGmAKYA
-								hpKElpYHTlND
-								b2xvcoaShISE
-								B05TQ29sb3IA
-								lKYChARmZmZm
-								AAAAAYaGhg==
+								hoYAhpKElpYH
+								TlNDb2xvcoaS
+								hISEB05TQ29s
+								b3IAlIQBYwKE
+								BGZmZmYAAAAB
+								hpKElpYGTlNG
+								b250hpKEhIQG
+								TlNGb250HpSZ
+								JIQFWzM2Y10G
+								AAAAHAAAAP/+
+								SABlAGwAdgBl
+								AHQAaQBjAGEA
+								TgBlAHUAZQCE
+								AWYUoACgAaAA
+								oACGkoSWlgZO
+								U0tlcm6GkoSE
+								hAhOU051bWJl
+								cgCEhAdOU1Zh
+								bHVlAJSEASqE
+								hAFkqIOamZmZ
+								mZmpP4aGhg==
 								</data>
 								<key>Text</key>
 								<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -63227,27 +62916,27 @@ Stressende}</string>
 								hJ+eAIEYAYaS
 								hJ+eAIE0AYaS
 								hJ+eAIFQAYaG
-								AIaShJaWBk5T
-								S2VyboaShISE
-								CE5TTnVtYmVy
-								AISEB05TVmFs
-								dWUAlIQBKoSE
-								AWSig5qZmZmZ
-								mak/hpKElpYG
-								TlNGb250hpKE
-								hIQGTlNGb250
-								HpSZJIQFWzM2
-								Y10GAAAAHAAA
-								AP/+SABlAGwA
-								dgBlAHQAaQBj
-								AGEATgBlAHUA
-								ZQCEAWYUhAFj
-								AKYBpgCmAIaS
-								hJaWB05TQ29s
-								b3KGkoSEhAdO
-								U0NvbG9yAJSm
-								AoQEZmZmZgAA
-								AAGGhoY=
+								AIaShJaWB05T
+								Q29sb3KGkoSE
+								hAdOU0NvbG9y
+								AJSEAWMChARm
+								ZmZmAAAAAYaS
+								hJaWBk5TRm9u
+								dIaShISEBk5T
+								Rm9udB6UmSSE
+								BVszNmNdBgAA
+								ABwAAAD//kgA
+								ZQBsAHYAZQB0
+								AGkAYwBhAE4A
+								ZQB1AGUAhAFm
+								FKAAoAGgAKAA
+								hpKElpYGTlNL
+								ZXJuhpKEhIQI
+								TlNOdW1iZXIA
+								hIQHTlNWYWx1
+								ZQCUhAEqhIQB
+								ZKiDmpmZmZmZ
+								qT+GhoY=
 										</data>
 										<key>Text</key>
 										<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -63406,26 +63095,26 @@ Veldig stressende}</string>
 								AIEYAYaShJ+e
 								AIE0AYaShJ+e
 								AIFQAYaGAIaS
-								hJaWBk5TS2Vy
-								boaShISECE5T
-								TnVtYmVyAISE
-								B05TVmFsdWUA
-								lIQBKoSEAWSi
-								g5qZmZmZmak/
-								hpKElpYGTlNG
-								b250hpKEhIQG
-								TlNGb250HpSZ
-								JIQFWzM2Y10G
-								AAAAHAAAAP/+
-								SABlAGwAdgBl
-								AHQAaQBjAGEA
-								TgBlAHUAZQCE
-								AWYUhAFjAKYB
-								pgCmAIaShJaW
-								B05TQ29sb3KG
-								koSEhAdOU0Nv
-								bG9yAJSmAoQE
-								ZmZmZgAAAAGG
+								hJaWB05TQ29s
+								b3KGkoSEhAdO
+								U0NvbG9yAJSE
+								AWMChARmZmZm
+								AAAAAYaShJaW
+								Bk5TRm9udIaS
+								hISEBk5TRm9u
+								dB6UmSSEBVsz
+								NmNdBgAAABwA
+								AAD//kgAZQBs
+								AHYAZQB0AGkA
+								YwBhAE4AZQB1
+								AGUAhAFmFKAA
+								oAGgAKAAhpKE
+								lpYGTlNLZXJu
+								hpKEhIQITlNO
+								dW1iZXIAhIQH
+								TlNWYWx1ZQCU
+								hAEqhIQBZKiD
+								mpmZmZmZqT+G
 								hoY=
 										</data>
 										<key>Text</key>
@@ -63520,26 +63209,26 @@ Noe stressende}</string>
 								ngCBGAGGkoSf
 								ngCBNAGGkoSf
 								ngCBUAGGhgCG
-								koSWlgdOU0Nv
-								bG9yhpKEhIQH
-								TlNDb2xvcgCU
-								hAFjAoQEZmZm
-								ZgEBAQGGkoSW
-								lgZOU0ZvbnSG
-								koSEhAZOU0Zv
-								bnQelJkkhAVb
-								MzZjXQYAAAAc
-								AAAA//5IAGUA
-								bAB2AGUAdABp
-								AGMAYQBOAGUA
-								dQBlAIQBZhSg
-								AKABoACgAIaS
-								hJaWBk5TS2Vy
-								boaShISECE5T
-								TnVtYmVyAISE
-								B05TVmFsdWUA
-								lIQBKoSEAWSo
-								g5qZmZmZmak/
+								koSWlgZOU0tl
+								cm6GkoSEhAhO
+								U051bWJlcgCE
+								hAdOU1ZhbHVl
+								AJSEASqEhAFk
+								ooOamZmZmZmp
+								P4aShJaWBk5T
+								Rm9udIaShISE
+								Bk5TRm9udB6U
+								mSSEBVszNmNd
+								BgAAABwAAAD/
+								/kgAZQBsAHYA
+								ZQB0AGkAYwBh
+								AE4AZQB1AGUA
+								hAFmFIQBYwCm
+								AaYApgCGkoSW
+								lgdOU0NvbG9y
+								hpKEhIQHTlND
+								b2xvcgCUpgKE
+								BGZmZmYBAQEB
 								hoaG
 										</data>
 										<key>Text</key>
@@ -63896,26 +63585,26 @@ I f\'f8lte at aktiviteten var:}</string>
 								GAGGkoSfngCB
 								NAGGkoSfngCB
 								UAGGhgCGkoSW
-								lgZOU0tlcm6G
-								koSEhAhOU051
-								bWJlcgCEhAdO
-								U1ZhbHVlAJSE
-								ASqEhAFkooOa
-								mZmZmZmpP4aS
-								hJaWBk5TRm9u
-								dIaShISEBk5T
-								Rm9udB6UmSSE
-								BVszNmNdBgAA
-								ABwAAAD//kgA
-								ZQBsAHYAZQB0
-								AGkAYwBhAE4A
-								ZQB1AGUAhAFm
-								FIQBYwCmAaYA
-								pgCGkoSWlgdO
-								U0NvbG9yhpKE
-								hIQHTlNDb2xv
-								cgCUpgKEBGZm
-								ZmYAAAABhoaG
+								lgdOU0NvbG9y
+								hpKEhIQHTlND
+								b2xvcgCUhAFj
+								AoQEZmZmZgAA
+								AAGGkoSWlgZO
+								U0ZvbnSGkoSE
+								hAZOU0ZvbnQe
+								lJkkhAVbMzZj
+								XQYAAAAcAAAA
+								//5IAGUAbAB2
+								AGUAdABpAGMA
+								YQBOAGUAdQBl
+								AIQBZhSgAKAB
+								oACgAIaShJaW
+								Bk5TS2VyboaS
+								hISECE5TTnVt
+								YmVyAISEB05T
+								VmFsdWUAlIQB
+								KoSEAWSog5qZ
+								mZmZmak/hoaG
 								</data>
 								<key>Text</key>
 								<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -64078,27 +63767,27 @@ Bra}</string>
 								hpKEn54AgRgB
 								hpKEn54AgTQB
 								hpKEn54AgVAB
-								hoYAhpKElpYG
-								TlNLZXJuhpKE
-								hIQITlNOdW1i
-								ZXIAhIQHTlNW
-								YWx1ZQCUhAEq
-								hIQBZKKDmpmZ
-								mZmZqT+GkoSW
-								lgZOU0ZvbnSG
-								koSEhAZOU0Zv
-								bnQelJkkhAVb
-								MzZjXQYAAAAc
-								AAAA//5IAGUA
-								bAB2AGUAdABp
-								AGMAYQBOAGUA
-								dQBlAIQBZhSE
-								AWMApgGmAKYA
-								hpKElpYHTlND
-								b2xvcoaShISE
-								B05TQ29sb3IA
-								lKYChARmZmZm
-								AAAAAYaGhg==
+								hoYAhpKElpYH
+								TlNDb2xvcoaS
+								hISEB05TQ29s
+								b3IAlIQBYwKE
+								BGZmZmYAAAAB
+								hpKElpYGTlNG
+								b250hpKEhIQG
+								TlNGb250HpSZ
+								JIQFWzM2Y10G
+								AAAAHAAAAP/+
+								SABlAGwAdgBl
+								AHQAaQBjAGEA
+								TgBlAHUAZQCE
+								AWYUoACgAaAA
+								oACGkoSWlgZO
+								U0tlcm6GkoSE
+								hAhOU051bWJl
+								cgCEhAdOU1Zh
+								bHVlAJSEASqE
+								hAFkqIOamZmZ
+								mZmpP4aGhg==
 										</data>
 										<key>Text</key>
 										<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -64256,27 +63945,27 @@ Veldig bra}</string>
 								n54AgRgBhpKE
 								n54AgTQBhpKE
 								n54AgVABhoYA
-								hpKElpYGTlNL
-								ZXJuhpKEhIQI
-								TlNOdW1iZXIA
-								hIQHTlNWYWx1
-								ZQCUhAEqhIQB
-								ZKKDmpmZmZmZ
-								qT+GkoSWlgZO
-								U0ZvbnSGkoSE
-								hAZOU0ZvbnQe
-								lJkkhAVbMzZj
-								XQYAAAAcAAAA
-								//5IAGUAbAB2
-								AGUAdABpAGMA
-								YQBOAGUAdQBl
-								AIQBZhSEAWMA
-								pgGmAKYAhpKE
-								lpYHTlNDb2xv
-								coaShISEB05T
-								Q29sb3IAlKYC
-								hARmZmZmAAAA
-								AYaGhg==
+								hpKElpYHTlND
+								b2xvcoaShISE
+								B05TQ29sb3IA
+								lIQBYwKEBGZm
+								ZmYAAAABhpKE
+								lpYGTlNGb250
+								hpKEhIQGTlNG
+								b250HpSZJIQF
+								WzM2Y10GAAAA
+								HAAAAP/+SABl
+								AGwAdgBlAHQA
+								aQBjAGEATgBl
+								AHUAZQCEAWYU
+								oACgAaAAoACG
+								koSWlgZOU0tl
+								cm6GkoSEhAhO
+								U051bWJlcgCE
+								hAdOU1ZhbHVl
+								AJSEASqEhAFk
+								qIOamZmZmZmp
+								P4aGhg==
 										</data>
 										<key>Text</key>
 										<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -64370,26 +64059,26 @@ D\'e5rlig}</string>
 								gRgBhpKEn54A
 								gTQBhpKEn54A
 								gVABhoYAhpKE
-								lpYHTlNDb2xv
-								coaShISEB05T
-								Q29sb3IAlIQB
-								YwKEBGZmZmYB
-								AQEBhpKElpYG
-								TlNGb250hpKE
-								hIQGTlNGb250
-								HpSZJIQFWzM2
-								Y10GAAAAHAAA
-								AP/+SABlAGwA
-								dgBlAHQAaQBj
-								AGEATgBlAHUA
-								ZQCEAWYUoACg
-								AaAAoACGkoSW
-								lgZOU0tlcm6G
-								koSEhAhOU051
-								bWJlcgCEhAdO
-								U1ZhbHVlAJSE
-								ASqEhAFkqIOa
-								mZmZmZmpP4aG
+								lpYGTlNLZXJu
+								hpKEhIQITlNO
+								dW1iZXIAhIQH
+								TlNWYWx1ZQCU
+								hAEqhIQBZKKD
+								mpmZmZmZqT+G
+								koSWlgZOU0Zv
+								bnSGkoSEhAZO
+								U0ZvbnQelJkk
+								hAVbMzZjXQYA
+								AAAcAAAA//5I
+								AGUAbAB2AGUA
+								dABpAGMAYQBO
+								AGUAdQBlAIQB
+								ZhSEAWMApgGm
+								AKYAhpKElpYH
+								TlNDb2xvcoaS
+								hISEB05TQ29s
+								b3IAlKYChARm
+								ZmZmAQEBAYaG
 								hg==
 										</data>
 										<key>Text</key>
@@ -65597,28 +65286,28 @@ Aktivitet}</string>
 								hJ+eAIEYAYaS
 								hJ+eAIE0AYaS
 								hJ+eAIFQAYaG
-								AIaShJaWBk5T
-								S2VyboaShISE
-								CE5TTnVtYmVy
-								AISEB05TVmFs
-								dWUAlIQBKoSE
-								AWSig2ZmZmZm
-								Zta/hpKElpYG
-								TlNGb250hpKE
-								hIQGTlNGb250
-								HpSZMIQFWzQ4
-								Y10GAAAAJgAA
-								AP/+SABlAGwA
-								dgBlAHQAaQBj
-								AGEATgBlAHUA
-								ZQAtAEIAbwBs
-								AGQAAACEAWYY
-								hAFjAKYBpgCm
 								AIaShJaWB05T
 								Q29sb3KGkoSE
 								hAdOU0NvbG9y
-								AJSmAoQEZmZm
-								ZgAAAAGGhoY=
+								AJSEAWMChARm
+								ZmZmAAAAAYaS
+								hJaWBk5TRm9u
+								dIaShISEBk5T
+								Rm9udB6UmTCE
+								BVs0OGNdBgAA
+								ACYAAAD//kgA
+								ZQBsAHYAZQB0
+								AGkAYwBhAE4A
+								ZQB1AGUALQBC
+								AG8AbABkAAAA
+								hAFmGKAAoAGg
+								AKAAhpKElpYG
+								TlNLZXJuhpKE
+								hIQITlNOdW1i
+								ZXIAhIQHTlNW
+								YWx1ZQCUhAEq
+								hIQBZKiDZmZm
+								ZmZm1r+GhoY=
 								</data>
 								<key>Text</key>
 								<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -65706,26 +65395,26 @@ Aktivitet}</string>
 								gRgBhpKEn54A
 								gTQBhpKEn54A
 								gVABhoYAhpKE
-								lpYGTlNLZXJu
-								hpKEhIQITlNO
-								dW1iZXIAhIQH
-								TlNWYWx1ZQCU
-								hAEqhIQBZKKD
-								MzMzMzMzw7+G
-								koSWlgZOU0Zv
-								bnSGkoSEhAZO
-								U0ZvbnQelJkk
-								hAVbMzZjXQYA
-								AAAcAAAA//5I
-								AGUAbAB2AGUA
-								dABpAGMAYQBO
-								AGUAdQBlAIQB
-								ZhiEAWMApgGm
-								AKYAhpKElpYH
-								TlNDb2xvcoaS
-								hISEB05TQ29s
-								b3IAlKYChARm
-								ZmZmAAAAAYaG
+								lpYHTlNDb2xv
+								coaShISEB05T
+								Q29sb3IAlIQB
+								YwKEBGZmZmYA
+								AAABhpKElpYG
+								TlNGb250hpKE
+								hIQGTlNGb250
+								HpSZJIQFWzM2
+								Y10GAAAAHAAA
+								AP/+SABlAGwA
+								dgBlAHQAaQBj
+								AGEATgBlAHUA
+								ZQCEAWYYoACg
+								AaAAoACGkoSW
+								lgZOU0tlcm6G
+								koSEhAhOU051
+								bWJlcgCEhAdO
+								U1ZhbHVlAJSE
+								ASqEhAFkqIMz
+								MzMzMzPDv4aG
 								hg==
 								</data>
 								<key>Text</key>
@@ -66424,28 +66113,28 @@ AT&amp;T}</string>
 								ngCBGAGGkoSf
 								ngCBNAGGkoSf
 								ngCBUAGGhgCG
-								koSWlgZOU0tl
-								cm6GkoSEhAhO
-								U051bWJlcgCE
-								hAdOU1ZhbHVl
-								AJSEASqEhAFk
-								ooOamZmZmZnJ
-								P4aShJaWBk5T
-								Rm9udIaShISE
-								Bk5TRm9udB6U
-								mTCEBVs0OGNd
-								BgAAACYAAAD/
-								/kgAZQBsAHYA
-								ZQB0AGkAYwBh
-								AE4AZQB1AGUA
-								LQBCAG8AbABk
-								AAAAhAFmIoQB
-								YwCmAaYApgCG
 								koSWlgdOU0Nv
 								bG9yhpKEhIQH
 								TlNDb2xvcgCU
-								pgKEBGZmZmYA
-								AAABhoaG
+								hAFjAoQEZmZm
+								ZgAAAAGGkoSW
+								lgZOU0ZvbnSG
+								koSEhAZOU0Zv
+								bnQelJkwhAVb
+								NDhjXQYAAAAm
+								AAAA//5IAGUA
+								bAB2AGUAdABp
+								AGMAYQBOAGUA
+								dQBlAC0AQgBv
+								AGwAZAAAAIQB
+								ZiKgAKABoACg
+								AIaShJaWBk5T
+								S2VyboaShISE
+								CE5TTnVtYmVy
+								AISEB05TVmFs
+								dWUAlIQBKoSE
+								AWSog5qZmZmZ
+								mck/hoaG
 								</data>
 								<key>Text</key>
 								<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -66541,26 +66230,26 @@ Endre Aktivitet}</string>
 								ngCBGAGGkoSf
 								ngCBNAGGkoSf
 								ngCBUAGGhgCG
-								koSWlgZOU0tl
-								cm6GkoSEhAhO
-								U051bWJlcgCE
-								hAdOU1ZhbHVl
-								AJSEASqEhAFk
-								ooMzMzMzMzPT
-								v4aShJaWBk5T
-								Rm9udIaShISE
-								Bk5TRm9udB6U
-								mSSEBVszNmNd
-								BgAAABwAAAD/
-								/kgAZQBsAHYA
-								ZQB0AGkAYwBh
-								AE4AZQB1AGUA
-								hAFmIoQBYwCm
-								AaYApgCGkoSW
-								lgdOU0NvbG9y
-								hpKEhIQHTlND
-								b2xvcgCUpgKE
-								BGZmZmYAAAAB
+								koSWlgdOU0Nv
+								bG9yhpKEhIQH
+								TlNDb2xvcgCU
+								hAFjAoQEZmZm
+								ZgAAAAGGkoSW
+								lgZOU0ZvbnSG
+								koSEhAZOU0Zv
+								bnQelJkkhAVb
+								MzZjXQYAAAAc
+								AAAA//5IAGUA
+								bAB2AGUAdABp
+								AGMAYQBOAGUA
+								dQBlAIQBZiKg
+								AKABoACgAIaS
+								hJaWBk5TS2Vy
+								boaShISECE5T
+								TnVtYmVyAISE
+								B05TVmFsdWUA
+								lIQBKoSEAWSo
+								gzMzMzMzM9O/
 								hoaG
 								</data>
 								<key>Text</key>
@@ -66657,26 +66346,26 @@ Ferdig}</string>
 								ngCBGAGGkoSf
 								ngCBNAGGkoSf
 								ngCBUAGGhgCG
-								koSWlgZOU0tl
-								cm6GkoSEhAhO
-								U051bWJlcgCE
-								hAdOU1ZhbHVl
-								AJSEASqEhAFk
-								ooMzMzMzMzPT
-								v4aShJaWBk5T
-								Rm9udIaShISE
-								Bk5TRm9udB6U
-								mSSEBVszNmNd
-								BgAAABwAAAD/
-								/kgAZQBsAHYA
-								ZQB0AGkAYwBh
-								AE4AZQB1AGUA
-								hAFmIoQBYwCm
-								AaYApgCGkoSW
-								lgdOU0NvbG9y
-								hpKEhIQHTlND
-								b2xvcgCUpgKE
-								BGZmZmYAAAAB
+								koSWlgdOU0Nv
+								bG9yhpKEhIQH
+								TlNDb2xvcgCU
+								hAFjAoQEZmZm
+								ZgAAAAGGkoSW
+								lgZOU0ZvbnSG
+								koSEhAZOU0Zv
+								bnQelJkkhAVb
+								MzZjXQYAAAAc
+								AAAA//5IAGUA
+								bAB2AGUAdABp
+								AGMAYQBOAGUA
+								dQBlAIQBZiKg
+								AKABoACgAIaS
+								hJaWBk5TS2Vy
+								boaShISECE5T
+								TnVtYmVyAISE
+								B05TVmFsdWUA
+								lIQBKoSEAWSo
+								gzMzMzMzM9O/
 								hoaG
 								</data>
 								<key>Text</key>
@@ -67251,7 +66940,7 @@ Avbryt}</string>
 	<key>WindowInfo</key>
 	<dict>
 		<key>CurrentSheet</key>
-		<integer>1</integer>
+		<integer>4</integer>
 		<key>ExpandedCanvases</key>
 		<array>
 			<dict>
@@ -67299,8 +66988,10 @@ Avbryt}</string>
 				<string>Edit activity</string>
 			</dict>
 		</array>
+		<key>FitInWindow</key>
+		<true/>
 		<key>Frame</key>
-		<string>{{-1828, 4}, {1623, 1414}}</string>
+		<string>{{373, 4}, {693, 874}}</string>
 		<key>ListView</key>
 		<true/>
 		<key>OutlineWidth</key>
@@ -67314,9 +67005,9 @@ Avbryt}</string>
 		<key>SidebarWidth</key>
 		<integer>120</integer>
 		<key>VisibleRegion</key>
-		<string>{{-930, -100}, {2976, 2550}}</string>
+		<string>{{-334, 0}, {1783.3224108004151, 2348.9999497102244}}</string>
 		<key>Zoom</key>
-		<real>0.5</real>
+		<real>0.31289911270141602</real>
 		<key>ZoomValues</key>
 		<array>
 			<array>
@@ -67341,8 +67032,8 @@ Avbryt}</string>
 			</array>
 			<array>
 				<string>Coaching</string>
-				<real>0.5</real>
 				<real>0.0</real>
+				<real>1</real>
 			</array>
 			<array>
 				<string>Coaching—New Session</string>
