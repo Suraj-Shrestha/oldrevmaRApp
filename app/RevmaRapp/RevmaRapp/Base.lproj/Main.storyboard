@@ -169,6 +169,12 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="8Dd-4m-ane"/>
+                                        <exclude reference="zin-TH-BEI"/>
+                                    </mask>
+                                </variation>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time_Start_Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="17y-PJ-aEj">
                                 <rect key="frame" x="16" y="123" width="134" height="21"/>
@@ -243,9 +249,7 @@
                             <constraint firstAttribute="trailing" secondItem="R9p-oR-9Tb" secondAttribute="trailing" id="0hv-7y-TiN"/>
                             <constraint firstItem="17y-PJ-aEj" firstAttribute="leading" secondItem="ZtU-dl-GmD" secondAttribute="leading" id="13j-AV-f3C"/>
                             <constraint firstItem="QE2-lC-wi1" firstAttribute="leading" secondItem="ctC-6o-L8S" secondAttribute="trailing" constant="8" id="2Qs-iA-f9U"/>
-                            <constraint firstItem="oTH-hq-SIR" firstAttribute="top" secondItem="mmU-uE-lQb" secondAttribute="bottom" constant="5" id="35u-g9-nDj"/>
                             <constraint firstItem="DBh-27-8jj" firstAttribute="top" secondItem="R9p-oR-9Tb" secondAttribute="bottom" constant="21" id="6Bm-Ox-YnI"/>
-                            <constraint firstItem="DBh-27-8jj" firstAttribute="trailing" secondItem="a5e-ev-Bsk" secondAttribute="trailingMargin" id="6MW-bP-AAW"/>
                             <constraint firstItem="ZtU-dl-GmD" firstAttribute="leading" secondItem="a5e-ev-Bsk" secondAttribute="leadingMargin" id="956-ow-pxS"/>
                             <constraint firstItem="Tnl-gl-rRE" firstAttribute="top" secondItem="DBh-27-8jj" secondAttribute="bottom" constant="4" id="IHy-yv-YFI"/>
                             <constraint firstItem="mmU-uE-lQb" firstAttribute="top" secondItem="ZtU-dl-GmD" secondAttribute="bottom" constant="8" id="IXs-fa-fc9"/>
@@ -253,6 +257,7 @@
                             <constraint firstItem="17y-PJ-aEj" firstAttribute="top" secondItem="DBh-27-8jj" secondAttribute="bottom" constant="8" symbolic="YES" id="JCj-hr-nif"/>
                             <constraint firstItem="ZtU-dl-GmD" firstAttribute="leading" secondItem="oTH-hq-SIR" secondAttribute="leading" id="JXe-gv-fs7"/>
                             <constraint firstItem="Tnl-gl-rRE" firstAttribute="top" secondItem="R9p-oR-9Tb" secondAttribute="bottom" constant="55" id="LeC-PY-Ojx"/>
+                            <constraint firstItem="DBh-27-8jj" firstAttribute="leading" secondItem="a5e-ev-Bsk" secondAttribute="leadingMargin" id="Ltc-5I-tAW"/>
                             <constraint firstItem="ZtU-dl-GmD" firstAttribute="leading" secondItem="DBh-27-8jj" secondAttribute="leading" id="OEH-ml-WvW"/>
                             <constraint firstItem="Tnl-gl-rRE" firstAttribute="baseline" secondItem="17y-PJ-aEj" secondAttribute="baseline" id="OJD-k8-ERf"/>
                             <constraint firstItem="ctC-6o-L8S" firstAttribute="top" secondItem="R9p-oR-9Tb" secondAttribute="bottom" constant="145" id="SSA-XU-ZIF"/>
@@ -260,10 +265,8 @@
                             <constraint firstItem="YHQ-zS-Qh9" firstAttribute="trailing" secondItem="Tnl-gl-rRE" secondAttribute="trailing" id="bdM-tA-RDX"/>
                             <constraint firstItem="R9p-oR-9Tb" firstAttribute="top" secondItem="e4S-LI-S2v" secondAttribute="bottom" id="bvJ-Lr-HXN"/>
                             <constraint firstItem="ZtU-dl-GmD" firstAttribute="leading" secondItem="17y-PJ-aEj" secondAttribute="leading" id="c1c-1l-fvp"/>
-                            <constraint firstItem="ctC-6o-L8S" firstAttribute="top" secondItem="mmU-uE-lQb" secondAttribute="bottom" constant="8" id="deu-v7-oFS"/>
-                            <constraint firstItem="YHQ-zS-Qh9" firstAttribute="trailing" secondItem="QE2-lC-wi1" secondAttribute="trailing" id="g51-TR-pHx"/>
+                            <constraint firstItem="DBh-27-8jj" firstAttribute="trailing" secondItem="a5e-ev-Bsk" secondAttribute="trailingMargin" id="cs4-VG-0KV"/>
                             <constraint firstItem="QE2-lC-wi1" firstAttribute="leading" secondItem="ctC-6o-L8S" secondAttribute="trailing" constant="8" id="kG7-iP-pEw"/>
-                            <constraint firstItem="DBh-27-8jj" firstAttribute="leading" secondItem="a5e-ev-Bsk" secondAttribute="leadingMargin" id="kZ1-Sa-1dh"/>
                             <constraint firstItem="ZtU-dl-GmD" firstAttribute="leading" secondItem="mmU-uE-lQb" secondAttribute="leading" id="lZW-fI-jb4"/>
                             <constraint firstItem="ctC-6o-L8S" firstAttribute="leading" secondItem="oTH-hq-SIR" secondAttribute="trailing" constant="8" id="m8n-Ly-6Gx"/>
                             <constraint firstItem="R9p-oR-9Tb" firstAttribute="top" secondItem="e4S-LI-S2v" secondAttribute="bottom" id="mTy-v9-q1A"/>
@@ -274,17 +277,8 @@
                             <constraint firstItem="ZtU-dl-GmD" firstAttribute="top" secondItem="17y-PJ-aEj" secondAttribute="bottom" constant="8" symbolic="YES" id="uLp-xu-lU4"/>
                             <constraint firstItem="17y-PJ-aEj" firstAttribute="leading" secondItem="DBh-27-8jj" secondAttribute="leading" id="vbF-BO-GgP"/>
                             <constraint firstItem="QE2-lC-wi1" firstAttribute="top" secondItem="R9p-oR-9Tb" secondAttribute="bottom" constant="148" id="wIU-y6-oCs"/>
-                            <constraint firstItem="QE2-lC-wi1" firstAttribute="top" secondItem="mmU-uE-lQb" secondAttribute="bottom" constant="5" id="yYc-la-zxx"/>
                             <constraint firstItem="oTH-hq-SIR" firstAttribute="leading" secondItem="a5e-ev-Bsk" secondAttribute="leadingMargin" id="yaK-cQ-Hho"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="35u-g9-nDj"/>
-                                <exclude reference="deu-v7-oFS"/>
-                                <exclude reference="g51-TR-pHx"/>
-                                <exclude reference="yYc-la-zxx"/>
-                            </mask>
-                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ydc-E1-bWk" userLabel="First Responder" sceneMemberID="firstResponder"/>
