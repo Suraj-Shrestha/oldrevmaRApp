@@ -14,6 +14,7 @@
 		C93F56F21A0B70BE0030D481 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C93F56F11A0B70BE0030D481 /* Images.xcassets */; };
 		C93F56F51A0B70BE0030D481 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C93F56F31A0B70BE0030D481 /* LaunchScreen.xib */; };
 		C93F57011A0B70BE0030D481 /* RevmaRappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93F57001A0B70BE0030D481 /* RevmaRappTests.swift */; };
+		C9C10BE41A0B831C00784666 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C10BE31A0B831C00784666 /* ThirdViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		C93F56FA1A0B70BE0030D481 /* RevmaRappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RevmaRappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C93F56FF1A0B70BE0030D481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C93F57001A0B70BE0030D481 /* RevmaRappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevmaRappTests.swift; sourceTree = "<group>"; };
+		C9C10BE31A0B831C00784666 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			children = (
 				C93F56E81A0B70BE0030D481 /* AppDelegate.swift */,
 				C93F56EA1A0B70BE0030D481 /* FirstViewController.swift */,
+				C9C10BE31A0B831C00784666 /* ThirdViewController.swift */,
 				C93F56EC1A0B70BE0030D481 /* SecondViewController.swift */,
 				C93F56EE1A0B70BE0030D481 /* Main.storyboard */,
 				C93F56F11A0B70BE0030D481 /* Images.xcassets */,
@@ -217,6 +220,7 @@
 			files = (
 				C93F56ED1A0B70BE0030D481 /* SecondViewController.swift in Sources */,
 				C93F56E91A0B70BE0030D481 /* AppDelegate.swift in Sources */,
+				C9C10BE41A0B831C00784666 /* ThirdViewController.swift in Sources */,
 				C93F56EB1A0B70BE0030D481 /* FirstViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,7 +346,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = RevmaRapp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -352,7 +358,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = RevmaRapp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -411,6 +419,7 @@
 				C93F57061A0B70BE0030D481 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C93F57071A0B70BE0030D481 /* Build configuration list for PBXNativeTarget "RevmaRappTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +428,7 @@
 				C93F57091A0B70BE0030D481 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
