@@ -42,14 +42,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         fetchRequest.predicate = NSPredicate(format: "lang == %@", argumentArray: [currLang])
         
         var error: NSError?
-        let results = self.managedObjectContext.executeFetchRequest(fetchRequest, error: &error)
-        if results != nil  {
-            if results!.count > 0 {
+
+        if let results = self.managedObjectContext.executeFetchRequest(fetchRequest, error: &error) {
+            if results.count > 0 {
                 return
             }
         } else {
-            NSLog("Something went wrong \(error), \(error?.userInfo)")
-            return
+            ZAssert(error != nil, "Unresolved error \(error?.localizedDescription), \(error?.userInfo)\nMy query was \(fetchRequest)")
         }
         
         var activityNames: [String]
@@ -78,13 +77,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             catalogEntry.lang = currLang
         }
         
-        //
+
         self.managedObjectContext.save(&error)
         
-        if (error != nil) {
-            NSLog("Saving records went wrong \(error), \(error?.userInfo)")
-        }
-
+        ZAssert(error != nil, "Saving records went wrong \(error), \(error?.userInfo)")
     }
 
 
