@@ -1,0 +1,90 @@
+
+/* Class = "IBUILabel"; text = "Activity_pain_label"; ObjectID = "0kL-Gx-kYQ"; */
+"0kL-Gx-kYQ.text" = "Activity_pain_label";
+
+/* Class = "IBUILabel"; text = "Time_Start_Label"; ObjectID = "17y-PJ-aEj"; */
+"17y-PJ-aEj.text" = "Time_Start_Label";
+
+/* Class = "IBUILabel"; text = "Duty_label"; ObjectID = "2ur-gQ-y4n"; */
+"2ur-gQ-y4n.text" = "Duty_label";
+
+/* Class = "IBUILabel"; text = "Title"; ObjectID = "31d-rr-kpW"; */
+"31d-rr-kpW.text" = "Title";
+
+/* Class = "IBUIBarButtonItem"; title = "CancelButton"; ObjectID = "6Vy-Bu-EYs"; */
+"6Vy-Bu-EYs.title" = "CancelButton";
+
+/* Class = "IBUILabel"; text = "Goal"; ObjectID = "7Ea-GC-NRa"; */
+"7Ea-GC-NRa.text" = "Goal";
+
+/* Class = "IBUITableViewController"; title = "Reflection_Title"; ObjectID = "94d-wo-ZX5"; */
+"94d-wo-ZX5.title" = "Reflection_Title";
+
+/* Class = "IBUITextField"; placeholder = "Activity_Placeholder_Text"; ObjectID = "DBh-27-8jj"; */
+"DBh-27-8jj.placeholder" = "Activity_Placeholder_Text";
+
+/* Class = "IBUINavigationItem"; title = "Activities_title"; ObjectID = "EXF-tP-vvc"; */
+"EXF-tP-vvc.title" = "Activities_title";
+
+/* Class = "IBUILabel"; text = "Activity_meaning_label"; ObjectID = "HaQ-b7-eiI"; */
+"HaQ-b7-eiI.text" = "Activity_meaning_label";
+
+/* Class = "IBUITabBarItem"; title = "Activities"; ObjectID = "JYO-ep-uMH"; */
+"JYO-ep-uMH.title" = "Activities";
+
+/* Class = "IBUILabel"; text = "Activity_duty_label"; ObjectID = "KeF-77-DHr"; */
+"KeF-77-DHr.text" = "Activity_duty_label";
+
+/* Class = "IBUILabel"; text = "Activity_mastering_label"; ObjectID = "MWA-Ec-kYD"; */
+"MWA-Ec-kYD.text" = "Activity_mastering_label";
+
+/* Class = "IBUILabel"; text = "Loaded by SecondViewController"; ObjectID = "NDk-cv-Gan"; */
+"NDk-cv-Gan.text" = "Loaded by SecondViewController";
+
+/* Class = "IBUITabBarItem"; title = "Refelection_title"; ObjectID = "Nd0-Iw-Ie7"; */
+"Nd0-Iw-Ie7.title" = "Refelection_title";
+
+/* Class = "IBUINavigationController"; title = "Reflection_Title"; ObjectID = "PyH-cI-oUs"; */
+"PyH-cI-oUs.title" = "Reflection_Title";
+
+/* Class = "IBUITabBarItem"; title = "Goal_title"; ObjectID = "RdF-ej-Uj2"; */
+"RdF-ej-Uj2.title" = "Goal_title";
+
+/* Class = "IBUIButton"; normalTitle = "##DATE##"; ObjectID = "Tnl-gl-rRE"; */
+"Tnl-gl-rRE.normalTitle" = "##DATE##";
+
+/* Class = "IBUIBarButtonItem"; title = "Add…"; ObjectID = "YEt-UJ-4PP"; */
+"YEt-UJ-4PP.title" = "Add…";
+
+/* Class = "IBUIButton"; normalTitle = "##DURATION##"; ObjectID = "YHQ-zS-Qh9"; */
+"YHQ-zS-Qh9.normalTitle" = "##DURATION##";
+
+/* Class = "IBUILabel"; text = "Duration_Label"; ObjectID = "ZtU-dl-GmD"; */
+"ZtU-dl-GmD.text" = "Duration_Label";
+
+/* Class = "IBUITabBarItem"; title = "History"; ObjectID = "cPa-gy-q4n"; */
+"cPa-gy-q4n.title" = "History";
+
+/* Class = "IBUILabel"; text = "important_label"; ObjectID = "cnS-uj-iga"; */
+"cnS-uj-iga.text" = "important_label";
+
+/* Class = "IBUILabel"; text = "Desired_label"; ObjectID = "eNT-Kw-bpA"; */
+"eNT-Kw-bpA.text" = "Desired_label";
+
+/* Class = "IBUINavigationItem"; title = "Add_Activity_Title"; ObjectID = "gWq-B7-YTq"; */
+"gWq-B7-YTq.title" = "Add_Activity_Title";
+
+/* Class = "IBUILabel"; text = "unimportant_label"; ObjectID = "lEY-Kq-zQW"; */
+"lEY-Kq-zQW.text" = "unimportant_label";
+
+/* Class = "IBUILabel"; text = "Energy_use_label"; ObjectID = "mmU-uE-lQb"; */
+"mmU-uE-lQb.text" = "Energy_use_label";
+
+/* Class = "IBUIBarButtonItem"; title = "DoneButton"; ObjectID = "njB-PF-o0O"; */
+"njB-PF-o0O.title" = "DoneButton";
+
+/* Class = "IBUINavigationItem"; title = "Root View Controller"; ObjectID = "wqZ-Cx-GCV"; */
+"wqZ-Cx-GCV.title" = "Root View Controller";
+
+/* Class = "IBUILabel"; text = "History"; ObjectID = "zEq-FU-wV5"; */
+"zEq-FU-wV5.text" = "History";
