@@ -8,13 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		C93F56E91A0B70BE0030D481 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93F56E81A0B70BE0030D481 /* AppDelegate.swift */; };
-		C93F56EB1A0B70BE0030D481 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93F56EA1A0B70BE0030D481 /* FirstViewController.swift */; };
+		C93F56EB1A0B70BE0030D481 /* ActivityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93F56EA1A0B70BE0030D481 /* ActivityTableViewController.swift */; };
 		C93F56ED1A0B70BE0030D481 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93F56EC1A0B70BE0030D481 /* SecondViewController.swift */; };
 		C93F56F01A0B70BE0030D481 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C93F56EE1A0B70BE0030D481 /* Main.storyboard */; };
 		C93F56F21A0B70BE0030D481 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C93F56F11A0B70BE0030D481 /* Images.xcassets */; };
 		C93F56F51A0B70BE0030D481 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C93F56F31A0B70BE0030D481 /* LaunchScreen.xib */; };
 		C93F57011A0B70BE0030D481 /* RevmaRappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93F57001A0B70BE0030D481 /* RevmaRappTests.swift */; };
 		C9C10BE41A0B831C00784666 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C10BE31A0B831C00784666 /* ThirdViewController.swift */; };
+		C9DD9F2E1A136E1C0099B184 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9DD9F2D1A136E1C0099B184 /* Localizable.strings */; };
+		C9DD9F311A136E550099B184 /* RevmaRapp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C9DD9F2F1A136E550099B184 /* RevmaRapp.xcdatamodeld */; };
+		C9DD9F431A13A3A00099B184 /* _ActivityItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DD9F3F1A13A3A00099B184 /* _ActivityItem.swift */; };
+		C9DD9F441A13A3A00099B184 /* _ActivityName.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DD9F401A13A3A00099B184 /* _ActivityName.swift */; };
+		C9DD9F451A13A3A00099B184 /* ActivityItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DD9F411A13A3A00099B184 /* ActivityItem.swift */; };
+		C9DD9F461A13A3A00099B184 /* ActivityName.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DD9F421A13A3A00099B184 /* ActivityName.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +37,7 @@
 		C93F56E31A0B70BE0030D481 /* RevmaRapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RevmaRapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C93F56E71A0B70BE0030D481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C93F56E81A0B70BE0030D481 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C93F56EA1A0B70BE0030D481 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		C93F56EA1A0B70BE0030D481 /* ActivityTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTableViewController.swift; sourceTree = "<group>"; };
 		C93F56EC1A0B70BE0030D481 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		C93F56EF1A0B70BE0030D481 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C93F56F11A0B70BE0030D481 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -40,6 +46,12 @@
 		C93F56FF1A0B70BE0030D481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C93F57001A0B70BE0030D481 /* RevmaRappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevmaRappTests.swift; sourceTree = "<group>"; };
 		C9C10BE31A0B831C00784666 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		C9DD9F2D1A136E1C0099B184 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		C9DD9F301A136E550099B184 /* RevmaRapp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RevmaRapp.xcdatamodel; sourceTree = "<group>"; };
+		C9DD9F3F1A13A3A00099B184 /* _ActivityItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _ActivityItem.swift; sourceTree = "<group>"; };
+		C9DD9F401A13A3A00099B184 /* _ActivityName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _ActivityName.swift; sourceTree = "<group>"; };
+		C9DD9F411A13A3A00099B184 /* ActivityItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityItem.swift; sourceTree = "<group>"; };
+		C9DD9F421A13A3A00099B184 /* ActivityName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityName.swift; sourceTree = "<group>"; };
 		C9E284BA1A134FBD00BCD802 /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/Main.strings; sourceTree = "<group>"; };
 		C9E284BB1A134FBD00BCD802 /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		C9E284BE1A13530C00BCD802 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
@@ -85,13 +97,15 @@
 		C93F56E51A0B70BE0030D481 /* RevmaRapp */ = {
 			isa = PBXGroup;
 			children = (
+				C9DD9F3E1A13A3A00099B184 /* ModelObjects */,
 				C93F56E81A0B70BE0030D481 /* AppDelegate.swift */,
-				C93F56EA1A0B70BE0030D481 /* FirstViewController.swift */,
+				C93F56EA1A0B70BE0030D481 /* ActivityTableViewController.swift */,
 				C9C10BE31A0B831C00784666 /* ThirdViewController.swift */,
 				C93F56EC1A0B70BE0030D481 /* SecondViewController.swift */,
 				C93F56EE1A0B70BE0030D481 /* Main.storyboard */,
 				C93F56F11A0B70BE0030D481 /* Images.xcassets */,
 				C93F56F31A0B70BE0030D481 /* LaunchScreen.xib */,
+				C9DD9F361A13746F0099B184 /* Model */,
 				C93F56E61A0B70BE0030D481 /* Supporting Files */,
 			);
 			path = RevmaRapp;
@@ -101,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				C93F56E71A0B70BE0030D481 /* Info.plist */,
+				C9DD9F2D1A136E1C0099B184 /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -122,6 +137,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C9DD9F361A13746F0099B184 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C9DD9F2F1A136E550099B184 /* RevmaRapp.xcdatamodeld */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C9DD9F3E1A13A3A00099B184 /* ModelObjects */ = {
+			isa = PBXGroup;
+			children = (
+				C9DD9F3F1A13A3A00099B184 /* _ActivityItem.swift */,
+				C9DD9F401A13A3A00099B184 /* _ActivityName.swift */,
+				C9DD9F411A13A3A00099B184 /* ActivityItem.swift */,
+				C9DD9F421A13A3A00099B184 /* ActivityName.swift */,
+			);
+			path = ModelObjects;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -129,6 +163,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C93F57041A0B70BE0030D481 /* Build configuration list for PBXNativeTarget "RevmaRapp" */;
 			buildPhases = (
+				C9DD9F3D1A1398070099B184 /* Generate Model Objects */,
 				C93F56DF1A0B70BE0030D481 /* Sources */,
 				C93F56E01A0B70BE0030D481 /* Frameworks */,
 				C93F56E11A0B70BE0030D481 /* Resources */,
@@ -202,6 +237,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C93F56F01A0B70BE0030D481 /* Main.storyboard in Resources */,
+				C9DD9F2E1A136E1C0099B184 /* Localizable.strings in Resources */,
 				C93F56F51A0B70BE0030D481 /* LaunchScreen.xib in Resources */,
 				C93F56F21A0B70BE0030D481 /* Images.xcassets in Resources */,
 			);
@@ -216,15 +252,38 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C9DD9F3D1A1398070099B184 /* Generate Model Objects */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/RevmaRapp/RevmaRapp.xcdatamodeld/RevmaRapp.xcdatamodel",
+			);
+			name = "Generate Model Objects";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd \"$PROJECT_DIR/RevmaRapp\" && /usr/local/bin/mogenerator --swift -m $SCRIPT_INPUT_FILE_0  --output-dir ./ModelObjects";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C93F56DF1A0B70BE0030D481 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9DD9F311A136E550099B184 /* RevmaRapp.xcdatamodeld in Sources */,
+				C9DD9F461A13A3A00099B184 /* ActivityName.swift in Sources */,
+				C9DD9F451A13A3A00099B184 /* ActivityItem.swift in Sources */,
+				C9DD9F441A13A3A00099B184 /* _ActivityName.swift in Sources */,
 				C93F56ED1A0B70BE0030D481 /* SecondViewController.swift in Sources */,
 				C93F56E91A0B70BE0030D481 /* AppDelegate.swift in Sources */,
+				C9DD9F431A13A3A00099B184 /* _ActivityItem.swift in Sources */,
 				C9C10BE41A0B831C00784666 /* ThirdViewController.swift in Sources */,
-				C93F56EB1A0B70BE0030D481 /* FirstViewController.swift in Sources */,
+				C93F56EB1A0B70BE0030D481 /* ActivityTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +495,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C9DD9F2F1A136E550099B184 /* RevmaRapp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C9DD9F301A136E550099B184 /* RevmaRapp.xcdatamodel */,
+			);
+			currentVersion = C9DD9F301A136E550099B184 /* RevmaRapp.xcdatamodel */;
+			path = RevmaRapp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C93F56DB1A0B70BE0030D481 /* Project object */;
 }

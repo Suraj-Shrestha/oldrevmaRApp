@@ -44,7 +44,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1672" y="786"/>
+            <point key="canvasLocation" x="-2118" y="862"/>
         </scene>
         <!--Reflection_Title-->
         <scene sceneID="cPc-bs-gVW">
@@ -77,7 +77,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pje-Nx-3Jt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="219" y="944"/>
+            <point key="canvasLocation" x="891" y="854"/>
         </scene>
         <!--Refelection_title-->
         <scene sceneID="V2S-z7-S8t">
@@ -94,7 +94,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tap-4A-FdI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-475" y="1039"/>
+            <point key="canvasLocation" x="147" y="854"/>
         </scene>
         <!--Goal_title-->
         <scene sceneID="UCB-fi-sA1">
@@ -227,12 +227,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nf2-4h-Ybr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="953" y="1400"/>
+            <point key="canvasLocation" x="1625" y="1310"/>
         </scene>
         <!--Activities_table_title-->
         <scene sceneID="77f-JZ-sCk">
             <objects>
-                <tableViewController id="dXw-Z8-FrB" sceneMemberID="viewController">
+                <tableViewController id="dXw-Z8-FrB" customClass="ActivityTableViewController" customModule="RevmaRapp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="ljH-v7-6mD">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -273,7 +273,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JJ1-TZ-RhY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-812" y="2107"/>
+            <point key="canvasLocation" x="-812" y="1868"/>
         </scene>
         <!--Activity_edit-->
         <scene sceneID="urp-Vt-ZZd">
@@ -559,7 +559,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ydc-E1-bWk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="173" y="1794"/>
+            <point key="canvasLocation" x="147" y="1509"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="0x0-oa-vvc">
@@ -577,7 +577,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qWv-W9-6lj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5" y="2466"/>
+            <point key="canvasLocation" x="147" y="2221"/>
         </scene>
         <!--Activities_title-->
         <scene sceneID="pcm-Pk-eCW">
@@ -615,7 +615,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-439" y="-12"/>
+            <point key="canvasLocation" x="-1712" y="2"/>
         </scene>
     </scenes>
     <resources>

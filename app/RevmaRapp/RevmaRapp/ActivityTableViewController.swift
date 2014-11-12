@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import CoreData
 
-class FirstViewController: UINavigationController {
+class ActivityTableViewController: UITableViewController, NSFetchedResultsControllerDelegate {
+    
+    var managedObjectContext : NSManagedObjectContext?
 
     override func viewDidLoad() {
         super.viewDidLoad()
