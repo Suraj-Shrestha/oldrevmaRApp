@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C93599401A19F66F00DE78BE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C93599421A19F66F00DE78BE /* Localizable.strings */; };
+		C93599451A19F66F00DE78BE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C93599471A19F66F00DE78BE /* InfoPlist.strings */; };
+		C935994A1A19F66F00DE78BE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C935994C1A19F66F00DE78BE /* InfoPlist.strings */; };
 		C93F56E91A0B70BE0030D481 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93F56E81A0B70BE0030D481 /* AppDelegate.swift */; };
 		C93F56EB1A0B70BE0030D481 /* ActivityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93F56EA1A0B70BE0030D481 /* ActivityTableViewController.swift */; };
 		C93F56ED1A0B70BE0030D481 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93F56EC1A0B70BE0030D481 /* SecondViewController.swift */; };
@@ -15,7 +18,6 @@
 		C93F56F51A0B70BE0030D481 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C93F56F31A0B70BE0030D481 /* LaunchScreen.xib */; };
 		C93F57011A0B70BE0030D481 /* RevmaRappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93F57001A0B70BE0030D481 /* RevmaRappTests.swift */; };
 		C9C10BE41A0B831C00784666 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C10BE31A0B831C00784666 /* ThirdViewController.swift */; };
-		C9DD9F2E1A136E1C0099B184 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9DD9F2D1A136E1C0099B184 /* Localizable.strings */; };
 		C9DD9F311A136E550099B184 /* RevmaRapp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C9DD9F2F1A136E550099B184 /* RevmaRapp.xcdatamodeld */; };
 		C9DD9F431A13A3A00099B184 /* _ActivityItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DD9F3F1A13A3A00099B184 /* _ActivityItem.swift */; };
 		C9DD9F441A13A3A00099B184 /* _ActivityName.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DD9F401A13A3A00099B184 /* _ActivityName.swift */; };
@@ -34,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C93599411A19F66F00DE78BE /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C93599461A19F66F00DE78BE /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C935994B1A19F66F00DE78BE /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C93F56E31A0B70BE0030D481 /* RevmaRapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RevmaRapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C93F56E71A0B70BE0030D481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C93F56E81A0B70BE0030D481 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -46,7 +51,6 @@
 		C93F56FF1A0B70BE0030D481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C93F57001A0B70BE0030D481 /* RevmaRappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevmaRappTests.swift; sourceTree = "<group>"; };
 		C9C10BE31A0B831C00784666 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
-		C9DD9F2D1A136E1C0099B184 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		C9DD9F301A136E550099B184 /* RevmaRapp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RevmaRapp.xcdatamodel; sourceTree = "<group>"; };
 		C9DD9F3F1A13A3A00099B184 /* _ActivityItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _ActivityItem.swift; sourceTree = "<group>"; };
 		C9DD9F401A13A3A00099B184 /* _ActivityName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _ActivityName.swift; sourceTree = "<group>"; };
@@ -114,8 +118,9 @@
 		C93F56E61A0B70BE0030D481 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C935994C1A19F66F00DE78BE /* InfoPlist.strings */,
+				C93599421A19F66F00DE78BE /* Localizable.strings */,
 				C93F56E71A0B70BE0030D481 /* Info.plist */,
-				C9DD9F2D1A136E1C0099B184 /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -132,6 +137,7 @@
 		C93F56FE1A0B70BE0030D481 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C93599471A19F66F00DE78BE /* InfoPlist.strings */,
 				C93F56FF1A0B70BE0030D481 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -236,8 +242,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C93599401A19F66F00DE78BE /* Localizable.strings in Resources */,
+				C935994A1A19F66F00DE78BE /* InfoPlist.strings in Resources */,
 				C93F56F01A0B70BE0030D481 /* Main.storyboard in Resources */,
-				C9DD9F2E1A136E1C0099B184 /* Localizable.strings in Resources */,
 				C93F56F51A0B70BE0030D481 /* LaunchScreen.xib in Resources */,
 				C93F56F21A0B70BE0030D481 /* Images.xcassets in Resources */,
 			);
@@ -247,6 +254,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C93599451A19F66F00DE78BE /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +314,30 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		C93599421A19F66F00DE78BE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C93599411A19F66F00DE78BE /* nb */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		C93599471A19F66F00DE78BE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C93599461A19F66F00DE78BE /* nb */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C935994C1A19F66F00DE78BE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C935994B1A19F66F00DE78BE /* nb */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		C93F56EE1A0B70BE0030D481 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

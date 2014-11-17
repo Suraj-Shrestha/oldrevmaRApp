@@ -1,15 +1,8 @@
-
 /* Class = "IBUILabel"; text = "Activity_pain_label"; ObjectID = "0kL-Gx-kYQ"; */
 "0kL-Gx-kYQ.text" = "Aktiviteten gav smerte:";
 
-/* Class = "IBUILabel"; text = "Time_Start_Label"; ObjectID = "17y-PJ-aEj"; */
-"17y-PJ-aEj.text" = "Tidspunkt";
-
 /* Class = "IBUILabel"; text = "Duty_label"; ObjectID = "2ur-gQ-y4n"; */
 "2ur-gQ-y4n.text" = "Plikt";
-
-/* Class = "IBUILabel"; text = "Title"; ObjectID = "31d-rr-kpW"; */
-"31d-rr-kpW.text" = "Title";
 
 /* Class = "IBUIBarButtonItem"; title = "CancelButton"; ObjectID = "6Vy-Bu-EYs"; */
 "6Vy-Bu-EYs.title" = "Avbryt";
@@ -17,19 +10,25 @@
 /* Class = "IBUILabel"; text = "Goal"; ObjectID = "7Ea-GC-NRa"; */
 "7Ea-GC-NRa.text" = "Mål";
 
+/* Class = "IBUILabel"; text = "Time_Start_Label"; ObjectID = "17y-PJ-aEj"; */
+"17y-PJ-aEj.text" = "Tidspunkt";
+
+/* Class = "IBUILabel"; text = "Title"; ObjectID = "31d-rr-kpW"; */
+"31d-rr-kpW.text" = "Title";
+
 /* Class = "IBUITableViewController"; title = "Reflection_Title"; ObjectID = "94d-wo-ZX5"; */
 "94d-wo-ZX5.title" = "Refleksjon";
 
 /* Class = "IBUITextField"; placeholder = "Activity_Placeholder_Text"; ObjectID = "DBh-27-8jj"; */
 "DBh-27-8jj.placeholder" = "Aktivitet";
 
-/* Class = "IBUINavigationItem"; title = "Activities_title"; ObjectID = "EXF-tP-vvc"; */
+/* Class = "IBUINavigationItem"; title = "Activities_table_title"; ObjectID = "EXF-tP-vvc"; */
 "EXF-tP-vvc.title" = "Aktiviteter";
 
 /* Class = "IBUILabel"; text = "Activity_meaning_label"; ObjectID = "HaQ-b7-eiI"; */
 "HaQ-b7-eiI.text" = "Aktivitetens betydning for meg";
 
-/* Class = "IBUITabBarItem"; title = "Activities"; ObjectID = "JYO-ep-uMH"; */
+/* Class = "IBUITabBarItem"; title = "Activities_title"; ObjectID = "JYO-ep-uMH"; */
 "JYO-ep-uMH.title" = "Aktiviteter";
 
 /* Class = "IBUILabel"; text = "Activity_duty_label"; ObjectID = "KeF-77-DHr"; */
@@ -43,9 +42,6 @@
 
 /* Class = "IBUITabBarItem"; title = "Refelection_title"; ObjectID = "Nd0-Iw-Ie7"; */
 "Nd0-Iw-Ie7.title" = "Refleksjon";
-
-/* Class = "IBUINavigationController"; title = "Reflection_Title"; ObjectID = "PyH-cI-oUs"; */
-"PyH-cI-oUs.title" = "Refleksjon";
 
 /* Class = "IBUITabBarItem"; title = "Goal_title"; ObjectID = "RdF-ej-Uj2"; */
 "RdF-ej-Uj2.title" = "Goal";
@@ -62,7 +58,7 @@
 /* Class = "IBUILabel"; text = "Duration_Label"; ObjectID = "ZtU-dl-GmD"; */
 "ZtU-dl-GmD.text" = "Tidsbruk";
 
-/* Class = "IBUITabBarItem"; title = "History"; ObjectID = "cPa-gy-q4n"; */
+/* Class = "IBUITabBarItem"; title = "History_title"; ObjectID = "cPa-gy-q4n"; */
 "cPa-gy-q4n.title" = "Historikk";
 
 /* Class = "IBUILabel"; text = "important_label"; ObjectID = "cnS-uj-iga"; */
@@ -83,8 +79,9 @@
 /* Class = "IBUIBarButtonItem"; title = "DoneButton"; ObjectID = "njB-PF-o0O"; */
 "njB-PF-o0O.title" = "Ferdig";
 
-/* Class = "IBUINavigationItem"; title = "Root View Controller"; ObjectID = "wqZ-Cx-GCV"; */
+/* Class = "IBUINavigationItem"; title = "Reflection_table_title"; ObjectID = "wqZ-Cx-GCV"; */
 "wqZ-Cx-GCV.title" = "Root View Controller";
 
 /* Class = "IBUILabel"; text = "History"; ObjectID = "zEq-FU-wV5"; */
 "zEq-FU-wV5.text" = "Historikk";
+

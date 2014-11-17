@@ -34,7 +34,7 @@
 	<key>MasterSheets</key>
 	<array/>
 	<key>ModificationDate</key>
-	<string>2014-10-28 14:03:54 +0000</string>
+	<string>2014-11-12 09:24:08 +0000</string>
 	<key>Modifier</key>
 	<string>Trenton Schulz</string>
 	<key>NotesVisible</key>
@@ -2435,8 +2435,8 @@
 					<integer>0</integer>
 					<key>Points</key>
 					<array>
-						<string>{852.0840677731444, 678.79630325839582}</string>
-						<string>{963, 679.90842446945783}</string>
+						<string>{852.08406777314451, 678.79630325839582}</string>
+						<string>{963, 679.90842446945794}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -2566,8 +2566,8 @@
 					<integer>0</integer>
 					<key>Points</key>
 					<array>
-						<string>{645.18433915982189, 1563.1395999999995}</string>
-						<string>{640.93775863990902, 1850}</string>
+						<string>{645.18429936641871, 1563.1395999999995}</string>
+						<string>{640.93680563438011, 1850}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -2811,8 +2811,8 @@
 					<integer>0</integer>
 					<key>Points</key>
 					<array>
-						<string>{862.5, 536.11701066379908}</string>
-						<string>{963.5, 536.35953054570462}</string>
+						<string>{862.5, 536.11701066794285}</string>
+						<string>{963.5, 536.35953055694199}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -3198,32 +3198,32 @@
 								cIaEAmlJAQeS
 								hISEDE5TRGlj
 								dGlvbmFyeQCU
-								hAFpBJKElpYH
-								TlNDb2xvcoaS
-								hISEB05TQ29s
-								b3IAlIQBYwKE
-								BGZmZmYAAAAB
-								hpKElpYQTlNQ
-								YXJhZ3JhcGhT
-								dHlsZYaShISE
-								EE5TUGFyYWdy
-								YXBoU3R5bGUA
-								lIQEQ0NAUwAA
-								hISEB05TQXJy
-								YXkAlJkMkoSE
-								hAlOU1RleHRU
-								YWIAlIQCQ2YA
-								HIaShKKhADiG
-								koSioQBUhpKE
-								oqEAcIaShKKh
-								AIGMAIaShKKh
-								AIGoAIaShKKh
-								AIHEAIaShKKh
-								AIHgAIaShKKh
-								AIH8AIaShKKh
-								AIEYAYaShKKh
-								AIE0AYaShKKh
-								AIFQAYaGAIaS
+								hAFpBJKElpYQ
+								TlNQYXJhZ3Jh
+								cGhTdHlsZYaS
+								hISEEE5TUGFy
+								YWdyYXBoU3R5
+								bGUAlIQEQ0NA
+								UwAAhISEB05T
+								QXJyYXkAlJkM
+								koSEhAlOU1Rl
+								eHRUYWIAlIQC
+								Q2YAHIaShJ+e
+								ADiGkoSfngBU
+								hpKEn54AcIaS
+								hJ+eAIGMAIaS
+								hJ+eAIGoAIaS
+								hJ+eAIHEAIaS
+								hJ+eAIHgAIaS
+								hJ+eAIH8AIaS
+								hJ+eAIEYAYaS
+								hJ+eAIE0AYaS
+								hJ+eAIFQAYaG
+								AIaShJaWB05T
+								Q29sb3KGkoSE
+								hAdOU0NvbG9y
+								AJSEAWMChARm
+								ZmZmAAAAAYaS
 								hJaWBk5TRm9u
 								dIaShISEBk5T
 								Rm9udB6UmSSE
@@ -3232,7 +3232,7 @@
 								ZQBsAHYAZQB0
 								AGkAYwBhAE4A
 								ZQB1AGUAhAFm
-								IpsAmwGbAJsA
+								IqAAoAGgAKAA
 								hpKElpYGTlNL
 								ZXJuhpKEhIQI
 								TlNOdW1iZXIA
@@ -3369,34 +3369,34 @@ St\'e5 opp}</string>
 								hoQCaUkBB5KE
 								hIQMTlNEaWN0
 								aW9uYXJ5AJSE
-								AWkEkoSWlgZO
-								U0tlcm6GkoSE
-								hAhOU051bWJl
-								cgCEhAdOU1Zh
-								bHVlAJSEASqE
-								hAFknYPNzMzM
-								zMzcv4aShJaW
-								EE5TUGFyYWdy
-								YXBoU3R5bGWG
-								koSEhBBOU1Bh
-								cmFncmFwaFN0
-								eWxlAJSEBEND
-								QFMAAISEhAdO
-								U0FycmF5AJSZ
-								DJKEhIQJTlNU
-								ZXh0VGFiAJSE
-								AkNmAByGkoSk
-								ogA4hpKEpKIA
-								VIaShKSiAHCG
-								koSkogCBjACG
-								koSkogCBqACG
-								koSkogCBxACG
-								koSkogCB4ACG
-								koSkogCB/ACG
-								koSkogCBGAGG
-								koSkogCBNAGG
-								koSkogCBUAGG
-								hgCGkoSWlgZO
+								AWkEkoSWlhBO
+								U1BhcmFncmFw
+								aFN0eWxlhpKE
+								hIQQTlNQYXJh
+								Z3JhcGhTdHls
+								ZQCUhARDQ0BT
+								AACEhIQHTlNB
+								cnJheQCUmQyS
+								hISECU5TVGV4
+								dFRhYgCUhAJD
+								ZgAchpKEn54A
+								OIaShJ+eAFSG
+								koSfngBwhpKE
+								n54AgYwAhpKE
+								n54AgagAhpKE
+								n54AgcQAhpKE
+								n54AgeAAhpKE
+								n54AgfwAhpKE
+								n54AgRgBhpKE
+								n54AgTQBhpKE
+								n54AgVABhoYA
+								hpKElpYGTlNL
+								ZXJuhpKEhIQI
+								TlNOdW1iZXIA
+								hIQHTlNWYWx1
+								ZQCUhAEqhIQB
+								ZKKDzczMzMzM
+								3L+GkoSWlgZO
 								U0ZvbnSGkoSE
 								hAZOU0ZvbnQe
 								lJkkhAVbMzZj
@@ -3846,22 +3846,22 @@ tirsdag}</string>
 						hIQITlNPYmplY3QAhZKEhIQITlNT
 						dHJpbmcBlIQBKwxMYWdlIGZyb2tv
 						c3SGhAJpSQEMkoSEhAxOU0RpY3Rp
-						b25hcnkAlIQBaQSShJaWB05TQ29s
-						b3KGkoSEhAdOU0NvbG9yAJSEAWMC
-						hARmZmZmAAAAAYaShJaWEE5TUGFy
+						b25hcnkAlIQBaQSShJaWEE5TUGFy
 						YWdyYXBoU3R5bGWGkoSEhBBOU1Bh
 						cmFncmFwaFN0eWxlAJSEBENDQFMA
 						AISEhAdOU0FycmF5AJSZDJKEhIQJ
-						TlNUZXh0VGFiAJSEAkNmAByGkoSi
-						oQA4hpKEoqEAVIaShKKhAHCGkoSi
-						oQCBjACGkoSioQCBqACGkoSioQCB
-						xACGkoSioQCB4ACGkoSioQCB/ACG
-						koSioQCBGAGGkoSioQCBNAGGkoSi
-						oQCBUAGGhgCGkoSWlgZOU0ZvbnSG
+						TlNUZXh0VGFiAJSEAkNmAByGkoSf
+						ngA4hpKEn54AVIaShJ+eAHCGkoSf
+						ngCBjACGkoSfngCBqACGkoSfngCB
+						xACGkoSfngCB4ACGkoSfngCB/ACG
+						koSfngCBGAGGkoSfngCBNAGGkoSf
+						ngCBUAGGhgCGkoSWlgdOU0NvbG9y
+						hpKEhIQHTlNDb2xvcgCUhAFjAoQE
+						ZmZmZgAAAAGGkoSWlgZOU0ZvbnSG
 						koSEhAZOU0ZvbnQelJkkhAVbMzZj
 						XQYAAAAcAAAA//5IAGUAbAB2AGUA
-						dABpAGMAYQBOAGUAdQBlAIQBZiKb
-						AJsBmwCbAIaShJaWBk5TS2VyboaS
+						dABpAGMAYQBOAGUAdQBlAIQBZiKg
+						AKABoACgAIaShJaWBk5TS2VyboaS
 						hISECE5TTnVtYmVyAISEB05TVmFs
 						dWUAlIQBKoSEAWSogzMzMzMzM9O/
 						hoaG
@@ -4279,32 +4279,32 @@ Lage frokost}</string>
 								cIaEAmlJAQeS
 								hISEDE5TRGlj
 								dGlvbmFyeQCU
-								hAFpBJKElpYH
-								TlNDb2xvcoaS
-								hISEB05TQ29s
-								b3IAlIQBYwKE
-								BGZmZmYAAAAB
-								hpKElpYQTlNQ
-								YXJhZ3JhcGhT
-								dHlsZYaShISE
-								EE5TUGFyYWdy
-								YXBoU3R5bGUA
-								lIQEQ0NAUwAA
-								hISEB05TQXJy
-								YXkAlJkMkoSE
-								hAlOU1RleHRU
-								YWIAlIQCQ2YA
-								HIaShKKhADiG
-								koSioQBUhpKE
-								oqEAcIaShKKh
-								AIGMAIaShKKh
-								AIGoAIaShKKh
-								AIHEAIaShKKh
-								AIHgAIaShKKh
-								AIH8AIaShKKh
-								AIEYAYaShKKh
-								AIE0AYaShKKh
-								AIFQAYaGAIaS
+								hAFpBJKElpYQ
+								TlNQYXJhZ3Jh
+								cGhTdHlsZYaS
+								hISEEE5TUGFy
+								YWdyYXBoU3R5
+								bGUAlIQEQ0NA
+								UwAAhISEB05T
+								QXJyYXkAlJkM
+								koSEhAlOU1Rl
+								eHRUYWIAlIQC
+								Q2YAHIaShJ+e
+								ADiGkoSfngBU
+								hpKEn54AcIaS
+								hJ+eAIGMAIaS
+								hJ+eAIGoAIaS
+								hJ+eAIHEAIaS
+								hJ+eAIHgAIaS
+								hJ+eAIH8AIaS
+								hJ+eAIEYAYaS
+								hJ+eAIE0AYaS
+								hJ+eAIFQAYaG
+								AIaShJaWB05T
+								Q29sb3KGkoSE
+								hAdOU0NvbG9y
+								AJSEAWMChARm
+								ZmZmAAAAAYaS
 								hJaWBk5TRm9u
 								dIaShISEBk5T
 								Rm9udB6UmSSE
@@ -4313,7 +4313,7 @@ Lage frokost}</string>
 								ZQBsAHYAZQB0
 								AGkAYwBhAE4A
 								ZQB1AGUAhAFm
-								IpsAmwGbAJsA
+								IqAAoAGgAKAA
 								hpKElpYGTlNL
 								ZXJuhpKEhIQI
 								TlNOdW1iZXIA
@@ -4598,32 +4598,32 @@ St\'e5 opp}</string>
 								AmlJAQWShISE
 								DE5TRGljdGlv
 								bmFyeQCUhAFp
-								BJKElpYHTlND
-								b2xvcoaShISE
-								B05TQ29sb3IA
-								lIQBYwKEBGZm
-								ZmYAAAABhpKE
-								lpYQTlNQYXJh
-								Z3JhcGhTdHls
-								ZYaShISEEE5T
-								UGFyYWdyYXBo
-								U3R5bGUAlIQE
-								Q0NAUwAAhISE
-								B05TQXJyYXkA
-								lJkMkoSEhAlO
-								U1RleHRUYWIA
-								lIQCQ2YAHIaS
-								hKKhADiGkoSi
-								oQBUhpKEoqEA
-								cIaShKKhAIGM
-								AIaShKKhAIGo
-								AIaShKKhAIHE
-								AIaShKKhAIHg
-								AIaShKKhAIH8
-								AIaShKKhAIEY
-								AYaShKKhAIE0
-								AYaShKKhAIFQ
-								AYaGAIaShJaW
+								BJKElpYQTlNQ
+								YXJhZ3JhcGhT
+								dHlsZYaShISE
+								EE5TUGFyYWdy
+								YXBoU3R5bGUA
+								lIQEQ0NAUwAA
+								hISEB05TQXJy
+								YXkAlJkMkoSE
+								hAlOU1RleHRU
+								YWIAlIQCQ2YA
+								HIaShJ+eADiG
+								koSfngBUhpKE
+								n54AcIaShJ+e
+								AIGMAIaShJ+e
+								AIGoAIaShJ+e
+								AIHEAIaShJ+e
+								AIHgAIaShJ+e
+								AIH8AIaShJ+e
+								AIEYAYaShJ+e
+								AIE0AYaShJ+e
+								AIFQAYaGAIaS
+								hJaWB05TQ29s
+								b3KGkoSEhAdO
+								U0NvbG9yAJSE
+								AWMChARmZmZm
+								AAAAAYaShJaW
 								Bk5TRm9udIaS
 								hISEBk5TRm9u
 								dB6UmSSEBVsz
@@ -4631,8 +4631,8 @@ St\'e5 opp}</string>
 								AAD//kgAZQBs
 								AHYAZQB0AGkA
 								YwBhAE4AZQB1
-								AGUAhAFmIpsA
-								mwGbAJsAhpKE
+								AGUAhAFmIqAA
+								oAGgAKAAhpKE
 								lpYGTlNLZXJu
 								hpKEhIQITlNO
 								dW1iZXIAhIQH
@@ -4769,34 +4769,34 @@ Dusje}</string>
 								hAJpSQEGkoSE
 								hAxOU0RpY3Rp
 								b25hcnkAlIQB
-								aQSShJaWBk5T
-								S2VyboaShISE
-								CE5TTnVtYmVy
-								AISEB05TVmFs
-								dWUAlIQBKoSE
-								AWSdg83MzMzM
-								zNy/hpKElpYQ
-								TlNQYXJhZ3Jh
-								cGhTdHlsZYaS
-								hISEEE5TUGFy
-								YWdyYXBoU3R5
-								bGUAlIQEQ0NA
-								UwAAhISEB05T
-								QXJyYXkAlJkM
-								koSEhAlOU1Rl
-								eHRUYWIAlIQC
-								Q2YAHIaShKSi
-								ADiGkoSkogBU
-								hpKEpKIAcIaS
-								hKSiAIGMAIaS
-								hKSiAIGoAIaS
-								hKSiAIHEAIaS
-								hKSiAIHgAIaS
-								hKSiAIH8AIaS
-								hKSiAIEYAYaS
-								hKSiAIE0AYaS
-								hKSiAIFQAYaG
-								AIaShJaWBk5T
+								aQSShJaWEE5T
+								UGFyYWdyYXBo
+								U3R5bGWGkoSE
+								hBBOU1BhcmFn
+								cmFwaFN0eWxl
+								AJSEBENDQFMA
+								AISEhAdOU0Fy
+								cmF5AJSZDJKE
+								hIQJTlNUZXh0
+								VGFiAJSEAkNm
+								AByGkoSfngA4
+								hpKEn54AVIaS
+								hJ+eAHCGkoSf
+								ngCBjACGkoSf
+								ngCBqACGkoSf
+								ngCBxACGkoSf
+								ngCB4ACGkoSf
+								ngCB/ACGkoSf
+								ngCBGAGGkoSf
+								ngCBNAGGkoSf
+								ngCBUAGGhgCG
+								koSWlgZOU0tl
+								cm6GkoSEhAhO
+								U051bWJlcgCE
+								hAdOU1ZhbHVl
+								AJSEASqEhAFk
+								ooPNzMzMzMzc
+								v4aShJaWBk5T
 								Rm9udIaShISE
 								Bk5TRm9udB6U
 								mSSEBVszNmNd
@@ -5020,32 +5020,32 @@ mandag}</string>
 								AQqShISEDE5T
 								RGljdGlvbmFy
 								eQCUhAFpBJKE
-								lpYHTlNDb2xv
-								coaShISEB05T
-								Q29sb3IAlIQB
-								YwKEBGZmZmYA
-								AAABhpKElpYQ
-								TlNQYXJhZ3Jh
-								cGhTdHlsZYaS
-								hISEEE5TUGFy
-								YWdyYXBoU3R5
-								bGUAlIQEQ0NA
-								UwAAhISEB05T
-								QXJyYXkAlJkM
-								koSEhAlOU1Rl
-								eHRUYWIAlIQC
-								Q2YAHIaShKKh
-								ADiGkoSioQBU
-								hpKEoqEAcIaS
-								hKKhAIGMAIaS
-								hKKhAIGoAIaS
-								hKKhAIHEAIaS
-								hKKhAIHgAIaS
-								hKKhAIH8AIaS
-								hKKhAIEYAYaS
-								hKKhAIE0AYaS
-								hKKhAIFQAYaG
-								AIaShJaWBk5T
+								lpYQTlNQYXJh
+								Z3JhcGhTdHls
+								ZYaShISEEE5T
+								UGFyYWdyYXBo
+								U3R5bGUAlIQE
+								Q0NAUwAAhISE
+								B05TQXJyYXkA
+								lJkMkoSEhAlO
+								U1RleHRUYWIA
+								lIQCQ2YAHIaS
+								hJ+eADiGkoSf
+								ngBUhpKEn54A
+								cIaShJ+eAIGM
+								AIaShJ+eAIGo
+								AIaShJ+eAIHE
+								AIaShJ+eAIHg
+								AIaShJ+eAIH8
+								AIaShJ+eAIEY
+								AYaShJ+eAIE0
+								AYaShJ+eAIFQ
+								AYaGAIaShJaW
+								B05TQ29sb3KG
+								koSEhAdOU0Nv
+								bG9yAJSEAWMC
+								hARmZmZmAAAA
+								AYaShJaWBk5T
 								Rm9udIaShISE
 								Bk5TRm9udB6U
 								mSSEBVszNmNd
@@ -5053,8 +5053,8 @@ mandag}</string>
 								/kgAZQBsAHYA
 								ZQB0AGkAYwBh
 								AE4AZQB1AGUA
-								hAFmIpsAmwGb
-								AJsAhpKElpYG
+								hAFmIqAAoAGg
+								AKAAhpKElpYG
 								TlNLZXJuhpKE
 								hIQITlNOdW1i
 								ZXIAhIQHTlNW
@@ -5444,32 +5444,32 @@ Kle p\'e5 seg}</string>
 								AQuShISEDE5T
 								RGljdGlvbmFy
 								eQCUhAFpBJKE
-								lpYHTlNDb2xv
-								coaShISEB05T
-								Q29sb3IAlIQB
-								YwKEBGZmZmYA
-								AAABhpKElpYQ
-								TlNQYXJhZ3Jh
-								cGhTdHlsZYaS
-								hISEEE5TUGFy
-								YWdyYXBoU3R5
-								bGUAlIQEQ0NA
-								UwAAhISEB05T
-								QXJyYXkAlJkM
-								koSEhAlOU1Rl
-								eHRUYWIAlIQC
-								Q2YAHIaShKKh
-								ADiGkoSioQBU
-								hpKEoqEAcIaS
-								hKKhAIGMAIaS
-								hKKhAIGoAIaS
-								hKKhAIHEAIaS
-								hKKhAIHgAIaS
-								hKKhAIH8AIaS
-								hKKhAIEYAYaS
-								hKKhAIE0AYaS
-								hKKhAIFQAYaG
-								AIaShJaWBk5T
+								lpYQTlNQYXJh
+								Z3JhcGhTdHls
+								ZYaShISEEE5T
+								UGFyYWdyYXBo
+								U3R5bGUAlIQE
+								Q0NAUwAAhISE
+								B05TQXJyYXkA
+								lJkMkoSEhAlO
+								U1RleHRUYWIA
+								lIQCQ2YAHIaS
+								hJ+eADiGkoSf
+								ngBUhpKEn54A
+								cIaShJ+eAIGM
+								AIaShJ+eAIGo
+								AIaShJ+eAIHE
+								AIaShJ+eAIHg
+								AIaShJ+eAIH8
+								AIaShJ+eAIEY
+								AYaShJ+eAIE0
+								AYaShJ+eAIFQ
+								AYaGAIaShJaW
+								B05TQ29sb3KG
+								koSEhAdOU0Nv
+								bG9yAJSEAWMC
+								hARmZmZmAAAA
+								AYaShJaWBk5T
 								Rm9udIaShISE
 								Bk5TRm9udB6U
 								mTCEBVs0OGNd
@@ -5478,8 +5478,8 @@ Kle p\'e5 seg}</string>
 								ZQB0AGkAYwBh
 								AE4AZQB1AGUA
 								LQBCAG8AbABk
-								AAAAhAFmIpsA
-								mwGbAJsAhpKE
+								AAAAhAFmIqAA
+								oAGgAKAAhpKE
 								lpYGTlNLZXJu
 								hpKEhIQITlNO
 								dW1iZXIAhIQH
@@ -5564,31 +5564,31 @@ Aktiviteter}</string>
 								koSEhAxOU0Rp
 								Y3Rpb25hcnkA
 								lIQBaQSShJaW
-								B05TQ29sb3KG
-								koSEhAdOU0Nv
-								bG9yAJSEAWMC
-								hARmZmZmAAAA
-								AYaShJaWEE5T
-								UGFyYWdyYXBo
-								U3R5bGWGkoSE
-								hBBOU1BhcmFn
-								cmFwaFN0eWxl
-								AJSEBENDQFMA
-								AISEhAdOU0Fy
-								cmF5AJSZDJKE
-								hIQJTlNUZXh0
-								VGFiAJSEAkNm
-								AByGkoSioQA4
-								hpKEoqEAVIaS
-								hKKhAHCGkoSi
-								oQCBjACGkoSi
-								oQCBqACGkoSi
-								oQCBxACGkoSi
-								oQCB4ACGkoSi
-								oQCB/ACGkoSi
-								oQCBGAGGkoSi
-								oQCBNAGGkoSi
-								oQCBUAGGhgCG
+								EE5TUGFyYWdy
+								YXBoU3R5bGWG
+								koSEhBBOU1Bh
+								cmFncmFwaFN0
+								eWxlAJSEBEND
+								QFMAAISEhAdO
+								U0FycmF5AJSZ
+								DJKEhIQJTlNU
+								ZXh0VGFiAJSE
+								AkNmAByGkoSf
+								ngA4hpKEn54A
+								VIaShJ+eAHCG
+								koSfngCBjACG
+								koSfngCBqACG
+								koSfngCBxACG
+								koSfngCB4ACG
+								koSfngCB/ACG
+								koSfngCBGAGG
+								koSfngCBNAGG
+								koSfngCBUAGG
+								hgCGkoSWlgdO
+								U0NvbG9yhpKE
+								hIQHTlNDb2xv
+								cgCUhAFjAoQE
+								ZmZmZgAAAAGG
 								koSWlgZOU0Zv
 								bnSGkoSEhAZO
 								U0ZvbnQelJkk
@@ -5597,7 +5597,7 @@ Aktiviteter}</string>
 								AGUAbAB2AGUA
 								dABpAGMAYQBO
 								AGUAdQBlAIQB
-								ZiKbAJsBmwCb
+								ZiKgAKABoACg
 								AIaShJaWBk5T
 								S2VyboaShISE
 								CE5TTnVtYmVy
@@ -5801,32 +5801,32 @@ Legg till}</string>
 								TYaEAmlJAQiS
 								hISEDE5TRGlj
 								dGlvbmFyeQCU
-								hAFpBJKElpYH
-								TlNDb2xvcoaS
-								hISEB05TQ29s
-								b3IAlIQBYwKE
-								BGZmZmYAAAAB
-								hpKElpYQTlNQ
-								YXJhZ3JhcGhT
-								dHlsZYaShISE
-								EE5TUGFyYWdy
-								YXBoU3R5bGUA
-								lIQEQ0NAUwAA
-								hISEB05TQXJy
-								YXkAlJkMkoSE
-								hAlOU1RleHRU
-								YWIAlIQCQ2YA
-								HIaShKKhADiG
-								koSioQBUhpKE
-								oqEAcIaShKKh
-								AIGMAIaShKKh
-								AIGoAIaShKKh
-								AIHEAIaShKKh
-								AIHgAIaShKKh
-								AIH8AIaShKKh
-								AIEYAYaShKKh
-								AIE0AYaShKKh
-								AIFQAYaGAIaS
+								hAFpBJKElpYQ
+								TlNQYXJhZ3Jh
+								cGhTdHlsZYaS
+								hISEEE5TUGFy
+								YWdyYXBoU3R5
+								bGUAlIQEQ0NA
+								UwAAhISEB05T
+								QXJyYXkAlJkM
+								koSEhAlOU1Rl
+								eHRUYWIAlIQC
+								Q2YAHIaShJ+e
+								ADiGkoSfngBU
+								hpKEn54AcIaS
+								hJ+eAIGMAIaS
+								hJ+eAIGoAIaS
+								hJ+eAIHEAIaS
+								hJ+eAIHgAIaS
+								hJ+eAIH8AIaS
+								hJ+eAIEYAYaS
+								hJ+eAIE0AYaS
+								hJ+eAIFQAYaG
+								AIaShJaWB05T
+								Q29sb3KGkoSE
+								hAdOU0NvbG9y
+								AJSEAWMChARm
+								ZmZmAAAAAYaS
 								hJaWBk5TRm9u
 								dIaShISEBk5T
 								Rm9udB6UmTCE
@@ -5836,8 +5836,8 @@ Legg till}</string>
 								AGkAYwBhAE4A
 								ZQB1AGUALQBC
 								AG8AbABkAAAA
-								hAFmGJsAmwGb
-								AJsAhpKElpYG
+								hAFmGKAAoAGg
+								AKAAhpKElpYG
 								TlNLZXJuhpKE
 								hIQITlNOdW1i
 								ZXIAhIQHTlNW
@@ -5910,32 +5910,32 @@ Legg till}</string>
 								aUkBBJKEhIQM
 								TlNEaWN0aW9u
 								YXJ5AJSEAWkE
-								koSWlgdOU0Nv
-								bG9yhpKEhIQH
-								TlNDb2xvcgCU
-								hAFjAoQEZmZm
-								ZgAAAAGGkoSW
-								lhBOU1BhcmFn
-								cmFwaFN0eWxl
-								hpKEhIQQTlNQ
-								YXJhZ3JhcGhT
-								dHlsZQCUhARD
-								Q0BTAACEhIQH
-								TlNBcnJheQCU
-								mQyShISECU5T
-								VGV4dFRhYgCU
-								hAJDZgAchpKE
-								oqEAOIaShKKh
-								AFSGkoSioQBw
-								hpKEoqEAgYwA
-								hpKEoqEAgagA
-								hpKEoqEAgcQA
-								hpKEoqEAgeAA
-								hpKEoqEAgfwA
-								hpKEoqEAgRgB
-								hpKEoqEAgTQB
-								hpKEoqEAgVAB
-								hoYAhpKElpYG
+								koSWlhBOU1Bh
+								cmFncmFwaFN0
+								eWxlhpKEhIQQ
+								TlNQYXJhZ3Jh
+								cGhTdHlsZQCU
+								hARDQ0BTAACE
+								hIQHTlNBcnJh
+								eQCUmQyShISE
+								CU5TVGV4dFRh
+								YgCUhAJDZgAc
+								hpKEn54AOIaS
+								hJ+eAFSGkoSf
+								ngBwhpKEn54A
+								gYwAhpKEn54A
+								gagAhpKEn54A
+								gcQAhpKEn54A
+								geAAhpKEn54A
+								gfwAhpKEn54A
+								gRgBhpKEn54A
+								gTQBhpKEn54A
+								gVABhoYAhpKE
+								lpYHTlNDb2xv
+								coaShISEB05T
+								Q29sb3IAlIQB
+								YwKEBGZmZmYA
+								AAABhpKElpYG
 								TlNGb250hpKE
 								hIQGTlNGb250
 								HpSZJIQFWzM2
@@ -5943,8 +5943,8 @@ Legg till}</string>
 								AP/+SABlAGwA
 								dgBlAHQAaQBj
 								AGEATgBlAHUA
-								ZQCEAWYYmwCb
-								AZsAmwCGkoSW
+								ZQCEAWYYoACg
+								AaAAoACGkoSW
 								lgZOU0tlcm6G
 								koSEhAhOU051
 								bWJlcgCEhAdO
@@ -6938,47 +6938,47 @@ AT&amp;T}</string>
 								aUkBA5KEhIQM
 								TlNEaWN0aW9u
 								YXJ5AJSEAWkE
-								koSWlhBOU1Bh
-								cmFncmFwaFN0
-								eWxlhpKEhIQQ
-								TlNQYXJhZ3Jh
-								cGhTdHlsZQCU
-								hARDQ0BTAACE
-								hIQHTlNBcnJh
-								eQCUmQyShISE
-								CU5TVGV4dFRh
-								YgCUhAJDZgAc
-								hpKEn54AOIaS
-								hJ+eAFSGkoSf
-								ngBwhpKEn54A
-								gYwAhpKEn54A
-								gagAhpKEn54A
-								gcQAhpKEn54A
-								geAAhpKEn54A
-								gfwAhpKEn54A
-								gRgBhpKEn54A
-								gTQBhpKEn54A
-								gVABhoYAhpKE
-								lpYGTlNLZXJu
-								hpKEhIQITlNO
-								dW1iZXIAhIQH
-								TlNWYWx1ZQCU
-								hAEqhIQBZKKD
-								AAAAAAAA4L+G
-								koSWlgZOU0Zv
-								bnSGkoSEhAZO
-								U0ZvbnQelJkk
-								hAVbMzZjXQYA
-								AAAcAAAA//5I
-								AGUAbAB2AGUA
-								dABpAGMAYQBO
-								AGUAdQBlAIQB
-								ZhSEAWMApgGm
-								AKYAhpKElpYH
-								TlNDb2xvcoaS
-								hISEB05TQ29s
-								b3IAlKYChARm
-								ZmZmAAAAAYaG
+								koSWlgdOU0Nv
+								bG9yhpKEhIQH
+								TlNDb2xvcgCU
+								hAFjAoQEZmZm
+								ZgAAAAGGkoSW
+								lhBOU1BhcmFn
+								cmFwaFN0eWxl
+								hpKEhIQQTlNQ
+								YXJhZ3JhcGhT
+								dHlsZQCUhARD
+								Q0BTAACEhIQH
+								TlNBcnJheQCU
+								mQyShISECU5T
+								VGV4dFRhYgCU
+								hAJDZgAchpKE
+								oqEAOIaShKKh
+								AFSGkoSioQBw
+								hpKEoqEAgYwA
+								hpKEoqEAgagA
+								hpKEoqEAgcQA
+								hpKEoqEAgeAA
+								hpKEoqEAgfwA
+								hpKEoqEAgRgB
+								hpKEoqEAgTQB
+								hpKEoqEAgVAB
+								hoYAhpKElpYG
+								TlNGb250hpKE
+								hIQGTlNGb250
+								HpSZJIQFWzM2
+								Y10GAAAAHAAA
+								AP/+SABlAGwA
+								dgBlAHQAaQBj
+								AGEATgBlAHUA
+								ZQCEAWYUmwCb
+								AZsAmwCGkoSW
+								lgZOU0tlcm6G
+								koSEhAhOU051
+								bWJlcgCEhAdO
+								U1ZhbHVlAJSE
+								ASqEhAFkqIMA
+								AAAAAADgv4aG
 								hg==
 												</data>
 												<key>Text</key>
@@ -7045,47 +7045,47 @@ M\'e5l}</string>
 								AQuShISEDE5T
 								RGljdGlvbmFy
 								eQCUhAFpBJKE
-								lpYQTlNQYXJh
-								Z3JhcGhTdHls
-								ZYaShISEEE5T
-								UGFyYWdyYXBo
-								U3R5bGUAlIQE
-								Q0NAUwAAhISE
-								B05TQXJyYXkA
-								lJkMkoSEhAlO
-								U1RleHRUYWIA
-								lIQCQ2YAHIaS
-								hJ+eADiGkoSf
-								ngBUhpKEn54A
-								cIaShJ+eAIGM
-								AIaShJ+eAIGo
-								AIaShJ+eAIHE
-								AIaShJ+eAIHg
-								AIaShJ+eAIH8
-								AIaShJ+eAIEY
-								AYaShJ+eAIE0
-								AYaShJ+eAIFQ
-								AYaGAIaShJaW
-								Bk5TS2VyboaS
-								hISECE5TTnVt
-								YmVyAISEB05T
-								VmFsdWUAlIQB
-								KoSEAWSigwAA
-								AAAAAOC/hpKE
-								lpYGTlNGb250
-								hpKEhIQGTlNG
-								b250HpSZJIQF
-								WzM2Y10GAAAA
-								HAAAAP/+SABl
-								AGwAdgBlAHQA
-								aQBjAGEATgBl
-								AHUAZQCEAWYU
-								hAFjAKYBpgCm
-								AIaShJaWB05T
-								Q29sb3KGkoSE
-								hAdOU0NvbG9y
-								AJSmAoQEZmZm
-								ZgAAAAGGhoY=
+								lpYHTlNDb2xv
+								coaShISEB05T
+								Q29sb3IAlIQB
+								YwKEBGZmZmYA
+								AAABhpKElpYQ
+								TlNQYXJhZ3Jh
+								cGhTdHlsZYaS
+								hISEEE5TUGFy
+								YWdyYXBoU3R5
+								bGUAlIQEQ0NA
+								UwAAhISEB05T
+								QXJyYXkAlJkM
+								koSEhAlOU1Rl
+								eHRUYWIAlIQC
+								Q2YAHIaShKKh
+								ADiGkoSioQBU
+								hpKEoqEAcIaS
+								hKKhAIGMAIaS
+								hKKhAIGoAIaS
+								hKKhAIHEAIaS
+								hKKhAIHgAIaS
+								hKKhAIH8AIaS
+								hKKhAIEYAYaS
+								hKKhAIE0AYaS
+								hKKhAIFQAYaG
+								AIaShJaWBk5T
+								Rm9udIaShISE
+								Bk5TRm9udB6U
+								mSSEBVszNmNd
+								BgAAABwAAAD/
+								/kgAZQBsAHYA
+								ZQB0AGkAYwBh
+								AE4AZQB1AGUA
+								hAFmFJsAmwGb
+								AJsAhpKElpYG
+								TlNLZXJuhpKE
+								hIQITlNOdW1i
+								ZXIAhIQHTlNW
+								YWx1ZQCUhAEq
+								hIQBZKiDAAAA
+								AAAA4L+GhoY=
 												</data>
 												<key>Text</key>
 												<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -7161,47 +7161,47 @@ Aktiviteter}</string>
 								koSEhAxOU0Rp
 								Y3Rpb25hcnkA
 								lIQBaQSShJaW
-								EE5TUGFyYWdy
-								YXBoU3R5bGWG
-								koSEhBBOU1Bh
-								cmFncmFwaFN0
-								eWxlAJSEBEND
-								QFMAAISEhAdO
-								U0FycmF5AJSZ
-								DJKEhIQJTlNU
-								ZXh0VGFiAJSE
-								AkNmAByGkoSf
-								ngA4hpKEn54A
-								VIaShJ+eAHCG
-								koSfngCBjACG
-								koSfngCBqACG
-								koSfngCBxACG
-								koSfngCB4ACG
-								koSfngCB/ACG
-								koSfngCBGAGG
-								koSfngCBNAGG
-								koSfngCBUAGG
-								hgCGkoSWlgZO
-								U0tlcm6GkoSE
-								hAhOU051bWJl
-								cgCEhAdOU1Zh
-								bHVlAJSEASqE
-								hAFkooMAAAAA
-								AADgv4aShJaW
-								Bk5TRm9udIaS
-								hISEBk5TRm9u
-								dB6UmSSEBVsz
-								NmNdBgAAABwA
-								AAD//kgAZQBs
-								AHYAZQB0AGkA
-								YwBhAE4AZQB1
-								AGUAhAFmFIQB
-								YwCmAaYApgCG
-								koSWlgdOU0Nv
-								bG9yhpKEhIQH
-								TlNDb2xvcgCU
-								pgKEBGZmZmYA
-								AAABhoaG
+								B05TQ29sb3KG
+								koSEhAdOU0Nv
+								bG9yAJSEAWMC
+								hARmZmZmAAAA
+								AYaShJaWEE5T
+								UGFyYWdyYXBo
+								U3R5bGWGkoSE
+								hBBOU1BhcmFn
+								cmFwaFN0eWxl
+								AJSEBENDQFMA
+								AISEhAdOU0Fy
+								cmF5AJSZDJKE
+								hIQJTlNUZXh0
+								VGFiAJSEAkNm
+								AByGkoSioQA4
+								hpKEoqEAVIaS
+								hKKhAHCGkoSi
+								oQCBjACGkoSi
+								oQCBqACGkoSi
+								oQCBxACGkoSi
+								oQCB4ACGkoSi
+								oQCB/ACGkoSi
+								oQCBGAGGkoSi
+								oQCBNAGGkoSi
+								oQCBUAGGhgCG
+								koSWlgZOU0Zv
+								bnSGkoSEhAZO
+								U0ZvbnQelJkk
+								hAVbMzZjXQYA
+								AAAcAAAA//5I
+								AGUAbAB2AGUA
+								dABpAGMAYQBO
+								AGUAdQBlAIQB
+								ZhSbAJsBmwCb
+								AIaShJaWBk5T
+								S2VyboaShISE
+								CE5TTnVtYmVy
+								AISEB05TVmFs
+								dWUAlIQBKoSE
+								AWSogwAAAAAA
+								AOC/hoaG
 												</data>
 												<key>Text</key>
 												<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -7277,47 +7277,47 @@ Historikk}</string>
 								CpKEhIQMTlNE
 								aWN0aW9uYXJ5
 								AJSEAWkEkoSW
-								lhBOU1BhcmFn
-								cmFwaFN0eWxl
-								hpKEhIQQTlNQ
-								YXJhZ3JhcGhT
-								dHlsZQCUhARD
-								Q0BTAACEhIQH
-								TlNBcnJheQCU
-								mQyShISECU5T
-								VGV4dFRhYgCU
-								hAJDZgAchpKE
-								n54AOIaShJ+e
-								AFSGkoSfngBw
-								hpKEn54AgYwA
-								hpKEn54AgagA
-								hpKEn54AgcQA
-								hpKEn54AgeAA
-								hpKEn54AgfwA
-								hpKEn54AgRgB
-								hpKEn54AgTQB
-								hpKEn54AgVAB
-								hoYAhpKElpYG
-								TlNLZXJuhpKE
-								hIQITlNOdW1i
-								ZXIAhIQHTlNW
-								YWx1ZQCUhAEq
-								hIQBZKKDAAAA
-								AAAA4L+GkoSW
-								lgZOU0ZvbnSG
-								koSEhAZOU0Zv
-								bnQelJkkhAVb
-								MzZjXQYAAAAc
-								AAAA//5IAGUA
-								bAB2AGUAdABp
-								AGMAYQBOAGUA
-								dQBlAIQBZhSE
-								AWMApgGmAKYA
-								hpKElpYHTlND
-								b2xvcoaShISE
-								B05TQ29sb3IA
-								lKYChARmZmZm
-								AAAAAYaGhg==
+								lgdOU0NvbG9y
+								hpKEhIQHTlND
+								b2xvcgCUhAFj
+								AoQEZmZmZgAA
+								AAGGkoSWlhBO
+								U1BhcmFncmFw
+								aFN0eWxlhpKE
+								hIQQTlNQYXJh
+								Z3JhcGhTdHls
+								ZQCUhARDQ0BT
+								AACEhIQHTlNB
+								cnJheQCUmQyS
+								hISECU5TVGV4
+								dFRhYgCUhAJD
+								ZgAchpKEoqEA
+								OIaShKKhAFSG
+								koSioQBwhpKE
+								oqEAgYwAhpKE
+								oqEAgagAhpKE
+								oqEAgcQAhpKE
+								oqEAgeAAhpKE
+								oqEAgfwAhpKE
+								oqEAgRgBhpKE
+								oqEAgTQBhpKE
+								oqEAgVABhoYA
+								hpKElpYGTlNG
+								b250hpKEhIQG
+								TlNGb250HpSZ
+								JIQFWzM2Y10G
+								AAAAHAAAAP/+
+								SABlAGwAdgBl
+								AHQAaQBjAGEA
+								TgBlAHUAZQCE
+								AWYUmwCbAZsA
+								mwCGkoSWlgZO
+								U0tlcm6GkoSE
+								hAhOU051bWJl
+								cgCEhAdOU1Zh
+								bHVlAJSEASqE
+								hAFkqIMAAAAA
+								AADgv4aGhg==
 												</data>
 												<key>Text</key>
 												<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -11844,32 +11844,32 @@ Hvor mye energi brukte du i aktiviteten:}</string>
 								cIaEAmlJAQeS
 								hISEDE5TRGlj
 								dGlvbmFyeQCU
-								hAFpBJKElpYH
-								TlNDb2xvcoaS
-								hISEB05TQ29s
-								b3IAlIQBYwKE
-								BGZmZmYAAAAB
-								hpKElpYQTlNQ
-								YXJhZ3JhcGhT
-								dHlsZYaShISE
-								EE5TUGFyYWdy
-								YXBoU3R5bGUA
-								lIQEQ0NAUwAA
-								hISEB05TQXJy
-								YXkAlJkMkoSE
-								hAlOU1RleHRU
-								YWIAlIQCQ2YA
-								HIaShKKhADiG
-								koSioQBUhpKE
-								oqEAcIaShKKh
-								AIGMAIaShKKh
-								AIGoAIaShKKh
-								AIHEAIaShKKh
-								AIHgAIaShKKh
-								AIH8AIaShKKh
-								AIEYAYaShKKh
-								AIE0AYaShKKh
-								AIFQAYaGAIaS
+								hAFpBJKElpYQ
+								TlNQYXJhZ3Jh
+								cGhTdHlsZYaS
+								hISEEE5TUGFy
+								YWdyYXBoU3R5
+								bGUAlIQEQ0NA
+								UwAAhISEB05T
+								QXJyYXkAlJkM
+								koSEhAlOU1Rl
+								eHRUYWIAlIQC
+								Q2YAHIaShJ+e
+								ADiGkoSfngBU
+								hpKEn54AcIaS
+								hJ+eAIGMAIaS
+								hJ+eAIGoAIaS
+								hJ+eAIHEAIaS
+								hJ+eAIHgAIaS
+								hJ+eAIH8AIaS
+								hJ+eAIEYAYaS
+								hJ+eAIE0AYaS
+								hJ+eAIFQAYaG
+								AIaShJaWB05T
+								Q29sb3KGkoSE
+								hAdOU0NvbG9y
+								AJSEAWMChARm
+								ZmZmAAAAAYaS
 								hJaWBk5TRm9u
 								dIaShISEBk5T
 								Rm9udB6UmTCE
@@ -11879,8 +11879,8 @@ Hvor mye energi brukte du i aktiviteten:}</string>
 								AGkAYwBhAE4A
 								ZQB1AGUALQBC
 								AG8AbABkAAAA
-								hAFmIpsAmwGb
-								AJsAhpKElpYG
+								hAFmIqAAoAGg
+								AKAAhpKElpYG
 								TlNLZXJuhpKE
 								hIQITlNOdW1i
 								ZXIAhIQHTlNW
@@ -11963,32 +11963,32 @@ St\'e5 opp}</string>
 								AmlJAQWShISE
 								DE5TRGljdGlv
 								bmFyeQCUhAFp
-								BJKElpYHTlND
-								b2xvcoaShISE
-								B05TQ29sb3IA
-								lIQBYwKEBGZm
-								ZmYAAAABhpKE
-								lpYQTlNQYXJh
-								Z3JhcGhTdHls
-								ZYaShISEEE5T
-								UGFyYWdyYXBo
-								U3R5bGUAlIQE
-								Q0NAUwAAhISE
-								B05TQXJyYXkA
-								lJkMkoSEhAlO
-								U1RleHRUYWIA
-								lIQCQ2YAHIaS
-								hKKhADiGkoSi
-								oQBUhpKEoqEA
-								cIaShKKhAIGM
-								AIaShKKhAIGo
-								AIaShKKhAIHE
-								AIaShKKhAIHg
-								AIaShKKhAIH8
-								AIaShKKhAIEY
-								AYaShKKhAIE0
-								AYaShKKhAIFQ
-								AYaGAIaShJaW
+								BJKElpYQTlNQ
+								YXJhZ3JhcGhT
+								dHlsZYaShISE
+								EE5TUGFyYWdy
+								YXBoU3R5bGUA
+								lIQEQ0NAUwAA
+								hISEB05TQXJy
+								YXkAlJkMkoSE
+								hAlOU1RleHRU
+								YWIAlIQCQ2YA
+								HIaShJ+eADiG
+								koSfngBUhpKE
+								n54AcIaShJ+e
+								AIGMAIaShJ+e
+								AIGoAIaShJ+e
+								AIHEAIaShJ+e
+								AIHgAIaShJ+e
+								AIH8AIaShJ+e
+								AIEYAYaShJ+e
+								AIE0AYaShJ+e
+								AIFQAYaGAIaS
+								hJaWB05TQ29s
+								b3KGkoSEhAdO
+								U0NvbG9yAJSE
+								AWMChARmZmZm
+								AAAAAYaShJaW
 								Bk5TRm9udIaS
 								hISEBk5TRm9u
 								dB6UmSSEBVsz
@@ -11996,8 +11996,8 @@ St\'e5 opp}</string>
 								AAD//kgAZQBs
 								AHYAZQB0AGkA
 								YwBhAE4AZQB1
-								AGUAhAFmIpsA
-								mwGbAJsAhpKE
+								AGUAhAFmIqAA
+								oAGgAKAAhpKE
 								lpYGTlNLZXJu
 								hpKEhIQITlNO
 								dW1iZXIAhIQH
@@ -12082,32 +12082,32 @@ Endre}</string>
 								AQuShISEDE5T
 								RGljdGlvbmFy
 								eQCUhAFpBJKE
-								lpYHTlNDb2xv
-								coaShISEB05T
-								Q29sb3IAlIQB
-								YwKEBGZmZmYA
-								AAABhpKElpYQ
-								TlNQYXJhZ3Jh
-								cGhTdHlsZYaS
-								hISEEE5TUGFy
-								YWdyYXBoU3R5
-								bGUAlIQEQ0NA
-								UwAAhISEB05T
-								QXJyYXkAlJkM
-								koSEhAlOU1Rl
-								eHRUYWIAlIQC
-								Q2YAHIaShKKh
-								ADiGkoSioQBU
-								hpKEoqEAcIaS
-								hKKhAIGMAIaS
-								hKKhAIGoAIaS
-								hKKhAIHEAIaS
-								hKKhAIHgAIaS
-								hKKhAIH8AIaS
-								hKKhAIEYAYaS
-								hKKhAIE0AYaS
-								hKKhAIFQAYaG
-								AIaShJaWBk5T
+								lpYQTlNQYXJh
+								Z3JhcGhTdHls
+								ZYaShISEEE5T
+								UGFyYWdyYXBo
+								U3R5bGUAlIQE
+								Q0NAUwAAhISE
+								B05TQXJyYXkA
+								lJkMkoSEhAlO
+								U1RleHRUYWIA
+								lIQCQ2YAHIaS
+								hJ+eADiGkoSf
+								ngBUhpKEn54A
+								cIaShJ+eAIGM
+								AIaShJ+eAIGo
+								AIaShJ+eAIHE
+								AIaShJ+eAIHg
+								AIaShJ+eAIH8
+								AIaShJ+eAIEY
+								AYaShJ+eAIE0
+								AYaShJ+eAIFQ
+								AYaGAIaShJaW
+								B05TQ29sb3KG
+								koSEhAdOU0Nv
+								bG9yAJSEAWMC
+								hARmZmZmAAAA
+								AYaShJaWBk5T
 								Rm9udIaShISE
 								Bk5TRm9udB6U
 								mSSEBVszNmNd
@@ -12115,8 +12115,8 @@ Endre}</string>
 								/kgAZQBsAHYA
 								ZQB0AGkAYwBh
 								AE4AZQB1AGUA
-								hAFmIpsAmwGb
-								AJsAhpKElpYG
+								hAFmIqAAoAGg
+								AKAAhpKElpYG
 								TlNLZXJuhpKE
 								hIQITlNOdW1i
 								ZXIAhIQHTlNW
@@ -12458,32 +12458,32 @@ Aktiviteter}</string>
 								TYaEAmlJAQiS
 								hISEDE5TRGlj
 								dGlvbmFyeQCU
-								hAFpBJKElpYH
-								TlNDb2xvcoaS
-								hISEB05TQ29s
-								b3IAlIQBYwKE
-								BGZmZmYAAAAB
-								hpKElpYQTlNQ
-								YXJhZ3JhcGhT
-								dHlsZYaShISE
-								EE5TUGFyYWdy
-								YXBoU3R5bGUA
-								lIQEQ0NAUwAA
-								hISEB05TQXJy
-								YXkAlJkMkoSE
-								hAlOU1RleHRU
-								YWIAlIQCQ2YA
-								HIaShKKhADiG
-								koSioQBUhpKE
-								oqEAcIaShKKh
-								AIGMAIaShKKh
-								AIGoAIaShKKh
-								AIHEAIaShKKh
-								AIHgAIaShKKh
-								AIH8AIaShKKh
-								AIEYAYaShKKh
-								AIE0AYaShKKh
-								AIFQAYaGAIaS
+								hAFpBJKElpYQ
+								TlNQYXJhZ3Jh
+								cGhTdHlsZYaS
+								hISEEE5TUGFy
+								YWdyYXBoU3R5
+								bGUAlIQEQ0NA
+								UwAAhISEB05T
+								QXJyYXkAlJkM
+								koSEhAlOU1Rl
+								eHRUYWIAlIQC
+								Q2YAHIaShJ+e
+								ADiGkoSfngBU
+								hpKEn54AcIaS
+								hJ+eAIGMAIaS
+								hJ+eAIGoAIaS
+								hJ+eAIHEAIaS
+								hJ+eAIHgAIaS
+								hJ+eAIH8AIaS
+								hJ+eAIEYAYaS
+								hJ+eAIE0AYaS
+								hJ+eAIFQAYaG
+								AIaShJaWB05T
+								Q29sb3KGkoSE
+								hAdOU0NvbG9y
+								AJSEAWMChARm
+								ZmZmAAAAAYaS
 								hJaWBk5TRm9u
 								dIaShISEBk5T
 								Rm9udB6UmTCE
@@ -12493,8 +12493,8 @@ Aktiviteter}</string>
 								AGkAYwBhAE4A
 								ZQB1AGUALQBC
 								AG8AbABkAAAA
-								hAFmGJsAmwGb
-								AJsAhpKElpYG
+								hAFmGKAAoAGg
+								AKAAhpKElpYG
 								TlNLZXJuhpKE
 								hIQITlNOdW1i
 								ZXIAhIQHTlNW
@@ -12567,32 +12567,32 @@ Aktiviteter}</string>
 								aUkBBJKEhIQM
 								TlNEaWN0aW9u
 								YXJ5AJSEAWkE
-								koSWlgdOU0Nv
-								bG9yhpKEhIQH
-								TlNDb2xvcgCU
-								hAFjAoQEZmZm
-								ZgAAAAGGkoSW
-								lhBOU1BhcmFn
-								cmFwaFN0eWxl
-								hpKEhIQQTlNQ
-								YXJhZ3JhcGhT
-								dHlsZQCUhARD
-								Q0BTAACEhIQH
-								TlNBcnJheQCU
-								mQyShISECU5T
-								VGV4dFRhYgCU
-								hAJDZgAchpKE
-								oqEAOIaShKKh
-								AFSGkoSioQBw
-								hpKEoqEAgYwA
-								hpKEoqEAgagA
-								hpKEoqEAgcQA
-								hpKEoqEAgeAA
-								hpKEoqEAgfwA
-								hpKEoqEAgRgB
-								hpKEoqEAgTQB
-								hpKEoqEAgVAB
-								hoYAhpKElpYG
+								koSWlhBOU1Bh
+								cmFncmFwaFN0
+								eWxlhpKEhIQQ
+								TlNQYXJhZ3Jh
+								cGhTdHlsZQCU
+								hARDQ0BTAACE
+								hIQHTlNBcnJh
+								eQCUmQyShISE
+								CU5TVGV4dFRh
+								YgCUhAJDZgAc
+								hpKEn54AOIaS
+								hJ+eAFSGkoSf
+								ngBwhpKEn54A
+								gYwAhpKEn54A
+								gagAhpKEn54A
+								gcQAhpKEn54A
+								geAAhpKEn54A
+								gfwAhpKEn54A
+								gRgBhpKEn54A
+								gTQBhpKEn54A
+								gVABhoYAhpKE
+								lpYHTlNDb2xv
+								coaShISEB05T
+								Q29sb3IAlIQB
+								YwKEBGZmZmYA
+								AAABhpKElpYG
 								TlNGb250hpKE
 								hIQGTlNGb250
 								HpSZJIQFWzM2
@@ -12600,8 +12600,8 @@ Aktiviteter}</string>
 								AP/+SABlAGwA
 								dgBlAHQAaQBj
 								AGEATgBlAHUA
-								ZQCEAWYYmwCb
-								AZsAmwCGkoSW
+								ZQCEAWYYoACg
+								AaAAoACGkoSW
 								lgZOU0tlcm6G
 								koSEhAhOU051
 								bWJlcgCEhAdO
@@ -16277,8 +16277,8 @@ AT&amp;T}</string>
 					<integer>0</integer>
 					<key>Points</key>
 					<array>
-						<string>{865.6666259765625, 1505.1045586719847}</string>
-						<string>{963.00006103515625, 1505.3515514810413}</string>
+						<string>{865.6666259765625, 1505.1045583071807}</string>
+						<string>{963.00006103515625, 1505.3515509994361}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -16314,8 +16314,8 @@ AT&amp;T}</string>
 					<integer>0</integer>
 					<key>Points</key>
 					<array>
-						<string>{257.6666259765625, 1403.7244065113894}</string>
-						<string>{155, 1404.8697056206302}</string>
+						<string>{257.6666259765625, 1403.7244102575328}</string>
+						<string>{155, 1404.869710631918}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -19407,32 +19407,32 @@ Aktivitet}</string>
 								TYaEAmlJAQiS
 								hISEDE5TRGlj
 								dGlvbmFyeQCU
-								hAFpBJKElpYH
-								TlNDb2xvcoaS
-								hISEB05TQ29s
-								b3IAlIQBYwKE
-								BGZmZmYAAAAB
-								hpKElpYQTlNQ
-								YXJhZ3JhcGhT
-								dHlsZYaShISE
-								EE5TUGFyYWdy
-								YXBoU3R5bGUA
-								lIQEQ0NAUwAA
-								hISEB05TQXJy
-								YXkAlJkMkoSE
-								hAlOU1RleHRU
-								YWIAlIQCQ2YA
-								HIaShKKhADiG
-								koSioQBUhpKE
-								oqEAcIaShKKh
-								AIGMAIaShKKh
-								AIGoAIaShKKh
-								AIHEAIaShKKh
-								AIHgAIaShKKh
-								AIH8AIaShKKh
-								AIEYAYaShKKh
-								AIE0AYaShKKh
-								AIFQAYaGAIaS
+								hAFpBJKElpYQ
+								TlNQYXJhZ3Jh
+								cGhTdHlsZYaS
+								hISEEE5TUGFy
+								YWdyYXBoU3R5
+								bGUAlIQEQ0NA
+								UwAAhISEB05T
+								QXJyYXkAlJkM
+								koSEhAlOU1Rl
+								eHRUYWIAlIQC
+								Q2YAHIaShJ+e
+								ADiGkoSfngBU
+								hpKEn54AcIaS
+								hJ+eAIGMAIaS
+								hJ+eAIGoAIaS
+								hJ+eAIHEAIaS
+								hJ+eAIHgAIaS
+								hJ+eAIH8AIaS
+								hJ+eAIEYAYaS
+								hJ+eAIE0AYaS
+								hJ+eAIFQAYaG
+								AIaShJaWB05T
+								Q29sb3KGkoSE
+								hAdOU0NvbG9y
+								AJSEAWMChARm
+								ZmZmAAAAAYaS
 								hJaWBk5TRm9u
 								dIaShISEBk5T
 								Rm9udB6UmTCE
@@ -19442,8 +19442,8 @@ Aktivitet}</string>
 								AGkAYwBhAE4A
 								ZQB1AGUALQBC
 								AG8AbABkAAAA
-								hAFmGJsAmwGb
-								AJsAhpKElpYG
+								hAFmGKAAoAGg
+								AKAAhpKElpYG
 								TlNLZXJuhpKE
 								hIQITlNOdW1i
 								ZXIAhIQHTlNW
@@ -19516,32 +19516,32 @@ Aktivitet}</string>
 								aUkBBJKEhIQM
 								TlNEaWN0aW9u
 								YXJ5AJSEAWkE
-								koSWlgdOU0Nv
-								bG9yhpKEhIQH
-								TlNDb2xvcgCU
-								hAFjAoQEZmZm
-								ZgAAAAGGkoSW
-								lhBOU1BhcmFn
-								cmFwaFN0eWxl
-								hpKEhIQQTlNQ
-								YXJhZ3JhcGhT
-								dHlsZQCUhARD
-								Q0BTAACEhIQH
-								TlNBcnJheQCU
-								mQyShISECU5T
-								VGV4dFRhYgCU
-								hAJDZgAchpKE
-								oqEAOIaShKKh
-								AFSGkoSioQBw
-								hpKEoqEAgYwA
-								hpKEoqEAgagA
-								hpKEoqEAgcQA
-								hpKEoqEAgeAA
-								hpKEoqEAgfwA
-								hpKEoqEAgRgB
-								hpKEoqEAgTQB
-								hpKEoqEAgVAB
-								hoYAhpKElpYG
+								koSWlhBOU1Bh
+								cmFncmFwaFN0
+								eWxlhpKEhIQQ
+								TlNQYXJhZ3Jh
+								cGhTdHlsZQCU
+								hARDQ0BTAACE
+								hIQHTlNBcnJh
+								eQCUmQyShISE
+								CU5TVGV4dFRh
+								YgCUhAJDZgAc
+								hpKEn54AOIaS
+								hJ+eAFSGkoSf
+								ngBwhpKEn54A
+								gYwAhpKEn54A
+								gagAhpKEn54A
+								gcQAhpKEn54A
+								geAAhpKEn54A
+								gfwAhpKEn54A
+								gRgBhpKEn54A
+								gTQBhpKEn54A
+								gVABhoYAhpKE
+								lpYHTlNDb2xv
+								coaShISEB05T
+								Q29sb3IAlIQB
+								YwKEBGZmZmYA
+								AAABhpKElpYG
 								TlNGb250hpKE
 								hIQGTlNGb250
 								HpSZJIQFWzM2
@@ -19549,8 +19549,8 @@ Aktivitet}</string>
 								AP/+SABlAGwA
 								dgBlAHQAaQBj
 								AGEATgBlAHUA
-								ZQCEAWYYmwCb
-								AZsAmwCGkoSW
+								ZQCEAWYYoACg
+								AaAAoACGkoSW
 								lgZOU0tlcm6G
 								koSEhAhOU051
 								bWJlcgCEhAdO
@@ -20234,32 +20234,32 @@ AT&amp;T}</string>
 								SQEMkoSEhAxO
 								U0RpY3Rpb25h
 								cnkAlIQBaQSS
-								hJaWB05TQ29s
-								b3KGkoSEhAdO
-								U0NvbG9yAJSE
-								AWMChARmZmZm
-								AAAAAYaShJaW
-								EE5TUGFyYWdy
-								YXBoU3R5bGWG
-								koSEhBBOU1Bh
-								cmFncmFwaFN0
-								eWxlAJSEBEND
-								QFMAAISEhAdO
-								U0FycmF5AJSZ
-								DJKEhIQJTlNU
-								ZXh0VGFiAJSE
-								AkNmAByGkoSi
-								oQA4hpKEoqEA
-								VIaShKKhAHCG
-								koSioQCBjACG
-								koSioQCBqACG
-								koSioQCBxACG
-								koSioQCB4ACG
-								koSioQCB/ACG
-								koSioQCBGAGG
-								koSioQCBNAGG
-								koSioQCBUAGG
-								hgCGkoSWlgZO
+								hJaWEE5TUGFy
+								YWdyYXBoU3R5
+								bGWGkoSEhBBO
+								U1BhcmFncmFw
+								aFN0eWxlAJSE
+								BENDQFMAAISE
+								hAdOU0FycmF5
+								AJSZDJKEhIQJ
+								TlNUZXh0VGFi
+								AJSEAkNmAByG
+								koSfngA4hpKE
+								n54AVIaShJ+e
+								AHCGkoSfngCB
+								jACGkoSfngCB
+								qACGkoSfngCB
+								xACGkoSfngCB
+								4ACGkoSfngCB
+								/ACGkoSfngCB
+								GAGGkoSfngCB
+								NAGGkoSfngCB
+								UAGGhgCGkoSW
+								lgdOU0NvbG9y
+								hpKEhIQHTlND
+								b2xvcgCUhAFj
+								AoQEZmZmZgAA
+								AAGGkoSWlgZO
 								U0ZvbnSGkoSE
 								hAZOU0ZvbnQe
 								lJkwhAVbNDhj
@@ -20268,8 +20268,8 @@ AT&amp;T}</string>
 								AGUAdABpAGMA
 								YQBOAGUAdQBl
 								AC0AQgBvAGwA
-								ZAAAAIQBZiKb
-								AJsBmwCbAIaS
+								ZAAAAIQBZiKg
+								AKABoACgAIaS
 								hJaWBk5TS2Vy
 								boaShISECE5T
 								TnVtYmVyAISE
@@ -20353,32 +20353,32 @@ Ny Aktivitet}</string>
 								hAJpSQEGkoSE
 								hAxOU0RpY3Rp
 								b25hcnkAlIQB
-								aQSShJaWB05T
-								Q29sb3KGkoSE
-								hAdOU0NvbG9y
-								AJSEAWMChARm
-								ZmZmAAAAAYaS
-								hJaWEE5TUGFy
-								YWdyYXBoU3R5
-								bGWGkoSEhBBO
-								U1BhcmFncmFw
-								aFN0eWxlAJSE
-								BENDQFMAAISE
-								hAdOU0FycmF5
-								AJSZDJKEhIQJ
-								TlNUZXh0VGFi
-								AJSEAkNmAByG
-								koSioQA4hpKE
-								oqEAVIaShKKh
-								AHCGkoSioQCB
-								jACGkoSioQCB
-								qACGkoSioQCB
-								xACGkoSioQCB
-								4ACGkoSioQCB
-								/ACGkoSioQCB
-								GAGGkoSioQCB
-								NAGGkoSioQCB
-								UAGGhgCGkoSW
+								aQSShJaWEE5T
+								UGFyYWdyYXBo
+								U3R5bGWGkoSE
+								hBBOU1BhcmFn
+								cmFwaFN0eWxl
+								AJSEBENDQFMA
+								AISEhAdOU0Fy
+								cmF5AJSZDJKE
+								hIQJTlNUZXh0
+								VGFiAJSEAkNm
+								AByGkoSfngA4
+								hpKEn54AVIaS
+								hJ+eAHCGkoSf
+								ngCBjACGkoSf
+								ngCBqACGkoSf
+								ngCBxACGkoSf
+								ngCB4ACGkoSf
+								ngCB/ACGkoSf
+								ngCBGAGGkoSf
+								ngCBNAGGkoSf
+								ngCBUAGGhgCG
+								koSWlgdOU0Nv
+								bG9yhpKEhIQH
+								TlNDb2xvcgCU
+								hAFjAoQEZmZm
+								ZgAAAAGGkoSW
 								lgZOU0ZvbnSG
 								koSEhAZOU0Zv
 								bnQelJkkhAVb
@@ -20386,8 +20386,8 @@ Ny Aktivitet}</string>
 								AAAA//5IAGUA
 								bAB2AGUAdABp
 								AGMAYQBOAGUA
-								dQBlAIQBZiKb
-								AJsBmwCbAIaS
+								dQBlAIQBZiKg
+								AKABoACgAIaS
 								hJaWBk5TS2Vy
 								boaShISECE5T
 								TnVtYmVyAISE
@@ -20478,32 +20478,32 @@ Ferdig}</string>
 								hAJpSQEGkoSE
 								hAxOU0RpY3Rp
 								b25hcnkAlIQB
-								aQSShJaWB05T
-								Q29sb3KGkoSE
-								hAdOU0NvbG9y
-								AJSEAWMChARm
-								ZmZmAAAAAYaS
-								hJaWEE5TUGFy
-								YWdyYXBoU3R5
-								bGWGkoSEhBBO
-								U1BhcmFncmFw
-								aFN0eWxlAJSE
-								BENDQFMAAISE
-								hAdOU0FycmF5
-								AJSZDJKEhIQJ
-								TlNUZXh0VGFi
-								AJSEAkNmAByG
-								koSioQA4hpKE
-								oqEAVIaShKKh
-								AHCGkoSioQCB
-								jACGkoSioQCB
-								qACGkoSioQCB
-								xACGkoSioQCB
-								4ACGkoSioQCB
-								/ACGkoSioQCB
-								GAGGkoSioQCB
-								NAGGkoSioQCB
-								UAGGhgCGkoSW
+								aQSShJaWEE5T
+								UGFyYWdyYXBo
+								U3R5bGWGkoSE
+								hBBOU1BhcmFn
+								cmFwaFN0eWxl
+								AJSEBENDQFMA
+								AISEhAdOU0Fy
+								cmF5AJSZDJKE
+								hIQJTlNUZXh0
+								VGFiAJSEAkNm
+								AByGkoSfngA4
+								hpKEn54AVIaS
+								hJ+eAHCGkoSf
+								ngCBjACGkoSf
+								ngCBqACGkoSf
+								ngCBxACGkoSf
+								ngCB4ACGkoSf
+								ngCB/ACGkoSf
+								ngCBGAGGkoSf
+								ngCBNAGGkoSf
+								ngCBUAGGhgCG
+								koSWlgdOU0Nv
+								bG9yhpKEhIQH
+								TlNDb2xvcgCU
+								hAFjAoQEZmZm
+								ZgAAAAGGkoSW
 								lgZOU0ZvbnSG
 								koSEhAZOU0Zv
 								bnQelJkkhAVb
@@ -20511,8 +20511,8 @@ Ferdig}</string>
 								AAAA//5IAGUA
 								bAB2AGUAdABp
 								AGMAYQBOAGUA
-								dQBlAIQBZiKb
-								AJsBmwCbAIaS
+								dQBlAIQBZiKg
+								AKABoACgAIaS
 								hJaWBk5TS2Vy
 								boaShISECE5T
 								TnVtYmVyAISE
@@ -23564,8 +23564,8 @@ Energi}</string>
 					<integer>0</integer>
 					<key>Points</key>
 					<array>
-						<string>{641.07413100796214, 1563.1395999999997}</string>
-						<string>{638.7360819210528, 1854.8604000000007}</string>
+						<string>{641.07414411160528, 1563.1395999999997}</string>
+						<string>{638.73640083311818, 1854.8604000000007}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -23988,31 +23988,31 @@ Energi}</string>
 								koSEhAxOU0Rp
 								Y3Rpb25hcnkA
 								lIQBaQSShJaW
-								B05TQ29sb3KG
-								koSEhAdOU0Nv
-								bG9yAJSEAWMC
-								hARmZmZmAAAA
-								AYaShJaWEE5T
-								UGFyYWdyYXBo
-								U3R5bGWGkoSE
-								hBBOU1BhcmFn
-								cmFwaFN0eWxl
-								AJSEBENDQFMA
-								AISEhAdOU0Fy
-								cmF5AJSZDJKE
-								hIQJTlNUZXh0
-								VGFiAJSEAkNm
-								AByGkoSioQA4
-								hpKEoqEAVIaS
-								hKKhAHCGkoSi
-								oQCBjACGkoSi
-								oQCBqACGkoSi
-								oQCBxACGkoSi
-								oQCB4ACGkoSi
-								oQCB/ACGkoSi
-								oQCBGAGGkoSi
-								oQCBNAGGkoSi
-								oQCBUAGGhgCG
+								EE5TUGFyYWdy
+								YXBoU3R5bGWG
+								koSEhBBOU1Bh
+								cmFncmFwaFN0
+								eWxlAJSEBEND
+								QFMAAISEhAdO
+								U0FycmF5AJSZ
+								DJKEhIQJTlNU
+								ZXh0VGFiAJSE
+								AkNmAByGkoSf
+								ngA4hpKEn54A
+								VIaShJ+eAHCG
+								koSfngCBjACG
+								koSfngCBqACG
+								koSfngCBxACG
+								koSfngCB4ACG
+								koSfngCB/ACG
+								koSfngCBGAGG
+								koSfngCBNAGG
+								koSfngCBUAGG
+								hgCGkoSWlgdO
+								U0NvbG9yhpKE
+								hIQHTlNDb2xv
+								cgCUhAFjAoQE
+								ZmZmZgAAAAGG
 								koSWlgZOU0Zv
 								bnSGkoSEhAZO
 								U0ZvbnQelJkw
@@ -24022,8 +24022,8 @@ Energi}</string>
 								dABpAGMAYQBO
 								AGUAdQBlAC0A
 								QgBvAGwAZAAA
-								AIQBZiKbAJsB
-								mwCbAIaShJaW
+								AIQBZiKgAKAB
+								oACgAIaShJaW
 								Bk5TS2VyboaS
 								hISECE5TTnVt
 								YmVyAISEB05T
@@ -24106,32 +24106,32 @@ Historikk}</string>
 								AmlJAQWShISE
 								DE5TRGljdGlv
 								bmFyeQCUhAFp
-								BJKElpYHTlND
-								b2xvcoaShISE
-								B05TQ29sb3IA
-								lIQBYwKEBGZm
-								ZmYAAAABhpKE
-								lpYQTlNQYXJh
-								Z3JhcGhTdHls
-								ZYaShISEEE5T
-								UGFyYWdyYXBo
-								U3R5bGUAlIQE
-								Q0NAUwAAhISE
-								B05TQXJyYXkA
-								lJkMkoSEhAlO
-								U1RleHRUYWIA
-								lIQCQ2YAHIaS
-								hKKhADiGkoSi
-								oQBUhpKEoqEA
-								cIaShKKhAIGM
-								AIaShKKhAIGo
-								AIaShKKhAIHE
-								AIaShKKhAIHg
-								AIaShKKhAIH8
-								AIaShKKhAIEY
-								AYaShKKhAIE0
-								AYaShKKhAIFQ
-								AYaGAIaShJaW
+								BJKElpYQTlNQ
+								YXJhZ3JhcGhT
+								dHlsZYaShISE
+								EE5TUGFyYWdy
+								YXBoU3R5bGUA
+								lIQEQ0NAUwAA
+								hISEB05TQXJy
+								YXkAlJkMkoSE
+								hAlOU1RleHRU
+								YWIAlIQCQ2YA
+								HIaShJ+eADiG
+								koSfngBUhpKE
+								n54AcIaShJ+e
+								AIGMAIaShJ+e
+								AIGoAIaShJ+e
+								AIHEAIaShJ+e
+								AIHgAIaShJ+e
+								AIH8AIaShJ+e
+								AIEYAYaShJ+e
+								AIE0AYaShJ+e
+								AIFQAYaGAIaS
+								hJaWB05TQ29s
+								b3KGkoSEhAdO
+								U0NvbG9yAJSE
+								AWMChARmZmZm
+								AAAAAYaShJaW
 								Bk5TRm9udIaS
 								hISEBk5TRm9u
 								dB6UmSSEBVsz
@@ -24139,8 +24139,8 @@ Historikk}</string>
 								AAD//kgAZQBs
 								AHYAZQB0AGkA
 								YwBhAE4AZQB1
-								AGUAhAFmIpsA
-								mwGbAJsAhpKE
+								AGUAhAFmIqAA
+								oAGgAKAAhpKE
 								lpYGTlNLZXJu
 								hpKEhIQITlNO
 								dW1iZXIAhIQH
@@ -24344,32 +24344,32 @@ Endre}</string>
 								TYaEAmlJAQiS
 								hISEDE5TRGlj
 								dGlvbmFyeQCU
-								hAFpBJKElpYH
-								TlNDb2xvcoaS
-								hISEB05TQ29s
-								b3IAlIQBYwKE
-								BGZmZmYAAAAB
-								hpKElpYQTlNQ
-								YXJhZ3JhcGhT
-								dHlsZYaShISE
-								EE5TUGFyYWdy
-								YXBoU3R5bGUA
-								lIQEQ0NAUwAA
-								hISEB05TQXJy
-								YXkAlJkMkoSE
-								hAlOU1RleHRU
-								YWIAlIQCQ2YA
-								HIaShKKhADiG
-								koSioQBUhpKE
-								oqEAcIaShKKh
-								AIGMAIaShKKh
-								AIGoAIaShKKh
-								AIHEAIaShKKh
-								AIHgAIaShKKh
-								AIH8AIaShKKh
-								AIEYAYaShKKh
-								AIE0AYaShKKh
-								AIFQAYaGAIaS
+								hAFpBJKElpYQ
+								TlNQYXJhZ3Jh
+								cGhTdHlsZYaS
+								hISEEE5TUGFy
+								YWdyYXBoU3R5
+								bGUAlIQEQ0NA
+								UwAAhISEB05T
+								QXJyYXkAlJkM
+								koSEhAlOU1Rl
+								eHRUYWIAlIQC
+								Q2YAHIaShJ+e
+								ADiGkoSfngBU
+								hpKEn54AcIaS
+								hJ+eAIGMAIaS
+								hJ+eAIGoAIaS
+								hJ+eAIHEAIaS
+								hJ+eAIHgAIaS
+								hJ+eAIH8AIaS
+								hJ+eAIEYAYaS
+								hJ+eAIE0AYaS
+								hJ+eAIFQAYaG
+								AIaShJaWB05T
+								Q29sb3KGkoSE
+								hAdOU0NvbG9y
+								AJSEAWMChARm
+								ZmZmAAAAAYaS
 								hJaWBk5TRm9u
 								dIaShISEBk5T
 								Rm9udB6UmTCE
@@ -24379,8 +24379,8 @@ Endre}</string>
 								AGkAYwBhAE4A
 								ZQB1AGUALQBC
 								AG8AbABkAAAA
-								hAFmGJsAmwGb
-								AJsAhpKElpYG
+								hAFmGKAAoAGg
+								AKAAhpKElpYG
 								TlNLZXJuhpKE
 								hIQITlNOdW1i
 								ZXIAhIQHTlNW
@@ -24453,32 +24453,32 @@ Endre}</string>
 								aUkBBJKEhIQM
 								TlNEaWN0aW9u
 								YXJ5AJSEAWkE
-								koSWlgdOU0Nv
-								bG9yhpKEhIQH
-								TlNDb2xvcgCU
-								hAFjAoQEZmZm
-								ZgAAAAGGkoSW
-								lhBOU1BhcmFn
-								cmFwaFN0eWxl
-								hpKEhIQQTlNQ
-								YXJhZ3JhcGhT
-								dHlsZQCUhARD
-								Q0BTAACEhIQH
-								TlNBcnJheQCU
-								mQyShISECU5T
-								VGV4dFRhYgCU
-								hAJDZgAchpKE
-								oqEAOIaShKKh
-								AFSGkoSioQBw
-								hpKEoqEAgYwA
-								hpKEoqEAgagA
-								hpKEoqEAgcQA
-								hpKEoqEAgeAA
-								hpKEoqEAgfwA
-								hpKEoqEAgRgB
-								hpKEoqEAgTQB
-								hpKEoqEAgVAB
-								hoYAhpKElpYG
+								koSWlhBOU1Bh
+								cmFncmFwaFN0
+								eWxlhpKEhIQQ
+								TlNQYXJhZ3Jh
+								cGhTdHlsZQCU
+								hARDQ0BTAACE
+								hIQHTlNBcnJh
+								eQCUmQyShISE
+								CU5TVGV4dFRh
+								YgCUhAJDZgAc
+								hpKEn54AOIaS
+								hJ+eAFSGkoSf
+								ngBwhpKEn54A
+								gYwAhpKEn54A
+								gagAhpKEn54A
+								gcQAhpKEn54A
+								geAAhpKEn54A
+								gfwAhpKEn54A
+								gRgBhpKEn54A
+								gTQBhpKEn54A
+								gVABhoYAhpKE
+								lpYHTlNDb2xv
+								coaShISEB05T
+								Q29sb3IAlIQB
+								YwKEBGZmZmYA
+								AAABhpKElpYG
 								TlNGb250hpKE
 								hIQGTlNGb250
 								HpSZJIQFWzM2
@@ -24486,8 +24486,8 @@ Endre}</string>
 								AP/+SABlAGwA
 								dgBlAHQAaQBj
 								AGEATgBlAHUA
-								ZQCEAWYYmwCb
-								AZsAmwCGkoSW
+								ZQCEAWYYoACg
+								AaAAoACGkoSW
 								lgZOU0tlcm6G
 								koSEhAhOU051
 								bWJlcgCEhAdO
@@ -25481,47 +25481,47 @@ AT&amp;T}</string>
 								aUkBA5KEhIQM
 								TlNEaWN0aW9u
 								YXJ5AJSEAWkE
-								koSWlhBOU1Bh
-								cmFncmFwaFN0
-								eWxlhpKEhIQQ
-								TlNQYXJhZ3Jh
-								cGhTdHlsZQCU
-								hARDQ0BTAACE
-								hIQHTlNBcnJh
-								eQCUmQyShISE
-								CU5TVGV4dFRh
-								YgCUhAJDZgAc
-								hpKEn54AOIaS
-								hJ+eAFSGkoSf
-								ngBwhpKEn54A
-								gYwAhpKEn54A
-								gagAhpKEn54A
-								gcQAhpKEn54A
-								geAAhpKEn54A
-								gfwAhpKEn54A
-								gRgBhpKEn54A
-								gTQBhpKEn54A
-								gVABhoYAhpKE
-								lpYGTlNLZXJu
-								hpKEhIQITlNO
-								dW1iZXIAhIQH
-								TlNWYWx1ZQCU
-								hAEqhIQBZKKD
-								AAAAAAAA4L+G
-								koSWlgZOU0Zv
-								bnSGkoSEhAZO
-								U0ZvbnQelJkk
-								hAVbMzZjXQYA
-								AAAcAAAA//5I
-								AGUAbAB2AGUA
-								dABpAGMAYQBO
-								AGUAdQBlAIQB
-								ZhSEAWMApgGm
-								AKYAhpKElpYH
-								TlNDb2xvcoaS
-								hISEB05TQ29s
-								b3IAlKYChARm
-								ZmZmAAAAAYaG
+								koSWlgdOU0Nv
+								bG9yhpKEhIQH
+								TlNDb2xvcgCU
+								hAFjAoQEZmZm
+								ZgAAAAGGkoSW
+								lhBOU1BhcmFn
+								cmFwaFN0eWxl
+								hpKEhIQQTlNQ
+								YXJhZ3JhcGhT
+								dHlsZQCUhARD
+								Q0BTAACEhIQH
+								TlNBcnJheQCU
+								mQyShISECU5T
+								VGV4dFRhYgCU
+								hAJDZgAchpKE
+								oqEAOIaShKKh
+								AFSGkoSioQBw
+								hpKEoqEAgYwA
+								hpKEoqEAgagA
+								hpKEoqEAgcQA
+								hpKEoqEAgeAA
+								hpKEoqEAgfwA
+								hpKEoqEAgRgB
+								hpKEoqEAgTQB
+								hpKEoqEAgVAB
+								hoYAhpKElpYG
+								TlNGb250hpKE
+								hIQGTlNGb250
+								HpSZJIQFWzM2
+								Y10GAAAAHAAA
+								AP/+SABlAGwA
+								dgBlAHQAaQBj
+								AGEATgBlAHUA
+								ZQCEAWYUmwCb
+								AZsAmwCGkoSW
+								lgZOU0tlcm6G
+								koSEhAhOU051
+								bWJlcgCEhAdO
+								U1ZhbHVlAJSE
+								ASqEhAFkqIMA
+								AAAAAADgv4aG
 								hg==
 												</data>
 												<key>Text</key>
@@ -25598,47 +25598,47 @@ M\'e5l}</string>
 								AQuShISEDE5T
 								RGljdGlvbmFy
 								eQCUhAFpBJKE
-								lpYQTlNQYXJh
-								Z3JhcGhTdHls
-								ZYaShISEEE5T
-								UGFyYWdyYXBo
-								U3R5bGUAlIQE
-								Q0NAUwAAhISE
-								B05TQXJyYXkA
-								lJkMkoSEhAlO
-								U1RleHRUYWIA
-								lIQCQ2YAHIaS
-								hJ+eADiGkoSf
-								ngBUhpKEn54A
-								cIaShJ+eAIGM
-								AIaShJ+eAIGo
-								AIaShJ+eAIHE
-								AIaShJ+eAIHg
-								AIaShJ+eAIH8
-								AIaShJ+eAIEY
-								AYaShJ+eAIE0
-								AYaShJ+eAIFQ
-								AYaGAIaShJaW
-								Bk5TS2VyboaS
-								hISECE5TTnVt
-								YmVyAISEB05T
-								VmFsdWUAlIQB
-								KoSEAWSigwAA
-								AAAAAOC/hpKE
-								lpYGTlNGb250
-								hpKEhIQGTlNG
-								b250HpSZJIQF
-								WzM2Y10GAAAA
-								HAAAAP/+SABl
-								AGwAdgBlAHQA
-								aQBjAGEATgBl
-								AHUAZQCEAWYU
-								hAFjAKYBpgCm
-								AIaShJaWB05T
-								Q29sb3KGkoSE
-								hAdOU0NvbG9y
-								AJSmAoQEZmZm
-								ZgAAAAGGhoY=
+								lpYHTlNDb2xv
+								coaShISEB05T
+								Q29sb3IAlIQB
+								YwKEBGZmZmYA
+								AAABhpKElpYQ
+								TlNQYXJhZ3Jh
+								cGhTdHlsZYaS
+								hISEEE5TUGFy
+								YWdyYXBoU3R5
+								bGUAlIQEQ0NA
+								UwAAhISEB05T
+								QXJyYXkAlJkM
+								koSEhAlOU1Rl
+								eHRUYWIAlIQC
+								Q2YAHIaShKKh
+								ADiGkoSioQBU
+								hpKEoqEAcIaS
+								hKKhAIGMAIaS
+								hKKhAIGoAIaS
+								hKKhAIHEAIaS
+								hKKhAIHgAIaS
+								hKKhAIH8AIaS
+								hKKhAIEYAYaS
+								hKKhAIE0AYaS
+								hKKhAIFQAYaG
+								AIaShJaWBk5T
+								Rm9udIaShISE
+								Bk5TRm9udB6U
+								mSSEBVszNmNd
+								BgAAABwAAAD/
+								/kgAZQBsAHYA
+								ZQB0AGkAYwBh
+								AE4AZQB1AGUA
+								hAFmFJsAmwGb
+								AJsAhpKElpYG
+								TlNLZXJuhpKE
+								hIQITlNOdW1i
+								ZXIAhIQHTlNW
+								YWx1ZQCUhAEq
+								hIQBZKiDAAAA
+								AAAA4L+GhoY=
 												</data>
 												<key>Text</key>
 												<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -25704,47 +25704,47 @@ Aktiviteter}</string>
 								koSEhAxOU0Rp
 								Y3Rpb25hcnkA
 								lIQBaQSShJaW
-								EE5TUGFyYWdy
-								YXBoU3R5bGWG
-								koSEhBBOU1Bh
-								cmFncmFwaFN0
-								eWxlAJSEBEND
-								QFMAAISEhAdO
-								U0FycmF5AJSZ
-								DJKEhIQJTlNU
-								ZXh0VGFiAJSE
-								AkNmAByGkoSf
-								ngA4hpKEn54A
-								VIaShJ+eAHCG
-								koSfngCBjACG
-								koSfngCBqACG
-								koSfngCBxACG
-								koSfngCB4ACG
-								koSfngCB/ACG
-								koSfngCBGAGG
-								koSfngCBNAGG
-								koSfngCBUAGG
-								hgCGkoSWlgZO
-								U0tlcm6GkoSE
-								hAhOU051bWJl
-								cgCEhAdOU1Zh
-								bHVlAJSEASqE
-								hAFkooMAAAAA
-								AADgv4aShJaW
-								Bk5TRm9udIaS
-								hISEBk5TRm9u
-								dB6UmSSEBVsz
-								NmNdBgAAABwA
-								AAD//kgAZQBs
-								AHYAZQB0AGkA
-								YwBhAE4AZQB1
-								AGUAhAFmFIQB
-								YwCmAaYApgCG
-								koSWlgdOU0Nv
-								bG9yhpKEhIQH
-								TlNDb2xvcgCU
-								pgKEBGZmZmYA
-								AAABhoaG
+								B05TQ29sb3KG
+								koSEhAdOU0Nv
+								bG9yAJSEAWMC
+								hARmZmZmAAAA
+								AYaShJaWEE5T
+								UGFyYWdyYXBo
+								U3R5bGWGkoSE
+								hBBOU1BhcmFn
+								cmFwaFN0eWxl
+								AJSEBENDQFMA
+								AISEhAdOU0Fy
+								cmF5AJSZDJKE
+								hIQJTlNUZXh0
+								VGFiAJSEAkNm
+								AByGkoSioQA4
+								hpKEoqEAVIaS
+								hKKhAHCGkoSi
+								oQCBjACGkoSi
+								oQCBqACGkoSi
+								oQCBxACGkoSi
+								oQCB4ACGkoSi
+								oQCB/ACGkoSi
+								oQCBGAGGkoSi
+								oQCBNAGGkoSi
+								oQCBUAGGhgCG
+								koSWlgZOU0Zv
+								bnSGkoSEhAZO
+								U0ZvbnQelJkk
+								hAVbMzZjXQYA
+								AAAcAAAA//5I
+								AGUAbAB2AGUA
+								dABpAGMAYQBO
+								AGUAdQBlAIQB
+								ZhSbAJsBmwCb
+								AIaShJaWBk5T
+								S2VyboaShISE
+								CE5TTnVtYmVy
+								AISEB05TVmFs
+								dWUAlIQBKoSE
+								AWSogwAAAAAA
+								AOC/hoaG
 												</data>
 												<key>Text</key>
 												<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -25820,47 +25820,47 @@ Historikk}</string>
 								CpKEhIQMTlNE
 								aWN0aW9uYXJ5
 								AJSEAWkEkoSW
-								lhBOU1BhcmFn
-								cmFwaFN0eWxl
-								hpKEhIQQTlNQ
-								YXJhZ3JhcGhT
-								dHlsZQCUhARD
-								Q0BTAACEhIQH
-								TlNBcnJheQCU
-								mQyShISECU5T
-								VGV4dFRhYgCU
-								hAJDZgAchpKE
-								n54AOIaShJ+e
-								AFSGkoSfngBw
-								hpKEn54AgYwA
-								hpKEn54AgagA
-								hpKEn54AgcQA
-								hpKEn54AgeAA
-								hpKEn54AgfwA
-								hpKEn54AgRgB
-								hpKEn54AgTQB
-								hpKEn54AgVAB
-								hoYAhpKElpYG
-								TlNLZXJuhpKE
-								hIQITlNOdW1i
-								ZXIAhIQHTlNW
-								YWx1ZQCUhAEq
-								hIQBZKKDAAAA
-								AAAA4L+GkoSW
-								lgZOU0ZvbnSG
-								koSEhAZOU0Zv
-								bnQelJkkhAVb
-								MzZjXQYAAAAc
-								AAAA//5IAGUA
-								bAB2AGUAdABp
-								AGMAYQBOAGUA
-								dQBlAIQBZhSE
-								AWMApgGmAKYA
-								hpKElpYHTlND
-								b2xvcoaShISE
-								B05TQ29sb3IA
-								lKYChARmZmZm
-								AAAAAYaGhg==
+								lgdOU0NvbG9y
+								hpKEhIQHTlND
+								b2xvcgCUhAFj
+								AoQEZmZmZgAA
+								AAGGkoSWlhBO
+								U1BhcmFncmFw
+								aFN0eWxlhpKE
+								hIQQTlNQYXJh
+								Z3JhcGhTdHls
+								ZQCUhARDQ0BT
+								AACEhIQHTlNB
+								cnJheQCUmQyS
+								hISECU5TVGV4
+								dFRhYgCUhAJD
+								ZgAchpKEoqEA
+								OIaShKKhAFSG
+								koSioQBwhpKE
+								oqEAgYwAhpKE
+								oqEAgagAhpKE
+								oqEAgcQAhpKE
+								oqEAgeAAhpKE
+								oqEAgfwAhpKE
+								oqEAgRgBhpKE
+								oqEAgTQBhpKE
+								oqEAgVABhoYA
+								hpKElpYGTlNG
+								b250hpKEhIQG
+								TlNGb250HpSZ
+								JIQFWzM2Y10G
+								AAAAHAAAAP/+
+								SABlAGwAdgBl
+								AHQAaQBjAGEA
+								TgBlAHUAZQCE
+								AWYUmwCbAZsA
+								mwCGkoSWlgZO
+								U0tlcm6GkoSE
+								hAhOU051bWJl
+								cgCEhAdOU1Zh
+								bHVlAJSEASqE
+								hAFkqIMAAAAA
+								AADgv4aGhg==
 												</data>
 												<key>Text</key>
 												<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -29360,8 +29360,8 @@ Refleksjon}</string>
 					<integer>0</integer>
 					<key>Points</key>
 					<array>
-						<string>{845, 531.96176022465875}</string>
-						<string>{955.630859375, 531.67972694410514}</string>
+						<string>{845, 531.96176022465863}</string>
+						<string>{955.630859375, 531.67972694410423}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -29454,8 +29454,8 @@ Refleksjon}</string>
 					<integer>0</integer>
 					<key>Points</key>
 					<array>
-						<string>{805.32177760903551, 1563.1395999999995}</string>
-						<string>{804.60563412587669, 1852.8604000000007}</string>
+						<string>{805.32177760903551, 1563.1395999999991}</string>
+						<string>{804.60563412587669, 1852.8604000000005}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -29528,8 +29528,8 @@ Refleksjon}</string>
 					<integer>0</integer>
 					<key>Points</key>
 					<array>
-						<string>{473.90743170009, 1563.1395999999993}</string>
-						<string>{471.26868310320833, 1852.8604000000007}</string>
+						<string>{473.90743170009, 1563.1395999999995}</string>
+						<string>{471.26868310320833, 1852.8604000000005}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -29956,31 +29956,31 @@ Refleksjon}</string>
 								koSEhAxOU0Rp
 								Y3Rpb25hcnkA
 								lIQBaQSShJaW
-								B05TQ29sb3KG
-								koSEhAdOU0Nv
-								bG9yAJSEAWMC
-								hARmZmZmAAAA
-								AYaShJaWEE5T
-								UGFyYWdyYXBo
-								U3R5bGWGkoSE
-								hBBOU1BhcmFn
-								cmFwaFN0eWxl
-								AJSEBENDQFMA
-								AISEhAdOU0Fy
-								cmF5AJSZDJKE
-								hIQJTlNUZXh0
-								VGFiAJSEAkNm
-								AByGkoSioQA4
-								hpKEoqEAVIaS
-								hKKhAHCGkoSi
-								oQCBjACGkoSi
-								oQCBqACGkoSi
-								oQCBxACGkoSi
-								oQCB4ACGkoSi
-								oQCB/ACGkoSi
-								oQCBGAGGkoSi
-								oQCBNAGGkoSi
-								oQCBUAGGhgCG
+								EE5TUGFyYWdy
+								YXBoU3R5bGWG
+								koSEhBBOU1Bh
+								cmFncmFwaFN0
+								eWxlAJSEBEND
+								QFMAAISEhAdO
+								U0FycmF5AJSZ
+								DJKEhIQJTlNU
+								ZXh0VGFiAJSE
+								AkNmAByGkoSf
+								ngA4hpKEn54A
+								VIaShJ+eAHCG
+								koSfngCBjACG
+								koSfngCBqACG
+								koSfngCBxACG
+								koSfngCB4ACG
+								koSfngCB/ACG
+								koSfngCBGAGG
+								koSfngCBNAGG
+								koSfngCBUAGG
+								hgCGkoSWlgdO
+								U0NvbG9yhpKE
+								hIQHTlNDb2xv
+								cgCUhAFjAoQE
+								ZmZmZgAAAAGG
 								koSWlgZOU0Zv
 								bnSGkoSEhAZO
 								U0ZvbnQelJkk
@@ -29989,7 +29989,7 @@ Refleksjon}</string>
 								AGUAbAB2AGUA
 								dABpAGMAYQBO
 								AGUAdQBlAIQB
-								ZiKbAJsBmwCb
+								ZiKgAKABoACg
 								AIaShJaWBk5T
 								S2VyboaShISE
 								CE5TTnVtYmVy
@@ -30344,31 +30344,31 @@ Periode 2}</string>
 								koSEhAxOU0Rp
 								Y3Rpb25hcnkA
 								lIQBaQSShJaW
-								B05TQ29sb3KG
-								koSEhAdOU0Nv
-								bG9yAJSEAWMC
-								hARmZmZmAAAA
-								AYaShJaWEE5T
-								UGFyYWdyYXBo
-								U3R5bGWGkoSE
-								hBBOU1BhcmFn
-								cmFwaFN0eWxl
-								AJSEBENDQFMA
-								AISEhAdOU0Fy
-								cmF5AJSZDJKE
-								hIQJTlNUZXh0
-								VGFiAJSEAkNm
-								AByGkoSioQA4
-								hpKEoqEAVIaS
-								hKKhAHCGkoSi
-								oQCBjACGkoSi
-								oQCBqACGkoSi
-								oQCBxACGkoSi
-								oQCB4ACGkoSi
-								oQCB/ACGkoSi
-								oQCBGAGGkoSi
-								oQCBNAGGkoSi
-								oQCBUAGGhgCG
+								EE5TUGFyYWdy
+								YXBoU3R5bGWG
+								koSEhBBOU1Bh
+								cmFncmFwaFN0
+								eWxlAJSEBEND
+								QFMAAISEhAdO
+								U0FycmF5AJSZ
+								DJKEhIQJTlNU
+								ZXh0VGFiAJSE
+								AkNmAByGkoSf
+								ngA4hpKEn54A
+								VIaShJ+eAHCG
+								koSfngCBjACG
+								koSfngCBqACG
+								koSfngCBxACG
+								koSfngCB4ACG
+								koSfngCB/ACG
+								koSfngCBGAGG
+								koSfngCBNAGG
+								koSfngCBUAGG
+								hgCGkoSWlgdO
+								U0NvbG9yhpKE
+								hIQHTlNDb2xv
+								cgCUhAFjAoQE
+								ZmZmZgAAAAGG
 								koSWlgZOU0Zv
 								bnSGkoSEhAZO
 								U0ZvbnQelJkk
@@ -30377,7 +30377,7 @@ Periode 2}</string>
 								AGUAbAB2AGUA
 								dABpAGMAYQBO
 								AGUAdQBlAIQB
-								ZiKbAJsBmwCb
+								ZiKgAKABoACg
 								AIaShJaWBk5T
 								S2VyboaShISE
 								CE5TTnVtYmVy
@@ -30832,53 +30832,53 @@ Periode 1}</string>
 								CpKEhIQMTlNE
 								aWN0aW9uYXJ5
 								AJSEAWkEkoSW
-								lhBOU1BhcmFn
-								cmFwaFN0eWxl
-								hpKEhIQXTlNN
-								dXRhYmxlUGFy
-								YWdyYXBoU3R5
-								bGUAhIQQTlNQ
-								YXJhZ3JhcGhT
-								dHlsZQCUhARD
-								Q0BTAgCEhIQO
-								TlNNdXRhYmxl
-								QXJyYXkAhIQH
-								TlNBcnJheQCU
-								mQyShISECU5T
-								VGV4dFRhYgCU
-								hAJDZgAchpKE
-								oaAAOIaShKGg
-								AFSGkoShoABw
-								hpKEoaAAgYwA
-								hpKEoaAAgagA
-								hpKEoaAAgcQA
-								hpKEoaAAgeAA
-								hpKEoaAAgfwA
-								hpKEoaAAgRgB
-								hpKEoaAAgTQB
-								hpKEoaAAgVAB
-								hoYAhpKElpYH
-								TlNDb2xvcoaS
-								hISEB05TQ29s
-								b3IAlIQBYwKE
-								BGZmZmYAAAAB
-								hpKElpYGTlNG
-								b250hpKEhIQG
-								TlNGb250HpSZ
-								MIQFWzQ4Y10G
-								AAAAJgAAAP/+
-								SABlAGwAdgBl
-								AHQAaQBjAGEA
-								TgBlAHUAZQAt
-								AEIAbwBsAGQA
-								AACEAWYiogCi
-								AaIAogCGkoSW
 								lgZOU0tlcm6G
 								koSEhAhOU051
 								bWJlcgCEhAdO
 								U1ZhbHVlAJSE
-								ASqEhAFkqoOa
-								mZmZmZnJP4aG
+								ASqEhAFknYOa
+								mZmZmZnJP4aS
+								hJaWEE5TUGFy
+								YWdyYXBoU3R5
+								bGWGkoSEhBdO
+								U011dGFibGVQ
+								YXJhZ3JhcGhT
+								dHlsZQCEhBBO
+								U1BhcmFncmFw
+								aFN0eWxlAJSE
+								BENDQFMCAISE
+								hA5OU011dGFi
+								bGVBcnJheQCE
+								hAdOU0FycmF5
+								AJSZDJKEhIQJ
+								TlNUZXh0VGFi
+								AJSEAkNmAByG
+								koSmpAA4hpKE
+								pqQAVIaShKak
+								AHCGkoSmpACB
+								jACGkoSmpACB
+								qACGkoSmpACB
+								xACGkoSmpACB
+								4ACGkoSmpACB
+								/ACGkoSmpACB
+								GAGGkoSmpACB
+								NAGGkoSmpACB
+								UAGGhgCGkoSW
+								lgZOU0ZvbnSG
+								koSEhAZOU0Zv
+								bnQelJkwhAVb
+								NDhjXQYAAAAm
+								AAAA//5IAGUA
+								bAB2AGUAdABp
+								AGMAYQBOAGUA
+								dQBlAC0AQgBv
+								AGwAZAAAAIQB
+								ZiKEAWMAqAGo
+								AKgAhpKElpYH
+								TlNDb2xvcoaS
+								hISEB05TQ29s
+								b3IAlKgChARm
+								ZmZmAAAAAYaG
 								hg==
 										</data>
 										<key>Text</key>
@@ -31074,32 +31074,32 @@ Refleksjon}</string>
 								TYaEAmlJAQiS
 								hISEDE5TRGlj
 								dGlvbmFyeQCU
-								hAFpBJKElpYH
-								TlNDb2xvcoaS
-								hISEB05TQ29s
-								b3IAlIQBYwKE
-								BGZmZmYAAAAB
-								hpKElpYQTlNQ
-								YXJhZ3JhcGhT
-								dHlsZYaShISE
-								EE5TUGFyYWdy
-								YXBoU3R5bGUA
-								lIQEQ0NAUwAA
-								hISEB05TQXJy
-								YXkAlJkMkoSE
-								hAlOU1RleHRU
-								YWIAlIQCQ2YA
-								HIaShKKhADiG
-								koSioQBUhpKE
-								oqEAcIaShKKh
-								AIGMAIaShKKh
-								AIGoAIaShKKh
-								AIHEAIaShKKh
-								AIHgAIaShKKh
-								AIH8AIaShKKh
-								AIEYAYaShKKh
-								AIE0AYaShKKh
-								AIFQAYaGAIaS
+								hAFpBJKElpYQ
+								TlNQYXJhZ3Jh
+								cGhTdHlsZYaS
+								hISEEE5TUGFy
+								YWdyYXBoU3R5
+								bGUAlIQEQ0NA
+								UwAAhISEB05T
+								QXJyYXkAlJkM
+								koSEhAlOU1Rl
+								eHRUYWIAlIQC
+								Q2YAHIaShJ+e
+								ADiGkoSfngBU
+								hpKEn54AcIaS
+								hJ+eAIGMAIaS
+								hJ+eAIGoAIaS
+								hJ+eAIHEAIaS
+								hJ+eAIHgAIaS
+								hJ+eAIH8AIaS
+								hJ+eAIEYAYaS
+								hJ+eAIE0AYaS
+								hJ+eAIFQAYaG
+								AIaShJaWB05T
+								Q29sb3KGkoSE
+								hAdOU0NvbG9y
+								AJSEAWMChARm
+								ZmZmAAAAAYaS
 								hJaWBk5TRm9u
 								dIaShISEBk5T
 								Rm9udB6UmTCE
@@ -31109,8 +31109,8 @@ Refleksjon}</string>
 								AGkAYwBhAE4A
 								ZQB1AGUALQBC
 								AG8AbABkAAAA
-								hAFmGJsAmwGb
-								AJsAhpKElpYG
+								hAFmGKAAoAGg
+								AKAAhpKElpYG
 								TlNLZXJuhpKE
 								hIQITlNOdW1i
 								ZXIAhIQHTlNW
@@ -31183,32 +31183,32 @@ Refleksjon}</string>
 								aUkBBJKEhIQM
 								TlNEaWN0aW9u
 								YXJ5AJSEAWkE
-								koSWlgdOU0Nv
-								bG9yhpKEhIQH
-								TlNDb2xvcgCU
-								hAFjAoQEZmZm
-								ZgAAAAGGkoSW
-								lhBOU1BhcmFn
-								cmFwaFN0eWxl
-								hpKEhIQQTlNQ
-								YXJhZ3JhcGhT
-								dHlsZQCUhARD
-								Q0BTAACEhIQH
-								TlNBcnJheQCU
-								mQyShISECU5T
-								VGV4dFRhYgCU
-								hAJDZgAchpKE
-								oqEAOIaShKKh
-								AFSGkoSioQBw
-								hpKEoqEAgYwA
-								hpKEoqEAgagA
-								hpKEoqEAgcQA
-								hpKEoqEAgeAA
-								hpKEoqEAgfwA
-								hpKEoqEAgRgB
-								hpKEoqEAgTQB
-								hpKEoqEAgVAB
-								hoYAhpKElpYG
+								koSWlhBOU1Bh
+								cmFncmFwaFN0
+								eWxlhpKEhIQQ
+								TlNQYXJhZ3Jh
+								cGhTdHlsZQCU
+								hARDQ0BTAACE
+								hIQHTlNBcnJh
+								eQCUmQyShISE
+								CU5TVGV4dFRh
+								YgCUhAJDZgAc
+								hpKEn54AOIaS
+								hJ+eAFSGkoSf
+								ngBwhpKEn54A
+								gYwAhpKEn54A
+								gagAhpKEn54A
+								gcQAhpKEn54A
+								geAAhpKEn54A
+								gfwAhpKEn54A
+								gRgBhpKEn54A
+								gTQBhpKEn54A
+								gVABhoYAhpKE
+								lpYHTlNDb2xv
+								coaShISEB05T
+								Q29sb3IAlIQB
+								YwKEBGZmZmYA
+								AAABhpKElpYG
 								TlNGb250hpKE
 								hIQGTlNGb250
 								HpSZJIQFWzM2
@@ -31216,8 +31216,8 @@ Refleksjon}</string>
 								AP/+SABlAGwA
 								dgBlAHQAaQBj
 								AGEATgBlAHUA
-								ZQCEAWYYmwCb
-								AZsAmwCGkoSW
+								ZQCEAWYYoACg
+								AaAAoACGkoSW
 								lgZOU0tlcm6G
 								koSEhAhOU051
 								bWJlcgCEhAdO
@@ -32215,47 +32215,47 @@ AT&amp;T}</string>
 								aUkBA5KEhIQM
 								TlNEaWN0aW9u
 								YXJ5AJSEAWkE
-								koSWlhBOU1Bh
-								cmFncmFwaFN0
-								eWxlhpKEhIQQ
-								TlNQYXJhZ3Jh
-								cGhTdHlsZQCU
-								hARDQ0BTAACE
-								hIQHTlNBcnJh
-								eQCUmQyShISE
-								CU5TVGV4dFRh
-								YgCUhAJDZgAc
-								hpKEn54AOIaS
-								hJ+eAFSGkoSf
-								ngBwhpKEn54A
-								gYwAhpKEn54A
-								gagAhpKEn54A
-								gcQAhpKEn54A
-								geAAhpKEn54A
-								gfwAhpKEn54A
-								gRgBhpKEn54A
-								gTQBhpKEn54A
-								gVABhoYAhpKE
-								lpYGTlNLZXJu
-								hpKEhIQITlNO
-								dW1iZXIAhIQH
-								TlNWYWx1ZQCU
-								hAEqhIQBZKKD
-								AAAAAAAA4L+G
-								koSWlgZOU0Zv
-								bnSGkoSEhAZO
-								U0ZvbnQelJkk
-								hAVbMzZjXQYA
-								AAAcAAAA//5I
-								AGUAbAB2AGUA
-								dABpAGMAYQBO
-								AGUAdQBlAIQB
-								ZhSEAWMApgGm
-								AKYAhpKElpYH
-								TlNDb2xvcoaS
-								hISEB05TQ29s
-								b3IAlKYChARm
-								ZmZmAAAAAYaG
+								koSWlgdOU0Nv
+								bG9yhpKEhIQH
+								TlNDb2xvcgCU
+								hAFjAoQEZmZm
+								ZgAAAAGGkoSW
+								lhBOU1BhcmFn
+								cmFwaFN0eWxl
+								hpKEhIQQTlNQ
+								YXJhZ3JhcGhT
+								dHlsZQCUhARD
+								Q0BTAACEhIQH
+								TlNBcnJheQCU
+								mQyShISECU5T
+								VGV4dFRhYgCU
+								hAJDZgAchpKE
+								oqEAOIaShKKh
+								AFSGkoSioQBw
+								hpKEoqEAgYwA
+								hpKEoqEAgagA
+								hpKEoqEAgcQA
+								hpKEoqEAgeAA
+								hpKEoqEAgfwA
+								hpKEoqEAgRgB
+								hpKEoqEAgTQB
+								hpKEoqEAgVAB
+								hoYAhpKElpYG
+								TlNGb250hpKE
+								hIQGTlNGb250
+								HpSZJIQFWzM2
+								Y10GAAAAHAAA
+								AP/+SABlAGwA
+								dgBlAHQAaQBj
+								AGEATgBlAHUA
+								ZQCEAWYUmwCb
+								AZsAmwCGkoSW
+								lgZOU0tlcm6G
+								koSEhAhOU051
+								bWJlcgCEhAdO
+								U1ZhbHVlAJSE
+								ASqEhAFkqIMA
+								AAAAAADgv4aG
 								hg==
 												</data>
 												<key>Text</key>
@@ -32332,47 +32332,47 @@ M\'e5l}</string>
 								AQuShISEDE5T
 								RGljdGlvbmFy
 								eQCUhAFpBJKE
-								lpYQTlNQYXJh
-								Z3JhcGhTdHls
-								ZYaShISEEE5T
-								UGFyYWdyYXBo
-								U3R5bGUAlIQE
-								Q0NAUwAAhISE
-								B05TQXJyYXkA
-								lJkMkoSEhAlO
-								U1RleHRUYWIA
-								lIQCQ2YAHIaS
-								hJ+eADiGkoSf
-								ngBUhpKEn54A
-								cIaShJ+eAIGM
-								AIaShJ+eAIGo
-								AIaShJ+eAIHE
-								AIaShJ+eAIHg
-								AIaShJ+eAIH8
-								AIaShJ+eAIEY
-								AYaShJ+eAIE0
-								AYaShJ+eAIFQ
-								AYaGAIaShJaW
-								Bk5TS2VyboaS
-								hISECE5TTnVt
-								YmVyAISEB05T
-								VmFsdWUAlIQB
-								KoSEAWSigwAA
-								AAAAAOC/hpKE
-								lpYGTlNGb250
-								hpKEhIQGTlNG
-								b250HpSZJIQF
-								WzM2Y10GAAAA
-								HAAAAP/+SABl
-								AGwAdgBlAHQA
-								aQBjAGEATgBl
-								AHUAZQCEAWYU
-								hAFjAKYBpgCm
-								AIaShJaWB05T
-								Q29sb3KGkoSE
-								hAdOU0NvbG9y
-								AJSmAoQEZmZm
-								ZgAAAAGGhoY=
+								lpYHTlNDb2xv
+								coaShISEB05T
+								Q29sb3IAlIQB
+								YwKEBGZmZmYA
+								AAABhpKElpYQ
+								TlNQYXJhZ3Jh
+								cGhTdHlsZYaS
+								hISEEE5TUGFy
+								YWdyYXBoU3R5
+								bGUAlIQEQ0NA
+								UwAAhISEB05T
+								QXJyYXkAlJkM
+								koSEhAlOU1Rl
+								eHRUYWIAlIQC
+								Q2YAHIaShKKh
+								ADiGkoSioQBU
+								hpKEoqEAcIaS
+								hKKhAIGMAIaS
+								hKKhAIGoAIaS
+								hKKhAIHEAIaS
+								hKKhAIHgAIaS
+								hKKhAIH8AIaS
+								hKKhAIEYAYaS
+								hKKhAIE0AYaS
+								hKKhAIFQAYaG
+								AIaShJaWBk5T
+								Rm9udIaShISE
+								Bk5TRm9udB6U
+								mSSEBVszNmNd
+								BgAAABwAAAD/
+								/kgAZQBsAHYA
+								ZQB0AGkAYwBh
+								AE4AZQB1AGUA
+								hAFmFJsAmwGb
+								AJsAhpKElpYG
+								TlNLZXJuhpKE
+								hIQITlNOdW1i
+								ZXIAhIQHTlNW
+								YWx1ZQCUhAEq
+								hIQBZKiDAAAA
+								AAAA4L+GhoY=
 												</data>
 												<key>Text</key>
 												<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -32448,47 +32448,47 @@ Aktiviteter}</string>
 								koSEhAxOU0Rp
 								Y3Rpb25hcnkA
 								lIQBaQSShJaW
-								EE5TUGFyYWdy
-								YXBoU3R5bGWG
-								koSEhBBOU1Bh
-								cmFncmFwaFN0
-								eWxlAJSEBEND
-								QFMAAISEhAdO
-								U0FycmF5AJSZ
-								DJKEhIQJTlNU
-								ZXh0VGFiAJSE
-								AkNmAByGkoSf
-								ngA4hpKEn54A
-								VIaShJ+eAHCG
-								koSfngCBjACG
-								koSfngCBqACG
-								koSfngCBxACG
-								koSfngCB4ACG
-								koSfngCB/ACG
-								koSfngCBGAGG
-								koSfngCBNAGG
-								koSfngCBUAGG
-								hgCGkoSWlgZO
-								U0tlcm6GkoSE
-								hAhOU051bWJl
-								cgCEhAdOU1Zh
-								bHVlAJSEASqE
-								hAFkooMAAAAA
-								AADgv4aShJaW
-								Bk5TRm9udIaS
-								hISEBk5TRm9u
-								dB6UmSSEBVsz
-								NmNdBgAAABwA
-								AAD//kgAZQBs
-								AHYAZQB0AGkA
-								YwBhAE4AZQB1
-								AGUAhAFmFIQB
-								YwCmAaYApgCG
-								koSWlgdOU0Nv
-								bG9yhpKEhIQH
-								TlNDb2xvcgCU
-								pgKEBGZmZmYA
-								AAABhoaG
+								B05TQ29sb3KG
+								koSEhAdOU0Nv
+								bG9yAJSEAWMC
+								hARmZmZmAAAA
+								AYaShJaWEE5T
+								UGFyYWdyYXBo
+								U3R5bGWGkoSE
+								hBBOU1BhcmFn
+								cmFwaFN0eWxl
+								AJSEBENDQFMA
+								AISEhAdOU0Fy
+								cmF5AJSZDJKE
+								hIQJTlNUZXh0
+								VGFiAJSEAkNm
+								AByGkoSioQA4
+								hpKEoqEAVIaS
+								hKKhAHCGkoSi
+								oQCBjACGkoSi
+								oQCBqACGkoSi
+								oQCBxACGkoSi
+								oQCB4ACGkoSi
+								oQCB/ACGkoSi
+								oQCBGAGGkoSi
+								oQCBNAGGkoSi
+								oQCBUAGGhgCG
+								koSWlgZOU0Zv
+								bnSGkoSEhAZO
+								U0ZvbnQelJkk
+								hAVbMzZjXQYA
+								AAAcAAAA//5I
+								AGUAbAB2AGUA
+								dABpAGMAYQBO
+								AGUAdQBlAIQB
+								ZhSbAJsBmwCb
+								AIaShJaWBk5T
+								S2VyboaShISE
+								CE5TTnVtYmVy
+								AISEB05TVmFs
+								dWUAlIQBKoSE
+								AWSogwAAAAAA
+								AOC/hoaG
 												</data>
 												<key>Text</key>
 												<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -32554,47 +32554,47 @@ Historikk}</string>
 								CpKEhIQMTlNE
 								aWN0aW9uYXJ5
 								AJSEAWkEkoSW
-								lhBOU1BhcmFn
-								cmFwaFN0eWxl
-								hpKEhIQQTlNQ
-								YXJhZ3JhcGhT
-								dHlsZQCUhARD
-								Q0BTAACEhIQH
-								TlNBcnJheQCU
-								mQyShISECU5T
-								VGV4dFRhYgCU
-								hAJDZgAchpKE
-								n54AOIaShJ+e
-								AFSGkoSfngBw
-								hpKEn54AgYwA
-								hpKEn54AgagA
-								hpKEn54AgcQA
-								hpKEn54AgeAA
-								hpKEn54AgfwA
-								hpKEn54AgRgB
-								hpKEn54AgTQB
-								hpKEn54AgVAB
-								hoYAhpKElpYG
-								TlNLZXJuhpKE
-								hIQITlNOdW1i
-								ZXIAhIQHTlNW
-								YWx1ZQCUhAEq
-								hIQBZKKDAAAA
-								AAAA4L+GkoSW
-								lgZOU0ZvbnSG
-								koSEhAZOU0Zv
-								bnQelJkkhAVb
-								MzZjXQYAAAAc
-								AAAA//5IAGUA
-								bAB2AGUAdABp
-								AGMAYQBOAGUA
-								dQBlAIQBZhSE
-								AWMApgGmAKYA
-								hpKElpYHTlND
-								b2xvcoaShISE
-								B05TQ29sb3IA
-								lKYChARmZmZm
-								AAAAAYaGhg==
+								lgdOU0NvbG9y
+								hpKEhIQHTlND
+								b2xvcgCUhAFj
+								AoQEZmZmZgAA
+								AAGGkoSWlhBO
+								U1BhcmFncmFw
+								aFN0eWxlhpKE
+								hIQQTlNQYXJh
+								Z3JhcGhTdHls
+								ZQCUhARDQ0BT
+								AACEhIQHTlNB
+								cnJheQCUmQyS
+								hISECU5TVGV4
+								dFRhYgCUhAJD
+								ZgAchpKEoqEA
+								OIaShKKhAFSG
+								koSioQBwhpKE
+								oqEAgYwAhpKE
+								oqEAgagAhpKE
+								oqEAgcQAhpKE
+								oqEAgeAAhpKE
+								oqEAgfwAhpKE
+								oqEAgRgBhpKE
+								oqEAgTQBhpKE
+								oqEAgVABhoYA
+								hpKElpYGTlNG
+								b250hpKEhIQG
+								TlNGb250HpSZ
+								JIQFWzM2Y10G
+								AAAAHAAAAP/+
+								SABlAGwAdgBl
+								AHQAaQBjAGEA
+								TgBlAHUAZQCE
+								AWYUmwCbAZsA
+								mwCGkoSWlgZO
+								U0tlcm6GkoSE
+								hAhOU051bWJl
+								cgCEhAdOU1Zh
+								bHVlAJSEASqE
+								hAFkqIMAAAAA
+								AADgv4aGhg==
 												</data>
 												<key>Text</key>
 												<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -35843,49 +35843,49 @@ Refleksjon}</string>
 								coaEAmlJAQiS
 								hISEDE5TRGlj
 								dGlvbmFyeQCU
-								hAFpBJKElpYQ
-								TlNQYXJhZ3Jh
-								cGhTdHlsZYaS
-								hISEEE5TUGFy
-								YWdyYXBoU3R5
-								bGUAlIQEQ0NA
-								UwAAhISEB05T
-								QXJyYXkAlJkM
-								koSEhAlOU1Rl
-								eHRUYWIAlIQC
-								Q2YAHIaShJ+e
-								ADiGkoSfngBU
-								hpKEn54AcIaS
-								hJ+eAIGMAIaS
-								hJ+eAIGoAIaS
-								hJ+eAIHEAIaS
-								hJ+eAIHgAIaS
-								hJ+eAIH8AIaS
-								hJ+eAIEYAYaS
-								hJ+eAIE0AYaS
-								hJ+eAIFQAYaG
-								AIaShJaWBk5T
-								S2VyboaShISE
-								CE5TTnVtYmVy
-								AISEB05TVmFs
-								dWUAlIQBKoSE
-								AWSig5qZmZmZ
-								mbk/hpKElpYG
-								TlNGb250hpKE
-								hIQGTlNGb250
-								HpSZNIQFWzUy
-								Y10GAAAAKgAA
-								AP/+SABlAGwA
-								dgBlAHQAaQBj
-								AGEATgBlAHUA
-								ZQAtAE0AZQBk
-								AGkAdQBtAAAA
-								hAFmIoQBYwCm
-								AaYApgCGkoSW
-								lgdOU0NvbG9y
-								hpKEhIQHTlND
-								b2xvcgCUpgKE
+								hAFpBJKElpYH
+								TlNDb2xvcoaS
+								hISEB05TQ29s
+								b3IAlIQBYwKE
 								BGZmZmYAAAAB
+								hpKElpYQTlNQ
+								YXJhZ3JhcGhT
+								dHlsZYaShISE
+								EE5TUGFyYWdy
+								YXBoU3R5bGUA
+								lIQEQ0NAUwAA
+								hISEB05TQXJy
+								YXkAlJkMkoSE
+								hAlOU1RleHRU
+								YWIAlIQCQ2YA
+								HIaShKKhADiG
+								koSioQBUhpKE
+								oqEAcIaShKKh
+								AIGMAIaShKKh
+								AIGoAIaShKKh
+								AIHEAIaShKKh
+								AIHgAIaShKKh
+								AIH8AIaShKKh
+								AIEYAYaShKKh
+								AIE0AYaShKKh
+								AIFQAYaGAIaS
+								hJaWBk5TRm9u
+								dIaShISEBk5T
+								Rm9udB6UmTSE
+								BVs1MmNdBgAA
+								ACoAAAD//kgA
+								ZQBsAHYAZQB0
+								AGkAYwBhAE4A
+								ZQB1AGUALQBN
+								AGUAZABpAHUA
+								bQAAAIQBZiKb
+								AJsBmwCbAIaS
+								hJaWBk5TS2Vy
+								boaShISECE5T
+								TnVtYmVyAISE
+								B05TVmFsdWUA
+								lIQBKoSEAWSo
+								g5qZmZmZmbk/
 								hoaG
 										</data>
 										<key>Text</key>
@@ -35955,31 +35955,31 @@ Begynner}</string>
 								koSEhAxOU0Rp
 								Y3Rpb25hcnkA
 								lIQBaQSShJaW
-								B05TQ29sb3KG
-								koSEhAdOU0Nv
-								bG9yAJSEAWMC
-								hARmZmZmAAAA
-								AYaShJaWEE5T
-								UGFyYWdyYXBo
-								U3R5bGWGkoSE
-								hBBOU1BhcmFn
-								cmFwaFN0eWxl
-								AJSEBENDQFMA
-								AISEhAdOU0Fy
-								cmF5AJSZDJKE
-								hIQJTlNUZXh0
-								VGFiAJSEAkNm
-								AByGkoSioQA4
-								hpKEoqEAVIaS
-								hKKhAHCGkoSi
-								oQCBjACGkoSi
-								oQCBqACGkoSi
-								oQCBxACGkoSi
-								oQCB4ACGkoSi
-								oQCB/ACGkoSi
-								oQCBGAGGkoSi
-								oQCBNAGGkoSi
-								oQCBUAGGhgCG
+								EE5TUGFyYWdy
+								YXBoU3R5bGWG
+								koSEhBBOU1Bh
+								cmFncmFwaFN0
+								eWxlAJSEBEND
+								QFMAAISEhAdO
+								U0FycmF5AJSZ
+								DJKEhIQJTlNU
+								ZXh0VGFiAJSE
+								AkNmAByGkoSf
+								ngA4hpKEn54A
+								VIaShJ+eAHCG
+								koSfngCBjACG
+								koSfngCBqACG
+								koSfngCBxACG
+								koSfngCB4ACG
+								koSfngCB/ACG
+								koSfngCBGAGG
+								koSfngCBNAGG
+								koSfngCBUAGG
+								hgCGkoSWlgdO
+								U0NvbG9yhpKE
+								hIQHTlNDb2xv
+								cgCUhAFjAoQE
+								ZmZmZgAAAAGG
 								koSWlgZOU0Zv
 								bnSGkoSEhAZO
 								U0ZvbnQelJkw
@@ -35989,8 +35989,8 @@ Begynner}</string>
 								dABpAGMAYQBO
 								AGUAdQBlAC0A
 								QgBvAGwAZAAA
-								AIQBZiKbAJsB
-								mwCbAIaShJaW
+								AIQBZiKgAKAB
+								oACgAIaShJaW
 								Bk5TS2VyboaS
 								hISECE5TTnVt
 								YmVyAISEB05T
@@ -37704,21 +37704,21 @@ glemmer tid og sted?}</string>
 						hIQITlNPYmplY3QAhZKEhIQITlNT
 						dHJpbmcBlIQBKwZGZXJkaWeGhAJp
 						SQEGkoSEhAxOU0RpY3Rpb25hcnkA
-						lIQBaQSShJaWB05TQ29sb3KGkoSE
-						hAdOU0NvbG9yAJSEAWMChARmZmZm
-						AAAAAYaShJaWEE5TUGFyYWdyYXBo
+						lIQBaQSShJaWEE5TUGFyYWdyYXBo
 						U3R5bGWGkoSEhBBOU1BhcmFncmFw
 						aFN0eWxlAJSEBENDQFMAAISEhAdO
 						U0FycmF5AJSZDJKEhIQJTlNUZXh0
-						VGFiAJSEAkNmAByGkoSioQA4hpKE
-						oqEAVIaShKKhAHCGkoSioQCBjACG
-						koSioQCBqACGkoSioQCBxACGkoSi
-						oQCB4ACGkoSioQCB/ACGkoSioQCB
-						GAGGkoSioQCBNAGGkoSioQCBUAGG
-						hgCGkoSWlgZOU0ZvbnSGkoSEhAZO
+						VGFiAJSEAkNmAByGkoSfngA4hpKE
+						n54AVIaShJ+eAHCGkoSfngCBjACG
+						koSfngCBqACGkoSfngCBxACGkoSf
+						ngCB4ACGkoSfngCB/ACGkoSfngCB
+						GAGGkoSfngCBNAGGkoSfngCBUAGG
+						hgCGkoSWlgdOU0NvbG9yhpKEhIQH
+						TlNDb2xvcgCUhAFjAoQEZmZmZgAA
+						AAGGkoSWlgZOU0ZvbnSGkoSEhAZO
 						U0ZvbnQelJkkhAVbMzZjXQYAAAAc
 						AAAA//5IAGUAbAB2AGUAdABpAGMA
-						YQBOAGUAdQBlAIQBZiKbAJsBmwCb
+						YQBOAGUAdQBlAIQBZiKgAKABoACg
 						AIaShJaWBk5TS2VyboaShISECE5T
 						TnVtYmVyAISEB05TVmFsdWUAlIQB
 						KoSEAWSogzMzMzMzM9O/hoaG
@@ -37800,21 +37800,21 @@ Ferdig}</string>
 						hIQITlNPYmplY3QAhZKEhIQITlNT
 						dHJpbmcBlIQBKwZBdmJyeXSGhAJp
 						SQEGkoSEhAxOU0RpY3Rpb25hcnkA
-						lIQBaQSShJaWB05TQ29sb3KGkoSE
-						hAdOU0NvbG9yAJSEAWMChARmZmZm
-						AAAAAYaShJaWEE5TUGFyYWdyYXBo
+						lIQBaQSShJaWEE5TUGFyYWdyYXBo
 						U3R5bGWGkoSEhBBOU1BhcmFncmFw
 						aFN0eWxlAJSEBENDQFMAAISEhAdO
 						U0FycmF5AJSZDJKEhIQJTlNUZXh0
-						VGFiAJSEAkNmAByGkoSioQA4hpKE
-						oqEAVIaShKKhAHCGkoSioQCBjACG
-						koSioQCBqACGkoSioQCBxACGkoSi
-						oQCB4ACGkoSioQCB/ACGkoSioQCB
-						GAGGkoSioQCBNAGGkoSioQCBUAGG
-						hgCGkoSWlgZOU0ZvbnSGkoSEhAZO
+						VGFiAJSEAkNmAByGkoSfngA4hpKE
+						n54AVIaShJ+eAHCGkoSfngCBjACG
+						koSfngCBqACGkoSfngCBxACGkoSf
+						ngCB4ACGkoSfngCB/ACGkoSfngCB
+						GAGGkoSfngCBNAGGkoSfngCBUAGG
+						hgCGkoSWlgdOU0NvbG9yhpKEhIQH
+						TlNDb2xvcgCUhAFjAoQEZmZmZgAA
+						AAGGkoSWlgZOU0ZvbnSGkoSEhAZO
 						U0ZvbnQelJkkhAVbMzZjXQYAAAAc
 						AAAA//5IAGUAbAB2AGUAdABpAGMA
-						YQBOAGUAdQBlAIQBZiKbAJsBmwCb
+						YQBOAGUAdQBlAIQBZiKgAKABoACg
 						AIaShJaWBk5TS2VyboaShISECE5T
 						TnVtYmVyAISEB05TVmFsdWUAlIQB
 						KoSEAWSogzMzMzMzM9O/hoaG
@@ -38050,31 +38050,31 @@ Hvilke aktiviteter gleder du deg til?}</string>
 								CpKEhIQMTlNE
 								aWN0aW9uYXJ5
 								AJSEAWkEkoSW
-								lgdOU0NvbG9y
-								hpKEhIQHTlND
-								b2xvcgCUhAFj
-								AoQEZmZmZgAA
-								AAGGkoSWlhBO
-								U1BhcmFncmFw
-								aFN0eWxlhpKE
-								hIQQTlNQYXJh
-								Z3JhcGhTdHls
-								ZQCUhARDQ0BT
-								AACEhIQHTlNB
-								cnJheQCUmQyS
-								hISECU5TVGV4
-								dFRhYgCUhAJD
-								ZgAchpKEoqEA
-								OIaShKKhAFSG
-								koSioQBwhpKE
-								oqEAgYwAhpKE
-								oqEAgagAhpKE
-								oqEAgcQAhpKE
-								oqEAgeAAhpKE
-								oqEAgfwAhpKE
-								oqEAgRgBhpKE
-								oqEAgTQBhpKE
-								oqEAgVABhoYA
+								lhBOU1BhcmFn
+								cmFwaFN0eWxl
+								hpKEhIQQTlNQ
+								YXJhZ3JhcGhT
+								dHlsZQCUhARD
+								Q0BTAACEhIQH
+								TlNBcnJheQCU
+								mQyShISECU5T
+								VGV4dFRhYgCU
+								hAJDZgAchpKE
+								n54AOIaShJ+e
+								AFSGkoSfngBw
+								hpKEn54AgYwA
+								hpKEn54AgagA
+								hpKEn54AgcQA
+								hpKEn54AgeAA
+								hpKEn54AgfwA
+								hpKEn54AgRgB
+								hpKEn54AgTQB
+								hpKEn54AgVAB
+								hoYAhpKElpYH
+								TlNDb2xvcoaS
+								hISEB05TQ29s
+								b3IAlIQBYwKE
+								BGZmZmYAAAAB
 								hpKElpYGTlNG
 								b250hpKEhIQG
 								TlNGb250HpSZ
@@ -38084,8 +38084,8 @@ Hvilke aktiviteter gleder du deg til?}</string>
 								AHQAaQBjAGEA
 								TgBlAHUAZQAt
 								AEIAbwBsAGQA
-								AACEAWYimwCb
-								AZsAmwCGkoSW
+								AACEAWYioACg
+								AaAAoACGkoSW
 								lgZOU0tlcm6G
 								koSEhAhOU051
 								bWJlcgCEhAdO
@@ -38289,32 +38289,32 @@ Ny periode}</string>
 								TYaEAmlJAQiS
 								hISEDE5TRGlj
 								dGlvbmFyeQCU
-								hAFpBJKElpYH
-								TlNDb2xvcoaS
-								hISEB05TQ29s
-								b3IAlIQBYwKE
-								BGZmZmYAAAAB
-								hpKElpYQTlNQ
-								YXJhZ3JhcGhT
-								dHlsZYaShISE
-								EE5TUGFyYWdy
-								YXBoU3R5bGUA
-								lIQEQ0NAUwAA
-								hISEB05TQXJy
-								YXkAlJkMkoSE
-								hAlOU1RleHRU
-								YWIAlIQCQ2YA
-								HIaShKKhADiG
-								koSioQBUhpKE
-								oqEAcIaShKKh
-								AIGMAIaShKKh
-								AIGoAIaShKKh
-								AIHEAIaShKKh
-								AIHgAIaShKKh
-								AIH8AIaShKKh
-								AIEYAYaShKKh
-								AIE0AYaShKKh
-								AIFQAYaGAIaS
+								hAFpBJKElpYQ
+								TlNQYXJhZ3Jh
+								cGhTdHlsZYaS
+								hISEEE5TUGFy
+								YWdyYXBoU3R5
+								bGUAlIQEQ0NA
+								UwAAhISEB05T
+								QXJyYXkAlJkM
+								koSEhAlOU1Rl
+								eHRUYWIAlIQC
+								Q2YAHIaShJ+e
+								ADiGkoSfngBU
+								hpKEn54AcIaS
+								hJ+eAIGMAIaS
+								hJ+eAIGoAIaS
+								hJ+eAIHEAIaS
+								hJ+eAIHgAIaS
+								hJ+eAIH8AIaS
+								hJ+eAIEYAYaS
+								hJ+eAIE0AYaS
+								hJ+eAIFQAYaG
+								AIaShJaWB05T
+								Q29sb3KGkoSE
+								hAdOU0NvbG9y
+								AJSEAWMChARm
+								ZmZmAAAAAYaS
 								hJaWBk5TRm9u
 								dIaShISEBk5T
 								Rm9udB6UmTCE
@@ -38324,8 +38324,8 @@ Ny periode}</string>
 								AGkAYwBhAE4A
 								ZQB1AGUALQBC
 								AG8AbABkAAAA
-								hAFmGJsAmwGb
-								AJsAhpKElpYG
+								hAFmGKAAoAGg
+								AKAAhpKElpYG
 								TlNLZXJuhpKE
 								hIQITlNOdW1i
 								ZXIAhIQHTlNW
@@ -38398,32 +38398,32 @@ Ny periode}</string>
 								aUkBBJKEhIQM
 								TlNEaWN0aW9u
 								YXJ5AJSEAWkE
-								koSWlgdOU0Nv
-								bG9yhpKEhIQH
-								TlNDb2xvcgCU
-								hAFjAoQEZmZm
-								ZgAAAAGGkoSW
-								lhBOU1BhcmFn
-								cmFwaFN0eWxl
-								hpKEhIQQTlNQ
-								YXJhZ3JhcGhT
-								dHlsZQCUhARD
-								Q0BTAACEhIQH
-								TlNBcnJheQCU
-								mQyShISECU5T
-								VGV4dFRhYgCU
-								hAJDZgAchpKE
-								oqEAOIaShKKh
-								AFSGkoSioQBw
-								hpKEoqEAgYwA
-								hpKEoqEAgagA
-								hpKEoqEAgcQA
-								hpKEoqEAgeAA
-								hpKEoqEAgfwA
-								hpKEoqEAgRgB
-								hpKEoqEAgTQB
-								hpKEoqEAgVAB
-								hoYAhpKElpYG
+								koSWlhBOU1Bh
+								cmFncmFwaFN0
+								eWxlhpKEhIQQ
+								TlNQYXJhZ3Jh
+								cGhTdHlsZQCU
+								hARDQ0BTAACE
+								hIQHTlNBcnJh
+								eQCUmQyShISE
+								CU5TVGV4dFRh
+								YgCUhAJDZgAc
+								hpKEn54AOIaS
+								hJ+eAFSGkoSf
+								ngBwhpKEn54A
+								gYwAhpKEn54A
+								gagAhpKEn54A
+								gcQAhpKEn54A
+								geAAhpKEn54A
+								gfwAhpKEn54A
+								gRgBhpKEn54A
+								gTQBhpKEn54A
+								gVABhoYAhpKE
+								lpYHTlNDb2xv
+								coaShISEB05T
+								Q29sb3IAlIQB
+								YwKEBGZmZmYA
+								AAABhpKElpYG
 								TlNGb250hpKE
 								hIQGTlNGb250
 								HpSZJIQFWzM2
@@ -38431,8 +38431,8 @@ Ny periode}</string>
 								AP/+SABlAGwA
 								dgBlAHQAaQBj
 								AGEATgBlAHUA
-								ZQCEAWYYmwCb
-								AZsAmwCGkoSW
+								ZQCEAWYYoACg
+								AaAAoACGkoSW
 								lgZOU0tlcm6G
 								koSEhAhOU051
 								bWJlcgCEhAdO
@@ -39505,7 +39505,7 @@ AT&amp;T}</string>
 					<key>Print</key>
 					<string>YES</string>
 					<key>View</key>
-					<string>YES</string>
+					<string>NO</string>
 				</dict>
 				<dict>
 					<key>Lock</key>
@@ -41561,22 +41561,22 @@ AT&amp;T}</string>
 						hIQITlNPYmplY3QAhZKEhIQITlNT
 						dHJpbmcBlIQBKw1TbGV0dCBQZXJp
 						b2RlhoQCaUkBDZKEhIQMTlNEaWN0
-						aW9uYXJ5AJSEAWkEkoSWlgdOU0Nv
-						bG9yhpKEhIQHTlNDb2xvcgCUhAFj
-						AoQEZmZmZgAAAAGGkoSWlhBOU1Bh
+						aW9uYXJ5AJSEAWkEkoSWlhBOU1Bh
 						cmFncmFwaFN0eWxlhpKEhIQQTlNQ
 						YXJhZ3JhcGhTdHlsZQCUhARDQ0BT
 						AACEhIQHTlNBcnJheQCUmQyShISE
 						CU5TVGV4dFRhYgCUhAJDZgAchpKE
-						oqEAOIaShKKhAFSGkoSioQBwhpKE
-						oqEAgYwAhpKEoqEAgagAhpKEoqEA
-						gcQAhpKEoqEAgeAAhpKEoqEAgfwA
-						hpKEoqEAgRgBhpKEoqEAgTQBhpKE
-						oqEAgVABhoYAhpKElpYGTlNGb250
+						n54AOIaShJ+eAFSGkoSfngBwhpKE
+						n54AgYwAhpKEn54AgagAhpKEn54A
+						gcQAhpKEn54AgeAAhpKEn54AgfwA
+						hpKEn54AgRgBhpKEn54AgTQBhpKE
+						n54AgVABhoYAhpKElpYHTlNDb2xv
+						coaShISEB05TQ29sb3IAlIQBYwKE
+						BGZmZmYAAAABhpKElpYGTlNGb250
 						hpKEhIQGTlNGb250HpSZJIQFWzM2
 						Y10GAAAAHAAAAP/+SABlAGwAdgBl
 						AHQAaQBjAGEATgBlAHUAZQCEAWYi
-						mwCbAZsAmwCGkoSWlgZOU0tlcm6G
+						oACgAaAAoACGkoSWlgZOU0tlcm6G
 						koSEhAhOU051bWJlcgCEhAdOU1Zh
 						bHVlAJSEASqEhAFkqIMzMzMzMzPT
 						v4aGhg==
@@ -41851,31 +41851,31 @@ Slett Periode}</string>
 								koSEhAxOU0Rp
 								Y3Rpb25hcnkA
 								lIQBaQSShJaW
-								B05TQ29sb3KG
-								koSEhAdOU0Nv
-								bG9yAJSEAWMC
-								hARmZmZmAAAA
-								AYaShJaWEE5T
-								UGFyYWdyYXBo
-								U3R5bGWGkoSE
-								hBBOU1BhcmFn
-								cmFwaFN0eWxl
-								AJSEBENDQFMA
-								AISEhAdOU0Fy
-								cmF5AJSZDJKE
-								hIQJTlNUZXh0
-								VGFiAJSEAkNm
-								AByGkoSioQA4
-								hpKEoqEAVIaS
-								hKKhAHCGkoSi
-								oQCBjACGkoSi
-								oQCBqACGkoSi
-								oQCBxACGkoSi
-								oQCB4ACGkoSi
-								oQCB/ACGkoSi
-								oQCBGAGGkoSi
-								oQCBNAGGkoSi
-								oQCBUAGGhgCG
+								EE5TUGFyYWdy
+								YXBoU3R5bGWG
+								koSEhBBOU1Bh
+								cmFncmFwaFN0
+								eWxlAJSEBEND
+								QFMAAISEhAdO
+								U0FycmF5AJSZ
+								DJKEhIQJTlNU
+								ZXh0VGFiAJSE
+								AkNmAByGkoSf
+								ngA4hpKEn54A
+								VIaShJ+eAHCG
+								koSfngCBjACG
+								koSfngCBqACG
+								koSfngCBxACG
+								koSfngCB4ACG
+								koSfngCB/ACG
+								koSfngCBGAGG
+								koSfngCBNAGG
+								koSfngCBUAGG
+								hgCGkoSWlgdO
+								U0NvbG9yhpKE
+								hIQHTlNDb2xv
+								cgCUhAFjAoQE
+								ZmZmZgAAAAGG
 								koSWlgZOU0Zv
 								bnSGkoSEhAZO
 								U0ZvbnQelJkw
@@ -41885,8 +41885,8 @@ Slett Periode}</string>
 								dABpAGMAYQBO
 								AGUAdQBlAC0A
 								QgBvAGwAZAAA
-								AIQBZiKbAJsB
-								mwCbAIaShJaW
+								AIQBZiKgAKAB
+								oACgAIaShJaW
 								Bk5TS2VyboaS
 								hISECE5TTnVt
 								YmVyAISEB05T
@@ -41969,32 +41969,32 @@ Periode 1}</string>
 								coaEAmlJAQiS
 								hISEDE5TRGlj
 								dGlvbmFyeQCU
-								hAFpBJKElpYH
-								TlNDb2xvcoaS
-								hISEB05TQ29s
-								b3IAlIQBYwKE
-								BGZmZmYAAAAB
-								hpKElpYQTlNQ
-								YXJhZ3JhcGhT
-								dHlsZYaShISE
-								EE5TUGFyYWdy
-								YXBoU3R5bGUA
-								lIQEQ0NAUwAA
-								hISEB05TQXJy
-								YXkAlJkMkoSE
-								hAlOU1RleHRU
-								YWIAlIQCQ2YA
-								HIaShKKhADiG
-								koSioQBUhpKE
-								oqEAcIaShKKh
-								AIGMAIaShKKh
-								AIGoAIaShKKh
-								AIHEAIaShKKh
-								AIHgAIaShKKh
-								AIH8AIaShKKh
-								AIEYAYaShKKh
-								AIE0AYaShKKh
-								AIFQAYaGAIaS
+								hAFpBJKElpYQ
+								TlNQYXJhZ3Jh
+								cGhTdHlsZYaS
+								hISEEE5TUGFy
+								YWdyYXBoU3R5
+								bGUAlIQEQ0NA
+								UwAAhISEB05T
+								QXJyYXkAlJkM
+								koSEhAlOU1Rl
+								eHRUYWIAlIQC
+								Q2YAHIaShJ+e
+								ADiGkoSfngBU
+								hpKEn54AcIaS
+								hJ+eAIGMAIaS
+								hJ+eAIGoAIaS
+								hJ+eAIHEAIaS
+								hJ+eAIHgAIaS
+								hJ+eAIH8AIaS
+								hJ+eAIEYAYaS
+								hJ+eAIE0AYaS
+								hJ+eAIFQAYaG
+								AIaShJaWB05T
+								Q29sb3KGkoSE
+								hAdOU0NvbG9y
+								AJSEAWMChARm
+								ZmZmAAAAAYaS
 								hJaWBk5TRm9u
 								dIaShISEBk5T
 								Rm9udB6UmSSE
@@ -42003,7 +42003,7 @@ Periode 1}</string>
 								ZQBsAHYAZQB0
 								AGkAYwBhAE4A
 								ZQB1AGUAhAFm
-								IpsAmwGbAJsA
+								IqAAoAGgAKAA
 								hpKElpYGTlNL
 								ZXJuhpKEhIQI
 								TlNOdW1iZXIA
@@ -42346,32 +42346,32 @@ Perioder}</string>
 								TYaEAmlJAQiS
 								hISEDE5TRGlj
 								dGlvbmFyeQCU
-								hAFpBJKElpYH
-								TlNDb2xvcoaS
-								hISEB05TQ29s
-								b3IAlIQBYwKE
-								BGZmZmYAAAAB
-								hpKElpYQTlNQ
-								YXJhZ3JhcGhT
-								dHlsZYaShISE
-								EE5TUGFyYWdy
-								YXBoU3R5bGUA
-								lIQEQ0NAUwAA
-								hISEB05TQXJy
-								YXkAlJkMkoSE
-								hAlOU1RleHRU
-								YWIAlIQCQ2YA
-								HIaShKKhADiG
-								koSioQBUhpKE
-								oqEAcIaShKKh
-								AIGMAIaShKKh
-								AIGoAIaShKKh
-								AIHEAIaShKKh
-								AIHgAIaShKKh
-								AIH8AIaShKKh
-								AIEYAYaShKKh
-								AIE0AYaShKKh
-								AIFQAYaGAIaS
+								hAFpBJKElpYQ
+								TlNQYXJhZ3Jh
+								cGhTdHlsZYaS
+								hISEEE5TUGFy
+								YWdyYXBoU3R5
+								bGUAlIQEQ0NA
+								UwAAhISEB05T
+								QXJyYXkAlJkM
+								koSEhAlOU1Rl
+								eHRUYWIAlIQC
+								Q2YAHIaShJ+e
+								ADiGkoSfngBU
+								hpKEn54AcIaS
+								hJ+eAIGMAIaS
+								hJ+eAIGoAIaS
+								hJ+eAIHEAIaS
+								hJ+eAIHgAIaS
+								hJ+eAIH8AIaS
+								hJ+eAIEYAYaS
+								hJ+eAIE0AYaS
+								hJ+eAIFQAYaG
+								AIaShJaWB05T
+								Q29sb3KGkoSE
+								hAdOU0NvbG9y
+								AJSEAWMChARm
+								ZmZmAAAAAYaS
 								hJaWBk5TRm9u
 								dIaShISEBk5T
 								Rm9udB6UmTCE
@@ -42381,8 +42381,8 @@ Perioder}</string>
 								AGkAYwBhAE4A
 								ZQB1AGUALQBC
 								AG8AbABkAAAA
-								hAFmGJsAmwGb
-								AJsAhpKElpYG
+								hAFmGKAAoAGg
+								AKAAhpKElpYG
 								TlNLZXJuhpKE
 								hIQITlNOdW1i
 								ZXIAhIQHTlNW
@@ -42455,32 +42455,32 @@ Perioder}</string>
 								aUkBBJKEhIQM
 								TlNEaWN0aW9u
 								YXJ5AJSEAWkE
-								koSWlgdOU0Nv
-								bG9yhpKEhIQH
-								TlNDb2xvcgCU
-								hAFjAoQEZmZm
-								ZgAAAAGGkoSW
-								lhBOU1BhcmFn
-								cmFwaFN0eWxl
-								hpKEhIQQTlNQ
-								YXJhZ3JhcGhT
-								dHlsZQCUhARD
-								Q0BTAACEhIQH
-								TlNBcnJheQCU
-								mQyShISECU5T
-								VGV4dFRhYgCU
-								hAJDZgAchpKE
-								oqEAOIaShKKh
-								AFSGkoSioQBw
-								hpKEoqEAgYwA
-								hpKEoqEAgagA
-								hpKEoqEAgcQA
-								hpKEoqEAgeAA
-								hpKEoqEAgfwA
-								hpKEoqEAgRgB
-								hpKEoqEAgTQB
-								hpKEoqEAgVAB
-								hoYAhpKElpYG
+								koSWlhBOU1Bh
+								cmFncmFwaFN0
+								eWxlhpKEhIQQ
+								TlNQYXJhZ3Jh
+								cGhTdHlsZQCU
+								hARDQ0BTAACE
+								hIQHTlNBcnJh
+								eQCUmQyShISE
+								CU5TVGV4dFRh
+								YgCUhAJDZgAc
+								hpKEn54AOIaS
+								hJ+eAFSGkoSf
+								ngBwhpKEn54A
+								gYwAhpKEn54A
+								gagAhpKEn54A
+								gcQAhpKEn54A
+								geAAhpKEn54A
+								gfwAhpKEn54A
+								gRgBhpKEn54A
+								gTQBhpKEn54A
+								gVABhoYAhpKE
+								lpYHTlNDb2xv
+								coaShISEB05T
+								Q29sb3IAlIQB
+								YwKEBGZmZmYA
+								AAABhpKElpYG
 								TlNGb250hpKE
 								hIQGTlNGb250
 								HpSZJIQFWzM2
@@ -42488,8 +42488,8 @@ Perioder}</string>
 								AP/+SABlAGwA
 								dgBlAHQAaQBj
 								AGEATgBlAHUA
-								ZQCEAWYYmwCb
-								AZsAmwCGkoSW
+								ZQCEAWYYoACg
+								AaAAoACGkoSW
 								lgZOU0tlcm6G
 								koSEhAhOU051
 								bWJlcgCEhAdO
@@ -45953,7 +45953,7 @@ AT&amp;T}</string>
 					<key>Points</key>
 					<array>
 						<string>{850.01428724876621, 709.34863409822572}</string>
-						<string>{958, 709.4399562185115}</string>
+						<string>{958, 709.43995621851161}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -46046,8 +46046,8 @@ AT&amp;T}</string>
 					<integer>0</integer>
 					<key>Points</key>
 					<array>
-						<string>{639.11581109040208, 1563.1395999999995}</string>
-						<string>{640.81891277288616, 1852.8604000000007}</string>
+						<string>{639.11609914855978, 1563.1395999999995}</string>
+						<string>{640.82587734623451, 1852.8604000000007}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -46582,32 +46582,32 @@ AT&amp;T}</string>
 								hAJpSQEFkoSE
 								hAxOU0RpY3Rp
 								b25hcnkAlIQB
-								aQSShJaWB05T
-								Q29sb3KGkoSE
-								hAdOU0NvbG9y
-								AJSEAWMChARm
-								ZmZmAAAAAYaS
-								hJaWEE5TUGFy
-								YWdyYXBoU3R5
-								bGWGkoSEhBBO
-								U1BhcmFncmFw
-								aFN0eWxlAJSE
-								BENDQFMAAISE
-								hAdOU0FycmF5
-								AJSZDJKEhIQJ
-								TlNUZXh0VGFi
-								AJSEAkNmAByG
-								koSioQA4hpKE
-								oqEAVIaShKKh
-								AHCGkoSioQCB
-								jACGkoSioQCB
-								qACGkoSioQCB
-								xACGkoSioQCB
-								4ACGkoSioQCB
-								/ACGkoSioQCB
-								GAGGkoSioQCB
-								NAGGkoSioQCB
-								UAGGhgCGkoSW
+								aQSShJaWEE5T
+								UGFyYWdyYXBo
+								U3R5bGWGkoSE
+								hBBOU1BhcmFn
+								cmFwaFN0eWxl
+								AJSEBENDQFMA
+								AISEhAdOU0Fy
+								cmF5AJSZDJKE
+								hIQJTlNUZXh0
+								VGFiAJSEAkNm
+								AByGkoSfngA4
+								hpKEn54AVIaS
+								hJ+eAHCGkoSf
+								ngCBjACGkoSf
+								ngCBqACGkoSf
+								ngCBxACGkoSf
+								ngCB4ACGkoSf
+								ngCB/ACGkoSf
+								ngCBGAGGkoSf
+								ngCBNAGGkoSf
+								ngCBUAGGhgCG
+								koSWlgdOU0Nv
+								bG9yhpKEhIQH
+								TlNDb2xvcgCU
+								hAFjAoQEZmZm
+								ZgAAAAGGkoSW
 								lgZOU0ZvbnSG
 								koSEhAZOU0Zv
 								bnQelJkkhAVb
@@ -46615,8 +46615,8 @@ AT&amp;T}</string>
 								AAAA//5IAGUA
 								bAB2AGUAdABp
 								AGMAYQBOAGUA
-								dQBlAIQBZiKb
-								AJsBmwCbAIaS
+								dQBlAIQBZiKg
+								AKABoACgAIaS
 								hJaWBk5TS2Vy
 								boaShISECE5T
 								TnVtYmVyAISE
@@ -46889,32 +46889,32 @@ M\'e5l 2}</string>
 								hAJpSQEFkoSE
 								hAxOU0RpY3Rp
 								b25hcnkAlIQB
-								aQSShJaWB05T
-								Q29sb3KGkoSE
-								hAdOU0NvbG9y
-								AJSEAWMChARm
-								ZmZmAAAAAYaS
-								hJaWEE5TUGFy
-								YWdyYXBoU3R5
-								bGWGkoSEhBBO
-								U1BhcmFncmFw
-								aFN0eWxlAJSE
-								BENDQFMAAISE
-								hAdOU0FycmF5
-								AJSZDJKEhIQJ
-								TlNUZXh0VGFi
-								AJSEAkNmAByG
-								koSioQA4hpKE
-								oqEAVIaShKKh
-								AHCGkoSioQCB
-								jACGkoSioQCB
-								qACGkoSioQCB
-								xACGkoSioQCB
-								4ACGkoSioQCB
-								/ACGkoSioQCB
-								GAGGkoSioQCB
-								NAGGkoSioQCB
-								UAGGhgCGkoSW
+								aQSShJaWEE5T
+								UGFyYWdyYXBo
+								U3R5bGWGkoSE
+								hBBOU1BhcmFn
+								cmFwaFN0eWxl
+								AJSEBENDQFMA
+								AISEhAdOU0Fy
+								cmF5AJSZDJKE
+								hIQJTlNUZXh0
+								VGFiAJSEAkNm
+								AByGkoSfngA4
+								hpKEn54AVIaS
+								hJ+eAHCGkoSf
+								ngCBjACGkoSf
+								ngCBqACGkoSf
+								ngCBxACGkoSf
+								ngCB4ACGkoSf
+								ngCB/ACGkoSf
+								ngCBGAGGkoSf
+								ngCBNAGGkoSf
+								ngCBUAGGhgCG
+								koSWlgdOU0Nv
+								bG9yhpKEhIQH
+								TlNDb2xvcgCU
+								hAFjAoQEZmZm
+								ZgAAAAGGkoSW
 								lgZOU0ZvbnSG
 								koSEhAZOU0Zv
 								bnQelJkkhAVb
@@ -46922,8 +46922,8 @@ M\'e5l 2}</string>
 								AAAA//5IAGUA
 								bAB2AGUAdABp
 								AGMAYQBOAGUA
-								dQBlAIQBZiKb
-								AJsBmwCbAIaS
+								dQBlAIQBZiKg
+								AKABoACgAIaS
 								hJaWBk5TS2Vy
 								boaShISECE5T
 								TnVtYmVyAISE
@@ -47378,32 +47378,32 @@ Mine m\'e5l er:}</string>
 								aUkBA5KEhIQM
 								TlNEaWN0aW9u
 								YXJ5AJSEAWkE
-								koSWlgdOU0Nv
-								bG9yhpKEhIQH
-								TlNDb2xvcgCU
-								hAFjAoQEZmZm
-								ZgAAAAGGkoSW
-								lhBOU1BhcmFn
-								cmFwaFN0eWxl
-								hpKEhIQQTlNQ
-								YXJhZ3JhcGhT
-								dHlsZQCUhARD
-								Q0BTAACEhIQH
-								TlNBcnJheQCU
-								mQyShISECU5T
-								VGV4dFRhYgCU
-								hAJDZgAchpKE
-								oqEAOIaShKKh
-								AFSGkoSioQBw
-								hpKEoqEAgYwA
-								hpKEoqEAgagA
-								hpKEoqEAgcQA
-								hpKEoqEAgeAA
-								hpKEoqEAgfwA
-								hpKEoqEAgRgB
-								hpKEoqEAgTQB
-								hpKEoqEAgVAB
-								hoYAhpKElpYG
+								koSWlhBOU1Bh
+								cmFncmFwaFN0
+								eWxlhpKEhIQQ
+								TlNQYXJhZ3Jh
+								cGhTdHlsZQCU
+								hARDQ0BTAACE
+								hIQHTlNBcnJh
+								eQCUmQyShISE
+								CU5TVGV4dFRh
+								YgCUhAJDZgAc
+								hpKEn54AOIaS
+								hJ+eAFSGkoSf
+								ngBwhpKEn54A
+								gYwAhpKEn54A
+								gagAhpKEn54A
+								gcQAhpKEn54A
+								geAAhpKEn54A
+								gfwAhpKEn54A
+								gRgBhpKEn54A
+								gTQBhpKEn54A
+								gVABhoYAhpKE
+								lpYHTlNDb2xv
+								coaShISEB05T
+								Q29sb3IAlIQB
+								YwKEBGZmZmYA
+								AAABhpKElpYG
 								TlNGb250hpKE
 								hIQGTlNGb250
 								HpSZMIQFWzQ4
@@ -47413,7 +47413,7 @@ Mine m\'e5l er:}</string>
 								AGEATgBlAHUA
 								ZQAtAEIAbwBs
 								AGQAAACEAWYi
-								mwCbAZsAmwCG
+								oACgAaAAoACG
 								koSWlgZOU0tl
 								cm6GkoSEhAhO
 								U051bWJlcgCE
@@ -47497,32 +47497,32 @@ M\'e5l}</string>
 								bIaEAmlJAQiS
 								hISEDE5TRGlj
 								dGlvbmFyeQCU
-								hAFpBJKElpYH
-								TlNDb2xvcoaS
-								hISEB05TQ29s
-								b3IAlIQBYwKE
-								BGZmZmYAAAAB
-								hpKElpYQTlNQ
-								YXJhZ3JhcGhT
-								dHlsZYaShISE
-								EE5TUGFyYWdy
-								YXBoU3R5bGUA
-								lIQEQ0NAUwAA
-								hISEB05TQXJy
-								YXkAlJkMkoSE
-								hAlOU1RleHRU
-								YWIAlIQCQ2YA
-								HIaShKKhADiG
-								koSioQBUhpKE
-								oqEAcIaShKKh
-								AIGMAIaShKKh
-								AIGoAIaShKKh
-								AIHEAIaShKKh
-								AIHgAIaShKKh
-								AIH8AIaShKKh
-								AIEYAYaShKKh
-								AIE0AYaShKKh
-								AIFQAYaGAIaS
+								hAFpBJKElpYQ
+								TlNQYXJhZ3Jh
+								cGhTdHlsZYaS
+								hISEEE5TUGFy
+								YWdyYXBoU3R5
+								bGUAlIQEQ0NA
+								UwAAhISEB05T
+								QXJyYXkAlJkM
+								koSEhAlOU1Rl
+								eHRUYWIAlIQC
+								Q2YAHIaShJ+e
+								ADiGkoSfngBU
+								hpKEn54AcIaS
+								hJ+eAIGMAIaS
+								hJ+eAIGoAIaS
+								hJ+eAIHEAIaS
+								hJ+eAIHgAIaS
+								hJ+eAIH8AIaS
+								hJ+eAIEYAYaS
+								hJ+eAIE0AYaS
+								hJ+eAIFQAYaG
+								AIaShJaWB05T
+								Q29sb3KGkoSE
+								hAdOU0NvbG9y
+								AJSEAWMChARm
+								ZmZmAAAAAYaS
 								hJaWBk5TRm9u
 								dIaShISEBk5T
 								Rm9udB6UmSSE
@@ -47531,7 +47531,7 @@ M\'e5l}</string>
 								ZQBsAHYAZQB0
 								AGkAYwBhAE4A
 								ZQB1AGUAhAFm
-								IpsAmwGbAJsA
+								IqAAoAGgAKAA
 								hpKElpYGTlNL
 								ZXJuhpKEhIQI
 								TlNOdW1iZXIA
@@ -47735,32 +47735,32 @@ Legg til}</string>
 								TYaEAmlJAQiS
 								hISEDE5TRGlj
 								dGlvbmFyeQCU
-								hAFpBJKElpYH
-								TlNDb2xvcoaS
-								hISEB05TQ29s
-								b3IAlIQBYwKE
-								BGZmZmYAAAAB
-								hpKElpYQTlNQ
-								YXJhZ3JhcGhT
-								dHlsZYaShISE
-								EE5TUGFyYWdy
-								YXBoU3R5bGUA
-								lIQEQ0NAUwAA
-								hISEB05TQXJy
-								YXkAlJkMkoSE
-								hAlOU1RleHRU
-								YWIAlIQCQ2YA
-								HIaShKKhADiG
-								koSioQBUhpKE
-								oqEAcIaShKKh
-								AIGMAIaShKKh
-								AIGoAIaShKKh
-								AIHEAIaShKKh
-								AIHgAIaShKKh
-								AIH8AIaShKKh
-								AIEYAYaShKKh
-								AIE0AYaShKKh
-								AIFQAYaGAIaS
+								hAFpBJKElpYQ
+								TlNQYXJhZ3Jh
+								cGhTdHlsZYaS
+								hISEEE5TUGFy
+								YWdyYXBoU3R5
+								bGUAlIQEQ0NA
+								UwAAhISEB05T
+								QXJyYXkAlJkM
+								koSEhAlOU1Rl
+								eHRUYWIAlIQC
+								Q2YAHIaShJ+e
+								ADiGkoSfngBU
+								hpKEn54AcIaS
+								hJ+eAIGMAIaS
+								hJ+eAIGoAIaS
+								hJ+eAIHEAIaS
+								hJ+eAIHgAIaS
+								hJ+eAIH8AIaS
+								hJ+eAIEYAYaS
+								hJ+eAIE0AYaS
+								hJ+eAIFQAYaG
+								AIaShJaWB05T
+								Q29sb3KGkoSE
+								hAdOU0NvbG9y
+								AJSEAWMChARm
+								ZmZmAAAAAYaS
 								hJaWBk5TRm9u
 								dIaShISEBk5T
 								Rm9udB6UmTCE
@@ -47770,8 +47770,8 @@ Legg til}</string>
 								AGkAYwBhAE4A
 								ZQB1AGUALQBC
 								AG8AbABkAAAA
-								hAFmGJsAmwGb
-								AJsAhpKElpYG
+								hAFmGKAAoAGg
+								AKAAhpKElpYG
 								TlNLZXJuhpKE
 								hIQITlNOdW1i
 								ZXIAhIQHTlNW
@@ -47844,32 +47844,32 @@ Legg til}</string>
 								aUkBBJKEhIQM
 								TlNEaWN0aW9u
 								YXJ5AJSEAWkE
-								koSWlgdOU0Nv
-								bG9yhpKEhIQH
-								TlNDb2xvcgCU
-								hAFjAoQEZmZm
-								ZgAAAAGGkoSW
-								lhBOU1BhcmFn
-								cmFwaFN0eWxl
-								hpKEhIQQTlNQ
-								YXJhZ3JhcGhT
-								dHlsZQCUhARD
-								Q0BTAACEhIQH
-								TlNBcnJheQCU
-								mQyShISECU5T
-								VGV4dFRhYgCU
-								hAJDZgAchpKE
-								oqEAOIaShKKh
-								AFSGkoSioQBw
-								hpKEoqEAgYwA
-								hpKEoqEAgagA
-								hpKEoqEAgcQA
-								hpKEoqEAgeAA
-								hpKEoqEAgfwA
-								hpKEoqEAgRgB
-								hpKEoqEAgTQB
-								hpKEoqEAgVAB
-								hoYAhpKElpYG
+								koSWlhBOU1Bh
+								cmFncmFwaFN0
+								eWxlhpKEhIQQ
+								TlNQYXJhZ3Jh
+								cGhTdHlsZQCU
+								hARDQ0BTAACE
+								hIQHTlNBcnJh
+								eQCUmQyShISE
+								CU5TVGV4dFRh
+								YgCUhAJDZgAc
+								hpKEn54AOIaS
+								hJ+eAFSGkoSf
+								ngBwhpKEn54A
+								gYwAhpKEn54A
+								gagAhpKEn54A
+								gcQAhpKEn54A
+								geAAhpKEn54A
+								gfwAhpKEn54A
+								gRgBhpKEn54A
+								gTQBhpKEn54A
+								gVABhoYAhpKE
+								lpYHTlNDb2xv
+								coaShISEB05T
+								Q29sb3IAlIQB
+								YwKEBGZmZmYA
+								AAABhpKElpYG
 								TlNGb250hpKE
 								hIQGTlNGb250
 								HpSZJIQFWzM2
@@ -47877,8 +47877,8 @@ Legg til}</string>
 								AP/+SABlAGwA
 								dgBlAHQAaQBj
 								AGEATgBlAHUA
-								ZQCEAWYYmwCb
-								AZsAmwCGkoSW
+								ZQCEAWYYoACg
+								AaAAoACGkoSW
 								lgZOU0tlcm6G
 								koSEhAhOU051
 								bWJlcgCEhAdO
@@ -48862,47 +48862,47 @@ AT&amp;T}</string>
 								aUkBA5KEhIQM
 								TlNEaWN0aW9u
 								YXJ5AJSEAWkE
-								koSWlhBOU1Bh
-								cmFncmFwaFN0
-								eWxlhpKEhIQQ
-								TlNQYXJhZ3Jh
-								cGhTdHlsZQCU
-								hARDQ0BTAACE
-								hIQHTlNBcnJh
-								eQCUmQyShISE
-								CU5TVGV4dFRh
-								YgCUhAJDZgAc
-								hpKEn54AOIaS
-								hJ+eAFSGkoSf
-								ngBwhpKEn54A
-								gYwAhpKEn54A
-								gagAhpKEn54A
-								gcQAhpKEn54A
-								geAAhpKEn54A
-								gfwAhpKEn54A
-								gRgBhpKEn54A
-								gTQBhpKEn54A
-								gVABhoYAhpKE
-								lpYGTlNLZXJu
-								hpKEhIQITlNO
-								dW1iZXIAhIQH
-								TlNWYWx1ZQCU
-								hAEqhIQBZKKD
-								AAAAAAAA4L+G
-								koSWlgZOU0Zv
-								bnSGkoSEhAZO
-								U0ZvbnQelJkk
-								hAVbMzZjXQYA
-								AAAcAAAA//5I
-								AGUAbAB2AGUA
-								dABpAGMAYQBO
-								AGUAdQBlAIQB
-								ZhSEAWMApgGm
-								AKYAhpKElpYH
-								TlNDb2xvcoaS
-								hISEB05TQ29s
-								b3IAlKYChARm
-								ZmZmAAAAAYaG
+								koSWlgdOU0Nv
+								bG9yhpKEhIQH
+								TlNDb2xvcgCU
+								hAFjAoQEZmZm
+								ZgAAAAGGkoSW
+								lhBOU1BhcmFn
+								cmFwaFN0eWxl
+								hpKEhIQQTlNQ
+								YXJhZ3JhcGhT
+								dHlsZQCUhARD
+								Q0BTAACEhIQH
+								TlNBcnJheQCU
+								mQyShISECU5T
+								VGV4dFRhYgCU
+								hAJDZgAchpKE
+								oqEAOIaShKKh
+								AFSGkoSioQBw
+								hpKEoqEAgYwA
+								hpKEoqEAgagA
+								hpKEoqEAgcQA
+								hpKEoqEAgeAA
+								hpKEoqEAgfwA
+								hpKEoqEAgRgB
+								hpKEoqEAgTQB
+								hpKEoqEAgVAB
+								hoYAhpKElpYG
+								TlNGb250hpKE
+								hIQGTlNGb250
+								HpSZJIQFWzM2
+								Y10GAAAAHAAA
+								AP/+SABlAGwA
+								dgBlAHQAaQBj
+								AGEATgBlAHUA
+								ZQCEAWYUmwCb
+								AZsAmwCGkoSW
+								lgZOU0tlcm6G
+								koSEhAhOU051
+								bWJlcgCEhAdO
+								U1ZhbHVlAJSE
+								ASqEhAFkqIMA
+								AAAAAADgv4aG
 								hg==
 												</data>
 												<key>Text</key>
@@ -48979,47 +48979,47 @@ M\'e5l}</string>
 								AQuShISEDE5T
 								RGljdGlvbmFy
 								eQCUhAFpBJKE
-								lpYQTlNQYXJh
-								Z3JhcGhTdHls
-								ZYaShISEEE5T
-								UGFyYWdyYXBo
-								U3R5bGUAlIQE
-								Q0NAUwAAhISE
-								B05TQXJyYXkA
-								lJkMkoSEhAlO
-								U1RleHRUYWIA
-								lIQCQ2YAHIaS
-								hJ+eADiGkoSf
-								ngBUhpKEn54A
-								cIaShJ+eAIGM
-								AIaShJ+eAIGo
-								AIaShJ+eAIHE
-								AIaShJ+eAIHg
-								AIaShJ+eAIH8
-								AIaShJ+eAIEY
-								AYaShJ+eAIE0
-								AYaShJ+eAIFQ
-								AYaGAIaShJaW
-								Bk5TS2VyboaS
-								hISECE5TTnVt
-								YmVyAISEB05T
-								VmFsdWUAlIQB
-								KoSEAWSigwAA
-								AAAAAOC/hpKE
-								lpYGTlNGb250
-								hpKEhIQGTlNG
-								b250HpSZJIQF
-								WzM2Y10GAAAA
-								HAAAAP/+SABl
-								AGwAdgBlAHQA
-								aQBjAGEATgBl
-								AHUAZQCEAWYU
-								hAFjAKYBpgCm
-								AIaShJaWB05T
-								Q29sb3KGkoSE
-								hAdOU0NvbG9y
-								AJSmAoQEZmZm
-								ZgAAAAGGhoY=
+								lpYHTlNDb2xv
+								coaShISEB05T
+								Q29sb3IAlIQB
+								YwKEBGZmZmYA
+								AAABhpKElpYQ
+								TlNQYXJhZ3Jh
+								cGhTdHlsZYaS
+								hISEEE5TUGFy
+								YWdyYXBoU3R5
+								bGUAlIQEQ0NA
+								UwAAhISEB05T
+								QXJyYXkAlJkM
+								koSEhAlOU1Rl
+								eHRUYWIAlIQC
+								Q2YAHIaShKKh
+								ADiGkoSioQBU
+								hpKEoqEAcIaS
+								hKKhAIGMAIaS
+								hKKhAIGoAIaS
+								hKKhAIHEAIaS
+								hKKhAIHgAIaS
+								hKKhAIH8AIaS
+								hKKhAIEYAYaS
+								hKKhAIE0AYaS
+								hKKhAIFQAYaG
+								AIaShJaWBk5T
+								Rm9udIaShISE
+								Bk5TRm9udB6U
+								mSSEBVszNmNd
+								BgAAABwAAAD/
+								/kgAZQBsAHYA
+								ZQB0AGkAYwBh
+								AE4AZQB1AGUA
+								hAFmFJsAmwGb
+								AJsAhpKElpYG
+								TlNLZXJuhpKE
+								hIQITlNOdW1i
+								ZXIAhIQHTlNW
+								YWx1ZQCUhAEq
+								hIQBZKiDAAAA
+								AAAA4L+GhoY=
 												</data>
 												<key>Text</key>
 												<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -49095,47 +49095,47 @@ Aktiviteter}</string>
 								koSEhAxOU0Rp
 								Y3Rpb25hcnkA
 								lIQBaQSShJaW
-								EE5TUGFyYWdy
-								YXBoU3R5bGWG
-								koSEhBBOU1Bh
-								cmFncmFwaFN0
-								eWxlAJSEBEND
-								QFMAAISEhAdO
-								U0FycmF5AJSZ
-								DJKEhIQJTlNU
-								ZXh0VGFiAJSE
-								AkNmAByGkoSf
-								ngA4hpKEn54A
-								VIaShJ+eAHCG
-								koSfngCBjACG
-								koSfngCBqACG
-								koSfngCBxACG
-								koSfngCB4ACG
-								koSfngCB/ACG
-								koSfngCBGAGG
-								koSfngCBNAGG
-								koSfngCBUAGG
-								hgCGkoSWlgZO
-								U0tlcm6GkoSE
-								hAhOU051bWJl
-								cgCEhAdOU1Zh
-								bHVlAJSEASqE
-								hAFkooMAAAAA
-								AADgv4aShJaW
-								Bk5TRm9udIaS
-								hISEBk5TRm9u
-								dB6UmSSEBVsz
-								NmNdBgAAABwA
-								AAD//kgAZQBs
-								AHYAZQB0AGkA
-								YwBhAE4AZQB1
-								AGUAhAFmFIQB
-								YwCmAaYApgCG
-								koSWlgdOU0Nv
-								bG9yhpKEhIQH
-								TlNDb2xvcgCU
-								pgKEBGZmZmYA
-								AAABhoaG
+								B05TQ29sb3KG
+								koSEhAdOU0Nv
+								bG9yAJSEAWMC
+								hARmZmZmAAAA
+								AYaShJaWEE5T
+								UGFyYWdyYXBo
+								U3R5bGWGkoSE
+								hBBOU1BhcmFn
+								cmFwaFN0eWxl
+								AJSEBENDQFMA
+								AISEhAdOU0Fy
+								cmF5AJSZDJKE
+								hIQJTlNUZXh0
+								VGFiAJSEAkNm
+								AByGkoSioQA4
+								hpKEoqEAVIaS
+								hKKhAHCGkoSi
+								oQCBjACGkoSi
+								oQCBqACGkoSi
+								oQCBxACGkoSi
+								oQCB4ACGkoSi
+								oQCB/ACGkoSi
+								oQCBGAGGkoSi
+								oQCBNAGGkoSi
+								oQCBUAGGhgCG
+								koSWlgZOU0Zv
+								bnSGkoSEhAZO
+								U0ZvbnQelJkk
+								hAVbMzZjXQYA
+								AAAcAAAA//5I
+								AGUAbAB2AGUA
+								dABpAGMAYQBO
+								AGUAdQBlAIQB
+								ZhSbAJsBmwCb
+								AIaShJaWBk5T
+								S2VyboaShISE
+								CE5TTnVtYmVy
+								AISEB05TVmFs
+								dWUAlIQBKoSE
+								AWSogwAAAAAA
+								AOC/hoaG
 												</data>
 												<key>Text</key>
 												<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -49211,47 +49211,47 @@ Historikk}</string>
 								CpKEhIQMTlNE
 								aWN0aW9uYXJ5
 								AJSEAWkEkoSW
-								lhBOU1BhcmFn
-								cmFwaFN0eWxl
-								hpKEhIQQTlNQ
-								YXJhZ3JhcGhT
-								dHlsZQCUhARD
-								Q0BTAACEhIQH
-								TlNBcnJheQCU
-								mQyShISECU5T
-								VGV4dFRhYgCU
-								hAJDZgAchpKE
-								n54AOIaShJ+e
-								AFSGkoSfngBw
-								hpKEn54AgYwA
-								hpKEn54AgagA
-								hpKEn54AgcQA
-								hpKEn54AgeAA
-								hpKEn54AgfwA
-								hpKEn54AgRgB
-								hpKEn54AgTQB
-								hpKEn54AgVAB
-								hoYAhpKElpYG
-								TlNLZXJuhpKE
-								hIQITlNOdW1i
-								ZXIAhIQHTlNW
-								YWx1ZQCUhAEq
-								hIQBZKKDAAAA
-								AAAA4L+GkoSW
-								lgZOU0ZvbnSG
-								koSEhAZOU0Zv
-								bnQelJkkhAVb
-								MzZjXQYAAAAc
-								AAAA//5IAGUA
-								bAB2AGUAdABp
-								AGMAYQBOAGUA
-								dQBlAIQBZhSE
-								AWMApgGmAKYA
-								hpKElpYHTlND
-								b2xvcoaShISE
-								B05TQ29sb3IA
-								lKYChARmZmZm
-								AAAAAYaGhg==
+								lgdOU0NvbG9y
+								hpKEhIQHTlND
+								b2xvcgCUhAFj
+								AoQEZmZmZgAA
+								AAGGkoSWlhBO
+								U1BhcmFncmFw
+								aFN0eWxlhpKE
+								hIQQTlNQYXJh
+								Z3JhcGhTdHls
+								ZQCUhARDQ0BT
+								AACEhIQHTlNB
+								cnJheQCUmQyS
+								hISECU5TVGV4
+								dFRhYgCUhAJD
+								ZgAchpKEoqEA
+								OIaShKKhAFSG
+								koSioQBwhpKE
+								oqEAgYwAhpKE
+								oqEAgagAhpKE
+								oqEAgcQAhpKE
+								oqEAgeAAhpKE
+								oqEAgfwAhpKE
+								oqEAgRgBhpKE
+								oqEAgTQBhpKE
+								oqEAgVABhoYA
+								hpKElpYGTlNG
+								b250hpKEhIQG
+								TlNGb250HpSZ
+								JIQFWzM2Y10G
+								AAAAHAAAAP/+
+								SABlAGwAdgBl
+								AHQAaQBjAGEA
+								TgBlAHUAZQCE
+								AWYUmwCbAZsA
+								mwCGkoSWlgZO
+								U0tlcm6GkoSE
+								hAhOU051bWJl
+								cgCEhAdOU1Zh
+								bHVlAJSEASqE
+								hAFkqIMAAAAA
+								AADgv4aGhg==
 												</data>
 												<key>Text</key>
 												<string>{\rtf1\ansi\ansicpg1252\cocoartf1265\cocoasubrtf210
@@ -51650,8 +51650,8 @@ Refleksjon}</string>
 					<integer>0</integer>
 					<key>Points</key>
 					<array>
-						<string>{259.5, 1414.6450295006698}</string>
-						<string>{160, 1415.1834519852639}</string>
+						<string>{259.5, 1414.645023836367}</string>
+						<string>{160, 1415.1834444670201}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -52410,21 +52410,21 @@ Avsl\'e5 M\'e5l}</string>
 						hIQITlNPYmplY3QAhZKEhIQITlNT
 						dHJpbmcBlIQBKwZGZXJkaWeGhAJp
 						SQEGkoSEhAxOU0RpY3Rpb25hcnkA
-						lIQBaQSShJaWB05TQ29sb3KGkoSE
-						hAdOU0NvbG9yAJSEAWMChARmZmZm
-						AAAAAYaShJaWEE5TUGFyYWdyYXBo
+						lIQBaQSShJaWEE5TUGFyYWdyYXBo
 						U3R5bGWGkoSEhBBOU1BhcmFncmFw
 						aFN0eWxlAJSEBENDQFMAAISEhAdO
 						U0FycmF5AJSZDJKEhIQJTlNUZXh0
-						VGFiAJSEAkNmAByGkoSioQA4hpKE
-						oqEAVIaShKKhAHCGkoSioQCBjACG
-						koSioQCBqACGkoSioQCBxACGkoSi
-						oQCB4ACGkoSioQCB/ACGkoSioQCB
-						GAGGkoSioQCBNAGGkoSioQCBUAGG
-						hgCGkoSWlgZOU0ZvbnSGkoSEhAZO
+						VGFiAJSEAkNmAByGkoSfngA4hpKE
+						n54AVIaShJ+eAHCGkoSfngCBjACG
+						koSfngCBqACGkoSfngCBxACGkoSf
+						ngCB4ACGkoSfngCB/ACGkoSfngCB
+						GAGGkoSfngCBNAGGkoSfngCBUAGG
+						hgCGkoSWlgdOU0NvbG9yhpKEhIQH
+						TlNDb2xvcgCUhAFjAoQEZmZmZgAA
+						AAGGkoSWlgZOU0ZvbnSGkoSEhAZO
 						U0ZvbnQelJkkhAVbMzZjXQYAAAAc
 						AAAA//5IAGUAbAB2AGUAdABpAGMA
-						YQBOAGUAdQBlAIQBZiKbAJsBmwCb
+						YQBOAGUAdQBlAIQBZiKgAKABoACg
 						AIaShJaWBk5TS2VyboaShISECE5T
 						TnVtYmVyAISEB05TVmFsdWUAlIQB
 						KoSEAWSogzMzMzMzM9O/hoaG
@@ -52506,21 +52506,21 @@ Ferdig}</string>
 						hIQITlNPYmplY3QAhZKEhIQITlNT
 						dHJpbmcBlIQBKwZBdmJyeXSGhAJp
 						SQEGkoSEhAxOU0RpY3Rpb25hcnkA
-						lIQBaQSShJaWB05TQ29sb3KGkoSE
-						hAdOU0NvbG9yAJSEAWMChARmZmZm
-						AAAAAYaShJaWEE5TUGFyYWdyYXBo
+						lIQBaQSShJaWEE5TUGFyYWdyYXBo
 						U3R5bGWGkoSEhBBOU1BhcmFncmFw
 						aFN0eWxlAJSEBENDQFMAAISEhAdO
 						U0FycmF5AJSZDJKEhIQJTlNUZXh0
-						VGFiAJSEAkNmAByGkoSioQA4hpKE
-						oqEAVIaShKKhAHCGkoSioQCBjACG
-						koSioQCBqACGkoSioQCBxACGkoSi
-						oQCB4ACGkoSioQCB/ACGkoSioQCB
-						GAGGkoSioQCBNAGGkoSioQCBUAGG
-						hgCGkoSWlgZOU0ZvbnSGkoSEhAZO
+						VGFiAJSEAkNmAByGkoSfngA4hpKE
+						n54AVIaShJ+eAHCGkoSfngCBjACG
+						koSfngCBqACGkoSfngCBxACGkoSf
+						ngCB4ACGkoSfngCB/ACGkoSfngCB
+						GAGGkoSfngCBNAGGkoSfngCBUAGG
+						hgCGkoSWlgdOU0NvbG9yhpKEhIQH
+						TlNDb2xvcgCUhAFjAoQEZmZmZgAA
+						AAGGkoSWlgZOU0ZvbnSGkoSEhAZO
 						U0ZvbnQelJkkhAVbMzZjXQYAAAAc
 						AAAA//5IAGUAbAB2AGUAdABpAGMA
-						YQBOAGUAdQBlAIQBZiKbAJsBmwCb
+						YQBOAGUAdQBlAIQBZiKgAKABoACg
 						AIaShJaWBk5TS2VyboaShISECE5T
 						TnVtYmVyAISEB05TVmFsdWUAlIQB
 						KoSEAWSogzMzMzMzM9O/hoaG
@@ -52756,31 +52756,31 @@ Jeg har et m\'e5l:}</string>
 								koSEhAxOU0Rp
 								Y3Rpb25hcnkA
 								lIQBaQSShJaW
-								B05TQ29sb3KG
-								koSEhAdOU0Nv
-								bG9yAJSEAWMC
-								hARmZmZmAAAA
-								AYaShJaWEE5T
-								UGFyYWdyYXBo
-								U3R5bGWGkoSE
-								hBBOU1BhcmFn
-								cmFwaFN0eWxl
-								AJSEBENDQFMA
-								AISEhAdOU0Fy
-								cmF5AJSZDJKE
-								hIQJTlNUZXh0
-								VGFiAJSEAkNm
-								AByGkoSioQA4
-								hpKEoqEAVIaS
-								hKKhAHCGkoSi
-								oQCBjACGkoSi
-								oQCBqACGkoSi
-								oQCBxACGkoSi
-								oQCB4ACGkoSi
-								oQCB/ACGkoSi
-								oQCBGAGGkoSi
-								oQCBNAGGkoSi
-								oQCBUAGGhgCG
+								EE5TUGFyYWdy
+								YXBoU3R5bGWG
+								koSEhBBOU1Bh
+								cmFncmFwaFN0
+								eWxlAJSEBEND
+								QFMAAISEhAdO
+								U0FycmF5AJSZ
+								DJKEhIQJTlNU
+								ZXh0VGFiAJSE
+								AkNmAByGkoSf
+								ngA4hpKEn54A
+								VIaShJ+eAHCG
+								koSfngCBjACG
+								koSfngCBqACG
+								koSfngCBxACG
+								koSfngCB4ACG
+								koSfngCB/ACG
+								koSfngCBGAGG
+								koSfngCBNAGG
+								koSfngCBUAGG
+								hgCGkoSWlgdO
+								U0NvbG9yhpKE
+								hIQHTlNDb2xv
+								cgCUhAFjAoQE
+								ZmZmZgAAAAGG
 								koSWlgZOU0Zv
 								bnSGkoSEhAZO
 								U0ZvbnQelJkw
@@ -52790,8 +52790,8 @@ Jeg har et m\'e5l:}</string>
 								dABpAGMAYQBO
 								AGUAdQBlAC0A
 								QgBvAGwAZAAA
-								AIQBZiKbAJsB
-								mwCbAIaShJaW
+								AIQBZiKgAKAB
+								oACgAIaShJaW
 								Bk5TS2VyboaS
 								hISECE5TTnVt
 								YmVyAISEB05T
@@ -52994,32 +52994,32 @@ Nytt M\'e5l}</string>
 								TYaEAmlJAQiS
 								hISEDE5TRGlj
 								dGlvbmFyeQCU
-								hAFpBJKElpYH
-								TlNDb2xvcoaS
-								hISEB05TQ29s
-								b3IAlIQBYwKE
-								BGZmZmYAAAAB
-								hpKElpYQTlNQ
-								YXJhZ3JhcGhT
-								dHlsZYaShISE
-								EE5TUGFyYWdy
-								YXBoU3R5bGUA
-								lIQEQ0NAUwAA
-								hISEB05TQXJy
-								YXkAlJkMkoSE
-								hAlOU1RleHRU
-								YWIAlIQCQ2YA
-								HIaShKKhADiG
-								koSioQBUhpKE
-								oqEAcIaShKKh
-								AIGMAIaShKKh
-								AIGoAIaShKKh
-								AIHEAIaShKKh
-								AIHgAIaShKKh
-								AIH8AIaShKKh
-								AIEYAYaShKKh
-								AIE0AYaShKKh
-								AIFQAYaGAIaS
+								hAFpBJKElpYQ
+								TlNQYXJhZ3Jh
+								cGhTdHlsZYaS
+								hISEEE5TUGFy
+								YWdyYXBoU3R5
+								bGUAlIQEQ0NA
+								UwAAhISEB05T
+								QXJyYXkAlJkM
+								koSEhAlOU1Rl
+								eHRUYWIAlIQC
+								Q2YAHIaShJ+e
+								ADiGkoSfngBU
+								hpKEn54AcIaS
+								hJ+eAIGMAIaS
+								hJ+eAIGoAIaS
+								hJ+eAIHEAIaS
+								hJ+eAIHgAIaS
+								hJ+eAIH8AIaS
+								hJ+eAIEYAYaS
+								hJ+eAIE0AYaS
+								hJ+eAIFQAYaG
+								AIaShJaWB05T
+								Q29sb3KGkoSE
+								hAdOU0NvbG9y
+								AJSEAWMChARm
+								ZmZmAAAAAYaS
 								hJaWBk5TRm9u
 								dIaShISEBk5T
 								Rm9udB6UmTCE
@@ -53029,8 +53029,8 @@ Nytt M\'e5l}</string>
 								AGkAYwBhAE4A
 								ZQB1AGUALQBC
 								AG8AbABkAAAA
-								hAFmGJsAmwGb
-								AJsAhpKElpYG
+								hAFmGKAAoAGg
+								AKAAhpKElpYG
 								TlNLZXJuhpKE
 								hIQITlNOdW1i
 								ZXIAhIQHTlNW
@@ -53103,32 +53103,32 @@ Nytt M\'e5l}</string>
 								aUkBBJKEhIQM
 								TlNEaWN0aW9u
 								YXJ5AJSEAWkE
-								koSWlgdOU0Nv
-								bG9yhpKEhIQH
-								TlNDb2xvcgCU
-								hAFjAoQEZmZm
-								ZgAAAAGGkoSW
-								lhBOU1BhcmFn
-								cmFwaFN0eWxl
-								hpKEhIQQTlNQ
-								YXJhZ3JhcGhT
-								dHlsZQCUhARD
-								Q0BTAACEhIQH
-								TlNBcnJheQCU
-								mQyShISECU5T
-								VGV4dFRhYgCU
-								hAJDZgAchpKE
-								oqEAOIaShKKh
-								AFSGkoSioQBw
-								hpKEoqEAgYwA
-								hpKEoqEAgagA
-								hpKEoqEAgcQA
-								hpKEoqEAgeAA
-								hpKEoqEAgfwA
-								hpKEoqEAgRgB
-								hpKEoqEAgTQB
-								hpKEoqEAgVAB
-								hoYAhpKElpYG
+								koSWlhBOU1Bh
+								cmFncmFwaFN0
+								eWxlhpKEhIQQ
+								TlNQYXJhZ3Jh
+								cGhTdHlsZQCU
+								hARDQ0BTAACE
+								hIQHTlNBcnJh
+								eQCUmQyShISE
+								CU5TVGV4dFRh
+								YgCUhAJDZgAc
+								hpKEn54AOIaS
+								hJ+eAFSGkoSf
+								ngBwhpKEn54A
+								gYwAhpKEn54A
+								gagAhpKEn54A
+								gcQAhpKEn54A
+								geAAhpKEn54A
+								gfwAhpKEn54A
+								gRgBhpKEn54A
+								gTQBhpKEn54A
+								gVABhoYAhpKE
+								lpYHTlNDb2xv
+								coaShISEB05T
+								Q29sb3IAlIQB
+								YwKEBGZmZmYA
+								AAABhpKElpYG
 								TlNGb250hpKE
 								hIQGTlNGb250
 								HpSZJIQFWzM2
@@ -53136,8 +53136,8 @@ Nytt M\'e5l}</string>
 								AP/+SABlAGwA
 								dgBlAHQAaQBj
 								AGEATgBlAHUA
-								ZQCEAWYYmwCb
-								AZsAmwCGkoSW
+								ZQCEAWYYoACg
+								AaAAoACGkoSW
 								lgZOU0tlcm6G
 								koSEhAhOU051
 								bWJlcgCEhAdO
@@ -56053,8 +56053,8 @@ AT&amp;T}</string>
 					<integer>0</integer>
 					<key>Points</key>
 					<array>
-						<string>{867.5, 1412.006419751589}</string>
-						<string>{964, 1411.6910233898402}</string>
+						<string>{867.5, 1412.0065026597763}</string>
+						<string>{964, 1411.6911326159222}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -56147,8 +56147,8 @@ AT&amp;T}</string>
 					<integer>0</integer>
 					<key>Points</key>
 					<array>
-						<string>{259.5, 1514.7127605997705}</string>
-						<string>{169.5, 1514.0356173562816}</string>
+						<string>{259.5, 1514.7121452972451}</string>
+						<string>{169.5, 1514.0348198918243}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -57008,22 +57008,22 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
 						hIQITlNPYmplY3QAhZKEhIQITlNT
 						dHJpbmcBlIQBKwtTbGV0dGUgTcOl
 						bIaEAmlJAQqShISEDE5TRGljdGlv
-						bmFyeQCUhAFpBJKElpYHTlNDb2xv
-						coaShISEB05TQ29sb3IAlIQBYwKE
-						BGZmZmYAAAABhpKElpYQTlNQYXJh
+						bmFyeQCUhAFpBJKElpYQTlNQYXJh
 						Z3JhcGhTdHlsZYaShISEEE5TUGFy
 						YWdyYXBoU3R5bGUAlIQEQ0NAUwAA
 						hISEB05TQXJyYXkAlJkMkoSEhAlO
-						U1RleHRUYWIAlIQCQ2YAHIaShKKh
-						ADiGkoSioQBUhpKEoqEAcIaShKKh
-						AIGMAIaShKKhAIGoAIaShKKhAIHE
-						AIaShKKhAIHgAIaShKKhAIH8AIaS
-						hKKhAIEYAYaShKKhAIE0AYaShKKh
-						AIFQAYaGAIaShJaWBk5TRm9udIaS
+						U1RleHRUYWIAlIQCQ2YAHIaShJ+e
+						ADiGkoSfngBUhpKEn54AcIaShJ+e
+						AIGMAIaShJ+eAIGoAIaShJ+eAIHE
+						AIaShJ+eAIHgAIaShJ+eAIH8AIaS
+						hJ+eAIEYAYaShJ+eAIE0AYaShJ+e
+						AIFQAYaGAIaShJaWB05TQ29sb3KG
+						koSEhAdOU0NvbG9yAJSEAWMChARm
+						ZmZmAAAAAYaShJaWBk5TRm9udIaS
 						hISEBk5TRm9udB6UmSSEBVszNmNd
 						BgAAABwAAAD//kgAZQBsAHYAZQB0
-						AGkAYwBhAE4AZQB1AGUAhAFmIpsA
-						mwGbAJsAhpKElpYGTlNLZXJuhpKE
+						AGkAYwBhAE4AZQB1AGUAhAFmIqAA
+						oAGgAKAAhpKElpYGTlNLZXJuhpKE
 						hIQITlNOdW1iZXIAhIQHTlNWYWx1
 						ZQCUhAEqhIQBZKiDMzMzMzMz07+G
 						hoY=
@@ -57256,21 +57256,21 @@ Slette M\'e5l}</string>
 						hIQITlNPYmplY3QAhZKEhIQITlNT
 						dHJpbmcBlIQBKwZGZXJkaWeGhAJp
 						SQEGkoSEhAxOU0RpY3Rpb25hcnkA
-						lIQBaQSShJaWB05TQ29sb3KGkoSE
-						hAdOU0NvbG9yAJSEAWMChARmZmZm
-						AAAAAYaShJaWEE5TUGFyYWdyYXBo
+						lIQBaQSShJaWEE5TUGFyYWdyYXBo
 						U3R5bGWGkoSEhBBOU1BhcmFncmFw
 						aFN0eWxlAJSEBENDQFMAAISEhAdO
 						U0FycmF5AJSZDJKEhIQJTlNUZXh0
-						VGFiAJSEAkNmAByGkoSioQA4hpKE
-						oqEAVIaShKKhAHCGkoSioQCBjACG
-						koSioQCBqACGkoSioQCBxACGkoSi
-						oQCB4ACGkoSioQCB/ACGkoSioQCB
-						GAGGkoSioQCBNAGGkoSioQCBUAGG
-						hgCGkoSWlgZOU0ZvbnSGkoSEhAZO
+						VGFiAJSEAkNmAByGkoSfngA4hpKE
+						n54AVIaShJ+eAHCGkoSfngCBjACG
+						koSfngCBqACGkoSfngCBxACGkoSf
+						ngCB4ACGkoSfngCB/ACGkoSfngCB
+						GAGGkoSfngCBNAGGkoSfngCBUAGG
+						hgCGkoSWlgdOU0NvbG9yhpKEhIQH
+						TlNDb2xvcgCUhAFjAoQEZmZmZgAA
+						AAGGkoSWlgZOU0ZvbnSGkoSEhAZO
 						U0ZvbnQelJkkhAVbMzZjXQYAAAAc
 						AAAA//5IAGUAbAB2AGUAdABpAGMA
-						YQBOAGUAdQBlAIQBZiKbAJsBmwCb
+						YQBOAGUAdQBlAIQBZiKgAKABoACg
 						AIaShJaWBk5TS2VyboaShISECE5T
 						TnVtYmVyAISEB05TVmFsdWUAlIQB
 						KoSEAWSogzMzMzMzM9O/hoaG
@@ -57345,21 +57345,21 @@ Ferdig}</string>
 						hIQITlNPYmplY3QAhZKEhIQITlNT
 						dHJpbmcBlIQBKwZBdmJyeXSGhAJp
 						SQEGkoSEhAxOU0RpY3Rpb25hcnkA
-						lIQBaQSShJaWB05TQ29sb3KGkoSE
-						hAdOU0NvbG9yAJSEAWMChARmZmZm
-						AAAAAYaShJaWEE5TUGFyYWdyYXBo
+						lIQBaQSShJaWEE5TUGFyYWdyYXBo
 						U3R5bGWGkoSEhBBOU1BhcmFncmFw
 						aFN0eWxlAJSEBENDQFMAAISEhAdO
 						U0FycmF5AJSZDJKEhIQJTlNUZXh0
-						VGFiAJSEAkNmAByGkoSioQA4hpKE
-						oqEAVIaShKKhAHCGkoSioQCBjACG
-						koSioQCBqACGkoSioQCBxACGkoSi
-						oQCB4ACGkoSioQCB/ACGkoSioQCB
-						GAGGkoSioQCBNAGGkoSioQCBUAGG
-						hgCGkoSWlgZOU0ZvbnSGkoSEhAZO
+						VGFiAJSEAkNmAByGkoSfngA4hpKE
+						n54AVIaShJ+eAHCGkoSfngCBjACG
+						koSfngCBqACGkoSfngCBxACGkoSf
+						ngCB4ACGkoSfngCB/ACGkoSfngCB
+						GAGGkoSfngCBNAGGkoSfngCBUAGG
+						hgCGkoSWlgdOU0NvbG9yhpKEhIQH
+						TlNDb2xvcgCUhAFjAoQEZmZmZgAA
+						AAGGkoSWlgZOU0ZvbnSGkoSEhAZO
 						U0ZvbnQelJkkhAVbMzZjXQYAAAAc
 						AAAA//5IAGUAbAB2AGUAdABpAGMA
-						YQBOAGUAdQBlAIQBZiKbAJsBmwCb
+						YQBOAGUAdQBlAIQBZiKgAKABoACg
 						AIaShJaWBk5TS2VyboaShISECE5T
 						TnVtYmVyAISEB05TVmFsdWUAlIQB
 						KoSEAWSogzMzMzMzM9O/hoaG
@@ -57595,31 +57595,31 @@ Jeg har et m\'e5l}</string>
 								CZKEhIQMTlNE
 								aWN0aW9uYXJ5
 								AJSEAWkEkoSW
-								lgdOU0NvbG9y
-								hpKEhIQHTlND
-								b2xvcgCUhAFj
-								AoQEZmZmZgAA
-								AAGGkoSWlhBO
-								U1BhcmFncmFw
-								aFN0eWxlhpKE
-								hIQQTlNQYXJh
-								Z3JhcGhTdHls
-								ZQCUhARDQ0BT
-								AACEhIQHTlNB
-								cnJheQCUmQyS
-								hISECU5TVGV4
-								dFRhYgCUhAJD
-								ZgAchpKEoqEA
-								OIaShKKhAFSG
-								koSioQBwhpKE
-								oqEAgYwAhpKE
-								oqEAgagAhpKE
-								oqEAgcQAhpKE
-								oqEAgeAAhpKE
-								oqEAgfwAhpKE
-								oqEAgRgBhpKE
-								oqEAgTQBhpKE
-								oqEAgVABhoYA
+								lhBOU1BhcmFn
+								cmFwaFN0eWxl
+								hpKEhIQQTlNQ
+								YXJhZ3JhcGhT
+								dHlsZQCUhARD
+								Q0BTAACEhIQH
+								TlNBcnJheQCU
+								mQyShISECU5T
+								VGV4dFRhYgCU
+								hAJDZgAchpKE
+								n54AOIaShJ+e
+								AFSGkoSfngBw
+								hpKEn54AgYwA
+								hpKEn54AgagA
+								hpKEn54AgcQA
+								hpKEn54AgeAA
+								hpKEn54AgfwA
+								hpKEn54AgRgB
+								hpKEn54AgTQB
+								hpKEn54AgVAB
+								hoYAhpKElpYH
+								TlNDb2xvcoaS
+								hISEB05TQ29s
+								b3IAlIQBYwKE
+								BGZmZmYAAAAB
 								hpKElpYGTlNG
 								b250hpKEhIQG
 								TlNGb250HpSZ
@@ -57629,8 +57629,8 @@ Jeg har et m\'e5l}</string>
 								AHQAaQBjAGEA
 								TgBlAHUAZQAt
 								AEIAbwBsAGQA
-								AACEAWYimwCb
-								AZsAmwCGkoSW
+								AACEAWYioACg
+								AaAAoACGkoSW
 								lgZOU0tlcm6G
 								koSEhAhOU051
 								bWJlcgCEhAdO
@@ -57834,32 +57834,32 @@ Endre M\'e5l}</string>
 								TYaEAmlJAQiS
 								hISEDE5TRGlj
 								dGlvbmFyeQCU
-								hAFpBJKElpYH
-								TlNDb2xvcoaS
-								hISEB05TQ29s
-								b3IAlIQBYwKE
-								BGZmZmYAAAAB
-								hpKElpYQTlNQ
-								YXJhZ3JhcGhT
-								dHlsZYaShISE
-								EE5TUGFyYWdy
-								YXBoU3R5bGUA
-								lIQEQ0NAUwAA
-								hISEB05TQXJy
-								YXkAlJkMkoSE
-								hAlOU1RleHRU
-								YWIAlIQCQ2YA
-								HIaShKKhADiG
-								koSioQBUhpKE
-								oqEAcIaShKKh
-								AIGMAIaShKKh
-								AIGoAIaShKKh
-								AIHEAIaShKKh
-								AIHgAIaShKKh
-								AIH8AIaShKKh
-								AIEYAYaShKKh
-								AIE0AYaShKKh
-								AIFQAYaGAIaS
+								hAFpBJKElpYQ
+								TlNQYXJhZ3Jh
+								cGhTdHlsZYaS
+								hISEEE5TUGFy
+								YWdyYXBoU3R5
+								bGUAlIQEQ0NA
+								UwAAhISEB05T
+								QXJyYXkAlJkM
+								koSEhAlOU1Rl
+								eHRUYWIAlIQC
+								Q2YAHIaShJ+e
+								ADiGkoSfngBU
+								hpKEn54AcIaS
+								hJ+eAIGMAIaS
+								hJ+eAIGoAIaS
+								hJ+eAIHEAIaS
+								hJ+eAIHgAIaS
+								hJ+eAIH8AIaS
+								hJ+eAIEYAYaS
+								hJ+eAIE0AYaS
+								hJ+eAIFQAYaG
+								AIaShJaWB05T
+								Q29sb3KGkoSE
+								hAdOU0NvbG9y
+								AJSEAWMChARm
+								ZmZmAAAAAYaS
 								hJaWBk5TRm9u
 								dIaShISEBk5T
 								Rm9udB6UmTCE
@@ -57869,8 +57869,8 @@ Endre M\'e5l}</string>
 								AGkAYwBhAE4A
 								ZQB1AGUALQBC
 								AG8AbABkAAAA
-								hAFmGJsAmwGb
-								AJsAhpKElpYG
+								hAFmGKAAoAGg
+								AKAAhpKElpYG
 								TlNLZXJuhpKE
 								hIQITlNOdW1i
 								ZXIAhIQHTlNW
@@ -57943,32 +57943,32 @@ Endre M\'e5l}</string>
 								aUkBBJKEhIQM
 								TlNEaWN0aW9u
 								YXJ5AJSEAWkE
-								koSWlgdOU0Nv
-								bG9yhpKEhIQH
-								TlNDb2xvcgCU
-								hAFjAoQEZmZm
-								ZgAAAAGGkoSW
-								lhBOU1BhcmFn
-								cmFwaFN0eWxl
-								hpKEhIQQTlNQ
-								YXJhZ3JhcGhT
-								dHlsZQCUhARD
-								Q0BTAACEhIQH
-								TlNBcnJheQCU
-								mQyShISECU5T
-								VGV4dFRhYgCU
-								hAJDZgAchpKE
-								oqEAOIaShKKh
-								AFSGkoSioQBw
-								hpKEoqEAgYwA
-								hpKEoqEAgagA
-								hpKEoqEAgcQA
-								hpKEoqEAgeAA
-								hpKEoqEAgfwA
-								hpKEoqEAgRgB
-								hpKEoqEAgTQB
-								hpKEoqEAgVAB
-								hoYAhpKElpYG
+								koSWlhBOU1Bh
+								cmFncmFwaFN0
+								eWxlhpKEhIQQ
+								TlNQYXJhZ3Jh
+								cGhTdHlsZQCU
+								hARDQ0BTAACE
+								hIQHTlNBcnJh
+								eQCUmQyShISE
+								CU5TVGV4dFRh
+								YgCUhAJDZgAc
+								hpKEn54AOIaS
+								hJ+eAFSGkoSf
+								ngBwhpKEn54A
+								gYwAhpKEn54A
+								gagAhpKEn54A
+								gcQAhpKEn54A
+								geAAhpKEn54A
+								gfwAhpKEn54A
+								gRgBhpKEn54A
+								gTQBhpKEn54A
+								gVABhoYAhpKE
+								lpYHTlNDb2xv
+								coaShISEB05T
+								Q29sb3IAlIQB
+								YwKEBGZmZmYA
+								AAABhpKElpYG
 								TlNGb250hpKE
 								hIQGTlNGb250
 								HpSZJIQFWzM2
@@ -57976,8 +57976,8 @@ Endre M\'e5l}</string>
 								AP/+SABlAGwA
 								dgBlAHQAaQBj
 								AGEATgBlAHUA
-								ZQCEAWYYmwCb
-								AZsAmwCGkoSW
+								ZQCEAWYYoACg
+								AaAAoACGkoSW
 								lgZOU0tlcm6G
 								koSEhAhOU051
 								bWJlcgCEhAdO
@@ -61673,8 +61673,8 @@ AT&amp;T}</string>
 					<integer>0</integer>
 					<key>Points</key>
 					<array>
-						<string>{860.66904632161436, 520.58825575701428}</string>
-						<string>{972.50018310546875, 520.86179196529599}</string>
+						<string>{860.66904632161436, 520.58825574419984}</string>
+						<string>{972.50018310546875, 520.86179192199074}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -61710,8 +61710,8 @@ AT&amp;T}</string>
 					<integer>0</integer>
 					<key>Points</key>
 					<array>
-						<string>{272.66744632161425, 520.48276404267006}</string>
-						<string>{161.0001220703125, 520.82118380077588}</string>
+						<string>{272.66744632161425, 520.4827640238841}</string>
+						<string>{161.0001220703125, 520.82118373828621}</string>
 					</array>
 					<key>Style</key>
 					<dict>
@@ -64190,32 +64190,32 @@ Sta opp}</string>
 								hAJpSQEPkoSE
 								hAxOU0RpY3Rp
 								b25hcnkAlIQB
-								aQSShJaWB05T
-								Q29sb3KGkoSE
-								hAdOU0NvbG9y
-								AJSEAWMChARm
-								ZmZmAAAAAYaS
-								hJaWEE5TUGFy
-								YWdyYXBoU3R5
-								bGWGkoSEhBBO
-								U1BhcmFncmFw
-								aFN0eWxlAJSE
-								BENDQFMAAISE
-								hAdOU0FycmF5
-								AJSZDJKEhIQJ
-								TlNUZXh0VGFi
-								AJSEAkNmAByG
-								koSioQA4hpKE
-								oqEAVIaShKKh
-								AHCGkoSioQCB
-								jACGkoSioQCB
-								qACGkoSioQCB
-								xACGkoSioQCB
-								4ACGkoSioQCB
-								/ACGkoSioQCB
-								GAGGkoSioQCB
-								NAGGkoSioQCB
-								UAGGhgCGkoSW
+								aQSShJaWEE5T
+								UGFyYWdyYXBo
+								U3R5bGWGkoSE
+								hBBOU1BhcmFn
+								cmFwaFN0eWxl
+								AJSEBENDQFMA
+								AISEhAdOU0Fy
+								cmF5AJSZDJKE
+								hIQJTlNUZXh0
+								VGFiAJSEAkNm
+								AByGkoSfngA4
+								hpKEn54AVIaS
+								hJ+eAHCGkoSf
+								ngCBjACGkoSf
+								ngCBqACGkoSf
+								ngCBxACGkoSf
+								ngCB4ACGkoSf
+								ngCB/ACGkoSf
+								ngCBGAGGkoSf
+								ngCBNAGGkoSf
+								ngCBUAGGhgCG
+								koSWlgdOU0Nv
+								bG9yhpKEhIQH
+								TlNDb2xvcgCU
+								hAFjAoQEZmZm
+								ZgAAAAGGkoSW
 								lgZOU0ZvbnSG
 								koSEhAZOU0Zv
 								bnQelJkwhAVb
@@ -64225,7 +64225,7 @@ Sta opp}</string>
 								AGMAYQBOAGUA
 								dQBlAC0AQgBv
 								AGwAZAAAAIQB
-								ZiKbAJsBmwCb
+								ZiKgAKABoACg
 								AIaShJaWBk5T
 								S2VyboaShISE
 								CE5TTnVtYmVy
@@ -64309,32 +64309,32 @@ Endre Aktivitet}</string>
 								hAJpSQEGkoSE
 								hAxOU0RpY3Rp
 								b25hcnkAlIQB
-								aQSShJaWB05T
-								Q29sb3KGkoSE
-								hAdOU0NvbG9y
-								AJSEAWMChARm
-								ZmZmAAAAAYaS
-								hJaWEE5TUGFy
-								YWdyYXBoU3R5
-								bGWGkoSEhBBO
-								U1BhcmFncmFw
-								aFN0eWxlAJSE
-								BENDQFMAAISE
-								hAdOU0FycmF5
-								AJSZDJKEhIQJ
-								TlNUZXh0VGFi
-								AJSEAkNmAByG
-								koSioQA4hpKE
-								oqEAVIaShKKh
-								AHCGkoSioQCB
-								jACGkoSioQCB
-								qACGkoSioQCB
-								xACGkoSioQCB
-								4ACGkoSioQCB
-								/ACGkoSioQCB
-								GAGGkoSioQCB
-								NAGGkoSioQCB
-								UAGGhgCGkoSW
+								aQSShJaWEE5T
+								UGFyYWdyYXBo
+								U3R5bGWGkoSE
+								hBBOU1BhcmFn
+								cmFwaFN0eWxl
+								AJSEBENDQFMA
+								AISEhAdOU0Fy
+								cmF5AJSZDJKE
+								hIQJTlNUZXh0
+								VGFiAJSEAkNm
+								AByGkoSfngA4
+								hpKEn54AVIaS
+								hJ+eAHCGkoSf
+								ngCBjACGkoSf
+								ngCBqACGkoSf
+								ngCBxACGkoSf
+								ngCB4ACGkoSf
+								ngCB/ACGkoSf
+								ngCBGAGGkoSf
+								ngCBNAGGkoSf
+								ngCBUAGGhgCG
+								koSWlgdOU0Nv
+								bG9yhpKEhIQH
+								TlNDb2xvcgCU
+								hAFjAoQEZmZm
+								ZgAAAAGGkoSW
 								lgZOU0ZvbnSG
 								koSEhAZOU0Zv
 								bnQelJkkhAVb
@@ -64342,8 +64342,8 @@ Endre Aktivitet}</string>
 								AAAA//5IAGUA
 								bAB2AGUAdABp
 								AGMAYQBOAGUA
-								dQBlAIQBZiKb
-								AJsBmwCbAIaS
+								dQBlAIQBZiKg
+								AKABoACgAIaS
 								hJaWBk5TS2Vy
 								boaShISECE5T
 								TnVtYmVyAISE
@@ -64417,32 +64417,32 @@ Ferdig}</string>
 								hAJpSQEGkoSE
 								hAxOU0RpY3Rp
 								b25hcnkAlIQB
-								aQSShJaWB05T
-								Q29sb3KGkoSE
-								hAdOU0NvbG9y
-								AJSEAWMChARm
-								ZmZmAAAAAYaS
-								hJaWEE5TUGFy
-								YWdyYXBoU3R5
-								bGWGkoSEhBBO
-								U1BhcmFncmFw
-								aFN0eWxlAJSE
-								BENDQFMAAISE
-								hAdOU0FycmF5
-								AJSZDJKEhIQJ
-								TlNUZXh0VGFi
-								AJSEAkNmAByG
-								koSioQA4hpKE
-								oqEAVIaShKKh
-								AHCGkoSioQCB
-								jACGkoSioQCB
-								qACGkoSioQCB
-								xACGkoSioQCB
-								4ACGkoSioQCB
-								/ACGkoSioQCB
-								GAGGkoSioQCB
-								NAGGkoSioQCB
-								UAGGhgCGkoSW
+								aQSShJaWEE5T
+								UGFyYWdyYXBo
+								U3R5bGWGkoSE
+								hBBOU1BhcmFn
+								cmFwaFN0eWxl
+								AJSEBENDQFMA
+								AISEhAdOU0Fy
+								cmF5AJSZDJKE
+								hIQJTlNUZXh0
+								VGFiAJSEAkNm
+								AByGkoSfngA4
+								hpKEn54AVIaS
+								hJ+eAHCGkoSf
+								ngCBjACGkoSf
+								ngCBqACGkoSf
+								ngCBxACGkoSf
+								ngCB4ACGkoSf
+								ngCB/ACGkoSf
+								ngCBGAGGkoSf
+								ngCBNAGGkoSf
+								ngCBUAGGhgCG
+								koSWlgdOU0Nv
+								bG9yhpKEhIQH
+								TlNDb2xvcgCU
+								hAFjAoQEZmZm
+								ZgAAAAGGkoSW
 								lgZOU0ZvbnSG
 								koSEhAZOU0Zv
 								bnQelJkkhAVb
@@ -64450,8 +64450,8 @@ Ferdig}</string>
 								AAAA//5IAGUA
 								bAB2AGUAdABp
 								AGMAYQBOAGUA
-								dQBlAIQBZiKb
-								AJsBmwCbAIaS
+								dQBlAIQBZiKg
+								AKABoACgAIaS
 								hJaWBk5TS2Vy
 								boaShISECE5T
 								TnVtYmVyAISE
@@ -64770,32 +64770,32 @@ Avbryt}</string>
 								TYaEAmlJAQiS
 								hISEDE5TRGlj
 								dGlvbmFyeQCU
-								hAFpBJKElpYH
-								TlNDb2xvcoaS
-								hISEB05TQ29s
-								b3IAlIQBYwKE
-								BGZmZmYAAAAB
-								hpKElpYQTlNQ
-								YXJhZ3JhcGhT
-								dHlsZYaShISE
-								EE5TUGFyYWdy
-								YXBoU3R5bGUA
-								lIQEQ0NAUwAA
-								hISEB05TQXJy
-								YXkAlJkMkoSE
-								hAlOU1RleHRU
-								YWIAlIQCQ2YA
-								HIaShKKhADiG
-								koSioQBUhpKE
-								oqEAcIaShKKh
-								AIGMAIaShKKh
-								AIGoAIaShKKh
-								AIHEAIaShKKh
-								AIHgAIaShKKh
-								AIH8AIaShKKh
-								AIEYAYaShKKh
-								AIE0AYaShKKh
-								AIFQAYaGAIaS
+								hAFpBJKElpYQ
+								TlNQYXJhZ3Jh
+								cGhTdHlsZYaS
+								hISEEE5TUGFy
+								YWdyYXBoU3R5
+								bGUAlIQEQ0NA
+								UwAAhISEB05T
+								QXJyYXkAlJkM
+								koSEhAlOU1Rl
+								eHRUYWIAlIQC
+								Q2YAHIaShJ+e
+								ADiGkoSfngBU
+								hpKEn54AcIaS
+								hJ+eAIGMAIaS
+								hJ+eAIGoAIaS
+								hJ+eAIHEAIaS
+								hJ+eAIHgAIaS
+								hJ+eAIH8AIaS
+								hJ+eAIEYAYaS
+								hJ+eAIE0AYaS
+								hJ+eAIFQAYaG
+								AIaShJaWB05T
+								Q29sb3KGkoSE
+								hAdOU0NvbG9y
+								AJSEAWMChARm
+								ZmZmAAAAAYaS
 								hJaWBk5TRm9u
 								dIaShISEBk5T
 								Rm9udB6UmTCE
@@ -64805,8 +64805,8 @@ Avbryt}</string>
 								AGkAYwBhAE4A
 								ZQB1AGUALQBC
 								AG8AbABkAAAA
-								hAFmGJsAmwGb
-								AJsAhpKElpYG
+								hAFmGKAAoAGg
+								AKAAhpKElpYG
 								TlNLZXJuhpKE
 								hIQITlNOdW1i
 								ZXIAhIQHTlNW
@@ -64879,32 +64879,32 @@ Avbryt}</string>
 								aUkBBJKEhIQM
 								TlNEaWN0aW9u
 								YXJ5AJSEAWkE
-								koSWlgdOU0Nv
-								bG9yhpKEhIQH
-								TlNDb2xvcgCU
-								hAFjAoQEZmZm
-								ZgAAAAGGkoSW
-								lhBOU1BhcmFn
-								cmFwaFN0eWxl
-								hpKEhIQQTlNQ
-								YXJhZ3JhcGhT
-								dHlsZQCUhARD
-								Q0BTAACEhIQH
-								TlNBcnJheQCU
-								mQyShISECU5T
-								VGV4dFRhYgCU
-								hAJDZgAchpKE
-								oqEAOIaShKKh
-								AFSGkoSioQBw
-								hpKEoqEAgYwA
-								hpKEoqEAgagA
-								hpKEoqEAgcQA
-								hpKEoqEAgeAA
-								hpKEoqEAgfwA
-								hpKEoqEAgRgB
-								hpKEoqEAgTQB
-								hpKEoqEAgVAB
-								hoYAhpKElpYG
+								koSWlhBOU1Bh
+								cmFncmFwaFN0
+								eWxlhpKEhIQQ
+								TlNQYXJhZ3Jh
+								cGhTdHlsZQCU
+								hARDQ0BTAACE
+								hIQHTlNBcnJh
+								eQCUmQyShISE
+								CU5TVGV4dFRh
+								YgCUhAJDZgAc
+								hpKEn54AOIaS
+								hJ+eAFSGkoSf
+								ngBwhpKEn54A
+								gYwAhpKEn54A
+								gagAhpKEn54A
+								gcQAhpKEn54A
+								geAAhpKEn54A
+								gfwAhpKEn54A
+								gRgBhpKEn54A
+								gTQBhpKEn54A
+								gVABhoYAhpKE
+								lpYHTlNDb2xv
+								coaShISEB05T
+								Q29sb3IAlIQB
+								YwKEBGZmZmYA
+								AAABhpKElpYG
 								TlNGb250hpKE
 								hIQGTlNGb250
 								HpSZJIQFWzM2
@@ -64912,8 +64912,8 @@ Avbryt}</string>
 								AP/+SABlAGwA
 								dgBlAHQAaQBj
 								AGEATgBlAHUA
-								ZQCEAWYYmwCb
-								AZsAmwCGkoSW
+								ZQCEAWYYoACg
+								AaAAoACGkoSW
 								lgZOU0tlcm6G
 								koSEhAhOU051
 								bWJlcgCEhAdO
@@ -65597,32 +65597,32 @@ AT&amp;T}</string>
 								hAJpSQEPkoSE
 								hAxOU0RpY3Rp
 								b25hcnkAlIQB
-								aQSShJaWB05T
-								Q29sb3KGkoSE
-								hAdOU0NvbG9y
-								AJSEAWMChARm
-								ZmZmAAAAAYaS
-								hJaWEE5TUGFy
-								YWdyYXBoU3R5
-								bGWGkoSEhBBO
-								U1BhcmFncmFw
-								aFN0eWxlAJSE
-								BENDQFMAAISE
-								hAdOU0FycmF5
-								AJSZDJKEhIQJ
-								TlNUZXh0VGFi
-								AJSEAkNmAByG
-								koSioQA4hpKE
-								oqEAVIaShKKh
-								AHCGkoSioQCB
-								jACGkoSioQCB
-								qACGkoSioQCB
-								xACGkoSioQCB
-								4ACGkoSioQCB
-								/ACGkoSioQCB
-								GAGGkoSioQCB
-								NAGGkoSioQCB
-								UAGGhgCGkoSW
+								aQSShJaWEE5T
+								UGFyYWdyYXBo
+								U3R5bGWGkoSE
+								hBBOU1BhcmFn
+								cmFwaFN0eWxl
+								AJSEBENDQFMA
+								AISEhAdOU0Fy
+								cmF5AJSZDJKE
+								hIQJTlNUZXh0
+								VGFiAJSEAkNm
+								AByGkoSfngA4
+								hpKEn54AVIaS
+								hJ+eAHCGkoSf
+								ngCBjACGkoSf
+								ngCBqACGkoSf
+								ngCBxACGkoSf
+								ngCB4ACGkoSf
+								ngCB/ACGkoSf
+								ngCBGAGGkoSf
+								ngCBNAGGkoSf
+								ngCBUAGGhgCG
+								koSWlgdOU0Nv
+								bG9yhpKEhIQH
+								TlNDb2xvcgCU
+								hAFjAoQEZmZm
+								ZgAAAAGGkoSW
 								lgZOU0ZvbnSG
 								koSEhAZOU0Zv
 								bnQelJkwhAVb
@@ -65632,7 +65632,7 @@ AT&amp;T}</string>
 								AGMAYQBOAGUA
 								dQBlAC0AQgBv
 								AGwAZAAAAIQB
-								ZiKbAJsBmwCb
+								ZiKgAKABoACg
 								AIaShJaWBk5T
 								S2VyboaShISE
 								CE5TTnVtYmVy
@@ -65714,32 +65714,32 @@ Endre Aktivitet}</string>
 								hAJpSQEGkoSE
 								hAxOU0RpY3Rp
 								b25hcnkAlIQB
-								aQSShJaWB05T
-								Q29sb3KGkoSE
-								hAdOU0NvbG9y
-								AJSEAWMChARm
-								ZmZmAAAAAYaS
-								hJaWEE5TUGFy
-								YWdyYXBoU3R5
-								bGWGkoSEhBBO
-								U1BhcmFncmFw
-								aFN0eWxlAJSE
-								BENDQFMAAISE
-								hAdOU0FycmF5
-								AJSZDJKEhIQJ
-								TlNUZXh0VGFi
-								AJSEAkNmAByG
-								koSioQA4hpKE
-								oqEAVIaShKKh
-								AHCGkoSioQCB
-								jACGkoSioQCB
-								qACGkoSioQCB
-								xACGkoSioQCB
-								4ACGkoSioQCB
-								/ACGkoSioQCB
-								GAGGkoSioQCB
-								NAGGkoSioQCB
-								UAGGhgCGkoSW
+								aQSShJaWEE5T
+								UGFyYWdyYXBo
+								U3R5bGWGkoSE
+								hBBOU1BhcmFn
+								cmFwaFN0eWxl
+								AJSEBENDQFMA
+								AISEhAdOU0Fy
+								cmF5AJSZDJKE
+								hIQJTlNUZXh0
+								VGFiAJSEAkNm
+								AByGkoSfngA4
+								hpKEn54AVIaS
+								hJ+eAHCGkoSf
+								ngCBjACGkoSf
+								ngCBqACGkoSf
+								ngCBxACGkoSf
+								ngCB4ACGkoSf
+								ngCB/ACGkoSf
+								ngCBGAGGkoSf
+								ngCBNAGGkoSf
+								ngCBUAGGhgCG
+								koSWlgdOU0Nv
+								bG9yhpKEhIQH
+								TlNDb2xvcgCU
+								hAFjAoQEZmZm
+								ZgAAAAGGkoSW
 								lgZOU0ZvbnSG
 								koSEhAZOU0Zv
 								bnQelJkkhAVb
@@ -65747,8 +65747,8 @@ Endre Aktivitet}</string>
 								AAAA//5IAGUA
 								bAB2AGUAdABp
 								AGMAYQBOAGUA
-								dQBlAIQBZiKb
-								AJsBmwCbAIaS
+								dQBlAIQBZiKg
+								AKABoACgAIaS
 								hJaWBk5TS2Vy
 								boaShISECE5T
 								TnVtYmVyAISE
@@ -65830,32 +65830,32 @@ Ferdig}</string>
 								hAJpSQEGkoSE
 								hAxOU0RpY3Rp
 								b25hcnkAlIQB
-								aQSShJaWB05T
-								Q29sb3KGkoSE
-								hAdOU0NvbG9y
-								AJSEAWMChARm
-								ZmZmAAAAAYaS
-								hJaWEE5TUGFy
-								YWdyYXBoU3R5
-								bGWGkoSEhBBO
-								U1BhcmFncmFw
-								aFN0eWxlAJSE
-								BENDQFMAAISE
-								hAdOU0FycmF5
-								AJSZDJKEhIQJ
-								TlNUZXh0VGFi
-								AJSEAkNmAByG
-								koSioQA4hpKE
-								oqEAVIaShKKh
-								AHCGkoSioQCB
-								jACGkoSioQCB
-								qACGkoSioQCB
-								xACGkoSioQCB
-								4ACGkoSioQCB
-								/ACGkoSioQCB
-								GAGGkoSioQCB
-								NAGGkoSioQCB
-								UAGGhgCGkoSW
+								aQSShJaWEE5T
+								UGFyYWdyYXBo
+								U3R5bGWGkoSE
+								hBBOU1BhcmFn
+								cmFwaFN0eWxl
+								AJSEBENDQFMA
+								AISEhAdOU0Fy
+								cmF5AJSZDJKE
+								hIQJTlNUZXh0
+								VGFiAJSEAkNm
+								AByGkoSfngA4
+								hpKEn54AVIaS
+								hJ+eAHCGkoSf
+								ngCBjACGkoSf
+								ngCBqACGkoSf
+								ngCBxACGkoSf
+								ngCB4ACGkoSf
+								ngCB/ACGkoSf
+								ngCBGAGGkoSf
+								ngCBNAGGkoSf
+								ngCBUAGGhgCG
+								koSWlgdOU0Nv
+								bG9yhpKEhIQH
+								TlNDb2xvcgCU
+								hAFjAoQEZmZm
+								ZgAAAAGGkoSW
 								lgZOU0ZvbnSG
 								koSEhAZOU0Zv
 								bnQelJkkhAVb
@@ -65863,8 +65863,8 @@ Ferdig}</string>
 								AAAA//5IAGUA
 								bAB2AGUAdABp
 								AGMAYQBOAGUA
-								dQBlAIQBZiKb
-								AJsBmwCbAIaS
+								dQBlAIQBZiKg
+								AKABoACgAIaS
 								hJaWBk5TS2Vy
 								boaShISECE5T
 								TnVtYmVyAISE
@@ -66494,7 +66494,7 @@ Avbryt}</string>
 			</dict>
 		</array>
 		<key>Frame</key>
-		<string>{{-2001, 136}, {1286, 1100}}</string>
+		<string>{{1534, 157}, {1286, 874}}</string>
 		<key>ListView</key>
 		<true/>
 		<key>OutlineWidth</key>
@@ -66508,7 +66508,7 @@ Avbryt}</string>
 		<key>SidebarWidth</key>
 		<integer>393</integer>
 		<key>VisibleRegion</key>
-		<string>{{-305, 154}, {1728, 1922}}</string>
+		<string>{{-305, 118}, {1728, 1470}}</string>
 		<key>Zoom</key>
 		<real>0.5</real>
 		<key>ZoomValues</key>
