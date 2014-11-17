@@ -9,6 +9,8 @@
 # Needed realpath:
 # brew tap iveney/mocha
 # brew install realpath
+# tws: can use grealpath in coreutils:
+# brew install coreutils
 #
 
 storyboardExt=".storyboard"
@@ -16,6 +18,7 @@ stringsExt=".strings"
 newStringsExt=".strings.new"
 oldStringsExt=".strings.old"
 localeDirExt=".lproj"
+realpath="grealpath"
 
 oldIFS=$IFS
 IFS=$'\n'
@@ -66,8 +69,8 @@ do
         for localeStringsDir in `find .. -name "*$localeDirExt" -print`
         do
             # Skip Base strings folder
-            rp1=$(realpath $storyboardDir)
-            rp2=$(realpath $localeStringsDir)
+            rp1=$(`$realpath` $storyboardDir)
+            rp2=$(`$realpath` $localeStringsDir)
 
             if [ $rp1 != $rp2 ]; then
                 localeStringsPath=$localeStringsDir/$stringsFile
