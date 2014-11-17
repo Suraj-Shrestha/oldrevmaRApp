@@ -39,6 +39,9 @@
 		C93599411A19F66F00DE78BE /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C93599461A19F66F00DE78BE /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C935994B1A19F66F00DE78BE /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C935994D1A19F9F200DE78BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		C935994E1A19F9F200DE78BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C935994F1A19F9F200DE78BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C93F56E31A0B70BE0030D481 /* RevmaRapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RevmaRapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C93F56E71A0B70BE0030D481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C93F56E81A0B70BE0030D481 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -318,6 +321,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				C93599411A19F66F00DE78BE /* nb */,
+				C935994D1A19F9F200DE78BE /* en */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -326,6 +330,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				C93599461A19F66F00DE78BE /* nb */,
+				C935994E1A19F9F200DE78BE /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -334,6 +339,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				C935994B1A19F66F00DE78BE /* nb */,
+				C935994F1A19F9F200DE78BE /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
