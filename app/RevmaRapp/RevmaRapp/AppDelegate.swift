@@ -39,7 +39,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // TODO: Make this read from a translation file
         
         let fetchRequest = NSFetchRequest(entityName: ActivityName.entityName())
-        fetchRequest.predicate = NSPredicate(format: "lang == %@", argumentArray: [currLang])
         
         var error: NSError?
 
@@ -48,11 +47,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 return
             }
         } else {
-            ZAssert(error != nil, "Unresolved error \(error?.localizedDescription), \(error?.userInfo)\nMy query was \(fetchRequest)")
+            ZAssert(!(error != nil), "Unresolved error \(error?.localizedDescription), \(error?.userInfo)\nMy query was \(fetchRequest)")
         }
         
-        var activityNames: [String]
-        activityNames = [
+        // ActivityNameKeys
+        let activityNameKeys = [ "ActivityHousework", "ActivityYardwork", "ActivityTransport", "ActivityHygiene", "ActivityDressing",
+                                    "ActivityMeals", "ActivityDeskWork", "ActivityMeetings", "ActivityLectures", "ActivityPhysicalLabor",
+                                    "ActivityTelephone", "ActivityReading", "ActivityFamilyCare", "ActivityIntimate", "ActivityFriends",
+                                    "ActivityKultural", "ActivityHobby", "ActivityScreenTime", "ActivityTraining", "ActivityResting",
+                                    "ActivityListeningMusic" ]
+        
+        // Do I like repeating myself? I guess I do, just to make sure that these items are picked up in future translations
+        let activityNames = [
             NSLocalizedString("ActivityHousework", comment: "ActivityName"),
             NSLocalizedString("ActivityYardwork",  comment: "AcitivityName"),
             NSLocalizedString("ActivityTransport", comment: "AcitivityName"),
@@ -78,16 +84,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
         
-        for name in activityNames {
+        for name in activityNameKeys {
             let catalogEntry = ActivityName(managedObjectContext: self.managedObjectContext)
             catalogEntry.name = name
-            catalogEntry.lang = currLang
+            catalogEntry.i18nable = true
         }
         
 
         self.managedObjectContext.save(&error)
         
-        ZAssert(error != nil, "Saving records went wrong \(error), \(error?.userInfo)")
+        ZAssert(!(error != nil), "Saving records went wrong \(error), \(error?.userInfo)")
     }
 
 

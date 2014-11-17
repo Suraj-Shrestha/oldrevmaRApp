@@ -4,7 +4,7 @@
 import CoreData
 
 enum ActivityNameAttributes: String {
-    case lang = "lang"
+    case i18nable = "i18nable"
     case name = "name"
 }
 
@@ -39,9 +39,9 @@ class _ActivityName: NSManagedObject {
     // MARK: - Properties
 
     @NSManaged
-    var lang: String?
+    var i18nable: NSNumber?
 
-    // func validateLang(value: AutoreleasingUnsafePointer<AnyObject>, error: NSErrorPointer) {}
+    // func validateI18nable(value: AutoreleasingUnsafePointer<AnyObject>, error: NSErrorPointer) {}
 
     @NSManaged
     var name: String?
