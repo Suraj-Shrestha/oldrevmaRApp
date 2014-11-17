@@ -52,24 +52,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         var activityNames: [String]
-        // Put in some things for this language
-        switch (currLang) {
-        case "nb":
-            activityNames = [ "Husarbeid", "Hagearbeid", "Transport", "Personlig hygiene",
-                                 "Av og påkledning", "Måltider", "Stillesittende arbied",
-                                 "Møter", "Forelesning", "Fysisk arbeid", "Telefonsamtaler", "Lesing",
-                                 "Familieomsorg", "Samliv", "Omgang med venner", "Kulturliv", "Hobbyaktiviteter",
-                                 "Skermtid (tv/PC/nettbrett)", "Trene", "Hvile", "Lytte på musikk/radio"]
-        case "en":
-            fallthrough
-        default: // Default is English (for now)
-            activityNames = [ "Housework", "Yardwork", "Transport", "Personal hygiene",
-                "dressing and undressing", "Meals", "Desk work",
-                "Meetings", "Lectures", "Physical labor", "Telephone conversation", "Reading",
-                "Family care", "Intimate time", "Spending time with friends", "Kultural activity", "Hobby",
-                "Screen time (tv/PC/tablet)", "Training", "Resting", "Listening to music/radio"]
-            
-        }
+        activityNames = [
+            NSLocalizedString("ActivityHousework", comment: "ActivityName"),
+            NSLocalizedString("ActivityYardwork",  comment: "AcitivityName"),
+            NSLocalizedString("ActivityTransport", comment: "AcitivityName"),
+            NSLocalizedString("ActivityHygiene",  comment: "AcitivityName"),
+            NSLocalizedString("ActivityDressing",  comment: "AcitivityName"),
+            NSLocalizedString("ActivityMeals",  comment: "AcitivityName"),
+            NSLocalizedString("ActivityDeskWork",  comment: "AcitivityName"),
+            NSLocalizedString("ActivityMeetings",  comment: "AcitivityName"),
+            NSLocalizedString("ActivityLectures",  comment: "AcitivityName"),
+            NSLocalizedString("ActivityPhysicalLabor",  comment: "AcitivityName"),
+            NSLocalizedString("ActivityTelephone",  comment: "AcitivityName"),
+            NSLocalizedString("ActivityReading",  comment: "AcitivityName"),
+            NSLocalizedString("ActivityFamilyCare",  comment: "AcitivityName"),
+            NSLocalizedString("ActivityIntimate",  comment: "AcitivityName"),
+            NSLocalizedString("ActivityFriends",  comment: "AcitivityName"),
+            NSLocalizedString("ActivityKultural",  comment: "AcitivityName"),
+            NSLocalizedString("ActivityHobby",  comment: "AcitivityName"),
+            NSLocalizedString("ActivityScreenTime",  comment: "AcitivityName"),
+            NSLocalizedString("ActivityTraining", comment: "AcitivityName"),
+            NSLocalizedString("ActivityResting", comment: "AcitivityName"),
+            NSLocalizedString("ActivityListeningMusic", comment: "AcitivityName"),
+        ]
+
+
         
         for name in activityNames {
             let catalogEntry = ActivityName(managedObjectContext: self.managedObjectContext)
