@@ -12,7 +12,7 @@
 		C935994A1A19F66F00DE78BE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C935994C1A19F66F00DE78BE /* InfoPlist.strings */; };
 		C93F56E91A0B70BE0030D481 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93F56E81A0B70BE0030D481 /* AppDelegate.swift */; };
 		C93F56EB1A0B70BE0030D481 /* ActivityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93F56EA1A0B70BE0030D481 /* ActivityTableViewController.swift */; };
-		C93F56ED1A0B70BE0030D481 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93F56EC1A0B70BE0030D481 /* SecondViewController.swift */; };
+		C93F56ED1A0B70BE0030D481 /* ActivityEditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93F56EC1A0B70BE0030D481 /* ActivityEditController.swift */; };
 		C93F56F01A0B70BE0030D481 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C93F56EE1A0B70BE0030D481 /* Main.storyboard */; };
 		C93F56F21A0B70BE0030D481 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C93F56F11A0B70BE0030D481 /* Images.xcassets */; };
 		C93F56F51A0B70BE0030D481 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C93F56F31A0B70BE0030D481 /* LaunchScreen.xib */; };
@@ -46,7 +46,7 @@
 		C93F56E71A0B70BE0030D481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C93F56E81A0B70BE0030D481 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C93F56EA1A0B70BE0030D481 /* ActivityTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTableViewController.swift; sourceTree = "<group>"; };
-		C93F56EC1A0B70BE0030D481 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		C93F56EC1A0B70BE0030D481 /* ActivityEditController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityEditController.swift; sourceTree = "<group>"; };
 		C93F56EF1A0B70BE0030D481 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C93F56F11A0B70BE0030D481 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C93F56F41A0B70BE0030D481 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -108,7 +108,7 @@
 				C93F56E81A0B70BE0030D481 /* AppDelegate.swift */,
 				C93F56EA1A0B70BE0030D481 /* ActivityTableViewController.swift */,
 				C9C10BE31A0B831C00784666 /* ThirdViewController.swift */,
-				C93F56EC1A0B70BE0030D481 /* SecondViewController.swift */,
+				C93F56EC1A0B70BE0030D481 /* ActivityEditController.swift */,
 				C93F56EE1A0B70BE0030D481 /* Main.storyboard */,
 				C93F56F11A0B70BE0030D481 /* Images.xcassets */,
 				C93F56F31A0B70BE0030D481 /* LaunchScreen.xib */,
@@ -290,7 +290,7 @@
 				C9DD9F461A13A3A00099B184 /* ActivityName.swift in Sources */,
 				C9DD9F451A13A3A00099B184 /* ActivityItem.swift in Sources */,
 				C9DD9F441A13A3A00099B184 /* _ActivityName.swift in Sources */,
-				C93F56ED1A0B70BE0030D481 /* SecondViewController.swift in Sources */,
+				C93F56ED1A0B70BE0030D481 /* ActivityEditController.swift in Sources */,
 				C93F56E91A0B70BE0030D481 /* AppDelegate.swift in Sources */,
 				C9DD9F431A13A3A00099B184 /* _ActivityItem.swift in Sources */,
 				C9C10BE41A0B831C00784666 /* ThirdViewController.swift in Sources */,

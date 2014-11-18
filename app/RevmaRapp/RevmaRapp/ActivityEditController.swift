@@ -7,8 +7,13 @@
 //
 
 import UIKit
+import CoreData
 
-class SecondViewController: UIViewController {
+class ActivityEditController: UIViewController {
+
+    var managedObjectContext : NSManagedObjectContext = ((AppDelegate)UIApplication.sharedApplication()->delegate).managedObjectContext
+    
+    var activityItem:ActivityItem = ActivityItem(managedObjectContext: managedObjectContext)
 
     override func viewDidLoad() {
         super.viewDidLoad()

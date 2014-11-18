@@ -36,8 +36,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func createObjects() {
         let currLang = NSLocale.preferredLanguages()[0] as String;
         
-        // TODO: Make this read from a translation file
-        
         let fetchRequest = NSFetchRequest(entityName: ActivityName.entityName())
         
         var error: NSError?
