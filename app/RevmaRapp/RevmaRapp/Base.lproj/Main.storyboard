@@ -9,7 +9,7 @@
         <!--History_title-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="RevmaRapp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
@@ -253,7 +253,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="Txd-va-XVD" kind="show" id="ELb-nP-pWq"/>
+                                    <segue destination="Txd-va-XVD" kind="show" identifier="showActivity" id="ELb-nP-pWq"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -266,7 +266,7 @@
                     <navigationItem key="navigationItem" title="Activities_table_title" id="EXF-tP-vvc">
                         <barButtonItem key="rightBarButtonItem" title="Add…" id="YEt-UJ-4PP">
                             <connections>
-                                <segue destination="5Nm-8f-m4t" kind="presentation" id="Xky-Dy-ITA"/>
+                                <segue destination="5Nm-8f-m4t" kind="presentation" identifier="createActivity" id="Xky-Dy-ITA"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -278,7 +278,7 @@
         <!--Activity_edit-->
         <scene sceneID="urp-Vt-ZZd">
             <objects>
-                <viewController title="Activity_edit" id="5Nm-8f-m4t" sceneMemberID="viewController">
+                <viewController title="Activity_edit" id="5Nm-8f-m4t" customClass="ActivityEditController" customModule="RevmaRapp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="e4S-LI-S2v"/>
                         <viewControllerLayoutGuide type="bottom" id="lsI-Iv-OS2"/>
@@ -556,6 +556,16 @@
                             <constraint firstItem="KeF-77-DHr" firstAttribute="leading" secondItem="a5e-ev-Bsk" secondAttribute="leadingMargin" id="zeo-KF-8FQ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="activityNameEdit" destination="DBh-27-8jj" id="ABE-JE-Mzd"/>
+                        <outlet property="durationButton" destination="YHQ-zS-Qh9" id="YbB-eD-MoQ"/>
+                        <outlet property="dutySlider" destination="LFK-Jb-tXz" id="jPm-Rf-iH5"/>
+                        <outlet property="energySlider" destination="ctC-6o-L8S" id="UEg-B8-chM"/>
+                        <outlet property="importanceSlider" destination="GGt-f3-wUA" id="ggQ-QZ-Vbr"/>
+                        <outlet property="masterySlider" destination="lR0-SI-ZMz" id="uro-4n-WeG"/>
+                        <outlet property="painSlider" destination="Aso-2t-3Hh" id="4yj-fO-fcP"/>
+                        <outlet property="startDateButton" destination="Tnl-gl-rRE" id="13d-fd-5ng"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ydc-E1-bWk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

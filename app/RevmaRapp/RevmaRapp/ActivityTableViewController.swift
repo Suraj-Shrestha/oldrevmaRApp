@@ -17,6 +17,7 @@ class ActivityTableViewController: UITableViewController, NSFetchedResultsContro
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        managedObjectContext = (UIApplication.sharedApplication().delegate as AppDelegate).managedObjectContext
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -29,10 +30,18 @@ class ActivityTableViewController: UITableViewController, NSFetchedResultsContro
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // TODO: Get the detail view hooked up.
-        if segue.identifier == "showDetail" {
-            if let indexPath = self.tableView.indexPathForSelectedRow() {
-                let object = self.activities[indexPath.row] as ActivityItem
-//                (segue.destinationViewController as DetailViewController).detailItem = object
+        if let whichSegue = segue.identifier {
+            switch (whichSegue) {
+            case "showActivity":
+                if let indexPath = self.tableView.indexPathForSelectedRow() {
+                    let object = self.activities[indexPath.row] as ActivityItem
+                    (segue.destinationViewController as ActivityEditController).activityItem = object
+                }
+            case "createActivity":
+                let newActivity = ActivityItem(managedObjectContext: managedObjectContext)
+                (segue.destinationViewController as ActivityEditController).activityItem = newActivity
+            default:
+                break;
             }
         }
     }
