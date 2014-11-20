@@ -10,21 +10,14 @@ import UIKit
 import CoreData
 
 
-let DEBUG = true
-
-func ZAssert(test: Bool, message: String) {
-    if (test) {
-        return
+func ZAssert(condition: @autoclosure() -> Bool, _ message: String = "", file:
+    String = __FILE__, line: Int = __LINE__) {
+#if DEBUG
+    if !condition() {
+        println("assertion failet at \(file):\(line): \(message)")
+        abort()
     }
-    
-    println(message)
-    
-    if (!DEBUG) {
-        return
-    }
-    
-    var exception = NSException()
-    exception.raise()
+#endif
 }
 
 
