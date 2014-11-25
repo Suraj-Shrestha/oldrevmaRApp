@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C90F589C1A24D0F600258424 /* ActivityNameTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90F589B1A24D0F600258424 /* ActivityNameTableController.swift */; };
 		C93599401A19F66F00DE78BE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C93599421A19F66F00DE78BE /* Localizable.strings */; };
 		C93599451A19F66F00DE78BE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C93599471A19F66F00DE78BE /* InfoPlist.strings */; };
 		C935994A1A19F66F00DE78BE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C935994C1A19F66F00DE78BE /* InfoPlist.strings */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C90F589B1A24D0F600258424 /* ActivityNameTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActivityNameTableController.swift; path = ActivityNameTableController.swift; sourceTree = "<group>"; };
 		C93599411A19F66F00DE78BE /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C93599461A19F66F00DE78BE /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C935994B1A19F66F00DE78BE /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 				C93F56EA1A0B70BE0030D481 /* ActivityTableViewController.swift */,
 				C9C10BE31A0B831C00784666 /* ThirdViewController.swift */,
 				C93F56EC1A0B70BE0030D481 /* ActivityEditController.swift */,
+				C90F589B1A24D0F600258424 /* ActivityNameTableController.swift */,
 				C93F56EE1A0B70BE0030D481 /* Main.storyboard */,
 				C93F56F11A0B70BE0030D481 /* Images.xcassets */,
 				C93F56F31A0B70BE0030D481 /* LaunchScreen.xib */,
@@ -294,6 +297,7 @@
 				C93F56E91A0B70BE0030D481 /* AppDelegate.swift in Sources */,
 				C9DD9F431A13A3A00099B184 /* _ActivityItem.swift in Sources */,
 				C9C10BE41A0B831C00784666 /* ThirdViewController.swift in Sources */,
+				C90F589C1A24D0F600258424 /* ActivityNameTableController.swift in Sources */,
 				C93F56EB1A0B70BE0030D481 /* ActivityTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
