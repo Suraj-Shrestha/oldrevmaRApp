@@ -9,9 +9,12 @@
 import UIKit
 import CoreData
 
-class ActivityEditController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+protocol ActivityEditControllerDelegate {
+    func activtyEditControllerDidCancel(controller: ActivityEditController)
+    func activityEditControllerDidSave(controller: ActivityEditController)
+}
 
-    @IBOutlet weak var activityNameCell: UITableViewCell!
+class ActivityEditController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     @IBOutlet weak var startDateButton: UIButton!
     
@@ -28,6 +31,7 @@ class ActivityEditController: UIViewController, UITableViewDataSource, UITableVi
     @IBOutlet weak var painSlider: UISlider!
     var managedObjectContext: NSManagedObjectContext?
     var activityNames:[ActivityName] = []
+    var delegate:ActivityEditControllerDelegate? = nil
     
     var activityItem: ActivityItem? {
         didSet {
@@ -53,6 +57,19 @@ class ActivityEditController: UIViewController, UITableViewDataSource, UITableVi
 
     }
     
+    @IBAction func cancel(sender: UIBarButtonItem) {
+        if delegate != nil {
+            delegate!.activtyEditControllerDidCancel(self)
+        }
+
+    }
+    
+    @IBAction func done(sender: UIBarButtonItem) {
+        if delegate != nil {
+            delegate!.activityEditControllerDidSave(self)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -63,8 +80,12 @@ class ActivityEditController: UIViewController, UITableViewDataSource, UITableVi
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    func save() {
+        // write the stuff in and sync the database!!!
+    }
 
-    // ## TableViewDataSource
+    // MARK TableViewDataSource
     func tableView(tableView: UITableView,
         numberOfRowsInSection section: Int) -> Int {
             return 1
@@ -93,4 +114,3 @@ class ActivityEditController: UIViewController, UITableViewDataSource, UITableVi
 
 
 }
-

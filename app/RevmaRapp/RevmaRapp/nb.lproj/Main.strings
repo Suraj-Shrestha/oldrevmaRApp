@@ -5,7 +5,7 @@
 "2ur-gQ-y4n.text" = "Plikt";
 
 /* Class = "IBUIBarButtonItem"; title = "CancelButton"; ObjectID = "6Vy-Bu-EYs"; */
-"6Vy-Bu-EYs.title" = "Avbryt";
+"Foa-wD-Dhg.title" = "Avbryt";
 
 /* Class = "IBUILabel"; text = "Goal"; ObjectID = "7Ea-GC-NRa"; */
 "7Ea-GC-NRa.text" = "Mål";
@@ -68,7 +68,7 @@
 "eNT-Kw-bpA.text" = "Ønsket";
 
 /* Class = "IBUINavigationItem"; title = "Add_Activity_Title"; ObjectID = "gWq-B7-YTq"; */
-"gWq-B7-YTq.title" = "Ny aktivitet";
+"4RC-1t-qZ2.title" = "Ny aktivitet";
 
 /* Class = "IBUILabel"; text = "unimportant_label"; ObjectID = "lEY-Kq-zQW"; */
 "lEY-Kq-zQW.text" = "Uviktig";
@@ -77,7 +77,7 @@
 "mmU-uE-lQb.text" = "Hvor mye energi brukte du:";
 
 /* Class = "IBUIBarButtonItem"; title = "DoneButton"; ObjectID = "njB-PF-o0O"; */
-"njB-PF-o0O.title" = "Ferdig";
+"0uC-Lt-DCC.title" = "Ferdig";
 
 /* Class = "IBUINavigationItem"; title = "Reflection_table_title"; ObjectID = "wqZ-Cx-GCV"; */
 "wqZ-Cx-GCV.title" = "Root View Controller";

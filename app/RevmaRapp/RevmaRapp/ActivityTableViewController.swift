@@ -9,7 +9,8 @@
 import UIKit
 import CoreData
 
-class ActivityTableViewController: UITableViewController, NSFetchedResultsControllerDelegate {
+
+class ActivityTableViewController: UITableViewController, NSFetchedResultsControllerDelegate, ActivityEditControllerDelegate {
     
     var managedObjectContext : NSManagedObjectContext?;
     
@@ -39,7 +40,10 @@ class ActivityTableViewController: UITableViewController, NSFetchedResultsContro
                 }
             case "createActivity":
                 let newActivity = ActivityItem(managedObjectContext: managedObjectContext)
-                (segue.destinationViewController as ActivityEditController).activityItem = newActivity
+                if let editController = segue.destinationViewController.topViewController as? ActivityEditController {
+                    editController.delegate = self
+                    editController.activityItem = newActivity
+                }
             default:
                 break;
             }
@@ -60,6 +64,17 @@ class ActivityTableViewController: UITableViewController, NSFetchedResultsContro
     func configureCell(cell: UITableViewCell, atIndexPath indexPath: NSIndexPath) {
         let activity = self.activities[indexPath.row] as ActivityItem
         cell.textLabel.text = activity.activity?.name
+    }
+    
+    // MARK: ActivtyEditControllerDelegate
+    func activtyEditControllerDidCancel(controller: ActivityEditController) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+        
+    }
+
+    func activityEditControllerDidSave(controller: ActivityEditController) {
+        controller.save()
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
 
 }
