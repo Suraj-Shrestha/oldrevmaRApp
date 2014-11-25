@@ -84,7 +84,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         self.managedObjectContext.save(&error)
         
-        ZAssert(!(error != nil), "Saving records went wrong \(error), \(error?.userInfo)")
+        ZAssert(error == nil, "Saving records went wrong \(error), \(error?.userInfo)")
     }
 
 

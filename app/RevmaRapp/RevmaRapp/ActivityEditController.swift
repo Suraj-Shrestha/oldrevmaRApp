@@ -9,9 +9,9 @@
 import UIKit
 import CoreData
 
-class ActivityEditController: UIViewController {
+class ActivityEditController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
-    @IBOutlet weak var activityNameEdit: UITextField!
+    @IBOutlet weak var activityNameCell: UITableViewCell!
     
     @IBOutlet weak var startDateButton: UIButton!
     
@@ -27,6 +27,7 @@ class ActivityEditController: UIViewController {
     
     @IBOutlet weak var painSlider: UISlider!
     var managedObjectContext: NSManagedObjectContext?
+    var activityNames:[ActivityName] = []
     
     var activityItem: ActivityItem? {
         didSet {
@@ -38,19 +39,20 @@ class ActivityEditController: UIViewController {
     }
     
     func configureView() {
-        if self.activityNameEdit == nil {
+        if self.managedObjectContext == nil {
             return
         }
-        if let localActivity = activityItem {
-            if let activityName = localActivity.activity {
-                activityNameEdit.text = activityName.name!
-            } else {
-                activityNameEdit.text = NSLocalizedString("Tap to choose activity", comment: "Empty Activity Name")
-            }
-
+        // Copy of all activity names? Sure.
+        let fetchRequest = NSFetchRequest(entityName: ActivityName.entityName())
+        var error: NSError?
+        if let results = self.managedObjectContext?.executeFetchRequest(fetchRequest, error: &error) {
+            activityNames = results as [ActivityName]
+        } else {
+            println("Unresolved error \(error?.localizedDescription), \(error?.userInfo)\n Attempting to get activity names")
         }
-    }
 
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -60,6 +62,33 @@ class ActivityEditController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+
+    // ## TableViewDataSource
+    func tableView(tableView: UITableView,
+        numberOfRowsInSection section: Int) -> Int {
+            return 1
+    }
+    
+    func tableView(tableView: UITableView,
+        cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+            let tableCell = tableView.dequeueReusableCellWithIdentifier("ActivityEditActivityName", forIndexPath: indexPath) as UITableViewCell
+            
+            if let localActivity = activityItem {
+                if let activityName = localActivity.activity {
+                    tableCell.textLabel.text = activityName.name!
+                } else {
+                    tableCell.textLabel.text = NSLocalizedString("Tap to choose activity", comment: "Empty Activity Name")
+                }
+            } else {
+                tableCell.textLabel.text = NSLocalizedString("No activity!!!", comment: "No activity, this should not happen")
+            }
+            return tableCell
+    }
+    
+    func tableView(tableView: UITableView,
+        accessoryButtonTappedForRowWithIndexPath indexPath: NSIndexPath) {
+            // ## Start the activity name viewer
     }
 
 
