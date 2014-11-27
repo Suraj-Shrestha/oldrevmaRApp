@@ -25,7 +25,7 @@ class ActivityNameTableController : UITableViewController, NSFetchedResultsContr
         
     override func viewDidLoad() {
         super.viewDidLoad()
-        if activityNames.count == 0 {
+        if activityNames.isEmpty {
             fetchActivityNames()
         }
     }
@@ -52,9 +52,16 @@ class ActivityNameTableController : UITableViewController, NSFetchedResultsContr
         }
     }
 
+    @IBAction func done(sender: UIBarButtonItem) {
+        if delegate != nil {
+            delegate!.activityEditControllerDidSave(self)
+        }
+    }
+    
     // MARK: Table view controller functions
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return activityNames.count
+        // We have an extra row for the "create" item.
+        return activityNames.count + 1
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -64,33 +71,42 @@ class ActivityNameTableController : UITableViewController, NSFetchedResultsContr
     }
         
     func configureCell(cell: UITableViewCell, atIndexPath indexPath: NSIndexPath) {
-        let name = activityNames[indexPath.row]
-        cell.textLabel.text = NSLocalizedString(name.name!, comment:"")
-        cell.accessoryType = (name == selectedName) ? UITableViewCellAccessoryType.Checkmark : UITableViewCellAccessoryType.None
+        if (indexPath.row < activityNames.count) {
+            let name = activityNames[indexPath.row]
+            cell.textLabel.text = NSLocalizedString(name.name!, comment:"")
+            cell.accessoryType = (name == selectedName) ? UITableViewCellAccessoryType.Checkmark : UITableViewCellAccessoryType.None
+        } else {
+            cell.textLabel.text = NSLocalizedString("Create a new activity…", comment: "Create new activity table cell")
+        }
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        var oldRow = -1
-        var index = 0
-        for name in activityNames {
-            if name == selectedName {
-                oldRow = index;
-                break;
+        if (indexPath.row == activityNames.count) {
+            // start another dialog and reload the model
+            
+        } else {
+            var oldRow = -1
+            var index = 0
+            for name in activityNames {
+                if name == selectedName {
+                    oldRow = index;
+                    break;
+                }
+                ++index
             }
-            ++index
-        }
-        
-        if oldRow == indexPath.row {
-            return
-        }
-        
-        if let newCell = tableView.cellForRowAtIndexPath(indexPath) {
-            newCell.accessoryType = UITableViewCellAccessoryType.Checkmark
-            selectedName = activityNames[indexPath.row]
-        }
+            
+            if oldRow == indexPath.row {
+                return
+            }
+            
+            if let newCell = tableView.cellForRowAtIndexPath(indexPath) {
+                newCell.accessoryType = UITableViewCellAccessoryType.Checkmark
+                selectedName = activityNames[indexPath.row]
+            }
 
-        if let oldCell = tableView.cellForRowAtIndexPath(NSIndexPath(forRow:oldRow, inSection: 0)) {
-            oldCell.accessoryType = UITableViewCellAccessoryType.None
+            if let oldCell = tableView.cellForRowAtIndexPath(NSIndexPath(forRow:oldRow, inSection: 0)) {
+                oldCell.accessoryType = UITableViewCellAccessoryType.None
+            }
         }
     }
 }

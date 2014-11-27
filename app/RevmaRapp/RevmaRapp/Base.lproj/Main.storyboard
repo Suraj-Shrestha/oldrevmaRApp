@@ -270,6 +270,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="activityTable" destination="ljH-v7-6mD" id="J5x-a9-kSY"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JJ1-TZ-RhY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -288,7 +291,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time_Start_Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="17y-PJ-aEj">
-                                <rect key="frame" x="16" y="125" width="133.5" height="20.5"/>
+                                <rect key="frame" x="16" y="125" width="134" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="WLH-IC-xeq"/>
                                 </constraints>
@@ -302,7 +305,7 @@
                                 </variation>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duration_Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZtU-dl-GmD">
-                                <rect key="frame" x="16" y="153" width="116" height="20.5"/>
+                                <rect key="frame" x="16" y="153" width="116" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -320,7 +323,7 @@
                                 </state>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Energy_use_label" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mmU-uE-lQb">
-                                <rect key="frame" x="16" y="182" width="568" height="20.5"/>
+                                <rect key="frame" x="16" y="182" width="568" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -355,7 +358,7 @@
                                 </variation>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activity_mastering_label" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MWA-Ec-kYD">
-                                <rect key="frame" x="16" y="383" width="185.5" height="20.5"/>
+                                <rect key="frame" x="16" y="383" width="186" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -364,16 +367,16 @@
                                 <rect key="frame" x="46" y="413" width="508" height="31"/>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activity_meaning_label" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HaQ-b7-eiI">
-                                <rect key="frame" x="16" y="249" width="175" height="20.5"/>
+                                <rect key="frame" x="16" y="249" width="175" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="GGt-f3-wUA">
-                                <rect key="frame" x="160" y="279" width="300.5" height="31"/>
+                                <rect key="frame" x="160" y="279" width="301" height="31"/>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activity_duty_label" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KeF-77-DHr">
-                                <rect key="frame" x="16" y="316" width="143" height="20.5"/>
+                                <rect key="frame" x="16" y="316" width="143" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -382,7 +385,7 @@
                                 <rect key="frame" x="102" y="345" width="373" height="31"/>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activity_pain_label" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0kL-Gx-kYQ">
-                                <rect key="frame" x="16" y="451" width="142.5" height="20.5"/>
+                                <rect key="frame" x="16" y="451" width="143" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -404,25 +407,25 @@
                                 </variation>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="important_label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cnS-uj-iga">
-                                <rect key="frame" x="465" y="283" width="118.5" height="20.5"/>
+                                <rect key="frame" x="465" y="283" width="119" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="unimportant_label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lEY-Kq-zQW">
-                                <rect key="frame" x="16" y="283" width="138" height="20.5"/>
+                                <rect key="frame" x="16" y="283" width="138" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duty_label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2ur-gQ-y4n">
-                                <rect key="frame" x="16" y="349" width="80.5" height="20.5"/>
+                                <rect key="frame" x="16" y="349" width="81" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Desired_label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eNT-Kw-bpA">
-                                <rect key="frame" x="480" y="349" width="103.5" height="20.5"/>
+                                <rect key="frame" x="480" y="349" width="104" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -577,6 +580,7 @@
                         <outlet property="energySlider" destination="ctC-6o-L8S" id="UEg-B8-chM"/>
                         <outlet property="importanceSlider" destination="GGt-f3-wUA" id="ggQ-QZ-Vbr"/>
                         <outlet property="masterySlider" destination="lR0-SI-ZMz" id="uro-4n-WeG"/>
+                        <outlet property="nameTable" destination="Qv4-wx-9MA" id="7Ff-Dc-RdX"/>
                         <outlet property="painSlider" destination="Aso-2t-3Hh" id="4yj-fO-fcP"/>
                         <outlet property="startDateButton" destination="Tnl-gl-rRE" id="13d-fd-5ng"/>
                     </connections>
@@ -620,7 +624,11 @@
                                 <action selector="cancel:" destination="CYF-QB-joC" id="TJh-Xo-sUm"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="New Activity…" id="BSh-kp-Wnw"/>
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="BSh-kp-Wnw">
+                            <connections>
+                                <action selector="done:" destination="CYF-QB-joC" id="8O9-cE-T0f"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bb2-m2-W4Q" userLabel="First Responder" sceneMemberID="firstResponder"/>

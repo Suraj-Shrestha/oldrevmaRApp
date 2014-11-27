@@ -16,6 +16,7 @@ protocol ActivityEditControllerDelegate {
 
 class ActivityEditController: UIViewController, UITableViewDataSource, UITableViewDelegate, ActivityNameTableControllerDelegate {
     
+    @IBOutlet weak var nameTable: UITableView!
     @IBOutlet weak var doneButton: UIBarButtonItem!
 
     @IBOutlet weak var startDateButton: UIButton!
@@ -34,7 +35,11 @@ class ActivityEditController: UIViewController, UITableViewDataSource, UITableVi
     var managedObjectContext: NSManagedObjectContext?
     var activityNames: [ActivityName] = []
     var delegate: ActivityEditControllerDelegate?
-    var activityName: ActivityName?
+    var activityName: ActivityName? {
+        didSet {
+            checkCanSave()
+        }
+    }
     
     var activityItem: ActivityItem! {
         didSet {
@@ -57,12 +62,12 @@ class ActivityEditController: UIViewController, UITableViewDataSource, UITableVi
         if activityNames.count == 0 {
             fetchActivityNames()
         }
-        
-        checkCanSave()
     }
     
     func checkCanSave() {
-        doneButton.enabled = (activityName != nil)
+        if (doneButton != nil) {
+            doneButton.enabled = (activityName != nil)
+        }
 
     }
     
@@ -131,14 +136,17 @@ class ActivityEditController: UIViewController, UITableViewDataSource, UITableVi
 
     // MARK TableViewDataSource
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return 1
+        return 1
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-            let tableCell = tableView.dequeueReusableCellWithIdentifier("ActivityEditActivityName", forIndexPath: indexPath) as UITableViewCell
-
-            tableCell.textLabel.text = (activityName != nil) ? activityName?.name! : NSLocalizedString("Tap to choose activity", comment: "Empty Activity Name")
-            return tableCell
+        let tableCell = tableView.dequeueReusableCellWithIdentifier("ActivityEditActivityName", forIndexPath: indexPath) as UITableViewCell
+        if let cellText = activityName?.name {
+            tableCell.textLabel.text = NSLocalizedString(cellText, comment: "")
+        } else {
+            tableCell.textLabel.text = NSLocalizedString("Tap to choose activity", comment: "Empty Activity Name")
+        }
+        return tableCell
     }
     
     func tableView(tableView: UITableView,
@@ -153,6 +161,7 @@ class ActivityEditController: UIViewController, UITableViewDataSource, UITableVi
     
     func activityEditControllerDidSave(controller: ActivityNameTableController) {
         activityName = controller.selectedName
+        nameTable.reloadData()
         self.dismissViewControllerAnimated(true, completion: nil)
     }
 

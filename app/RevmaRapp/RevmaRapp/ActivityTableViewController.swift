@@ -14,17 +14,32 @@ class ActivityTableViewController: UITableViewController, NSFetchedResultsContro
     
     var managedObjectContext : NSManagedObjectContext?;
     
+    @IBOutlet var activityTable: UITableView!
     var activities:[ActivityItem] = [];
 
     override func viewDidLoad() {
         super.viewDidLoad()
         managedObjectContext = (UIApplication.sharedApplication().delegate as AppDelegate).managedObjectContext
+        fetchActivities()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    func fetchActivities() {
+        // Probably need to page this by date at some point as well, for now get me everything
+        let fetchRequest = NSFetchRequest(entityName: ActivityItem.entityName())
+        var error: NSError?
+        if let results = self.managedObjectContext?.executeFetchRequest(fetchRequest, error: &error) {
+            activities = results as [ActivityItem]
+            // Need to sort these things eventually, by date.
+//            activities.sort({ $0.name! < $1.name! })
+        } else {
+            println("Unresolved error \(error?.localizedDescription), \(error?.userInfo)\n Attempting to get activity names")
+        }
     }
     
     // MARK: Segue
@@ -62,8 +77,13 @@ class ActivityTableViewController: UITableViewController, NSFetchedResultsContro
     }
     
     func configureCell(cell: UITableViewCell, atIndexPath indexPath: NSIndexPath) {
-        let activity = self.activities[indexPath.row] as ActivityItem
-        cell.textLabel.text = activity.activity?.name
+        let activity = self.activities[indexPath.row]
+        if let cellText = activity.activity?.name {
+            cell.textLabel.text = NSLocalizedString(cellText, comment: "")
+        } else {
+            cell.textLabel.text = NSLocalizedString("Missing activity name", comment: "Data corruption string, activities should always have a name")
+        }
+
     }
     
     // MARK: ActivtyEditControllerDelegate
@@ -74,6 +94,8 @@ class ActivityTableViewController: UITableViewController, NSFetchedResultsContro
 
     func activityEditControllerDidSave(controller: ActivityEditController) {
         controller.save()
+        fetchActivities()
+        activityTable.reloadData()
         self.dismissViewControllerAnimated(true, completion: nil)
     }
 
