@@ -15,6 +15,7 @@ class ActivityTableViewController: UITableViewController, NSFetchedResultsContro
     var managedObjectContext : NSManagedObjectContext?;
     
     @IBOutlet var activityTable: UITableView!
+    @IBOutlet var doneButton: UIBarButtonItem!
     var activities:[ActivityItem] = [];
 
     override func viewDidLoad() {

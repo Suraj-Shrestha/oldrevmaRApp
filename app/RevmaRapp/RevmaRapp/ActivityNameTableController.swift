@@ -14,13 +14,18 @@ protocol ActivityNameTableControllerDelegate {
     func activityEditControllerDidSave(controller: ActivityNameTableController)
 }
 
-class ActivityNameTableController : UITableViewController, NSFetchedResultsControllerDelegate {
+class ActivityNameTableController : UITableViewController, NSFetchedResultsControllerDelegate, UIAlertViewDelegate {
     
-    
+    @IBOutlet weak var doneButton: UIBarButtonItem!
+    @IBOutlet var nameTable: UITableView!
     var managedObjectContext : NSManagedObjectContext?;
-        
+    
     var activityNames: [ActivityName] = []
-    var selectedName: ActivityName?
+    var selectedName: ActivityName? {
+        didSet {
+            doneButton.enabled = selectedName != nil
+        }
+    }
     var delegate: ActivityNameTableControllerDelegate?
         
     override func viewDidLoad() {
@@ -83,30 +88,76 @@ class ActivityNameTableController : UITableViewController, NSFetchedResultsContr
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         if (indexPath.row == activityNames.count) {
             // start another dialog and reload the model
-            
+            // I would love to use UIAlertController here, but things should probably run on earlier versions of iOS
+            // Thankfully, a port to UIAlertController is pretty straightforward.
+            let alert = UIAlertView(title: NSLocalizedString("Create a New Activity", comment:"title for create activity alert"),
+                                       message: NSLocalizedString("What's the name of the new activity?)", comment:""),
+                                       delegate: self,
+                                       cancelButtonTitle: NSLocalizedString("Cancel", comment: "Cancel button"))
+            alert.alertViewStyle = UIAlertViewStyle.PlainTextInput
+            alert.addButtonWithTitle(NSLocalizedString("OK", comment: "OK Button"))
+            alert.show()
         } else {
-            var oldRow = -1
-            var index = 0
+            updateCellCheckmarkForTableView(tableView, indexPath: indexPath)
+        }
+    }
+    
+    func updateCellCheckmarkForTableView(tableView: UITableView, indexPath: NSIndexPath) {
+        var oldRow = -1
+        var index = 0
+        for name in activityNames {
+            if name == selectedName {
+                oldRow = index;
+                break;
+            }
+            ++index
+        }
+        
+        if oldRow == indexPath.row {
+            return
+        }
+        
+        if let newCell = tableView.cellForRowAtIndexPath(indexPath) {
+            newCell.accessoryType = UITableViewCellAccessoryType.Checkmark
+            selectedName = activityNames[indexPath.row]
+        }
+        
+        if let oldCell = tableView.cellForRowAtIndexPath(NSIndexPath(forRow:oldRow, inSection: 0)) {
+            oldCell.accessoryType = UITableViewCellAccessoryType.None
+        }
+        
+    }
+    
+    // MARK AlertView Delegate functions
+    func alertView(alertView: UIAlertView, clickedButtonAtIndex buttonIndex: Int) {
+        if buttonIndex == alertView.cancelButtonIndex {
+            return
+        }
+        
+        if let newName = alertView.textFieldAtIndex(0)?.text {
+            // Get rid of duplicates, when we can. Someone may have actually put this in already, so there's no point
+            // in having it in again (we will select it for them though).
+            // This doesn't solve any sort of translation issues. Those poor souls are on their own.
+            let lowerNewName = newName.lowercaseString
+            var row = 0
             for name in activityNames {
-                if name == selectedName {
-                    oldRow = index;
-                    break;
+                if lowerNewName == NSLocalizedString(name.name!, comment: "").lowercaseString {
+                    let indexPath = NSIndexPath(forRow: row, inSection: 0)
+                    updateCellCheckmarkForTableView(nameTable, indexPath: indexPath) // This also updates selected name to be correct
+                    nameTable.selectRowAtIndexPath(indexPath, animated: true, scrollPosition: UITableViewScrollPosition.None)
+                    return
                 }
-                ++index
+                ++row
             }
-            
-            if oldRow == indexPath.row {
-                return
-            }
-            
-            if let newCell = tableView.cellForRowAtIndexPath(indexPath) {
-                newCell.accessoryType = UITableViewCellAccessoryType.Checkmark
-                selectedName = activityNames[indexPath.row]
-            }
-
-            if let oldCell = tableView.cellForRowAtIndexPath(NSIndexPath(forRow:oldRow, inSection: 0)) {
-                oldCell.accessoryType = UITableViewCellAccessoryType.None
-            }
+            // Otherwise, do the creation
+            let newActivityName = ActivityName(managedObjectContext: managedObjectContext)
+            newActivityName.name = newName
+            var error: NSError?
+            managedObjectContext?.save(&error)
+            ZAssert(error == nil, "Unresolved error \(error?.localizedDescription), \(error?.userInfo)\n Attempting to save new activity")
+            fetchActivityNames()
+            selectedName = newActivityName
+            nameTable.reloadData()
         }
     }
 }

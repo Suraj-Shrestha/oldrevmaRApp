@@ -227,7 +227,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Nf2-4h-Ybr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1659" y="1066"/>
+            <point key="canvasLocation" x="1680" y="737"/>
         </scene>
         <!--Activities_table_title-->
         <scene sceneID="77f-JZ-sCk">
@@ -630,10 +630,14 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="doneButton" destination="BSh-kp-Wnw" id="sLi-lo-9o2"/>
+                        <outlet property="nameTable" destination="tKJ-SV-jXJ" id="coa-ke-xJV"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bb2-m2-W4Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1554" y="2134"/>
+            <point key="canvasLocation" x="1587" y="2388"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="M1u-DP-LMZ">
