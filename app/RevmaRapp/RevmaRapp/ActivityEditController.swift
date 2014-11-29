@@ -32,8 +32,7 @@ class ActivityEditController: UIViewController, UITableViewDataSource, UITableVi
     @IBOutlet weak var masterySlider: UISlider!
     
     @IBOutlet weak var painSlider: UISlider!
-    var managedObjectContext: NSManagedObjectContext?
-    var activityNames: [ActivityName] = []
+    var managedObjectContext: NSManagedObjectContext = (UIApplication.sharedApplication().delegate as AppDelegate).managedObjectContext
     var delegate: ActivityEditControllerDelegate?
     var activityName: ActivityName? {
         didSet {
@@ -43,25 +42,15 @@ class ActivityEditController: UIViewController, UITableViewDataSource, UITableVi
     
     var activityItem: ActivityItem! {
         didSet {
-            if (managedObjectContext == nil && activityItem != nil) {
-                managedObjectContext = activityItem!.managedObjectContext
-            }
             self.configureView()
         }
     }
     
     func configureView() {
-        if self.managedObjectContext == nil {
-            return
-        }
-        
-        if activityItem.activity != nil {
+        if activityItem?.activity != nil {
             activityName = activityItem.activity
         }
         
-        if activityNames.count == 0 {
-            fetchActivityNames()
-        }
     }
     
     func checkCanSave() {
@@ -70,23 +59,13 @@ class ActivityEditController: UIViewController, UITableViewDataSource, UITableVi
         }
 
     }
-    
-    func fetchActivityNames() {
-        let fetchRequest = NSFetchRequest(entityName: ActivityName.entityName())
-        var error: NSError?
-        if let results = self.managedObjectContext?.executeFetchRequest(fetchRequest, error: &error) {
-            activityNames = results as [ActivityName]
-        } else {
-            println("Unresolved error \(error?.localizedDescription), \(error?.userInfo)\n Attempting to get activity names")
-        }
-    }
-    
+   
     @IBAction func cancel(sender: UIBarButtonItem) {
         if delegate != nil {
             delegate!.activtyEditControllerDidCancel(self)
         }
     }
-    
+
     @IBAction func done(sender: UIBarButtonItem) {
         if delegate != nil {
             delegate!.activityEditControllerDidSave(self)
@@ -105,6 +84,9 @@ class ActivityEditController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     func save() {
+        if activityItem == nil {
+            activityItem = ActivityItem(managedObjectContext: managedObjectContext)
+        }
         activityItem.activity = activityName
         activityItem.pain = painSlider.value
         activityItem.duty = dutySlider.value
@@ -112,7 +94,7 @@ class ActivityEditController: UIViewController, UITableViewDataSource, UITableVi
         activityItem.mastery = masterySlider.value
         activityItem.importance = masterySlider.value
         var error: NSError?
-        managedObjectContext?.save(&error)
+        managedObjectContext.save(&error)
         if let realError = error {
             println("Unresolved error \(error?.localizedDescription), \(error?.userInfo)\n Attempting to get activity names")
         }

@@ -55,10 +55,8 @@ class ActivityTableViewController: UITableViewController, NSFetchedResultsContro
                     (segue.destinationViewController as ActivityEditController).activityItem = object
                 }
             case "createActivity":
-                let newActivity = ActivityItem(managedObjectContext: managedObjectContext)
                 if let editController = segue.destinationViewController.topViewController as? ActivityEditController {
                     editController.delegate = self
-                    editController.activityItem = newActivity
                 }
             default:
                 break;
