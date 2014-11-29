@@ -47,8 +47,19 @@ class ActivityEditController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     func configureView() {
-        if activityItem?.activity != nil {
+        if !isViewLoaded() {
+            return
+        }
+
+        if let ai = activityItem {
             activityName = activityItem.activity
+            painSlider.setValue(ai.pain!.floatValue, animated: true)
+            dutySlider.setValue(ai.duty!.floatValue, animated: true)
+            energySlider.setValue(ai.energy!.floatValue, animated: true)
+            masterySlider.setValue(ai.mastery!.floatValue, animated: true)
+            importanceSlider.setValue(ai.importance!.floatValue, animated: true)
+        } else {
+            checkCanSave() // Make sure the done button is correct regardless of what was set.
         }
         
     }
@@ -84,19 +95,21 @@ class ActivityEditController: UIViewController, UITableViewDataSource, UITableVi
     }
     
     func save() {
-        if activityItem == nil {
-            activityItem = ActivityItem(managedObjectContext: managedObjectContext)
+        // Save this as a separate variable to stop us from cascading didSets.
+        var activityToSave: ActivityItem? = activityItem
+        if activityToSave == nil {
+            activityToSave = ActivityItem(managedObjectContext: managedObjectContext)
         }
-        activityItem.activity = activityName
-        activityItem.pain = painSlider.value
-        activityItem.duty = dutySlider.value
-        activityItem.energy = energySlider.value
-        activityItem.mastery = masterySlider.value
-        activityItem.importance = masterySlider.value
+        activityToSave!.activity = activityName
+        activityToSave!.pain = painSlider.value
+        activityToSave!.duty = dutySlider.value
+        activityToSave!.energy = energySlider.value
+        activityToSave!.mastery = masterySlider.value
+        activityToSave!.importance = importanceSlider.value
         var error: NSError?
         managedObjectContext.save(&error)
         if let realError = error {
-            println("Unresolved error \(error?.localizedDescription), \(error?.userInfo)\n Attempting to get activity names")
+            println("Unresolved error \(error?.localizedDescription), \(error?.userInfo)\n Trying to save activity")
         }
     }
     
@@ -123,8 +136,8 @@ class ActivityEditController: UIViewController, UITableViewDataSource, UITableVi
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let tableCell = tableView.dequeueReusableCellWithIdentifier("ActivityEditActivityName", forIndexPath: indexPath) as UITableViewCell
-        if let cellText = activityName?.name {
-            tableCell.textLabel.text = NSLocalizedString(cellText, comment: "")
+        if activityName?.name != nil {
+            tableCell.textLabel.text = activityName!.visibleName()
         } else {
             tableCell.textLabel.text = NSLocalizedString("Tap to choose activity", comment: "Empty Activity Name")
         }

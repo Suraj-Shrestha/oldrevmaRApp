@@ -44,7 +44,6 @@ class ActivityTableViewController: UITableViewController, NSFetchedResultsContro
     }
     
     // MARK: Segue
-    
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // TODO: Get the detail view hooked up.
         if let whichSegue = segue.identifier {
@@ -52,7 +51,7 @@ class ActivityTableViewController: UITableViewController, NSFetchedResultsContro
             case "showActivity":
                 if let indexPath = self.tableView.indexPathForSelectedRow() {
                     let object = self.activities[indexPath.row] as ActivityItem
-                    (segue.destinationViewController as ActivityEditController).activityItem = object
+                    (segue.destinationViewController as ActivityViewController).activityItem = object
                 }
             case "createActivity":
                 if let editController = segue.destinationViewController.topViewController as? ActivityEditController {
@@ -78,7 +77,7 @@ class ActivityTableViewController: UITableViewController, NSFetchedResultsContro
     func configureCell(cell: UITableViewCell, atIndexPath indexPath: NSIndexPath) {
         let activity = self.activities[indexPath.row]
         if let cellText = activity.activity?.name {
-            cell.textLabel.text = NSLocalizedString(cellText, comment: "")
+            cell.textLabel.text = activity.activity!.visibleName()
         } else {
             cell.textLabel.text = NSLocalizedString("Missing activity name", comment: "Data corruption string, activities should always have a name")
         }

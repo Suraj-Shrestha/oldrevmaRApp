@@ -18,7 +18,7 @@
 		C93F56F21A0B70BE0030D481 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C93F56F11A0B70BE0030D481 /* Images.xcassets */; };
 		C93F56F51A0B70BE0030D481 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C93F56F31A0B70BE0030D481 /* LaunchScreen.xib */; };
 		C93F57011A0B70BE0030D481 /* RevmaRappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93F57001A0B70BE0030D481 /* RevmaRappTests.swift */; };
-		C9C10BE41A0B831C00784666 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C10BE31A0B831C00784666 /* ThirdViewController.swift */; };
+		C9C10BE41A0B831C00784666 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C10BE31A0B831C00784666 /* ActivityViewController.swift */; };
 		C9DD9F311A136E550099B184 /* RevmaRapp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C9DD9F2F1A136E550099B184 /* RevmaRapp.xcdatamodeld */; };
 		C9DD9F431A13A3A00099B184 /* _ActivityItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DD9F3F1A13A3A00099B184 /* _ActivityItem.swift */; };
 		C9DD9F441A13A3A00099B184 /* _ActivityName.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DD9F401A13A3A00099B184 /* _ActivityName.swift */; };
@@ -37,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		C90F589B1A24D0F600258424 /* ActivityNameTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ActivityNameTableController.swift; path = ActivityNameTableController.swift; sourceTree = "<group>"; };
+		C90F589B1A24D0F600258424 /* ActivityNameTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityNameTableController.swift; sourceTree = "<group>"; };
 		C93599411A19F66F00DE78BE /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/Localizable.strings; sourceTree = "<group>"; };
 		C93599461A19F66F00DE78BE /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C935994B1A19F66F00DE78BE /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 		C93F56FA1A0B70BE0030D481 /* RevmaRappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RevmaRappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C93F56FF1A0B70BE0030D481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C93F57001A0B70BE0030D481 /* RevmaRappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevmaRappTests.swift; sourceTree = "<group>"; };
-		C9C10BE31A0B831C00784666 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		C9C10BE31A0B831C00784666 /* ActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		C9DD9F301A136E550099B184 /* RevmaRapp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RevmaRapp.xcdatamodel; sourceTree = "<group>"; };
 		C9DD9F3F1A13A3A00099B184 /* _ActivityItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _ActivityItem.swift; sourceTree = "<group>"; };
 		C9DD9F401A13A3A00099B184 /* _ActivityName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _ActivityName.swift; sourceTree = "<group>"; };
@@ -109,7 +109,7 @@
 				C9DD9F3E1A13A3A00099B184 /* ModelObjects */,
 				C93F56E81A0B70BE0030D481 /* AppDelegate.swift */,
 				C93F56EA1A0B70BE0030D481 /* ActivityTableViewController.swift */,
-				C9C10BE31A0B831C00784666 /* ThirdViewController.swift */,
+				C9C10BE31A0B831C00784666 /* ActivityViewController.swift */,
 				C93F56EC1A0B70BE0030D481 /* ActivityEditController.swift */,
 				C90F589B1A24D0F600258424 /* ActivityNameTableController.swift */,
 				C93F56EE1A0B70BE0030D481 /* Main.storyboard */,
@@ -296,7 +296,7 @@
 				C93F56ED1A0B70BE0030D481 /* ActivityEditController.swift in Sources */,
 				C93F56E91A0B70BE0030D481 /* AppDelegate.swift in Sources */,
 				C9DD9F431A13A3A00099B184 /* _ActivityItem.swift in Sources */,
-				C9C10BE41A0B831C00784666 /* ThirdViewController.swift in Sources */,
+				C9C10BE41A0B831C00784666 /* ActivityViewController.swift in Sources */,
 				C90F589C1A24D0F600258424 /* ActivityNameTableController.swift in Sources */,
 				C93F56EB1A0B70BE0030D481 /* ActivityTableViewController.swift in Sources */,
 			);
