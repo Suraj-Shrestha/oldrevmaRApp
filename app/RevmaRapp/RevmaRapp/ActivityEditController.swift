@@ -40,6 +40,10 @@ class ActivityEditController: UIViewController, UITableViewDataSource, UITableVi
         }
     }
     
+    deinit {
+        NSNotificationCenter.defaultCenter().removeObserver(self)
+    }
+    
     var activityItem: ActivityItem! {
         didSet {
             self.configureView()
@@ -87,6 +91,12 @@ class ActivityEditController: UIViewController, UITableViewDataSource, UITableVi
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.configureView()
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "localeChanged", name: NSCurrentLocaleDidChangeNotification, object: nil)
+    }
+    
+    func localeChanged() {
+        configureView()
+        self.nameTable.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
@@ -96,16 +106,13 @@ class ActivityEditController: UIViewController, UITableViewDataSource, UITableVi
     
     func save() {
         // Save this as a separate variable to stop us from cascading didSets.
-        var activityToSave: ActivityItem? = activityItem
-        if activityToSave == nil {
-            activityToSave = ActivityItem(managedObjectContext: managedObjectContext)
-        }
-        activityToSave!.activity = activityName
-        activityToSave!.pain = painSlider.value
-        activityToSave!.duty = dutySlider.value
-        activityToSave!.energy = energySlider.value
-        activityToSave!.mastery = masterySlider.value
-        activityToSave!.importance = importanceSlider.value
+        let activityToSave: ActivityItem = activityItem != nil ? activityItem : ActivityItem(managedObjectContext: managedObjectContext)
+        activityToSave.activity = activityName
+        activityToSave.pain = painSlider.value
+        activityToSave.duty = dutySlider.value
+        activityToSave.energy = energySlider.value
+        activityToSave.mastery = masterySlider.value
+        activityToSave.importance = importanceSlider.value
         var error: NSError?
         managedObjectContext.save(&error)
         if let realError = error {
