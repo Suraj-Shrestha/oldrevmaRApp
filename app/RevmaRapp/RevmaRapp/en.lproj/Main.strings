@@ -12,7 +12,7 @@
 "31d-rr-kpW.text" = "Title";
 
 /* Class = "IBUIBarButtonItem"; title = "CancelButton"; ObjectID = "6Vy-Bu-EYs"; */
-"Foa-wD-Dhg.title" = "Cancel";
+"Dgf-pN-mvW.title" = "Cancel";
 
 /* Class = "IBUILabel"; text = "Goal"; ObjectID = "7Ea-GC-NRa"; */
 "7Ea-GC-NRa.text" = "Goal";
@@ -69,16 +69,16 @@
 "eNT-Kw-bpA.text" = "Desired";
 
 /* Class = "IBUINavigationItem"; title = "Add_Activity_Title"; ObjectID = "gWq-B7-YTq"; */
-"4RC-1t-qZ2.title" = "Add Activity";
+"doj-l7-GMf.title" = "Add Activity";
 
 /* Class = "IBUILabel"; text = "unimportant_label"; ObjectID = "lEY-Kq-zQW"; */
 "lEY-Kq-zQW.text" = "Unimportant";
 
 /* Class = "IBUILabel"; text = "Energy_use_label"; ObjectID = "mmU-uE-lQb"; */
-"mmU-uE-lQb.text" = "How much energy did you use:";
+"Energy_use_label" = "How much energy did you use:";
 
 /* Class = "IBUIBarButtonItem"; title = "DoneButton"; ObjectID = "njB-PF-o0O"; */
-"0uC-Lt-DCC.title" = "Done";
+"AJ6-gH-ywM.title" = "Done";
 
 /* Class = "IBUINavigationItem"; title = "Reflection_table_title"; ObjectID = "wqZ-Cx-GCV"; */
 "wqZ-Cx-GCV.title" = "Reflections";

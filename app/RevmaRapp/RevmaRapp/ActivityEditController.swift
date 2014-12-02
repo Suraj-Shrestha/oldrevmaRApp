@@ -14,9 +14,7 @@ protocol ActivityEditControllerDelegate {
     func activityEditControllerDidSave(controller: ActivityEditController)
 }
 
-class ActivityEditController: UIViewController, UITableViewDataSource, UITableViewDelegate, ActivityNameTableControllerDelegate {
-    
-    @IBOutlet weak var tableView: UITableView!
+class ActivityEditController: UITableViewController, ActivityNameTableControllerDelegate {
     
     @IBOutlet weak var doneButton: UIBarButtonItem!
   
@@ -31,21 +29,40 @@ class ActivityEditController: UIViewController, UITableViewDataSource, UITableVi
     @IBOutlet weak var painSlider: UISlider!
 
     
-    let kDatePickerID = "datePicker";
+    let kDatePickerID = "datePicker"
     let kDateCellID = "dateCell"
-    let kActivityNameID = "ActivityEditActivityName"
-    let kDurationID = "durationCell"
+    let kActivityNameCellID = "ActivityEditActivityName"
+    let kDurationCellID = "durationCell"
+    let kDurationPickerID = "durationPickerCell"
+    let kQuestionCellID = "questionCell"
+    let kQuestionCellAltID = "questionCellAlt"
+    
+    // Tags to pull out widgets
     let kDatePickerTag = 99
-    let kPickerAnimationDuration = 0.40
+    let kDurationPickerTag = 100
+    let kQuestionLabelTag = 500
+    let kMinLabelTag = 501
+    let kSliderTag = 502
+    let kMaxLabelTag = 503
+
     let kNameRow = 0
     let kDateRow = 1
     let kDatePickerRow = 2
+    let kDurationRow = 3
+    let kDurationPickerRow = 4
+    
+    let kEnergyRow = 0
+    let kMeaningRow = 1
+    let kDutyRow = 2
+    let kMasteryRow = 3
+    let kPainRow = 4
     
     var pickerCellRowHeight:CGFloat = 0.0
     var managedObjectContext: NSManagedObjectContext = (UIApplication.sharedApplication().delegate as AppDelegate).managedObjectContext
     var delegate: ActivityEditControllerDelegate?
     var dateformater: NSDateFormatter!
     var datePickerIndexPath: NSIndexPath?
+    var durationPickerIndexPath: NSIndexPath?
     var activityDate: NSDate?
     var activityName: ActivityName? {
         didSet {
@@ -153,6 +170,10 @@ class ActivityEditController: UIViewController, UITableViewDataSource, UITableVi
     func hasInlineDatePicker() -> Bool {
         return datePickerIndexPath != nil
     }
+    
+    func hasInlineDurationPicker() -> Bool {
+        return durationPickerIndexPath != nil
+    }
 
     func indexPathHasPicker(indexPath: NSIndexPath) -> Bool {
         return datePickerIndexPath?.row == indexPath.row
@@ -204,33 +225,59 @@ class ActivityEditController: UIViewController, UITableViewDataSource, UITableVi
     }
 
     // MARK TableViewDataSource
-    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 2
+    }
+
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         return indexPathHasPicker(indexPath) ? pickerCellRowHeight : tableView.rowHeight
     }
     
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return hasInlineDatePicker() ? 3 : 2
+    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if section == 0 {
+            return hasInlineDatePicker() || hasInlineDurationPicker() ? 4 : 3
+        } else {
+            return 5
+        }
     }
     
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        switch (indexPath.row) {
-        case kDateRow:
-            let tableCell = tableView.dequeueReusableCellWithIdentifier(kDateCellID) as UITableViewCell
-            tableCell.detailTextLabel!.text = dateformater.stringFromDate(activityDate!)
-            return tableCell
-        case kDatePickerRow:
-            return tableView.dequeueReusableCellWithIdentifier(kDatePickerID) as UITableViewCell
-        case kNameRow:
-            fallthrough
-        default:
-            let tableCell = tableView.dequeueReusableCellWithIdentifier(kActivityNameID) as UITableViewCell
-            if activityName?.name != nil {
-                tableCell.textLabel.text = activityName!.visibleName()
-            } else {
-                tableCell.textLabel.text = NSLocalizedString("Tap to choose activity", comment: "Empty Activity Name")
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        
+        if indexPath.section == 0 {
+            switch indexPath.row {
+            case kDateRow:
+                let tableCell = tableView.dequeueReusableCellWithIdentifier(kDateCellID) as UITableViewCell
+                tableCell.detailTextLabel!.text = dateformater.stringFromDate(activityDate!)
+                return tableCell
+            case kDatePickerRow:
+                return tableView.dequeueReusableCellWithIdentifier(kDatePickerID) as UITableViewCell
+            case kNameRow:
+                fallthrough
+            default:
+                let tableCell = tableView.dequeueReusableCellWithIdentifier(kActivityNameCellID) as UITableViewCell
+                if activityName?.name != nil {
+                    tableCell.textLabel.text = activityName!.visibleName()
+                } else {
+                    tableCell.textLabel.text = NSLocalizedString("Tap to choose activity", comment: "Empty Activity Name")
+                }
+                return tableCell
             }
-            return tableCell
         }
+        return configureQuestionCell(indexPath)
+    }
+    
+    func configureQuestionCell(indexPath: NSIndexPath) -> UITableViewCell {
+        let tableCell = tableView.dequeueReusableCellWithIdentifier(kQuestionCellID) as UITableViewCell
+        let questionLabel = tableCell.viewWithTag(kQuestionLabelTag) as UILabel
+        let minLabel = tableCell.viewWithTag(kMinLabelTag) as UILabel
+        let maxLabel = tableCell.viewWithTag(kMaxLabelTag) as UILabel
+        let slider = tableCell.viewWithTag(kSliderTag) as UISlider
+        switch indexPath.row {
+        case kEnergyRow:
+            questionLabel.text = NSLocalizedString("Energy_use_label", comment: "Energy_use_label")
+            minLabel.
+        }
+        return tableCell
     }
     
     func toggleDatePickerForSelectedIndexPath(indexPath: NSIndexPath) {
@@ -270,7 +317,7 @@ class ActivityEditController: UIViewController, UITableViewDataSource, UITableVi
 
 
     // MARK TableViewDelegate
-    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let cell = tableView.cellForRowAtIndexPath(indexPath)
         if cell?.reuseIdentifier == kDateCellID {
             displayInlineDatePickerForRowAtIndexPath(indexPath)
