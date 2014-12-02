@@ -497,26 +497,40 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="aul-jO-3o1" id="cSY-ML-v5G">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <slider opaque="NO" tag="502" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ald-xS-CmE">
-                                            <rect key="frame" x="51" y="40" width="498" height="31"/>
+                                        <slider opaque="NO" tag="502" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Ald-xS-CmE">
+                                            <rect key="frame" x="51" y="39" width="498" height="31"/>
                                         </slider>
-                                        <label opaque="NO" userInteractionEnabled="NO" tag="500" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Energy_use_label" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Mf-lN-Rkm">
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="500" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Energy_use_label" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Mf-lN-Rkm">
                                             <rect key="frame" x="8" y="9" width="568" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" tag="503" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="smile-face" translatesAutoresizingMaskIntoConstraints="NO" id="bV0-M9-YYF">
+                                        <imageView userInteractionEnabled="NO" tag="503" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smile-face" translatesAutoresizingMaskIntoConstraints="NO" id="bV0-M9-YYF">
                                             <rect key="frame" x="552" y="35" width="40" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="40" id="7ch-RP-E5X"/>
+                                                <constraint firstAttribute="height" constant="40" id="bKn-8g-tjC"/>
+                                            </constraints>
                                         </imageView>
-                                        <imageView userInteractionEnabled="NO" tag="501" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tongue-face" translatesAutoresizingMaskIntoConstraints="NO" id="c6w-6J-jcB">
+                                        <imageView userInteractionEnabled="NO" tag="501" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tongue-face" translatesAutoresizingMaskIntoConstraints="NO" id="c6w-6J-jcB">
                                             <rect key="frame" x="8" y="35" width="40" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="Sym-ba-Kor"/>
+                                                <constraint firstAttribute="width" constant="40" id="b51-2l-Zzb"/>
+                                            </constraints>
                                         </imageView>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="Ald-xS-CmE" firstAttribute="leading" secondItem="c6w-6J-jcB" secondAttribute="trailing" constant="5" id="6Ej-gr-Xnb"/>
+                                        <constraint firstItem="bV0-M9-YYF" firstAttribute="trailing" secondItem="cSY-ML-v5G" secondAttribute="trailingMargin" id="9Es-eG-bOM"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="0Mf-lN-Rkm" secondAttribute="trailing" constant="16" id="HMA-tK-vpv"/>
                                         <constraint firstItem="Ald-xS-CmE" firstAttribute="top" secondItem="cSY-ML-v5G" secondAttribute="topMargin" constant="31" id="QNM-aB-a0L"/>
-                                        <constraint firstItem="0Mf-lN-Rkm" firstAttribute="top" secondItem="cSY-ML-v5G" secondAttribute="topMargin" id="g7Q-1K-Wey"/>
+                                        <constraint firstItem="0Mf-lN-Rkm" firstAttribute="top" secondItem="cSY-ML-v5G" secondAttribute="topMargin" constant="1" id="g7Q-1K-Wey"/>
+                                        <constraint firstItem="bV0-M9-YYF" firstAttribute="top" secondItem="cSY-ML-v5G" secondAttribute="topMargin" constant="27" id="hAu-fV-2x9"/>
+                                        <constraint firstItem="c6w-6J-jcB" firstAttribute="leading" secondItem="cSY-ML-v5G" secondAttribute="leadingMargin" id="s5V-aN-Vxp"/>
+                                        <constraint firstItem="bV0-M9-YYF" firstAttribute="leading" secondItem="Ald-xS-CmE" secondAttribute="trailing" constant="5" id="sPl-j7-UhX"/>
+                                        <constraint firstItem="c6w-6J-jcB" firstAttribute="top" secondItem="cSY-ML-v5G" secondAttribute="topMargin" constant="27" id="xXX-km-Pil"/>
                                         <constraint firstItem="0Mf-lN-Rkm" firstAttribute="leading" secondItem="cSY-ML-v5G" secondAttribute="leadingMargin" id="zGZ-Pf-1Tv"/>
                                     </constraints>
                                 </tableViewCellContentView>
