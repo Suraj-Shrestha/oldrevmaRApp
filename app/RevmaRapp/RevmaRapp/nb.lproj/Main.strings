@@ -26,7 +26,7 @@
 "EXF-tP-vvc.title" = "Aktiviteter";
 
 /* Class = "IBUILabel"; text = "Activity_meaning_label"; ObjectID = "HaQ-b7-eiI"; */
-"HaQ-b7-eiI.text" = "Aktivitetens betydning for meg";
+"HaQ-b7-eiI.text" = "Aktivitetens betydning for meg:";
 
 /* Class = "IBUITabBarItem"; title = "Activities_title"; ObjectID = "JYO-ep-uMH"; */
 "JYO-ep-uMH.title" = "Aktiviteter";
