@@ -1,12 +1,12 @@
 
 /* Class = "IBUILabel"; text = "Activity_pain_label"; ObjectID = "0kL-Gx-kYQ"; */
-"0kL-Gx-kYQ.text" = "The Activity Caused Pain";
+"Activity_pain_label" = "The Activity Caused Pain";
 
 /* Class = "IBUILabel"; text = "Time_Start_Label"; ObjectID = "17y-PJ-aEj"; */
 "17y-PJ-aEj.text" = "Start Time";
 
 /* Class = "IBUILabel"; text = "Duty_label"; ObjectID = "2ur-gQ-y4n"; */
-"2ur-gQ-y4n.text" = "Duty";
+"Duty_label" = "Duty";
 
 /* Class = "IBUILabel"; text = "Title"; ObjectID = "31d-rr-kpW"; */
 "31d-rr-kpW.text" = "Title";
@@ -27,16 +27,16 @@
 "EXF-tP-vvc.title" = "Activities";
 
 /* Class = "IBUILabel"; text = "Activity_meaning_label"; ObjectID = "HaQ-b7-eiI"; */
-"HaQ-b7-eiI.text" = "The activity’s meaning for me:";
+"Activity_meaning_label" = "The activity’s meaning for me:";
 
 /* Class = "IBUITabBarItem"; title = "Activities"; ObjectID = "JYO-ep-uMH"; */
 "JYO-ep-uMH.title" = "Activities";
 
 /* Class = "IBUILabel"; text = "Activity_duty_label"; ObjectID = "KeF-77-DHr"; */
-"KeF-77-DHr.text" = "The main reason for this activity was:";
+"Activity_duty_label" = "The main reason for this activity was:";
 
 /* Class = "IBUILabel"; text = "Activity_mastering_label"; ObjectID = "MWA-Ec-kYD"; */
-"MWA-Ec-kYD.text" = "I was able to master this activity";
+"Activity_mastering_label" = "I was able to master this activity:";
 
 /* Class = "IBUILabel"; text = "Loaded by SecondViewController"; ObjectID = "NDk-cv-Gan"; */
 "NDk-cv-Gan.text" = "Loaded by SecondViewController";
@@ -63,16 +63,16 @@
 "cPa-gy-q4n.title" = "History";
 
 /* Class = "IBUILabel"; text = "important_label"; ObjectID = "cnS-uj-iga"; */
-"cnS-uj-iga.text" = "Important";
+"important_label" = "Important";
 
 /* Class = "IBUILabel"; text = "Desired_label"; ObjectID = "eNT-Kw-bpA"; */
-"eNT-Kw-bpA.text" = "Desired";
+"Desired_label" = "Desired";
 
 /* Class = "IBUINavigationItem"; title = "Add_Activity_Title"; ObjectID = "gWq-B7-YTq"; */
 "doj-l7-GMf.title" = "Add Activity";
 
 /* Class = "IBUILabel"; text = "unimportant_label"; ObjectID = "lEY-Kq-zQW"; */
-"lEY-Kq-zQW.text" = "Unimportant";
+"unimportant_label" = "Unimportant";
 
 /* Class = "IBUILabel"; text = "Energy_use_label"; ObjectID = "mmU-uE-lQb"; */
 "Energy_use_label" = "How much energy did you use:";

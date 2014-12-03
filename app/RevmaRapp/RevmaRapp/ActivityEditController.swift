@@ -17,18 +17,8 @@ protocol ActivityEditControllerDelegate {
 class ActivityEditController: UITableViewController, ActivityNameTableControllerDelegate {
     
     @IBOutlet weak var doneButton: UIBarButtonItem!
-  
-    @IBOutlet weak var energySlider: UISlider!
     
-    @IBOutlet weak var importanceSlider: UISlider!
-    
-    @IBOutlet weak var dutySlider: UISlider!
-    
-    @IBOutlet weak var masterySlider: UISlider!
-    
-    @IBOutlet weak var painSlider: UISlider!
-
-    
+    // CellIDs
     let kDatePickerID = "datePicker"
     let kDateCellID = "dateCell"
     let kActivityNameCellID = "ActivityEditActivityName"
@@ -45,18 +35,22 @@ class ActivityEditController: UITableViewController, ActivityNameTableController
     let kSliderTag = 502
     let kMaxLabelTag = 503
 
+    // Rows for Section 0
     let kNameRow = 0
     let kDateRow = 1
     let kDatePickerRow = 2
     let kDurationRow = 3
     let kDurationPickerRow = 4
-    
+
+    // Rows for Section 1
     let kEnergyRow = 0
     let kMeaningRow = 1
     let kDutyRow = 2
     let kMasteryRow = 3
     let kPainRow = 4
-    
+
+    var valuesArray: [Float] = [0.5, 0.5, 0.5, 0.5, 0.5]
+
     var pickerCellRowHeight:CGFloat = 0.0
     var managedObjectContext: NSManagedObjectContext = (UIApplication.sharedApplication().delegate as AppDelegate).managedObjectContext
     var delegate: ActivityEditControllerDelegate?
@@ -88,15 +82,16 @@ class ActivityEditController: UITableViewController, ActivityNameTableController
         if let ai = activityItem {
             activityName = ai.activity
             activityDate = ai.time_start
-            painSlider.setValue(ai.pain!.floatValue, animated: true)
-            dutySlider.setValue(ai.duty!.floatValue, animated: true)
-            energySlider.setValue(ai.energy!.floatValue, animated: true)
-            masterySlider.setValue(ai.mastery!.floatValue, animated: true)
-            importanceSlider.setValue(ai.importance!.floatValue, animated: true)
+            valuesArray[kEnergyRow] = ai.energy!.floatValue
+            valuesArray[kMeaningRow] = ai.importance!.floatValue
+            valuesArray[kDutyRow] = ai.duty!.floatValue
+            valuesArray[kMasteryRow] = ai.mastery!.floatValue
+            valuesArray[kPainRow] = ai.pain!.floatValue
         } else {
             activityDate = NSDate()
             checkCanSave() // Make sure the done button is correct regardless of what was set.
         }
+        tableView.reloadData()
         
     }
     
@@ -106,7 +101,35 @@ class ActivityEditController: UITableViewController, ActivityNameTableController
         }
 
     }
+    
+    
+    @IBAction func dateChanged(datePicker: UIDatePicker) {
+        let targetedCellIndexPath = hasInlineDatePicker() ? NSIndexPath(forRow: datePickerIndexPath!.row - 1, inSection: 0) : tableView.indexPathForSelectedRow()
+        if let cell = tableView.cellForRowAtIndexPath(targetedCellIndexPath) {
+            activityDate = datePicker.date
+            cell.detailTextLabel!.text = dateformater.stringFromDate(datePicker.date)
+        }
+    }
    
+    @IBAction func sliderChanged(slider: UISlider) {
+        var tableCell: UITableViewCell?
+        // Walk up the tree to grab the tableviewcell
+        var superview = slider.superview
+        while superview != nil {
+            if let tc = superview as? UITableViewCell {
+                tableCell = tc
+                break
+            }
+            superview = superview?.superview
+        }
+        if tableCell != nil {
+            if let indexPath = tableView.indexPathForCell(tableCell!) {
+                ZAssert(indexPath.section == 1, "Slider in another section than expected")
+                valuesArray[indexPath.row] = slider.value
+            }
+        }
+    }
+
     @IBAction func cancel(sender: UIBarButtonItem) {
         if delegate != nil {
             delegate!.activtyEditControllerDidCancel(self)
@@ -182,29 +205,22 @@ class ActivityEditController: UITableViewController, ActivityNameTableController
     func indexPathHasDate(indexPath: NSIndexPath) -> Bool {
         return indexPath.row == kDateRow || (hasInlineDatePicker() && indexPath == kDateRow + 1)
     }
-    
-    @IBAction func dateChanged(sender: UIDatePicker) {
-        let targetedCellIndexPath = hasInlineDatePicker() ? NSIndexPath(forRow: datePickerIndexPath!.row - 1, inSection: 0) : tableView.indexPathForSelectedRow()
-        if let cell = tableView.cellForRowAtIndexPath(targetedCellIndexPath) {
-            activityDate = sender.date
-            cell.detailTextLabel!.text = dateformater.stringFromDate(sender.date)
-        }
-    }
+
     
     func save() {
         // Save this as a separate variable to stop us from cascading didSets.
         let activityToSave: ActivityItem = activityItem != nil ? activityItem : ActivityItem(managedObjectContext: managedObjectContext)
         activityToSave.activity = activityName
         activityToSave.time_start = activityDate
-        activityToSave.pain = painSlider.value
-        activityToSave.duty = dutySlider.value
-        activityToSave.energy = energySlider.value
-        activityToSave.mastery = masterySlider.value
-        activityToSave.importance = importanceSlider.value
+        activityToSave.pain = valuesArray[kPainRow]
+        activityToSave.duty = valuesArray[kDutyRow]
+        activityToSave.energy = valuesArray[kEnergyRow]
+        activityToSave.mastery = valuesArray[kMasteryRow]
+        activityToSave.importance = valuesArray[kMeaningRow]
         var error: NSError?
         managedObjectContext.save(&error)
         if let realError = error {
-            println("Unresolved error \(error?.localizedDescription), \(error?.userInfo)\n Trying to save activity")
+            println("Unresolved error \(realError.localizedDescription), \(realError.userInfo)\n Trying to save activity")
         }
     }
     
@@ -230,15 +246,20 @@ class ActivityEditController: UITableViewController, ActivityNameTableController
     }
 
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        return indexPathHasPicker(indexPath) ? pickerCellRowHeight : tableView.rowHeight
+        if indexPath.section == 0 {
+            return indexPathHasPicker(indexPath) ? pickerCellRowHeight : tableView.rowHeight
+        }
+        return 80
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
-            return hasInlineDatePicker() || hasInlineDurationPicker() ? 4 : 3
-        } else {
-            return 5
+            return hasInlineDatePicker() ? 3 : 2
+//            return hasInlineDatePicker() || hasInlineDurationPicker() ? 4 : 3
         }
+        
+        return valuesArray.count
+        
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -267,17 +288,55 @@ class ActivityEditController: UITableViewController, ActivityNameTableController
     }
     
     func configureQuestionCell(indexPath: NSIndexPath) -> UITableViewCell {
-        let tableCell = tableView.dequeueReusableCellWithIdentifier(kQuestionCellID) as UITableViewCell
-        let questionLabel = tableCell.viewWithTag(kQuestionLabelTag) as UILabel
-        let minLabel = tableCell.viewWithTag(kMinLabelTag) as UILabel
-        let maxLabel = tableCell.viewWithTag(kMaxLabelTag) as UILabel
-        let slider = tableCell.viewWithTag(kSliderTag) as UISlider
         switch indexPath.row {
-        case kEnergyRow:
-            questionLabel.text = NSLocalizedString("Energy_use_label", comment: "Energy_use_label")
-            minLabel.
+        case kEnergyRow, kPainRow, kMasteryRow:
+            let tableCell = tableView.dequeueReusableCellWithIdentifier(kQuestionCellID) as UITableViewCell
+            let questionLabel = tableCell.viewWithTag(kQuestionLabelTag) as UILabel
+            let minLabel = tableCell.viewWithTag(kMinLabelTag) as UIImageView
+            let maxLabel = tableCell.viewWithTag(kMaxLabelTag) as UIImageView
+            let slider = tableCell.viewWithTag(kSliderTag) as UISlider
+            switch indexPath.row {
+            case kEnergyRow:
+                questionLabel.text = NSLocalizedString("Energy_use_label", comment: "Energy_use_label")
+                minLabel.image = UIImage(named: "tongue-face")
+                maxLabel.image = UIImage(named: "smile-face")
+                slider.value = valuesArray[indexPath.row]
+            case kPainRow:
+                questionLabel.text = NSLocalizedString("Activity_pain_label", comment: "Activity_pain_label")
+                minLabel.image = UIImage(named: "first")
+                minLabel.frame = CGRectMake(minLabel.frame.origin.x, minLabel.frame.origin.y, 28, 28)
+                maxLabel.image = UIImage(named: "first")
+                slider.value = valuesArray[indexPath.row]
+            case kMasteryRow:
+                fallthrough
+            default:
+                questionLabel.text = NSLocalizedString("Activity_mastering_label", comment: "Activity_mastering_label")
+                minLabel.image = UIImage(named: "thumbs-down")
+                maxLabel.image = UIImage(named: "thumbs-up")
+                slider.value = valuesArray[indexPath.row]
+            }
+            return tableCell
+        case kMeaningRow, kDutyRow:
+            let tableCell = tableView.dequeueReusableCellWithIdentifier(kQuestionCellAltID) as UITableViewCell
+            let questionLabel = tableCell.viewWithTag(kQuestionLabelTag) as UILabel
+            let minLabel = tableCell.viewWithTag(kMinLabelTag) as UILabel
+            let maxLabel = tableCell.viewWithTag(kMaxLabelTag) as UILabel
+            let slider = tableCell.viewWithTag(kSliderTag) as UISlider
+            if indexPath.row == kMeaningRow {
+                questionLabel.text = NSLocalizedString("Activity_duty_label", comment: "Activity_duty_label")
+                minLabel.text = NSLocalizedString("Duty_label", comment: "Duty_label")
+                maxLabel.text = NSLocalizedString("Desired_label", comment: "Desired_label")
+                slider.value = valuesArray[indexPath.row]
+            } else {
+                questionLabel.text = NSLocalizedString("Activity_meaning_label", comment: "Activity_meaning_label")
+                minLabel.text = NSLocalizedString("important_label", comment: "important_label")
+                maxLabel.text = NSLocalizedString("unimportant_label", comment: "unimportant_label")
+                slider.value = valuesArray[indexPath.row]
+            }
+            return tableCell
+        default:
+            return tableView.dequeueReusableCellWithIdentifier(kQuestionCellAltID) as UITableViewCell
         }
-        return tableCell
     }
     
     func toggleDatePickerForSelectedIndexPath(indexPath: NSIndexPath) {

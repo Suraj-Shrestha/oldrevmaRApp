@@ -1,8 +1,8 @@
 /* Class = "IBUILabel"; text = "Activity_pain_label"; ObjectID = "0kL-Gx-kYQ"; */
-"0kL-Gx-kYQ.text" = "Aktiviteten gav smerte:";
+"Activity_pain_label" = "Aktiviteten gav smerte:";
 
 /* Class = "IBUILabel"; text = "Duty_label"; ObjectID = "2ur-gQ-y4n"; */
-"2ur-gQ-y4n.text" = "Plikt";
+"Duty_label" = "Plikt";
 
 /* Class = "IBUIBarButtonItem"; title = "CancelButton"; ObjectID = "6Vy-Bu-EYs"; */
 "Dgf-pN-mvW.title" = "Avbryt";
@@ -26,16 +26,16 @@
 "EXF-tP-vvc.title" = "Aktiviteter";
 
 /* Class = "IBUILabel"; text = "Activity_meaning_label"; ObjectID = "HaQ-b7-eiI"; */
-"HaQ-b7-eiI.text" = "Aktivitetens betydning for meg:";
+"Activity_meaning_label" = "Aktivitetens betydning for meg:";
 
 /* Class = "IBUITabBarItem"; title = "Activities_title"; ObjectID = "JYO-ep-uMH"; */
 "JYO-ep-uMH.title" = "Aktiviteter";
 
 /* Class = "IBUILabel"; text = "Activity_duty_label"; ObjectID = "KeF-77-DHr"; */
-"KeF-77-DHr.text" = "Hvorfor utførte du denne aktiviteten:";
+"Activity_duty_label" = "Hvorfor utførte du denne aktiviteten:";
 
 /* Class = "IBUILabel"; text = "Activity_mastering_label"; ObjectID = "MWA-Ec-kYD"; */
-"MWA-Ec-kYD.text" = "Jeg mestret aktiviteten:";
+"Activity_mastering_label" = "Jeg mestret aktiviteten:";
 
 /* Class = "IBUILabel"; text = "Loaded by SecondViewController"; ObjectID = "NDk-cv-Gan"; */
 "NDk-cv-Gan.text" = "Loaded by SecondViewController";
@@ -62,16 +62,16 @@
 "cPa-gy-q4n.title" = "Historikk";
 
 /* Class = "IBUILabel"; text = "important_label"; ObjectID = "cnS-uj-iga"; */
-"cnS-uj-iga.text" = "Viktig";
+"important_label" = "Viktig";
 
 /* Class = "IBUILabel"; text = "Desired_label"; ObjectID = "eNT-Kw-bpA"; */
-"eNT-Kw-bpA.text" = "Ønsket";
+"Desired_label" = "Ønsket";
 
 /* Class = "IBUINavigationItem"; title = "Add_Activity_Title"; ObjectID = "gWq-B7-YTq"; */
 "doj-l7-GMf.title" = "Ny aktivitet";
 
 /* Class = "IBUILabel"; text = "unimportant_label"; ObjectID = "lEY-Kq-zQW"; */
-"lEY-Kq-zQW.text" = "Uviktig";
+"unimportant_label" = "Uviktig";
 
 /* Class = "IBUILabel"; text = "Energy_use_label"; ObjectID = "mmU-uE-lQb"; */
 "Energy_use_label" = "Hvor mye energi brukte du:";
