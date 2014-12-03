@@ -97,3 +97,7 @@
 /* "Empty Activity Name" */
 "Tap to choose activity" = "Tap to choose activity";
 
+/* Duration in Minutes */
+"%@ minutes" = "%@ minutes";
+
+"1 minute" = "1 minute";

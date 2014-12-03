@@ -58,6 +58,7 @@ class ActivityViewController: UIViewController, ActivityEditControllerDelegate {
             switch (whichSegue) {
             case "editActivity":
                 if let editController = segue.destinationViewController.topViewController as? ActivityEditController {
+                    editController.title = NSLocalizedString("Edit Activity", comment: "Edit Activity Title")
                     editController.delegate = self
                     editController.activityItem = activityItem
                 }

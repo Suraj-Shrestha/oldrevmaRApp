@@ -14,7 +14,7 @@ protocol ActivityEditControllerDelegate {
     func activityEditControllerDidSave(controller: ActivityEditController)
 }
 
-class ActivityEditController: UITableViewController, ActivityNameTableControllerDelegate {
+class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIPickerViewDelegate, ActivityNameTableControllerDelegate {
     
     @IBOutlet weak var doneButton: UIBarButtonItem!
     
@@ -98,11 +98,9 @@ class ActivityEditController: UITableViewController, ActivityNameTableController
 
     func checkCanSave() {
         if (doneButton != nil) {
-            doneButton.enabled = (activityName != nil) && (activityDate != nil)
+            doneButton.enabled = activityName != nil && activityDate != nil
         }
-
     }
-    
     
     @IBAction func dateChanged(datePicker: UIDatePicker) {
         let targetedCellIndexPath = hasInlineDatePicker() ? NSIndexPath(forRow: datePickerIndexPath!.row - 1, inSection: 0) : tableView.indexPathForSelectedRow()
@@ -170,9 +168,68 @@ class ActivityEditController: UITableViewController, ActivityNameTableController
         // Dispose of any resources that can be recreated.
     }
     
+    // Duration Picker Stuff
+    func hasDurationPickerForIndexPath(indexPath: NSIndexPath) -> Bool {
+        let targetedRow = indexPath.row + 1
+        if let checkDurationPickerCell = tableView.cellForRowAtIndexPath(NSIndexPath(forRow: targetedRow, inSection:0)) {
+            return checkDurationPickerCell.viewWithTag(kDurationPickerTag) != nil
+        }
+        return false
+    }
     
+    func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
+        return 1 // Probably WAY to simple here
+    }
+    
+    func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return 720 // 12 Hours in minutes, sure…
+    }
+    
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
+        // Fix plurals correctly… eventrually
+        if row == 0 {
+            return NSLocalizedString("1 minute", comment: "Single minute")
+        }
+        return NSString(format: NSLocalizedString("%@ minutes", comment: "Multiple (@%) minutes"), "\(row)")
+    }
+
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        let targetedCellIndexPath = hasInlineDurationPicker() ? NSIndexPath(forRow: durationPickerIndexPath!.row - 1, inSection: 0) : tableView.indexPathForSelectedRow()
+        if let cell = tableView.cellForRowAtIndexPath(targetedCellIndexPath) {
+            durationInMinutes = row + 1
+            cell.detailTextLabel!.text = numberFormatter.stringFromNumber(NSNumber(integer: durationInMinutes))
+        }
+    }
+
+    func updateDurationPicker() {
+        if durationPickerIndexPath == nil {
+            return
+        }
+        
+        if let associatiedDurationPickerCell = tableView.cellForRowAtIndexPath(durationPickerIndexPath!) {
+            if let tmpPicker = associatiedDurationPickerCell.viewWithTag(kDurationPickerTag) as? UIPickerView {
+                tmpPicker.selectRow(durationInMinutes - 1, inComponent: 0, animated: false)
+            }
+        }
+    }
+
+    func hasInlineDurationPicker() -> Bool {
+        return durationPickerIndexPath != nil
+    }
+
+    func indexPathHasDurationPicker(indexPath: NSIndexPath) -> Bool {
+        return durationPickerIndexPath?.section == indexPath.section && durationPickerIndexPath?.row == indexPath.row
+    }
+
+    func indexPathHasDuration(indexPath: NSIndexPath) -> Bool {
+        if indexPath.section != 0 {
+            return false
+        }
+        return hasInlineDatePicker() ? indexPath.row == kDateRow + 2 : indexPath.row == kDateRow + 1
+    }
+
     // DatePickerStuff
-    func hasPickerForIndexPath(indexPath: NSIndexPath) -> Bool {
+    func hasDatePickerForIndexPath(indexPath: NSIndexPath) -> Bool {
         let targetedRow = indexPath.row + 1
         if let checkDatePickerCell = tableView.cellForRowAtIndexPath(NSIndexPath(forRow: targetedRow, inSection:0)) {
             return checkDatePickerCell.viewWithTag(kDatePickerTag) != nil
@@ -191,36 +248,21 @@ class ActivityEditController: UITableViewController, ActivityNameTableController
             }
         }
     }
-    
+
     func hasInlineDatePicker() -> Bool {
         return datePickerIndexPath != nil
     }
     
-    func hasInlineDurationPicker() -> Bool {
-        return durationPickerIndexPath != nil
-    }
-
     // Use a straight up comparison here since my index path's may be nil from time-to-time.
     func indexPathHasDatePicker(indexPath: NSIndexPath) -> Bool {
         return datePickerIndexPath?.section == indexPath.section && datePickerIndexPath?.row == indexPath.row
     }
     
-    func indexPathHasDurationPicker(indexPath: NSIndexPath) -> Bool {
-        return durationPickerIndexPath?.section == indexPath.section && durationPickerIndexPath?.row == indexPath.row
-    }
-
     func indexPathHasDate(indexPath: NSIndexPath) -> Bool {
         if indexPath.section != 0 {
             return false
         }
         return indexPath.row == kDateRow
-    }
-    
-    func indexPathHasDuration(indexPath: NSIndexPath) -> Bool {
-        if indexPath.section != 0 {
-            return false
-        }
-        return hasInlineDatePicker() ? indexPath.row == kDateRow + 2 : indexPath.row == kDateRow + 1
     }
 
 
@@ -283,7 +325,6 @@ class ActivityEditController: UITableViewController, ActivityNameTableController
         }
         
         return valuesArray.count
-        
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -291,6 +332,15 @@ class ActivityEditController: UITableViewController, ActivityNameTableController
         if indexPath.section == 0 {
             if indexPathHasDatePicker(indexPath) {
                 return tableView.dequeueReusableCellWithIdentifier(kDatePickerID) as UITableViewCell
+            }
+            
+            if indexPathHasDurationPicker(indexPath) {
+                let tableCell = tableView.dequeueReusableCellWithIdentifier(kDurationPickerID) as UITableViewCell
+                if let picker = tableCell.viewWithTag(kDurationPickerTag) as? UIPickerView {
+                    picker.delegate = self
+                    picker.dataSource = self
+                }
+                return tableCell
             }
             
             if indexPathHasDate(indexPath) {
@@ -372,11 +422,52 @@ class ActivityEditController: UITableViewController, ActivityNameTableController
         }
     }
     
+    
+    // Selection for the inline picker (Refactor this!)
+    func toggleDurationPickerForSelectedIndexPath(indexPath: NSIndexPath) {
+        tableView.beginUpdates()
+        let indexPaths = [NSIndexPath(forRow: indexPath.row + 1, inSection: 0)]
+        
+        if hasDurationPickerForIndexPath(indexPath) {
+            tableView.deleteRowsAtIndexPaths(indexPaths, withRowAnimation: UITableViewRowAnimation.Fade)
+        } else {
+            tableView.insertRowsAtIndexPaths(indexPaths, withRowAnimation: UITableViewRowAnimation.Fade)
+        }
+        
+        tableView.endUpdates()
+    }
+    
+    func displayInlineDurationPickerForRowAtIndexPath(indexPath: NSIndexPath) {
+        tableView.beginUpdates()
+        let before = hasInlineDurationPicker() ? durationPickerIndexPath!.row < indexPath.row : false
+        let sameCellClicked = durationPickerIndexPath?.row == indexPath.row + 1
+        
+        if hasInlineDurationPicker() {
+            tableView.deleteRowsAtIndexPaths([durationPickerIndexPath!], withRowAnimation: UITableViewRowAnimation.Fade)
+            durationPickerIndexPath = nil
+        }
+        
+        if !sameCellClicked {
+            let rowToReveal = before ? indexPath.row - 1 : indexPath.row
+            let indexPathToReveal = NSIndexPath(forRow: rowToReveal, inSection: 0)
+            toggleDatePickerForSelectedIndexPath(indexPathToReveal)
+            durationPickerIndexPath = NSIndexPath(forRow: indexPathToReveal.row + 1, inSection: 0)
+        }
+        
+        // always deselect the row containing the start or end date
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+
+        tableView.endUpdates()
+        updateDurationPicker()
+    }
+    
+    
+    // Selection for the inline datepicker
     func toggleDatePickerForSelectedIndexPath(indexPath: NSIndexPath) {
         tableView.beginUpdates()
         let indexPaths = [NSIndexPath(forRow: indexPath.row + 1, inSection: 0)]
         
-        if hasPickerForIndexPath(indexPath) {
+        if hasDatePickerForIndexPath(indexPath) {
             tableView.deleteRowsAtIndexPaths(indexPaths, withRowAnimation: UITableViewRowAnimation.Fade)
         } else {
             tableView.insertRowsAtIndexPaths(indexPaths, withRowAnimation: UITableViewRowAnimation.Fade)
@@ -390,7 +481,7 @@ class ActivityEditController: UITableViewController, ActivityNameTableController
         let sameCellClicked = datePickerIndexPath?.row == indexPath.row + 1
         
         if hasInlineDatePicker() {
-            self.tableView.deleteRowsAtIndexPaths([NSIndexPath(forRow: self.datePickerIndexPath!.row, inSection: 0)], withRowAnimation: UITableViewRowAnimation.Fade)
+            self.tableView.deleteRowsAtIndexPaths([datePickerIndexPath!], withRowAnimation: UITableViewRowAnimation.Fade)
             datePickerIndexPath = nil
         }
 
@@ -410,11 +501,18 @@ class ActivityEditController: UITableViewController, ActivityNameTableController
 
     // MARK TableViewDelegate
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        let cell = tableView.cellForRowAtIndexPath(indexPath)
-        if cell?.reuseIdentifier == kDateCellID {
-            displayInlineDatePickerForRowAtIndexPath(indexPath)
+        if let cellID = tableView.cellForRowAtIndexPath(indexPath)?.reuseIdentifier {
+            switch cellID {
+            case kDateCellID:
+                displayInlineDatePickerForRowAtIndexPath(indexPath)
+            case kDurationCellID:
+                displayInlineDurationPickerForRowAtIndexPath(indexPath)
+            default:
+                break
+            }
         }
     }
+
     // MARK ActivityNameTableController
     func activtyEditControllerDidCancel(controller: ActivityNameTableController) {
         self.dismissViewControllerAnimated(true, completion: nil)

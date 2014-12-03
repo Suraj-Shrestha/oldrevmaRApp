@@ -96,3 +96,11 @@
 
 /* "Empty Activity Name" */
 "Tap to choose activity" = "Velg aktivitet";
+
+/* Duration in Minutes */
+"%@ minutes" = "%@ minutter";
+
+"1 minute" = "1 minutt";
+
+/* "Edit Activity Title" */
+"Edit Activity" = "Endre Aktivitetet";
