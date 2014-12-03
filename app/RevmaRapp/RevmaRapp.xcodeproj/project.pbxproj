@@ -218,6 +218,7 @@
 				TargetAttributes = {
 					C93F56E21A0B70BE0030D481 = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = AU593AAM68;
 					};
 					C93F56F91A0B70BE0030D481 = {
 						CreatedOnToolsVersion = 6.1;

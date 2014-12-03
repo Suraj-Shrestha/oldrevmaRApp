@@ -51,7 +51,9 @@ class ActivityTableViewController: UITableViewController, NSFetchedResultsContro
             case "showActivity":
                 if let indexPath = self.tableView.indexPathForSelectedRow() {
                     let object = self.activities[indexPath.row] as ActivityItem
-                    (segue.destinationViewController as ActivityViewController).activityItem = object
+                    if let activityViewController = segue.destinationViewController.topViewController as? ActivityViewController {
+                        activityViewController.activityItem = object
+                    }
                 }
             case "createActivity":
                 if let editController = segue.destinationViewController.topViewController as? ActivityEditController {
