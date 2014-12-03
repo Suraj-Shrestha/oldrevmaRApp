@@ -412,7 +412,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <datePicker tag="99" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="dyS-X8-cRj">
-                                            <rect key="frame" x="140" y="35" width="320" height="162"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="216"/>
                                             <date key="date" timeIntervalSinceReferenceDate="439246528.95230502">
                                                 <!--2014-12-02 20:55:28 +0000-->
                                             </date>
@@ -422,8 +422,10 @@
                                         </datePicker>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="centerX" secondItem="dyS-X8-cRj" secondAttribute="centerX" id="A6D-gc-WA4"/>
-                                        <constraint firstAttribute="centerY" secondItem="dyS-X8-cRj" secondAttribute="centerY" constant="-8" id="RQB-rZ-KYX"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="dyS-X8-cRj" secondAttribute="bottom" constant="-8.5" id="4Yb-gC-vWe"/>
+                                        <constraint firstAttribute="trailing" secondItem="dyS-X8-cRj" secondAttribute="trailing" id="FPt-sn-ggZ"/>
+                                        <constraint firstItem="dyS-X8-cRj" firstAttribute="leading" secondItem="yBk-cZ-83Z" secondAttribute="leading" id="Xwn-E3-Bln"/>
+                                        <constraint firstItem="dyS-X8-cRj" firstAttribute="top" secondItem="yBk-cZ-83Z" secondAttribute="top" id="lZv-4H-nZw"/>
                                     </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -580,7 +582,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oRq-ai-I4E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="905" y="1553"/>
+            <point key="canvasLocation" x="893" y="1536"/>
         </scene>
         <!--Activity View Controller-->
         <scene sceneID="t5j-AF-87w">

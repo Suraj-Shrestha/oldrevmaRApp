@@ -154,6 +154,12 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
         self.configureView()
         if let pickerViewCellToCheck = tableView.dequeueReusableCellWithIdentifier(kDatePickerID) as? UITableViewCell {
             pickerCellRowHeight = CGRectGetHeight(pickerViewCellToCheck.frame)
+            // ### ARGH! I can't get the same contstraints on iOS 8.1… seems to work right on iOS 7, so fake it for now.
+            // This is a bug waiting to happen later.
+            if pickerCellRowHeight == 0 {
+                pickerCellRowHeight = 216
+            }
+            
         }
 
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "localeChanged", name: NSCurrentLocaleDidChangeNotification, object: nil)
@@ -451,7 +457,7 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
         if !sameCellClicked {
             let rowToReveal = before ? indexPath.row - 1 : indexPath.row
             let indexPathToReveal = NSIndexPath(forRow: rowToReveal, inSection: 0)
-            toggleDatePickerForSelectedIndexPath(indexPathToReveal)
+            toggleDurationPickerForSelectedIndexPath(indexPathToReveal)
             durationPickerIndexPath = NSIndexPath(forRow: indexPathToReveal.row + 1, inSection: 0)
         }
         
