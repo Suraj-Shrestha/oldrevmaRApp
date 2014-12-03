@@ -1,13 +1,4 @@
 
-/* Class = "IBUILabel"; text = "Activity_pain_label"; ObjectID = "0kL-Gx-kYQ"; */
-"Activity_pain_label" = "The Activity Caused Pain";
-
-/* Class = "IBUILabel"; text = "Time_Start_Label"; ObjectID = "17y-PJ-aEj"; */
-"17y-PJ-aEj.text" = "Start Time";
-
-/* Class = "IBUILabel"; text = "Duty_label"; ObjectID = "2ur-gQ-y4n"; */
-"Duty_label" = "Duty";
-
 /* Class = "IBUILabel"; text = "Title"; ObjectID = "31d-rr-kpW"; */
 "31d-rr-kpW.text" = "Title";
 
@@ -26,17 +17,8 @@
 /* Class = "IBUINavigationItem"; title = "Activities_table_title"; ObjectID = "EXF-tP-vvc"; */
 "EXF-tP-vvc.title" = "Activities";
 
-/* Class = "IBUILabel"; text = "Activity_meaning_label"; ObjectID = "HaQ-b7-eiI"; */
-"Activity_meaning_label" = "The activity’s meaning for me:";
-
 /* Class = "IBUITabBarItem"; title = "Activities"; ObjectID = "JYO-ep-uMH"; */
 "JYO-ep-uMH.title" = "Activities";
-
-/* Class = "IBUILabel"; text = "Activity_duty_label"; ObjectID = "KeF-77-DHr"; */
-"Activity_duty_label" = "The main reason for this activity was:";
-
-/* Class = "IBUILabel"; text = "Activity_mastering_label"; ObjectID = "MWA-Ec-kYD"; */
-"Activity_mastering_label" = "I was able to master this activity:";
 
 /* Class = "IBUILabel"; text = "Loaded by SecondViewController"; ObjectID = "NDk-cv-Gan"; */
 "NDk-cv-Gan.text" = "Loaded by SecondViewController";
@@ -47,35 +29,14 @@
 /* Class = "IBUITabBarItem"; title = "Goal"; ObjectID = "RdF-ej-Uj2"; */
 "RdF-ej-Uj2.title" = "Goal";
 
-/* Class = "IBUIButton"; normalTitle = "##DATE##"; ObjectID = "Tnl-gl-rRE"; */
-"Tnl-gl-rRE.normalTitle" = "##DATE##";
-
 /* Class = "IBUIBarButtonItem"; title = "Add…"; ObjectID = "YEt-UJ-4PP"; */
 "YEt-UJ-4PP.title" = "Add…";
-
-/* Class = "IBUIButton"; normalTitle = "##DURATION##"; ObjectID = "YHQ-zS-Qh9"; */
-"YHQ-zS-Qh9.normalTitle" = "##DURATION##";
-
-/* Class = "IBUILabel"; text = "Duration_Label"; ObjectID = "ZtU-dl-GmD"; */
-"ZtU-dl-GmD.text" = "Duration";
 
 /* Class = "IBUITabBarItem"; title = "History"; ObjectID = "cPa-gy-q4n"; */
 "cPa-gy-q4n.title" = "History";
 
-/* Class = "IBUILabel"; text = "important_label"; ObjectID = "cnS-uj-iga"; */
-"important_label" = "Important";
-
-/* Class = "IBUILabel"; text = "Desired_label"; ObjectID = "eNT-Kw-bpA"; */
-"Desired_label" = "Desired";
-
 /* Class = "IBUINavigationItem"; title = "Add_Activity_Title"; ObjectID = "gWq-B7-YTq"; */
 "doj-l7-GMf.title" = "Add Activity";
-
-/* Class = "IBUILabel"; text = "unimportant_label"; ObjectID = "lEY-Kq-zQW"; */
-"unimportant_label" = "Unimportant";
-
-/* Class = "IBUILabel"; text = "Energy_use_label"; ObjectID = "mmU-uE-lQb"; */
-"Energy_use_label" = "How much energy did you use:";
 
 /* Class = "IBUIBarButtonItem"; title = "DoneButton"; ObjectID = "njB-PF-o0O"; */
 "AJ6-gH-ywM.title" = "Done";

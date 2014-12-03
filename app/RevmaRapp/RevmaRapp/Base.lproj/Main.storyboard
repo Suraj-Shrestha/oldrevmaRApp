@@ -364,7 +364,7 @@
         <scene sceneID="9Yb-j9-jra">
             <objects>
                 <tableViewController id="FVh-N2-pmI" customClass="ActivityEditController" customModule="RevmaRapp" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="singleLineEtched" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="b1D-DZ-RHL">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="b1D-DZ-RHL">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="858"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -459,8 +459,8 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MKg-bI-3mO" id="mYf-HE-Ddl">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <slider opaque="NO" tag="502" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="cWM-8o-gVp">
-                                            <rect key="frame" x="51" y="39" width="498" height="31"/>
+                                        <slider opaque="NO" tag="502" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="cWM-8o-gVp">
+                                            <rect key="frame" x="51" y="39" width="499" height="31"/>
                                             <connections>
                                                 <action selector="sliderChanged:" destination="FVh-N2-pmI" eventType="valueChanged" id="Efn-1Z-abG"/>
                                             </connections>

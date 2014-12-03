@@ -1,17 +1,8 @@
-/* Class = "IBUILabel"; text = "Activity_pain_label"; ObjectID = "0kL-Gx-kYQ"; */
-"Activity_pain_label" = "Aktiviteten gav smerte:";
-
-/* Class = "IBUILabel"; text = "Duty_label"; ObjectID = "2ur-gQ-y4n"; */
-"Duty_label" = "Plikt";
-
 /* Class = "IBUIBarButtonItem"; title = "CancelButton"; ObjectID = "6Vy-Bu-EYs"; */
 "Dgf-pN-mvW.title" = "Avbryt";
 
 /* Class = "IBUILabel"; text = "Goal"; ObjectID = "7Ea-GC-NRa"; */
 "7Ea-GC-NRa.text" = "Mål";
-
-/* Class = "IBUILabel"; text = "Time_Start_Label"; ObjectID = "17y-PJ-aEj"; */
-"17y-PJ-aEj.text" = "Tidspunkt";
 
 /* Class = "IBUILabel"; text = "Title"; ObjectID = "31d-rr-kpW"; */
 "31d-rr-kpW.text" = "Title";
@@ -25,17 +16,8 @@
 /* Class = "IBUINavigationItem"; title = "Activities_table_title"; ObjectID = "EXF-tP-vvc"; */
 "EXF-tP-vvc.title" = "Aktiviteter";
 
-/* Class = "IBUILabel"; text = "Activity_meaning_label"; ObjectID = "HaQ-b7-eiI"; */
-"Activity_meaning_label" = "Aktivitetens betydning for meg:";
-
 /* Class = "IBUITabBarItem"; title = "Activities_title"; ObjectID = "JYO-ep-uMH"; */
 "JYO-ep-uMH.title" = "Aktiviteter";
-
-/* Class = "IBUILabel"; text = "Activity_duty_label"; ObjectID = "KeF-77-DHr"; */
-"Activity_duty_label" = "Hvorfor utførte du denne aktiviteten:";
-
-/* Class = "IBUILabel"; text = "Activity_mastering_label"; ObjectID = "MWA-Ec-kYD"; */
-"Activity_mastering_label" = "Jeg mestret aktiviteten:";
 
 /* Class = "IBUILabel"; text = "Loaded by SecondViewController"; ObjectID = "NDk-cv-Gan"; */
 "NDk-cv-Gan.text" = "Loaded by SecondViewController";
@@ -44,37 +26,16 @@
 "Nd0-Iw-Ie7.title" = "Refleksjon";
 
 /* Class = "IBUITabBarItem"; title = "Goal_title"; ObjectID = "RdF-ej-Uj2"; */
-"RdF-ej-Uj2.title" = "Goal";
-
-/* Class = "IBUIButton"; normalTitle = "##DATE##"; ObjectID = "Tnl-gl-rRE"; */
-"Tnl-gl-rRE.normalTitle" = "##DATE##";
+"RdF-ej-Uj2.title" = "Mål";
 
 /* Class = "IBUIBarButtonItem"; title = "Add…"; ObjectID = "YEt-UJ-4PP"; */
 "YEt-UJ-4PP.title" = "Legg til…";
 
-/* Class = "IBUIButton"; normalTitle = "##DURATION##"; ObjectID = "YHQ-zS-Qh9"; */
-"YHQ-zS-Qh9.normalTitle" = "##DURATION##";
-
-/* Class = "IBUILabel"; text = "Duration_Label"; ObjectID = "ZtU-dl-GmD"; */
-"ZtU-dl-GmD.text" = "Tidsbruk";
-
 /* Class = "IBUITabBarItem"; title = "History_title"; ObjectID = "cPa-gy-q4n"; */
 "cPa-gy-q4n.title" = "Historikk";
 
-/* Class = "IBUILabel"; text = "important_label"; ObjectID = "cnS-uj-iga"; */
-"important_label" = "Viktig";
-
-/* Class = "IBUILabel"; text = "Desired_label"; ObjectID = "eNT-Kw-bpA"; */
-"Desired_label" = "Ønsket";
-
 /* Class = "IBUINavigationItem"; title = "Add_Activity_Title"; ObjectID = "gWq-B7-YTq"; */
 "doj-l7-GMf.title" = "Ny aktivitet";
-
-/* Class = "IBUILabel"; text = "unimportant_label"; ObjectID = "lEY-Kq-zQW"; */
-"unimportant_label" = "Uviktig";
-
-/* Class = "IBUILabel"; text = "Energy_use_label"; ObjectID = "mmU-uE-lQb"; */
-"Energy_use_label" = "Hvor mye energi brukte du:";
 
 /* Class = "IBUIBarButtonItem"; title = "DoneButton"; ObjectID = "njB-PF-o0O"; */
 "AJ6-gH-ywM.title" = "Ferdig";

@@ -269,6 +269,7 @@ class ActivityEditController: UITableViewController, ActivityNameTableController
             case kDateRow:
                 let tableCell = tableView.dequeueReusableCellWithIdentifier(kDateCellID) as UITableViewCell
                 tableCell.detailTextLabel!.text = dateformater.stringFromDate(activityDate!)
+                tableCell.textLabel.text = NSLocalizedString("Time_Start_Label", comment: "Time_Start_Label")
                 return tableCell
             case kDatePickerRow:
                 return tableView.dequeueReusableCellWithIdentifier(kDatePickerID) as UITableViewCell

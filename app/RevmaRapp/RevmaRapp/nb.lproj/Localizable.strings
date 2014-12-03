@@ -61,3 +61,38 @@
 /* AcitivityName */
 "ActivityYardwork" = "Hagearbeid";
 
+/* Energy_use_label */
+"Energy_use_label" = "Hvor mye energi brukte du:";
+
+/* "Activity_mastering_label" */
+"Activity_mastering_label" = "Jeg mestret aktiviteten:";
+
+/* "Activity_duty_label" */
+"Activity_duty_label" = "Hvorfor utførte du denne aktiviteten:";
+
+/* "Activity_meaning_label" */
+"Activity_meaning_label" = "Aktivitetens betydning for meg:";
+
+/* "Activity_pain_label" */
+"Activity_pain_label" = "Aktiviteten gav smerte:";
+
+/* "important_label" */
+"important_label" = "Viktig";
+
+/*"Desired_label" */
+"Desired_label" = "Ønsket";
+
+/* Duty_label */
+"Duty_label" = "Plikt";
+
+/* "unimportant_label" */
+"unimportant_label" = "Uviktig";
+
+/* "Time_Start_Label" */
+"Time_Start_Label" = "Tidspunkt";
+
+/* "Duration_Label" */
+"Duration_Label" = "Tidsbruk";
+
+/* "Empty Activity Name" */
+"Tap to choose activity" = "Velg aktivitet";

@@ -61,3 +61,39 @@
 /* AcitivityName */
 "ActivityYardwork" = "Yardwork";
 
+/* Energy_use_label */
+"Energy_use_label" = "How much energy did you use:";
+
+/* "Activity_mastering_label" */
+"Activity_mastering_label" = "I was able to master this activity:";
+
+/* "Activity_duty_label" */
+"Activity_duty_label" = "The main reason for this activity was:";
+
+/* "Activity_meaning_label" */
+"Activity_meaning_label" = "The activity’s meaning for me:";
+
+/* "Activity_pain_label" */
+"Activity_pain_label" = "The Activity Caused Pain:";
+
+/* "important_label" */
+"important_label" = "Important";
+
+/*"Desired_label" */
+"Desired_label" = "Desired";
+
+/* Duty_label */
+"Duty_label" = "Duty";
+
+/* "unimportant_label" */
+"unimportant_label" = "Unimportant";
+
+/* "Time_Start_Label" */
+"Time_Start_Label" = "Start time";
+
+/* "Duration_Label" */
+"Duration_Label" = "Duration";
+
+/* "Empty Activity Name" */
+"Tap to choose activity" = "Tap to choose activity";
+
