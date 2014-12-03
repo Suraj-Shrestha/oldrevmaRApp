@@ -22,11 +22,26 @@ class ActivityViewController: UIViewController, ActivityEditControllerDelegate {
     @IBOutlet weak var dutyValue: UIProgressView!
     @IBOutlet weak var masteryValue: UIProgressView!
     @IBOutlet weak var painValue: UIProgressView!
+    var dateFormatter: NSDateFormatter!
+    var numberFormatter: NSNumberFormatter!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        dateFormatter = NSDateFormatter()
+        dateFormatter.timeStyle = NSDateFormatterStyle.ShortStyle
+        dateFormatter.dateStyle = NSDateFormatterStyle.ShortStyle
+        numberFormatter = NSNumberFormatter()
         configureView()
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "localeChanged", name: NSCurrentLocaleDidChangeNotification, object: nil)
+    }
+    
+    func localeChanged() {
+        configureView()
+    }
+    
+    deinit {
+        NSNotificationCenter.defaultCenter().removeObserver(self)
     }
     
     override func didReceiveMemoryWarning() {
@@ -41,8 +56,8 @@ class ActivityViewController: UIViewController, ActivityEditControllerDelegate {
 
         if let ai = activityItem {
             activityNameLabel.text = ai.activity!.visibleName()
-//            startTimeLabel.text = ai.time_start
-//            durationLabel.text = ai.duration!.floatValue
+            startTimeLabel.text = dateFormatter.stringFromDate(ai.time_start!)
+            durationLabel.text = numberFormatter.stringFromNumber(ai.duration!.integerValue)
             energyValue.setProgress(ai.energy!.floatValue, animated: true)
             meaningValue.setProgress(ai.importance!.floatValue, animated: true)
             dutyValue.setProgress(ai.duty!.floatValue, animated: true)
@@ -53,7 +68,6 @@ class ActivityViewController: UIViewController, ActivityEditControllerDelegate {
     
     // MARK: Segue
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // TODO: Get the detail view hooked up.
         if let whichSegue = segue.identifier {
             switch (whichSegue) {
             case "editActivity":

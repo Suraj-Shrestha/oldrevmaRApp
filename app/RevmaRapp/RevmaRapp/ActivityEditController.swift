@@ -86,8 +86,8 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
             durationInMinutes = ai.duration!.integerValue
         } else {
             activityDate = NSDate()
-            checkCanSave() // Make sure the done button is correct regardless of what was set.
         }
+        checkCanSave() // Make sure the done button is correct regardless of what was set.
         tableView.reloadData()
         
     }
@@ -97,9 +97,10 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
     }
 
     func checkCanSave() {
-        if (doneButton != nil) {
-            doneButton.enabled = activityName != nil && activityDate != nil
+        if !isViewLoaded() {
+            return
         }
+        doneButton.enabled = activityName != nil && activityDate != nil
     }
     
     @IBAction func dateChanged(datePicker: UIDatePicker) {
@@ -190,7 +191,7 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
         if row == 0 {
             return NSLocalizedString("1 minute", comment: "Single minute")
         }
-        return NSString(format: NSLocalizedString("%@ minutes", comment: "Multiple (@%) minutes"), "\(row)")
+        return NSString(format: NSLocalizedString("%@ minutes", comment: "Multiple (@%) minutes"), "\(row + 1)")
     }
 
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
