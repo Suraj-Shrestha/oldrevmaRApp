@@ -38,9 +38,6 @@ class ActivityEditController: UITableViewController, ActivityNameTableController
     // Rows for Section 0
     let kNameRow = 0
     let kDateRow = 1
-    let kDatePickerRow = 2
-    let kDurationRow = 3
-    let kDurationPickerRow = 4
 
     // Rows for Section 1
     let kEnergyRow = 0
@@ -49,23 +46,22 @@ class ActivityEditController: UITableViewController, ActivityNameTableController
     let kMasteryRow = 3
     let kPainRow = 4
 
-    var valuesArray: [Float] = [0.5, 0.5, 0.5, 0.5, 0.5]
-
     var pickerCellRowHeight:CGFloat = 0.0
     var managedObjectContext: NSManagedObjectContext = (UIApplication.sharedApplication().delegate as AppDelegate).managedObjectContext
     var delegate: ActivityEditControllerDelegate?
-    var dateformater: NSDateFormatter!
+    var dateFormater: NSDateFormatter!
+    var numberFormatter: NSNumberFormatter!
     var datePickerIndexPath: NSIndexPath?
     var durationPickerIndexPath: NSIndexPath?
+    
+    // my actual model
+    var valuesArray: [Float] = [0.5, 0.5, 0.5, 0.5, 0.5]
     var activityDate: NSDate?
+    var durationInMinutes: Int = 30
     var activityName: ActivityName? {
         didSet {
             checkCanSave()
         }
-    }
-    
-    deinit {
-        NSNotificationCenter.defaultCenter().removeObserver(self)
     }
     
     var activityItem: ActivityItem! {
@@ -87,6 +83,7 @@ class ActivityEditController: UITableViewController, ActivityNameTableController
             valuesArray[kDutyRow] = ai.duty!.floatValue
             valuesArray[kMasteryRow] = ai.mastery!.floatValue
             valuesArray[kPainRow] = ai.pain!.floatValue
+            durationInMinutes = ai.duration!.integerValue
         } else {
             activityDate = NSDate()
             checkCanSave() // Make sure the done button is correct regardless of what was set.
@@ -94,7 +91,11 @@ class ActivityEditController: UITableViewController, ActivityNameTableController
         tableView.reloadData()
         
     }
-    
+
+    deinit {
+        NSNotificationCenter.defaultCenter().removeObserver(self)
+    }
+
     func checkCanSave() {
         if (doneButton != nil) {
             doneButton.enabled = (activityName != nil) && (activityDate != nil)
@@ -107,7 +108,7 @@ class ActivityEditController: UITableViewController, ActivityNameTableController
         let targetedCellIndexPath = hasInlineDatePicker() ? NSIndexPath(forRow: datePickerIndexPath!.row - 1, inSection: 0) : tableView.indexPathForSelectedRow()
         if let cell = tableView.cellForRowAtIndexPath(targetedCellIndexPath) {
             activityDate = datePicker.date
-            cell.detailTextLabel!.text = dateformater.stringFromDate(datePicker.date)
+            cell.detailTextLabel!.text = dateFormater.stringFromDate(datePicker.date)
         }
     }
    
@@ -145,16 +146,17 @@ class ActivityEditController: UITableViewController, ActivityNameTableController
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        dateformater = NSDateFormatter()
-        dateformater.dateStyle = NSDateFormatterStyle.ShortStyle
-        dateformater.timeStyle = NSDateFormatterStyle.ShortStyle
+        dateFormater = NSDateFormatter()
+        dateFormater.dateStyle = NSDateFormatterStyle.ShortStyle
+        dateFormater.timeStyle = NSDateFormatterStyle.ShortStyle
+        
+        numberFormatter = NSNumberFormatter()
         
         self.configureView()
         if let pickerViewCellToCheck = tableView.dequeueReusableCellWithIdentifier(kDatePickerID) as? UITableViewCell {
             pickerCellRowHeight = CGRectGetHeight(pickerViewCellToCheck.frame)
         }
-        
-        
+
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "localeChanged", name: NSCurrentLocaleDidChangeNotification, object: nil)
     }
     
@@ -198,20 +200,36 @@ class ActivityEditController: UITableViewController, ActivityNameTableController
         return durationPickerIndexPath != nil
     }
 
-    func indexPathHasPicker(indexPath: NSIndexPath) -> Bool {
-        return datePickerIndexPath?.row == indexPath.row
+    // Use a straight up comparison here since my index path's may be nil from time-to-time.
+    func indexPathHasDatePicker(indexPath: NSIndexPath) -> Bool {
+        return datePickerIndexPath?.section == indexPath.section && datePickerIndexPath?.row == indexPath.row
     }
     
-    func indexPathHasDate(indexPath: NSIndexPath) -> Bool {
-        return indexPath.row == kDateRow || (hasInlineDatePicker() && indexPath == kDateRow + 1)
+    func indexPathHasDurationPicker(indexPath: NSIndexPath) -> Bool {
+        return durationPickerIndexPath?.section == indexPath.section && durationPickerIndexPath?.row == indexPath.row
     }
 
+    func indexPathHasDate(indexPath: NSIndexPath) -> Bool {
+        if indexPath.section != 0 {
+            return false
+        }
+        return indexPath.row == kDateRow
+    }
     
+    func indexPathHasDuration(indexPath: NSIndexPath) -> Bool {
+        if indexPath.section != 0 {
+            return false
+        }
+        return hasInlineDatePicker() ? indexPath.row == kDateRow + 2 : indexPath.row == kDateRow + 1
+    }
+
+
     func save() {
         // Save this as a separate variable to stop us from cascading didSets.
         let activityToSave: ActivityItem = activityItem != nil ? activityItem : ActivityItem(managedObjectContext: managedObjectContext)
         activityToSave.activity = activityName
         activityToSave.time_start = activityDate
+        activityToSave.duration = durationInMinutes
         activityToSave.pain = valuesArray[kPainRow]
         activityToSave.duty = valuesArray[kDutyRow]
         activityToSave.energy = valuesArray[kEnergyRow]
@@ -247,15 +265,21 @@ class ActivityEditController: UITableViewController, ActivityNameTableController
 
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         if indexPath.section == 0 {
-            return indexPathHasPicker(indexPath) ? pickerCellRowHeight : tableView.rowHeight
+            return indexPathHasDatePicker(indexPath) || indexPathHasDurationPicker(indexPath) ? pickerCellRowHeight : tableView.rowHeight
         }
         return 80
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
-            return hasInlineDatePicker() ? 3 : 2
-//            return hasInlineDatePicker() || hasInlineDurationPicker() ? 4 : 3
+            var visibleRows = 3
+            if hasInlineDatePicker() {
+                ++visibleRows
+            }
+            if hasInlineDurationPicker() {
+                ++visibleRows
+            }
+            return visibleRows
         }
         
         return valuesArray.count
@@ -265,17 +289,25 @@ class ActivityEditController: UITableViewController, ActivityNameTableController
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         if indexPath.section == 0 {
-            switch indexPath.row {
-            case kDateRow:
+            if indexPathHasDatePicker(indexPath) {
+                return tableView.dequeueReusableCellWithIdentifier(kDatePickerID) as UITableViewCell
+            }
+            
+            if indexPathHasDate(indexPath) {
                 let tableCell = tableView.dequeueReusableCellWithIdentifier(kDateCellID) as UITableViewCell
-                tableCell.detailTextLabel!.text = dateformater.stringFromDate(activityDate!)
+                tableCell.detailTextLabel!.text = dateFormater.stringFromDate(activityDate!)
                 tableCell.textLabel.text = NSLocalizedString("Time_Start_Label", comment: "Time_Start_Label")
                 return tableCell
-            case kDatePickerRow:
-                return tableView.dequeueReusableCellWithIdentifier(kDatePickerID) as UITableViewCell
-            case kNameRow:
-                fallthrough
-            default:
+            }
+            
+            if indexPathHasDuration(indexPath) {
+                let tableCell = tableView.dequeueReusableCellWithIdentifier(kDurationCellID) as UITableViewCell
+                tableCell.detailTextLabel!.text = numberFormatter.stringFromNumber(NSNumber(integer: durationInMinutes))
+                tableCell.textLabel.text = NSLocalizedString("Duration_Label", comment: "Duration_Label")
+                return tableCell
+            }
+            
+            if indexPath.row == kNameRow {
                 let tableCell = tableView.dequeueReusableCellWithIdentifier(kActivityNameCellID) as UITableViewCell
                 if activityName?.name != nil {
                     tableCell.textLabel.text = activityName!.visibleName()

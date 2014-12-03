@@ -411,8 +411,8 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MqS-Qy-TNT" id="yBk-cZ-83Z">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <datePicker tag="99" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="dyS-X8-cRj">
-                                            <rect key="frame" x="0.0" y="8" width="600" height="216"/>
+                                        <datePicker tag="99" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="dyS-X8-cRj">
+                                            <rect key="frame" x="140" y="35" width="320" height="162"/>
                                             <date key="date" timeIntervalSinceReferenceDate="439246528.95230502">
                                                 <!--2014-12-02 20:55:28 +0000-->
                                             </date>
@@ -421,6 +421,10 @@
                                             </connections>
                                         </datePicker>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="centerX" secondItem="dyS-X8-cRj" secondAttribute="centerX" id="A6D-gc-WA4"/>
+                                        <constraint firstAttribute="centerY" secondItem="dyS-X8-cRj" secondAttribute="centerY" constant="-8" id="RQB-rZ-KYX"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="durationCell" textLabel="d52-7u-ClF" detailTextLabel="NGk-VQ-Qud" style="IBUITableViewCellStyleValue1" id="IvX-ZS-P9o">
@@ -448,10 +452,14 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="jBE-bO-rdg" id="xpW-dk-aIa">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <pickerView tag="100" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bY4-3m-Wfc">
-                                            <rect key="frame" x="0.0" y="0.0" width="600" height="216"/>
+                                        <pickerView tag="100" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bY4-3m-Wfc">
+                                            <rect key="frame" x="140" y="27" width="320" height="162"/>
                                         </pickerView>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="centerX" secondItem="bY4-3m-Wfc" secondAttribute="centerX" id="SD1-O4-Ncn"/>
+                                        <constraint firstAttribute="centerY" secondItem="bY4-3m-Wfc" secondAttribute="centerY" constant="-0.25" id="fDW-Rv-VD7"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="questionCellAlt" rowHeight="80" id="MKg-bI-3mO">
@@ -572,7 +580,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oRq-ai-I4E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="905" y="1545"/>
+            <point key="canvasLocation" x="905" y="1553"/>
         </scene>
         <!--Activity View Controller-->
         <scene sceneID="t5j-AF-87w">
