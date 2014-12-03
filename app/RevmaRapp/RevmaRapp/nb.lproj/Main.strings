@@ -46,3 +46,5 @@
 /* Class = "IBUILabel"; text = "History"; ObjectID = "zEq-FU-wV5"; */
 "zEq-FU-wV5.text" = "Historikk";
 
+/* Class = "IBUINavigationItem"; title = "Edit"; ObjectID = "FGu-F8-Msf"; */
+"FGu-F8-Msf.title" = "Endre";

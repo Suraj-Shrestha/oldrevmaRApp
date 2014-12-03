@@ -253,7 +253,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="JTE-jG-Qfg" kind="showDetail" identifier="showActivity" id="NQP-4s-oMD"/>
+                                    <segue destination="JTE-jG-Qfg" kind="show" identifier="showActivity" id="NQP-4s-oMD"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
