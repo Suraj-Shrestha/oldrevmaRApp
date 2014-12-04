@@ -48,3 +48,6 @@
 
 /* Class = "IBUINavigationItem"; title = "Edit"; ObjectID = "FGu-F8-Msf"; */
 "FGu-F8-Msf.title" = "Endre";
+
+/* Class = "IBUINavigationItem"; title = "Done"; ObjectID = "BSh-kp-Wnw"; */
+"BSh-kp-Wnw.title" = "Ferdig";
