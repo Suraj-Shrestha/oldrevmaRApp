@@ -17,7 +17,6 @@ protocol ActivityNameTableControllerDelegate {
 class ActivityNameTableController : UITableViewController, NSFetchedResultsControllerDelegate, UIAlertViewDelegate {
     
     @IBOutlet weak var doneButton: UIBarButtonItem!
-    @IBOutlet var nameTable: UITableView!
     var managedObjectContext : NSManagedObjectContext?;
     
     var activityNames: [ActivityName] = []
@@ -143,8 +142,8 @@ class ActivityNameTableController : UITableViewController, NSFetchedResultsContr
             for name in activityNames {
                 if lowerNewName == NSLocalizedString(name.name!, comment: "").lowercaseString {
                     let indexPath = NSIndexPath(forRow: row, inSection: 0)
-                    updateCellCheckmarkForTableView(nameTable, indexPath: indexPath) // This also updates selected name to be correct
-                    nameTable.selectRowAtIndexPath(indexPath, animated: true, scrollPosition: UITableViewScrollPosition.None)
+                    updateCellCheckmarkForTableView(tableView, indexPath: indexPath) // This also updates selected name to be correct
+                    tableView.selectRowAtIndexPath(indexPath, animated: true, scrollPosition: UITableViewScrollPosition.None)
                     return
                 }
                 ++row
@@ -157,7 +156,7 @@ class ActivityNameTableController : UITableViewController, NSFetchedResultsContr
             ZAssert(error == nil, "Unresolved error \(error?.localizedDescription), \(error?.userInfo)\n Attempting to save new activity")
             fetchActivityNames()
             selectedName = newActivityName
-            nameTable.reloadData()
+            tableView.reloadData()
         }
     }
 }
