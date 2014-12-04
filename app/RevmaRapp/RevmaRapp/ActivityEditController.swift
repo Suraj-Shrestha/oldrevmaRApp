@@ -40,11 +40,10 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
     let kDateRow = 1
 
     // Rows for Section 1
-    let kEnergyRow = 0
-    let kMeaningRow = 1
-    let kDutyRow = 2
+    let kMeaningRow = 0
+    let kDutyRow = 1
+    let kEnergyRow = 2
     let kMasteryRow = 3
-    let kPainRow = 4
 
     var pickerCellRowHeight:CGFloat = 0.0
     var managedObjectContext: NSManagedObjectContext = (UIApplication.sharedApplication().delegate as AppDelegate).managedObjectContext
@@ -55,7 +54,7 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
     var durationPickerIndexPath: NSIndexPath?
     
     // my actual model
-    var valuesArray: [Float] = [0.5, 0.5, 0.5, 0.5, 0.5]
+    var valuesArray: [Float] = [0.5, 0.5, 0.5, 0.5]
     var activityDate: NSDate?
     var durationInMinutes: Int = 30
     var activityName: ActivityName? {
@@ -82,7 +81,6 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
             valuesArray[kMeaningRow] = ai.importance!.floatValue
             valuesArray[kDutyRow] = ai.duty!.floatValue
             valuesArray[kMasteryRow] = ai.mastery!.floatValue
-            valuesArray[kPainRow] = ai.pain!.floatValue
             durationInMinutes = ai.duration!.integerValue
         } else {
             activityDate = NSDate()
@@ -279,7 +277,6 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
         activityToSave.activity = activityName
         activityToSave.time_start = activityDate
         activityToSave.duration = durationInMinutes
-        activityToSave.pain = valuesArray[kPainRow]
         activityToSave.duty = valuesArray[kDutyRow]
         activityToSave.energy = valuesArray[kEnergyRow]
         activityToSave.mastery = valuesArray[kMasteryRow]
@@ -379,7 +376,7 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
     
     func configureQuestionCell(indexPath: NSIndexPath) -> UITableViewCell {
         switch indexPath.row {
-        case kEnergyRow, kPainRow, kMasteryRow:
+        case kEnergyRow, kMasteryRow:
             let tableCell = tableView.dequeueReusableCellWithIdentifier(kQuestionCellID) as UITableViewCell
             let questionLabel = tableCell.viewWithTag(kQuestionLabelTag) as UILabel
             let minLabel = tableCell.viewWithTag(kMinLabelTag) as UIImageView
@@ -390,12 +387,6 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
                 questionLabel.text = NSLocalizedString("Energy_use_label", comment: "Energy_use_label")
                 minLabel.image = UIImage(named: "tongue-face")
                 maxLabel.image = UIImage(named: "smile-face")
-                slider.value = valuesArray[indexPath.row]
-            case kPainRow:
-                questionLabel.text = NSLocalizedString("Activity_pain_label", comment: "Activity_pain_label")
-                minLabel.image = UIImage(named: "first")
-                minLabel.frame = CGRectMake(minLabel.frame.origin.x, minLabel.frame.origin.y, 28, 28)
-                maxLabel.image = UIImage(named: "first")
                 slider.value = valuesArray[indexPath.row]
             case kMasteryRow:
                 fallthrough
@@ -412,15 +403,15 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
             let minLabel = tableCell.viewWithTag(kMinLabelTag) as UILabel
             let maxLabel = tableCell.viewWithTag(kMaxLabelTag) as UILabel
             let slider = tableCell.viewWithTag(kSliderTag) as UISlider
-            if indexPath.row == kMeaningRow {
+            if indexPath.row == kDutyRow {
                 questionLabel.text = NSLocalizedString("Activity_duty_label", comment: "Activity_duty_label")
                 minLabel.text = NSLocalizedString("Duty_label", comment: "Duty_label")
                 maxLabel.text = NSLocalizedString("Desired_label", comment: "Desired_label")
                 slider.value = valuesArray[indexPath.row]
             } else {
                 questionLabel.text = NSLocalizedString("Activity_meaning_label", comment: "Activity_meaning_label")
-                minLabel.text = NSLocalizedString("important_label", comment: "important_label")
-                maxLabel.text = NSLocalizedString("unimportant_label", comment: "unimportant_label")
+                maxLabel.text = NSLocalizedString("important_label", comment: "important_label")
+                minLabel.text = NSLocalizedString("unimportant_label", comment: "unimportant_label")
                 slider.value = valuesArray[indexPath.row]
             }
             return tableCell
