@@ -321,7 +321,6 @@
                     </navigationItem>
                     <connections>
                         <outlet property="doneButton" destination="BSh-kp-Wnw" id="sLi-lo-9o2"/>
-                        <outlet property="nameTable" destination="tKJ-SV-jXJ" id="coa-ke-xJV"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bb2-m2-W4Q" userLabel="First Responder" sceneMemberID="firstResponder"/>

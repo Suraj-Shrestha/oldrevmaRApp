@@ -1,6 +1,9 @@
 /* Class = "IBUIBarButtonItem"; title = "CancelButton"; ObjectID = "6Vy-Bu-EYs"; */
 "Dgf-pN-mvW.title" = "Avbryt";
 
+/* Class = "IBUIBarButtonItem"; title = "Cancel"; ObjectID = "c2U-TX-7iV"; */
+"c2U-TX-7iV.title" = "Avbryt";
+
 /* Class = "IBUILabel"; text = "Goal"; ObjectID = "7Ea-GC-NRa"; */
 "7Ea-GC-NRa.text" = "Mål";
 
