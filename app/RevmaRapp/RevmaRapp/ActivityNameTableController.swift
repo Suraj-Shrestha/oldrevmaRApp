@@ -77,10 +77,10 @@ class ActivityNameTableController : UITableViewController, NSFetchedResultsContr
     func configureCell(cell: UITableViewCell, atIndexPath indexPath: NSIndexPath) {
         if (indexPath.row < activityNames.count) {
             let name = activityNames[indexPath.row]
-            cell.textLabel.text = NSLocalizedString(name.name!, comment:"")
+            cell.textLabel!.text = NSLocalizedString(name.name!, comment:"")
             cell.accessoryType = (name == selectedName) ? UITableViewCellAccessoryType.Checkmark : UITableViewCellAccessoryType.None
         } else {
-            cell.textLabel.text = NSLocalizedString("Create a new activity…", comment: "Create new activity table cell")
+            cell.textLabel!.text = NSLocalizedString("Create a new activity…", comment: "Create new activity table cell")
         }
     }
     

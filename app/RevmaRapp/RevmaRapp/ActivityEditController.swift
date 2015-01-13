@@ -350,23 +350,23 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
             if indexPathHasDate(indexPath) {
                 let tableCell = tableView.dequeueReusableCellWithIdentifier(kDateCellID) as UITableViewCell
                 tableCell.detailTextLabel!.text = dateFormater.stringFromDate(activityDate!)
-                tableCell.textLabel.text = NSLocalizedString("Time_Start_Label", comment: "Time_Start_Label")
+                tableCell.textLabel!.text = NSLocalizedString("Time_Start_Label", comment: "Time_Start_Label")
                 return tableCell
             }
             
             if indexPathHasDuration(indexPath) {
                 let tableCell = tableView.dequeueReusableCellWithIdentifier(kDurationCellID) as UITableViewCell
                 tableCell.detailTextLabel!.text = numberFormatter.stringFromNumber(NSNumber(integer: durationInMinutes))
-                tableCell.textLabel.text = NSLocalizedString("Duration_Label", comment: "Duration_Label")
+                tableCell.textLabel!.text = NSLocalizedString("Duration_Label", comment: "Duration_Label")
                 return tableCell
             }
             
             if indexPath.row == kNameRow {
                 let tableCell = tableView.dequeueReusableCellWithIdentifier(kActivityNameCellID) as UITableViewCell
                 if activityName?.name != nil {
-                    tableCell.textLabel.text = activityName!.visibleName()
+                    tableCell.textLabel!.text = activityName!.visibleName()
                 } else {
-                    tableCell.textLabel.text = NSLocalizedString("Tap to choose activity", comment: "Empty Activity Name")
+                    tableCell.textLabel!.text = NSLocalizedString("Tap to choose activity", comment: "Empty Activity Name")
                 }
                 return tableCell
             }

@@ -79,9 +79,9 @@ class ActivityTableViewController: UITableViewController, NSFetchedResultsContro
     func configureCell(cell: UITableViewCell, atIndexPath indexPath: NSIndexPath) {
         let activity = self.activities[indexPath.row]
         if let cellText = activity.activity?.name {
-            cell.textLabel.text = activity.activity!.visibleName()
+            cell.textLabel!.text = activity.activity!.visibleName()
         } else {
-            cell.textLabel.text = NSLocalizedString("Missing activity name", comment: "Data corruption string, activities should always have a name")
+            cell.textLabel!.text = NSLocalizedString("Missing activity name", comment: "Data corruption string, activities should always have a name")
         }
 
     }
