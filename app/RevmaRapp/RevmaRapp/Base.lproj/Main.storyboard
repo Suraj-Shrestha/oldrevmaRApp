@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -463,19 +463,13 @@
                                     </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="questionCellAlt" rowHeight="80" id="MKg-bI-3mO">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="questionCellAlt" rowHeight="100" id="MKg-bI-3mO">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MKg-bI-3mO" id="mYf-HE-Ddl">
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <slider opaque="NO" tag="502" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="cWM-8o-gVp">
-                                            <rect key="frame" x="51" y="39" width="499" height="31"/>
-                                            <connections>
-                                                <action selector="sliderChanged:" destination="FVh-N2-pmI" eventType="valueChanged" id="Efn-1Z-abG"/>
-                                            </connections>
-                                        </slider>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="501" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yik-r8-8AJ">
-                                            <rect key="frame" x="8" y="43" width="37" height="21"/>
+                                            <rect key="frame" x="8" y="71" width="37" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
@@ -487,21 +481,46 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" tag="503" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pNw-jA-vgH">
-                                            <rect key="frame" x="555" y="43" width="37" height="21"/>
+                                            <rect key="frame" x="555" y="70" width="37" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" tag="501" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tongue-face" translatesAutoresizingMaskIntoConstraints="NO" id="Nqz-hE-UjR">
+                                            <rect key="frame" x="8" y="34" width="40" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="R5j-bw-ptQ"/>
+                                                <constraint firstAttribute="width" constant="40" id="jKh-KS-QL9"/>
+                                            </constraints>
+                                        </imageView>
+                                        <imageView userInteractionEnabled="NO" tag="503" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smile-face" translatesAutoresizingMaskIntoConstraints="NO" id="lg8-64-UJR">
+                                            <rect key="frame" x="553" y="30" width="40" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="Lum-VR-KoQ"/>
+                                                <constraint firstAttribute="width" constant="40" id="NpU-h0-08o"/>
+                                            </constraints>
+                                        </imageView>
+                                        <slider opaque="NO" tag="502" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="cWM-8o-gVp">
+                                            <rect key="frame" x="51" y="35" width="499" height="31"/>
+                                            <connections>
+                                                <action selector="sliderChanged:" destination="FVh-N2-pmI" eventType="valueChanged" id="Efn-1Z-abG"/>
+                                            </connections>
+                                        </slider>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="lg8-64-UJR" firstAttribute="top" secondItem="mYf-HE-Ddl" secondAttribute="topMargin" constant="22" id="4hH-kO-dMS"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="lg8-64-UJR" secondAttribute="trailing" constant="-1" id="5W7-aC-hDT"/>
                                         <constraint firstItem="cWM-8o-gVp" firstAttribute="leading" secondItem="Yik-r8-8AJ" secondAttribute="trailing" constant="8" id="79Y-BW-TUp"/>
-                                        <constraint firstItem="Yik-r8-8AJ" firstAttribute="top" secondItem="mYf-HE-Ddl" secondAttribute="topMargin" constant="35" id="7Dq-cs-2Ki"/>
-                                        <constraint firstItem="pNw-jA-vgH" firstAttribute="top" secondItem="mYf-HE-Ddl" secondAttribute="topMargin" constant="35" id="HM8-2D-vmd"/>
+                                        <constraint firstItem="Yik-r8-8AJ" firstAttribute="top" secondItem="mYf-HE-Ddl" secondAttribute="topMargin" constant="63" id="7Dq-cs-2Ki"/>
+                                        <constraint firstItem="pNw-jA-vgH" firstAttribute="top" secondItem="mYf-HE-Ddl" secondAttribute="topMargin" constant="62" id="HM8-2D-vmd"/>
                                         <constraint firstItem="pNw-jA-vgH" firstAttribute="trailing" secondItem="mYf-HE-Ddl" secondAttribute="trailingMargin" id="Iel-RG-z36"/>
-                                        <constraint firstItem="cWM-8o-gVp" firstAttribute="top" secondItem="mYf-HE-Ddl" secondAttribute="topMargin" constant="31" id="Ssb-7c-xbK"/>
+                                        <constraint firstItem="cWM-8o-gVp" firstAttribute="top" secondItem="mYf-HE-Ddl" secondAttribute="topMargin" constant="27" id="Ssb-7c-xbK"/>
+                                        <constraint firstItem="Nqz-hE-UjR" firstAttribute="leading" secondItem="mYf-HE-Ddl" secondAttribute="leadingMargin" id="ZTY-g9-H0M"/>
                                         <constraint firstItem="WnK-qz-0ON" firstAttribute="top" secondItem="mYf-HE-Ddl" secondAttribute="topMargin" id="dim-VM-t0u"/>
+                                        <constraint firstItem="Nqz-hE-UjR" firstAttribute="top" secondItem="mYf-HE-Ddl" secondAttribute="topMargin" constant="26" id="f83-Pw-tZ7"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="WnK-qz-0ON" secondAttribute="trailing" constant="16" id="g2q-hT-3Ah"/>
-                                        <constraint firstItem="pNw-jA-vgH" firstAttribute="leading" secondItem="cWM-8o-gVp" secondAttribute="trailing" constant="8" id="iVf-OS-ucM"/>
+                                        <constraint firstItem="lg8-64-UJR" firstAttribute="leading" secondItem="cWM-8o-gVp" secondAttribute="trailing" constant="5" id="hCk-B0-juD"/>
+                                        <constraint firstItem="pNw-jA-vgH" firstAttribute="leading" secondItem="cWM-8o-gVp" secondAttribute="trailing" constant="7" id="iVf-OS-ucM"/>
                                         <constraint firstItem="WnK-qz-0ON" firstAttribute="leading" secondItem="mYf-HE-Ddl" secondAttribute="leadingMargin" id="o8R-in-Y02"/>
                                         <constraint firstItem="Yik-r8-8AJ" firstAttribute="leading" secondItem="mYf-HE-Ddl" secondAttribute="leadingMargin" id="rH3-wn-YEP"/>
                                     </constraints>
