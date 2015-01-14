@@ -26,6 +26,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
+    func createDummyObjects() {
+
+        let fetchRequest = NSFetchRequest(entityName: ActivityName.entityName())
+        var error: NSError?
+        if let results = self.managedObjectContext.executeFetchRequest(fetchRequest, error: &error) {
+            let activityNames = (results as [ActivityName]).sorted({ $0.name! < $1.name! })
+            for i in 1...100 {
+                let activity = ActivityItem(managedObjectContext: self.managedObjectContext)
+                var rando:[UInt8] = [0, 0, 0, 0, 0, 0]
+                SecRandomCopyBytes(kSecRandomDefault, 6, UnsafeMutablePointer<UInt8>(rando))
+                activity.activity = activityNames[Int(bitPattern: UInt(rando[0])) % activityNames.count]
+                activity.time_start = NSDate()
+                activity.duration = 30
+                activity.pain = NSNumber(double: Double(Int(bitPattern: UInt(rando[1]))) / 255.0)
+                activity.mastery = NSNumber(double: Double(Int(bitPattern: UInt(rando[2]))) / 255.0)
+                activity.duty = NSNumber(double: Double(Int(bitPattern: UInt(rando[3]))) / 255.0)
+                activity.energy = NSNumber(double: Double(Int(bitPattern: UInt(rando[4]))) / 255.0)
+                activity.importance = NSNumber(double: Double(Int(bitPattern: UInt(rando[5]))) / 255.0)
+            }
+        } else {
+            println("Unresolved error \(error?.localizedDescription), \(error?.userInfo)\n Attempting to get activity names")
+        }
+    }
+
     func createObjects() {
         let currLang = NSLocale.preferredLanguages()[0] as String;
         
@@ -81,6 +105,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             catalogEntry.i18nable = true
         }
         
+        createDummyObjects()
 
         self.managedObjectContext.save(&error)
         
