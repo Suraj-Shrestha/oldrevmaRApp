@@ -24,7 +24,6 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
     let kActivityNameCellID = "ActivityEditActivityName"
     let kDurationCellID = "durationCell"
     let kDurationPickerID = "durationPickerCell"
-    let kQuestionCellID = "questionCell"
     let kQuestionCellAltID = "questionCellAlt"
     
     // Tags to pull out widgets
@@ -34,6 +33,8 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
     let kMinLabelTag = 501
     let kSliderTag = 502
     let kMaxLabelTag = 503
+    let kMinLabelTextTag = 504
+    let kMaxLabelTextTag = 505
 
     // Rows for Section 0
     let kNameRow = 0
@@ -313,8 +314,18 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
         if indexPath.section == 0 {
             return indexPathHasDatePicker(indexPath) || indexPathHasDurationPicker(indexPath) ? pickerCellRowHeight : tableView.rowHeight
         }
-        return 80
+        assert(indexPath.section == 1, "Unknown section")
+        // This needs to be updated someday, but for the moment the prototype cell can't handle being laid out at this point.
+        // But in theory, this would be the right way to do this.
+//        if self.prototypeCell == nil {
+//            self.prototypeCell = tableView.dequeueReusableCellWithIdentifier(kQuestionCellAltID) as UITableViewCell
+//        }
+//        configureQuestionCellHelper(self.prototypeCell, forIndexPath: indexPath)
+//        self.prototypeCell.layoutIfNeeded()
+//        let size = self.prototypeCell.contentView.systemLayoutSizeFittingSize(UILayoutFittingCompressedSize)
+        return 110
     }
+    
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
@@ -327,7 +338,7 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
             }
             return visibleRows
         }
-        
+        assert(section == 1, "Unknown section")
         return valuesArray.count
     }
     
@@ -373,51 +384,50 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
         }
         return configureQuestionCell(indexPath)
     }
+
+    func configureQuestionCellHelper(tableCell: UITableViewCell, forIndexPath indexPath: NSIndexPath) {
+        let questionLabel = tableCell.viewWithTag(kQuestionLabelTag) as UILabel
+        let minLabel = tableCell.viewWithTag(kMinLabelTag) as UIImageView
+        let maxLabel = tableCell.viewWithTag(kMaxLabelTag) as UIImageView
+        let minLabelText = tableCell.viewWithTag(kMinLabelTextTag) as UILabel
+        let maxLabelText = tableCell.viewWithTag(kMaxLabelTextTag) as UILabel
+        let slider = tableCell.viewWithTag(kSliderTag) as UISlider
+        slider.value = valuesArray[indexPath.row]
+        switch indexPath.row {
+        case kEnergyRow:
+            questionLabel.text = NSLocalizedString("Energy_use_label", comment: "Energy_use_label")
+            minLabel.image = UIImage(named: "tongue-face")
+            maxLabel.image = UIImage(named: "smile-face")
+            minLabelText.text = NSLocalizedString("energy_min_label", comment: "energy_min_label")
+            maxLabelText.text = NSLocalizedString("energy_max_label", comment: "energy_max_label")
+        case kDutyRow:
+            questionLabel.text = NSLocalizedString("Activity_duty_label", comment: "Activity_duty_label")
+            minLabelText.text = NSLocalizedString("duty_min_label", comment: "duty_min_label")
+            maxLabelText.text = NSLocalizedString("duty_max_label", comment: "duty_max_label")
+            minLabel.image = UIImage(named: "handshake")
+            maxLabel.image = UIImage(named: "wish")
+        case kMeaningRow:
+            questionLabel.text = NSLocalizedString("Activity_meaning_label", comment: "Activity_meaning_label")
+            maxLabelText.text = NSLocalizedString("meaning_max_label", comment: "meaning_max_label")
+            minLabelText.text = NSLocalizedString("meaning_min_label", comment: "meaning_min_label")
+            minLabel.image = UIImage(named: "unimportant")
+            maxLabel.image = UIImage(named: "important")
+        case kMasteryRow:
+            fallthrough
+        default:
+            questionLabel.text = NSLocalizedString("Activity_mastering_label", comment: "Activity_mastering_label")
+            minLabel.image = UIImage(named: "thumbs-down")
+            maxLabel.image = UIImage(named: "thumbs-up")
+            minLabelText.text = NSLocalizedString("mastering_min_label", comment: "mastering_min_label")
+            maxLabelText.text = NSLocalizedString("mastering_max_label", comment: "mastering_max_label")
+        }
+    }
+
     
     func configureQuestionCell(indexPath: NSIndexPath) -> UITableViewCell {
-        switch indexPath.row {
-        case kEnergyRow, kMasteryRow:
-            let tableCell = tableView.dequeueReusableCellWithIdentifier(kQuestionCellID) as UITableViewCell
-            let questionLabel = tableCell.viewWithTag(kQuestionLabelTag) as UILabel
-            let minLabel = tableCell.viewWithTag(kMinLabelTag) as UIImageView
-            let maxLabel = tableCell.viewWithTag(kMaxLabelTag) as UIImageView
-            let slider = tableCell.viewWithTag(kSliderTag) as UISlider
-            switch indexPath.row {
-            case kEnergyRow:
-                questionLabel.text = NSLocalizedString("Energy_use_label", comment: "Energy_use_label")
-                minLabel.image = UIImage(named: "tongue-face")
-                maxLabel.image = UIImage(named: "smile-face")
-                slider.value = valuesArray[indexPath.row]
-            case kMasteryRow:
-                fallthrough
-            default:
-                questionLabel.text = NSLocalizedString("Activity_mastering_label", comment: "Activity_mastering_label")
-                minLabel.image = UIImage(named: "thumbs-down")
-                maxLabel.image = UIImage(named: "thumbs-up")
-                slider.value = valuesArray[indexPath.row]
-            }
-            return tableCell
-        case kMeaningRow, kDutyRow:
-            let tableCell = tableView.dequeueReusableCellWithIdentifier(kQuestionCellAltID) as UITableViewCell
-            let questionLabel = tableCell.viewWithTag(kQuestionLabelTag) as UILabel
-            let minLabel = tableCell.viewWithTag(kMinLabelTag) as UILabel
-            let maxLabel = tableCell.viewWithTag(kMaxLabelTag) as UILabel
-            let slider = tableCell.viewWithTag(kSliderTag) as UISlider
-            if indexPath.row == kDutyRow {
-                questionLabel.text = NSLocalizedString("Activity_duty_label", comment: "Activity_duty_label")
-                minLabel.text = NSLocalizedString("Duty_label", comment: "Duty_label")
-                maxLabel.text = NSLocalizedString("Desired_label", comment: "Desired_label")
-                slider.value = valuesArray[indexPath.row]
-            } else {
-                questionLabel.text = NSLocalizedString("Activity_meaning_label", comment: "Activity_meaning_label")
-                maxLabel.text = NSLocalizedString("important_label", comment: "important_label")
-                minLabel.text = NSLocalizedString("unimportant_label", comment: "unimportant_label")
-                slider.value = valuesArray[indexPath.row]
-            }
-            return tableCell
-        default:
-            return tableView.dequeueReusableCellWithIdentifier(kQuestionCellAltID) as UITableViewCell
-        }
+        let tableCell = tableView.dequeueReusableCellWithIdentifier(kQuestionCellAltID) as UITableViewCell
+        configureQuestionCellHelper(tableCell, forIndexPath: indexPath)
+        return tableCell
     }
     
     

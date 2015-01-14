@@ -64,8 +64,20 @@
 /* Energy_use_label */
 "Energy_use_label" = "Hvor mye energi brukte du:";
 
+/* "energy_max_label" */
+"energy_max_label" = "Mye";
+
+/* "energy_min_label" */
+"energy_min_label" = "Lite";
+
 /* "Activity_mastering_label" */
 "Activity_mastering_label" = "Jeg mestret aktiviteten:";
+
+/* "mastering_max_label" */
+"mastering_max_label" = "Godt";
+
+/* "mastring_min_label" */
+"mastring_min_label" = "Dårlig";
 
 /* "Activity_duty_label" */
 "Activity_duty_label" = "Hvorfor utførte du denne aktiviteten:";
@@ -76,17 +88,17 @@
 /* "Activity_pain_label" */
 "Activity_pain_label" = "Aktiviteten gav smerte:";
 
-/* "important_label" */
-"important_label" = "Viktig";
+/* "meaning_max_label" */
+"meaning_max_label" = "Viktig";
 
-/*"Desired_label" */
-"Desired_label" = "Lystbetont";
+/*"duty_max_label" */
+"duty_max_label" = "Lystbetont";
 
-/* Duty_label */
-"Duty_label" = "Plikt";
+/* duty_min_label */
+"duty_min_label" = "Plikt";
 
-/* "unimportant_label" */
-"unimportant_label" = "Uviktig";
+/* "meaning_min_label" */
+"meaning_min_label" = "Uviktig";
 
 /* "Time_Start_Label" */
 "Time_Start_Label" = "Tidspunkt";

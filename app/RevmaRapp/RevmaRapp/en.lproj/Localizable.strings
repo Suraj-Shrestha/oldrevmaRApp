@@ -64,8 +64,20 @@
 /* Energy_use_label */
 "Energy_use_label" = "How much energy did you use:";
 
+/* "energy_max_label" */
+"energy_max_label" = "Lots";
+
+/* "energy_min_label" */
+"energy_min_label" = "Little";
+
 /* "Activity_mastering_label" */
 "Activity_mastering_label" = "I was able to master this activity:";
+
+/* "mastering_max_label" */
+"mastering_max_label" = "Well";
+
+/* "mastring_min_label" */
+"mastring_min_label" = "Poor";
 
 /* "Activity_duty_label" */
 "Activity_duty_label" = "The main reason for this activity was:";
@@ -76,17 +88,17 @@
 /* "Activity_pain_label" */
 "Activity_pain_label" = "The Activity Caused Pain:";
 
-/* "important_label" */
-"important_label" = "Important";
+/* "meaning_max_label" */
+"meaning_max_label" = "Important";
 
-/*"Desired_label" */
-"Desired_label" = "Desired";
+/* "meaning_min_label" */
+"meaning_min_label" = "Unimportant";
 
-/* Duty_label */
-"Duty_label" = "Duty";
+/*"duty_max_label" */
+"duty_max_label" = "Desired";
 
-/* "unimportant_label" */
-"unimportant_label" = "Unimportant";
+/* duty_min_label */
+"duty_min_label" = "Duty";
 
 /* "Time_Start_Label" */
 "Time_Start_Label" = "Start time";
