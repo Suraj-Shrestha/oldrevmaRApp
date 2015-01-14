@@ -271,9 +271,6 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <outlet property="activityTable" destination="ljH-v7-6mD" id="J5x-a9-kSY"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JJ1-TZ-RhY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -816,6 +813,6 @@
         <image name="tongue-face" width="283" height="282"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="XKB-0w-ybg"/>
+        <segue reference="q3X-I7-7Fe"/>
     </inferredMetricsTieBreakers>
 </document>

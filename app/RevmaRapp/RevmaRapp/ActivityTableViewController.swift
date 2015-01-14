@@ -13,8 +13,7 @@ import CoreData
 class ActivityTableViewController: UITableViewController, NSFetchedResultsControllerDelegate, ActivityEditControllerDelegate {
     
     var managedObjectContext : NSManagedObjectContext?;
-    
-    @IBOutlet var activityTable: UITableView!
+
     @IBOutlet var doneButton: UIBarButtonItem!
     var activities:[ActivityItem] = [];
 
@@ -95,7 +94,7 @@ class ActivityTableViewController: UITableViewController, NSFetchedResultsContro
     func activityEditControllerDidSave(controller: ActivityEditController) {
         controller.save()
         fetchActivities()
-        activityTable.reloadData()
+        tableView.reloadData()
         self.dismissViewControllerAnimated(true, completion: nil)
     }
 
