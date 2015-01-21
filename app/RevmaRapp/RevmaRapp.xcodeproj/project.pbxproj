@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		C90F589C1A24D0F600258424 /* ActivityNameTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90F589B1A24D0F600258424 /* ActivityNameTableController.swift */; };
+		C931DAFA1A66A58300BCBE81 /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C931DAF71A66A54E00BCBE81 /* libCorePlot-CocoaTouch.a */; };
+		C931DAFC1A66A5AC00BCBE81 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C931DAFB1A66A5AC00BCBE81 /* QuartzCore.framework */; };
+		C931DAFE1A66A5B200BCBE81 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C931DAFD1A66A5B200BCBE81 /* Accelerate.framework */; };
+		C931DB011A66BC7B00BCBE81 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C931DB001A66BC7B00BCBE81 /* HistoryViewController.swift */; };
 		C93599401A19F66F00DE78BE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = C93599421A19F66F00DE78BE /* Localizable.strings */; };
 		C93599451A19F66F00DE78BE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C93599471A19F66F00DE78BE /* InfoPlist.strings */; };
 		C935994A1A19F66F00DE78BE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C935994C1A19F66F00DE78BE /* InfoPlist.strings */; };
@@ -27,6 +31,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		C931DAF61A66A54E00BCBE81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C931DAF01A66A54E00BCBE81 /* CorePlot-CocoaTouch.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = BC9B83470FB8A0A40035D8DA;
+			remoteInfo = "CorePlot-CocoaTouch";
+		};
+		C931DAF81A66A56100BCBE81 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C931DAF01A66A54E00BCBE81 /* CorePlot-CocoaTouch.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = BC9B83460FB8A0A40035D8DA;
+			remoteInfo = "CorePlot-CocoaTouch";
+		};
 		C93F56FB1A0B70BE0030D481 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = C93F56DB1A0B70BE0030D481 /* Project object */;
@@ -38,6 +56,11 @@
 
 /* Begin PBXFileReference section */
 		C90F589B1A24D0F600258424 /* ActivityNameTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityNameTableController.swift; sourceTree = "<group>"; };
+		C931DAF01A66A54E00BCBE81 /* CorePlot-CocoaTouch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "CorePlot-CocoaTouch.xcodeproj"; path = "/Users/trenton/projects/nr/revmarapp/app/../../../core-plot/framework/CorePlot-CocoaTouch.xcodeproj"; sourceTree = "<absolute>"; };
+		C931DAFB1A66A5AC00BCBE81 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C931DAFD1A66A5B200BCBE81 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		C931DB001A66BC7B00BCBE81 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		C931DB021A66BD0B00BCBE81 /* RevmaRapp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RevmaRapp-Bridging-Header.h"; sourceTree = "<group>"; };
 		C93599411A19F66F00DE78BE /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; lineEnding = 0; name = nb; path = nb.lproj/Localizable.strings; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.simpleColoring; };
 		C93599461A19F66F00DE78BE /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C935994B1A19F66F00DE78BE /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -72,6 +95,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C931DAFE1A66A5B200BCBE81 /* Accelerate.framework in Frameworks */,
+				C931DAFC1A66A5AC00BCBE81 /* QuartzCore.framework in Frameworks */,
+				C931DAFA1A66A58300BCBE81 /* libCorePlot-CocoaTouch.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,9 +111,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C931DAF11A66A54E00BCBE81 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C931DAF71A66A54E00BCBE81 /* libCorePlot-CocoaTouch.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C931DAFF1A66A5C300BCBE81 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C931DAF01A66A54E00BCBE81 /* CorePlot-CocoaTouch.xcodeproj */,
+				C931DAFD1A66A5B200BCBE81 /* Accelerate.framework */,
+				C931DAFB1A66A5AC00BCBE81 /* QuartzCore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C93F56DA1A0B70BE0030D481 = {
 			isa = PBXGroup;
 			children = (
+				C931DAFF1A66A5C300BCBE81 /* Frameworks */,
 				C93F56E51A0B70BE0030D481 /* RevmaRapp */,
 				C93F56FD1A0B70BE0030D481 /* RevmaRappTests */,
 				C93F56E41A0B70BE0030D481 /* Products */,
@@ -112,6 +157,8 @@
 				C9C10BE31A0B831C00784666 /* ActivityViewController.swift */,
 				C93F56EC1A0B70BE0030D481 /* ActivityEditController.swift */,
 				C90F589B1A24D0F600258424 /* ActivityNameTableController.swift */,
+				C931DB001A66BC7B00BCBE81 /* HistoryViewController.swift */,
+				C931DB021A66BD0B00BCBE81 /* RevmaRapp-Bridging-Header.h */,
 				C93F56EE1A0B70BE0030D481 /* Main.storyboard */,
 				C93F56F11A0B70BE0030D481 /* Images.xcassets */,
 				C93F56F31A0B70BE0030D481 /* LaunchScreen.xib */,
@@ -183,6 +230,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				C931DAF91A66A56100BCBE81 /* PBXTargetDependency */,
 			);
 			name = RevmaRapp;
 			productName = RevmaRapp;
@@ -236,6 +284,12 @@
 			mainGroup = C93F56DA1A0B70BE0030D481;
 			productRefGroup = C93F56E41A0B70BE0030D481 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C931DAF11A66A54E00BCBE81 /* Products */;
+					ProjectRef = C931DAF01A66A54E00BCBE81 /* CorePlot-CocoaTouch.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				C93F56E21A0B70BE0030D481 /* RevmaRapp */,
@@ -243,6 +297,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C931DAF71A66A54E00BCBE81 /* libCorePlot-CocoaTouch.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = "libCorePlot-CocoaTouch.a";
+			remoteRef = C931DAF61A66A54E00BCBE81 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C93F56E11A0B70BE0030D481 /* Resources */ = {
@@ -295,6 +359,7 @@
 				C9DD9F451A13A3A00099B184 /* ActivityItem.swift in Sources */,
 				C9DD9F441A13A3A00099B184 /* _ActivityName.swift in Sources */,
 				C93F56ED1A0B70BE0030D481 /* ActivityEditController.swift in Sources */,
+				C931DB011A66BC7B00BCBE81 /* HistoryViewController.swift in Sources */,
 				C93F56E91A0B70BE0030D481 /* AppDelegate.swift in Sources */,
 				C9DD9F431A13A3A00099B184 /* _ActivityItem.swift in Sources */,
 				C9C10BE41A0B831C00784666 /* ActivityViewController.swift in Sources */,
@@ -314,6 +379,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		C931DAF91A66A56100BCBE81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "CorePlot-CocoaTouch";
+			targetProxy = C931DAF81A66A56100BCBE81 /* PBXContainerItemProxy */;
+		};
 		C93F56FC1A0B70BE0030D481 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = C93F56E21A0B70BE0030D481 /* RevmaRapp */;
@@ -406,10 +476,16 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"../../../../core-plot/framework/**",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "RevmaRapp/RevmaRapp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -443,9 +519,15 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"../../../../core-plot/framework/**",
+				);
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "RevmaRapp/RevmaRapp-Bridging-Header.h";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -458,6 +540,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = RevmaRapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -469,6 +552,7 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = RevmaRapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
