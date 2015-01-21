@@ -18,10 +18,12 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource {
         let graph = CPTXYGraph(frame: CGRectZero)
         graph.title = "Hello Graph"
         let plotSpace = graph.defaultPlotSpace as CPTXYPlotSpace
-        var xRange = plotSpace.xRange.mutableCopy() as CPTMutablePlotRange
-        var yRange = plotSpace.yRange.mutableCopy() as CPTMutablePlotRange
+        let xRange = plotSpace.xRange.mutableCopy() as CPTMutablePlotRange
+        let yRange = plotSpace.yRange.mutableCopy() as CPTMutablePlotRange
         
+        xRange.location = -5.0
         xRange.length = 10.0
+        yRange.location = -5
         yRange.length = 10.0
         
         plotSpace.xRange = xRange
@@ -39,6 +41,15 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource {
     }
     
     func numberForPlot(plot: CPTPlot!, field fieldEnum: UInt, recordIndex idx: UInt) -> NSNumber! {
+        
+        if idx % 2 == 0 {
+            return -Int(idx + 1)
+        }
         return idx+1
+    }
+    
+    func symbolForScatterPlot(plot: CPTScatterPlot!, recordIndex idx: UInt) -> CPTPlotSymbol! {
+        return CPTPlotSymbol.ellipsePlotSymbol()
+        
     }
 }
