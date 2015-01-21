@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="RevmaRapp/Base.lproj/LaunchScreen.xib" source-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="6.1" build-num="6A1052d"/>
+    </header>
+    <body>
+      <trans-unit id="8ie-xW-0ye.text">
+        <source>  Copyright (c) 2014 Norsk Regnesentral. All rights reserved.</source>
+        <note>Class = "IBUILabel"; text = "  Copyright (c) 2014 Norsk Regnesentral. All rights reserved."; ObjectID = "8ie-xW-0ye";</note>
+      </trans-unit>
+      <trans-unit id="kId-c2-rCX.text">
+        <source>RevmaRapp</source>
+        <note>Class = "IBUILabel"; text = "RevmaRapp"; ObjectID = "kId-c2-rCX";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="RevmaRapp/Base.lproj/Main.storyboard" source-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="6.1" build-num="6A1052d"/>
+    </header>
+    <body>
+      <trans-unit id="0kL-Gx-kYQ.text">
+        <source>The Activity Caused Pain</source>
+        <note>Class = "IBUILabel"; text = "Activity_pain_label"; ObjectID = "0kL-Gx-kYQ";</note>
+      </trans-unit>
+      <trans-unit id="2ur-gQ-y4n.text">
+        <source>Duty</source>
+        <note>Class = "IBUILabel"; text = "Duty_label"; ObjectID = "2ur-gQ-y4n";</note>
+      </trans-unit>
+      <trans-unit id="5Nm-8f-m4t.title">
+        <source>Activity_edit</source>
+        <note>Class = "IBUIViewController"; title = "Activity_edit"; ObjectID = "5Nm-8f-m4t";</note>
+      </trans-unit>
+      <trans-unit id="6Vy-Bu-EYs.title">
+        <source>Cancel</source>
+        <note>Class = "IBUIBarButtonItem"; title = "CancelButton"; ObjectID = "6Vy-Bu-EYs";</note>
+      </trans-unit>
+      <trans-unit id="7Ea-GC-NRa.text">
+        <source>Goal</source>
+        <note>Class = "IBUILabel"; text = "Goal"; ObjectID = "7Ea-GC-NRa";</note>
+      </trans-unit>
+      <trans-unit id="17y-PJ-aEj.text">
+        <source>Start Time</source>
+        <note>Class = "IBUILabel"; text = "Time_Start_Label"; ObjectID = "17y-PJ-aEj";</note>
+      </trans-unit>
+      <trans-unit id="31d-rr-kpW.text">
+        <source>Title</source>
+        <note>Class = "IBUILabel"; text = "Title"; ObjectID = "31d-rr-kpW";</note>
+      </trans-unit>
+      <trans-unit id="94d-wo-ZX5.title">
+        <source>Reflection</source>
+        <note>Class = "IBUITableViewController"; title = "Reflection_Title"; ObjectID = "94d-wo-ZX5";</note>
+      </trans-unit>
+      <trans-unit id="DBh-27-8jj.placeholder">
+        <source>Activity</source>
+        <note>Class = "IBUITextField"; placeholder = "Activity_Placeholder_Text"; ObjectID = "DBh-27-8jj";</note>
+      </trans-unit>
+      <trans-unit id="EXF-tP-vvc.title">
+        <source>Activities</source>
+        <note>Class = "IBUINavigationItem"; title = "Activities_table_title"; ObjectID = "EXF-tP-vvc";</note>
+      </trans-unit>
+      <trans-unit id="HaQ-b7-eiI.text">
+        <source>The activity’s meaning for me:</source>
+        <note>Class = "IBUILabel"; text = "Activity_meaning_label"; ObjectID = "HaQ-b7-eiI";</note>
+      </trans-unit>
+      <trans-unit id="JYO-ep-uMH.title">
+        <source>Activities</source>
+        <note>Class = "IBUITabBarItem"; title = "Activities_title"; ObjectID = "JYO-ep-uMH";</note>
+      </trans-unit>
+      <trans-unit id="Ju4-lf-ShJ.text">
+        <source>Activity_engagement_question</source>
+        <note>Class = "IBUILabel"; text = "Activity_engagement_question"; ObjectID = "Ju4-lf-ShJ";</note>
+      </trans-unit>
+      <trans-unit id="KeF-77-DHr.text">
+        <source>The main reason for this activity was:</source>
+        <note>Class = "IBUILabel"; text = "Activity_duty_label"; ObjectID = "KeF-77-DHr";</note>
+      </trans-unit>
+      <trans-unit id="MWA-Ec-kYD.text">
+        <source>I was able to master this activity</source>
+        <note>Class = "IBUILabel"; text = "Activity_mastering_label"; ObjectID = "MWA-Ec-kYD";</note>
+      </trans-unit>
+      <trans-unit id="NDk-cv-Gan.text">
+        <source>Loaded by SecondViewController</source>
+        <note>Class = "IBUILabel"; text = "Loaded by SecondViewController"; ObjectID = "NDk-cv-Gan";</note>
+      </trans-unit>
+      <trans-unit id="Nd0-Iw-Ie7.title">
+        <source>Refelection</source>
+        <note>Class = "IBUITabBarItem"; title = "Refelection_title"; ObjectID = "Nd0-Iw-Ie7";</note>
+      </trans-unit>
+      <trans-unit id="Otd-W6-YnY.text">
+        <source>Foo Bar baz</source>
+        <note>Class = "IBUITextView"; text = "Foo Bar baz"; ObjectID = "Otd-W6-YnY";</note>
+      </trans-unit>
+      <trans-unit id="Plw-ns-X1A.text">
+        <source>Activity_involved_question</source>
+        <note>Class = "IBUILabel"; text = "Activity_involved_question"; ObjectID = "Plw-ns-X1A";</note>
+      </trans-unit>
+      <trans-unit id="RdF-ej-Uj2.title">
+        <source>Goal</source>
+        <note>Class = "IBUITabBarItem"; title = "Goal_title"; ObjectID = "RdF-ej-Uj2";</note>
+      </trans-unit>
+      <trans-unit id="Tnl-gl-rRE.normalTitle">
+        <source>##DATE##</source>
+        <note>Class = "IBUIButton"; normalTitle = "##DATE##"; ObjectID = "Tnl-gl-rRE";</note>
+      </trans-unit>
+      <trans-unit id="YEt-UJ-4PP.title">
+        <source>Add…</source>
+        <note>Class = "IBUIBarButtonItem"; title = "Add…"; ObjectID = "YEt-UJ-4PP";</note>
+      </trans-unit>
+      <trans-unit id="YHQ-zS-Qh9.normalTitle">
+        <source>##DURATION##</source>
+        <note>Class = "IBUIButton"; normalTitle = "##DURATION##"; ObjectID = "YHQ-zS-Qh9";</note>
+      </trans-unit>
+      <trans-unit id="YtH-su-pKf.text">
+        <source>Activities_look_forward_to_question</source>
+        <note>Class = "IBUILabel"; text = "Activities_look_forward_to_question"; ObjectID = "YtH-su-pKf";</note>
+      </trans-unit>
+      <trans-unit id="ZtU-dl-GmD.text">
+        <source>Duration</source>
+        <note>Class = "IBUILabel"; text = "Duration_Label"; ObjectID = "ZtU-dl-GmD";</note>
+      </trans-unit>
+      <trans-unit id="bLk-Fs-ytw.title">
+        <source>DoneButton</source>
+        <note>Class = "IBUIBarButtonItem"; title = "DoneButton"; ObjectID = "bLk-Fs-ytw";</note>
+      </trans-unit>
+      <trans-unit id="cPa-gy-q4n.title">
+        <source>History</source>
+        <note>Class = "IBUITabBarItem"; title = "History_title"; ObjectID = "cPa-gy-q4n";</note>
+      </trans-unit>
+      <trans-unit id="cnS-uj-iga.text">
+        <source>Important</source>
+        <note>Class = "IBUILabel"; text = "important_label"; ObjectID = "cnS-uj-iga";</note>
+      </trans-unit>
+      <trans-unit id="eNT-Kw-bpA.text">
+        <source>Desired</source>
+        <note>Class = "IBUILabel"; text = "Desired_label"; ObjectID = "eNT-Kw-bpA";</note>
+      </trans-unit>
+      <trans-unit id="gWq-B7-YTq.title">
+        <source>Add Activity</source>
+        <note>Class = "IBUINavigationItem"; title = "Add_Activity_Title"; ObjectID = "gWq-B7-YTq";</note>
+      </trans-unit>
+      <trans-unit id="lEY-Kq-zQW.text">
+        <source>Unimportant</source>
+        <note>Class = "IBUILabel"; text = "unimportant_label"; ObjectID = "lEY-Kq-zQW";</note>
+      </trans-unit>
+      <trans-unit id="mmU-uE-lQb.text">
+        <source>How much energy did you use:</source>
+        <note>Class = "IBUILabel"; text = "Energy_use_label"; ObjectID = "mmU-uE-lQb";</note>
+      </trans-unit>
+      <trans-unit id="nVk-iX-jOi.title">
+        <source>Reflection_edit</source>
+        <note>Class = "IBUIViewController"; title = "Reflection_edit"; ObjectID = "nVk-iX-jOi";</note>
+      </trans-unit>
+      <trans-unit id="njB-PF-o0O.title">
+        <source>Done</source>
+        <note>Class = "IBUIBarButtonItem"; title = "DoneButton"; ObjectID = "njB-PF-o0O";</note>
+      </trans-unit>
+      <trans-unit id="p8L-m9-wTA.title">
+        <source>Add</source>
+        <note>Class = "IBUIBarButtonItem"; title = "Add"; ObjectID = "p8L-m9-wTA";</note>
+      </trans-unit>
+      <trans-unit id="pgh-ZX-paT.title">
+        <source>New_periode_title</source>
+        <note>Class = "IBUINavigationItem"; title = "New_periode_title"; ObjectID = "pgh-ZX-paT";</note>
+      </trans-unit>
+      <trans-unit id="vyY-uy-clZ.title">
+        <source>CancelButton</source>
+        <note>Class = "IBUIBarButtonItem"; title = "CancelButton"; ObjectID = "vyY-uy-clZ";</note>
+      </trans-unit>
+      <trans-unit id="wqZ-Cx-GCV.title">
+        <source>Reflections</source>
+        <note>Class = "IBUINavigationItem"; title = "Reflection_table_title"; ObjectID = "wqZ-Cx-GCV";</note>
+      </trans-unit>
+      <trans-unit id="zEq-FU-wV5.text">
+        <source>History</source>
+        <note>Class = "IBUILabel"; text = "History"; ObjectID = "zEq-FU-wV5";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="RevmaRapp/Info.plist" source-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="6.1" build-num="6A1052d"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+      </trans-unit>
+      <trans-unit id="CFBundleShortVersionString">
+        <source>1.0</source>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="RevmaRapp/Localizable.strings" source-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="6.1" build-num="6A1052d"/>
+    </header>
+    <body>
+      <trans-unit id="ActivityDeskWork">
+        <source>Stillesitttende arbeid</source>
+        <note>AcitivityName</note>
+      </trans-unit>
+      <trans-unit id="ActivityDressing">
+        <source>Av og påkledning</source>
+        <note>AcitivityName</note>
+      </trans-unit>
+      <trans-unit id="ActivityFamilyCare">
+        <source>Familieomsorg</source>
+        <note>AcitivityName</note>
+      </trans-unit>
+      <trans-unit id="ActivityFriends">
+        <source>Omgang med venner</source>
+        <note>AcitivityName</note>
+      </trans-unit>
+      <trans-unit id="ActivityHobby">
+        <source>Hobbyaktiviteter</source>
+        <note>AcitivityName</note>
+      </trans-unit>
+      <trans-unit id="ActivityHousework">
+        <source>Husarbeid</source>
+        <note>ActivityName</note>
+      </trans-unit>
+      <trans-unit id="ActivityHygiene">
+        <source>Personlig hygiene</source>
+        <note>AcitivityName</note>
+      </trans-unit>
+      <trans-unit id="ActivityIntimate">
+        <source>Samliv</source>
+        <note>AcitivityName</note>
+      </trans-unit>
+      <trans-unit id="ActivityKultural">
+        <source>Kulturalliv</source>
+        <note>AcitivityName</note>
+      </trans-unit>
+      <trans-unit id="ActivityLectures">
+        <source>Forelesning</source>
+        <note>AcitivityName</note>
+      </trans-unit>
+      <trans-unit id="ActivityListeningMusic">
+        <source>Lytte på musikk/radio</source>
+        <note>AcitivityName</note>
+      </trans-unit>
+      <trans-unit id="ActivityMeals">
+        <source>Måltider</source>
+        <note>AcitivityName</note>
+      </trans-unit>
+      <trans-unit id="ActivityMeetings">
+        <source>Møter</source>
+        <note>AcitivityName</note>
+      </trans-unit>
+      <trans-unit id="ActivityPhysicalLabor">
+        <source>Fysisk arbeid</source>
+        <note>AcitivityName</note>
+      </trans-unit>
+      <trans-unit id="ActivityReading">
+        <source>Lesing</source>
+        <note>AcitivityName</note>
+      </trans-unit>
+      <trans-unit id="ActivityResting">
+        <source>Hvile</source>
+        <note>AcitivityName</note>
+      </trans-unit>
+      <trans-unit id="ActivityScreenTime">
+        <source>Skjermtid (tv/PC/nettbrett)</source>
+        <note>AcitivityName</note>
+      </trans-unit>
+      <trans-unit id="ActivityTelephone">
+        <source>Telefonsamtaler</source>
+        <note>AcitivityName</note>
+      </trans-unit>
+      <trans-unit id="ActivityTraining">
+        <source>Trening</source>
+        <note>AcitivityName</note>
+      </trans-unit>
+      <trans-unit id="ActivityTransport">
+        <source>Transport</source>
+        <note>AcitivityName</note>
+      </trans-unit>
+      <trans-unit id="ActivityYardwork">
+        <source>Hagearbeid</source>
+        <note>AcitivityName</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="RevmaRappTests/Info.plist" source-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="6.1" build-num="6A1052d"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName">
+        <source>$(PRODUCT_NAME)</source>
+      </trans-unit>
+      <trans-unit id="CFBundleShortVersionString">
+        <source>1.0</source>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
