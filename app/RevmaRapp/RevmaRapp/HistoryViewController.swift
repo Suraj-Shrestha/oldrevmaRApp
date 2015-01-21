@@ -8,7 +8,7 @@
 
 import UIKit
 
-class HistoryViewController: UIViewController, CPTPlotDataSource {
+class HistoryViewController: UIViewController, CPTScatterPlotDataSource {
     
     @IBOutlet var graphView: CPTGraphHostingView!
     
@@ -17,22 +17,19 @@ class HistoryViewController: UIViewController, CPTPlotDataSource {
         // create graph
         let graph = CPTXYGraph(frame: CGRectZero)
         graph.title = "Hello Graph"
-        graph.paddingLeft = 0
-        graph.paddingTop = 0
-        graph.paddingRight = 0
-        graph.paddingBottom = 0
-        // hide the axes
-        let axes = graph.axisSet as CPTXYAxisSet
-        let lineStyle = CPTMutableLineStyle()
-        lineStyle.lineWidth = 0
-        axes.xAxis.axisLineStyle = lineStyle
-        axes.yAxis.axisLineStyle = lineStyle
+        let plotSpace = graph.defaultPlotSpace as CPTXYPlotSpace
+        var xRange = plotSpace.xRange.mutableCopy() as CPTMutablePlotRange
+        var yRange = plotSpace.yRange.mutableCopy() as CPTMutablePlotRange
         
-        // add a pie plot
-        let pie = CPTPieChart(frame: CGRectZero)
-        pie.dataSource = self
-        pie.pieRadius = (self.view.frame.size.width * 0.9)/2
-        graph.addPlot(pie)
+        xRange.length = 10.0
+        yRange.length = 10.0
+        
+        plotSpace.xRange = xRange
+        plotSpace.yRange = yRange
+        
+        let plot = CPTScatterPlot(frame: CGRectZero)
+        plot.dataSource = self
+        graph.addPlot(plot)
         
         self.graphView.hostedGraph = graph
     }
