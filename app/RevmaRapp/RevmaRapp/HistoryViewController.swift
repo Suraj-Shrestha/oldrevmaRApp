@@ -39,20 +39,20 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource {
     func setupGraph() {
         // create graph
         let graph = CPTXYGraph(frame: CGRectZero)
-        graph.title = "Hello Graph"
         let plotSpace = graph.defaultPlotSpace as CPTXYPlotSpace
         let xRange = plotSpace.xRange.mutableCopy() as CPTMutablePlotRange
         let yRange = plotSpace.yRange.mutableCopy() as CPTMutablePlotRange
         
         xRange.location = -0.6
-        xRange.length = 1.1
+        xRange.length = 1.2
         yRange.location = -0.6
-        yRange.length = 1.1
+        yRange.length = 1.2
         
         plotSpace.xRange = xRange
         plotSpace.yRange = yRange
-        
+      
         let plot = CPTScatterPlot(frame: CGRectZero)
+
         plot.dataLineStyle = nil
         plot.dataSource = self
         graph.addPlot(plot)
@@ -67,19 +67,23 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource {
     func numberForPlot(plot: CPTPlot!, field fieldEnum: UInt, recordIndex idx: UInt) -> NSNumber! {
         let CPTScatterPlotFieldX: UInt = 0 // Conversion to enums doesn't seem to work :-/
         let activity = activities[Int(bitPattern: idx)];
-        println("Field index: \(fieldEnum) energy: \(activity.energy!) importance: \(activity.importance!)")
+        println("Field index: \(fieldEnum) energy: \(activity.energy!) importance: \(activity.importance!) duty: \(activity.duty!)")
         return (fieldEnum == CPTScatterPlotFieldX) ? activity.duty!.doubleValue - 0.5 : activity.importance!.doubleValue - 0.5
     }
     
     func symbolForScatterPlot(plot: CPTScatterPlot!, recordIndex idx: UInt) -> CPTPlotSymbol! {
         let activity = activities[Int(bitPattern: idx)]
-        let energyValue = CGFloat(1.0) + CGFloat(activity.energy!.doubleValue)
+        let energyValue = 1.0 - CGFloat(activity.energy!.doubleValue)
+        println("\(activity.activity!.name!) energy: \(energyValue) importance: \(activity.importance!) duty: \(activity.duty!)")
         let symbol = CPTPlotSymbol.ellipsePlotSymbol()
         let baseRadius = 3 * symbol.size.width
         symbol.size = (CGSizeMake(baseRadius * energyValue, baseRadius * energyValue))
         symbol.lineStyle = nil
-        symbol.fill = CPTFill(color: CPTColor.blueColor())
-        
+        let colorSpace = CGColorSpaceCreateDeviceRGB();
+        let symbolColor = CPTColor(componentRed: energyValue > 0.5 ? 1.0 : 0.0,
+                                       green: energyValue > 0.5 ? 0.0 : 0.75,
+                                       blue: energyValue > 0.5 ? 0.0 : 0.2, alpha: 1.0)
+        symbol.fill = CPTFill(color:symbolColor)
         return symbol
     }
 }
