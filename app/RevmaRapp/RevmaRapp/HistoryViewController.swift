@@ -52,7 +52,49 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource {
         plotSpace.yRange = yRange
       
         let plot = CPTScatterPlot(frame: CGRectZero)
-
+        
+        let axisTitleTextStyle = CPTMutableTextStyle()
+        axisTitleTextStyle.fontName = "Helvetica-Bold"
+        
+        let axisSet = graph.axisSet as CPTXYAxisSet
+        let x = axisSet.xAxis
+        x.separateLayers = false
+        x.title = NSLocalizedString("duty_max_label", comment: "duty")
+        x.titleTextStyle = axisTitleTextStyle
+        x.titleOffset = 5
+        x.titleLocation = 0.5
+        
+        let x2 = CPTXYAxis(frame: CGRectZero)
+        x2.coordinate = CPTCoordinate.X
+        x2.plotSpace = plotSpace
+        x2.separateLayers = true
+        x2.labelingPolicy = CPTAxisLabelingPolicy.None
+        x2.title = NSLocalizedString("duty_min_label", comment: "duty")
+        x2.titleTextStyle = axisTitleTextStyle
+        x2.titleOffset = 5
+        x2.titleLocation = -0.5
+        
+        let y = axisSet.yAxis
+        y.title = NSLocalizedString("meaning_max_label", comment: "importance")
+        y.separateLayers = false
+        y.titleTextStyle = axisTitleTextStyle
+        y.titleOffset = 5
+        y.titleLocation = 0.5
+        
+        let y2 = CPTXYAxis(frame: CGRectZero)
+        y2.coordinate = CPTCoordinate.Y
+        y2.plotSpace = plotSpace
+        y2.separateLayers = true
+        y2.labelingPolicy = CPTAxisLabelingPolicy.None
+        y2.title = NSLocalizedString("meaning_min_label", comment: "importance")
+        y2.titleTextStyle = axisTitleTextStyle
+        y2.titleOffset = 5
+        y2.titleLocation = -0.5
+        
+        graph.axisSet.axes = [x, x2, y, y2]
+        
+        
+        println("default title \(x.titleLocation), \(y.titleLocation)" )
         plot.dataLineStyle = nil
         plot.dataSource = self
         graph.addPlot(plot)
@@ -67,7 +109,7 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource {
     func numberForPlot(plot: CPTPlot!, field fieldEnum: UInt, recordIndex idx: UInt) -> NSNumber! {
         let CPTScatterPlotFieldX: UInt = 0 // Conversion to enums doesn't seem to work :-/
         let activity = activities[Int(bitPattern: idx)];
-        println("Field index: \(fieldEnum) energy: \(activity.energy!) importance: \(activity.importance!) duty: \(activity.duty!)")
+//        println("Field index: \(fieldEnum) energy: \(activity.energy!) importance: \(activity.importance!) duty: \(activity.duty!)")
         return (fieldEnum == CPTScatterPlotFieldX) ? activity.duty!.doubleValue - 0.5 : activity.importance!.doubleValue - 0.5
     }
     
