@@ -65,10 +65,10 @@
 "Energy_use_label" = "How much energy did you use:";
 
 /* "energy_max_label" */
-"energy_max_label" = "Lots";
+"energy_max_label" = "Little";
 
 /* "energy_min_label" */
-"energy_min_label" = "Little";
+"energy_min_label" = "Lots";
 
 /* "Activity_mastering_label" */
 "Activity_mastering_label" = "I was able to master this activity:";
@@ -77,7 +77,7 @@
 "mastering_max_label" = "Well";
 
 /* "mastring_min_label" */
-"mastring_min_label" = "Poor";
+"mastering_min_label" = "Poor";
 
 /* "Activity_duty_label" */
 "Activity_duty_label" = "The main reason for this activity was:";

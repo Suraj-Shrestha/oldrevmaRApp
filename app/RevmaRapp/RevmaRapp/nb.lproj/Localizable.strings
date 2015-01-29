@@ -65,10 +65,10 @@
 "Energy_use_label" = "Hvor mye energi brukte du:";
 
 /* "energy_max_label" */
-"energy_max_label" = "Mye";
+"energy_max_label" = "Lite";
 
 /* "energy_min_label" */
-"energy_min_label" = "Lite";
+"energy_min_label" = "Mye";
 
 /* "Activity_mastering_label" */
 "Activity_mastering_label" = "Jeg mestret aktiviteten:";
@@ -76,8 +76,8 @@
 /* "mastering_max_label" */
 "mastering_max_label" = "Godt";
 
-/* "mastring_min_label" */
-"mastring_min_label" = "Dårlig";
+/* "mastering_min_label" */
+"mastering_min_label" = "Dårlig";
 
 /* "Activity_duty_label" */
 "Activity_duty_label" = "Hvorfor utførte du denne aktiviteten:";
