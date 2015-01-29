@@ -93,8 +93,6 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource {
         
         graph.axisSet.axes = [x, x2, y, y2]
         
-        
-        println("default title \(x.titleLocation), \(y.titleLocation)" )
         plot.dataLineStyle = nil
         plot.dataSource = self
         graph.addPlot(plot)
@@ -113,18 +111,97 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource {
         return (fieldEnum == CPTScatterPlotFieldX) ? activity.duty!.doubleValue - 0.5 : activity.importance!.doubleValue - 0.5
     }
     
+    func inSectionOne(activity: ActivityItem) -> Bool {
+        return activity.duty!.doubleValue - 0.5 > 0 && activity.importance!.doubleValue - 0.5 > 0
+    }
+    
+    func inSectionThree(activity: ActivityItem) -> Bool {
+        return activity.duty!.doubleValue - 0.5 < 0 && activity.importance!.doubleValue - 0.5 < 0
+    }
+
+    func rgbComponetsFor(hue: Int, saturation: Double, lightness: Double) -> [CGFloat] {
+        var bar = 2.0 * lightness - 1.0
+        if bar < 0 {
+            bar = -bar
+        }
+        let C = (1.0 - bar) * saturation
+        var foo = abs(hue / 60 % 2 - 1)
+        let X = C * (1.0 - Double(foo))
+        let m = lightness - C / 2
+
+        let mPrime = CGFloat(m)
+        let CPrime = CGFloat(C) + mPrime
+        let XPrime = CGFloat(X) + mPrime
+
+        
+        var retValues: [CGFloat] = [0.0, 0.0, 0.0]
+        switch hue {
+        case 0...59:
+            retValues[0] = CPrime
+            retValues[1] = XPrime
+            retValues[2] = mPrime
+        case 60...119:
+            retValues[0] = XPrime
+            retValues[1] = CPrime
+            retValues[2] = mPrime
+        case 120...179:
+            retValues[0] = mPrime
+            retValues[1] = CPrime
+            retValues[2] = XPrime
+        case 180...239:
+            retValues[0] = mPrime
+            retValues[1] = XPrime
+            retValues[2] = CPrime
+        case 240...299:
+            retValues[0] = XPrime
+            retValues[1] = mPrime
+            retValues[2] = CPrime
+        case 300...359:
+            retValues[0] = CPrime
+            retValues[1] = mPrime
+            retValues[2] = XPrime
+        default:
+            retValues[0] = 0.0
+            retValues[1] = 0.0
+            retValues[2] = 0.0
+        }
+        return retValues
+    }
+    
     func symbolForScatterPlot(plot: CPTScatterPlot!, recordIndex idx: UInt) -> CPTPlotSymbol! {
         let activity = activities[Int(bitPattern: idx)]
         let energyValue = 1.0 - CGFloat(activity.energy!.doubleValue)
-        println("\(activity.activity!.name!) energy: \(energyValue) importance: \(activity.importance!) duty: \(activity.duty!)")
         let symbol = CPTPlotSymbol.ellipsePlotSymbol()
-        let baseRadius = 3 * symbol.size.width
+        let baseRadius = 5 * symbol.size.width
         symbol.size = (CGSizeMake(baseRadius * energyValue, baseRadius * energyValue))
         symbol.lineStyle = nil
-        let colorSpace = CGColorSpaceCreateDeviceRGB();
-        let symbolColor = CPTColor(componentRed: energyValue > 0.5 ? 1.0 : 0.0,
-                                       green: energyValue > 0.5 ? 0.0 : 0.75,
-                                       blue: energyValue > 0.5 ? 0.0 : 0.2, alpha: 1.0)
+        
+        let inSect1 = inSectionOne(activity)
+        let inSect3 = inSectionThree(activity)
+        let inOther = !inSect1 && !inSect3
+
+        var redComponent: CGFloat = 0.55
+        var greenComponent: CGFloat = 0.55
+        var blueComponent: CGFloat = 0.55
+
+        // Find color based on the section. Section I: shades of green. Section III: shades of red. Others: something else?
+        // Green Hue: 90 degrees, Saturation 100%, Lightness 25–75%
+        // Red Hue: 0 degrees, Saturation 100%, Lightness 30–80%
+        
+        if inSect1 || inSect3 {
+            let dutySquared = (activity.duty!.doubleValue - 0.5) * (activity.duty!.doubleValue - 0.5)
+            let importanceSquared = (activity.importance!.doubleValue - 0.5) * (activity.importance!.doubleValue - 0.5)
+            let activityDistance = sqrt(dutySquared + importanceSquared)
+            let components = rgbComponetsFor(inSect1 ? 120 : 0, saturation: 1.0, lightness: 0.5)
+            redComponent = components[0]
+            greenComponent = components[1]
+            blueComponent = components[2]
+        }
+
+        let symbolColor = CPTColor(componentRed: redComponent,
+                                               green: greenComponent,
+                                               blue: blueComponent, alpha: 1.0)
+
         symbol.fill = CPTFill(color:symbolColor)
         return symbol
     }
