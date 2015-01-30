@@ -33,7 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         var error: NSError?
         if let results = self.managedObjectContext.executeFetchRequest(fetchRequest, error: &error) {
             let activityNames = results as [ActivityName]
-            let RecordCount = 20
+            let RecordCount = 50
             var randomIndex = 0
             var rando = [UInt8](count:6 * RecordCount, repeatedValue: 0)
             SecRandomCopyBytes(kSecRandomDefault, UInt(bitPattern:rando.count), UnsafeMutablePointer<UInt8>(rando))

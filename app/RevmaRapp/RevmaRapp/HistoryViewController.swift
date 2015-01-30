@@ -55,6 +55,7 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource {
         
         let axisTitleTextStyle = CPTMutableTextStyle()
         axisTitleTextStyle.fontName = "Helvetica-Bold"
+        axisTitleTextStyle.fontSize = 13.0
         
         let axisSet = graph.axisSet as CPTXYAxisSet
         let x = axisSet.xAxis
@@ -107,7 +108,6 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource {
     func numberForPlot(plot: CPTPlot!, field fieldEnum: UInt, recordIndex idx: UInt) -> NSNumber! {
         let CPTScatterPlotFieldX: UInt = 0 // Conversion to enums doesn't seem to work :-/
         let activity = activities[Int(bitPattern: idx)];
-//        println("Field index: \(fieldEnum) energy: \(activity.energy!) importance: \(activity.importance!) duty: \(activity.duty!)")
         return (fieldEnum == CPTScatterPlotFieldX) ? activity.duty!.doubleValue - 0.5 : activity.importance!.doubleValue - 0.5
     }
     
@@ -174,35 +174,37 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource {
         let symbol = CPTPlotSymbol.ellipsePlotSymbol()
         let baseRadius = 5 * symbol.size.width
         symbol.size = (CGSizeMake(baseRadius * energyValue, baseRadius * energyValue))
-        symbol.lineStyle = nil
         
         let inSect1 = inSectionOne(activity)
         let inSect3 = inSectionThree(activity)
         let inOther = !inSect1 && !inSect3
-
-        var redComponent: CGFloat = 0.55
-        var greenComponent: CGFloat = 0.55
-        var blueComponent: CGFloat = 0.55
+        
+        var components: [CGFloat] = [0.55, 0.55, 0.55]
 
         // Find color based on the section. Section I: shades of green. Section III: shades of red. Others: something else?
         // Green Hue: 90 degrees, Saturation 100%, Lightness 25–75%
         // Red Hue: 0 degrees, Saturation 100%, Lightness 30–80%
         
         if inSect1 || inSect3 {
+            let redBase = 0.20
+            let greenBase = 0.25
+            let distanceBase = inSect1 ? greenBase : redBase
             let dutySquared = (activity.duty!.doubleValue - 0.5) * (activity.duty!.doubleValue - 0.5)
             let importanceSquared = (activity.importance!.doubleValue - 0.5) * (activity.importance!.doubleValue - 0.5)
             let activityDistance = sqrt(dutySquared + importanceSquared)
-            let components = rgbComponetsFor(inSect1 ? 120 : 0, saturation: 1.0, lightness: 0.5)
-            redComponent = components[0]
-            greenComponent = components[1]
-            blueComponent = components[2]
+            components = rgbComponetsFor(inSect1 ? 120 : 0, saturation: 1.0, lightness: 1 - distanceBase - activityDistance)
+            let symbolColor = CPTColor(componentRed: components[0],
+                green: components[1],
+                blue: components[2], alpha: 1.0)
+            symbol.lineStyle = nil
+            symbol.fill = CPTFill(color:symbolColor)
+        } else {
+            let grayLineStyle = symbol.lineStyle.mutableCopy() as CPTMutableLineStyle
+            grayLineStyle.lineColor = CPTColor.grayColor()
+            symbol.lineStyle = grayLineStyle
         }
-
-        let symbolColor = CPTColor(componentRed: redComponent,
-                                               green: greenComponent,
-                                               blue: blueComponent, alpha: 1.0)
-
-        symbol.fill = CPTFill(color:symbolColor)
+        
+        
         return symbol
     }
 }
