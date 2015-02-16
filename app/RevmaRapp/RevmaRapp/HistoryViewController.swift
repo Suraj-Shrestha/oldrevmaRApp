@@ -120,12 +120,9 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource {
     }
 
     func rgbComponetsFor(hue: Int, saturation: Double, lightness: Double) -> [CGFloat] {
-        var bar = 2.0 * lightness - 1.0
-        if bar < 0 {
-            bar = -bar
-        }
+        let bar = fabs(2.0 * lightness - 1.0)
         let C = (1.0 - bar) * saturation
-        var foo = abs(hue / 60 % 2 - 1)
+        let foo = abs(hue / 60 % 2 - 1)
         let X = C * (1.0 - Double(foo))
         let m = lightness - C / 2
 
