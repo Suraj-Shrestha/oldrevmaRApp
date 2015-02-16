@@ -116,3 +116,8 @@
 
 /* "Edit Activity Title" */
 "Edit Activity" = "Endre Aktivitetet";
+
+/* "Create a new activity…" "Create new activity table cell" */
+"Create a new activity…" = "Legg til ny aktivitet";
+
+"Activities" = "Aktiviteter";

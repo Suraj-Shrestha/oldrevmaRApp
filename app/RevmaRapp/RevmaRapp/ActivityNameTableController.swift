@@ -75,17 +75,17 @@ class ActivityNameTableController : UITableViewController, NSFetchedResultsContr
     }
         
     func configureCell(cell: UITableViewCell, atIndexPath indexPath: NSIndexPath) {
-        if (indexPath.row < activityNames.count) {
-            let name = activityNames[indexPath.row]
+        if (indexPath.row == 0) {
+            cell.textLabel!.text = NSLocalizedString("Create a new activity…", comment: "Create new activity table cell")
+        } else {
+            let name = activityNames[indexPath.row - 1]
             cell.textLabel!.text = NSLocalizedString(name.name!, comment:"")
             cell.accessoryType = (name == selectedName) ? UITableViewCellAccessoryType.Checkmark : UITableViewCellAccessoryType.None
-        } else {
-            cell.textLabel!.text = NSLocalizedString("Create a new activity…", comment: "Create new activity table cell")
         }
     }
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        if (indexPath.row == activityNames.count) {
+        if (indexPath.row == 0) {
             // start another dialog and reload the model
             // I would love to use UIAlertController here, but things should probably run on earlier versions of iOS
             // Thankfully, a port to UIAlertController is pretty straightforward.
@@ -103,7 +103,7 @@ class ActivityNameTableController : UITableViewController, NSFetchedResultsContr
     
     func updateCellCheckmarkForTableView(tableView: UITableView, indexPath: NSIndexPath) {
         var oldRow = -1
-        var index = 0
+        var index = 1 // Since the other activities in the table start at 1
         for name in activityNames {
             if name == selectedName {
                 oldRow = index;
@@ -118,13 +118,32 @@ class ActivityNameTableController : UITableViewController, NSFetchedResultsContr
         
         if let newCell = tableView.cellForRowAtIndexPath(indexPath) {
             newCell.accessoryType = UITableViewCellAccessoryType.Checkmark
-            selectedName = activityNames[indexPath.row]
+            selectedName = activityNames[indexPath.row - 1]
         }
         
         if let oldCell = tableView.cellForRowAtIndexPath(NSIndexPath(forRow:oldRow, inSection: 0)) {
             oldCell.accessoryType = UITableViewCellAccessoryType.None
         }
         
+    }
+    
+    func selectAndScrollToActivity(indexPath: NSIndexPath) {
+        updateCellCheckmarkForTableView(tableView, indexPath: indexPath) // This also updates selected name to be correct
+        tableView.selectRowAtIndexPath(indexPath, animated: true, scrollPosition: UITableViewScrollPosition.Bottom)
+    }
+    
+    func trySelectForName(keyName: String, caseInSensitive: Bool) ->Bool {
+        var row = 1 // Start at row 1 since create is the first.
+        let keyCompareName = caseInSensitive ? keyName.lowercaseString : keyName
+        for name in activityNames {
+            let valueName = caseInSensitive ? NSLocalizedString(name.name!, comment: "").lowercaseString : NSLocalizedString(name.name!, comment: "")
+            if keyCompareName == valueName {
+                selectAndScrollToActivity(NSIndexPath(forRow: row, inSection: 0))
+                return true
+            }
+            ++row
+        }
+        return false
     }
     
     // MARK AlertView Delegate functions
@@ -137,18 +156,11 @@ class ActivityNameTableController : UITableViewController, NSFetchedResultsContr
             // Get rid of duplicates, when we can. Someone may have actually put this in already, so there's no point
             // in having it in again (we will select it for them though).
             // This doesn't solve any sort of translation issues. Those poor souls are on their own.
-            let lowerNewName = newName.lowercaseString
-            var row = 0
-            for name in activityNames {
-                if lowerNewName == NSLocalizedString(name.name!, comment: "").lowercaseString {
-                    let indexPath = NSIndexPath(forRow: row, inSection: 0)
-                    updateCellCheckmarkForTableView(tableView, indexPath: indexPath) // This also updates selected name to be correct
-                    tableView.selectRowAtIndexPath(indexPath, animated: true, scrollPosition: UITableViewScrollPosition.None)
-                    return
-                }
-                ++row
+            if trySelectForName(newName, caseInSensitive: true) == true {
+                return
             }
-            // Otherwise, do the creation
+
+            // Otherwise, do the creation and selection
             let newActivityName = ActivityName(managedObjectContext: managedObjectContext)
             newActivityName.name = newName
             var error: NSError?
@@ -157,6 +169,8 @@ class ActivityNameTableController : UITableViewController, NSFetchedResultsContr
             fetchActivityNames()
             selectedName = newActivityName
             tableView.reloadData()
+            // This will reload the tables, so we need to find the index again.
+            trySelectForName(selectedName!.name!, caseInSensitive: true)
         }
     }
 }
