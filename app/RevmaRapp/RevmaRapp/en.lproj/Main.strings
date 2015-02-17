@@ -46,3 +46,7 @@
 
 /* Class = "IBUILabel"; text = "History"; ObjectID = "zEq-FU-wV5"; */
 "zEq-FU-wV5.text" = "History";
+
+/* Class = "IBUINavigationItem"; title = "Activities"; ObjectID = "DYK-iK-exl"; */
+"DYK-iK-exl.title" = "Choose an Activity";
+

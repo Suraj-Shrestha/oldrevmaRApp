@@ -90,7 +90,7 @@ class ActivityNameTableController : UITableViewController, NSFetchedResultsContr
             // I would love to use UIAlertController here, but things should probably run on earlier versions of iOS
             // Thankfully, a port to UIAlertController is pretty straightforward.
             let alert = UIAlertView(title: NSLocalizedString("Create a New Activity", comment:"title for create activity alert"),
-                                       message: NSLocalizedString("What's the name of the new activity?)", comment:""),
+                                       message: NSLocalizedString("What's the name of the new activity?", comment:""),
                                        delegate: self,
                                        cancelButtonTitle: NSLocalizedString("Cancel", comment: "Cancel button"))
             alert.alertViewStyle = UIAlertViewStyle.PlainTextInput

@@ -54,3 +54,6 @@
 
 /* Class = "IBUINavigationItem"; title = "Done"; ObjectID = "BSh-kp-Wnw"; */
 "BSh-kp-Wnw.title" = "Ferdig";
+
+/* Class = "IBUINavigationItem"; title = "Activities"; ObjectID = "DYK-iK-exl"; */
+"DYK-iK-exl.title" = "Velg en aktivitet";

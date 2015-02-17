@@ -112,4 +112,19 @@
 /* Duration in Minutes */
 "%@ minutes" = "%@ minutes";
 
+/* 1 minute */
 "1 minute" = "1 minute";
+
+/* "Create a New Activity", comment:"title for create activity alert" */
+"Create a New Activity" = "Create a New Activity";
+
+/* "What's the name of the new activity?", comment:""*/
+"What's the name of the new activity?" = "What’s the name of the new activity?";
+
+/*"Cancel"  "Cancel button"*/
+"Cancel" = "Cancel";
+
+/* "OK", comment: "OK Button" */
+"OK" = "OK";
+
+

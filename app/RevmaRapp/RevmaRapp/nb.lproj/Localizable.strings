@@ -118,6 +118,19 @@
 "Edit Activity" = "Endre Aktivitetet";
 
 /* "Create a new activity…" "Create new activity table cell" */
-"Create a new activity…" = "Legg til ny aktivitet";
+"Create a new activity…" = "Lag ny aktivitet…";
 
 "Activities" = "Aktiviteter";
+
+/* "Create a New Activity", comment:"title for create activity alert" */
+"Create a New Activity" = "Lag en ny aktivitet";
+
+/* "What's the name of the new activity?", comment:""*/
+"What's the name of the new activity?" = "Hva er navnet til den nye aktiviteten?";
+
+/*"Cancel"  "Cancel button"*/
+"Cancel" = "Avbryt";
+
+/* "OK", comment: "OK Button" */
+"OK" = "OK";
+
