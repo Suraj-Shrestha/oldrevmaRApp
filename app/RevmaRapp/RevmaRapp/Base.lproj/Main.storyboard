@@ -62,13 +62,7 @@
                             <outlet property="delegate" destination="94d-wo-ZX5" id="1mI-lO-KW6"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Reflection_table_title" id="wqZ-Cx-GCV">
-                        <barButtonItem key="rightBarButtonItem" title="Add" id="p8L-m9-wTA">
-                            <connections>
-                                <segue destination="nVk-iX-jOi" kind="presentation" id="VJu-9M-IS1"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="Reflection_table_title" id="wqZ-Cx-GCV"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pje-Nx-3Jt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
