@@ -130,39 +130,22 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource {
         let CPrime = CGFloat(C) + mPrime
         let XPrime = CGFloat(X) + mPrime
 
-        
-        var retValues: [CGFloat] = [0.0, 0.0, 0.0]
         switch hue {
         case 0...59:
-            retValues[0] = CPrime
-            retValues[1] = XPrime
-            retValues[2] = mPrime
+            return [CPrime, XPrime, mPrime]
         case 60...119:
-            retValues[0] = XPrime
-            retValues[1] = CPrime
-            retValues[2] = mPrime
+            return [XPrime, CPrime, mPrime]
         case 120...179:
-            retValues[0] = mPrime
-            retValues[1] = CPrime
-            retValues[2] = XPrime
+            return [mPrime, CPrime, XPrime]
         case 180...239:
-            retValues[0] = mPrime
-            retValues[1] = XPrime
-            retValues[2] = CPrime
+            return [mPrime, XPrime, CPrime]
         case 240...299:
-            retValues[0] = XPrime
-            retValues[1] = mPrime
-            retValues[2] = CPrime
+            return [XPrime, mPrime, CPrime]
         case 300...359:
-            retValues[0] = CPrime
-            retValues[1] = mPrime
-            retValues[2] = XPrime
+            return [CPrime, mPrime, XPrime]
         default:
-            retValues[0] = 0.0
-            retValues[1] = 0.0
-            retValues[2] = 0.0
+            return [0.0, 0.0, 0.0]
         }
-        return retValues
     }
     
     func symbolForScatterPlot(plot: CPTScatterPlot!, recordIndex idx: UInt) -> CPTPlotSymbol! {
