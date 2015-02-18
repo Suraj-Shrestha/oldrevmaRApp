@@ -13,6 +13,8 @@ import CoreData
 class ActivityTableViewController: UITableViewController, NSFetchedResultsControllerDelegate, ActivityEditControllerDelegate {
     
     var managedObjectContext : NSManagedObjectContext?;
+    
+    var dateFormatter: NSDateFormatter!
 
     @IBOutlet var doneButton: UIBarButtonItem!
     var activities:[ActivityItem] = [];
@@ -20,6 +22,9 @@ class ActivityTableViewController: UITableViewController, NSFetchedResultsContro
     override func viewDidLoad() {
         super.viewDidLoad()
         managedObjectContext = (UIApplication.sharedApplication().delegate as AppDelegate).managedObjectContext
+        dateFormatter = NSDateFormatter()
+        dateFormatter.dateStyle = NSDateFormatterStyle.ShortStyle
+        dateFormatter.timeStyle = NSDateFormatterStyle.ShortStyle
         fetchActivities()
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -79,6 +84,8 @@ class ActivityTableViewController: UITableViewController, NSFetchedResultsContro
         let activity = self.activities[indexPath.row]
         if let cellText = activity.activity?.name {
             cell.textLabel!.text = activity.activity!.visibleName()
+
+            cell.detailTextLabel!.text = dateFormatter.stringFromDate(activity.time_start!)
         } else {
             cell.textLabel!.text = NSLocalizedString("Missing activity name", comment: "Data corruption string, activities should always have a name")
         }
