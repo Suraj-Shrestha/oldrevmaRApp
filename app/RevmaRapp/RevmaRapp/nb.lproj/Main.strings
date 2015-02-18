@@ -57,3 +57,28 @@
 
 /* Class = "IBUINavigationItem"; title = "Activities"; ObjectID = "DYK-iK-exl"; */
 "DYK-iK-exl.title" = "Velg en aktivitet";
+
+
+/* Class = "IBUILabel"; text = "Loaded by ActivityViewController"; ObjectID = "TIj-Fd-Bvd"; */
+"TIj-Fd-Bvd.text" = "Aktivitet";
+
+/* Class = "IBUILabel"; text = "Loaded by ActivityViewController"; ObjectID = "i0B-m5-nwp"; */
+"i0B-m5-nwp.text" = "Tidspunkt";
+
+/* Class = "IBUILabel"; text = "Loaded by ActivityViewController"; ObjectID = "rZg-w0-wNV"; */
+"rZg-w0-wNV.text" = "Tidsbruk";
+
+/* Class = "IBUILabel"; text = "Loaded by ActivityViewController"; ObjectID = "Ddo-44-kTi"; */
+"Ddo-44-kTi.text" = "Energi";
+
+/* Class = "IBUILabel"; text = "Loaded by ActivityViewController"; ObjectID = "UKi-Td-ffD"; */
+"UKi-Td-ffD.text" = "Betydning";
+
+/* Class = "IBUILabel"; text = "Loaded by ActivityViewController"; ObjectID = "0Aq-NY-vx3"; */
+"0Aq-NY-vx3.text" = "Plikt";
+
+/* Class = "IBUILabel"; text = "Loaded by ActivityViewController"; ObjectID = "CMU-Om-iFU"; */
+"CMU-Om-iFU.text" = "Mestring";
+
+/* Class = "IBUILabel"; text = "Loaded by ActivityViewController"; ObjectID = "o6v-r9-bq4"; */
+"o6v-r9-bq4.text" = "Smerte";
