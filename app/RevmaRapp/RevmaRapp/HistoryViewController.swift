@@ -151,7 +151,7 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource {
     func symbolForScatterPlot(plot: CPTScatterPlot!, recordIndex idx: UInt) -> CPTPlotSymbol! {
         let activity = activities[Int(bitPattern: idx)]
         let energyValue = 1.0 - CGFloat(activity.energy!.doubleValue)
-        let symbol = CPTPlotSymbol.ellipsePlotSymbol()
+        let symbol = CPTPlotSymbol.diamondPlotSymbol()
         let baseRadius = 5 * symbol.size.width
         symbol.size = (CGSizeMake(baseRadius * energyValue, baseRadius * energyValue))
         
