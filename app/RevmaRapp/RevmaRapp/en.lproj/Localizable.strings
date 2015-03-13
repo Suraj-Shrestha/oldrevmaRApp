@@ -1,65 +1,29 @@
-/* AcitivityName */
-"ActivityDeskWork" = "Desk work";
-
-/* AcitivityName */
-"ActivityDressing" = "Dressing and undressing";
-
-/* AcitivityName */
-"ActivityFamilyCare" = "Family care";
-
-/* AcitivityName */
-"ActivityFriends" = "Spending time with friends";
-
-/* AcitivityName */
-"ActivityHobby" = "Hobbies";
-
-/* ActivityName */
-"ActivityHousework" = "Housework";
-
-/* AcitivityName */
 "ActivityHygiene" = "Personal hygiene";
-
-/* AcitivityName */
-"ActivityIntimate" = "Intimate time";
-
-/* AcitivityName */
-"ActivityKultural" = "Cultural activities";
-
-/* AcitivityName */
-"ActivityLectures" = "Lectures";
-
-/* AcitivityName */
-"ActivityListeningMusic" = "Listening to music/radio";
-
-/* AcitivityName */
-"ActivityMeals" = "MealTime";
-
-/* AcitivityName */
-"ActivityMeetings" = "Mettings";
-
-/* AcitivityName */
-"ActivityPhysicalLabor" = "Physical labor";
-
-/* AcitivityName */
-"ActivityReading" = "Reading";
-
-/* AcitivityName */
-"ActivityResting" = "Resting";
-
-/* AcitivityName */
-"ActivityScreenTime" = "Screen time (TV/PC/tablet)";
-
-/* AcitivityName */
-"ActivityTelephone" = "Telephone conversations";
-
-/* AcitivityName */
-"ActivityTraining" = "Training";
-
-/* AcitivityName */
-"ActivityTransport" = "Transport";
-
-/* AcitivityName */
+"ActivityDressing" = "Dressing and undressing";
+"ActivityEating" = "Eating and drinking";
+"ActivityMealPrep" = "Meal preparation";
+"ActivityShopping" = "Shopping";
+"ActivityHousework" = "Housework";
 "ActivityYardwork" = "Yardwork";
+"ActvityHomeRepair" = "Home repair";
+"ActivityLabor" = "Work (paid or unpaid)";
+"ActivityEducation" = "Education";
+"ActivityFamilyTime" = "Family time";
+"ActivityCare" = "Caregiving";
+"ActivityTransport" = "Driving and transport";
+"ActivityTV" = "Watching TV";
+"ActivityListeningMusic" = "Listening to the radio or music";
+"ActivityDeskWork" = "Paperwork";
+"ActivityReading" = "Reading";
+"ActivityTelephone" = "Telephone conversations";
+"ActivityPC" = "Using PC, smartphone, or tablet";
+"ActivityNature" = "Being out in nature";
+"ActivitySocial" = "Social activities";
+"ActivityCulture" = "Kultural activities";
+"ActivityTrainingLow" = "Training (low intensity)";
+"ActivityTrainingHigh" = "Training (high intensity)";
+"ActivityRest" = "Resting";
+"ActivitySleep" = "Sleeping";
 
 /* Energy_use_label */
 "Energy_use_label" = "How much energy did you use:";

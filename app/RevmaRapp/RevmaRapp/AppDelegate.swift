@@ -69,39 +69,44 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         
         // ActivityNameKeys
-        let activityNameKeys = [ "ActivityHousework", "ActivityYardwork", "ActivityTransport", "ActivityHygiene", "ActivityDressing",
-                                    "ActivityMeals", "ActivityDeskWork", "ActivityMeetings", "ActivityLectures", "ActivityPhysicalLabor",
-                                    "ActivityTelephone", "ActivityReading", "ActivityFamilyCare", "ActivityIntimate", "ActivityFriends",
-                                    "ActivityKultural", "ActivityHobby", "ActivityScreenTime", "ActivityTraining", "ActivityResting",
-                                    "ActivityListeningMusic" ]
+        let activityNameKeys = ["ActivityHygiene", "ActivityDressing", "ActivityEating", "ActivityMealPrep", "ActivityShopping",
+            "ActivityHousework", "ActivityYardwork", "ActvityHomeRepair", "ActivityLabor", "ActivityEducation",
+            "ActivityFamilyTime", "ActivityCare", "ActivityTransport", "ActivityTV", "ActivityListeningMusic",
+            "ActivityDeskWork", "ActivityReading", "ActivityTelephone", "ActivityPC", "ActivityNature",
+            "ActivitySocial", "ActivityCulture", "ActivityTrainingLow", "ActivityTrainingHigh", "ActivityRest",
+            "ActivitySleep"]
+            
         
         // Do I like repeating myself? I guess I do, just to make sure that these items are picked up in future translations
         let activityNames = [
-            NSLocalizedString("ActivityHousework", comment: "ActivityName"),
-            NSLocalizedString("ActivityYardwork",  comment: "AcitivityName"),
-            NSLocalizedString("ActivityTransport", comment: "AcitivityName"),
-            NSLocalizedString("ActivityHygiene",  comment: "AcitivityName"),
-            NSLocalizedString("ActivityDressing",  comment: "AcitivityName"),
-            NSLocalizedString("ActivityMeals",  comment: "AcitivityName"),
-            NSLocalizedString("ActivityDeskWork",  comment: "AcitivityName"),
-            NSLocalizedString("ActivityMeetings",  comment: "AcitivityName"),
-            NSLocalizedString("ActivityLectures",  comment: "AcitivityName"),
-            NSLocalizedString("ActivityPhysicalLabor",  comment: "AcitivityName"),
-            NSLocalizedString("ActivityTelephone",  comment: "AcitivityName"),
-            NSLocalizedString("ActivityReading",  comment: "AcitivityName"),
-            NSLocalizedString("ActivityFamilyCare",  comment: "AcitivityName"),
-            NSLocalizedString("ActivityIntimate",  comment: "AcitivityName"),
-            NSLocalizedString("ActivityFriends",  comment: "AcitivityName"),
-            NSLocalizedString("ActivityKultural",  comment: "AcitivityName"),
-            NSLocalizedString("ActivityHobby",  comment: "AcitivityName"),
-            NSLocalizedString("ActivityScreenTime",  comment: "AcitivityName"),
-            NSLocalizedString("ActivityTraining", comment: "AcitivityName"),
-            NSLocalizedString("ActivityResting", comment: "AcitivityName"),
-            NSLocalizedString("ActivityListeningMusic", comment: "AcitivityName"),
+            NSLocalizedString("ActivityHygiene", comment:"ActivityHygiene"),
+            NSLocalizedString("ActivityDressing", comment:"ActivityDressing"),
+            NSLocalizedString("ActivityEating", comment:"ActivityEating"),
+            NSLocalizedString("ActivityMealPrep", comment:"ActivityMealPrep"),
+            NSLocalizedString("ActivityShopping", comment:"ActivityShopping"),
+            NSLocalizedString("ActivityHousework", comment:"ActivityHousework"),
+            NSLocalizedString("ActivityYardwork", comment:"ActivityYardwork"),
+            NSLocalizedString("ActvityHomeRepair", comment:"ActvityHomeRepair"),
+            NSLocalizedString("ActivityLabor", comment:"ActivityLabor"),
+            NSLocalizedString("ActivityEducation", comment:"ActivityEducation"),
+            NSLocalizedString("ActivityFamilyTime", comment:"ActivityFamilyTime"),
+            NSLocalizedString("ActivityCare", comment:"ActivityCare"),
+            NSLocalizedString("ActivityTransport", comment:"ActivityTransport"),
+            NSLocalizedString("ActivityTV", comment:"ActivityTV"),
+            NSLocalizedString("ActivityListeningMusic", comment:"ActivityListeningMusic"),
+            NSLocalizedString("ActivityDeskWork", comment:"ActivityDeskWork"),
+            NSLocalizedString("ActivityReading", comment:"ActivityReading"),
+            NSLocalizedString("ActivityTelephone", comment:"ActivityTelephone"),
+            NSLocalizedString("ActivityPC", comment:"ActivityPC"),
+            NSLocalizedString("ActivityNature", comment:"ActivityNature"),
+            NSLocalizedString("ActivitySocial", comment:"ActivitySocial"),
+            NSLocalizedString("ActivityCulture", comment:"ActivityCulture"),
+            NSLocalizedString("ActivityTrainingLow", comment:"ActivityTrainingLow"),
+            NSLocalizedString("ActivityTrainingHigh", comment:"ActivityTrainingHigh"),
+            NSLocalizedString("ActivityRest", comment:"ActivityRest"),
+            NSLocalizedString("ActivitySleep", comment:"ActivitySleep")
         ]
-
-
-        
+       
         for name in activityNameKeys {
             let catalogEntry = ActivityName(managedObjectContext: self.managedObjectContext)
             catalogEntry.name = name

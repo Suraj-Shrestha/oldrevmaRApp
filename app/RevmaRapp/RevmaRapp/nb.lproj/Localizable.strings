@@ -1,65 +1,30 @@
-/* AcitivityName */
-"ActivityDeskWork" = "Stillesitttende arbeid";
-
-/* AcitivityName */
-"ActivityDressing" = "Av og påkledning";
-
-/* AcitivityName */
-"ActivityFamilyCare" = "Familieomsorg";
-
-/* AcitivityName */
-"ActivityFriends" = "Omgang med venner";
-
-/* AcitivityName */
-"ActivityHobby" = "Hobbyaktiviteter";
-
-/* ActivityName */
-"ActivityHousework" = "Husarbeid";
-
-/* AcitivityName */
 "ActivityHygiene" = "Personlig hygiene";
-
-/* AcitivityName */
-"ActivityIntimate" = "Samliv";
-
-/* AcitivityName */
-"ActivityKultural" = "Kulturliv";
-
-/* AcitivityName */
-"ActivityLectures" = "Forelesning";
-
-/* AcitivityName */
-"ActivityListeningMusic" = "Lytte på musikk/radio";
-
-/* AcitivityName */
-"ActivityMeals" = "Måltider";
-
-/* AcitivityName */
-"ActivityMeetings" = "Møter";
-
-/* AcitivityName */
-"ActivityPhysicalLabor" = "Fysisk arbeid";
-
-/* AcitivityName */
-"ActivityReading" = "Lesing";
-
-/* AcitivityName */
-"ActivityResting" = "Hvile";
-
-/* AcitivityName */
-"ActivityScreenTime" = "Skjermtid (tv/PC/nettbrett)";
-
-/* AcitivityName */
-"ActivityTelephone" = "Telefonsamtaler";
-
-/* AcitivityName */
-"ActivityTraining" = "Trening";
-
-/* AcitivityName */
-"ActivityTransport" = "Transport";
-
-/* AcitivityName */
+"ActivityDressing" = "Av/påkledning";
+"ActivityEating" = "Spising/drikking";
+"ActivityMealPrep" = "Tilbereding av måltider";
+"ActivityShopping" = "Innkjøp";
+"ActivityHousework" = "Husarbeid inne";
 "ActivityYardwork" = "Hagearbeid";
+"ActvityHomeRepair" = "Vedlikehold av hjemmet";
+"ActivityLabor" = "Arbeid (lønnet/ulønnet)";
+"ActivityEducation" = "Skole/utdanning";
+"ActivityFamilyTime" = "Familietid";
+"ActivityCare" = "Omsorgsoppgaver";
+"ActivityTransport" = "Transport/kjøre bil";
+"ActivityTV" = "Se på TV";
+"ActivityListeningMusic" = "Høre på radio/musikk";
+"ActivityDeskWork" = "Organisering/papirarbeid";
+"ActivityReading" = "Lese";
+"ActivityTelephone" = "Telefonsamtaler";
+"ActivityPC" = "Bruk av PC, smarttelefon og nettbrett";
+"ActivityNature" = "Være ute i naturen";
+"ActivitySocial" = "Sosiale aktiviteter";
+"ActivityCulture" = "Kulturaktiviteter";
+"ActivityTrainingLow" = "Trene (lav intensitet)";
+"ActivityTrainingHigh" = "Trene (høy intensitet)";
+"ActivityRest" = "Hvile";
+"ActivitySleep" = "Søvn";
+
 
 /* Energy_use_label */
 "Energy_use_label" = "Hvor mye energi brukte du:";
