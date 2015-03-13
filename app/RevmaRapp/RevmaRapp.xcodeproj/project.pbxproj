@@ -28,6 +28,7 @@
 		C9DD9F441A13A3A00099B184 /* _ActivityName.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DD9F401A13A3A00099B184 /* _ActivityName.swift */; };
 		C9DD9F451A13A3A00099B184 /* ActivityItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DD9F411A13A3A00099B184 /* ActivityItem.swift */; };
 		C9DD9F461A13A3A00099B184 /* ActivityName.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DD9F421A13A3A00099B184 /* ActivityName.swift */; };
+		C9FC49DD1AB3276A005385CE /* CorePlotImageLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9FC49DC1AB3276A005385CE /* CorePlotImageLayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,6 +89,7 @@
 		C9E284BB1A134FBD00BCD802 /* nb */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nb; path = nb.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		C9E284BE1A13530C00BCD802 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		C9E284BF1A13530C00BCD802 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		C9FC49DC1AB3276A005385CE /* CorePlotImageLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CorePlotImageLayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +163,7 @@
 				C931DB021A66BD0B00BCBE81 /* RevmaRapp-Bridging-Header.h */,
 				C93F56EE1A0B70BE0030D481 /* Main.storyboard */,
 				C93F56F11A0B70BE0030D481 /* Images.xcassets */,
+				C9FC49DC1AB3276A005385CE /* CorePlotImageLayer.swift */,
 				C93F56F31A0B70BE0030D481 /* LaunchScreen.xib */,
 				C9DD9F361A13746F0099B184 /* Model */,
 				C93F56E61A0B70BE0030D481 /* Supporting Files */,
@@ -357,6 +360,7 @@
 				C9DD9F311A136E550099B184 /* RevmaRapp.xcdatamodeld in Sources */,
 				C9DD9F461A13A3A00099B184 /* ActivityName.swift in Sources */,
 				C9DD9F451A13A3A00099B184 /* ActivityItem.swift in Sources */,
+				C9FC49DD1AB3276A005385CE /* CorePlotImageLayer.swift in Sources */,
 				C9DD9F441A13A3A00099B184 /* _ActivityName.swift in Sources */,
 				C93F56ED1A0B70BE0030D481 /* ActivityEditController.swift in Sources */,
 				C931DB011A66BC7B00BCBE81 /* HistoryViewController.swift in Sources */,

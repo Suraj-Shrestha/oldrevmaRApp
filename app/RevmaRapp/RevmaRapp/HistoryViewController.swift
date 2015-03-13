@@ -36,6 +36,21 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource {
         }
     }
     
+    
+    func createAxisLabel(axis:CPTXYAxis, image:UIImage?, altText:String, altTextStyle:CPTTextStyle) {
+        if let goodImage = image {
+            let imageAsContentLayer = CorePlotImageLayer(image: goodImage)
+            let xAxisTitleMax = CPTAxisTitle(contentLayer:imageAsContentLayer)
+
+            axis.axisTitle = xAxisTitleMax
+            axis.axisConstraints = CPTConstraints.constraintWithLowerOffset(0.0)
+        } else {
+            axis.title = altText
+            axis.titleTextStyle = altTextStyle
+        }
+        
+    }
+    
     func setupGraph() {
         // create graph
         let graph = CPTXYGraph(frame: CGRectZero)
@@ -59,19 +74,35 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource {
         
         let axisSet = graph.axisSet as CPTXYAxisSet
         let x = axisSet.xAxis
-        x.separateLayers = false
-        x.title = NSLocalizedString("duty_max_label", comment: "duty")
-        x.titleTextStyle = axisTitleTextStyle
+        x.separateLayers = true
+        
+        let imageWidth:CGFloat = 10.0
+        let imageHeight:CGFloat = 10.0
+        UIGraphicsBeginImageContext(CGSizeMake(imageWidth, imageHeight))
+        UIColor.blackColor().setFill()
+        UIRectFill(CGRectMake(0, 0, imageWidth, imageHeight))
+        let maxImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        createAxisLabel(x,
+            image: UIImage.init(named: "important", inBundle:nil, compatibleWithTraitCollection:nil),
+            altText: NSLocalizedString("duty_max_label", comment: "duty"),
+            altTextStyle: axisTitleTextStyle)
+        
         x.titleOffset = 5
         x.titleLocation = 0.5
-        
+
         let x2 = CPTXYAxis(frame: CGRectZero)
         x2.coordinate = CPTCoordinate.X
         x2.plotSpace = plotSpace
         x2.separateLayers = true
         x2.labelingPolicy = CPTAxisLabelingPolicy.None
-        x2.title = NSLocalizedString("duty_min_label", comment: "duty")
-        x2.titleTextStyle = axisTitleTextStyle
+
+        createAxisLabel(x2,
+            image: UIImage.init(named: "unimportant", inBundle:nil, compatibleWithTraitCollection:nil),
+            altText: NSLocalizedString("duty_min_label", comment: "duty"),
+            altTextStyle: axisTitleTextStyle)
+        
         x2.titleOffset = 5
         x2.titleLocation = -0.5
         
