@@ -40,10 +40,9 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource {
     func createAxisLabel(axis:CPTXYAxis, image:UIImage?, altText:String, altTextStyle:CPTTextStyle) {
         if let goodImage = image {
             let imageAsContentLayer = CorePlotImageLayer(image: goodImage)
-            let xAxisTitleMax = CPTAxisTitle(contentLayer:imageAsContentLayer)
+            let imageTitle = CPTAxisTitle(contentLayer:imageAsContentLayer)
 
-            axis.axisTitle = xAxisTitleMax
-            axis.axisConstraints = CPTConstraints.constraintWithLowerOffset(0.0)
+            axis.axisTitle = imageTitle
         } else {
             axis.title = altText
             axis.titleTextStyle = altTextStyle
@@ -76,16 +75,8 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource {
         let x = axisSet.xAxis
         x.separateLayers = true
         
-        let imageWidth:CGFloat = 10.0
-        let imageHeight:CGFloat = 10.0
-        UIGraphicsBeginImageContext(CGSizeMake(imageWidth, imageHeight))
-        UIColor.blackColor().setFill()
-        UIRectFill(CGRectMake(0, 0, imageWidth, imageHeight))
-        let maxImage = UIGraphicsGetImageFromCurrentImageContext()
-        UIGraphicsEndImageContext()
-        
         createAxisLabel(x,
-            image: UIImage.init(named: "important", inBundle:nil, compatibleWithTraitCollection:nil),
+            image: UIImage.init(named: "wish", inBundle:nil, compatibleWithTraitCollection:nil),
             altText: NSLocalizedString("duty_max_label", comment: "duty"),
             altTextStyle: axisTitleTextStyle)
         
@@ -99,7 +90,7 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource {
         x2.labelingPolicy = CPTAxisLabelingPolicy.None
 
         createAxisLabel(x2,
-            image: UIImage.init(named: "unimportant", inBundle:nil, compatibleWithTraitCollection:nil),
+            image: UIImage.init(named: "handshake", inBundle:nil, compatibleWithTraitCollection:nil),
             altText: NSLocalizedString("duty_min_label", comment: "duty"),
             altTextStyle: axisTitleTextStyle)
         
@@ -107,9 +98,12 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource {
         x2.titleLocation = -0.5
         
         let y = axisSet.yAxis
-        y.title = NSLocalizedString("meaning_max_label", comment: "importance")
         y.separateLayers = false
-        y.titleTextStyle = axisTitleTextStyle
+        createAxisLabel(y,
+            image: UIImage.init(named:"important", inBundle:nil, compatibleWithTraitCollection:nil),
+            altText: NSLocalizedString("meaning_max_label", comment: "importance"),
+            altTextStyle: axisTitleTextStyle)
+        
         y.titleOffset = 5
         y.titleLocation = 0.5
         
@@ -118,8 +112,12 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource {
         y2.plotSpace = plotSpace
         y2.separateLayers = true
         y2.labelingPolicy = CPTAxisLabelingPolicy.None
-        y2.title = NSLocalizedString("meaning_min_label", comment: "importance")
-        y2.titleTextStyle = axisTitleTextStyle
+
+        createAxisLabel(y2,
+            image: UIImage.init(named:"unimportant", inBundle:nil, compatibleWithTraitCollection:nil),
+            altText: NSLocalizedString("meaning_min_label", comment: "importance"),
+            altTextStyle: axisTitleTextStyle)
+
         y2.titleOffset = 5
         y2.titleLocation = -0.5
         
@@ -182,7 +180,7 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource {
     func symbolForScatterPlot(plot: CPTScatterPlot!, recordIndex idx: UInt) -> CPTPlotSymbol! {
         let activity = activities[Int(bitPattern: idx)]
         let energyValue = 1.0 - CGFloat(activity.energy!.doubleValue)
-        let symbol = CPTPlotSymbol.diamondPlotSymbol()
+        let symbol = CPTPlotSymbol.rectanglePlotSymbol()
         let baseRadius = 5 * symbol.size.width
         symbol.size = (CGSizeMake(baseRadius * energyValue, baseRadius * energyValue))
         

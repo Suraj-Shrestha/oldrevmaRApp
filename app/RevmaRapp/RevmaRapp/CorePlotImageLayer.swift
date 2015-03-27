@@ -9,11 +9,12 @@
 
 class CorePlotImageLayer: CPTBorderedLayer {
     var image:UIImage
+    let ImageSize:CGFloat = 20.0
     
     init(image:UIImage) {
         self.image = image
         super.init(frame:CGRectZero)
-        self.bounds = CGRectMake(0, 0, image.size.width, image.size.height)
+        self.bounds = CGRectMake(0, 0, ImageSize, ImageSize)
     }
     
     required init(coder: NSCoder) {
