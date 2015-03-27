@@ -193,8 +193,8 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource {
         var components: [CGFloat] = [0.55, 0.55, 0.55]
 
         // Find color based on the section. Section I: shades of green. Section III: shades of red. Others: something else?
-        // Green Hue: 90 degrees, Saturation 100%, Lightness 25–75%
-        // Red Hue: 0 degrees, Saturation 100%, Lightness 30–80%
+        // Green Hue: 90 degrees, Saturation 50%, Lightness 25–75%
+        // Red Hue: 0 degrees, Saturation 50%, Lightness 30–80%
         
         if inSect1 || inSect3 {
             let redBase = 0.20
@@ -203,7 +203,7 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource {
             let dutySquared = (activity.duty!.doubleValue - 0.5) * (activity.duty!.doubleValue - 0.5)
             let importanceSquared = (activity.importance!.doubleValue - 0.5) * (activity.importance!.doubleValue - 0.5)
             let activityDistance = sqrt(dutySquared + importanceSquared)
-            components = rgbComponetsFor(inSect1 ? 120 : 0, saturation: 1.0, lightness: 1 - distanceBase - activityDistance)
+            components = rgbComponetsFor(inSect1 ? 120 : 0, saturation: 0.5, lightness: 1 - distanceBase - activityDistance)
             let symbolColor = CPTColor(componentRed: components[0],
                 green: components[1],
                 blue: components[2], alpha: 1.0)
