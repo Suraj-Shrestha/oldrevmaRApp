@@ -11,23 +11,42 @@ import CoreData
 
 class HistoryViewController: UIViewController, CPTScatterPlotDataSource {
     
-    @IBOutlet var graphView: CPTGraphHostingView!
+    let SliderValueKey = "RevmaRappSliderValue"
+    
+    @IBOutlet weak var graphView: CPTGraphHostingView!
+    @IBOutlet weak var weekLabel: UILabel!
+    @IBOutlet weak var weekSlider: UISlider!
+    var cutoffDate = NSDate(timeIntervalSinceNow:-60 * 60 * 24)
     
     var managedObjectContext : NSManagedObjectContext?;
     
+
     var activities:[ActivityItem] = [];
     
     override func viewDidLoad() {
         super.viewDidLoad()
         managedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
 
+        let defaults = NSUserDefaults.standardUserDefaults()
+        var sliderValue = defaults.floatForKey(SliderValueKey)
+        if sliderValue == 0 {
+            sliderValue = 364.0 / 365
+        }
+        
+        weekSlider.setValue(sliderValue, animated: false)
+        sliderChange(weekSlider)
+    }
+
+    func doGraph() {
         fetchActivities()
         setupGraph()
     }
-    
+
     func fetchActivities() {
         // Probably need to page this by date at some point as well, for now get me everything
         let fetchRequest = NSFetchRequest(entityName: ActivityItem.entityName())
+        let predicate = NSPredicate.init(format: "\(ActivityItemAttributes.time_start.rawValue) >= %@", argumentArray: [self.cutoffDate])
+        fetchRequest.predicate = predicate
         var error: NSError?
         if let results = self.managedObjectContext?.executeFetchRequest(fetchRequest, error: &error) {
             activities = results as! [ActivityItem]
@@ -133,6 +152,7 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource {
     func numberOfRecordsForPlot(plot: CPTPlot!) -> UInt {
         return UInt(activities.count)
     }
+
     
     func numberForPlot(plot: CPTPlot!, field fieldEnum: UInt, recordIndex idx: UInt) -> AnyObject {
         let CPTScatterPlotFieldX: UInt = 0 // Conversion to enums doesn't seem to work :-/
@@ -215,5 +235,23 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource {
         
         
         return symbol
+    }
+    
+    
+    @IBAction func sliderChange(slider: UISlider) {
+        let secsInDay = 60.0 * 60 * 24
+        let secsInYear = secsInDay * 365
+        let partOfYear = 1.0 + (1/secsInYear) - Double(slider.value);
+        cutoffDate = NSDate(timeIntervalSinceNow: -secsInYear * partOfYear);
+        let numberFormat = NSNumberFormatter()
+        NSUserDefaults.standardUserDefaults().setFloat(slider.value, forKey: SliderValueKey)
+        numberFormat.locale = NSLocale.currentLocale()
+        numberFormat.maximumFractionDigits = 1;
+        numberFormat.numberStyle = NSNumberFormatterStyle.DecimalStyle
+        let dayString  = numberFormat.stringFromNumber(NSNumber(double: secsInYear * partOfYear / secsInDay))
+        let weekTemplate = NSLocalizedString("%@ days", comment: "Days back")
+        weekLabel.text = NSString(format:weekTemplate, dayString!) as String
+        
+        doGraph()
     }
 }

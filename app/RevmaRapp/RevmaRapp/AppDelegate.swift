@@ -33,21 +33,29 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         var error: NSError?
         if let results = self.managedObjectContext.executeFetchRequest(fetchRequest, error: &error) {
             let activityNames = results as! [ActivityName]
-            let RecordCount = 50
+            let RecordCount = 240
+            let RecsInDay = 16
             var randomIndex = 0
             var rando = [UInt8](count:6 * RecordCount, repeatedValue: 0)
             SecRandomCopyBytes(kSecRandomDefault, rando.count, UnsafeMutablePointer<UInt8>(rando))
-            for _ in 1...RecordCount {
+            var date1 = NSDate()
+            
+            for recIndex in 1...RecordCount {
                 let activity = ActivityItem(managedObjectContext: self.managedObjectContext)
                 activity.activity = activityNames[Int(bitPattern: UInt(rando[randomIndex++])) % activityNames.count]
-                activity.time_start = NSDate()
+                activity.time_start = date1
                 activity.duration = 30
                 activity.pain = NSNumber(double: Double(Int(bitPattern: UInt(rando[randomIndex++]))) / 255.0)
                 activity.mastery = NSNumber(double: Double(Int(bitPattern: UInt(rando[randomIndex++]))) / 255.0)
                 activity.duty = NSNumber(double: Double(Int(bitPattern: UInt(rando[randomIndex++]))) / 255.0)
                 activity.energy = NSNumber(double: Double(Int(bitPattern: UInt(rando[randomIndex++]))) / 255.0)
                 activity.importance = NSNumber(double: Double(Int(bitPattern: UInt(rando[randomIndex++]))) / 255.0)
+                if recIndex % RecsInDay == 0 {
+                    let daysBack = (recIndex / RecsInDay) + (30 * (recIndex / (3 * RecsInDay)))
+                    date1 = NSDate(timeIntervalSinceNow: -60.0 * 60.0 * 24.0 * Double(daysBack))
+                }
             }
+            
         } else {
             println("Unresolved error \(error?.localizedDescription), \(error?.userInfo)\n Attempting to get activity names")
         }

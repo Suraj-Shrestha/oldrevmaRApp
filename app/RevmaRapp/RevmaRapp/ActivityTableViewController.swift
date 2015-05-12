@@ -37,6 +37,7 @@ class ActivityTableViewController: UITableViewController, NSFetchedResultsContro
     func fetchActivities() {
         // Probably need to page this by date at some point as well, for now get me everything
         let fetchRequest = NSFetchRequest(entityName: ActivityItem.entityName())
+        fetchRequest.sortDescriptors = [NSSortDescriptor(key: ActivityItemAttributes.time_start.rawValue, ascending: false)]
         var error: NSError?
         if let results = self.managedObjectContext?.executeFetchRequest(fetchRequest, error: &error) {
             activities = results as! [ActivityItem]
