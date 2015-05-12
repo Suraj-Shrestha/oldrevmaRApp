@@ -3,7 +3,7 @@
 
 import CoreData
 
-enum ActivityItemAttributes: String {
+public enum ActivityItemAttributes: String {
     case duration = "duration"
     case duty = "duty"
     case energy = "energy"
@@ -13,74 +13,74 @@ enum ActivityItemAttributes: String {
     case time_start = "time_start"
 }
 
-enum ActivityItemRelationships: String {
+public enum ActivityItemRelationships: String {
     case activity = "activity"
 }
 
-@objc
+@objc public
 class _ActivityItem: NSManagedObject {
 
     // MARK: - Class methods
 
-    class func entityName () -> String {
+    public class func entityName () -> String {
         return "ActivityLogItem"
     }
 
-    class func entity(managedObjectContext: NSManagedObjectContext!) -> NSEntityDescription! {
+    public class func entity(managedObjectContext: NSManagedObjectContext!) -> NSEntityDescription! {
         return NSEntityDescription.entityForName(self.entityName(), inManagedObjectContext: managedObjectContext);
     }
 
     // MARK: - Life cycle methods
 
-    override init(entity: NSEntityDescription, insertIntoManagedObjectContext context: NSManagedObjectContext!) {
+    public override init(entity: NSEntityDescription, insertIntoManagedObjectContext context: NSManagedObjectContext!) {
         super.init(entity: entity, insertIntoManagedObjectContext: context)
     }
 
-    convenience init(managedObjectContext: NSManagedObjectContext!) {
+    public convenience init(managedObjectContext: NSManagedObjectContext!) {
         let entity = _ActivityItem.entity(managedObjectContext)
         self.init(entity: entity, insertIntoManagedObjectContext: managedObjectContext)
     }
 
     // MARK: - Properties
 
-    @NSManaged
+    @NSManaged public
     var duration: NSNumber?
 
     // func validateDuration(value: AutoreleasingUnsafePointer<AnyObject>, error: NSErrorPointer) {}
 
-    @NSManaged
+    @NSManaged public
     var duty: NSNumber?
 
     // func validateDuty(value: AutoreleasingUnsafePointer<AnyObject>, error: NSErrorPointer) {}
 
-    @NSManaged
+    @NSManaged public
     var energy: NSNumber?
 
     // func validateEnergy(value: AutoreleasingUnsafePointer<AnyObject>, error: NSErrorPointer) {}
 
-    @NSManaged
+    @NSManaged public
     var importance: NSNumber?
 
     // func validateImportance(value: AutoreleasingUnsafePointer<AnyObject>, error: NSErrorPointer) {}
 
-    @NSManaged
+    @NSManaged public
     var mastery: NSNumber?
 
     // func validateMastery(value: AutoreleasingUnsafePointer<AnyObject>, error: NSErrorPointer) {}
 
-    @NSManaged
+    @NSManaged public
     var pain: NSNumber?
 
     // func validatePain(value: AutoreleasingUnsafePointer<AnyObject>, error: NSErrorPointer) {}
 
-    @NSManaged
+    @NSManaged public
     var time_start: NSDate?
 
     // func validateTime_start(value: AutoreleasingUnsafePointer<AnyObject>, error: NSErrorPointer) {}
 
     // MARK: - Relationships
 
-    @NSManaged
+    @NSManaged internal
     var activity: ActivityName?
 
     // func validateActivity(value: AutoreleasingUnsafePointer<AnyObject>, error: NSErrorPointer) {}

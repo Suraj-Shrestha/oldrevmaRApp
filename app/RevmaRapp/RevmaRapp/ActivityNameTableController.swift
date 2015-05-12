@@ -43,7 +43,7 @@ class ActivityNameTableController : UITableViewController, NSFetchedResultsContr
         let fetchRequest = NSFetchRequest(entityName: ActivityName.entityName())
         var error: NSError?
         if let results = self.managedObjectContext?.executeFetchRequest(fetchRequest, error: &error) {
-            activityNames = results as [ActivityName]
+            activityNames = results as! [ActivityName]
             activityNames.sort({ $0.name! < $1.name! })
         } else {
             println("Unresolved error \(error?.localizedDescription), \(error?.userInfo)\n Attempting to get activity names")
@@ -69,7 +69,7 @@ class ActivityNameTableController : UITableViewController, NSFetchedResultsContr
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("ActivityNameListItem", forIndexPath: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("ActivityNameListItem", forIndexPath: indexPath) as! UITableViewCell
         self.configureCell(cell, atIndexPath: indexPath)
         return cell
     }

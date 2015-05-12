@@ -19,7 +19,7 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        managedObjectContext = (UIApplication.sharedApplication().delegate as AppDelegate).managedObjectContext
+        managedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
 
         fetchActivities()
         setupGraph()
@@ -30,7 +30,7 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource {
         let fetchRequest = NSFetchRequest(entityName: ActivityItem.entityName())
         var error: NSError?
         if let results = self.managedObjectContext?.executeFetchRequest(fetchRequest, error: &error) {
-            activities = results as [ActivityItem]
+            activities = results as! [ActivityItem]
         } else {
             println("Unresolved error \(error?.localizedDescription), \(error?.userInfo)\n Attempting to get activity names")
         }
@@ -53,9 +53,9 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource {
     func setupGraph() {
         // create graph
         let graph = CPTXYGraph(frame: CGRectZero)
-        let plotSpace = graph.defaultPlotSpace as CPTXYPlotSpace
-        let xRange = plotSpace.xRange.mutableCopy() as CPTMutablePlotRange
-        let yRange = plotSpace.yRange.mutableCopy() as CPTMutablePlotRange
+        let plotSpace = graph.defaultPlotSpace as! CPTXYPlotSpace
+        let xRange = plotSpace.xRange.mutableCopy() as! CPTMutablePlotRange
+        let yRange = plotSpace.yRange.mutableCopy() as! CPTMutablePlotRange
         
         xRange.location = -0.6
         xRange.length = 1.2
@@ -71,7 +71,7 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource {
         axisTitleTextStyle.fontName = "Helvetica-Bold"
         axisTitleTextStyle.fontSize = 13.0
         
-        let axisSet = graph.axisSet as CPTXYAxisSet
+        let axisSet = graph.axisSet as! CPTXYAxisSet
         let x = axisSet.xAxis
         x.separateLayers = true
         
@@ -134,7 +134,7 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource {
         return UInt(activities.count)
     }
     
-    func numberForPlot(plot: CPTPlot!, field fieldEnum: UInt, recordIndex idx: UInt) -> NSNumber! {
+    func numberForPlot(plot: CPTPlot!, field fieldEnum: UInt, recordIndex idx: UInt) -> AnyObject {
         let CPTScatterPlotFieldX: UInt = 0 // Conversion to enums doesn't seem to work :-/
         let activity = activities[Int(bitPattern: idx)];
         return (fieldEnum == CPTScatterPlotFieldX) ? activity.duty!.doubleValue - 0.5 : activity.importance!.doubleValue - 0.5
@@ -208,7 +208,7 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource {
             symbol.lineStyle = nil
             symbol.fill = CPTFill(color:symbolColor)
         } else {
-            let grayLineStyle = symbol.lineStyle.mutableCopy() as CPTMutableLineStyle
+            let grayLineStyle = symbol.lineStyle.mutableCopy() as! CPTMutableLineStyle
             grayLineStyle.lineColor = CPTColor.grayColor()
             symbol.lineStyle = grayLineStyle
         }

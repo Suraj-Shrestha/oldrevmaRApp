@@ -47,7 +47,7 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
     let kMasteryRow = 3
 
     var pickerCellRowHeight:CGFloat = 0.0
-    var managedObjectContext: NSManagedObjectContext = (UIApplication.sharedApplication().delegate as AppDelegate).managedObjectContext
+    var managedObjectContext: NSManagedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
     var delegate: ActivityEditControllerDelegate?
     var dateFormater: NSDateFormatter!
     var numberFormatter: NSNumberFormatter!
@@ -196,7 +196,7 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
         if row == 0 {
             return NSLocalizedString("1 minute", comment: "Single minute")
         }
-        return NSString(format: NSLocalizedString("%@ minutes", comment: "Multiple (@%) minutes"), "\(row + 1)")
+        return NSString(format: NSLocalizedString("%@ minutes", comment: "Multiple (@%) minutes"), "\(row + 1)") as String
     }
 
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
@@ -346,11 +346,11 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
         
         if indexPath.section == 0 {
             if indexPathHasDatePicker(indexPath) {
-                return tableView.dequeueReusableCellWithIdentifier(kDatePickerID) as UITableViewCell
+                return tableView.dequeueReusableCellWithIdentifier(kDatePickerID) as! UITableViewCell
             }
             
             if indexPathHasDurationPicker(indexPath) {
-                let tableCell = tableView.dequeueReusableCellWithIdentifier(kDurationPickerID) as UITableViewCell
+                let tableCell = tableView.dequeueReusableCellWithIdentifier(kDurationPickerID) as! UITableViewCell
                 if let picker = tableCell.viewWithTag(kDurationPickerTag) as? UIPickerView {
                     picker.delegate = self
                     picker.dataSource = self
@@ -359,21 +359,21 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
             }
             
             if indexPathHasDate(indexPath) {
-                let tableCell = tableView.dequeueReusableCellWithIdentifier(kDateCellID) as UITableViewCell
+                let tableCell = tableView.dequeueReusableCellWithIdentifier(kDateCellID) as! UITableViewCell
                 tableCell.detailTextLabel!.text = dateFormater.stringFromDate(activityDate!)
                 tableCell.textLabel!.text = NSLocalizedString("Time_Start_Label", comment: "Time_Start_Label")
                 return tableCell
             }
             
             if indexPathHasDuration(indexPath) {
-                let tableCell = tableView.dequeueReusableCellWithIdentifier(kDurationCellID) as UITableViewCell
+                let tableCell = tableView.dequeueReusableCellWithIdentifier(kDurationCellID) as! UITableViewCell
                 tableCell.detailTextLabel!.text = numberFormatter.stringFromNumber(NSNumber(integer: durationInMinutes))
                 tableCell.textLabel!.text = NSLocalizedString("Duration_Label", comment: "Duration_Label")
                 return tableCell
             }
             
             if indexPath.row == kNameRow {
-                let tableCell = tableView.dequeueReusableCellWithIdentifier(kActivityNameCellID) as UITableViewCell
+                let tableCell = tableView.dequeueReusableCellWithIdentifier(kActivityNameCellID) as! UITableViewCell
                 if activityName?.name != nil {
                     tableCell.textLabel!.text = activityName!.visibleName()
                 } else {
@@ -386,12 +386,12 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
     }
 
     func configureQuestionCellHelper(tableCell: UITableViewCell, forIndexPath indexPath: NSIndexPath) {
-        let questionLabel = tableCell.viewWithTag(kQuestionLabelTag) as UILabel
-        let minLabel = tableCell.viewWithTag(kMinLabelTag) as UIImageView
-        let maxLabel = tableCell.viewWithTag(kMaxLabelTag) as UIImageView
-        let minLabelText = tableCell.viewWithTag(kMinLabelTextTag) as UILabel
-        let maxLabelText = tableCell.viewWithTag(kMaxLabelTextTag) as UILabel
-        let slider = tableCell.viewWithTag(kSliderTag) as UISlider
+        let questionLabel = tableCell.viewWithTag(kQuestionLabelTag) as! UILabel
+        let minLabel = tableCell.viewWithTag(kMinLabelTag) as! UIImageView
+        let maxLabel = tableCell.viewWithTag(kMaxLabelTag) as! UIImageView
+        let minLabelText = tableCell.viewWithTag(kMinLabelTextTag) as! UILabel
+        let maxLabelText = tableCell.viewWithTag(kMaxLabelTextTag) as! UILabel
+        let slider = tableCell.viewWithTag(kSliderTag) as! UISlider
         slider.value = valuesArray[indexPath.row]
         switch indexPath.row {
         case kEnergyRow:
@@ -425,7 +425,7 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
 
     
     func configureQuestionCell(indexPath: NSIndexPath) -> UITableViewCell {
-        let tableCell = tableView.dequeueReusableCellWithIdentifier(kQuestionCellAltID) as UITableViewCell
+        let tableCell = tableView.dequeueReusableCellWithIdentifier(kQuestionCellAltID) as! UITableViewCell
         configureQuestionCellHelper(tableCell, forIndexPath: indexPath)
         return tableCell
     }

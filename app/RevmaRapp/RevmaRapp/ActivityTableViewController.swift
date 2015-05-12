@@ -21,7 +21,7 @@ class ActivityTableViewController: UITableViewController, NSFetchedResultsContro
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        managedObjectContext = (UIApplication.sharedApplication().delegate as AppDelegate).managedObjectContext
+        managedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
         dateFormatter = NSDateFormatter()
         dateFormatter.dateStyle = NSDateFormatterStyle.ShortStyle
         dateFormatter.timeStyle = NSDateFormatterStyle.ShortStyle
@@ -39,7 +39,7 @@ class ActivityTableViewController: UITableViewController, NSFetchedResultsContro
         let fetchRequest = NSFetchRequest(entityName: ActivityItem.entityName())
         var error: NSError?
         if let results = self.managedObjectContext?.executeFetchRequest(fetchRequest, error: &error) {
-            activities = results as [ActivityItem]
+            activities = results as! [ActivityItem]
             // Need to sort these things eventually, by date.
 //            activities.sort({ $0.name! < $1.name! })
         } else {
@@ -75,7 +75,7 @@ class ActivityTableViewController: UITableViewController, NSFetchedResultsContro
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("ActivityListItem", forIndexPath: indexPath) as UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("ActivityListItem", forIndexPath: indexPath) as! UITableViewCell
         self.configureCell(cell, atIndexPath: indexPath)
         return cell
     }

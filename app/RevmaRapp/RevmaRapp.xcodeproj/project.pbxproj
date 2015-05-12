@@ -337,7 +337,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		C9DD9F3D1A1398070099B184 /* Generate Model Objects */ = {
 			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
+			buildActionMask = 12;
 			files = (
 			);
 			inputPaths = (
@@ -345,10 +345,12 @@
 			);
 			name = "Generate Model Objects";
 			outputPaths = (
+				"$(SRCROOT)/RevmaRapp/RevmaRapp/ModelObjects/_ActivityItem.swift",
+				"$(SRCROOT)/RevmaRapp/RevmaRapp/ModelObjects/_ActivityName.swift",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd \"$PROJECT_DIR/RevmaRapp\" && /usr/local/bin/mogenerator --swift -m $SCRIPT_INPUT_FILE_0  --output-dir ./ModelObjects";
+			shellScript = "cd \"$PROJECT_DIR/RevmaRapp\" && ~/bin/mogenerator --swift -m $SCRIPT_INPUT_FILE_0  --output-dir ./ModelObjects2";
 		};
 /* End PBXShellScriptBuildPhase section */
 

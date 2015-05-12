@@ -3,54 +3,54 @@
 
 import CoreData
 
-enum ActivityNameAttributes: String {
+public enum ActivityNameAttributes: String {
     case i18nable = "i18nable"
     case name = "name"
 }
 
-enum ActivityNameRelationships: String {
+public enum ActivityNameRelationships: String {
     case activityItems = "activityItems"
 }
 
-@objc
+@objc public
 class _ActivityName: NSManagedObject {
 
     // MARK: - Class methods
 
-    class func entityName () -> String {
+    public class func entityName () -> String {
         return "Activity"
     }
 
-    class func entity(managedObjectContext: NSManagedObjectContext!) -> NSEntityDescription! {
+    public class func entity(managedObjectContext: NSManagedObjectContext!) -> NSEntityDescription! {
         return NSEntityDescription.entityForName(self.entityName(), inManagedObjectContext: managedObjectContext);
     }
 
     // MARK: - Life cycle methods
 
-    override init(entity: NSEntityDescription, insertIntoManagedObjectContext context: NSManagedObjectContext!) {
+    public override init(entity: NSEntityDescription, insertIntoManagedObjectContext context: NSManagedObjectContext!) {
         super.init(entity: entity, insertIntoManagedObjectContext: context)
     }
 
-    convenience init(managedObjectContext: NSManagedObjectContext!) {
+    public convenience init(managedObjectContext: NSManagedObjectContext!) {
         let entity = _ActivityName.entity(managedObjectContext)
         self.init(entity: entity, insertIntoManagedObjectContext: managedObjectContext)
     }
 
     // MARK: - Properties
 
-    @NSManaged
+    @NSManaged public
     var i18nable: NSNumber?
 
     // func validateI18nable(value: AutoreleasingUnsafePointer<AnyObject>, error: NSErrorPointer) {}
 
-    @NSManaged
+    @NSManaged public
     var name: String?
 
     // func validateName(value: AutoreleasingUnsafePointer<AnyObject>, error: NSErrorPointer) {}
 
     // MARK: - Relationships
 
-    @NSManaged
+    @NSManaged public
     var activityItems: NSSet
 
 }
@@ -58,27 +58,28 @@ class _ActivityName: NSManagedObject {
 extension _ActivityName {
 
     func addActivityItems(objects: NSSet) {
-        let mutable = self.activityItems.mutableCopy() as NSMutableSet
-        mutable.unionSet(objects)
-        self.activityItems = mutable.copy() as NSSet
+        let mutable = self.activityItems.mutableCopy() as! NSMutableSet
+        mutable.unionSet(objects as! Set<NSObject>)
+        self.activityItems = mutable.copy() as! NSSet
     }
 
     func removeActivityItems(objects: NSSet) {
-        let mutable = self.activityItems.mutableCopy() as NSMutableSet
-        mutable.minusSet(objects)
-        self.activityItems = mutable.copy() as NSSet
+        let mutable = self.activityItems.mutableCopy() as! NSMutableSet
+        mutable.minusSet(objects as! Set<NSObject>)
+        self.activityItems = mutable.copy() as! NSSet
     }
 
     func addActivityItemsObject(value: ActivityItem!) {
-        let mutable = self.activityItems.mutableCopy() as NSMutableSet
+        let mutable = self.activityItems.mutableCopy() as! NSMutableSet
         mutable.addObject(value)
-        self.activityItems = mutable.copy() as NSSet
+        self.activityItems = mutable.copy() as! NSSet
     }
 
     func removeActivityItemsObject(value: ActivityItem!) {
-        let mutable = self.activityItems.mutableCopy() as NSMutableSet
+        let mutable = self.activityItems.mutableCopy() as! NSMutableSet
         mutable.removeObject(value)
-        self.activityItems = mutable.copy() as NSSet
+        self.activityItems = mutable.copy() as! NSSet
     }
 
 }
+

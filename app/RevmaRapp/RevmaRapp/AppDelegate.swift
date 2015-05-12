@@ -10,7 +10,7 @@ import UIKit
 import CoreData
 
 
-func ZAssert(condition: @autoclosure() -> Bool, _ message: String = "", file:
+func ZAssert(@autoclosure condition: () -> Bool, _ message: String = "", file:
     String = __FILE__, line: Int = __LINE__) {
 #if DEBUG
     if !condition() {
@@ -32,11 +32,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let fetchRequest = NSFetchRequest(entityName: ActivityName.entityName())
         var error: NSError?
         if let results = self.managedObjectContext.executeFetchRequest(fetchRequest, error: &error) {
-            let activityNames = results as [ActivityName]
+            let activityNames = results as! [ActivityName]
             let RecordCount = 50
             var randomIndex = 0
             var rando = [UInt8](count:6 * RecordCount, repeatedValue: 0)
-            SecRandomCopyBytes(kSecRandomDefault, UInt(bitPattern:rando.count), UnsafeMutablePointer<UInt8>(rando))
+            SecRandomCopyBytes(kSecRandomDefault, rando.count, UnsafeMutablePointer<UInt8>(rando))
             for _ in 1...RecordCount {
                 let activity = ActivityItem(managedObjectContext: self.managedObjectContext)
                 activity.activity = activityNames[Int(bitPattern: UInt(rando[randomIndex++])) % activityNames.count]
@@ -54,7 +54,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func createObjects() {
-        let currLang = NSLocale.preferredLanguages()[0] as String;
+        let currLang = NSLocale.preferredLanguages()[0] as! String;
         
         let fetchRequest = NSFetchRequest(entityName: ActivityName.entityName())
         
@@ -120,7 +120,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         ZAssert(error == nil, "Saving records went wrong \(error), \(error?.userInfo)")
     }
 
-
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
@@ -128,8 +127,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         createObjects()
         
         // OK, the activity table view gets a managed object context
-        let tabController = self.window!.rootViewController as UITabBarController
-        let activityTableController = tabController.viewControllers![0].topViewController as ActivityTableViewController
+        let tabController = self.window!.rootViewController as! UITabBarController
+        let activityTableController = tabController.viewControllers![0].topViewController as! ActivityTableViewController
         activityTableController.managedObjectContext = self.managedObjectContext
         let defaults = NSUserDefaults.standardUserDefaults()
         tabController.selectedIndex = defaults.integerForKey(RevmaRappTabIndexKey)
@@ -140,7 +139,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
-        let tabController = self.window!.rootViewController as UITabBarController
+        let tabController = self.window!.rootViewController as! UITabBarController
         let currentTabIndex = tabController.selectedIndex
         let defaults = NSUserDefaults.standardUserDefaults()
         defaults.setInteger(currentTabIndex, forKey: RevmaRappTabIndexKey)
@@ -168,7 +167,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     lazy var applicationDocumentsDirectory: NSURL = {
         // The directory the application uses to store the Core Data store file. This code uses a directory named "com.skyeroad.Proto" in the application's documents Application Support directory.
         let urls = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)
-        return urls[urls.count-1] as NSURL
+        return urls[urls.count-1] as! NSURL
         }()
 
 
