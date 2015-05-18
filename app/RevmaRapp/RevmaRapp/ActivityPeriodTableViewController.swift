@@ -9,12 +9,11 @@
 import Foundation
 import CoreData
 
-class ActivityPeriodTableViewController : UITableViewController, NSFetchedResultsControllerDelegate {
+class ActivityPeriodTableViewController : UITableViewController, NSFetchedResultsControllerDelegate, ActivityPeriodEditControllerDelegate {
     var managedObjectContext : NSManagedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
     var periods:[ActivityPeriod] = [];
     var dateFormatter: NSDateFormatter!
-    
- 
+
     override func viewDidLoad() {
         super.viewDidLoad()
         dateFormatter = NSDateFormatter()
@@ -43,15 +42,15 @@ class ActivityPeriodTableViewController : UITableViewController, NSFetchedResult
             switch (whichSegue) {
             case "showPeriod":
                 if let indexPath = self.tableView.indexPathForSelectedRow() {
-                    let object = self.periods[indexPath.row] as ActivityPeriod
+                    let period = self.periods[indexPath.row] as ActivityPeriod
                     if let activityViewController = segue.destinationViewController.topViewController as? ActivityTableViewController {
-                        activityViewController.period = object
+                        activityViewController.period = period
                     }
                 }
-//            case "createPeriod":
-//                if let editController = segue.destinationViewController.topViewController as? ActivityEditController {
-//                    editController.delegate = self
-//                }
+            case "createPeriod":
+                if let editController = segue.destinationViewController.topViewController as? ActivityPeriodEditController {
+                    editController.delegate = self
+                }
             default:
                 break;
             }
@@ -69,7 +68,7 @@ class ActivityPeriodTableViewController : UITableViewController, NSFetchedResult
         return cell
     }
     
-    func configureCell(cell: UITableViewCell, atIndexPath indexPath: NSIndexPath) {
+    private func configureCell(cell: UITableViewCell, atIndexPath indexPath: NSIndexPath) {
         let period = self.periods[indexPath.row]
         if let cellText = period.name {
             cell.textLabel!.text = period.name
@@ -78,5 +77,14 @@ class ActivityPeriodTableViewController : UITableViewController, NSFetchedResult
             cell.textLabel!.text = NSLocalizedString("Missing period name", comment: "Data corruption string, periods should always have a name")
         }
     }
+    
+    func periodEditControllerDidCancel(controller: ActivityPeriodEditController) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
 
+    func periodEditControllerDidSave(controller: ActivityPeriodEditController) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+        fetchPeriods()
+        tableView.reloadData()
+    }
 }

@@ -58,7 +58,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2118" y="862"/>
+            <point key="canvasLocation" x="-1712" y="916"/>
         </scene>
         <!--Reflection_Title-->
         <scene sceneID="cPc-bs-gVW">
@@ -266,7 +266,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="By1-iB-hiK" kind="showDetail" identifier="showPeriod" id="To4-WP-v20"/>
+                                    <segue destination="By1-iB-hiK" kind="show" identifier="showPeriod" id="To4-WP-v20"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -276,7 +276,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Activity Periods" id="1fw-lw-0Ca">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="lKj-Ey-wxk"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="lKj-Ey-wxk">
+                            <connections>
+                                <segue destination="9It-9Y-Mhz" kind="presentation" identifier="createPeriod" id="y8J-ei-fuy"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s6V-Nh-Y9i" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -809,6 +813,115 @@
                 </navigationController>
             </objects>
             <point key="canvasLocation" x="-3212" y="1861"/>
+        </scene>
+        <!--Activity Period Edit Controller-->
+        <scene sceneID="sRF-eq-Txs">
+            <objects>
+                <viewController id="Ygp-Uc-ctM" customClass="ActivityPeriodEditController" customModule="RevmaRapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="761-za-Snd"/>
+                        <viewControllerLayoutGuide type="bottom" id="H4k-mo-MgS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="REl-9L-Kat">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="RevmaRapp_description_text" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDe-GH-zJA">
+                                <rect key="frame" x="187" y="72" width="226" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="how_long_period" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tMS-bT-ArA">
+                                <rect key="frame" x="234" y="101" width="132" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Wlb-Tp-dQM">
+                                <rect key="frame" x="215" y="130" width="170" height="29"/>
+                                <segments>
+                                    <segment title="3 days"/>
+                                    <segment title="5 days"/>
+                                    <segment title="7 Days"/>
+                                </segments>
+                                <connections>
+                                    <action selector="dayPickerChanged:" destination="Ygp-Uc-ctM" eventType="valueChanged" id="4Nv-Zp-GWt"/>
+                                </connections>
+                            </segmentedControl>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="TuK-sS-MLV">
+                                <rect key="frame" x="140" y="195" width="320" height="162"/>
+                                <date key="date" timeIntervalSinceReferenceDate="453647472.06358898">
+                                    <!--2015-05-18 13:11:12 +0000-->
+                                </date>
+                                <date key="minimumDate" timeIntervalSinceReferenceDate="441802800">
+                                    <!--2015-01-01 11:00:00 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="startDateChanged:" destination="Ygp-Uc-ctM" eventType="valueChanged" id="b1K-At-YLh"/>
+                                </connections>
+                            </datePicker>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="start_day" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YMr-eJ-UoL">
+                                <rect key="frame" x="279" y="166" width="71" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Period should include one day in a weekend" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="THG-PE-ABD">
+                                <rect key="frame" x="145" y="365" width="339" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="Wlb-Tp-dQM" secondAttribute="centerX" id="Md3-KJ-2x2"/>
+                            <constraint firstAttribute="centerX" secondItem="YMr-eJ-UoL" secondAttribute="centerX" constant="-14.5" id="RzU-wM-AEF"/>
+                            <constraint firstItem="VDe-GH-zJA" firstAttribute="top" secondItem="761-za-Snd" secondAttribute="bottom" constant="8" id="S7y-q6-MIj"/>
+                            <constraint firstAttribute="centerX" secondItem="TuK-sS-MLV" secondAttribute="centerX" id="U84-6a-AN7"/>
+                            <constraint firstItem="Wlb-Tp-dQM" firstAttribute="top" secondItem="tMS-bT-ArA" secondAttribute="bottom" constant="8" id="WNo-Nh-QIJ"/>
+                            <constraint firstItem="YMr-eJ-UoL" firstAttribute="top" secondItem="Wlb-Tp-dQM" secondAttribute="bottom" constant="8" id="Wvu-rk-te5"/>
+                            <constraint firstItem="THG-PE-ABD" firstAttribute="top" secondItem="TuK-sS-MLV" secondAttribute="bottom" constant="8" id="aJu-tL-KDN"/>
+                            <constraint firstAttribute="centerX" secondItem="THG-PE-ABD" secondAttribute="centerX" constant="-14.5" id="aMA-xv-sZJ"/>
+                            <constraint firstItem="TuK-sS-MLV" firstAttribute="top" secondItem="YMr-eJ-UoL" secondAttribute="bottom" constant="8" id="dSc-I4-xiV"/>
+                            <constraint firstAttribute="centerX" secondItem="tMS-bT-ArA" secondAttribute="centerX" id="fuX-c4-S29"/>
+                            <constraint firstItem="tMS-bT-ArA" firstAttribute="top" secondItem="VDe-GH-zJA" secondAttribute="bottom" constant="8" id="gCO-AE-0uk"/>
+                            <constraint firstAttribute="centerX" secondItem="VDe-GH-zJA" secondAttribute="centerX" id="jCK-Fy-L59"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="hIx-3a-uEz">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Hms-5N-dpl">
+                            <connections>
+                                <action selector="doCancel:" destination="Ygp-Uc-ctM" id="zBk-CZ-I5d"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="npg-tp-6in">
+                            <connections>
+                                <action selector="donePressed:" destination="Ygp-Uc-ctM" id="rHu-pd-GkA"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DUI-ho-NeU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3252" y="2604"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="H9a-3e-qoZ">
+            <objects>
+                <navigationController id="9It-9Y-Mhz" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jGd-iw-d2A">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Ygp-Uc-ctM" kind="relationship" relationship="rootViewController" id="2TP-FJ-Q0v"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f95-TX-DvD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4088" y="2604"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="o0B-hV-v1r">

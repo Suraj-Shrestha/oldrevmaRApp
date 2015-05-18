@@ -79,13 +79,13 @@ class ActivityViewController: UIViewController, ActivityEditControllerDelegate {
             }
         }
     }
-    
+
     // MARK: ActivtyEditControllerDelegate
     func activtyEditControllerDidCancel(controller: ActivityEditController) {
         self.dismissViewControllerAnimated(true, completion: nil)
         
     }
-    
+
     func activityEditControllerDidSave(controller: ActivityEditController) {
         controller.save()
         self.dismissViewControllerAnimated(true, completion: nil)
