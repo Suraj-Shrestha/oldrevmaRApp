@@ -1,24 +1,26 @@
 // DO NOT EDIT. This file is machine-generated and constantly overwritten.
-// Make changes to ActivityName.swift instead.
+// Make changes to ActivityPeriod.swift instead.
 
 import CoreData
 
-public enum ActivityNameAttributes: String {
-    case i18nable = "i18nable"
+public enum ActivityPeriodAttributes: String {
+    case comment = "comment"
     case name = "name"
+    case start = "start"
+    case stop = "stop"
 }
 
-public enum ActivityNameRelationships: String {
+public enum ActivityPeriodRelationships: String {
     case activityItems = "activityItems"
 }
 
 @objc public
-class _ActivityName: NSManagedObject {
+class _ActivityPeriod: NSManagedObject {
 
     // MARK: - Class methods
 
     public class func entityName () -> String {
-        return "Activity"
+        return "Period"
     }
 
     public class func entity(managedObjectContext: NSManagedObjectContext!) -> NSEntityDescription! {
@@ -32,21 +34,31 @@ class _ActivityName: NSManagedObject {
     }
 
     public convenience init(managedObjectContext: NSManagedObjectContext!) {
-        let entity = _ActivityName.entity(managedObjectContext)
+        let entity = _ActivityPeriod.entity(managedObjectContext)
         self.init(entity: entity, insertIntoManagedObjectContext: managedObjectContext)
     }
 
     // MARK: - Properties
 
     @NSManaged public
-    var i18nable: NSNumber?
+    var comment: String?
 
-    // func validateI18nable(value: AutoreleasingUnsafeMutablePointer<AnyObject>, error: NSErrorPointer) -> Bool {}
+    // func validateComment(value: AutoreleasingUnsafeMutablePointer<AnyObject>, error: NSErrorPointer) -> Bool {}
 
     @NSManaged public
     var name: String?
 
     // func validateName(value: AutoreleasingUnsafeMutablePointer<AnyObject>, error: NSErrorPointer) -> Bool {}
+
+    @NSManaged public
+    var start: NSDate?
+
+    // func validateStart(value: AutoreleasingUnsafeMutablePointer<AnyObject>, error: NSErrorPointer) -> Bool {}
+
+    @NSManaged public
+    var stop: NSDate?
+
+    // func validateStop(value: AutoreleasingUnsafeMutablePointer<AnyObject>, error: NSErrorPointer) -> Bool {}
 
     // MARK: - Relationships
 
@@ -55,7 +67,7 @@ class _ActivityName: NSManagedObject {
 
 }
 
-extension _ActivityName {
+extension _ActivityPeriod {
 
     func addActivityItems(objects: NSSet) {
         let mutable = self.activityItems.mutableCopy() as! NSMutableSet

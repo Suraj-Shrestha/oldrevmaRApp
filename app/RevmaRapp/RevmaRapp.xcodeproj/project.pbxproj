@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		C90F589C1A24D0F600258424 /* ActivityNameTableController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C90F589B1A24D0F600258424 /* ActivityNameTableController.swift */; };
+		C92B45F21B09CCD300B695FF /* _ActivityPeriod.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B45F01B09CCD300B695FF /* _ActivityPeriod.swift */; };
+		C92B45F31B09CCD300B695FF /* ActivityPeriod.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B45F11B09CCD300B695FF /* ActivityPeriod.swift */; };
+		C92B45F51B09CF8500B695FF /* ActivityPeriodTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C92B45F41B09CF8500B695FF /* ActivityPeriodTableViewController.swift */; };
 		C931DAFA1A66A58300BCBE81 /* libCorePlot-CocoaTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C931DAF71A66A54E00BCBE81 /* libCorePlot-CocoaTouch.a */; };
 		C931DAFC1A66A5AC00BCBE81 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C931DAFB1A66A5AC00BCBE81 /* QuartzCore.framework */; };
 		C931DAFE1A66A5B200BCBE81 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C931DAFD1A66A5B200BCBE81 /* Accelerate.framework */; };
@@ -57,6 +60,9 @@
 
 /* Begin PBXFileReference section */
 		C90F589B1A24D0F600258424 /* ActivityNameTableController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityNameTableController.swift; sourceTree = "<group>"; };
+		C92B45F01B09CCD300B695FF /* _ActivityPeriod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _ActivityPeriod.swift; sourceTree = "<group>"; };
+		C92B45F11B09CCD300B695FF /* ActivityPeriod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityPeriod.swift; sourceTree = "<group>"; };
+		C92B45F41B09CF8500B695FF /* ActivityPeriodTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityPeriodTableViewController.swift; sourceTree = "<group>"; };
 		C931DAF01A66A54E00BCBE81 /* CorePlot-CocoaTouch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "CorePlot-CocoaTouch.xcodeproj"; path = "/Users/trenton/projects/nr/revmarapp/app/../../../core-plot/framework/CorePlot-CocoaTouch.xcodeproj"; sourceTree = "<absolute>"; };
 		C931DAFB1A66A5AC00BCBE81 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		C931DAFD1A66A5B200BCBE81 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
@@ -155,6 +161,7 @@
 			children = (
 				C9DD9F3E1A13A3A00099B184 /* ModelObjects */,
 				C93F56E81A0B70BE0030D481 /* AppDelegate.swift */,
+				C92B45F41B09CF8500B695FF /* ActivityPeriodTableViewController.swift */,
 				C93F56EA1A0B70BE0030D481 /* ActivityTableViewController.swift */,
 				C9C10BE31A0B831C00784666 /* ActivityViewController.swift */,
 				C93F56EC1A0B70BE0030D481 /* ActivityEditController.swift */,
@@ -210,6 +217,8 @@
 		C9DD9F3E1A13A3A00099B184 /* ModelObjects */ = {
 			isa = PBXGroup;
 			children = (
+				C92B45F01B09CCD300B695FF /* _ActivityPeriod.swift */,
+				C92B45F11B09CCD300B695FF /* ActivityPeriod.swift */,
 				C9DD9F3F1A13A3A00099B184 /* _ActivityItem.swift */,
 				C9DD9F401A13A3A00099B184 /* _ActivityName.swift */,
 				C9DD9F411A13A3A00099B184 /* ActivityItem.swift */,
@@ -360,9 +369,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C9DD9F311A136E550099B184 /* RevmaRapp.xcdatamodeld in Sources */,
+				C92B45F21B09CCD300B695FF /* _ActivityPeriod.swift in Sources */,
 				C9DD9F461A13A3A00099B184 /* ActivityName.swift in Sources */,
+				C92B45F51B09CF8500B695FF /* ActivityPeriodTableViewController.swift in Sources */,
 				C9DD9F451A13A3A00099B184 /* ActivityItem.swift in Sources */,
 				C9FC49DD1AB3276A005385CE /* CorePlotImageLayer.swift in Sources */,
+				C92B45F31B09CCD300B695FF /* ActivityPeriod.swift in Sources */,
 				C9DD9F441A13A3A00099B184 /* _ActivityName.swift in Sources */,
 				C93F56ED1A0B70BE0030D481 /* ActivityEditController.swift in Sources */,
 				C931DB011A66BC7B00BCBE81 /* HistoryViewController.swift in Sources */,

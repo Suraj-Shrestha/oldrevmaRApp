@@ -70,6 +70,8 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
         }
     }
     
+    var period: ActivityPeriod!
+    
     func configureView() {
         if !isViewLoaded() {
             return
@@ -275,6 +277,9 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
     func save() {
         // Save this as a separate variable to stop us from cascading didSets.
         let activityToSave: ActivityItem = activityItem != nil ? activityItem : ActivityItem(managedObjectContext: managedObjectContext)
+        if activityToSave.period == nil {
+            activityToSave.period = period
+        }
         activityToSave.activity = activityName
         activityToSave.time_start = activityDate
         activityToSave.duration = durationInMinutes

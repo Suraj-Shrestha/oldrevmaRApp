@@ -15,6 +15,7 @@ public enum ActivityItemAttributes: String {
 
 public enum ActivityItemRelationships: String {
     case activity = "activity"
+    case period = "period"
 }
 
 @objc public
@@ -46,44 +47,49 @@ class _ActivityItem: NSManagedObject {
     @NSManaged public
     var duration: NSNumber?
 
-    // func validateDuration(value: AutoreleasingUnsafePointer<AnyObject>, error: NSErrorPointer) {}
+    // func validateDuration(value: AutoreleasingUnsafeMutablePointer<AnyObject>, error: NSErrorPointer) -> Bool {}
 
     @NSManaged public
     var duty: NSNumber?
 
-    // func validateDuty(value: AutoreleasingUnsafePointer<AnyObject>, error: NSErrorPointer) {}
+    // func validateDuty(value: AutoreleasingUnsafeMutablePointer<AnyObject>, error: NSErrorPointer) -> Bool {}
 
     @NSManaged public
     var energy: NSNumber?
 
-    // func validateEnergy(value: AutoreleasingUnsafePointer<AnyObject>, error: NSErrorPointer) {}
+    // func validateEnergy(value: AutoreleasingUnsafeMutablePointer<AnyObject>, error: NSErrorPointer) -> Bool {}
 
     @NSManaged public
     var importance: NSNumber?
 
-    // func validateImportance(value: AutoreleasingUnsafePointer<AnyObject>, error: NSErrorPointer) {}
+    // func validateImportance(value: AutoreleasingUnsafeMutablePointer<AnyObject>, error: NSErrorPointer) -> Bool {}
 
     @NSManaged public
     var mastery: NSNumber?
 
-    // func validateMastery(value: AutoreleasingUnsafePointer<AnyObject>, error: NSErrorPointer) {}
+    // func validateMastery(value: AutoreleasingUnsafeMutablePointer<AnyObject>, error: NSErrorPointer) -> Bool {}
 
     @NSManaged public
     var pain: NSNumber?
 
-    // func validatePain(value: AutoreleasingUnsafePointer<AnyObject>, error: NSErrorPointer) {}
+    // func validatePain(value: AutoreleasingUnsafeMutablePointer<AnyObject>, error: NSErrorPointer) -> Bool {}
 
     @NSManaged public
     var time_start: NSDate?
 
-    // func validateTime_start(value: AutoreleasingUnsafePointer<AnyObject>, error: NSErrorPointer) {}
+    // func validateTime_start(value: AutoreleasingUnsafeMutablePointer<AnyObject>, error: NSErrorPointer) -> Bool {}
 
     // MARK: - Relationships
 
     @NSManaged internal
     var activity: ActivityName?
 
-    // func validateActivity(value: AutoreleasingUnsafePointer<AnyObject>, error: NSErrorPointer) {}
+    // func validateActivity(value: AutoreleasingUnsafeMutablePointer<AnyObject>, error: NSErrorPointer) -> Bool {}
+
+    @NSManaged internal
+    var period: ActivityPeriod?
+
+    // func validatePeriod(value: AutoreleasingUnsafeMutablePointer<AnyObject>, error: NSErrorPointer) -> Bool {}
 
 }
 

@@ -27,41 +27,62 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
-    func createDummyObjects() {
-
-        let fetchRequest = NSFetchRequest(entityName: ActivityName.entityName())
+    private func createPeriods() {
+        for i in 1...3 {
+            let period = ActivityPeriod(managedObjectContext: self.managedObjectContext)
+            period.name = "Test Period \(i)"
+            period.start = NSDate(timeIntervalSinceNow: -60.0 * 60.0 * 24.0 * 33.0 * Double(i))
+            period.stop = NSDate(timeIntervalSinceNow: -60.0 * 60.0 * 24.0 * 30.0 * Double(i))
+        }
+    }
+    
+    private func createDummyObjects() {
+        
+        createPeriods()
+        
+        let periodFetchRequest = NSFetchRequest(entityName: ActivityPeriod.entityName())
         var error: NSError?
-        if let results = self.managedObjectContext.executeFetchRequest(fetchRequest, error: &error) {
-            let activityNames = results as! [ActivityName]
-            let RecordCount = 240
-            let RecsInDay = 16
-            var randomIndex = 0
-            var rando = [UInt8](count:6 * RecordCount, repeatedValue: 0)
-            SecRandomCopyBytes(kSecRandomDefault, rando.count, UnsafeMutablePointer<UInt8>(rando))
-            var date1 = NSDate()
-            
-            for recIndex in 1...RecordCount {
-                let activity = ActivityItem(managedObjectContext: self.managedObjectContext)
-                activity.activity = activityNames[Int(bitPattern: UInt(rando[randomIndex++])) % activityNames.count]
-                activity.time_start = date1
-                activity.duration = 30
-                activity.pain = NSNumber(double: Double(Int(bitPattern: UInt(rando[randomIndex++]))) / 255.0)
-                activity.mastery = NSNumber(double: Double(Int(bitPattern: UInt(rando[randomIndex++]))) / 255.0)
-                activity.duty = NSNumber(double: Double(Int(bitPattern: UInt(rando[randomIndex++]))) / 255.0)
-                activity.energy = NSNumber(double: Double(Int(bitPattern: UInt(rando[randomIndex++]))) / 255.0)
-                activity.importance = NSNumber(double: Double(Int(bitPattern: UInt(rando[randomIndex++]))) / 255.0)
-                if recIndex % RecsInDay == 0 {
-                    let daysBack = (recIndex / RecsInDay) + (30 * (recIndex / (3 * RecsInDay)))
-                    date1 = NSDate(timeIntervalSinceNow: -60.0 * 60.0 * 24.0 * Double(daysBack))
+        if let periodResults = self.managedObjectContext.executeFetchRequest(periodFetchRequest, error: &error) {
+            let periods = periodResults as! [ActivityPeriod]
+            let fetchRequest = NSFetchRequest(entityName: ActivityName.entityName())
+            if let results = self.managedObjectContext.executeFetchRequest(fetchRequest, error: &error) {
+                let activityNames = results as! [ActivityName]
+
+                let RecordCount = 144
+                let RecsInPeriod = RecordCount / periods.count
+                let RecsInDay = 16
+                var randomIndex = 0
+                var rando = [UInt8](count:6 * RecordCount, repeatedValue: 0)
+                SecRandomCopyBytes(kSecRandomDefault, rando.count, UnsafeMutablePointer<UInt8>(rando))
+                for period in periods {
+                    var date1 = period.start!
+                    
+                    for recIndex in 1...RecsInPeriod {
+                        let activity = ActivityItem(managedObjectContext: self.managedObjectContext)
+                        activity.period = period
+                        activity.activity = activityNames[Int(bitPattern: UInt(rando[randomIndex++])) % activityNames.count]
+                        activity.time_start = date1
+                        activity.duration = 30
+                        activity.pain = NSNumber(double: Double(Int(bitPattern: UInt(rando[randomIndex++]))) / 255.0)
+                        activity.mastery = NSNumber(double: Double(Int(bitPattern: UInt(rando[randomIndex++]))) / 255.0)
+                        activity.duty = NSNumber(double: Double(Int(bitPattern: UInt(rando[randomIndex++]))) / 255.0)
+                        activity.energy = NSNumber(double: Double(Int(bitPattern: UInt(rando[randomIndex++]))) / 255.0)
+                        activity.importance = NSNumber(double: Double(Int(bitPattern: UInt(rando[randomIndex++]))) / 255.0)
+                        if recIndex % RecsInDay == 0 {
+                            date1 = NSDate(timeInterval:60.0 * 60.0 * 24.0 * Double(recIndex / RecsInDay), sinceDate:date1)
+                        }
+                    }
                 }
+            } else {
+                println("Unresolved error \(error?.localizedDescription), \(error?.userInfo)\n Attempting to get activity names")
+                
             }
-            
         } else {
             println("Unresolved error \(error?.localizedDescription), \(error?.userInfo)\n Attempting to get activity names")
         }
     }
 
-    func createObjects() {
+    private func createObjects() {
         let currLang = NSLocale.preferredLanguages()[0] as! String;
         
         let fetchRequest = NSFetchRequest(entityName: ActivityName.entityName())
@@ -136,8 +157,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // OK, the activity table view gets a managed object context
         let tabController = self.window!.rootViewController as! UITabBarController
-        let activityTableController = tabController.viewControllers![0].topViewController as! ActivityTableViewController
-        activityTableController.managedObjectContext = self.managedObjectContext
+        let periodTableController = tabController.viewControllers![0].topViewController as! ActivityPeriodTableViewController
+        periodTableController.managedObjectContext = self.managedObjectContext
         let defaults = NSUserDefaults.standardUserDefaults()
         tabController.selectedIndex = defaults.integerForKey(RevmaRappTabIndexKey)
         

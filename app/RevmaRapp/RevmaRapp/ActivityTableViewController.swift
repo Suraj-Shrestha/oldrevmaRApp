@@ -12,20 +12,25 @@ import CoreData
 
 class ActivityTableViewController: UITableViewController, NSFetchedResultsControllerDelegate, ActivityEditControllerDelegate {
     
-    var managedObjectContext : NSManagedObjectContext?;
+    var managedObjectContext : NSManagedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
     
     var dateFormatter: NSDateFormatter!
+    
+    var period: ActivityPeriod? {
+        didSet {
+            fetchActivities()
+            tableView.reloadData()
+        }
+    }
 
     @IBOutlet var doneButton: UIBarButtonItem!
     var activities:[ActivityItem] = [];
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        managedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
         dateFormatter = NSDateFormatter()
         dateFormatter.dateStyle = NSDateFormatterStyle.ShortStyle
         dateFormatter.timeStyle = NSDateFormatterStyle.ShortStyle
-        fetchActivities()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -34,15 +39,14 @@ class ActivityTableViewController: UITableViewController, NSFetchedResultsContro
         // Dispose of any resources that can be recreated.
     }
     
-    func fetchActivities() {
+    private func fetchActivities() {
         // Probably need to page this by date at some point as well, for now get me everything
         let fetchRequest = NSFetchRequest(entityName: ActivityItem.entityName())
+        fetchRequest.predicate = NSPredicate(format: "\(ActivityItemRelationships.period.rawValue) == %@", argumentArray: [self.period!])
         fetchRequest.sortDescriptors = [NSSortDescriptor(key: ActivityItemAttributes.time_start.rawValue, ascending: false)]
         var error: NSError?
-        if let results = self.managedObjectContext?.executeFetchRequest(fetchRequest, error: &error) {
+        if let results = self.managedObjectContext.executeFetchRequest(fetchRequest, error: &error) {
             activities = results as! [ActivityItem]
-            // Need to sort these things eventually, by date.
-//            activities.sort({ $0.name! < $1.name! })
         } else {
             println("Unresolved error \(error?.localizedDescription), \(error?.userInfo)\n Attempting to get activity names")
         }
@@ -81,7 +85,7 @@ class ActivityTableViewController: UITableViewController, NSFetchedResultsContro
         return cell
     }
     
-    func configureCell(cell: UITableViewCell, atIndexPath indexPath: NSIndexPath) {
+    private func configureCell(cell: UITableViewCell, atIndexPath indexPath: NSIndexPath) {
         let activity = self.activities[indexPath.row]
         if let cellText = activity.activity?.name {
             cell.textLabel!.text = activity.activity!.visibleName()

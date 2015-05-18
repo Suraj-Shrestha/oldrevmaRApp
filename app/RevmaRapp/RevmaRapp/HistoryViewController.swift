@@ -45,7 +45,7 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource {
     func fetchActivities() {
         // Probably need to page this by date at some point as well, for now get me everything
         let fetchRequest = NSFetchRequest(entityName: ActivityItem.entityName())
-        let predicate = NSPredicate.init(format: "\(ActivityItemAttributes.time_start.rawValue) >= %@", argumentArray: [self.cutoffDate])
+        let predicate = NSPredicate(format: "\(ActivityItemAttributes.time_start.rawValue) >= %@", argumentArray: [self.cutoffDate])
         fetchRequest.predicate = predicate
         var error: NSError?
         if let results = self.managedObjectContext?.executeFetchRequest(fetchRequest, error: &error) {

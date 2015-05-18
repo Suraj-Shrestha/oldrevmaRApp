@@ -237,7 +237,53 @@
             </objects>
             <point key="canvasLocation" x="1680" y="737"/>
         </scene>
-        <!--Activities_table_title-->
+        <!--Activity Periods-->
+        <scene sceneID="KW1-LZ-PKX">
+            <objects>
+                <tableViewController id="FOK-em-nNR" customClass="ActivityPeriodTableViewController" customModule="RevmaRapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="asv-eB-yJR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="PeriodListItem" textLabel="YYp-4e-LB8" detailTextLabel="aYZ-4H-Iez" style="IBUITableViewCellStyleValue1" id="rkb-E9-8bf">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rkb-E9-8bf" id="pQL-tL-j4O">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YYp-4e-LB8">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="aYZ-4H-Iez">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="By1-iB-hiK" kind="showDetail" identifier="showPeriod" id="To4-WP-v20"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="FOK-em-nNR" id="VY7-RO-ilc"/>
+                            <outlet property="delegate" destination="FOK-em-nNR" id="kNP-q4-4nh"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Activity Periods" id="1fw-lw-0Ca">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="lKj-Ey-wxk"/>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="s6V-Nh-Y9i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4088" y="1861"/>
+        </scene>
+        <!--Period_table_title-->
         <scene sceneID="77f-JZ-sCk">
             <objects>
                 <tableViewController id="dXw-Z8-FrB" customClass="ActivityTableViewController" customModule="RevmaRapp" customModuleProvider="target" sceneMemberID="viewController">
@@ -277,7 +323,8 @@
                             <outlet property="delegate" destination="dXw-Z8-FrB" id="CwQ-fF-aif"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Activities_table_title" id="EXF-tP-vvc">
+                    <navigationItem key="navigationItem" title="Period_table_title" id="EXF-tP-vvc">
+                        <barButtonItem key="backBarButtonItem" title="Periods" id="gUG-2b-SBd"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="YEt-UJ-4PP">
                             <connections>
                                 <segue destination="72A-Vf-DXh" kind="presentation" identifier="createActivity" id="q3X-I7-7Fe"/>
@@ -287,7 +334,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JJ1-TZ-RhY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-812" y="1868"/>
+            <point key="canvasLocation" x="-2420" y="1861"/>
         </scene>
         <!--Activities-->
         <scene sceneID="MWk-3N-Utw">
@@ -336,7 +383,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bb2-m2-W4Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1623" y="2781"/>
+            <point key="canvasLocation" x="823" y="3105"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="M1u-DP-LMZ">
@@ -352,7 +399,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d0O-3n-MMQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="905" y="2781"/>
+            <point key="canvasLocation" x="105" y="3105"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="76X-u7-KfG">
@@ -368,7 +415,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LJO-MO-n5r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="147" y="1545"/>
+            <point key="canvasLocation" x="-817" y="2185"/>
         </scene>
         <!--Add Activity-->
         <scene sceneID="9Yb-j9-jra">
@@ -600,7 +647,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oRq-ai-I4E" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="893" y="1536"/>
+            <point key="canvasLocation" x="105" y="2004"/>
         </scene>
         <!--Activity View Controller-->
         <scene sceneID="t5j-AF-87w">
@@ -745,7 +792,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JLM-Nk-Qwj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-587" y="2716"/>
+            <point key="canvasLocation" x="-1712" y="2716"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="9eX-09-HNp">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TXO-ol-x9A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="By1-iB-hiK" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="egm-Oy-q3W">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="dXw-Z8-FrB" kind="relationship" relationship="rootViewController" id="S2A-8d-IW0"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-3212" y="1861"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="o0B-hV-v1r">
@@ -761,7 +824,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QtB-Pj-nEs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1326" y="2716"/>
+            <point key="canvasLocation" x="-2420" y="2716"/>
         </scene>
         <!--Activities_title-->
         <scene sceneID="pcm-Pk-eCW">
@@ -773,12 +836,12 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="dXw-Z8-FrB" kind="relationship" relationship="rootViewController" id="4wm-Z8-RWV"/>
+                        <segue destination="FOK-em-nNR" kind="relationship" relationship="rootViewController" id="EmG-Ji-cTj"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aua-7l-UZg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1712" y="1871"/>
+            <point key="canvasLocation" x="-4088" y="884"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
