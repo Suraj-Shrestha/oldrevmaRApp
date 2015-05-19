@@ -17,15 +17,15 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource {
     @IBOutlet weak var weekLabel: UILabel!
     @IBOutlet weak var weekSlider: UISlider!
     var cutoffDate = NSDate(timeIntervalSinceNow:-60 * 60 * 24)
+    weak var appDelegate:AppDelegate! = (UIApplication.sharedApplication().delegate as! AppDelegate)
     
-    var managedObjectContext : NSManagedObjectContext?;
-    
+    var managedObjectContext: NSManagedObjectContext?
 
     var activities:[ActivityItem] = [];
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        managedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
+        managedObjectContext = appDelegate.managedObjectContext
 
         let defaults = NSUserDefaults.standardUserDefaults()
         var sliderValue = defaults.floatForKey(SliderValueKey)
@@ -160,43 +160,6 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource {
         return (fieldEnum == CPTScatterPlotFieldX) ? activity.duty!.doubleValue - 0.5 : activity.importance!.doubleValue - 0.5
     }
     
-    func inSectionOne(activity: ActivityItem) -> Bool {
-        return activity.duty!.doubleValue - 0.5 > 0 && activity.importance!.doubleValue - 0.5 > 0
-    }
-    
-    func inSectionThree(activity: ActivityItem) -> Bool {
-        return activity.duty!.doubleValue - 0.5 < 0 && activity.importance!.doubleValue - 0.5 < 0
-    }
-
-    func rgbComponetsFor(hue: Int, saturation: Double, lightness: Double) -> [CGFloat] {
-        let bar = fabs(2.0 * lightness - 1.0)
-        let C = (1.0 - bar) * saturation
-        let foo = abs(hue / 60 % 2 - 1)
-        let X = C * (1.0 - Double(foo))
-        let m = lightness - C / 2
-
-        let mPrime = CGFloat(m)
-        let CPrime = CGFloat(C) + mPrime
-        let XPrime = CGFloat(X) + mPrime
-
-        switch hue {
-        case 0...59:
-            return [CPrime, XPrime, mPrime]
-        case 60...119:
-            return [XPrime, CPrime, mPrime]
-        case 120...179:
-            return [mPrime, CPrime, XPrime]
-        case 180...239:
-            return [mPrime, XPrime, CPrime]
-        case 240...299:
-            return [XPrime, mPrime, CPrime]
-        case 300...359:
-            return [CPrime, mPrime, XPrime]
-        default:
-            return [0.0, 0.0, 0.0]
-        }
-    }
-    
     func symbolForScatterPlot(plot: CPTScatterPlot!, recordIndex idx: UInt) -> CPTPlotSymbol! {
         let activity = activities[Int(bitPattern: idx)]
         let energyValue = 1.0 - CGFloat(activity.energy!.doubleValue)
@@ -204,24 +167,17 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource {
         let baseRadius = 5 * symbol.size.width
         symbol.size = (CGSizeMake(baseRadius * energyValue, baseRadius * energyValue))
         
-        let inSect1 = inSectionOne(activity)
-        let inSect3 = inSectionThree(activity)
-        let inOther = !inSect1 && !inSect3
+        let isGreen = appDelegate.isGreen(activity)
+        let isRed = appDelegate.isRed(activity)
         
-        var components: [CGFloat] = [0.55, 0.55, 0.55]
+        var components = [CGFloat](count: 3, repeatedValue: 0.55)
 
         // Find color based on the section. Section I: shades of green. Section III: shades of red. Others: something else?
         // Green Hue: 90 degrees, Saturation 50%, Lightness 25–75%
         // Red Hue: 0 degrees, Saturation 50%, Lightness 30–80%
         
-        if inSect1 || inSect3 {
-            let redBase = 0.20
-            let greenBase = 0.25
-            let distanceBase = inSect1 ? greenBase : redBase
-            let dutySquared = (activity.duty!.doubleValue - 0.5) * (activity.duty!.doubleValue - 0.5)
-            let importanceSquared = (activity.importance!.doubleValue - 0.5) * (activity.importance!.doubleValue - 0.5)
-            let activityDistance = sqrt(dutySquared + importanceSquared)
-            components = rgbComponetsFor(inSect1 ? 120 : 0, saturation: 0.5, lightness: 1 - distanceBase - activityDistance)
+        if isGreen || isRed {
+            components = appDelegate.rgbComponetsForActivity(activity, isGreen: isGreen)
             let symbolColor = CPTColor(componentRed: components[0],
                 green: components[1],
                 blue: components[2], alpha: 1.0)

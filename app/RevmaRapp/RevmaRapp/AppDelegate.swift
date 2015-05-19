@@ -26,6 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let RevmaRappTabIndexKey = "RevmaRappTabIndex"
 
     var window: UIWindow?
+    var imageCache = [String, UIImage]()
     
     private func createDummyPeriods() {
         for i in 1...3 {
@@ -236,7 +237,84 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         println("Error saving context: \(error?.localizedDescription)\n\(error?.userInfo)")
         abort()
     }
+    
+    // Ugly name here, but keep it for now.
+    func rgbComponetsForActivity(activity: ActivityItem, isGreen: Bool) -> [CGFloat] {
+        let redBase = 0.20
+        let greenBase = 0.25
+        let distanceBase = isGreen ? greenBase : redBase
+        let dutySquared = (activity.duty!.doubleValue - 0.5) * (activity.duty!.doubleValue - 0.5)
+        let importanceSquared = (activity.importance!.doubleValue - 0.5) * (activity.importance!.doubleValue - 0.5)
+        let activityDistance = sqrt(dutySquared + importanceSquared)
+        return rgbComponetsFor(isGreen ? 120 : 0, saturation: 0.5, lightness: 1 - distanceBase - activityDistance)
+    }
 
+    private func rgbComponetsFor(hue: Int, saturation: Double, lightness: Double) -> [CGFloat] {
+        let bar = fabs(2.0 * lightness - 1.0)
+        let C = (1.0 - bar) * saturation
+        let foo = abs(hue / 60 % 2 - 1)
+        let X = C * (1.0 - Double(foo))
+        let m = lightness - C / 2
+        
+        let mPrime = CGFloat(m)
+        let CPrime = CGFloat(C) + mPrime
+        let XPrime = CGFloat(X) + mPrime
+        
+        switch hue {
+        case 0...59:
+            return [CPrime, XPrime, mPrime]
+        case 60...119:
+            return [XPrime, CPrime, mPrime]
+        case 120...179:
+            return [mPrime, CPrime, XPrime]
+        case 180...239:
+            return [mPrime, XPrime, CPrime]
+        case 240...299:
+            return [XPrime, mPrime, CPrime]
+        case 300...359:
+            return [CPrime, mPrime, XPrime]
+        default:
+            return [0.0, 0.0, 0.0]
+        }
+    }
+    
+    func imageForActivity(activity:ActivityItem) -> UIImage {
+        let SquareSize:CGFloat = 80.0
+        let size = SquareSize * CGFloat(activity.energy!.doubleValue)
+        
+        let isRed = self.isRed(activity)
+        let isGreen = self.isGreen(activity)
+        let isGray = !isGreen && !isRed
 
+        let components:[CGFloat] = !isGray ? rgbComponetsForActivity(activity, isGreen: isGreen) : [0.55, 0.55, 0.55]
+        UIGraphicsBeginImageContext(CGSizeMake(SquareSize, SquareSize))
+        let context = UIGraphicsGetCurrentContext()
+        if !isGray {
+            CGContextSetRGBFillColor(context, components[0], components[1], components[2], 1.0)
+            CGContextFillRect(context, CGRectMake(SquareSize / 2 - size / 2, SquareSize / 2 - size / 2, size, size))
+        } else {
+            CGContextSetRGBStrokeColor(context, components[0], components[1], components[2], 1.0)
+            CGContextStrokeRect(context, CGRectMake(SquareSize / 2 - size / 2, SquareSize / 2 - size / 2, size, size))
+        }
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+
+        return image
+    }
+    
+    func isActivityGray(activity: ActivityItem) -> Bool {
+        return !isGreen(activity) && !isRed(activity)
+    }
+    
+    func isGreen(activity: ActivityItem) -> Bool {
+        return activity.duty!.doubleValue - 0.5 > 0 && activity.importance!.doubleValue - 0.5 > 0
+    }
+    
+    func isRed(activity: ActivityItem) -> Bool {
+        return activity.duty!.doubleValue - 0.5 < 0 && activity.importance!.doubleValue - 0.5 < 0
+    }
+    
+
+    
 }
 

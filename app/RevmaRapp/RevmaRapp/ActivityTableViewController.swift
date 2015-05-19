@@ -11,12 +11,12 @@ import CoreData
 
 
 class ActivityTableViewController: UITableViewController, NSFetchedResultsControllerDelegate, ActivityEditControllerDelegate {
-    
+
     var managedObjectContext : NSManagedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
-    
+
     var titleDateFormatter: NSDateFormatter!
     var cellDateFormatter: NSDateFormatter!
-    
+
     var period: ActivityPeriod? {
         didSet {
             fetchActivities()
@@ -39,11 +39,12 @@ class ActivityTableViewController: UITableViewController, NSFetchedResultsContro
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
     private func fetchActivities() {
         // Probably need to page this by date at some point as well, for now get me everything
         let fetchRequest = NSFetchRequest(entityName: ActivityItem.entityName())
@@ -75,7 +76,7 @@ class ActivityTableViewController: UITableViewController, NSFetchedResultsContro
             println("Unresolved error \(error?.localizedDescription), \(error?.userInfo)\n Attempting to get activity names")
         }
     }
-    
+
     // MARK: Segue
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         // TODO: Get the detail view hooked up.
@@ -106,8 +107,7 @@ class ActivityTableViewController: UITableViewController, NSFetchedResultsContro
         }
         return 0
     }
-    
-    
+
     override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if let activities = activitiesByDays[section] {
             let activity = activities[0]
@@ -119,28 +119,27 @@ class ActivityTableViewController: UITableViewController, NSFetchedResultsContro
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return activitiesByDays.count
     }
-    
+
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("ActivityListItem", forIndexPath: indexPath) as! UITableViewCell
         self.configureCell(cell, atIndexPath: indexPath)
         return cell
     }
-    
+
     private func configureCell(cell: UITableViewCell, atIndexPath indexPath: NSIndexPath) {
         let activity = self.activitiesByDays[indexPath.section]![indexPath.row]
+        cell.detailTextLabel!.text =  cellDateFormatter.stringFromDate(activity.time_start!)
         if let cellText = activity.activity?.name {
-            cell.textLabel!.text =  cellDateFormatter.stringFromDate(activity.time_start!)
-            cell.detailTextLabel!.text = activity.activity!.visibleName()
+            cell.textLabel!.text = activity.activity!.visibleName()
         } else {
             cell.textLabel!.text = NSLocalizedString("Missing activity name", comment: "Data corruption string, activities should always have a name")
         }
-
+        cell.imageView!.image = (UIApplication.sharedApplication().delegate as! AppDelegate).imageForActivity(activity)
     }
-    
+
     // MARK: ActivtyEditControllerDelegate
     func activtyEditControllerDidCancel(controller: ActivityEditController) {
         self.dismissViewControllerAnimated(true, completion: nil)
-        
     }
 
     func activityEditControllerDidSave(controller: ActivityEditController) {
@@ -149,6 +148,4 @@ class ActivityTableViewController: UITableViewController, NSFetchedResultsContro
         tableView.reloadData()
         self.dismissViewControllerAnimated(true, completion: nil)
     }
-
 }
-
