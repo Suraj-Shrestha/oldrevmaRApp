@@ -99,3 +99,26 @@
 /* "OK", comment: "OK Button" */
 "OK" = "OK";
 
+/* "New Period", comment: "Blank name for period" */
+"New Period" = "Ny period";
+
+/* "Period should include one day in a weekend", comment: "Warning to include a weekend." */
+"Period should include one day in a weekend" = "Perioden bør innholde en dag i helgen.";
+
+/* "3 days", comment: "3 day period" */
+"3 days" = "3 dager";
+
+/* "5 days", comment: "5 day period" */
+"5 days" = "5 dager";
+
+/* "7 days", comment: "7 day period" */
+"7 days" = "7 dager";
+
+/* "The period should include a weekend", comment:"Weekend warning" */
+"The period should include a weekend" = "Perioden bør inkludere en helg";
+
+/* "Use this period anyway?", comment:"" */
+"Use this period anyway?" = "Bruk perioden alikevel?";
+
+/* "Use Period", comment: "OK Button" */
+"Use Period" = "Bruk Perioden";

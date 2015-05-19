@@ -82,3 +82,18 @@
 
 /* Class = "IBUILabel"; text = "Loaded by ActivityViewController"; ObjectID = "o6v-r9-bq4"; */
 "o6v-r9-bq4.text" = "Smerte";
+
+/* Class = "IBUILabel"; text = "Loaded by ActivityPeriodEditController"; ObjectID = "VDe-GH-zJA"; */
+"VDe-GH-zJA.text" = "RevmaRapp gjøre det mulig å få oversikt over dine bruk av energi på forskjellige aktiviteter.";
+
+/* Class = "IBUILabel"; text = "Loaded by ActivityPeriodEditController"; ObjectID = "tMS-bT-ArA"; */
+"tMS-bT-ArA.text" = "Hvor lenge en periode vil du måle?";
+
+/* Class = "IBUILabel"; text = "Loaded by ActivityPeriodEditController"; ObjectID = "YMr-eJ-UoL"; */
+"YMr-eJ-UoL.text" = "Når vil du begynne?";
+
+/* Class = "IBUILabel"; text = "Loaded by ActivityPeriodEditController"; ObjectID = "UCc-mF-ush"; */
+"UCc-mF-ush.text" = "Navn";
+
+/* Class = "IBUILabel"; text = "Loaded by ActivityPeriodTableViewController"; ObjectID = "1fw-lw-0Ca"; */
+"1fw-lw-0Ca" = "Perioder";
