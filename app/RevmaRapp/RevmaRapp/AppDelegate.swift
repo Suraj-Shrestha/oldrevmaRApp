@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let RevmaRappTabIndexKey = "RevmaRappTabIndex"
 
     var window: UIWindow?
-    var imageCache = [String, UIImage]()
+    var imageCache = [String: UIImage]()
     
     private func createDummyPeriods() {
         for i in 1...3 {
@@ -287,6 +287,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let isGray = !isGreen && !isRed
 
         let components:[CGFloat] = !isGray ? rgbComponetsForActivity(activity, isGreen: isGreen) : [0.55, 0.55, 0.55]
+        
+        let key:String = "\(size);\(components[0]);\(components[1]);\(components[2])"
+        if let cachedImage = imageCache[key] {
+            return cachedImage
+        }
+
+        // otherwise build it ourselves
         UIGraphicsBeginImageContext(CGSizeMake(SquareSize, SquareSize))
         let context = UIGraphicsGetCurrentContext()
         if !isGray {
@@ -298,11 +305,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-
+        imageCache[key] = image
         return image
     }
     
-    func isActivityGray(activity: ActivityItem) -> Bool {
+    func purgeImageCache() {
+        imageCache = [String: UIImage]();
+    }
+    
+    func isActivityGray(activity: ActivityItem) -> Bool { // For the lazy
         return !isGreen(activity) && !isRed(activity)
     }
     
@@ -313,8 +324,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func isRed(activity: ActivityItem) -> Bool {
         return activity.duty!.doubleValue - 0.5 < 0 && activity.importance!.doubleValue - 0.5 < 0
     }
-    
 
-    
 }
 
