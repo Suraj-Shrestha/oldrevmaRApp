@@ -24,7 +24,7 @@ class ActivityTableViewController: UITableViewController, NSFetchedResultsContro
     }
 
     @IBOutlet var doneButton: UIBarButtonItem!
-    var activities:[ActivityItem] = [];
+    var activitiesByDays = [Int: [ActivityItem]]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,7 +46,27 @@ class ActivityTableViewController: UITableViewController, NSFetchedResultsContro
         fetchRequest.sortDescriptors = [NSSortDescriptor(key: ActivityItemAttributes.time_start.rawValue, ascending: false)]
         var error: NSError?
         if let results = self.managedObjectContext.executeFetchRequest(fetchRequest, error: &error) {
-            activities = results as! [ActivityItem]
+            let activities = results as! [ActivityItem]
+            activitiesByDays = [Int: [ActivityItem]]()
+//            activitiesByDays[0] = activities
+            if !activities.isEmpty {
+                let calendar = NSCalendar.currentCalendar()
+                var sectionNum = 0
+                var currentDay = calendar.component(NSCalendarUnit.CalendarUnitDay, fromDate: activities[0].time_start!)
+                var activitiesInDay:[ActivityItem] = []
+                for activity in activities {
+                    let day = calendar.component(NSCalendarUnit.CalendarUnitDay, fromDate: activity.time_start!)
+                    if day != currentDay {
+                        activitiesByDays[sectionNum] = activitiesInDay
+                        sectionNum = sectionNum + 1
+                        currentDay = day
+                        activitiesInDay = []
+                    }
+                    activitiesInDay.append(activity)
+                }
+                // The last set of activities wasn't added, so do that here.
+                activitiesByDays[sectionNum] = activitiesInDay
+            }
         } else {
             println("Unresolved error \(error?.localizedDescription), \(error?.userInfo)\n Attempting to get activity names")
         }
@@ -59,7 +79,7 @@ class ActivityTableViewController: UITableViewController, NSFetchedResultsContro
             switch (whichSegue) {
             case "showActivity":
                 if let indexPath = self.tableView.indexPathForSelectedRow() {
-                    let activity = self.activities[indexPath.row] as ActivityItem
+                    let activity = self.activitiesByDays[indexPath.section]![indexPath.row] as ActivityItem
                     if let activityViewController = segue.destinationViewController.topViewController as? ActivityViewController {
                         activityViewController.activityItem = activity
                     }
@@ -77,7 +97,14 @@ class ActivityTableViewController: UITableViewController, NSFetchedResultsContro
 
     // MARK: Table view controller functions
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return activities.count
+        if let tmp = activitiesByDays[section] {
+            return tmp.count
+        }
+        return 0
+    }
+    
+    override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return activitiesByDays.count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
@@ -87,7 +114,7 @@ class ActivityTableViewController: UITableViewController, NSFetchedResultsContro
     }
     
     private func configureCell(cell: UITableViewCell, atIndexPath indexPath: NSIndexPath) {
-        let activity = self.activities[indexPath.row]
+        let activity = self.activitiesByDays[indexPath.section]![indexPath.row]
         if let cellText = activity.activity?.name {
             cell.textLabel!.text = activity.activity!.visibleName()
 

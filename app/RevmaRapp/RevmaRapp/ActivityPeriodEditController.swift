@@ -15,21 +15,20 @@ protocol ActivityPeriodEditControllerDelegate {
 }
 
 class ActivityPeriodEditController : UIViewController, UITextFieldDelegate {
-    
+
     var delegate: ActivityPeriodEditControllerDelegate?
     var dayPeriod = -1
     var periodName = NSLocalizedString("New Period", comment: "Blank name for period")
     var startDate = NSDate()
     let OriginalScrollSize:CGFloat = 600.0
     let TextFieldScrollY:CGFloat = 770.0
-    
+
     @IBOutlet weak var dayControl: UISegmentedControl!
     @IBOutlet weak var weekendWarningLabel: UILabel!
     @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var textField: UITextField!
     @IBOutlet var scrollView: UIScrollView!
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         scrollView.contentSize = CGSizeMake(scrollView.frame.size.width, OriginalScrollSize)
@@ -41,23 +40,21 @@ class ActivityPeriodEditController : UIViewController, UITextFieldDelegate {
         dayControl.setTitle(NSLocalizedString("7 days", comment: "7 day period"), forSegmentAtIndex: 2)
         fixWeekendWarning()
     }
-    
+
     private func fixWeekendWarning() {
-        
         if includesWeekend() {
             weekendWarningLabel.text = "";
         } else {
             weekendWarningLabel.text = NSLocalizedString("Period should include one day in a weekend", comment: "Warning to include a weekend.")
         }
-        
     }
-    
+
     @IBAction func doCancel(sender: UIBarButtonItem) {
         if let realDelegate = delegate {
             realDelegate.periodEditControllerDidCancel(self)
         }
     }
-    
+
     private func includesWeekend() -> Bool {
         let calendar = NSCalendar.currentCalendar()
         let weekday = calendar.component(NSCalendarUnit.WeekdayCalendarUnit, fromDate: startDate)
@@ -80,7 +77,7 @@ class ActivityPeriodEditController : UIViewController, UITextFieldDelegate {
         // Otherwise, we don't have a weekend here.
         return false
     }
-    
+
     @IBAction func dayPickerChanged(segmentedControl: UISegmentedControl) {
         switch segmentedControl.selectedSegmentIndex {
         case 0:
@@ -96,12 +93,12 @@ class ActivityPeriodEditController : UIViewController, UITextFieldDelegate {
         }
         fixWeekendWarning()
     }
-    
+
     @IBAction func startDateChanged(datePicker: UIDatePicker) {
         startDate = datePicker.date
         fixWeekendWarning()
     }
-    
+
     @IBAction func donePressed(sender: UIBarButtonItem) {
         if includesWeekend() == false {
             // start another dialog and reload the model
@@ -117,7 +114,7 @@ class ActivityPeriodEditController : UIViewController, UITextFieldDelegate {
             finishSave()
         }
     }
-    
+
     @IBAction func periodNameChanged(textField: UITextField) {
         periodName = textField.text
     }
@@ -128,7 +125,7 @@ class ActivityPeriodEditController : UIViewController, UITextFieldDelegate {
             finishSave()
         }
     }
-    
+
     private func finishSave() {
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let managedObjectContext = appDelegate.managedObjectContext
@@ -142,7 +139,7 @@ class ActivityPeriodEditController : UIViewController, UITextFieldDelegate {
             realDelegate.periodEditControllerDidSave(self)
         }
     }
-    
+
     // Mark: UITextFieldDelegate
     func textFieldShouldReturn(textField: UITextField) -> Bool {
         textField.resignFirstResponder()
@@ -150,7 +147,7 @@ class ActivityPeriodEditController : UIViewController, UITextFieldDelegate {
         scrollView.scrollRectToVisible(CGRectMake(0, 0, 10, 10), animated: true)
         return true
     }
-    
+
     func textFieldDidBeginEditing(textField: UITextField) {
         scrollView.contentSize = CGSizeMake(scrollView.frame.size.width, 900)
         scrollView.scrollRectToVisible(CGRectMake(0, TextFieldScrollY, 10, 10), animated: true)

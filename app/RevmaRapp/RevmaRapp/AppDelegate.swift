@@ -27,18 +27,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
-    private func createPeriods() {
+    private func createDummyPeriods() {
         for i in 1...3 {
             let period = ActivityPeriod(managedObjectContext: self.managedObjectContext)
             period.name = "Test Period \(i)"
             period.start = NSDate(timeIntervalSinceNow: -60.0 * 60.0 * 24.0 * 33.0 * Double(i))
-            period.stop = NSDate(timeIntervalSinceNow: -60.0 * 60.0 * 24.0 * 30.0 * Double(i))
+            // I'll be setting up the end date soon (in the dummy objects)!
         }
     }
     
     private func createDummyObjects() {
         
-        createPeriods()
+        createDummyPeriods()
         
         let periodFetchRequest = NSFetchRequest(entityName: ActivityPeriod.entityName())
         var error: NSError?
@@ -47,31 +47,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let fetchRequest = NSFetchRequest(entityName: ActivityName.entityName())
             if let results = self.managedObjectContext.executeFetchRequest(fetchRequest, error: &error) {
                 let activityNames = results as! [ActivityName]
-
-                let RecordCount = 144
-                let RecsInPeriod = RecordCount / periods.count
+                let DaysInPeriod = 3
                 let RecsInDay = 16
+                let RecordCount = RecsInDay * DaysInPeriod * periods.count
+                
                 var randomIndex = 0
                 var rando = [UInt8](count:6 * RecordCount, repeatedValue: 0)
                 SecRandomCopyBytes(kSecRandomDefault, rando.count, UnsafeMutablePointer<UInt8>(rando))
                 for period in periods {
-                    var date1 = period.start!
-                    
-                    for recIndex in 1...RecsInPeriod {
-                        let activity = ActivityItem(managedObjectContext: self.managedObjectContext)
-                        activity.period = period
-                        activity.activity = activityNames[Int(bitPattern: UInt(rando[randomIndex++])) % activityNames.count]
-                        activity.time_start = date1
-                        activity.duration = 30
-                        activity.pain = NSNumber(double: Double(Int(bitPattern: UInt(rando[randomIndex++]))) / 255.0)
-                        activity.mastery = NSNumber(double: Double(Int(bitPattern: UInt(rando[randomIndex++]))) / 255.0)
-                        activity.duty = NSNumber(double: Double(Int(bitPattern: UInt(rando[randomIndex++]))) / 255.0)
-                        activity.energy = NSNumber(double: Double(Int(bitPattern: UInt(rando[randomIndex++]))) / 255.0)
-                        activity.importance = NSNumber(double: Double(Int(bitPattern: UInt(rando[randomIndex++]))) / 255.0)
-                        if recIndex % RecsInDay == 0 {
-                            date1 = NSDate(timeInterval:60.0 * 60.0 * 24.0 * Double(recIndex / RecsInDay), sinceDate:date1)
+                    var date1 = period.start!.dateByAddingTimeInterval(-60 * 60 * 24)
+                    for _ in 1...DaysInPeriod {
+                        date1 = date1.dateByAddingTimeInterval(60 * 60 * 24)
+                        for _ in 1...RecsInDay {
+                            let activity = ActivityItem(managedObjectContext: self.managedObjectContext)
+                            activity.period = period
+                            activity.activity = activityNames[Int(bitPattern: UInt(rando[randomIndex++])) % activityNames.count]
+                            activity.time_start = date1
+                            activity.duration = 30
+                            activity.pain = NSNumber(double: Double(Int(bitPattern: UInt(rando[randomIndex++]))) / 255.0)
+                            activity.mastery = NSNumber(double: Double(Int(bitPattern: UInt(rando[randomIndex++]))) / 255.0)
+                            activity.duty = NSNumber(double: Double(Int(bitPattern: UInt(rando[randomIndex++]))) / 255.0)
+                            activity.energy = NSNumber(double: Double(Int(bitPattern: UInt(rando[randomIndex++]))) / 255.0)
+                            activity.importance = NSNumber(double: Double(Int(bitPattern: UInt(rando[randomIndex++]))) / 255.0)
                         }
                     }
+                    period.stop = date1
                 }
             } else {
                 println("Unresolved error \(error?.localizedDescription), \(error?.userInfo)\n Attempting to get activity names")
