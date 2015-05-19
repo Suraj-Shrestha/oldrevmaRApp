@@ -59,13 +59,14 @@ class ActivityTableViewController: UITableViewController, NSFetchedResultsContro
             switch (whichSegue) {
             case "showActivity":
                 if let indexPath = self.tableView.indexPathForSelectedRow() {
-                    let object = self.activities[indexPath.row] as ActivityItem
+                    let activity = self.activities[indexPath.row] as ActivityItem
                     if let activityViewController = segue.destinationViewController.topViewController as? ActivityViewController {
-                        activityViewController.activityItem = object
+                        activityViewController.activityItem = activity
                     }
                 }
             case "createActivity":
                 if let editController = segue.destinationViewController.topViewController as? ActivityEditController {
+                    editController.period = period
                     editController.delegate = self
                 }
             default:

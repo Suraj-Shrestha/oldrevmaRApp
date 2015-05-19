@@ -66,6 +66,7 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
     
     var activityItem: ActivityItem! {
         didSet {
+            period = activityItem.period
             self.configureView()
         }
     }
