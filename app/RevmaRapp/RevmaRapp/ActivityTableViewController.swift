@@ -14,7 +14,8 @@ class ActivityTableViewController: UITableViewController, NSFetchedResultsContro
     
     var managedObjectContext : NSManagedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
     
-    var dateFormatter: NSDateFormatter!
+    var titleDateFormatter: NSDateFormatter!
+    var cellDateFormatter: NSDateFormatter!
     
     var period: ActivityPeriod? {
         didSet {
@@ -28,9 +29,13 @@ class ActivityTableViewController: UITableViewController, NSFetchedResultsContro
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        dateFormatter = NSDateFormatter()
-        dateFormatter.dateStyle = NSDateFormatterStyle.ShortStyle
-        dateFormatter.timeStyle = NSDateFormatterStyle.ShortStyle
+        titleDateFormatter = NSDateFormatter()
+        titleDateFormatter.dateStyle = NSDateFormatterStyle.LongStyle
+        titleDateFormatter.timeStyle = NSDateFormatterStyle.NoStyle
+        
+        cellDateFormatter = NSDateFormatter()
+        cellDateFormatter.dateStyle = NSDateFormatterStyle.NoStyle
+        cellDateFormatter.timeStyle = NSDateFormatterStyle.ShortStyle
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -48,7 +53,6 @@ class ActivityTableViewController: UITableViewController, NSFetchedResultsContro
         if let results = self.managedObjectContext.executeFetchRequest(fetchRequest, error: &error) {
             let activities = results as! [ActivityItem]
             activitiesByDays = [Int: [ActivityItem]]()
-//            activitiesByDays[0] = activities
             if !activities.isEmpty {
                 let calendar = NSCalendar.currentCalendar()
                 var sectionNum = 0
@@ -103,6 +107,15 @@ class ActivityTableViewController: UITableViewController, NSFetchedResultsContro
         return 0
     }
     
+    
+    override func tableView(tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        if let activities = activitiesByDays[section] {
+            let activity = activities[0]
+            return titleDateFormatter.stringFromDate(activity.time_start!)
+        }
+        return NSLocalizedString("Missing section title!", comment: "Shouldn't happen, but if we somehow don't have a date for an activity")
+    }
+
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         return activitiesByDays.count
     }
@@ -116,9 +129,8 @@ class ActivityTableViewController: UITableViewController, NSFetchedResultsContro
     private func configureCell(cell: UITableViewCell, atIndexPath indexPath: NSIndexPath) {
         let activity = self.activitiesByDays[indexPath.section]![indexPath.row]
         if let cellText = activity.activity?.name {
-            cell.textLabel!.text = activity.activity!.visibleName()
-
-            cell.detailTextLabel!.text = dateFormatter.stringFromDate(activity.time_start!)
+            cell.textLabel!.text =  cellDateFormatter.stringFromDate(activity.time_start!)
+            cell.detailTextLabel!.text = activity.activity!.visibleName()
         } else {
             cell.textLabel!.text = NSLocalizedString("Missing activity name", comment: "Data corruption string, activities should always have a name")
         }

@@ -55,7 +55,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 var rando = [UInt8](count:6 * RecordCount, repeatedValue: 0)
                 SecRandomCopyBytes(kSecRandomDefault, rando.count, UnsafeMutablePointer<UInt8>(rando))
                 for period in periods {
-                    var date1 = period.start!.dateByAddingTimeInterval(-60 * 60 * 24)
+                    var date1 = period.start!.dateByAddingTimeInterval(-60 * 60 * 24) // To keep symmetry, subtract the day first and add it immediately afterwards.
                     for _ in 1...DaysInPeriod {
                         date1 = date1.dateByAddingTimeInterval(60 * 60 * 24)
                         for _ in 1...RecsInDay {
