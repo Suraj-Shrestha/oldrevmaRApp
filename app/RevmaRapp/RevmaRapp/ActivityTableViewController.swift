@@ -42,7 +42,6 @@ class ActivityTableViewController: UITableViewController, NSFetchedResultsContro
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        (UIApplication.sharedApplication().delegate as! AppDelegate).purgeImageCache()
         // Dispose of any resources that can be recreated.
     }
 

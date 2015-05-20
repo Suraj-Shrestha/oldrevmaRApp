@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let RevmaRappTabIndexKey = "RevmaRappTabIndex"
 
     var window: UIWindow?
-    var imageCache = [String: UIImage]()
+    var imageCache: NSCache?
     
     private func createDummyPeriods() {
         for i in 1...3 {
@@ -289,7 +289,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let components:[CGFloat] = !isGray ? rgbComponetsForActivity(activity, isGreen: isGreen) : [0.55, 0.55, 0.55]
         
         let key:String = "\(size);\(components[0]);\(components[1]);\(components[2])"
-        if let cachedImage = imageCache[key] {
+        if imageCache == nil {
+            imageCache = NSCache()
+        }
+        if let cachedImage = imageCache!.objectForKey(key) as? UIImage {
             return cachedImage
         }
 
@@ -305,12 +308,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-        imageCache[key] = image
+        imageCache!.setObject(image, forKey: key)
         return image
-    }
-    
-    func purgeImageCache() {
-        imageCache = [String: UIImage]();
     }
     
     func isActivityGray(activity: ActivityItem) -> Bool { // For the lazy
