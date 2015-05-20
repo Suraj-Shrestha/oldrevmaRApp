@@ -238,15 +238,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         abort()
     }
     
-    // Ugly name here, but keep it for now.
-    func rgbComponetsForActivity(activity: ActivityItem, isGreen: Bool) -> [CGFloat] {
+    final func rgbComponentsFor(duty: Double, importance: Double, isGreen: Bool) -> [CGFloat] {
         let redBase = 0.20
         let greenBase = 0.25
         let distanceBase = isGreen ? greenBase : redBase
-        let dutySquared = (activity.duty!.doubleValue - 0.5) * (activity.duty!.doubleValue - 0.5)
-        let importanceSquared = (activity.importance!.doubleValue - 0.5) * (activity.importance!.doubleValue - 0.5)
+        let dutySquared = (duty - 0.5) * (duty - 0.5)
+        let importanceSquared = (importance - 0.5) * (importance - 0.5)
         let activityDistance = sqrt(dutySquared + importanceSquared)
         return rgbComponetsFor(isGreen ? 120 : 0, saturation: 0.5, lightness: 1 - distanceBase - activityDistance)
+    }
+    
+    // Ugly name here, but keep it for now.
+    func rgbComponetsForActivity(activity: ActivityItem, isGreen: Bool) -> [CGFloat] {
+        return rgbComponentsFor(activity.duty!.doubleValue, importance: activity.importance!.doubleValue, isGreen: isGreen)
     }
 
     private func rgbComponetsFor(hue: Int, saturation: Double, lightness: Double) -> [CGFloat] {
@@ -278,27 +282,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
-    func imageForActivity(activity:ActivityItem, useCache:Bool) -> UIImage {
+    final func squareForValues(size:CGFloat, components:[CGFloat], isGray: Bool) -> UIImage {
         let SquareSize:CGFloat = 80.0
-        let size = SquareSize * CGFloat(activity.energy!.doubleValue)
-        
-        let isRed = self.isRed(activity)
-        let isGreen = self.isGreen(activity)
-        let isGray = !isGreen && !isRed
-
-        let components:[CGFloat] = !isGray ? rgbComponetsForActivity(activity, isGreen: isGreen) : [0.55, 0.55, 0.55]
-        
-        let key:String = "\(size);\(components[0]);\(components[1]);\(components[2])"
-        if useCache {
-            if imageCache == nil {
-                imageCache = NSCache()
-            }
-            if let cachedImage = imageCache!.objectForKey(key) as? UIImage {
-                return cachedImage
-            }
-        }
-
-        // otherwise build it ourselves
         UIGraphicsBeginImageContext(CGSizeMake(SquareSize, SquareSize))
         let context = UIGraphicsGetCurrentContext()
         if !isGray {
@@ -310,9 +295,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-        if useCache {
-            imageCache!.setObject(image, forKey: key)
+        return image
+    }
+    
+    func imageForActivity(activity:ActivityItem) -> UIImage {
+        let SquareSize:CGFloat = 80.0
+        let size = SquareSize * CGFloat(activity.energy!.doubleValue)
+        
+        let isRed = self.isRed(activity)
+        let isGreen = self.isGreen(activity)
+        let isGray = !isGreen && !isRed
+
+        let components:[CGFloat] = !isGray ? rgbComponetsForActivity(activity, isGreen: isGreen) : [0.55, 0.55, 0.55]
+        
+        let key:String = "\(size);\(components[0]);\(components[1]);\(components[2])"
+        if imageCache == nil {
+            imageCache = NSCache()
         }
+        if let cachedImage = imageCache!.objectForKey(key) as? UIImage {
+            return cachedImage
+        }
+
+        let image = squareForValues(size, components:components, isGray: isGray)
+        // otherwise build it ourselves
+        imageCache!.setObject(image, forKey: key)
         return image
     }
     

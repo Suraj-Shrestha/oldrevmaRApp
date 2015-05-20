@@ -25,6 +25,7 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
     let kDurationCellID = "durationCell"
     let kDurationPickerID = "durationPickerCell"
     let kQuestionCellAltID = "questionCellAlt"
+    let kActivityImageCellID = "activityImageCell"
     
     // Tags to pull out widgets
     let kDatePickerTag = 99
@@ -35,12 +36,16 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
     let kMaxLabelTag = 503
     let kMinLabelTextTag = 504
     let kMaxLabelTextTag = 505
+    let kImageViewTag = 600
 
     // Rows for Section 0
     let kNameRow = 0
     let kDurationRow = 1 // kDateRow is based on if I have an editor open for duration or not.
-
+    
     // Rows for Section 1
+    let kActivityImageRow = 0
+
+    // Rows for Section 2
     let kMeaningRow = 0
     let kDutyRow = 1
     let kEnergyRow = 2
@@ -322,28 +327,34 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
 
     // MARK TableViewDataSource
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 2
+        return 3
     }
 
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        if indexPath.section == 0 {
+        switch indexPath.section {
+        case 0:
             return indexPathHasDatePicker(indexPath) || indexPathHasDurationPicker(indexPath) ? pickerCellRowHeight : tableView.rowHeight
+        case 1:
+            return 50
+        case 2:
+            // This needs to be updated someday, but for the moment the prototype cell can't handle being laid out at this point.
+            // But in theory, this would be the right way to do this.
+            //        if self.prototypeCell == nil {
+            //            self.prototypeCell = tableView.dequeueReusableCellWithIdentifier(kQuestionCellAltID) as UITableViewCell
+            //        }
+            //        configureQuestionCellHelper(self.prototypeCell, forIndexPath: indexPath)
+            //        self.prototypeCell.layoutIfNeeded()
+            //        let size = self.prototypeCell.contentView.systemLayoutSizeFittingSize(UILayoutFittingCompressedSize)
+            return 110
+        default:
+            return 0
         }
-        assert(indexPath.section == 1, "Unknown section")
-        // This needs to be updated someday, but for the moment the prototype cell can't handle being laid out at this point.
-        // But in theory, this would be the right way to do this.
-//        if self.prototypeCell == nil {
-//            self.prototypeCell = tableView.dequeueReusableCellWithIdentifier(kQuestionCellAltID) as UITableViewCell
-//        }
-//        configureQuestionCellHelper(self.prototypeCell, forIndexPath: indexPath)
-//        self.prototypeCell.layoutIfNeeded()
-//        let size = self.prototypeCell.contentView.systemLayoutSizeFittingSize(UILayoutFittingCompressedSize)
-        return 110
     }
     
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if section == 0 {
+        switch section {
+        case 0:
             var visibleRows = 3
             if hasInlineDatePicker() {
                 ++visibleRows
@@ -352,53 +363,77 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
                 ++visibleRows
             }
             return visibleRows
+        case 1:
+            return 1
+        case 2:
+            return valuesArray.count
+        default:
+            return 0
         }
-        assert(section == 1, "Unknown section")
-        return valuesArray.count
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
-        if indexPath.section == 0 {
+        var retCell:UITableViewCell?
+        switch indexPath.section {
+        case 0:
             if indexPathHasDatePicker(indexPath) {
-                return tableView.dequeueReusableCellWithIdentifier(kDatePickerID) as! UITableViewCell
+                retCell = tableView.dequeueReusableCellWithIdentifier(kDatePickerID) as? UITableViewCell
             }
             
             if indexPathHasDurationPicker(indexPath) {
-                let tableCell = tableView.dequeueReusableCellWithIdentifier(kDurationPickerID) as! UITableViewCell
-                if let picker = tableCell.viewWithTag(kDurationPickerTag) as? UIPickerView {
+                retCell = tableView.dequeueReusableCellWithIdentifier(kDurationPickerID) as? UITableViewCell
+                if let picker = retCell?.viewWithTag(kDurationPickerTag) as? UIPickerView {
                     picker.delegate = self
                     picker.dataSource = self
                 }
-                return tableCell
             }
             
             if indexPathHasDate(indexPath) {
-                let tableCell = tableView.dequeueReusableCellWithIdentifier(kDateCellID) as! UITableViewCell
-                tableCell.detailTextLabel!.text = dateFormater.stringFromDate(activityDate!)
-                tableCell.textLabel!.text = NSLocalizedString("Time_Start_Label", comment: "Time_Start_Label")
-                return tableCell
+                retCell = tableView.dequeueReusableCellWithIdentifier(kDateCellID) as? UITableViewCell
+                retCell!.detailTextLabel!.text = dateFormater.stringFromDate(activityDate!)
+                retCell!.textLabel!.text = NSLocalizedString("Time_Start_Label", comment: "Time_Start_Label")
             }
             
             if indexPathHasDuration(indexPath) {
-                let tableCell = tableView.dequeueReusableCellWithIdentifier(kDurationCellID) as! UITableViewCell
-                tableCell.detailTextLabel!.text = numberFormatter.stringFromNumber(NSNumber(integer: durationInMinutes))
-                tableCell.textLabel!.text = NSLocalizedString("Duration_Label", comment: "Duration_Label")
-                return tableCell
+                retCell = tableView.dequeueReusableCellWithIdentifier(kDurationCellID) as? UITableViewCell
+                retCell!.detailTextLabel!.text = numberFormatter.stringFromNumber(NSNumber(integer: durationInMinutes))
+                retCell!.textLabel!.text = NSLocalizedString("Duration_Label", comment: "Duration_Label")
             }
             
             if indexPath.row == kNameRow {
-                let tableCell = tableView.dequeueReusableCellWithIdentifier(kActivityNameCellID) as! UITableViewCell
+                retCell = tableView.dequeueReusableCellWithIdentifier(kActivityNameCellID) as? UITableViewCell
                 if activityName?.name != nil {
-                    tableCell.textLabel!.text = activityName!.visibleName()
+                    retCell!.textLabel!.text = activityName!.visibleName()
                 } else {
-                    tableCell.textLabel!.text = NSLocalizedString("Tap to choose activity", comment: "Empty Activity Name")
+                    retCell!.textLabel!.text = NSLocalizedString("Tap to choose activity", comment: "Empty Activity Name")
                 }
-                return tableCell
             }
+        case 1:
+            retCell = tableView.dequeueReusableCellWithIdentifier(kActivityImageCellID) as? UITableViewCell
+            let activityImageView = retCell!.viewWithTag(kImageViewTag) as! UIImageView
+            if let ad = UIApplication.sharedApplication().delegate as? AppDelegate {
+                let red = isRed()
+                let green = isGreen()
+                let gray = !green && !red
+                let components = gray ? [CGFloat](count: 3, repeatedValue:0.55) : ad.rgbComponentsFor(Double(valuesArray[kDutyRow]), importance: Double(valuesArray[kMeaningRow]), isGreen: green)
+                activityImageView.image = ad.squareForValues(CGFloat(valuesArray[kEnergyRow]) * 80, components: components, isGray: gray)
+            }
+        case 2:
+            fallthrough
+        default:
+            retCell = configureQuestionCell(indexPath)
         }
-        return configureQuestionCell(indexPath)
+        return retCell!
     }
+    
+    private func isGreen() -> Bool {
+        return valuesArray[kDutyRow] - 0.5 > 0 && valuesArray[kMeaningRow] - 0.5 > 0
+    }
+    
+    private func isRed() -> Bool {
+        return valuesArray[kDutyRow] - 0.5 < 0 && valuesArray[kMeaningRow] - 0.5 < 0
+    }
+
 
     func configureQuestionCellHelper(tableCell: UITableViewCell, forIndexPath indexPath: NSIndexPath) {
         let questionLabel = tableCell.viewWithTag(kQuestionLabelTag) as! UILabel

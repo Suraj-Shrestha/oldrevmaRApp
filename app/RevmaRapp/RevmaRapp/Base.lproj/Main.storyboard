@@ -624,6 +624,26 @@
                                     </variation>
                                 </tableViewCellContentView>
                             </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="activityImageCell" rowHeight="47" id="Xrz-QH-Sru">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xrz-QH-Sru" id="8ep-uP-1Uq">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" tag="600" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="auk-xM-bQf">
+                                            <rect key="frame" x="280" y="4" width="40" height="40"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="40" id="RHm-EH-95Z"/>
+                                                <constraint firstAttribute="width" constant="40" id="TSU-ZB-D62"/>
+                                            </constraints>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="centerY" secondItem="auk-xM-bQf" secondAttribute="centerY" id="FHW-SV-ANa"/>
+                                        <constraint firstAttribute="centerX" secondItem="auk-xM-bQf" secondAttribute="centerX" id="Pxl-cP-j0l"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
                         </prototypes>
                         <connections>
                             <outlet property="dataSource" destination="FVh-N2-pmI" id="Xtq-pz-XDY"/>

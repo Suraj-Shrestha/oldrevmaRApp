@@ -63,7 +63,7 @@ class ActivityViewController: UIViewController, ActivityEditControllerDelegate {
             meaningValue.setProgress(ai.importance!.floatValue, animated: true)
             dutyValue.setProgress(ai.duty!.floatValue, animated: true)
             masteryValue.setProgress(ai.mastery!.floatValue, animated: true)
-            activityImage.image = (UIApplication.sharedApplication().delegate as! AppDelegate).imageForActivity(ai, useCache: true)
+            activityImage.image = (UIApplication.sharedApplication().delegate as! AppDelegate).imageForActivity(ai)
         }
     }
     
