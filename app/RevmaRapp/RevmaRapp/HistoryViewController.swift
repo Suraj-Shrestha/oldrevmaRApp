@@ -229,7 +229,7 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource {
     }
     
     @IBAction func sliderChange(slider: UISlider) {
-        let flooredValue = Int(slider.value)
+        let flooredValue = Int(round(slider.value))
         slider.setValue(Float(flooredValue), animated: false)
         if flooredValue != currentSet {
             currentSet = flooredValue

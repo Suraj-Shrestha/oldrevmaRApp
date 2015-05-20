@@ -25,6 +25,7 @@ func ZAssert(@autoclosure condition: () -> Bool, _ message: String = "", file:
 class AppDelegate: UIResponder, UIApplicationDelegate {
     let RevmaRappTabIndexKey = "RevmaRappTabIndex"
 
+    let CompletedFirstTimeKey = "CompletedFirstTime"
     var window: UIWindow?
     var imageCache: NSCache?
     
@@ -143,7 +144,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             catalogEntry.i18nable = true
         }
         
-        createDummyObjects()
+//        createDummyObjects()
 
         self.managedObjectContext.save(&error)
         
@@ -162,8 +163,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         periodTableController.managedObjectContext = self.managedObjectContext
         let defaults = NSUserDefaults.standardUserDefaults()
         tabController.selectedIndex = defaults.integerForKey(RevmaRappTabIndexKey)
-        
+        enableTabs(false)
+
         return true
+    }
+    
+    func enableTabs(enabled: Bool) {
+        let tabController = self.window!.rootViewController as! UITabBarController
+        tabController.tabBar.userInteractionEnabled = enabled
     }
 
     func applicationWillResignActive(application: UIApplication) {
@@ -188,6 +195,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let tabController = self.window!.rootViewController as! UITabBarController
+        let periodTableController = tabController.viewControllers![0].topViewController as! ActivityPeriodTableViewController
+
+        if defaults.boolForKey(CompletedFirstTimeKey) == false {
+            //            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            //            let newPeriodController = storyboard.instantiateViewControllerWithIdentifier("NewPeriodDialog")
+            //            let segue = UIStoryboardSegue(identifier: <#String?#>, source: <#UIViewController#>, destination: <#UIViewController#>)
+            periodTableController.performSegueWithIdentifier("createPeriod", sender: periodTableController)
+            defaults.setBool(true, forKey: CompletedFirstTimeKey)
+            defaults.synchronize()
+        }
+
     }
 
     func applicationWillTerminate(application: UIApplication) {

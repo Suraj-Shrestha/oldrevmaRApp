@@ -865,7 +865,7 @@
         <!--Activity Period Edit Controller-->
         <scene sceneID="sRF-eq-Txs">
             <objects>
-                <viewController id="Ygp-Uc-ctM" customClass="ActivityPeriodEditController" customModule="RevmaRapp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NewPeriodDialog" id="Ygp-Uc-ctM" customClass="ActivityPeriodEditController" customModule="RevmaRapp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="761-za-Snd"/>
                         <viewControllerLayoutGuide type="bottom" id="H4k-mo-MgS"/>

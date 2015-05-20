@@ -85,6 +85,7 @@ class ActivityPeriodTableViewController : UITableViewController, NSFetchedResult
     func periodEditControllerDidSave(controller: ActivityPeriodEditController) {
         self.dismissViewControllerAnimated(true, completion: nil)
         fetchPeriods()
+        (UIApplication.sharedApplication().delegate as! AppDelegate).enableTabs(true)
         tableView.reloadData()
     }
 }
