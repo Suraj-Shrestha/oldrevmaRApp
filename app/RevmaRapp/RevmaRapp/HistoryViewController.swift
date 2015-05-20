@@ -49,7 +49,7 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource {
                 activitiesByPeriods[periodKey] = activities
                 periodKey = periodKey + 1
             }
-            sortedKeys = sorted(activitiesByPeriods.keys) { $0 > $1 }
+            sortedKeys = sorted(activitiesByPeriods.keys) { $0 < $1 }
         } else {
             println("Unresolved error \(error?.localizedDescription), \(error?.userInfo)\n Attempting to get activity names")
         }
@@ -179,10 +179,27 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource {
         return (fieldEnum == CPTScatterPlotFieldX) ? activity.duty!.doubleValue - 0.5 : activity.importance!.doubleValue - 0.5
     }
     
+    private func periodForIndex(index:UInt) -> Int {
+        var shrinkingIndex = index;
+        for key in sortedKeys {
+            if let activities = activitiesByPeriods[key] {
+                if shrinkingIndex < UInt(activities.count) {
+                    return key;
+                }
+                shrinkingIndex = shrinkingIndex - UInt(activities.count)
+            }
+        }
+        return -1;
+    }
+    
     func symbolForScatterPlot(plot: CPTScatterPlot!, recordIndex idx: UInt) -> CPTPlotSymbol! {
         let activity = activityForRecordIndex(idx)!
         let energyValue = 1.0 - CGFloat(activity.energy!.doubleValue)
-        let symbol = CPTPlotSymbol.rectanglePlotSymbol()
+        let Symbols = [CPTPlotSymbol.rectanglePlotSymbol(), CPTPlotSymbol.diamondPlotSymbol(),
+                         CPTPlotSymbol.trianglePlotSymbol(), CPTPlotSymbol.ellipsePlotSymbol(), CPTPlotSymbol.plusPlotSymbol(),
+                         CPTPlotSymbol.crossPlotSymbol()]
+        
+        let symbol = Symbols[periodForIndex(idx) - 1 % Symbols.count]
         let baseRadius = 5 * symbol.size.width
         symbol.size = (CGSizeMake(baseRadius * energyValue, baseRadius * energyValue))
         
@@ -207,8 +224,7 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource {
             grayLineStyle.lineColor = CPTColor.grayColor()
             symbol.lineStyle = grayLineStyle
         }
-        
-        
+
         return symbol
     }
     
