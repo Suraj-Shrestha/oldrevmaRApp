@@ -131,8 +131,9 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
         }
         if tableCell != nil {
             if let indexPath = tableView.indexPathForCell(tableCell!) {
-                ZAssert(indexPath.section == 1, "Slider in another section than expected")
+                ZAssert(indexPath.section == 2, "Slider in another section than expected")
                 valuesArray[indexPath.row] = slider.value
+                updateActivityImageCell()
             }
         }
     }
@@ -410,20 +411,31 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
             }
         case 1:
             retCell = tableView.dequeueReusableCellWithIdentifier(kActivityImageCellID) as? UITableViewCell
-            let activityImageView = retCell!.viewWithTag(kImageViewTag) as! UIImageView
-            if let ad = UIApplication.sharedApplication().delegate as? AppDelegate {
-                let red = isRed()
-                let green = isGreen()
-                let gray = !green && !red
-                let components = gray ? [CGFloat](count: 3, repeatedValue:0.55) : ad.rgbComponentsFor(Double(valuesArray[kDutyRow]), importance: Double(valuesArray[kMeaningRow]), isGreen: green)
-                activityImageView.image = ad.squareForValues(CGFloat(valuesArray[kEnergyRow]) * 80, components: components, isGray: gray)
-            }
+            updateImage(retCell!)
         case 2:
             fallthrough
         default:
             retCell = configureQuestionCell(indexPath)
         }
+        ZAssert(retCell != nil, "Tablecell must be initialized!")
         return retCell!
+    }
+    
+    private func updateActivityImageCell() {
+        if let cell = tableView.cellForRowAtIndexPath(NSIndexPath(forRow: 0, inSection: 1)) {
+            updateImage(cell)
+        }
+    }
+    
+    private func updateImage(cell: UITableViewCell) {
+        let activityImageView = cell.viewWithTag(kImageViewTag) as! UIImageView
+        if let ad = UIApplication.sharedApplication().delegate as? AppDelegate {
+            let red = isRed()
+            let green = isGreen()
+            let gray = !green && !red
+            let components = gray ? [CGFloat](count: 3, repeatedValue:0.55) : ad.rgbComponentsFor(Double(valuesArray[kDutyRow]), importance: Double(valuesArray[kMeaningRow]), isGreen: green)
+            activityImageView.image = ad.squareForValues(CGFloat(valuesArray[kEnergyRow]) * 80, components: components, isGray: gray)
+        }
     }
     
     private func isGreen() -> Bool {
