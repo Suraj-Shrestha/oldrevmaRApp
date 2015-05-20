@@ -16,51 +16,49 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource {
     @IBOutlet weak var graphView: CPTGraphHostingView!
     @IBOutlet weak var weekLabel: UILabel!
     @IBOutlet weak var weekSlider: UISlider!
-    var cutoffDate = NSDate(timeIntervalSinceNow:-60 * 60 * 24)
+    var currentSet:Int = 1
+    var sortedKeys:[Int] = []
     weak var appDelegate:AppDelegate! = (UIApplication.sharedApplication().delegate as! AppDelegate)
     
     var managedObjectContext: NSManagedObjectContext?
 
-    var activities:[ActivityItem] = [];
+    var activitiesByPeriods = [Int: [ActivityItem]]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         managedObjectContext = appDelegate.managedObjectContext
-
-        let defaults = NSUserDefaults.standardUserDefaults()
-        var sliderValue = defaults.floatForKey(SliderValueKey)
-        if sliderValue == 0 {
-            sliderValue = 364.0 / 365
-        }
-        
-        weekSlider.setValue(sliderValue, animated: false)
-        sliderChange(weekSlider)
+        fetchActivities()
+        configureView()
     }
 
-    func doGraph() {
-        fetchActivities()
+    func configureView() {
+        weekSlider.maximumValue = Float(activitiesByPeriods.count)
         setupGraph()
     }
 
     func fetchActivities() {
         // Probably need to page this by date at some point as well, for now get me everything
-        let fetchRequest = NSFetchRequest(entityName: ActivityItem.entityName())
-        let predicate = NSPredicate(format: "\(ActivityItemAttributes.time_start.rawValue) >= %@", argumentArray: [self.cutoffDate])
-        fetchRequest.predicate = predicate
+        let fetchRequest = NSFetchRequest(entityName: ActivityPeriod.entityName())
+        fetchRequest.sortDescriptors = [NSSortDescriptor(key: ActivityPeriodAttributes.start.rawValue, ascending: false)]
         var error: NSError?
         if let results = self.managedObjectContext?.executeFetchRequest(fetchRequest, error: &error) {
-            activities = results as! [ActivityItem]
+            let periods = results as! [ActivityPeriod]
+            var periodKey = 1
+            for period in periods {
+                let activities = period.activityItems.allObjects as! [ActivityItem]
+                activitiesByPeriods[periodKey] = activities
+                periodKey = periodKey + 1
+            }
+            sortedKeys = sorted(activitiesByPeriods.keys) { $0 > $1 }
         } else {
             println("Unresolved error \(error?.localizedDescription), \(error?.userInfo)\n Attempting to get activity names")
         }
     }
-    
-    
+
     func createAxisLabel(axis:CPTXYAxis, image:UIImage?, altText:String, altTextStyle:CPTTextStyle) {
         if let goodImage = image {
             let imageAsContentLayer = CorePlotImageLayer(image: goodImage)
             let imageTitle = CPTAxisTitle(contentLayer:imageAsContentLayer)
-
             axis.axisTitle = imageTitle
         } else {
             axis.title = altText
@@ -150,18 +148,39 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource {
     }
 
     func numberOfRecordsForPlot(plot: CPTPlot!) -> UInt {
-        return UInt(activities.count)
+        let howManyPeriods = currentSet
+        var recCount:UInt = 0;
+        for i in 1...howManyPeriods {
+            if let activities = activitiesByPeriods[i] {
+                recCount = recCount + UInt(activities.count)
+            }
+        }
+        return recCount
     }
 
+    private func activityForRecordIndex(index: UInt) -> ActivityItem? {
+        var indexAsInt = Int(bitPattern: index)
+        for key in sortedKeys {
+            if let activities = activitiesByPeriods[key] {
+                if indexAsInt < activities.count {
+                    return activities[indexAsInt]
+                }
+                indexAsInt -= activities.count
+            }
+        }
+        ZAssert(false, "We should have returned an item from above")
+        return nil
+    }
     
     func numberForPlot(plot: CPTPlot!, field fieldEnum: UInt, recordIndex idx: UInt) -> AnyObject {
         let CPTScatterPlotFieldX: UInt = 0 // Conversion to enums doesn't seem to work :-/
-        let activity = activities[Int(bitPattern: idx)];
+        
+        let activity = activityForRecordIndex(idx)!
         return (fieldEnum == CPTScatterPlotFieldX) ? activity.duty!.doubleValue - 0.5 : activity.importance!.doubleValue - 0.5
     }
     
     func symbolForScatterPlot(plot: CPTScatterPlot!, recordIndex idx: UInt) -> CPTPlotSymbol! {
-        let activity = activities[Int(bitPattern: idx)]
+        let activity = activityForRecordIndex(idx)!
         let energyValue = 1.0 - CGFloat(activity.energy!.doubleValue)
         let symbol = CPTPlotSymbol.rectanglePlotSymbol()
         let baseRadius = 5 * symbol.size.width
@@ -193,21 +212,12 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource {
         return symbol
     }
     
-    
     @IBAction func sliderChange(slider: UISlider) {
-        let secsInDay = 60.0 * 60 * 24
-        let secsInYear = secsInDay * 365
-        let partOfYear = 1.0 + (1/secsInYear) - Double(slider.value);
-        cutoffDate = NSDate(timeIntervalSinceNow: -secsInYear * partOfYear);
-        let numberFormat = NSNumberFormatter()
-        NSUserDefaults.standardUserDefaults().setFloat(slider.value, forKey: SliderValueKey)
-        numberFormat.locale = NSLocale.currentLocale()
-        numberFormat.maximumFractionDigits = 1;
-        numberFormat.numberStyle = NSNumberFormatterStyle.DecimalStyle
-        let dayString  = numberFormat.stringFromNumber(NSNumber(double: secsInYear * partOfYear / secsInDay))
-        let weekTemplate = NSLocalizedString("%@ days", comment: "Days back")
-        weekLabel.text = NSString(format:weekTemplate, dayString!) as String
-        
-        doGraph()
+        let flooredValue = Int(slider.value)
+        slider.setValue(Float(flooredValue), animated: false)
+        if flooredValue != currentSet {
+            currentSet = flooredValue
+            graphView.hostedGraph.reloadData()
+        }
     }
 }
