@@ -38,7 +38,7 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
 
     // Rows for Section 0
     let kNameRow = 0
-    let kDateRow = 1
+    let kDurationRow = 1 // kDateRow is based on if I have an editor open for duration or not.
 
     // Rows for Section 1
     let kMeaningRow = 0
@@ -55,7 +55,7 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
     var durationPickerIndexPath: NSIndexPath?
     
     // my actual model
-    var valuesArray: [Float] = [0.5, 0.5, 0.5, 0.5]
+    var valuesArray = [Float](count:4, repeatedValue:0.5)
     var activityDate: NSDate?
     var durationInMinutes: Int = 30
     var activityName: ActivityName? {
@@ -73,7 +73,7 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
     
     var period: ActivityPeriod!
     
-    func configureView() {
+    private func configureView() {
         if !isViewLoaded() {
             return
         }
@@ -87,7 +87,7 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
             valuesArray[kMasteryRow] = ai.mastery!.floatValue
             durationInMinutes = ai.duration!.integerValue
         } else {
-            activityDate = NSDate()
+            activityDate = NSDate(timeIntervalSinceNow: -60.0 * Double(durationInMinutes))
         }
         checkCanSave() // Make sure the done button is correct regardless of what was set.
         tableView.reloadData()
@@ -167,7 +167,7 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "localeChanged", name: NSCurrentLocaleDidChangeNotification, object: nil)
     }
     
-    func localeChanged() {
+    private func localeChanged() {
         configureView()
         self.tableView.reloadData()
     }
@@ -187,7 +187,7 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
     }
     
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
-        return 1 // Probably WAY to simple here
+        return 1 // Probably WAY too simple here
     }
     
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
@@ -206,6 +206,15 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
         let targetedCellIndexPath = hasInlineDurationPicker() ? NSIndexPath(forRow: durationPickerIndexPath!.row - 1, inSection: 0) : tableView.indexPathForSelectedRow()
         if let cell = tableView.cellForRowAtIndexPath(targetedCellIndexPath) {
             durationInMinutes = row + 1
+            if activityItem == nil {
+                // let's update the date to make it match. Only do this for new activities. 
+                // Probably need some smartness if someone has actually messed with the date.
+                activityDate = NSDate(timeIntervalSinceNow: -60.0 * Double(durationInMinutes))
+                updateDatePicker()
+                if let dateCell = tableView.cellForRowAtIndexPath(NSIndexPath(forRow: kDurationRow + 2, inSection:0)) {
+                    dateCell.detailTextLabel!.text = dateFormater.stringFromDate(activityDate!)
+                }
+            }
             cell.detailTextLabel!.text = numberFormatter.stringFromNumber(NSNumber(integer: durationInMinutes))
         }
     }
@@ -234,7 +243,7 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
         if indexPath.section != 0 {
             return false
         }
-        return hasInlineDatePicker() ? indexPath.row == kDateRow + 2 : indexPath.row == kDateRow + 1
+        return indexPath.row == kDurationRow
     }
 
     // DatePickerStuff
@@ -253,7 +262,7 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
         
         if let associatedDatePickerCell = tableView.cellForRowAtIndexPath(datePickerIndexPath!) {
             if let tmpDatePicker = associatedDatePickerCell.viewWithTag(kDatePickerTag) as? UIDatePicker {
-                tmpDatePicker.setDate(activityDate!, animated: false)
+                tmpDatePicker.setDate(activityDate!, animated: true)
             }
         }
     }
@@ -271,7 +280,7 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
         if indexPath.section != 0 {
             return false
         }
-        return indexPath.row == kDateRow
+        return hasInlineDatePicker() ? indexPath.row == kDurationRow + 2 : indexPath.row == kDurationRow + 1
     }
 
 
