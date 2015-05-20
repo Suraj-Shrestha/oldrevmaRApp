@@ -278,7 +278,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
-    func imageForActivity(activity:ActivityItem) -> UIImage {
+    func imageForActivity(activity:ActivityItem, useCache:Bool) -> UIImage {
         let SquareSize:CGFloat = 80.0
         let size = SquareSize * CGFloat(activity.energy!.doubleValue)
         
@@ -289,11 +289,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let components:[CGFloat] = !isGray ? rgbComponetsForActivity(activity, isGreen: isGreen) : [0.55, 0.55, 0.55]
         
         let key:String = "\(size);\(components[0]);\(components[1]);\(components[2])"
-        if imageCache == nil {
-            imageCache = NSCache()
-        }
-        if let cachedImage = imageCache!.objectForKey(key) as? UIImage {
-            return cachedImage
+        if useCache {
+            if imageCache == nil {
+                imageCache = NSCache()
+            }
+            if let cachedImage = imageCache!.objectForKey(key) as? UIImage {
+                return cachedImage
+            }
         }
 
         // otherwise build it ourselves
@@ -308,7 +310,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
-        imageCache!.setObject(image, forKey: key)
+        if useCache {
+            imageCache!.setObject(image, forKey: key)
+        }
         return image
     }
     

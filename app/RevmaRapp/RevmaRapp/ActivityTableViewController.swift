@@ -134,7 +134,7 @@ class ActivityTableViewController: UITableViewController, NSFetchedResultsContro
         } else {
             cell.textLabel!.text = NSLocalizedString("Missing activity name", comment: "Data corruption string, activities should always have a name")
         }
-        cell.imageView!.image = (UIApplication.sharedApplication().delegate as! AppDelegate).imageForActivity(activity)
+        cell.imageView!.image = (UIApplication.sharedApplication().delegate as! AppDelegate).imageForActivity(activity, useCache: true)
     }
 
     // MARK: ActivtyEditControllerDelegate

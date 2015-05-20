@@ -21,6 +21,8 @@ class ActivityViewController: UIViewController, ActivityEditControllerDelegate {
     @IBOutlet weak var meaningValue: UIProgressView!
     @IBOutlet weak var dutyValue: UIProgressView!
     @IBOutlet weak var masteryValue: UIProgressView!
+    @IBOutlet weak var activityImage: UIImageView!
+
     var dateFormatter: NSDateFormatter!
     var numberFormatter: NSNumberFormatter!
     
@@ -61,6 +63,7 @@ class ActivityViewController: UIViewController, ActivityEditControllerDelegate {
             meaningValue.setProgress(ai.importance!.floatValue, animated: true)
             dutyValue.setProgress(ai.duty!.floatValue, animated: true)
             masteryValue.setProgress(ai.mastery!.floatValue, animated: true)
+            activityImage.image = (UIApplication.sharedApplication().delegate as! AppDelegate).imageForActivity(ai, useCache: true)
         }
     }
     
