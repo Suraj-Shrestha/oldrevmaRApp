@@ -134,7 +134,6 @@ class ActivityPeriodEditController : UIViewController, UITextFieldDelegate {
         period.start = startDate
         period.stop = startDate.dateByAddingTimeInterval(60.0 * 60.0 * 24.0 * Double(dayPeriod))
         appDelegate.saveContext()
-        appDelegate.enableTabs(true)
 
         if let realDelegate = delegate {
             realDelegate.periodEditControllerDidSave(self)

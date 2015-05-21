@@ -12,7 +12,10 @@ import CoreData
 class ActivityPeriodTableViewController : UITableViewController, NSFetchedResultsControllerDelegate, ActivityPeriodEditControllerDelegate {
     var managedObjectContext : NSManagedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
     var periods:[ActivityPeriod] = [];
+    var suppressCreatePeriodDialog = false
     var dateFormatter: NSDateFormatter!
+    let CreatePeriodSegueID = "createPeriod"
+    let ShowPeriodSegueID = "showPeriod"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +24,17 @@ class ActivityPeriodTableViewController : UITableViewController, NSFetchedResult
         dateFormatter.timeStyle = NSDateFormatterStyle.NoStyle
         fetchPeriods()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        // No periods, well, show them a dialog then
+        if periods.isEmpty && !suppressCreatePeriodDialog {
+            self.performSegueWithIdentifier(CreatePeriodSegueID, sender: self)
+        }
+        if !animated {
+            showFirstPeriod()
+        }
     }
     
     final func fetchPeriods() {
@@ -40,14 +54,14 @@ class ActivityPeriodTableViewController : UITableViewController, NSFetchedResult
         // TODO: Get the detail view hooked up.
         if let whichSegue = segue.identifier {
             switch (whichSegue) {
-            case "showPeriod":
+            case ShowPeriodSegueID:
                 if let indexPath = self.tableView.indexPathForSelectedRow() {
                     let period = self.periods[indexPath.row] as ActivityPeriod
                     if let activityViewController = segue.destinationViewController.topViewController as? ActivityTableViewController {
                         activityViewController.period = period
                     }
                 }
-            case "createPeriod":
+            case CreatePeriodSegueID:
                 if let editController = segue.destinationViewController.topViewController as? ActivityPeriodEditController {
                     editController.delegate = self
                 }
@@ -80,16 +94,21 @@ class ActivityPeriodTableViewController : UITableViewController, NSFetchedResult
     
     func periodEditControllerDidCancel(controller: ActivityPeriodEditController) {
         self.dismissViewControllerAnimated(true, completion: nil)
+        suppressCreatePeriodDialog = true
+    }
+    
+    private func showFirstPeriod() {
+        if periods.count == 1 {
+            // Select the first one because that's nice.
+            tableView.selectRowAtIndexPath(NSIndexPath(forRow: 0, inSection: 0), animated: true, scrollPosition: UITableViewScrollPosition.None)
+            self.performSegueWithIdentifier(ShowPeriodSegueID, sender: self)
+        }
     }
 
     func periodEditControllerDidSave(controller: ActivityPeriodEditController) {
         self.dismissViewControllerAnimated(true, completion: nil)
         fetchPeriods()
         tableView.reloadData()
-        if periods.count == 1 {
-            // Select the first one because that's nice.
-            tableView.selectRowAtIndexPath(NSIndexPath(forRow: 0, inSection: 0), animated: true, scrollPosition: UITableViewScrollPosition.None)
-            self.performSegueWithIdentifier("showPeriod", sender: self)
-        }
+        showFirstPeriod()
     }
 }

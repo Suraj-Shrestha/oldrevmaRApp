@@ -13,6 +13,9 @@ import CoreData
 class ActivityTableViewController: UITableViewController, NSFetchedResultsControllerDelegate, ActivityEditControllerDelegate {
 
     var managedObjectContext : NSManagedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
+    let ShowActivitySegueID = "showActivity"
+    let CreateActivitySegueID = "createActivity"
+    
 
     var titleDateFormatter: NSDateFormatter!
     var cellDateFormatter: NSDateFormatter!
@@ -43,6 +46,14 @@ class ActivityTableViewController: UITableViewController, NSFetchedResultsContro
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        // Are we completely empty? May as well show them the dialog to start editing.
+        if activitiesByDays.isEmpty && animated {
+            self.performSegueWithIdentifier(CreateActivitySegueID, sender: self)
+        }
     }
 
     private func fetchActivities() {
@@ -82,14 +93,14 @@ class ActivityTableViewController: UITableViewController, NSFetchedResultsContro
         // TODO: Get the detail view hooked up.
         if let whichSegue = segue.identifier {
             switch (whichSegue) {
-            case "showActivity":
+            case ShowActivitySegueID:
                 if let indexPath = self.tableView.indexPathForSelectedRow() {
                     let activity = self.activitiesByDays[indexPath.section]![indexPath.row] as ActivityItem
                     if let activityViewController = segue.destinationViewController.topViewController as? ActivityViewController {
                         activityViewController.activityItem = activity
                     }
                 }
-            case "createActivity":
+            case CreateActivitySegueID:
                 if let editController = segue.destinationViewController.topViewController as? ActivityEditController {
                     editController.period = period
                     editController.delegate = self

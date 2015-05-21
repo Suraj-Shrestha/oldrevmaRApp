@@ -166,16 +166,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         return true
     }
-    
-    func enableTabs(enabled: Bool) {
-        let tabController = self.window!.rootViewController as! UITabBarController
-        if let tabbarItems = tabController.tabBar.items as? [UITabBarItem] {
-            tabbarItems[1].enabled = enabled
-            tabbarItems[2].enabled = enabled
-            tabbarItems[3].enabled = enabled
-        }
-
-    }
 
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
@@ -201,11 +191,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
         let defaults = NSUserDefaults.standardUserDefaults()
 
+        // first time run through? I will keep this in case, we need to do something special here.
         if defaults.boolForKey(CompletedFirstTimeKey) == false {
-            let tabController = self.window!.rootViewController as! UITabBarController
-            let periodTableController = tabController.viewControllers![0].topViewController as! ActivityPeriodTableViewController
-            enableTabs(false)
-            periodTableController.performSegueWithIdentifier("createPeriod", sender: periodTableController)
             defaults.setBool(true, forKey: CompletedFirstTimeKey)
             defaults.synchronize()
         }
