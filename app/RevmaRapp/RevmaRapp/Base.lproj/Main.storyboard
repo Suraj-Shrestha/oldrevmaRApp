@@ -87,11 +87,11 @@
             </objects>
             <point key="canvasLocation" x="905" y="704"/>
         </scene>
-        <!--Refelection_title-->
+        <!--help_title-->
         <scene sceneID="V2S-z7-S8t">
             <objects>
                 <navigationController storyboardIdentifier="Reflection_title" id="PyH-cI-oUs" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Refelection_title" image="reflection" id="Nd0-Iw-Ie7"/>
+                    <tabBarItem key="tabBarItem" title="help_title" image="help" id="Nd0-Iw-Ie7"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="3sP-pm-QZY">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1096,8 +1096,8 @@
                     <connections>
                         <segue destination="lVg-5F-Fd5" kind="relationship" relationship="viewControllers" id="Icf-L1-mTU"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
-                        <segue destination="PyH-cI-oUs" kind="relationship" relationship="viewControllers" id="3NI-BB-nhQ"/>
                         <segue destination="1to-dx-WtZ" kind="relationship" relationship="viewControllers" id="iwH-pa-crc"/>
+                        <segue destination="PyH-cI-oUs" kind="relationship" relationship="viewControllers" id="3NI-BB-nhQ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
@@ -1108,8 +1108,8 @@
     <resources>
         <image name="activity" width="30" height="30"/>
         <image name="goal" width="30" height="30"/>
+        <image name="help" width="31" height="31"/>
         <image name="history" width="30" height="30"/>
-        <image name="reflection" width="13" height="30"/>
         <image name="smile-face" width="268" height="268"/>
         <image name="tongue-face" width="283" height="282"/>
     </resources>
