@@ -163,14 +163,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         periodTableController.managedObjectContext = self.managedObjectContext
         let defaults = NSUserDefaults.standardUserDefaults()
         tabController.selectedIndex = defaults.integerForKey(RevmaRappTabIndexKey)
-        enableTabs(false)
 
         return true
     }
     
     func enableTabs(enabled: Bool) {
         let tabController = self.window!.rootViewController as! UITabBarController
-        tabController.tabBar.userInteractionEnabled = enabled
+        if let tabbarItems = tabController.tabBar.items as? [UITabBarItem] {
+            tabbarItems[1].enabled = enabled
+            tabbarItems[2].enabled = enabled
+            tabbarItems[3].enabled = enabled
+        }
+
     }
 
     func applicationWillResignActive(application: UIApplication) {
@@ -196,13 +200,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidBecomeActive(application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
         let defaults = NSUserDefaults.standardUserDefaults()
-        let tabController = self.window!.rootViewController as! UITabBarController
-        let periodTableController = tabController.viewControllers![0].topViewController as! ActivityPeriodTableViewController
 
         if defaults.boolForKey(CompletedFirstTimeKey) == false {
-            //            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            //            let newPeriodController = storyboard.instantiateViewControllerWithIdentifier("NewPeriodDialog")
-            //            let segue = UIStoryboardSegue(identifier: <#String?#>, source: <#UIViewController#>, destination: <#UIViewController#>)
+            let tabController = self.window!.rootViewController as! UITabBarController
+            let periodTableController = tabController.viewControllers![0].topViewController as! ActivityPeriodTableViewController
+            enableTabs(false)
             periodTableController.performSegueWithIdentifier("createPeriod", sender: periodTableController)
             defaults.setBool(true, forKey: CompletedFirstTimeKey)
             defaults.synchronize()

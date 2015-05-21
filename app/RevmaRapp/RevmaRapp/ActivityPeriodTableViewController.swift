@@ -85,7 +85,11 @@ class ActivityPeriodTableViewController : UITableViewController, NSFetchedResult
     func periodEditControllerDidSave(controller: ActivityPeriodEditController) {
         self.dismissViewControllerAnimated(true, completion: nil)
         fetchPeriods()
-        (UIApplication.sharedApplication().delegate as! AppDelegate).enableTabs(true)
         tableView.reloadData()
+        if periods.count == 1 {
+            // Select the first one because that's nice.
+            tableView.selectRowAtIndexPath(NSIndexPath(forRow: 0, inSection: 0), animated: true, scrollPosition: UITableViewScrollPosition.None)
+            self.performSegueWithIdentifier("showPeriod", sender: self)
+        }
     }
 }
