@@ -19,6 +19,9 @@
 /* Class = "IBUINavigationItem"; title = "Activities_table_title"; ObjectID = "EXF-tP-vvc"; */
 "EXF-tP-vvc.title" = "Aktiviteter";
 
+/* Class = "IBUINavigationItem"; title = "Activities_table_title"; ObjectID = "1fw-lw-0Ca"; */
+"1fw-lw-0Ca.title" = "Aktivitets perioder";
+
 /* Class = "IBUITabBarItem"; title = "Activities_title"; ObjectID = "JYO-ep-uMH"; */
 "JYO-ep-uMH.title" = "Aktiviteter";
 
@@ -96,4 +99,6 @@
 "UCc-mF-ush.text" = "Navn";
 
 /* Class = "IBUILabel"; text = "Loaded by ActivityPeriodTableViewController"; ObjectID = "1fw-lw-0Ca"; */
-"1fw-lw-0Ca" = "Perioder";
+"1fw-lw-0Ca.text" = "Perioder";
+
+"8Jb-mR-9oB.text" = "Ny Period";

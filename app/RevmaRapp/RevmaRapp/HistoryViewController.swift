@@ -148,6 +148,10 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource {
     }
 
     func numberOfRecordsForPlot(plot: CPTPlot!) -> UInt {
+        if activitiesByPeriods.isEmpty {
+            return 0
+        }
+
         let howManyPeriods = currentSet
         var recCount:UInt = 0;
         for i in 1...howManyPeriods {
