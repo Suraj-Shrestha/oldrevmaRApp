@@ -11,7 +11,7 @@
 "31d-rr-kpW.text" = "Title";
 
 /* Class = "IBUITableViewController"; title = "Reflection_Title"; ObjectID = "94d-wo-ZX5"; */
-"94d-wo-ZX5.title" = "Refleksjon";
+"94d-wo-ZX5.title" = "Hjelp";
 
 /* Class = "IBUITextField"; placeholder = "Activity_Placeholder_Text"; ObjectID = "DBh-27-8jj"; */
 "DBh-27-8jj.placeholder" = "Aktivitet";
@@ -20,7 +20,7 @@
 "EXF-tP-vvc.title" = "Aktiviteter";
 
 /* Class = "IBUINavigationItem"; title = "Activities_table_title"; ObjectID = "1fw-lw-0Ca"; */
-"1fw-lw-0Ca.title" = "Aktivitets perioder";
+"1fw-lw-0Ca.title" = "Aktivitetsperioder";
 
 /* Class = "IBUITabBarItem"; title = "Activities_title"; ObjectID = "JYO-ep-uMH"; */
 "JYO-ep-uMH.title" = "Aktiviteter";
@@ -87,10 +87,10 @@
 "o6v-r9-bq4.text" = "Smerte";
 
 /* Class = "IBUILabel"; text = "Loaded by ActivityPeriodEditController"; ObjectID = "VDe-GH-zJA"; */
-"VDe-GH-zJA.text" = "RevmaRapp gjøre det mulig å få oversikt over dine bruk av energi på forskjellige aktiviteter.";
+"VDe-GH-zJA.text" = "RevmaRapp gjør det mulig å få oversikt over bruk av energi på forskjellige aktiviteter.";
 
 /* Class = "IBUILabel"; text = "Loaded by ActivityPeriodEditController"; ObjectID = "tMS-bT-ArA"; */
-"tMS-bT-ArA.text" = "Hvor lenge en periode vil du måle?";
+"tMS-bT-ArA.text" = "Hvor lang periode vil du måle?";
 
 /* Class = "IBUILabel"; text = "Loaded by ActivityPeriodEditController"; ObjectID = "YMr-eJ-UoL"; */
 "YMr-eJ-UoL.text" = "Når vil du begynne?";
@@ -101,4 +101,7 @@
 /* Class = "IBUILabel"; text = "Loaded by ActivityPeriodTableViewController"; ObjectID = "1fw-lw-0Ca"; */
 "1fw-lw-0Ca.text" = "Perioder";
 
-"8Jb-mR-9oB.text" = "Ny Period";
+"8Jb-mR-9oB.text" = "Ny Periode";
+
+
+"8Ym-9a-iY3.text" = "Periode";

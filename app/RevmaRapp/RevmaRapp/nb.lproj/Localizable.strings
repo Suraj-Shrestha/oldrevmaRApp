@@ -27,13 +27,13 @@
 
 
 /* Energy_use_label */
-"Energy_use_label" = "Hvor mye energi brukte du:";
+"Energy_use_label" = "Brukte du eller fikk du energi:";
 
 /* "energy_max_label" */
-"energy_max_label" = "Lite";
+"energy_max_label" = "Fikk";
 
 /* "energy_min_label" */
-"energy_min_label" = "Mye";
+"energy_min_label" = "Brukte";
 
 /* "Activity_mastering_label" */
 "Activity_mastering_label" = "Jeg mestret aktiviteten:";
@@ -100,7 +100,7 @@
 "OK" = "OK";
 
 /* "New Period", comment: "Blank name for period" */
-"New Period" = "Ny period";
+"New Period" = "Ny periode";
 
 /* "Period should include one day in a weekend", comment: "Warning to include a weekend." */
 "Period should include one day in a weekend" = "Perioden bør innholde en dag i helgen.";
@@ -115,7 +115,7 @@
 "7 days" = "7 dager";
 
 /* "The period should include a weekend", comment:"Weekend warning" */
-"The period should include a weekend" = "Perioden bør inkludere en helg";
+"The period should include a weekend" = "Perioden bør innholde en dag i helgen";
 
 /* "Use this period anyway?", comment:"" */
 "Use this period anyway?" = "Bruk perioden alikevel?";
