@@ -137,6 +137,32 @@ class ActivityTableViewController: UITableViewController, NSFetchedResultsContro
         return cell
     }
 
+    private func multiplierByDuration(duration: CGFloat) -> CGFloat {
+        // These numbers should probably be examined a bit closer, I'm just doing some guessing here.
+        switch duration {
+        case 0...20:
+            return 1
+        case 21...40:
+            return 1.5
+        case 41...55:
+            return 2
+        case 56...80:
+            return 2.5
+        case 81...1000:
+            return 3
+        default:
+            return 1
+        }
+    }
+
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        let BaseHeight: CGFloat = 50.0;
+        if let activity = self.activitiesByDays[indexPath.section]?[indexPath.row] {
+            return BaseHeight * multiplierByDuration(CGFloat(activity.duration!.doubleValue))
+        }
+        return BaseHeight
+    }
+
     private func configureCell(cell: UITableViewCell, atIndexPath indexPath: NSIndexPath) {
         let activity = self.activitiesByDays[indexPath.section]![indexPath.row]
         cell.detailTextLabel!.text =  cellDateFormatter.stringFromDate(activity.time_start!)
