@@ -1,7 +1,7 @@
 @objc(ActivityItem)
 class ActivityItem: _ActivityItem {
 
-    enum GraphQuadrant: Int { case I = 1, II, III, IV }
+    enum GraphQuadrant: Int { case Unknown = 0, I = 1, II, III, IV }
 
 
     var quadrant : GraphQuadrant {
@@ -11,10 +11,10 @@ class ActivityItem: _ActivityItem {
             return .II
         } else if importance!.doubleValue - 0.5 > 0 {
             return .III
-        } else {
-            ZAssert(importance!.doubleValue - 0.5 < 0, "Activity must be in Quadrant IV")
+        } else if importance!.doubleValue - 0.5 < 0 {
             return .IV
         }
+        return .Unknown
     }
 
 	// Custom logic goes here.

@@ -12,11 +12,13 @@ import CoreData
 class HistoryViewController: UIViewController, CPTScatterPlotDataSource, CPTScatterPlotDelegate {
     
     let SliderValueKey = "RevmaRappSliderValue"
+    let ShowQuadrantIdentifier = "showQuadrant"
     
     @IBOutlet weak var graphView: CPTGraphHostingView!
     @IBOutlet weak var weekLabel: UILabel!
     @IBOutlet weak var weekSlider: UISlider!
     var currentSet:Int = 1
+    var selectedQuadrant: ActivityItem.GraphQuadrant = .Unknown
     var sortedKeys:[Int] = []
     weak var appDelegate:AppDelegate! = (UIApplication.sharedApplication().delegate as! AppDelegate)
     
@@ -149,6 +151,23 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource, CPTScat
         self.graphView.hostedGraph = graph
     }
 
+
+    // MARK: Segue
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // TODO: Get the detail view hooked up.
+        if let whichSegue = segue.identifier {
+            switch (whichSegue) {
+            case ShowQuadrantIdentifier:
+                if let activityViewController = segue.destinationViewController.topViewController as? QuadrantActivityTableViewController {
+
+                    activityViewController.activities = fetchActivitiesForQuadrant(selectedQuadrant)
+                }
+            default:
+                break;
+            }
+        }
+    }
+
     func numberOfRecordsForPlot(plot: CPTPlot!) -> UInt {
         if activitiesByPeriods.isEmpty {
             return 0
@@ -213,8 +232,8 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource, CPTScat
     }
 
     private func showActivitiesForQuadrant(quad: ActivityItem.GraphQuadrant) {
-
-
+        selectedQuadrant = quad
+        self.performSegueWithIdentifier(ShowQuadrantIdentifier, sender: self)
     }
 
     func scatterPlot(plot: CPTScatterPlot!, plotSymbolTouchUpAtRecordIndex idx: UInt) {

@@ -27,6 +27,8 @@
 		C93F56F51A0B70BE0030D481 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C93F56F31A0B70BE0030D481 /* LaunchScreen.xib */; };
 		C93F57011A0B70BE0030D481 /* RevmaRappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93F57001A0B70BE0030D481 /* RevmaRappTests.swift */; };
 		C9C10BE41A0B831C00784666 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C10BE31A0B831C00784666 /* ActivityViewController.swift */; };
+		C9C93BA81B3841AF00857B87 /* QuadrantActivityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C93BA71B3841AF00857B87 /* QuadrantActivityTableViewController.swift */; };
+		C9C93BAC1B38482600857B87 /* ActivityTableViewControllerBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C93BAB1B38482600857B87 /* ActivityTableViewControllerBase.swift */; };
 		C9DD9F311A136E550099B184 /* RevmaRapp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C9DD9F2F1A136E550099B184 /* RevmaRapp.xcdatamodeld */; };
 		C9DD9F431A13A3A00099B184 /* _ActivityItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DD9F3F1A13A3A00099B184 /* _ActivityItem.swift */; };
 		C9DD9F441A13A3A00099B184 /* _ActivityName.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DD9F401A13A3A00099B184 /* _ActivityName.swift */; };
@@ -88,6 +90,8 @@
 		C93F56FF1A0B70BE0030D481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C93F57001A0B70BE0030D481 /* RevmaRappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevmaRappTests.swift; sourceTree = "<group>"; };
 		C9C10BE31A0B831C00784666 /* ActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		C9C93BA71B3841AF00857B87 /* QuadrantActivityTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuadrantActivityTableViewController.swift; sourceTree = "<group>"; };
+		C9C93BAB1B38482600857B87 /* ActivityTableViewControllerBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityTableViewControllerBase.swift; sourceTree = "<group>"; };
 		C9DD9F301A136E550099B184 /* RevmaRapp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RevmaRapp.xcdatamodel; sourceTree = "<group>"; };
 		C9DD9F3F1A13A3A00099B184 /* _ActivityItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _ActivityItem.swift; sourceTree = "<group>"; };
 		C9DD9F401A13A3A00099B184 /* _ActivityName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = _ActivityName.swift; sourceTree = "<group>"; };
@@ -164,7 +168,9 @@
 				C9DD9F3E1A13A3A00099B184 /* ModelObjects */,
 				C93F56E81A0B70BE0030D481 /* AppDelegate.swift */,
 				C92B45F41B09CF8500B695FF /* ActivityPeriodTableViewController.swift */,
+				C9C93BAB1B38482600857B87 /* ActivityTableViewControllerBase.swift */,
 				C93F56EA1A0B70BE0030D481 /* ActivityTableViewController.swift */,
+				C9C93BA71B3841AF00857B87 /* QuadrantActivityTableViewController.swift */,
 				C92B45F61B0A167300B695FF /* ActivityPeriodEditController.swift */,
 				C9C10BE31A0B831C00784666 /* ActivityViewController.swift */,
 				C93F56EC1A0B70BE0030D481 /* ActivityEditController.swift */,
@@ -377,10 +383,12 @@
 				C92B45F71B0A167300B695FF /* ActivityPeriodEditController.swift in Sources */,
 				C92B45F51B09CF8500B695FF /* ActivityPeriodTableViewController.swift in Sources */,
 				C9DD9F451A13A3A00099B184 /* ActivityItem.swift in Sources */,
+				C9C93BA81B3841AF00857B87 /* QuadrantActivityTableViewController.swift in Sources */,
 				C9FC49DD1AB3276A005385CE /* CorePlotImageLayer.swift in Sources */,
 				C92B45F31B09CCD300B695FF /* ActivityPeriod.swift in Sources */,
 				C9DD9F441A13A3A00099B184 /* _ActivityName.swift in Sources */,
 				C93F56ED1A0B70BE0030D481 /* ActivityEditController.swift in Sources */,
+				C9C93BAC1B38482600857B87 /* ActivityTableViewControllerBase.swift in Sources */,
 				C931DB011A66BC7B00BCBE81 /* HistoryViewController.swift in Sources */,
 				C93F56E91A0B70BE0030D481 /* AppDelegate.swift in Sources */,
 				C9DD9F431A13A3A00099B184 /* _ActivityItem.swift in Sources */,
