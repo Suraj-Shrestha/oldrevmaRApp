@@ -286,7 +286,7 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
         if indexPath.section != 0 {
             return false
         }
-        return hasInlineDatePicker() ? indexPath.row == kDurationRow + 2 : indexPath.row == kDurationRow + 1
+        return hasInlineDurationPicker() ? indexPath.row == kDurationRow + 2 : indexPath.row == kDurationRow + 1
     }
 
 
@@ -351,8 +351,7 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
             return 0
         }
     }
-    
-    
+
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         switch section {
         case 0:
@@ -372,36 +371,29 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
             return 0
         }
     }
-    
+
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var retCell:UITableViewCell?
         switch indexPath.section {
         case 0:
-            if indexPathHasDatePicker(indexPath) {
-                retCell = tableView.dequeueReusableCellWithIdentifier(kDatePickerID) as? UITableViewCell
-            }
-            
-            if indexPathHasDurationPicker(indexPath) {
+            if indexPathHasDuration(indexPath) {
+                retCell = tableView.dequeueReusableCellWithIdentifier(kDurationCellID) as? UITableViewCell
+                retCell!.detailTextLabel!.text = numberFormatter.stringFromNumber(NSNumber(integer: durationInMinutes))
+                retCell!.textLabel!.text = NSLocalizedString("Duration_Label", comment: "Duration_Label")
+            } else if indexPathHasDurationPicker(indexPath) {
                 retCell = tableView.dequeueReusableCellWithIdentifier(kDurationPickerID) as? UITableViewCell
                 if let picker = retCell?.viewWithTag(kDurationPickerTag) as? UIPickerView {
                     picker.delegate = self
                     picker.dataSource = self
                 }
-            }
-            
-            if indexPathHasDate(indexPath) {
+            } else if indexPathHasDate(indexPath) {
                 retCell = tableView.dequeueReusableCellWithIdentifier(kDateCellID) as? UITableViewCell
                 retCell!.detailTextLabel!.text = dateFormater.stringFromDate(activityDate!)
                 retCell!.textLabel!.text = NSLocalizedString("Time_Start_Label", comment: "Time_Start_Label")
-            }
-            
-            if indexPathHasDuration(indexPath) {
-                retCell = tableView.dequeueReusableCellWithIdentifier(kDurationCellID) as? UITableViewCell
-                retCell!.detailTextLabel!.text = numberFormatter.stringFromNumber(NSNumber(integer: durationInMinutes))
-                retCell!.textLabel!.text = NSLocalizedString("Duration_Label", comment: "Duration_Label")
-            }
-            
-            if indexPath.row == kNameRow {
+            } else if indexPathHasDatePicker(indexPath) {
+                retCell = tableView.dequeueReusableCellWithIdentifier(kDatePickerID) as? UITableViewCell
+            } else {
+                ZAssert(indexPath.row == kNameRow, "Trying to get a tablecell for a row that doesn't exist, getting an activity row")
                 retCell = tableView.dequeueReusableCellWithIdentifier(kActivityNameCellID) as? UITableViewCell
                 if activityName?.name != nil {
                     retCell!.textLabel!.text = activityName!.visibleName()
@@ -506,6 +498,14 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
         
         tableView.endUpdates()
     }
+
+    func syncDatePickerIndexPath() {
+        // So, the duration picker might have disappeared or appeared and I already had a perfectly happy date picker
+        // dynamically there. What am I to do?
+        if hasInlineDatePicker() {
+            datePickerIndexPath = NSIndexPath(forRow: hasInlineDurationPicker() ? kDurationRow + 3 : kDurationRow + 2, inSection: 0)
+        }
+    }
     
     func displayInlineDurationPickerForRowAtIndexPath(indexPath: NSIndexPath) {
         tableView.beginUpdates()
@@ -526,7 +526,7 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
         
         // always deselect the row containing the start or end date
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
-
+        syncDatePickerIndexPath()
         tableView.endUpdates()
         updateDurationPicker()
     }
