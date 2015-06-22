@@ -57,9 +57,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 var rando = [UInt8](count:6 * RecordCount, repeatedValue: 0)
                 SecRandomCopyBytes(kSecRandomDefault, rando.count, UnsafeMutablePointer<UInt8>(rando))
                 for period in periods {
-                    var date1 = period.start!.dateByAddingTimeInterval(-60 * 60 * 24) // To keep symmetry, subtract the day first and add it immediately afterwards.
-                    for _ in 1...DaysInPeriod {
-                        date1 = date1.dateByAddingTimeInterval(60 * 60 * 24)
+                    var date1 = period.start!
+                    for day in 1...DaysInPeriod {
+                        date1 = period.start!.dateByAddingTimeInterval(60 * 60 * 24 * Double(day) - 1)
                         for _ in 1...RecsInDay {
                             let activity = ActivityItem(managedObjectContext: self.managedObjectContext)
                             activity.period = period
@@ -71,6 +71,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                             activity.duty = NSNumber(double: Double(Int(bitPattern: UInt(rando[randomIndex++]))) / 255.0)
                             activity.energy = NSNumber(double: Double(Int(bitPattern: UInt(rando[randomIndex++]))) / 255.0)
                             activity.importance = NSNumber(double: Double(Int(bitPattern: UInt(rando[randomIndex++]))) / 255.0)
+                            date1 = date1.dateByAddingTimeInterval(60 * 30)
                         }
                     }
                     period.stop = date1
@@ -144,7 +145,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             catalogEntry.i18nable = true
         }
         
-//        createDummyObjects()
+        createDummyObjects()
 
         self.managedObjectContext.save(&error)
         
