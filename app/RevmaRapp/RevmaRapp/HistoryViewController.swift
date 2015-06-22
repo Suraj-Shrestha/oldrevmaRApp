@@ -198,8 +198,29 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource, CPTScat
         return -1;
     }
 
+    private func fetchActivitiesForQuadrant(quad: ActivityItem.GraphQuadrant) -> [ActivityItem] {
+        var activities = [ActivityItem]()
+        for periodArray in self.activitiesByPeriods.values {
+            for activity in periodArray {
+                if (activity.quadrant == quad) {
+                    activities.append(activity)
+                }
+            }
+        }
+        return sorted(activities, { (a1: ActivityItem, a2: ActivityItem) -> Bool in
+                return a1.activityGraphDistance < a2.activityGraphDistance
+            })
+    }
+
+    private func showActivitiesForQuadrant(quad: ActivityItem.GraphQuadrant) {
+
+
+    }
+
     func scatterPlot(plot: CPTScatterPlot!, plotSymbolTouchUpAtRecordIndex idx: UInt) {
-        println("Got an index: \(idx)")
+        if let activity = activityForRecordIndex(idx) {
+            showActivitiesForQuadrant(activity.quadrant)
+        }
     }
     
     func symbolForScatterPlot(plot: CPTScatterPlot!, recordIndex idx: UInt) -> CPTPlotSymbol! {
@@ -213,8 +234,8 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource, CPTScat
         let baseRadius = 5 * symbol.size.width
         symbol.size = (CGSizeMake(baseRadius * energyValue, baseRadius * energyValue))
         
-        let isGreen = appDelegate.isGreen(activity)
-        let isRed = appDelegate.isRed(activity)
+        let isGreen = activity.isGreen
+        let isRed = activity.isRed
         
         var components = [CGFloat](count: 3, repeatedValue: 0.55)
 

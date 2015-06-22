@@ -313,11 +313,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let SquareSize:CGFloat = 80.0
         let size = SquareSize * CGFloat(activity.energy!.doubleValue)
         
-        let isRed = self.isRed(activity)
-        let isGreen = self.isGreen(activity)
+        let isRed = activity.isRed
+        let isGreen = activity.isGreen
         let isGray = !isGreen && !isRed
 
-        let components:[CGFloat] = !isGray ? rgbComponetsForActivity(activity, isGreen: isGreen) : [0.55, 0.55, 0.55]
+        let components = !isGray ? rgbComponetsForActivity(activity, isGreen: isGreen) : [CGFloat](count: 3, repeatedValue: 0.55)
         
         let key:String = "\(size);\(components[0]);\(components[1]);\(components[2])"
         if imageCache == nil {
@@ -332,18 +332,5 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         imageCache!.setObject(image, forKey: key)
         return image
     }
-    
-    func isActivityGray(activity: ActivityItem) -> Bool { // For the lazy
-        return !isGreen(activity) && !isRed(activity)
-    }
-    
-    func isGreen(activity: ActivityItem) -> Bool {
-        return activity.duty!.doubleValue - 0.5 > 0 && activity.importance!.doubleValue - 0.5 > 0
-    }
-    
-    func isRed(activity: ActivityItem) -> Bool {
-        return activity.duty!.doubleValue - 0.5 < 0 && activity.importance!.doubleValue - 0.5 < 0
-    }
-
 }
 
