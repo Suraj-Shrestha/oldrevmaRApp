@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class HistoryViewController: UIViewController, CPTScatterPlotDataSource {
+class HistoryViewController: UIViewController, CPTScatterPlotDataSource, CPTScatterPlotDelegate {
     
     let SliderValueKey = "RevmaRappSliderValue"
     
@@ -69,6 +69,7 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource {
     
     func setupGraph() {
         // create graph
+        graphView.allowPinchScaling = true
         let graph = CPTXYGraph(frame: CGRectZero)
         let plotSpace = graph.defaultPlotSpace as! CPTXYPlotSpace
         let xRange = plotSpace.xRange.mutableCopy() as! CPTMutablePlotRange
@@ -142,6 +143,7 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource {
         
         plot.dataLineStyle = nil
         plot.dataSource = self
+        plot.delegate = self
         graph.addPlot(plot)
         
         self.graphView.hostedGraph = graph
@@ -194,6 +196,10 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource {
             }
         }
         return -1;
+    }
+
+    func scatterPlot(plot: CPTScatterPlot!, plotSymbolTouchUpAtRecordIndex idx: UInt) {
+        println("Got an index: \(idx)")
     }
     
     func symbolForScatterPlot(plot: CPTScatterPlot!, recordIndex idx: UInt) -> CPTPlotSymbol! {
