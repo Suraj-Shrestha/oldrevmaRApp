@@ -50,11 +50,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             if let results = self.managedObjectContext.executeFetchRequest(fetchRequest, error: &error) {
                 let activityNames = results as! [ActivityName]
                 let DaysInPeriod = 3
-                let RecsInDay = 16
+                let RecsInDay = 14
                 let RecordCount = RecsInDay * DaysInPeriod * periods.count
+                let ActivityDuration = [15, 30, 45, 60, 90]
                 
                 var randomIndex = 0
-                var rando = [UInt8](count:6 * RecordCount, repeatedValue: 0)
+                var rando = [UInt8](count:7 * RecordCount, repeatedValue: 0)
                 SecRandomCopyBytes(kSecRandomDefault, rando.count, UnsafeMutablePointer<UInt8>(rando))
                 for period in periods {
                     var date1 = period.start!
@@ -65,13 +66,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                             activity.period = period
                             activity.activity = activityNames[Int(bitPattern: UInt(rando[randomIndex++])) % activityNames.count]
                             activity.time_start = date1
-                            activity.duration = 30
+                            activity.duration = ActivityDuration[Int(bitPattern: UInt(rando[randomIndex++])) % ActivityDuration.count]
                             activity.pain = NSNumber(double: Double(Int(bitPattern: UInt(rando[randomIndex++]))) / 255.0)
                             activity.mastery = NSNumber(double: Double(Int(bitPattern: UInt(rando[randomIndex++]))) / 255.0)
                             activity.duty = NSNumber(double: Double(Int(bitPattern: UInt(rando[randomIndex++]))) / 255.0)
                             activity.energy = NSNumber(double: Double(Int(bitPattern: UInt(rando[randomIndex++]))) / 255.0)
                             activity.importance = NSNumber(double: Double(Int(bitPattern: UInt(rando[randomIndex++]))) / 255.0)
-                            date1 = date1.dateByAddingTimeInterval(60 * 30)
+                            date1 = date1.dateByAddingTimeInterval(60 * activity.duration!.doubleValue)
                         }
                     }
                     period.stop = date1
