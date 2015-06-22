@@ -33,6 +33,7 @@ class ActivityPeriodEditController : UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         scrollView.contentSize = CGSizeMake(scrollView.frame.size.width, OriginalScrollSize)
         startDate = datePicker.date
+        datePicker.minimumDate = startDate.dateByAddingTimeInterval(-60 * 60 * 24)
         textField.text = periodName
         dayPeriod = dayControl.selectedSegmentIndex
         dayControl.setTitle(NSLocalizedString("3 days", comment: "3 day period"), forSegmentAtIndex: 0)
