@@ -263,12 +263,12 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource, CPTScat
         let frameRect = plot.frame
         let halfWidth = frameRect.size.width / 2
         let halfHeight = frameRect.size.height / 2
-        let quadIVRect = CGRectMake(frameRect.origin.x + halfWidth + 0.5, frameRect.origin.y, halfWidth, halfHeight)
-        let quadIIRect = CGRectMake(frameRect.origin.x, frameRect.origin.y, halfWidth, halfHeight)
-        let quadIIIRect = CGRectMake(frameRect.origin.x, frameRect.origin.y + halfHeight + 0.5, halfWidth, halfHeight)
-        let quadIRect = CGRectMake(frameRect.origin.x + halfWidth, frameRect.origin.y + halfHeight, halfWidth, halfHeight)
-
-        let quads = [quadIRect, quadIIRect, quadIIIRect, quadIVRect]
+        let quads = [
+            CGRectMake(frameRect.origin.x + halfWidth, frameRect.origin.y + halfHeight, halfWidth, halfHeight), // Quadrant I
+            CGRectMake(frameRect.origin.x, frameRect.origin.y, halfWidth, halfHeight), // Quadrant II
+            CGRectMake(frameRect.origin.x, frameRect.origin.y + halfHeight, halfWidth, halfHeight), // Quadrant III
+            CGRectMake(frameRect.origin.x + halfWidth, frameRect.origin.y, halfWidth, halfHeight) // Quadrant IV
+            ]
         var rawValue = 1
         for quad in quads {
             if CGRectContainsPoint(quad, point) {
