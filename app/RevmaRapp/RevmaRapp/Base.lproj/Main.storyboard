@@ -8,8 +8,26 @@
     </dependencies>
     <scenes>
         <!--History_title-->
+        <scene sceneID="bIQ-jy-ePl">
+            <objects>
+                <navigationController id="v7B-4J-UMG" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="History_title" image="history" id="uIe-JJ-blb"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Fdv-UR-yA0">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="rootViewController" id="B69-AS-uO3"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xbh-x3-I7f" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2961" y="978"/>
+        </scene>
+        <!--History View Controller-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
                 <viewController id="8rJ-Kc-sve" customClass="HistoryViewController" customModule="RevmaRapp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
@@ -19,17 +37,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8JD-wl-RUW" customClass="CPTGraphHostingView">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8JD-wl-RUW" customClass="CPTGraphHostingView">
                                 <rect key="frame" x="16" y="58" width="568" height="493"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="3" translatesAutoresizingMaskIntoConstraints="NO" id="RKc-7x-Aae">
+                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="3" translatesAutoresizingMaskIntoConstraints="NO" id="RKc-7x-Aae">
                                 <rect key="frame" x="72" y="20" width="514" height="31"/>
                                 <connections>
                                     <action selector="sliderChange:" destination="8rJ-Kc-sve" eventType="valueChanged" id="uIj-rT-QSV"/>
                                 </connections>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Period" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ym-9a-iY3">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Period" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ym-9a-iY3">
                                 <rect key="frame" x="16" y="24" width="50" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -49,15 +67,14 @@
                             <constraint firstItem="RKc-7x-Aae" firstAttribute="trailing" secondItem="QS5-Rx-YEW" secondAttribute="trailingMargin" id="usX-Ax-bQ2"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="History_title" image="history" id="cPa-gy-q4n"/>
+                    <navigationItem key="navigationItem" id="bSN-Sc-6Mc"/>
                     <connections>
                         <outlet property="graphView" destination="8JD-wl-RUW" id="Nt5-ao-Spd"/>
                         <outlet property="weekLabel" destination="8Ym-9a-iY3" id="YNo-PM-phm"/>
                         <outlet property="weekSlider" destination="RKc-7x-Aae" id="FGa-jB-3f3"/>
-                        <segue destination="rDy-RY-Vd0" kind="presentation" identifier="showQuadrant" id="r5Z-Wp-HPf"/>
+                        <segue destination="rDy-RY-Vd0" kind="show" identifier="showQuadrant" id="r5Z-Wp-HPf"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-2176" y="978"/>
         </scene>
@@ -88,7 +105,7 @@
             </objects>
             <point key="canvasLocation" x="905" y="704"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Quadrant_results-->
         <scene sceneID="cbZ-PX-lML">
             <objects>
                 <tableViewController id="TI1-0s-OYf" customClass="QuadrantActivityTableViewController" customModule="RevmaRapp" customModuleProvider="target" sceneMemberID="viewController">
@@ -117,7 +134,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="glM-oJ-1fq" kind="show" identifier="showActivity" id="j7B-97-BwB"/>
+                                    <segue destination="JTE-jG-Qfg" kind="show" identifier="showActivity" id="D5X-wD-qW6"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -126,7 +143,7 @@
                             <outlet property="delegate" destination="TI1-0s-OYf" id="emy-39-VLN"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="7iV-dU-OjY"/>
+                    <navigationItem key="navigationItem" title="Quadrant_results" id="7iV-dU-OjY"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ERM-2w-aHs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -905,7 +922,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JLM-Nk-Qwj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1712" y="2428"/>
+            <point key="canvasLocation" x="-1632" y="2716"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9eX-09-HNp">
@@ -1156,7 +1173,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="lVg-5F-Fd5" kind="relationship" relationship="viewControllers" id="Icf-L1-mTU"/>
-                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="v7B-4J-UMG" kind="relationship" relationship="viewControllers" id="mTs-GE-VqE"/>
                         <segue destination="1to-dx-WtZ" kind="relationship" relationship="viewControllers" id="iwH-pa-crc"/>
                         <segue destination="PyH-cI-oUs" kind="relationship" relationship="viewControllers" id="3NI-BB-nhQ"/>
                     </connections>
@@ -1175,7 +1192,7 @@
         <image name="tongue-face" width="283" height="282"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="j7B-97-BwB"/>
+        <segue reference="D5X-wD-qW6"/>
         <segue reference="XKB-0w-ybg"/>
     </inferredMetricsTieBreakers>
 </document>

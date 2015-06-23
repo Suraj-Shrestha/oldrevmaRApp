@@ -219,10 +219,14 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource, CPTScat
 
     private func fetchActivitiesForQuadrant(quad: ActivityItem.GraphQuadrant) -> [ActivityItem] {
         var activities = [ActivityItem]()
-        for periodArray in self.activitiesByPeriods.values {
-            for activity in periodArray {
-                if (activity.quadrant == quad) {
-                    activities.append(activity)
+
+        let howManyPeriods = currentSet
+        for i in 1...howManyPeriods {
+            if let periodArray = activitiesByPeriods[i] {
+                for activity in periodArray {
+                    if (activity.quadrant == quad) {
+                        activities.append(activity)
+                    }
                 }
             }
         }

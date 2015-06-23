@@ -42,7 +42,7 @@ class QuadrantActivityTableViewController: ActivityTableViewControllerBase {
             switch (whichSegue) {
             case ShowActivitySegueID:
                 if let indexPath = self.tableView.indexPathForSelectedRow() {
-                    let activity = self.activities[indexPath.row] as ActivityItem
+                    let activity = self.activities[indexPath.row]
                     if let activityViewController = segue.destinationViewController.topViewController as? ActivityViewController {
                         activityViewController.activityItem = activity
                     }
