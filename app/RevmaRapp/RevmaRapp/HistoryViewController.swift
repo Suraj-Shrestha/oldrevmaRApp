@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class HistoryViewController: UIViewController, CPTScatterPlotDataSource, CPTScatterPlotDelegate {
+class HistoryViewController: UIViewController, CPTScatterPlotDataSource, CPTScatterPlotDelegate, WhitespaceTouchDelegate {
     
     let SliderValueKey = "RevmaRappSliderValue"
     let ShowQuadrantIdentifier = "showQuadrant"
@@ -97,7 +97,7 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource, CPTScat
         plotSpace.xRange = xRange
         plotSpace.yRange = yRange
       
-        let plot = CPTScatterPlot(frame: CGRectZero)
+        let plot = RevmaRappScatterPlot(frame: CGRectZero)
         
         let axisTitleTextStyle = CPTMutableTextStyle()
         axisTitleTextStyle.fontName = "Helvetica-Bold"
@@ -158,6 +158,7 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource, CPTScat
         plot.dataLineStyle = nil
         plot.dataSource = self
         plot.delegate = self
+        plot.whitespaceDelegate = self
         graph.addPlot(plot)
         
         self.graphView.hostedGraph = graph
@@ -255,6 +256,26 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource, CPTScat
     func scatterPlot(plot: CPTScatterPlot!, plotSymbolTouchUpAtRecordIndex idx: UInt) {
         if let activity = activityForRecordIndex(idx) {
             showActivitiesForQuadrant(activity.quadrant)
+        }
+    }
+
+    func touchedWhiteSpaceAtPoint(point: CGPoint, plot: RevmaRappScatterPlot) {
+        let frameRect = plot.frame
+        let halfWidth = frameRect.size.width / 2
+        let halfHeight = frameRect.size.height / 2
+        let quadIVRect = CGRectMake(frameRect.origin.x + halfWidth + 0.5, frameRect.origin.y, halfWidth, halfHeight)
+        let quadIIRect = CGRectMake(frameRect.origin.x, frameRect.origin.y, halfWidth, halfHeight)
+        let quadIIIRect = CGRectMake(frameRect.origin.x, frameRect.origin.y + halfHeight + 0.5, halfWidth, halfHeight)
+        let quadIRect = CGRectMake(frameRect.origin.x + halfWidth, frameRect.origin.y + halfHeight, halfWidth, halfHeight)
+
+        let quads = [quadIRect, quadIIRect, quadIIIRect, quadIVRect]
+        var rawValue = 1
+        for quad in quads {
+            if CGRectContainsPoint(quad, point) {
+                showActivitiesForQuadrant(ActivityItem.GraphQuadrant(rawValue: rawValue)!)
+                break;
+            }
+            rawValue = rawValue + 1
         }
     }
     
