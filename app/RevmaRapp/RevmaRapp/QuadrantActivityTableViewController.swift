@@ -16,6 +16,10 @@ class QuadrantActivityTableViewController: ActivityTableViewControllerBase {
         super.viewDidLoad()
     }
 
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+
     // MARK: Table view controller functions
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return activities.count
@@ -52,5 +56,4 @@ class QuadrantActivityTableViewController: ActivityTableViewControllerBase {
             }
         }
     }
-
 }

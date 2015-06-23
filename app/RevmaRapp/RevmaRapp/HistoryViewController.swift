@@ -33,9 +33,21 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource, CPTScat
         configureView()
     }
 
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        showNavBar(false)
+    }
+
+    private func showNavBar(show: Bool) {
+        if let navController = self.parentViewController as? UINavigationController {
+            navController.navigationBar.hidden = !show
+        }
+    }
+
     func configureView() {
         weekSlider.maximumValue = Float(activitiesByPeriods.count)
         setupGraph()
+
     }
 
     func fetchActivities() {
@@ -159,8 +171,8 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource, CPTScat
             switch (whichSegue) {
             case ShowQuadrantIdentifier:
                 if let activityViewController = segue.destinationViewController.topViewController as? QuadrantActivityTableViewController {
-
                     activityViewController.activities = fetchActivitiesForQuadrant(selectedQuadrant)
+                    showNavBar(true)
                 }
             default:
                 break;
