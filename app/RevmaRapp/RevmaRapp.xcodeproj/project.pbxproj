@@ -26,6 +26,7 @@
 		C93F56F21A0B70BE0030D481 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C93F56F11A0B70BE0030D481 /* Images.xcassets */; };
 		C93F56F51A0B70BE0030D481 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C93F56F31A0B70BE0030D481 /* LaunchScreen.xib */; };
 		C93F57011A0B70BE0030D481 /* RevmaRappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93F57001A0B70BE0030D481 /* RevmaRappTests.swift */; };
+		C9B7F6661B399E54000B86E9 /* PeriodGraphChooserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B7F6651B399E54000B86E9 /* PeriodGraphChooserController.swift */; };
 		C9C10BE41A0B831C00784666 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C10BE31A0B831C00784666 /* ActivityViewController.swift */; };
 		C9C93BA81B3841AF00857B87 /* QuadrantActivityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C93BA71B3841AF00857B87 /* QuadrantActivityTableViewController.swift */; };
 		C9C93BAC1B38482600857B87 /* ActivityTableViewControllerBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C93BAB1B38482600857B87 /* ActivityTableViewControllerBase.swift */; };
@@ -90,6 +91,7 @@
 		C93F56FA1A0B70BE0030D481 /* RevmaRappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RevmaRappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C93F56FF1A0B70BE0030D481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C93F57001A0B70BE0030D481 /* RevmaRappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevmaRappTests.swift; sourceTree = "<group>"; };
+		C9B7F6651B399E54000B86E9 /* PeriodGraphChooserController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeriodGraphChooserController.swift; sourceTree = "<group>"; };
 		C9C10BE31A0B831C00784666 /* ActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		C9C93BA71B3841AF00857B87 /* QuadrantActivityTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuadrantActivityTableViewController.swift; sourceTree = "<group>"; };
 		C9C93BAB1B38482600857B87 /* ActivityTableViewControllerBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityTableViewControllerBase.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				C93F56EC1A0B70BE0030D481 /* ActivityEditController.swift */,
 				C90F589B1A24D0F600258424 /* ActivityNameTableController.swift */,
 				C931DB001A66BC7B00BCBE81 /* HistoryViewController.swift */,
+				C9B7F6651B399E54000B86E9 /* PeriodGraphChooserController.swift */,
 				C931DB021A66BD0B00BCBE81 /* RevmaRapp-Bridging-Header.h */,
 				C93F56EE1A0B70BE0030D481 /* Main.storyboard */,
 				C93F56F11A0B70BE0030D481 /* Images.xcassets */,
@@ -389,6 +392,7 @@
 				C9C93BA81B3841AF00857B87 /* QuadrantActivityTableViewController.swift in Sources */,
 				C9FC49DD1AB3276A005385CE /* CorePlotImageLayer.swift in Sources */,
 				C92B45F31B09CCD300B695FF /* ActivityPeriod.swift in Sources */,
+				C9B7F6661B399E54000B86E9 /* PeriodGraphChooserController.swift in Sources */,
 				C9DD9F441A13A3A00099B184 /* _ActivityName.swift in Sources */,
 				C93F56ED1A0B70BE0030D481 /* ActivityEditController.swift in Sources */,
 				C9C93BAC1B38482600857B87 /* ActivityTableViewControllerBase.swift in Sources */,

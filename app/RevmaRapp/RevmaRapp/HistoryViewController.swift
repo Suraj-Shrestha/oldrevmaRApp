@@ -9,14 +9,12 @@
 import UIKit
 import CoreData
 
-class HistoryViewController: UIViewController, CPTScatterPlotDataSource, CPTScatterPlotDelegate, WhitespaceTouchDelegate {
-    
-    let SliderValueKey = "RevmaRappSliderValue"
+class HistoryViewController: UIViewController, CPTScatterPlotDataSource, CPTScatterPlotDelegate, WhitespaceTouchDelegate, PeriodGraphChooserControllerDelegate {
+
     let ShowQuadrantIdentifier = "showQuadrant"
+    let ShowPeriodEditIdentifier = "showPeriodEdit"
     
     @IBOutlet weak var graphView: CPTGraphHostingView!
-    @IBOutlet weak var weekLabel: UILabel!
-    @IBOutlet weak var weekSlider: UISlider!
     var currentSet:Int = 1
     var selectedQuadrant: ActivityItem.GraphQuadrant = .Unknown
     var sortedKeys:[Int] = []
@@ -35,17 +33,9 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource, CPTScat
 
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
-        showNavBar(false)
-    }
-
-    private func showNavBar(show: Bool) {
-        if let navController = self.parentViewController as? UINavigationController {
-            navController.navigationBar.hidden = !show
-        }
     }
 
     func configureView() {
-        weekSlider.maximumValue = Float(activitiesByPeriods.count)
         setupGraph()
 
     }
@@ -173,7 +163,10 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource, CPTScat
             case ShowQuadrantIdentifier:
                 if let activityViewController = segue.destinationViewController.topViewController as? QuadrantActivityTableViewController {
                     activityViewController.activities = fetchActivitiesForQuadrant(selectedQuadrant)
-                    showNavBar(true)
+                }
+            case ShowPeriodEditIdentifier:
+                if let periodController = segue.destinationViewController.topViewController as? PeriodGraphChooserController {
+                    periodController.delegate = self
                 }
             default:
                 break;
@@ -209,10 +202,10 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource, CPTScat
         ZAssert(false, "We should have returned an item from above")
         return nil
     }
-    
+
     func numberForPlot(plot: CPTPlot!, field fieldEnum: UInt, recordIndex idx: UInt) -> AnyObject {
         let CPTScatterPlotFieldX: UInt = 0 // Conversion to enums doesn't seem to work :-/
-        
+
         let activity = activityForRecordIndex(idx)!
         return (fieldEnum == CPTScatterPlotFieldX) ? activity.duty!.doubleValue - 0.5 : activity.importance!.doubleValue - 0.5
     }
@@ -314,13 +307,16 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource, CPTScat
 
         return symbol
     }
-    
-    @IBAction func sliderChange(slider: UISlider) {
-        let flooredValue = Int(round(slider.value))
-        slider.setValue(Float(flooredValue), animated: false)
-        if flooredValue != currentSet {
-            currentSet = flooredValue
-            graphView.hostedGraph.reloadData()
-        }
+
+    private func finishDismiss() {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
+
+    func periodChooserControllerDidCancel(controller: PeriodGraphChooserController) {
+        finishDismiss()
+    }
+
+    func periodChooserControllerDidDone(controller: PeriodGraphChooserController) {
+        finishDismiss()
     }
 }

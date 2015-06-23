@@ -80,7 +80,7 @@ class ActivityNameTableController : UITableViewController, NSFetchedResultsContr
         } else {
             let name = activityNames[indexPath.row - 1]
             cell.textLabel!.text = NSLocalizedString(name.name!, comment:"")
-            cell.accessoryType = (name == selectedName) ? UITableViewCellAccessoryType.Checkmark : UITableViewCellAccessoryType.None
+            cell.accessoryType = (name == selectedName) ? .Checkmark : .None
         }
     }
     

@@ -37,40 +37,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8JD-wl-RUW" customClass="CPTGraphHostingView">
-                                <rect key="frame" x="16" y="102" width="568" height="449"/>
+                                <rect key="frame" x="16" y="72" width="568" height="479"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="3" translatesAutoresizingMaskIntoConstraints="NO" id="RKc-7x-Aae">
-                                <rect key="frame" x="72" y="64" width="514" height="31"/>
-                                <connections>
-                                    <action selector="sliderChange:" destination="8rJ-Kc-sve" eventType="valueChanged" id="uIj-rT-QSV"/>
-                                </connections>
-                            </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Period" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ym-9a-iY3">
-                                <rect key="frame" x="16" y="68" width="50" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="8JD-wl-RUW" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="38" id="2OE-Xc-3yH"/>
                             <constraint firstItem="8JD-wl-RUW" firstAttribute="trailing" secondItem="QS5-Rx-YEW" secondAttribute="trailingMargin" id="9dI-En-LiF"/>
-                            <constraint firstItem="RKc-7x-Aae" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="58" id="I2j-Tc-GaN"/>
                             <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="8JD-wl-RUW" secondAttribute="bottom" id="fOK-rV-tZU"/>
+                            <constraint firstItem="8JD-wl-RUW" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="8" id="m4l-8T-i2U"/>
                             <constraint firstItem="8JD-wl-RUW" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="mfk-wm-Ktn"/>
-                            <constraint firstItem="RKc-7x-Aae" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" id="nLk-CO-Tcs"/>
-                            <constraint firstItem="8Ym-9a-iY3" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="tYh-PB-IMR"/>
-                            <constraint firstItem="8Ym-9a-iY3" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="4" id="thx-nT-hT4"/>
-                            <constraint firstItem="RKc-7x-Aae" firstAttribute="trailing" secondItem="QS5-Rx-YEW" secondAttribute="trailingMargin" id="usX-Ax-bQ2"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="bSN-Sc-6Mc"/>
+                    <navigationItem key="navigationItem" id="bSN-Sc-6Mc">
+                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="yOC-v3-VRy">
+                            <connections>
+                                <segue destination="Ajf-oz-OAA" kind="presentation" identifier="showPeriodEdit" id="GA4-pS-Js1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="graphView" destination="8JD-wl-RUW" id="Nt5-ao-Spd"/>
-                        <outlet property="weekLabel" destination="8Ym-9a-iY3" id="YNo-PM-phm"/>
-                        <outlet property="weekSlider" destination="RKc-7x-Aae" id="FGa-jB-3f3"/>
                         <segue destination="rDy-RY-Vd0" kind="show" identifier="showQuadrant" id="r5Z-Wp-HPf"/>
                     </connections>
                 </viewController>
@@ -1171,6 +1158,76 @@
             </objects>
             <point key="canvasLocation" x="-4088" y="884"/>
         </scene>
+        <!--Choose Periods-->
+        <scene sceneID="ehi-9T-Tfa">
+            <objects>
+                <tableViewController id="Vmj-rI-cBu" customClass="PeriodGraphChooserController" customModule="RevmaRapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="f0F-gi-fge">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" reuseIdentifier="PeriodCheckCell" textLabel="Cup-5u-C7W" detailTextLabel="BiJ-gw-EsH" style="IBUITableViewCellStyleSubtitle" id="oo1-EU-g8J">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="oo1-EU-g8J" id="7S6-ql-NNa">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Cup-5u-C7W">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BiJ-gw-EsH">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Vmj-rI-cBu" id="JDQ-yv-0Vl"/>
+                            <outlet property="delegate" destination="Vmj-rI-cBu" id="TiB-On-V6v"/>
+                        </connections>
+                    </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Choose Periods" id="UK7-y2-qAL">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="cRX-05-QDp">
+                            <connections>
+                                <action selector="cancelPressed:" destination="Vmj-rI-cBu" id="qIe-cd-aDV"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="Wj7-wV-IkK">
+                            <connections>
+                                <action selector="donePressed:" destination="Vmj-rI-cBu" id="XPE-V9-0YV"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Gp-yB-xvQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-642" y="-651"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4LO-az-hyj">
+            <objects>
+                <navigationController id="Ajf-oz-OAA" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jQ3-Bu-dG3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Vmj-rI-cBu" kind="relationship" relationship="rootViewController" id="4ts-qz-Um5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P4V-60-xV7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1462" y="-651"/>
+        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
@@ -1190,7 +1247,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1712" y="2"/>
+            <point key="canvasLocation" x="-3560" y="-514"/>
         </scene>
     </scenes>
     <resources>
