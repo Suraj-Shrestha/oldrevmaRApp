@@ -44,8 +44,8 @@
 /* Class = "IBUINavigationItem"; title = "Reflection_table_title"; ObjectID = "wqZ-Cx-GCV"; */
 "wqZ-Cx-GCV.title" = "Reflections";
 
-/* Class = "IBUILabel"; text = "History"; ObjectID = "zEq-FU-wV5"; */
-"zEq-FU-wV5.text" = "History";
+/* Class = "IBUILabel"; text = "History"; ObjectID = "uIe-JJ-blb"; */
+"uIe-JJ-blb.text" = "History";
 
 /* Class = "IBUINavigationItem"; title = "Activities"; ObjectID = "DYK-iK-exl"; */
 "DYK-iK-exl.title" = "Choose an Activity";
