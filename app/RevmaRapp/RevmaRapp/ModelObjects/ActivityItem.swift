@@ -33,4 +33,8 @@ class ActivityItem: _ActivityItem {
     var activityGraphDistance: Double {
         return hypot(duty!.doubleValue - 0.5, importance!.doubleValue - 0.5)
     }
+
+    var adjustedEnergyValue : Double {
+        return abs(energy!.doubleValue - 0.5) + 0.1
+    }
 }

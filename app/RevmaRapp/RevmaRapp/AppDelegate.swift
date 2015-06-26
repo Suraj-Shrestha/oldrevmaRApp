@@ -310,8 +310,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func imageForActivity(activity:ActivityItem) -> UIImage {
-        let SquareSize:CGFloat = 80.0
-        let size = SquareSize * CGFloat(activity.energy!.doubleValue)
+        let SquareSize:CGFloat = 160.0
+        let size = SquareSize * CGFloat(activity.adjustedEnergyValue)
         
         let isRed = activity.isRed
         let isGreen = activity.isGreen

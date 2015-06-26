@@ -274,13 +274,13 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource, CPTScat
     
     func symbolForScatterPlot(plot: CPTScatterPlot!, recordIndex idx: UInt) -> CPTPlotSymbol! {
         let activity = activityForRecordIndex(idx)!
-        let energyValue = 1.0 - CGFloat(activity.energy!.doubleValue)
+        let energyValue = CGFloat(activity.adjustedEnergyValue)
         let Symbols = [CPTPlotSymbol.rectanglePlotSymbol(), CPTPlotSymbol.diamondPlotSymbol(),
                          CPTPlotSymbol.trianglePlotSymbol(), CPTPlotSymbol.ellipsePlotSymbol(), CPTPlotSymbol.plusPlotSymbol(),
                          CPTPlotSymbol.crossPlotSymbol()]
         
         let symbol = Symbols[periodForIndex(idx) - 1 % Symbols.count]
-        let baseRadius = 5 * symbol.size.width
+        let baseRadius = 8 * symbol.size.width
         symbol.size = (CGSizeMake(baseRadius * energyValue, baseRadius * energyValue))
         
         let isGreen = activity.isGreen
