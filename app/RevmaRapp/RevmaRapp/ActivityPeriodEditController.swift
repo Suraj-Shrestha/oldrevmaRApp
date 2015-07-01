@@ -136,6 +136,9 @@ class ActivityPeriodEditController : UIViewController, UITextFieldDelegate {
         period.stop = startDate.dateByAddingTimeInterval(60.0 * 60.0 * 24.0 * Double(dayPeriod))
         appDelegate.saveContext()
 
+        // Remove the saved periods because you started a new period and it's better to look at that.
+        NSUserDefaults.standardUserDefaults().removeObjectForKey(HistoryViewController.SavedPeriodNamesKey)
+
         if let realDelegate = delegate {
             realDelegate.periodEditControllerDidSave(self)
         }

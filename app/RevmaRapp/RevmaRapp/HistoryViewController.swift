@@ -11,23 +11,26 @@ import CoreData
 
 class HistoryViewController: UIViewController, CPTScatterPlotDataSource, CPTScatterPlotDelegate, WhitespaceTouchDelegate, PeriodGraphChooserControllerDelegate {
 
-    let ShowQuadrantIdentifier = "showQuadrant"
-    let ShowPeriodEditIdentifier = "showPeriodEdit"
+    static let ShowQuadrantIdentifier = "showQuadrant"
+    static let ShowPeriodEditIdentifier = "showPeriodEdit"
+    static let SavedPeriodNamesKey = "selectedPeriodNames"
     
     @IBOutlet weak var graphView: CPTGraphHostingView!
-    var currentSet:Int = 1
+    var cacheCountSet = false
+    var cacheCount: UInt = 0
+
     var selectedQuadrant: ActivityItem.GraphQuadrant = .Unknown
-    var sortedKeys:[Int] = []
     weak var appDelegate:AppDelegate! = (UIApplication.sharedApplication().delegate as! AppDelegate)
     
     var managedObjectContext: NSManagedObjectContext?
 
-    var activitiesByPeriods = [Int: [ActivityItem]]()
-    
+    var selectedPeriods:[ActivityPeriod] = []
+
     override func viewDidLoad() {
         super.viewDidLoad()
         managedObjectContext = appDelegate.managedObjectContext
-        fetchActivities()
+        fetchPeriods()
+        updateTitle()
         configureView()
     }
 
@@ -37,23 +40,30 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource, CPTScat
 
     func configureView() {
         setupGraph()
-
     }
 
-    func fetchActivities() {
+    func fetchPeriods() {
         // Probably need to page this by date at some point as well, for now get me everything
+        selectedPeriods = []
         let fetchRequest = NSFetchRequest(entityName: ActivityPeriod.entityName())
         fetchRequest.sortDescriptors = [NSSortDescriptor(key: ActivityPeriodAttributes.start.rawValue, ascending: false)]
         var error: NSError?
         if let results = self.managedObjectContext?.executeFetchRequest(fetchRequest, error: &error) {
-            let periods = results as! [ActivityPeriod]
-            var periodKey = 1
-            for period in periods {
-                let activities = period.activityItems.allObjects as! [ActivityItem]
-                activitiesByPeriods[periodKey] = activities
-                periodKey = periodKey + 1
+            let defaults = NSUserDefaults.standardUserDefaults()
+            let allPeriods = results as! [ActivityPeriod]
+            if let periodNames = defaults.stringArrayForKey(HistoryViewController.SavedPeriodNamesKey) as? [String] {
+                for name in periodNames {
+                    for period in allPeriods {
+                        if name == period.name! {
+                            selectedPeriods.append(period)
+                        }
+                    }
+                }
+            } else if !allPeriods.isEmpty {
+                selectedPeriods.append(allPeriods.first!)
             }
-            sortedKeys = sorted(activitiesByPeriods.keys) { $0 < $1 }
+            selectedPeriods.sort({ (p1: ActivityPeriod, p2: ActivityPeriod) -> Bool in
+                        return p1.start!.compare(p2.start!) == .OrderedDescending })
         } else {
             println("Unresolved error \(error?.localizedDescription), \(error?.userInfo)\n Attempting to get activity names")
         }
@@ -160,13 +170,14 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource, CPTScat
         // TODO: Get the detail view hooked up.
         if let whichSegue = segue.identifier {
             switch (whichSegue) {
-            case ShowQuadrantIdentifier:
+            case HistoryViewController.ShowQuadrantIdentifier:
                 if let activityViewController = segue.destinationViewController.topViewController as? QuadrantActivityTableViewController {
                     activityViewController.activities = fetchActivitiesForQuadrant(selectedQuadrant)
                 }
-            case ShowPeriodEditIdentifier:
+            case HistoryViewController.ShowPeriodEditIdentifier:
                 if let periodController = segue.destinationViewController.topViewController as? PeriodGraphChooserController {
                     periodController.delegate = self
+                    periodController.selectedPeriods = Set<ActivityPeriod>(selectedPeriods)
                 }
             default:
                 break;
@@ -175,29 +186,32 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource, CPTScat
     }
 
     func numberOfRecordsForPlot(plot: CPTPlot!) -> UInt {
-        if activitiesByPeriods.isEmpty {
+        if cacheCountSet {
+            return cacheCount
+        }
+
+
+        if selectedPeriods.isEmpty {
             return 0
         }
 
-        let howManyPeriods = currentSet
-        var recCount:UInt = 0;
-        for i in 1...howManyPeriods {
-            if let activities = activitiesByPeriods[i] {
-                recCount = recCount + UInt(activities.count)
-            }
+        cacheCount = 0
+        for period in selectedPeriods {
+            cacheCount = cacheCount + UInt(period.activityItems.count)
         }
-        return recCount
+        cacheCountSet = true
+        return cacheCount
     }
 
     private func activityForRecordIndex(index: UInt) -> ActivityItem? {
         var indexAsInt = Int(bitPattern: index)
-        for key in sortedKeys {
-            if let activities = activitiesByPeriods[key] {
-                if indexAsInt < activities.count {
-                    return activities[indexAsInt]
-                }
-                indexAsInt -= activities.count
+        // Sadly, sets aren't ordered.
+        for period in selectedPeriods {
+            let activityCount = period.activityItems.count
+            if indexAsInt < activityCount {
+                return period.activityItems.allObjects[indexAsInt] as? ActivityItem
             }
+            indexAsInt -= activityCount
         }
         ZAssert(false, "We should have returned an item from above")
         return nil
@@ -212,27 +226,25 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource, CPTScat
     
     private func periodForIndex(index:UInt) -> Int {
         var shrinkingIndex = index;
-        for key in sortedKeys {
-            if let activities = activitiesByPeriods[key] {
-                if shrinkingIndex < UInt(activities.count) {
-                    return key;
-                }
-                shrinkingIndex = shrinkingIndex - UInt(activities.count)
+        var symbolIndex = 0
+        for period in selectedPeriods {
+            let activityCount = UInt(period.activityItems.count)
+            if  shrinkingIndex < activityCount {
+                return symbolIndex
             }
+            shrinkingIndex = shrinkingIndex - activityCount
+            symbolIndex = symbolIndex + 1
         }
-        return -1;
+        return 0;
     }
 
     private func fetchActivitiesForQuadrant(quad: ActivityItem.GraphQuadrant) -> [ActivityItem] {
         var activities = [ActivityItem]()
 
-        let howManyPeriods = currentSet
-        for i in 1...howManyPeriods {
-            if let periodArray = activitiesByPeriods[i] {
-                for activity in periodArray {
-                    if (activity.quadrant == quad) {
-                        activities.append(activity)
-                    }
+        for period in selectedPeriods {
+            for activity in period.activityItems.allObjects as! [ActivityItem] {
+                if (activity.quadrant == quad) {
+                    activities.append(activity)
                 }
             }
         }
@@ -243,7 +255,7 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource, CPTScat
 
     private func showActivitiesForQuadrant(quad: ActivityItem.GraphQuadrant) {
         selectedQuadrant = quad
-        self.performSegueWithIdentifier(ShowQuadrantIdentifier, sender: self)
+        self.performSegueWithIdentifier(HistoryViewController.ShowQuadrantIdentifier, sender: self)
     }
 
     func scatterPlot(plot: CPTScatterPlot!, plotSymbolTouchUpAtRecordIndex idx: UInt) {
@@ -271,15 +283,16 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource, CPTScat
             rawValue = rawValue + 1
         }
     }
-    
+
+
+
     func symbolForScatterPlot(plot: CPTScatterPlot!, recordIndex idx: UInt) -> CPTPlotSymbol! {
         let activity = activityForRecordIndex(idx)!
         let energyValue = CGFloat(activity.adjustedEnergyValue)
         let Symbols = [CPTPlotSymbol.rectanglePlotSymbol(), CPTPlotSymbol.diamondPlotSymbol(),
-                         CPTPlotSymbol.trianglePlotSymbol(), CPTPlotSymbol.ellipsePlotSymbol(), CPTPlotSymbol.plusPlotSymbol(),
-                         CPTPlotSymbol.crossPlotSymbol()]
-        
-        let symbol = Symbols[periodForIndex(idx) - 1 % Symbols.count]
+            CPTPlotSymbol.trianglePlotSymbol(), CPTPlotSymbol.ellipsePlotSymbol(), CPTPlotSymbol.plusPlotSymbol(),
+            CPTPlotSymbol.crossPlotSymbol()]
+        let symbol = Symbols[periodForIndex(idx) % Symbols.count]
         let baseRadius = 8 * symbol.size.width
         symbol.size = (CGSizeMake(baseRadius * energyValue, baseRadius * energyValue))
         
@@ -312,11 +325,54 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource, CPTScat
         self.dismissViewControllerAnimated(true, completion: nil)
     }
 
+    private func updatePeriods(newPeriods: Set<ActivityPeriod>) {
+        selectedPeriods = sorted(newPeriods, { (p1: ActivityPeriod, p2: ActivityPeriod) -> Bool in
+            return p1.start?.compare(p2.start!) == .OrderedDescending
+        })
+        var periodNames:[String] = []
+        periodNames.reserveCapacity(selectedPeriods.count)
+        for period in selectedPeriods {
+            periodNames.append(period.name!)
+        }
+        NSUserDefaults.standardUserDefaults().setObject(periodNames, forKey: HistoryViewController.SavedPeriodNamesKey)
+
+        cacheCountSet = false
+        updateTitle()
+        self.graphView.hostedGraph.reloadData()
+    }
+
+    private func updateTitle() {
+        if selectedPeriods.isEmpty {
+            self.title = NSLocalizedString("Choose a period", comment: "")
+        } else if selectedPeriods.count == 1 {
+            self.title = selectedPeriods.first!.name
+        } else {
+            self.title = NSLocalizedString("Multiple periods", comment: "")
+        }
+    }
+
     func periodChooserControllerDidCancel(controller: PeriodGraphChooserController) {
         finishDismiss()
     }
 
     func periodChooserControllerDidDone(controller: PeriodGraphChooserController) {
+        updatePeriods(controller.selectedPeriods)
         finishDismiss()
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

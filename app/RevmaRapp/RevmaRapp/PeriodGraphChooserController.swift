@@ -69,6 +69,7 @@ class PeriodGraphChooserController: UITableViewController, NSFetchedResultsContr
     }
 
     func updateCellCheckmarkForTableView(tableView: UITableView, indexPath: NSIndexPath) {
+        tableView.deselectRowAtIndexPath(indexPath, animated: false)
         let period = periods[indexPath.row]
         if let newCell = tableView.cellForRowAtIndexPath(indexPath) {
             if newCell.accessoryType == .None {
@@ -80,11 +81,6 @@ class PeriodGraphChooserController: UITableViewController, NSFetchedResultsContr
             }
         }
     }
-
-    override func tableView(tableView: UITableView, didDeselectRowAtIndexPath indexPath: NSIndexPath) {
-        updateCellCheckmarkForTableView(tableView, indexPath: indexPath)
-    }
-
 
     @IBAction func donePressed(sender: UIBarButtonItem) {
         delegate?.periodChooserControllerDidDone(self)
