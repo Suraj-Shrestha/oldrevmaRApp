@@ -319,7 +319,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         let components = !isGray ? rgbComponetsForActivity(activity, isGreen: isGreen) : [CGFloat](count: 3, repeatedValue: 0.55)
         
-        let key:String = "\(size);\(components[0]);\(components[1]);\(components[2])"
+        let key  = "\(size);\(components[0]);\(components[1]);\(components[2])"
         if imageCache == nil {
             imageCache = NSCache()
         }
