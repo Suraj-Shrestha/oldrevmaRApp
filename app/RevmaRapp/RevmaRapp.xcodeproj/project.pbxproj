@@ -245,9 +245,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C93F56E21A0B70BE0030D481 /* RevmaRapp */ = {
+		C93F56E21A0B70BE0030D481 /* revmarapp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C93F57041A0B70BE0030D481 /* Build configuration list for PBXNativeTarget "RevmaRapp" */;
+			buildConfigurationList = C93F57041A0B70BE0030D481 /* Build configuration list for PBXNativeTarget "revmarapp" */;
 			buildPhases = (
 				C9DD9F3D1A1398070099B184 /* Generate Model Objects */,
 				C93F56DF1A0B70BE0030D481 /* Sources */,
@@ -259,7 +259,7 @@
 			dependencies = (
 				C931DAF91A66A56100BCBE81 /* PBXTargetDependency */,
 			);
-			name = RevmaRapp;
+			name = revmarapp;
 			productName = RevmaRapp;
 			productReference = C93F56E31A0B70BE0030D481 /* RevmaRapp.app */;
 			productType = "com.apple.product-type.application";
@@ -319,7 +319,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				C93F56E21A0B70BE0030D481 /* RevmaRapp */,
+				C93F56E21A0B70BE0030D481 /* revmarapp */,
 				C93F56F91A0B70BE0030D481 /* RevmaRappTests */,
 			);
 		};
@@ -424,7 +424,7 @@
 		};
 		C93F56FC1A0B70BE0030D481 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = C93F56E21A0B70BE0030D481 /* RevmaRapp */;
+			target = C93F56E21A0B70BE0030D481 /* revmarapp */;
 			targetProxy = C93F56FB1A0B70BE0030D481 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -647,7 +647,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C93F57041A0B70BE0030D481 /* Build configuration list for PBXNativeTarget "RevmaRapp" */ = {
+		C93F57041A0B70BE0030D481 /* Build configuration list for PBXNativeTarget "revmarapp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C93F57051A0B70BE0030D481 /* Debug */,
