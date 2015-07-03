@@ -27,7 +27,7 @@
         <!--History View Controller-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="HistoryViewController" customModule="RevmaRapp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" customClass="HistoryViewController" customModule="revmarapp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
@@ -95,7 +95,7 @@
         <!--Quadrant_results-->
         <scene sceneID="cbZ-PX-lML">
             <objects>
-                <tableViewController id="TI1-0s-OYf" customClass="QuadrantActivityTableViewController" customModule="RevmaRapp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="TI1-0s-OYf" customClass="QuadrantActivityTableViewController" customModule="revmarapp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="fB6-d9-XZZ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -305,7 +305,7 @@
         <!--Activity Periods-->
         <scene sceneID="KW1-LZ-PKX">
             <objects>
-                <tableViewController id="FOK-em-nNR" customClass="ActivityPeriodTableViewController" customModule="RevmaRapp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="FOK-em-nNR" customClass="ActivityPeriodTableViewController" customModule="revmarapp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="asv-eB-yJR">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -355,7 +355,7 @@
         <!--Period_table_title-->
         <scene sceneID="77f-JZ-sCk">
             <objects>
-                <tableViewController id="dXw-Z8-FrB" customClass="ActivityTableViewController" customModule="RevmaRapp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="dXw-Z8-FrB" customClass="ActivityTableViewController" customModule="revmarapp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="10" sectionFooterHeight="10" id="ljH-v7-6mD">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -408,7 +408,7 @@
         <!--Activities-->
         <scene sceneID="MWk-3N-Utw">
             <objects>
-                <tableViewController id="CYF-QB-joC" customClass="ActivityNameTableController" customModule="RevmaRapp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="CYF-QB-joC" customClass="ActivityNameTableController" customModule="revmarapp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="tKJ-SV-jXJ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -489,7 +489,7 @@
         <!--Add Activity-->
         <scene sceneID="9Yb-j9-jra">
             <objects>
-                <tableViewController id="FVh-N2-pmI" customClass="ActivityEditController" customModule="RevmaRapp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="FVh-N2-pmI" customClass="ActivityEditController" customModule="revmarapp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="b1D-DZ-RHL">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="858"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -741,7 +741,7 @@
         <!--Activity View Controller-->
         <scene sceneID="t5j-AF-87w">
             <objects>
-                <viewController id="glM-oJ-1fq" customClass="ActivityViewController" customModule="RevmaRapp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="glM-oJ-1fq" customClass="ActivityViewController" customModule="revmarapp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ZtK-8g-TNX"/>
                         <viewControllerLayoutGuide type="bottom" id="w2R-Ur-5vV"/>
@@ -940,7 +940,7 @@
         <!--Activity Period Edit Controller-->
         <scene sceneID="sRF-eq-Txs">
             <objects>
-                <viewController storyboardIdentifier="NewPeriodDialog" id="Ygp-Uc-ctM" customClass="ActivityPeriodEditController" customModule="RevmaRapp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NewPeriodDialog" id="Ygp-Uc-ctM" customClass="ActivityPeriodEditController" customModule="revmarapp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="761-za-Snd"/>
                         <viewControllerLayoutGuide type="bottom" id="H4k-mo-MgS"/>
@@ -1161,7 +1161,7 @@
         <!--Choose Periods-->
         <scene sceneID="ehi-9T-Tfa">
             <objects>
-                <tableViewController id="Vmj-rI-cBu" customClass="PeriodGraphChooserController" customModule="RevmaRapp" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="Vmj-rI-cBu" customClass="PeriodGraphChooserController" customModule="revmarapp" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="f0F-gi-fge">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

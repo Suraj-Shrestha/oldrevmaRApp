@@ -26,6 +26,10 @@
 		C93F56F21A0B70BE0030D481 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C93F56F11A0B70BE0030D481 /* Images.xcassets */; };
 		C93F56F51A0B70BE0030D481 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C93F56F31A0B70BE0030D481 /* LaunchScreen.xib */; };
 		C93F57011A0B70BE0030D481 /* RevmaRappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93F57001A0B70BE0030D481 /* RevmaRappTests.swift */; };
+		C961CEB61B467199003EDBE0 /* app-icon-please-change.png in Resources */ = {isa = PBXBuildFile; fileRef = C961CEB51B467199003EDBE0 /* app-icon-please-change.png */; };
+		C961CEB81B467234003EDBE0 /* app-icon-please-change3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C961CEB71B467234003EDBE0 /* app-icon-please-change3x.png */; };
+		C961CEBA1B467266003EDBE0 /* app-icon-please-change-ipad2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C961CEB91B467266003EDBE0 /* app-icon-please-change-ipad2x.png */; };
+		C961CEBC1B467285003EDBE0 /* app-icon-please-change-ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = C961CEBB1B467285003EDBE0 /* app-icon-please-change-ipad.png */; };
 		C9B7F6661B399E54000B86E9 /* PeriodGraphChooserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B7F6651B399E54000B86E9 /* PeriodGraphChooserController.swift */; };
 		C9C10BE41A0B831C00784666 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C10BE31A0B831C00784666 /* ActivityViewController.swift */; };
 		C9C93BA81B3841AF00857B87 /* QuadrantActivityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C93BA71B3841AF00857B87 /* QuadrantActivityTableViewController.swift */; };
@@ -80,7 +84,7 @@
 		C935994D1A19F9F200DE78BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; lineEnding = 0; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.simpleColoring; };
 		C935994E1A19F9F200DE78BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C935994F1A19F9F200DE78BE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C93F56E31A0B70BE0030D481 /* RevmaRapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RevmaRapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C93F56E31A0B70BE0030D481 /* revmarapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = revmarapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C93F56E71A0B70BE0030D481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C93F56E81A0B70BE0030D481 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C93F56EA1A0B70BE0030D481 /* ActivityTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityTableViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +95,10 @@
 		C93F56FA1A0B70BE0030D481 /* RevmaRappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RevmaRappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C93F56FF1A0B70BE0030D481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C93F57001A0B70BE0030D481 /* RevmaRappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevmaRappTests.swift; sourceTree = "<group>"; };
+		C961CEB51B467199003EDBE0 /* app-icon-please-change.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-icon-please-change.png"; sourceTree = "<group>"; };
+		C961CEB71B467234003EDBE0 /* app-icon-please-change3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-icon-please-change3x.png"; sourceTree = "<group>"; };
+		C961CEB91B467266003EDBE0 /* app-icon-please-change-ipad2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-icon-please-change-ipad2x.png"; sourceTree = "<group>"; };
+		C961CEBB1B467285003EDBE0 /* app-icon-please-change-ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-icon-please-change-ipad.png"; sourceTree = "<group>"; };
 		C9B7F6651B399E54000B86E9 /* PeriodGraphChooserController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeriodGraphChooserController.swift; sourceTree = "<group>"; };
 		C9C10BE31A0B831C00784666 /* ActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		C9C93BA71B3841AF00857B87 /* QuadrantActivityTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuadrantActivityTableViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +158,10 @@
 		C93F56DA1A0B70BE0030D481 = {
 			isa = PBXGroup;
 			children = (
+				C961CEBB1B467285003EDBE0 /* app-icon-please-change-ipad.png */,
+				C961CEB91B467266003EDBE0 /* app-icon-please-change-ipad2x.png */,
+				C961CEB71B467234003EDBE0 /* app-icon-please-change3x.png */,
+				C961CEB51B467199003EDBE0 /* app-icon-please-change.png */,
 				C931DAFF1A66A5C300BCBE81 /* Frameworks */,
 				C93F56E51A0B70BE0030D481 /* RevmaRapp */,
 				C93F56FD1A0B70BE0030D481 /* RevmaRappTests */,
@@ -160,7 +172,7 @@
 		C93F56E41A0B70BE0030D481 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C93F56E31A0B70BE0030D481 /* RevmaRapp.app */,
+				C93F56E31A0B70BE0030D481 /* revmarapp.app */,
 				C93F56FA1A0B70BE0030D481 /* RevmaRappTests.xctest */,
 			);
 			name = Products;
@@ -261,7 +273,7 @@
 			);
 			name = revmarapp;
 			productName = RevmaRapp;
-			productReference = C93F56E31A0B70BE0030D481 /* RevmaRapp.app */;
+			productReference = C93F56E31A0B70BE0030D481 /* revmarapp.app */;
 			productType = "com.apple.product-type.application";
 		};
 		C93F56F91A0B70BE0030D481 /* RevmaRappTests */ = {
@@ -340,10 +352,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C961CEB81B467234003EDBE0 /* app-icon-please-change3x.png in Resources */,
+				C961CEB61B467199003EDBE0 /* app-icon-please-change.png in Resources */,
+				C961CEBC1B467285003EDBE0 /* app-icon-please-change-ipad.png in Resources */,
 				C93599401A19F66F00DE78BE /* Localizable.strings in Resources */,
 				C935994A1A19F66F00DE78BE /* InfoPlist.strings in Resources */,
 				C93F56F01A0B70BE0030D481 /* Main.storyboard in Resources */,
 				C93F56F51A0B70BE0030D481 /* LaunchScreen.xib in Resources */,
+				C961CEBA1B467266003EDBE0 /* app-icon-please-change-ipad2x.png in Resources */,
 				C93F56F21A0B70BE0030D481 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
