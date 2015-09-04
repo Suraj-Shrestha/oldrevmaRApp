@@ -253,7 +253,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let redBase = 0.20
         let greenBase = 0.25
         let energyBase = isGreen ? greenBase : redBase
-        return rgbComponetsFor(isGreen ? 120 : 0, saturation: 0.5, lightness: 1 - energyBase - energy)
+        return rgbComponetsFor(isGreen ? 120 : 0, saturation: 0.5, lightness: 1.15 - energyBase - energy)
     }
     
     // Ugly name here, but keep it for now.
