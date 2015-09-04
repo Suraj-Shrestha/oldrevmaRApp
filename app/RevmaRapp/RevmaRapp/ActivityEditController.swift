@@ -222,6 +222,7 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
                 }
             }
             cell.detailTextLabel!.text = numberFormatter.stringFromNumber(NSNumber(integer: durationInMinutes))
+            updateActivityImageCell()
         }
     }
 
@@ -336,7 +337,7 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
         case 0:
             return indexPathHasDatePicker(indexPath) || indexPathHasDurationPicker(indexPath) ? pickerCellRowHeight : tableView.rowHeight
         case 1:
-            return 50
+            return ActivityItem.SquareSize + 1
         case 2:
             // This needs to be updated someday, but for the moment the prototype cell can't handle being laid out at this point.
             // But in theory, this would be the right way to do this.
@@ -421,23 +422,25 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
     
     private func updateImage(cell: UITableViewCell) {
         let activityImageView = cell.viewWithTag(kImageViewTag) as! UIImageView
-        if let ad = UIApplication.sharedApplication().delegate as? AppDelegate {
-            let red = isRed()
-            let green = isGreen()
-            let gray = !green && !red
-            let components = gray ? [CGFloat](count: 3, repeatedValue:0.55) : ad.rgbComponentsFor(Double(valuesArray[kDutyRow]), importance: Double(valuesArray[kMeaningRow]), isGreen: green)
-            activityImageView.image = ad.squareForValues(CGFloat(valuesArray[kEnergyRow]) * 80, components: components, isGray: gray)
-        }
+        let green = isGreen()
+        let components = AppDelegate.rgbComponentsFor(ActivityItem.adjustedEnergyValueFor(Double(valuesArray[kEnergyRow])), isGreen: green)
+        let durationSize: CGFloat = CGFloat(ActivityItem.editSizeForDurationValue(Double(durationInMinutes)))
+        let centerPoint = activityImageView.superview!.center
+        let newImage = AppDelegate.squareForValues(durationSize, components: components)
+        let newRect = CGRectMake(centerPoint.x - newImage.size.width / 2, centerPoint.y - newImage.size.height / 2, newImage.size.width, newImage.size.height)
+        UIView.animateWithDuration(0.55, animations:({
+            activityImageView.image = newImage
+            activityImageView.frame = newRect
+        }))
     }
     
     private func isGreen() -> Bool {
-        return valuesArray[kDutyRow] - 0.5 > 0 && valuesArray[kMeaningRow] - 0.5 > 0
+        return valuesArray[kEnergyRow] >= 0.5
     }
     
     private func isRed() -> Bool {
-        return valuesArray[kDutyRow] - 0.5 < 0 && valuesArray[kMeaningRow] - 0.5 < 0
+        return valuesArray[kEnergyRow] < 0.5
     }
-
 
     func configureQuestionCellHelper(tableCell: UITableViewCell, forIndexPath indexPath: NSIndexPath) {
         let questionLabel = tableCell.viewWithTag(kQuestionLabelTag) as! UILabel

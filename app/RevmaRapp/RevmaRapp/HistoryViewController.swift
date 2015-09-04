@@ -249,7 +249,7 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource, CPTScat
             }
         }
         return sorted(activities, { (a1: ActivityItem, a2: ActivityItem) -> Bool in
-                return a1.activityGraphDistance < a2.activityGraphDistance
+                return a1.activityGraphDistance > a2.activityGraphDistance
             })
     }
 
@@ -284,39 +284,29 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource, CPTScat
         }
     }
 
-
-
     func symbolForScatterPlot(plot: CPTScatterPlot!, recordIndex idx: UInt) -> CPTPlotSymbol! {
+        // The current strategy is…
+        // Things that take energy are red, more red == take more energy
+        // Things that give energy are green, more green == give more energy
+        // Size is based on time, the more time used the bigger.
         let activity = activityForRecordIndex(idx)!
         let energyValue = CGFloat(activity.adjustedEnergyValue)
         let Symbols = [CPTPlotSymbol.rectanglePlotSymbol(), CPTPlotSymbol.diamondPlotSymbol(),
             CPTPlotSymbol.trianglePlotSymbol(), CPTPlotSymbol.ellipsePlotSymbol(), CPTPlotSymbol.plusPlotSymbol(),
             CPTPlotSymbol.crossPlotSymbol()]
         let symbol = Symbols[periodForIndex(idx) % Symbols.count]
-        let baseRadius = 8 * symbol.size.width
-        symbol.size = (CGSizeMake(baseRadius * energyValue, baseRadius * energyValue))
-        
-        let isGreen = activity.isGreen
-        let isRed = activity.isRed
+        let baseRadius = 2 * symbol.size.width
+        let radiusMultiplier = CGFloat(activity.duration!.floatValue) / 30
+        symbol.size = CGSizeMake(baseRadius * radiusMultiplier, baseRadius * radiusMultiplier)
         
         var components = [CGFloat](count: 3, repeatedValue: 0.55)
 
-        // Find color based on the section. Section I: shades of green. Section III: shades of red. Others: something else?
-        // Green Hue: 90 degrees, Saturation 50%, Lightness 25–75%
-        // Red Hue: 0 degrees, Saturation 50%, Lightness 30–80%
-        
-        if isGreen || isRed {
-            components = appDelegate.rgbComponetsForActivity(activity, isGreen: isGreen)
-            let symbolColor = CPTColor(componentRed: components[0],
-                green: components[1],
-                blue: components[2], alpha: 1.0)
-            symbol.lineStyle = nil
-            symbol.fill = CPTFill(color:symbolColor)
-        } else {
-            let grayLineStyle = symbol.lineStyle.mutableCopy() as! CPTMutableLineStyle
-            grayLineStyle.lineColor = CPTColor.grayColor()
-            symbol.lineStyle = grayLineStyle
-        }
+        components = AppDelegate.rgbComponetsForActivity(activity)
+        let symbolColor = CPTColor(componentRed: components[0],
+            green: components[1],
+            blue: components[2], alpha: 1.0)
+        symbol.lineStyle = nil
+        symbol.fill = CPTFill(color:symbolColor)
 
         return symbol
     }

@@ -128,10 +128,7 @@ class ActivityTableViewController: ActivityTableViewControllerBase, NSFetchedRes
     }
 
     override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        if let activity = self.activitiesByDays[indexPath.section]?[indexPath.row] {
-            return heightForActivity(activity)
-        }
-        return 50
+        return ActivityItem.SquareSize
     }
 
     // MARK: ActivtyEditControllerDelegate

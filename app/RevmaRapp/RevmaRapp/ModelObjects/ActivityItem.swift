@@ -5,29 +5,26 @@ class ActivityItem: _ActivityItem {
 
 
     var quadrant : GraphQuadrant {
-        if isGreen {
+        let importanceAdjusted = importance!.doubleValue - 0.5
+        let dutyAdjusted = duty!.doubleValue - 0.5
+        if importanceAdjusted > 0 && dutyAdjusted > 0 {
             return .I
-        } else if isRed {
+        } else if importanceAdjusted < 0 && dutyAdjusted < 0 {
             return .II
-        } else if importance!.doubleValue - 0.5 > 0 {
+        } else if importanceAdjusted > 0 {
             return .III
-        } else if importance!.doubleValue - 0.5 < 0 {
+        } else if importanceAdjusted < 0 {
             return .IV
         }
         return .Unknown
     }
 
-	// Custom logic goes here.
-    var isGray : Bool { // For the lazy
-        return !isGreen && !isRed
-    }
-
     var isGreen: Bool {
-        return duty!.doubleValue - 0.5 > 0 && importance!.doubleValue - 0.5 > 0
+        return energy!.doubleValue >= 0.5
     }
 
     var isRed: Bool {
-        return duty!.doubleValue - 0.5 < 0 && importance!.doubleValue - 0.5 < 0
+        return energy!.doubleValue < 0.5
     }
 
     var activityGraphDistance: Double {
@@ -35,6 +32,19 @@ class ActivityItem: _ActivityItem {
     }
 
     var adjustedEnergyValue : Double {
-        return abs(energy!.doubleValue - 0.5) + 0.1
+        return ActivityItem.adjustedEnergyValueFor(energy!.doubleValue)
+    }
+
+    var durationAsSize : CGFloat {
+        return ActivityItem.editSizeForDurationValue(duration!.doubleValue)
+    }
+
+    static let SquareSize: CGFloat = 120.0
+    static func editSizeForDurationValue(rawDurationValue: Double) -> CGFloat {
+        return 10 * sqrt(CGFloat(rawDurationValue))
+    }
+
+    static func adjustedEnergyValueFor(rawEnergyValue: Double) -> Double {
+        return abs(rawEnergyValue - 0.5) + 0.1
     }
 }

@@ -33,26 +33,7 @@ class ActivityTableViewControllerBase: UITableViewController {
         cell.imageView!.image = (UIApplication.sharedApplication().delegate as! AppDelegate).imageForActivity(activity)
     }
 
-    private func multiplierByDuration(duration: CGFloat) -> CGFloat {
-        // These numbers should probably be examined a bit closer, I'm just doing some guessing here.
-        switch duration {
-        case 0...20:
-            return 1
-        case 21...40:
-            return 1.25
-        case 41...55:
-            return 1.5
-        case 56...80:
-            return 1.75
-        case 81...1000:
-            return 2
-        default:
-            return 1
-        }
-    }
-
     final func heightForActivity(activity: ActivityItem) -> CGFloat {
-        let BaseHeight: CGFloat = 50.0
-        return BaseHeight * multiplierByDuration(CGFloat(activity.duration!.doubleValue))
+        return max(activity.durationAsSize, 50)
     }
 }

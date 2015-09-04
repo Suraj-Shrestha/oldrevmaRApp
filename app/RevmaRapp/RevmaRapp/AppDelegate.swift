@@ -249,22 +249,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         abort()
     }
     
-    final func rgbComponentsFor(duty: Double, importance: Double, isGreen: Bool) -> [CGFloat] {
+    static func rgbComponentsFor(energy: Double, isGreen: Bool) -> [CGFloat] {
         let redBase = 0.20
         let greenBase = 0.25
-        let distanceBase = isGreen ? greenBase : redBase
-        let dutySquared = (duty - 0.5) * (duty - 0.5)
-        let importanceSquared = (importance - 0.5) * (importance - 0.5)
-        let activityDistance = sqrt(dutySquared + importanceSquared)
-        return rgbComponetsFor(isGreen ? 120 : 0, saturation: 0.5, lightness: 1 - distanceBase - activityDistance)
+        let energyBase = isGreen ? greenBase : redBase
+        return rgbComponetsFor(isGreen ? 120 : 0, saturation: 0.5, lightness: 1 - energyBase - energy)
     }
     
     // Ugly name here, but keep it for now.
-    func rgbComponetsForActivity(activity: ActivityItem, isGreen: Bool) -> [CGFloat] {
-        return rgbComponentsFor(activity.duty!.doubleValue, importance: activity.importance!.doubleValue, isGreen: isGreen)
+    static func rgbComponetsForActivity(activity: ActivityItem) -> [CGFloat] {
+        return rgbComponentsFor(activity.adjustedEnergyValue, isGreen: activity.isGreen)
     }
 
-    private func rgbComponetsFor(hue: Int, saturation: Double, lightness: Double) -> [CGFloat] {
+    private static func rgbComponetsFor(hue: Int, saturation: Double, lightness: Double) -> [CGFloat] {
         let bar = fabs(2.0 * lightness - 1.0)
         let C = (1.0 - bar) * saturation
         let foo = abs(hue / 60 % 2 - 1)
@@ -293,32 +290,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
     }
     
-    final func squareForValues(size:CGFloat, components:[CGFloat], isGray: Bool) -> UIImage {
-        let SquareSize:CGFloat = 80.0
+    static func squareForValues(size:CGFloat, components:[CGFloat]) -> UIImage {
+        let SquareSize:CGFloat = size
         UIGraphicsBeginImageContext(CGSizeMake(SquareSize, SquareSize))
         let context = UIGraphicsGetCurrentContext()
-        if !isGray {
-            CGContextSetRGBFillColor(context, components[0], components[1], components[2], 1.0)
-            CGContextFillRect(context, CGRectMake(SquareSize / 2 - size / 2, SquareSize / 2 - size / 2, size, size))
-        } else {
-            CGContextSetRGBStrokeColor(context, components[0], components[1], components[2], 1.0)
-            CGContextStrokeRect(context, CGRectMake(SquareSize / 2 - size / 2, SquareSize / 2 - size / 2, size, size))
-        }
+        CGContextSetRGBFillColor(context, components[0], components[1], components[2], 1.0)
+        CGContextFillRect(context, CGRectMake(SquareSize / 2 - size / 2, SquareSize / 2 - size / 2, size, size))
         let image = UIGraphicsGetImageFromCurrentImageContext()
         UIGraphicsEndImageContext()
         return image
     }
     
     func imageForActivity(activity:ActivityItem) -> UIImage {
-        let SquareSize:CGFloat = 160.0
-        let size = SquareSize * CGFloat(activity.adjustedEnergyValue)
-        
-        let isRed = activity.isRed
-        let isGreen = activity.isGreen
-        let isGray = !isGreen && !isRed
+        let size = activity.durationAsSize
+        let components = AppDelegate.rgbComponetsForActivity(activity)
 
-        let components = !isGray ? rgbComponetsForActivity(activity, isGreen: isGreen) : [CGFloat](count: 3, repeatedValue: 0.55)
-        
         let key  = "\(size);\(components[0]);\(components[1]);\(components[2])"
         if imageCache == nil {
             imageCache = NSCache()
@@ -327,7 +313,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             return cachedImage
         }
 
-        let image = squareForValues(size, components:components, isGray: isGray)
+        let image = AppDelegate.squareForValues(size, components:components)
         // otherwise build it ourselves
         imageCache!.setObject(image, forKey: key)
         return image
