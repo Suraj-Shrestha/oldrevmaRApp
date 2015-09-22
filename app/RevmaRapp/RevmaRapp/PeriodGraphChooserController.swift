@@ -26,11 +26,11 @@ class PeriodGraphChooserController: UITableViewController, NSFetchedResultsContr
         // Probably need to page this by date at some point as well, for now get me everything
         let fetchRequest = NSFetchRequest(entityName: ActivityPeriod.entityName())
         fetchRequest.sortDescriptors = [NSSortDescriptor(key: ActivityPeriodAttributes.start.rawValue, ascending: false)]
-        var error: NSError?
-        if let results = self.managedObjectContext.executeFetchRequest(fetchRequest, error: &error) {
+        do {
+            let results = try self.managedObjectContext.executeFetchRequest(fetchRequest)
             periods = results as! [ActivityPeriod]
-        } else {
-            println("Unresolved error \(error?.localizedDescription), \(error?.userInfo)\n Attempting to get activity names")
+        } catch let error as NSError {
+            print("Unresolved error \(error.localizedDescription), \(error.userInfo)\n Attempting to get activity names")
         }
     }
 
@@ -48,14 +48,14 @@ class PeriodGraphChooserController: UITableViewController, NSFetchedResultsContr
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier(PeriodCheckCellID, forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier(PeriodCheckCellID, forIndexPath: indexPath) 
         self.configureCell(cell, atIndexPath: indexPath)
         return cell
     }
 
     private func configureCell(cell: UITableViewCell, atIndexPath indexPath:NSIndexPath) {
         let period = periods[indexPath.row]
-        if let cellText = period.name {
+        if let _ = period.name {
             cell.textLabel!.text = period.name
             cell.detailTextLabel!.text = "\(dateFormatter.stringFromDate(period.start!))–\(dateFormatter.stringFromDate(period.stop!))"
         } else {

@@ -58,7 +58,13 @@ class ActivityPeriodEditController : UIViewController, UITextFieldDelegate {
 
     private func includesWeekend() -> Bool {
         let calendar = NSCalendar.currentCalendar()
-        let weekday = calendar.component(NSCalendarUnit.WeekdayCalendarUnit, fromDate: startDate)
+        let weekday: Int
+        if #available(iOS 8.0, *) {
+            weekday = calendar.component(NSCalendarUnit.NSWeekdayCalendarUnit, fromDate: startDate)
+        } else {
+            let components = calendar.components(NSCalendarUnit.NSWeekdayCalendarUnit, fromDate: startDate)
+            weekday = components.weekday
+        }
 
         // If we are more than 5 days, we must have a weekend day there.
         if dayPeriod > 5 {
@@ -117,7 +123,7 @@ class ActivityPeriodEditController : UIViewController, UITextFieldDelegate {
     }
 
     @IBAction func periodNameChanged(textField: UITextField) {
-        periodName = textField.text
+        periodName = textField.text!
     }
 
     // MARK AlertView Delegate functions

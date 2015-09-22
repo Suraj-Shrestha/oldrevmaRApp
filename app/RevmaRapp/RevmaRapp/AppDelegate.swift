@@ -43,11 +43,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         createDummyPeriods()
         
         let periodFetchRequest = NSFetchRequest(entityName: ActivityPeriod.entityName())
-        var error: NSError?
-        if let periodResults = self.managedObjectContext.executeFetchRequest(periodFetchRequest, error: &error) {
+        do {
+            let periodResults = try self.managedObjectContext.executeFetchRequest(periodFetchRequest)
             let periods = periodResults as! [ActivityPeriod]
             let fetchRequest = NSFetchRequest(entityName: ActivityName.entityName())
-            if let results = self.managedObjectContext.executeFetchRequest(fetchRequest, error: &error) {
+            do {
+                let results = try self.managedObjectContext.executeFetchRequest(fetchRequest)
                 let activityNames = results as! [ActivityName]
                 let DaysInPeriod = 3
                 let RecsInDay = 14
@@ -77,28 +78,25 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     }
                     period.stop = date1
                 }
-            } else {
-                println("Unresolved error \(error?.localizedDescription), \(error?.userInfo)\n Attempting to get activity names")
+            } catch let error as NSError {
+                print("Unresolved error \(error.localizedDescription), \(error.userInfo)\n Attempting to get activity names")
                 
             }
-        } else {
-            println("Unresolved error \(error?.localizedDescription), \(error?.userInfo)\n Attempting to get activity names")
+        } catch let error as NSError {
+            print("Unresolved error \(error.localizedDescription), \(error.userInfo)\n Attempting to get activity names")
         }
     }
 
     private func createObjects() {
-        let currLang = NSLocale.preferredLanguages()[0] as! String;
-        
         let fetchRequest = NSFetchRequest(entityName: ActivityName.entityName())
         
-        var error: NSError?
-
-        if let results = self.managedObjectContext.executeFetchRequest(fetchRequest, error: &error) {
+        do {
+            let results = try self.managedObjectContext.executeFetchRequest(fetchRequest)
             if results.count > 0 {
                 return
             }
-        } else {
-            ZAssert(!(error != nil), "Unresolved error \(error?.localizedDescription), \(error?.userInfo)\nMy query was \(fetchRequest)")
+        } catch let error as NSError {
+            print("Unresolved error \(error.localizedDescription), \(error.userInfo)\nMy query was \(fetchRequest)")
         }
         
         // ActivityNameKeys
@@ -111,7 +109,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             
         
         // Do I like repeating myself? I guess I do, just to make sure that these items are picked up in future translations
-        let activityNames = [
+        _ = [
             NSLocalizedString("ActivityHygiene", comment:"ActivityHygiene"),
             NSLocalizedString("ActivityDressing", comment:"ActivityDressing"),
             NSLocalizedString("ActivityEating", comment:"ActivityEating"),
@@ -148,9 +146,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         createDummyObjects()
 
-        self.managedObjectContext.save(&error)
-        
-        ZAssert(error == nil, "Saving records went wrong \(error), \(error?.userInfo)")
+        do {
+            try self.managedObjectContext.save()
+        } catch let error as NSError {
+            print("Saving records went wrong \(error), \(error.userInfo)")
+        }
     }
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
@@ -161,7 +161,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // OK, the activity table view gets a managed object context
         let tabController = self.window!.rootViewController as! UITabBarController
-        let periodTableController = tabController.viewControllers![0].topViewController as! ActivityPeriodTableViewController
+        let navigationController = tabController.viewControllers![0] as! UINavigationController
+        let periodTableController = navigationController.topViewController as! ActivityPeriodTableViewController
         periodTableController.managedObjectContext = self.managedObjectContext
         let defaults = NSUserDefaults.standardUserDefaults()
         tabController.selectedIndex = defaults.integerForKey(RevmaRappTabIndexKey)
@@ -208,7 +209,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     lazy var applicationDocumentsDirectory: NSURL = {
         // The directory the application uses to store the Core Data store file. This code uses a directory named "com.skyeroad.Proto" in the application's documents Application Support directory.
         let urls = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)
-        return urls[urls.count-1] as! NSURL
+        return urls[urls.count-1] 
         }()
 
 
@@ -224,11 +225,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         var error: NSError?
         
-        var store = psc.addPersistentStoreWithType(NSSQLiteStoreType, configuration: nil, URL: storeURL, options: nil, error: &error)
-        if (store == nil) {
-            println("Failed to load store")
+        var store: NSPersistentStore?
+        do {
+            store = try psc.addPersistentStoreWithType(NSSQLiteStoreType, configuration: nil, URL: storeURL, options: nil)
+        } catch var error as NSError {
+            store = nil
+            print("Failed to load store")
+        } catch {
+            fatalError()
         }
-        ZAssert(store != nil, "Unresolved error \(error?.localizedDescription), \(error?.userInfo)\nAttempted to create store at \(storeURL)")
+        if (store == nil) {
+
+        }
+
         
         var managedObjectContext = NSManagedObjectContext()
         managedObjectContext.persistentStoreCoordinator = psc
@@ -237,15 +246,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }()
 
     func saveContext () {
-        var error: NSError?
+
         let moc = self.managedObjectContext
         if !moc.hasChanges {
             return
         }
-        if moc.save(&error) {
+        do {
+            try moc.save()
             return
+        } catch let error as NSError {
+            print("Error saving context: \(error.localizedDescription)\n\(error.userInfo)")
         }
-        println("Error saving context: \(error?.localizedDescription)\n\(error?.userInfo)")
+
         abort()
     }
     

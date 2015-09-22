@@ -59,13 +59,13 @@ extension _ActivityName {
 
     func addActivityItems(objects: NSSet) {
         let mutable = self.activityItems.mutableCopy() as! NSMutableSet
-        mutable.unionSet(objects as! Set<NSObject>)
+        mutable.unionSet(objects as Set<NSObject>)
         self.activityItems = mutable.copy() as! NSSet
     }
 
     func removeActivityItems(objects: NSSet) {
         let mutable = self.activityItems.mutableCopy() as! NSMutableSet
-        mutable.minusSet(objects as! Set<NSObject>)
+        mutable.minusSet(objects as Set<NSObject>)
         self.activityItems = mutable.copy() as! NSSet
     }
 

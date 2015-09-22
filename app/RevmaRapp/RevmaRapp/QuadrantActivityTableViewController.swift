@@ -30,7 +30,7 @@ class QuadrantActivityTableViewController: ActivityTableViewControllerBase {
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("ActivityListItem", forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("ActivityListItem", forIndexPath: indexPath) 
         self.configureCell(cell, forActivity: activities[indexPath.row])
         return cell
     }
@@ -45,9 +45,9 @@ class QuadrantActivityTableViewController: ActivityTableViewControllerBase {
         if let whichSegue = segue.identifier {
             switch (whichSegue) {
             case ShowActivitySegueID:
-                if let indexPath = self.tableView.indexPathForSelectedRow() {
+                if let indexPath = self.tableView.indexPathForSelectedRow {
                     let activity = self.activities[indexPath.row]
-                    if let activityViewController = segue.destinationViewController.topViewController as? ActivityViewController {
+                    if let activityViewController = segue.destinationViewController as? ActivityViewController {
                         activityViewController.activityItem = activity
                     }
                 }

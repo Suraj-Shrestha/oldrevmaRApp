@@ -52,16 +52,29 @@ class ActivityTableViewController: ActivityTableViewControllerBase, NSFetchedRes
         fetchRequest.predicate = NSPredicate(format: "\(ActivityItemRelationships.period.rawValue) == %@", argumentArray: [self.period!])
         fetchRequest.sortDescriptors = [NSSortDescriptor(key: ActivityItemAttributes.time_start.rawValue, ascending: false)]
         var error: NSError?
-        if let results = self.managedObjectContext.executeFetchRequest(fetchRequest, error: &error) {
+        do {
+            let results = try self.managedObjectContext.executeFetchRequest(fetchRequest)
             let activities = results as! [ActivityItem]
             activitiesByDays = [Int: [ActivityItem]]()
             if !activities.isEmpty {
                 let calendar = NSCalendar.currentCalendar()
                 var sectionNum = 0
-                var currentDay = calendar.component(NSCalendarUnit.CalendarUnitDay, fromDate: activities[0].time_start!)
+                var currentDay:Int
+                if #available(iOS 8.0, *) {
+                    currentDay = calendar.component(NSCalendarUnit.Day, fromDate: activities[0].time_start!)
+                } else {
+                    let components = calendar.components(NSCalendarUnit.Day, fromDate: activities[0].time_start!)
+                    currentDay = components.day
+                }
                 var activitiesInDay:[ActivityItem] = []
                 for activity in activities {
-                    let day = calendar.component(NSCalendarUnit.CalendarUnitDay, fromDate: activity.time_start!)
+                    let day:Int
+                    if #available(iOS 8.0, *) {
+                        day = calendar.component(NSCalendarUnit.Day, fromDate: activity.time_start!)
+                    } else {
+                        let components = calendar.components(NSCalendarUnit.Day, fromDate: activity.time_start!)
+                        day = components.day
+                    }
                     if day != currentDay {
                         activitiesByDays[sectionNum] = activitiesInDay
                         sectionNum = sectionNum + 1
@@ -73,8 +86,9 @@ class ActivityTableViewController: ActivityTableViewControllerBase, NSFetchedRes
                 // The last set of activities wasn't added, so do that here.
                 activitiesByDays[sectionNum] = activitiesInDay
             }
-        } else {
-            println("Unresolved error \(error?.localizedDescription), \(error?.userInfo)\n Attempting to get activity names")
+        } catch let error1 as NSError {
+            error = error1
+            print("Unresolved error \(error?.localizedDescription), \(error?.userInfo)\n Attempting to get activity names")
         }
     }
 
@@ -84,16 +98,18 @@ class ActivityTableViewController: ActivityTableViewControllerBase, NSFetchedRes
         if let whichSegue = segue.identifier {
             switch (whichSegue) {
             case ShowActivitySegueID:
-                if let indexPath = self.tableView.indexPathForSelectedRow() {
+                if let indexPath = self.tableView.indexPathForSelectedRow {
                     let activity = self.activitiesByDays[indexPath.section]![indexPath.row]
-                    if let activityViewController = segue.destinationViewController.topViewController as? ActivityViewController {
+                    if let activityViewController = segue.destinationViewController as? ActivityViewController {
                         activityViewController.activityItem = activity
                     }
                 }
             case CreateActivitySegueID:
-                if let editController = segue.destinationViewController.topViewController as? ActivityEditController {
-                    editController.period = period
-                    editController.delegate = self
+                if let navigationController = segue.destinationViewController as? UINavigationController {
+                    if let editController = navigationController.topViewController as? ActivityEditController {
+                        editController.period = period
+                        editController.delegate = self
+                    }
                 }
             default:
                 break;
@@ -122,7 +138,7 @@ class ActivityTableViewController: ActivityTableViewControllerBase, NSFetchedRes
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("ActivityListItem", forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("ActivityListItem", forIndexPath: indexPath) 
         self.configureCell(cell, forActivity: self.activitiesByDays[indexPath.section]![indexPath.row])
         return cell
     }

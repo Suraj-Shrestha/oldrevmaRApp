@@ -15,7 +15,7 @@ protocol WhitespaceTouchDelegate {
 
 class RevmaRappScatterPlot: CPTScatterPlot {
     var whitespaceDelegate: WhitespaceTouchDelegate?
-    override func pointingDeviceUpEvent(event: UIEvent!, atPoint interactionPoint: CGPoint) -> Bool {
+    override func pointingDeviceUpEvent(event: UIEvent, atPoint interactionPoint: CGPoint) -> Bool {
         let result = super.pointingDeviceUpEvent(event, atPoint: interactionPoint)
         if result == false {
             whitespaceDelegate?.touchedWhiteSpaceAtPoint(interactionPoint, plot: self)

@@ -47,11 +47,11 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource, CPTScat
         selectedPeriods = []
         let fetchRequest = NSFetchRequest(entityName: ActivityPeriod.entityName())
         fetchRequest.sortDescriptors = [NSSortDescriptor(key: ActivityPeriodAttributes.start.rawValue, ascending: false)]
-        var error: NSError?
-        if let results = self.managedObjectContext?.executeFetchRequest(fetchRequest, error: &error) {
+        do {
+            let results = try self.managedObjectContext?.executeFetchRequest(fetchRequest)
             let defaults = NSUserDefaults.standardUserDefaults()
             let allPeriods = results as! [ActivityPeriod]
-            if let periodNames = defaults.stringArrayForKey(HistoryViewController.SavedPeriodNamesKey) as? [String] {
+            if let periodNames = defaults.stringArrayForKey(HistoryViewController.SavedPeriodNamesKey) {
                 for name in periodNames {
                     for period in allPeriods {
                         if name == period.name! {
@@ -62,10 +62,10 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource, CPTScat
             } else if !allPeriods.isEmpty {
                 selectedPeriods.append(allPeriods.first!)
             }
-            selectedPeriods.sort({ (p1: ActivityPeriod, p2: ActivityPeriod) -> Bool in
+            selectedPeriods.sortInPlace({ (p1: ActivityPeriod, p2: ActivityPeriod) -> Bool in
                         return p1.start!.compare(p2.start!) == .OrderedDescending })
-        } else {
-            println("Unresolved error \(error?.localizedDescription), \(error?.userInfo)\n Attempting to get activity names")
+        } catch let error as NSError {
+            print("Unresolved error \(error.localizedDescription), \(error.userInfo)\n Attempting to get activity names")
         }
     }
 
@@ -105,15 +105,15 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource, CPTScat
         
         let axisSet = graph.axisSet as! CPTXYAxisSet
         let x = axisSet.xAxis
-        x.separateLayers = true
+        x!.separateLayers = true
         
-        createAxisLabel(x,
-            image: UIImage.init(named: "wish", inBundle:nil, compatibleWithTraitCollection:nil),
+        createAxisLabel(x!,
+            image: UIImage.init(named: "wish"),
             altText: NSLocalizedString("duty_max_label", comment: "duty"),
             altTextStyle: axisTitleTextStyle)
         
-        x.titleOffset = 5
-        x.titleLocation = 0.5
+        x!.titleOffset = 5
+        x!.titleLocation = 0.5
 
         let x2 = CPTXYAxis(frame: CGRectZero)
         x2.coordinate = CPTCoordinate.X
@@ -122,7 +122,7 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource, CPTScat
         x2.labelingPolicy = CPTAxisLabelingPolicy.None
 
         createAxisLabel(x2,
-            image: UIImage.init(named: "handshake", inBundle:nil, compatibleWithTraitCollection:nil),
+            image: UIImage.init(named: "handshake"),
             altText: NSLocalizedString("duty_min_label", comment: "duty"),
             altTextStyle: axisTitleTextStyle)
         
@@ -130,14 +130,14 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource, CPTScat
         x2.titleLocation = -0.5
         
         let y = axisSet.yAxis
-        y.separateLayers = false
-        createAxisLabel(y,
-            image: UIImage.init(named:"important", inBundle:nil, compatibleWithTraitCollection:nil),
+        y!.separateLayers = false
+        createAxisLabel(y!,
+            image: UIImage.init(named:"important"),
             altText: NSLocalizedString("meaning_max_label", comment: "importance"),
             altTextStyle: axisTitleTextStyle)
         
-        y.titleOffset = 5
-        y.titleLocation = 0.5
+        y!.titleOffset = 5
+        y!.titleLocation = 0.5
         
         let y2 = CPTXYAxis(frame: CGRectZero)
         y2.coordinate = CPTCoordinate.Y
@@ -146,14 +146,14 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource, CPTScat
         y2.labelingPolicy = CPTAxisLabelingPolicy.None
 
         createAxisLabel(y2,
-            image: UIImage.init(named:"unimportant", inBundle:nil, compatibleWithTraitCollection:nil),
+            image: UIImage.init(named:"unimportant"),
             altText: NSLocalizedString("meaning_min_label", comment: "importance"),
             altTextStyle: axisTitleTextStyle)
 
         y2.titleOffset = 5
         y2.titleLocation = -0.5
         
-        graph.axisSet.axes = [x, x2, y, y2]
+        graph.axisSet!.axes = [x!, x2, y!, y2]
         
         plot.dataLineStyle = nil
         plot.dataSource = self
@@ -171,13 +171,15 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource, CPTScat
         if let whichSegue = segue.identifier {
             switch (whichSegue) {
             case HistoryViewController.ShowQuadrantIdentifier:
-                if let activityViewController = segue.destinationViewController.topViewController as? QuadrantActivityTableViewController {
+                if let activityViewController = segue.destinationViewController as? QuadrantActivityTableViewController {
                     activityViewController.activities = fetchActivitiesForQuadrant(selectedQuadrant)
                 }
             case HistoryViewController.ShowPeriodEditIdentifier:
-                if let periodController = segue.destinationViewController.topViewController as? PeriodGraphChooserController {
-                    periodController.delegate = self
-                    periodController.selectedPeriods = Set<ActivityPeriod>(selectedPeriods)
+                if let navigationController = segue.destinationViewController as? UINavigationController {
+                    if let periodController = navigationController.topViewController as? PeriodGraphChooserController {
+                        periodController.delegate = self
+                        periodController.selectedPeriods = Set<ActivityPeriod>(selectedPeriods)
+                    }
                 }
             default:
                 break;
@@ -185,7 +187,7 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource, CPTScat
         }
     }
 
-    func numberOfRecordsForPlot(plot: CPTPlot!) -> UInt {
+    func numberOfRecordsForPlot(plot: CPTPlot) -> UInt {
         if cacheCountSet {
             return cacheCount
         }
@@ -217,7 +219,7 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource, CPTScat
         return nil
     }
 
-    func numberForPlot(plot: CPTPlot!, field fieldEnum: UInt, recordIndex idx: UInt) -> AnyObject {
+    func numberForPlot(plot: CPTPlot, field fieldEnum: UInt, recordIndex idx: UInt) -> AnyObject? {
         let CPTScatterPlotFieldX: UInt = 0 // Conversion to enums doesn't seem to work :-/
 
         let activity = activityForRecordIndex(idx)!
@@ -248,7 +250,7 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource, CPTScat
                 }
             }
         }
-        return sorted(activities, { (a1: ActivityItem, a2: ActivityItem) -> Bool in
+        return activities.sort({ (a1: ActivityItem, a2: ActivityItem) -> Bool in
                 return a1.activityGraphDistance > a2.activityGraphDistance
             })
     }
@@ -258,7 +260,7 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource, CPTScat
         self.performSegueWithIdentifier(HistoryViewController.ShowQuadrantIdentifier, sender: self)
     }
 
-    func scatterPlot(plot: CPTScatterPlot!, plotSymbolTouchUpAtRecordIndex idx: UInt) {
+    func scatterPlot(plot: CPTScatterPlot, plotSymbolTouchUpAtRecordIndex idx: UInt) {
         if let activity = activityForRecordIndex(idx) {
             showActivitiesForQuadrant(activity.quadrant)
         }
@@ -284,13 +286,12 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource, CPTScat
         }
     }
 
-    func symbolForScatterPlot(plot: CPTScatterPlot!, recordIndex idx: UInt) -> CPTPlotSymbol! {
+    func symbolForScatterPlot(plot: CPTScatterPlot, recordIndex idx: UInt) -> CPTPlotSymbol? {
         // The current strategy is…
         // Things that take energy are red, more red == take more energy
         // Things that give energy are green, more green == give more energy
         // Size is based on time, the more time used the bigger.
         let activity = activityForRecordIndex(idx)!
-        let energyValue = CGFloat(activity.adjustedEnergyValue)
         let Symbols = [CPTPlotSymbol.rectanglePlotSymbol(), CPTPlotSymbol.diamondPlotSymbol(),
             CPTPlotSymbol.trianglePlotSymbol(), CPTPlotSymbol.ellipsePlotSymbol(), CPTPlotSymbol.plusPlotSymbol(),
             CPTPlotSymbol.crossPlotSymbol()]
@@ -316,7 +317,7 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource, CPTScat
     }
 
     private func updatePeriods(newPeriods: Set<ActivityPeriod>) {
-        selectedPeriods = sorted(newPeriods, { (p1: ActivityPeriod, p2: ActivityPeriod) -> Bool in
+        selectedPeriods = newPeriods.sort({ (p1: ActivityPeriod, p2: ActivityPeriod) -> Bool in
             return p1.start?.compare(p2.start!) == .OrderedDescending
         })
         var periodNames:[String] = []
@@ -328,7 +329,7 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource, CPTScat
 
         cacheCountSet = false
         updateTitle()
-        self.graphView.hostedGraph.reloadData()
+        self.graphView.hostedGraph!.reloadData()
     }
 
     private func updateTitle() {

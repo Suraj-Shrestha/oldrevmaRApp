@@ -72,10 +72,12 @@ class ActivityViewController: UIViewController, ActivityEditControllerDelegate {
         if let whichSegue = segue.identifier {
             switch (whichSegue) {
             case "editActivity":
-                if let editController = segue.destinationViewController.topViewController as? ActivityEditController {
-                    editController.title = NSLocalizedString("Edit Activity", comment: "Edit Activity Title")
-                    editController.delegate = self
-                    editController.activityItem = activityItem
+                if let navigationController = segue.destinationViewController as? UINavigationController {
+                    if let editController = navigationController.topViewController as? ActivityEditController {
+                        editController.title = NSLocalizedString("Edit Activity", comment: "Edit Activity Title")
+                        editController.delegate = self
+                        editController.activityItem = activityItem
+                    }
                 }
             default:
                 break;
@@ -93,6 +95,11 @@ class ActivityViewController: UIViewController, ActivityEditControllerDelegate {
         controller.save()
         self.dismissViewControllerAnimated(true, completion: nil)
         configureView()
+    }
+
+    override func targetViewControllerForAction(action: Selector, sender: AnyObject?) -> UIViewController? {
+        print("I got called \(self) \(action), \(sender)")
+        return parentViewController
     }
 }
 

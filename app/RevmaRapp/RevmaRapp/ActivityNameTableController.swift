@@ -41,12 +41,12 @@ class ActivityNameTableController : UITableViewController, NSFetchedResultsContr
     
     func fetchActivityNames() {
         let fetchRequest = NSFetchRequest(entityName: ActivityName.entityName())
-        var error: NSError?
-        if let results = self.managedObjectContext?.executeFetchRequest(fetchRequest, error: &error) {
+        do {
+            let results = try self.managedObjectContext?.executeFetchRequest(fetchRequest)
             activityNames = results as! [ActivityName]
-            activityNames.sort({ $0.name! < $1.name! })
-        } else {
-            println("Unresolved error \(error?.localizedDescription), \(error?.userInfo)\n Attempting to get activity names")
+            activityNames.sortInPlace({ $0.name! < $1.name! })
+        } catch let error as NSError {
+            print("Unresolved error \(error.localizedDescription), \(error.userInfo)\n Attempting to get activity names")
         }
     }
 
@@ -69,7 +69,7 @@ class ActivityNameTableController : UITableViewController, NSFetchedResultsContr
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("ActivityNameListItem", forIndexPath: indexPath) as! UITableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("ActivityNameListItem", forIndexPath: indexPath) 
         self.configureCell(cell, atIndexPath: indexPath)
         return cell
     }
@@ -164,7 +164,11 @@ class ActivityNameTableController : UITableViewController, NSFetchedResultsContr
             let newActivityName = ActivityName(managedObjectContext: managedObjectContext)
             newActivityName.name = newName
             var error: NSError?
-            managedObjectContext?.save(&error)
+            do {
+                try managedObjectContext?.save()
+            } catch let error1 as NSError {
+                error = error1
+            }
             ZAssert(error == nil, "Unresolved error \(error?.localizedDescription), \(error?.userInfo)\n Attempting to save new activity")
             fetchActivityNames()
             selectedName = newActivityName

@@ -111,8 +111,8 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
     }
     
     @IBAction func dateChanged(datePicker: UIDatePicker) {
-        let targetedCellIndexPath = hasInlineDatePicker() ? NSIndexPath(forRow: datePickerIndexPath!.row - 1, inSection: 0) : tableView.indexPathForSelectedRow()
-        if let cell = tableView.cellForRowAtIndexPath(targetedCellIndexPath) {
+        let targetedCellIndexPath = hasInlineDatePicker() ? NSIndexPath(forRow: datePickerIndexPath!.row - 1, inSection: 0) : tableView.indexPathForSelectedRow
+        if let cell = tableView.cellForRowAtIndexPath(targetedCellIndexPath!) {
             activityDate = datePicker.date
             cell.detailTextLabel!.text = dateFormater.stringFromDate(datePicker.date)
         }
@@ -160,7 +160,7 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
         numberFormatter = NSNumberFormatter()
         
         self.configureView()
-        if let pickerViewCellToCheck = tableView.dequeueReusableCellWithIdentifier(kDatePickerID) as? UITableViewCell {
+        if let pickerViewCellToCheck = tableView.dequeueReusableCellWithIdentifier(kDatePickerID) {
             pickerCellRowHeight = CGRectGetHeight(pickerViewCellToCheck.frame)
             // ### ARGH! I can't get the same contstraints on iOS 8.1… seems to work right on iOS 7, so fake it for now.
             // This is a bug waiting to happen later.
@@ -200,7 +200,7 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
         return 720 // 12 Hours in minutes, sure…
     }
     
-    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String! {
+    func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         // Fix plurals correctly… eventrually
         if row == 0 {
             return NSLocalizedString("1 minute", comment: "Single minute")
@@ -209,8 +209,8 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
     }
 
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        let targetedCellIndexPath = hasInlineDurationPicker() ? NSIndexPath(forRow: durationPickerIndexPath!.row - 1, inSection: 0) : tableView.indexPathForSelectedRow()
-        if let cell = tableView.cellForRowAtIndexPath(targetedCellIndexPath) {
+        let targetedCellIndexPath = hasInlineDurationPicker() ? NSIndexPath(forRow: durationPickerIndexPath!.row - 1, inSection: 0) : tableView.indexPathForSelectedRow
+        if let cell = tableView.cellForRowAtIndexPath(targetedCellIndexPath!) {
             durationInMinutes = row + 1
             if activityItem == nil {
                 // let's update the date to make it match. Only do this for new activities. 
@@ -305,9 +305,13 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
         activityToSave.mastery = valuesArray[kMasteryRow]
         activityToSave.importance = valuesArray[kMeaningRow]
         var error: NSError?
-        managedObjectContext.save(&error)
+        do {
+            try managedObjectContext.save()
+        } catch let error1 as NSError {
+            error = error1
+        }
         if let realError = error {
-            println("Unresolved error \(realError.localizedDescription), \(realError.userInfo)\n Trying to save activity")
+            print("Unresolved error \(realError.localizedDescription), \(realError.userInfo)\n Trying to save activity")
         }
     }
     
@@ -316,10 +320,12 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
         if let whichSegue = segue.identifier {
             switch (whichSegue) {
             case "showActivityNames":
-                if let nameTableController = segue.destinationViewController.topViewController as? ActivityNameTableController {
-                    nameTableController.selectedName = activityName
-                    nameTableController.managedObjectContext = managedObjectContext
-                    nameTableController.delegate = self
+                if let navigationController = segue.destinationViewController as? UINavigationController {
+                    if let nameTableController = navigationController.topViewController as? ActivityNameTableController {
+                        nameTableController.selectedName = activityName
+                        nameTableController.managedObjectContext = managedObjectContext
+                        nameTableController.delegate = self
+                    }
                 }
             default:
                 break;
@@ -378,24 +384,24 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
         switch indexPath.section {
         case 0:
             if indexPathHasDuration(indexPath) {
-                retCell = tableView.dequeueReusableCellWithIdentifier(kDurationCellID) as? UITableViewCell
+                retCell = tableView.dequeueReusableCellWithIdentifier(kDurationCellID)
                 retCell!.detailTextLabel!.text = numberFormatter.stringFromNumber(NSNumber(integer: durationInMinutes))
                 retCell!.textLabel!.text = NSLocalizedString("Duration_Label", comment: "Duration_Label")
             } else if indexPathHasDurationPicker(indexPath) {
-                retCell = tableView.dequeueReusableCellWithIdentifier(kDurationPickerID) as? UITableViewCell
+                retCell = tableView.dequeueReusableCellWithIdentifier(kDurationPickerID)
                 if let picker = retCell?.viewWithTag(kDurationPickerTag) as? UIPickerView {
                     picker.delegate = self
                     picker.dataSource = self
                 }
             } else if indexPathHasDate(indexPath) {
-                retCell = tableView.dequeueReusableCellWithIdentifier(kDateCellID) as? UITableViewCell
+                retCell = tableView.dequeueReusableCellWithIdentifier(kDateCellID)
                 retCell!.detailTextLabel!.text = dateFormater.stringFromDate(activityDate!)
                 retCell!.textLabel!.text = NSLocalizedString("Time_Start_Label", comment: "Time_Start_Label")
             } else if indexPathHasDatePicker(indexPath) {
-                retCell = tableView.dequeueReusableCellWithIdentifier(kDatePickerID) as? UITableViewCell
+                retCell = tableView.dequeueReusableCellWithIdentifier(kDatePickerID)
             } else {
                 ZAssert(indexPath.row == kNameRow, "Trying to get a tablecell for a row that doesn't exist, getting an activity row")
-                retCell = tableView.dequeueReusableCellWithIdentifier(kActivityNameCellID) as? UITableViewCell
+                retCell = tableView.dequeueReusableCellWithIdentifier(kActivityNameCellID)
                 if activityName?.name != nil {
                     retCell!.textLabel!.text = activityName!.visibleName()
                 } else {
@@ -403,7 +409,7 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
                 }
             }
         case 1:
-            retCell = tableView.dequeueReusableCellWithIdentifier(kActivityImageCellID) as? UITableViewCell
+            retCell = tableView.dequeueReusableCellWithIdentifier(kActivityImageCellID)
             updateImage(retCell!)
         case 2:
             fallthrough
@@ -481,12 +487,18 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
     }
 
     
-    func configureQuestionCell(indexPath: NSIndexPath) -> UITableViewCell {
-        let tableCell = tableView.dequeueReusableCellWithIdentifier(kQuestionCellAltID) as! UITableViewCell
-        configureQuestionCellHelper(tableCell, forIndexPath: indexPath)
-        return tableCell
+    func configureQuestionCell(indexPath: NSIndexPath) -> UITableViewCell? {
+        if let tableCell = tableView.dequeueReusableCellWithIdentifier(kQuestionCellAltID) {
+            configureQuestionCellHelper(tableCell, forIndexPath: indexPath)
+            return tableCell
+        }
+        return nil
     }
-    
+
+    override func targetViewControllerForAction(action: Selector, sender: AnyObject?) -> UIViewController? {
+        print("I got called \(self) \(action), \(sender)")
+        return parentViewController
+    }
     
     // Selection for the inline picker (Refactor this!)
     func toggleDurationPickerForSelectedIndexPath(indexPath: NSIndexPath) {
