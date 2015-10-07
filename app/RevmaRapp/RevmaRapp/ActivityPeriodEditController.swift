@@ -17,8 +17,9 @@ protocol ActivityPeriodEditControllerDelegate {
 class ActivityPeriodEditController : UIViewController, UITextFieldDelegate {
 
     var delegate: ActivityPeriodEditControllerDelegate?
+    var dateFormatter: NSDateFormatter!
     var dayPeriod = -1
-    var periodName = NSLocalizedString("New Period", comment: "Blank name for period")
+    var periodName = ""
     var startDate = NSDate()
     let OriginalScrollSize:CGFloat = 600.0
     let TextFieldScrollY:CGFloat = 770.0
@@ -32,17 +33,27 @@ class ActivityPeriodEditController : UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         scrollView.contentSize = CGSizeMake(scrollView.frame.size.width, OriginalScrollSize)
+        dateFormatter = NSDateFormatter()
+        dateFormatter.dateStyle = NSDateFormatterStyle.MediumStyle
+        dateFormatter.timeStyle = NSDateFormatterStyle.NoStyle
         startDate = datePicker.date
         datePicker.minimumDate = startDate.dateByAddingTimeInterval(-60 * 60 * 24)
-        textField.text = periodName
-        dayPeriod = dayControl.selectedSegmentIndex
         dayControl.setTitle(NSLocalizedString("3 days", comment: "3 day period"), forSegmentAtIndex: 0)
         dayControl.setTitle(NSLocalizedString("5 days", comment: "5 day period"), forSegmentAtIndex: 1)
         dayControl.setTitle(NSLocalizedString("7 days", comment: "7 day period"), forSegmentAtIndex: 2)
-        fixWeekendWarning()
+        dayPickerChanged(dayControl)
+        updateLabels()
     }
 
-    private func fixWeekendWarning() {
+    private func updateLabels() {
+        var placeHolderText = NSLocalizedString("%1 %2d", comment: "Formatted default period name").stringByReplacingOccurrencesOfString("%2", withString: String(dayPeriod))
+        placeHolderText = placeHolderText.stringByReplacingOccurrencesOfString("%1", withString: dateFormatter.stringFromDate(startDate))
+
+        if textField.text == textField.placeholder || textField.text == nil || textField.text!.isEmpty {
+            textField.text = placeHolderText
+            self.periodNameChanged(textField)
+        }
+        textField.placeholder = placeHolderText
         if includesWeekend() {
             weekendWarningLabel.text = "";
         } else {
@@ -98,12 +109,12 @@ class ActivityPeriodEditController : UIViewController, UITextFieldDelegate {
         default:
             dayPeriod = -1
         }
-        fixWeekendWarning()
+        updateLabels()
     }
 
     @IBAction func startDateChanged(datePicker: UIDatePicker) {
         startDate = datePicker.date
-        fixWeekendWarning()
+        updateLabels()
     }
 
     @IBAction func donePressed(sender: UIBarButtonItem) {
