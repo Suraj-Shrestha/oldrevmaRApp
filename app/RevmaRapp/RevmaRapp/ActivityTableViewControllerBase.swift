@@ -36,12 +36,4 @@ class ActivityTableViewControllerBase: UITableViewController {
     final func heightForActivity(activity: ActivityItem) -> CGFloat {
         return max(activity.durationAsSize, 50)
     }
-
-    @available(iOS 8.0, *)
-    override func targetViewControllerForAction(action: Selector, sender: AnyObject?) -> UIViewController? {
-
-        let viewController = super.targetViewControllerForAction(action, sender: sender)
-print("\(self) got called: \(action), \(sender) Returning: \(viewController), parent: \(self.parentViewController)")
-        return viewController
-    }
 }
