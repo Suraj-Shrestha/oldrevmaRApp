@@ -21,6 +21,7 @@ class ActivityPeriodEditController : UIViewController, UITextFieldDelegate {
     var dayPeriod = -1
     var periodName = ""
     var startDate = NSDate()
+    var savedPeriod: ActivityPeriod? = nil
     let OriginalScrollSize:CGFloat = 600.0
     let TextFieldScrollY:CGFloat = 770.0
 
@@ -147,10 +148,10 @@ class ActivityPeriodEditController : UIViewController, UITextFieldDelegate {
     private func finishSave() {
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let managedObjectContext = appDelegate.managedObjectContext
-        let period = ActivityPeriod(managedObjectContext: managedObjectContext)
-        period.name = periodName
-        period.start = startDate
-        period.stop = startDate.dateByAddingTimeInterval(60.0 * 60.0 * 24.0 * Double(dayPeriod))
+        savedPeriod = ActivityPeriod(managedObjectContext: managedObjectContext)
+        savedPeriod!.name = periodName
+        savedPeriod!.start = startDate
+        savedPeriod!.stop = startDate.dateByAddingTimeInterval(60.0 * 60.0 * 24.0 * Double(dayPeriod))
         appDelegate.saveContext()
 
         // Remove the saved periods because you started a new period and it's better to look at that.

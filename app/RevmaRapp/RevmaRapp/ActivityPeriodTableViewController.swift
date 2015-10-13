@@ -98,12 +98,16 @@ class ActivityPeriodTableViewController : UITableViewController, NSFetchedResult
         self.dismissViewControllerAnimated(true, completion: nil)
         suppressCreatePeriodDialog = true
     }
+
+    private func selectAndShow(indexPath: NSIndexPath) {
+        tableView.selectRowAtIndexPath(indexPath, animated: true, scrollPosition: UITableViewScrollPosition.Bottom)
+        self.performSegueWithIdentifier(ShowPeriodSegueID, sender: self)
+    }
     
     private func showFirstPeriod() {
         if periods.count == 1 {
             // Select the first one because that's nice.
-            tableView.selectRowAtIndexPath(NSIndexPath(forRow: 0, inSection: 0), animated: true, scrollPosition: UITableViewScrollPosition.None)
-            self.performSegueWithIdentifier(ShowPeriodSegueID, sender: self)
+            selectAndShow(NSIndexPath(forRow: 0, inSection: 0))
         }
     }
 
@@ -111,6 +115,11 @@ class ActivityPeriodTableViewController : UITableViewController, NSFetchedResult
         self.dismissViewControllerAnimated(true, completion: nil)
         fetchPeriods()
         tableView.reloadData()
-        showFirstPeriod()
+
+        if let period = controller.savedPeriod {
+            if let selectedIndex = periods.indexOf(period) {
+                selectAndShow(NSIndexPath(forRow: selectedIndex, inSection: 0))
+            }
+        }
     }
 }
