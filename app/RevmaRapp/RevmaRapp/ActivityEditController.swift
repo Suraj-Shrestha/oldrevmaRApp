@@ -93,6 +93,16 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
             durationInMinutes = ai.duration!.integerValue
         } else {
             activityDate = NSDate(timeIntervalSinceNow: -60.0 * Double(durationInMinutes))
+
+            // Try to keep the dates sane to the period.
+            if activityDate!.earlierDate(period.start!) == activityDate {
+                activityDate = NSDate(timeInterval: 60 * Double(durationInMinutes), sinceDate: period.start!)
+            }
+
+            if activityDate!.laterDate(period.stop!) == activityDate {
+                activityDate = NSDate(timeInterval: -60.0 * Double(durationInMinutes), sinceDate: period.stop!)
+            }
+
         }
         checkCanSave() // Make sure the done button is correct regardless of what was set.
         tableView.reloadData()
@@ -269,6 +279,8 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
         
         if let associatedDatePickerCell = tableView.cellForRowAtIndexPath(datePickerIndexPath!) {
             if let tmpDatePicker = associatedDatePickerCell.viewWithTag(kDatePickerTag) as? UIDatePicker {
+                tmpDatePicker.minimumDate = period.start!
+                tmpDatePicker.maximumDate = period.stop!
                 tmpDatePicker.setDate(activityDate!, animated: true)
             }
         }

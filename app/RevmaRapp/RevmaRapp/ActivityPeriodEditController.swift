@@ -114,7 +114,15 @@ class ActivityPeriodEditController : UIViewController, UITextFieldDelegate {
     }
 
     @IBAction func startDateChanged(datePicker: UIDatePicker) {
-        startDate = datePicker.date
+        // Make sure that we always start at 00:00
+        let date = datePicker.date
+        let calendar = NSCalendar.currentCalendar()
+        let flags = NSCalendarUnit.NSHourCalendarUnit.union(NSCalendarUnit.NSMinuteCalendarUnit)
+        let components = calendar.components(flags, fromDate: date)
+        let hour = Double(components.hour)
+        let minute = Double(components.minute)
+        let interval: NSTimeInterval = -1000.0 * hour * 60.0 * 60.0 - minute * 60.0
+        startDate = NSDate(timeInterval: interval, sinceDate: date)
         updateLabels()
     }
 
