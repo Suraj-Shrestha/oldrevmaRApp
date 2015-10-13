@@ -76,6 +76,7 @@ class ActivityNameTableController : UITableViewController, NSFetchedResultsContr
         
     func configureCell(cell: UITableViewCell, atIndexPath indexPath: NSIndexPath) {
         if (indexPath.row == 0) {
+            cell.textLabel!.font = UIFont.boldSystemFontOfSize(cell.textLabel!.font.pointSize)
             cell.textLabel!.text = NSLocalizedString("Create a new activity…", comment: "Create new activity table cell")
         } else {
             let name = activityNames[indexPath.row - 1]
