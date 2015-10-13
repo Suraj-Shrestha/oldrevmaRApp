@@ -23,7 +23,7 @@
 "ActivityTrainingLow" = "Trene (lav intensitet)";
 "ActivityTrainingHigh" = "Trene (høy intensitet)";
 "ActivityRest" = "Hvile";
-"ActivitySleep" = "Søvn";
+"ActivitySleep" = "Lur (dagsøvn)";
 
 
 /* Energy_use_label */

@@ -23,7 +23,7 @@
 "ActivityTrainingLow" = "Training (low intensity)";
 "ActivityTrainingHigh" = "Training (high intensity)";
 "ActivityRest" = "Resting";
-"ActivitySleep" = "Sleeping";
+"ActivitySleep" = "Napping";
 
 /* Energy_use_label */
 "Energy_use_label" = "How much energy did you use:";
