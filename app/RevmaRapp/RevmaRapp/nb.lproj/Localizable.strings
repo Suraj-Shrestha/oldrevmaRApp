@@ -122,3 +122,13 @@
 
 /* "Use Period", comment: "OK Button" */
 "Use Period" = "Bruk Perioden";
+
+"5 minutes" = "5 minuter";
+"15 minutes" = "15 minuter";
+"30 minutes" = "30 minuter";
+"45 minutes" = "45 minuter";
+"1 hour" = "1 time";
+"1 and a half hours" = "1 og halv timer";
+"2 hours" = "2 timer";
+"Over 2 hours" = "Over 2 timer";
+

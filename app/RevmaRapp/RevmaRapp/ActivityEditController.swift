@@ -51,6 +51,18 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
     let kEnergyRow = 2
     let kMasteryRow = 3
 
+    let minuteDurationsArray = [5, 15, 30, 45, 60, 90, 120, 121]
+    let minuteDurationl10n = [
+        NSLocalizedString("5 minutes", comment: "Time in minutes"),
+        NSLocalizedString("15 minutes", comment: "Time in minutes"),
+        NSLocalizedString("30 minutes", comment: "Time in minutes"),
+        NSLocalizedString("45 minutes", comment: "Time in minutes"),
+        NSLocalizedString("1 hour", comment: "Time in hour"),
+        NSLocalizedString("1 and a half hours", comment: "Time in hours"),
+        NSLocalizedString("2 hours", comment: "Time in hours"),
+        NSLocalizedString("Over 2 hours", comment: "Time in hours")
+    ]
+
     var pickerCellRowHeight:CGFloat = 0.0
     var managedObjectContext: NSManagedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
     var delegate: ActivityEditControllerDelegate?
@@ -207,21 +219,18 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
     }
     
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return 720 // 12 Hours in minutes, sure…
+        return minuteDurationsArray.count
     }
     
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         // Fix plurals correctly… eventrually
-        if row == 0 {
-            return NSLocalizedString("1 minute", comment: "Single minute")
-        }
-        return NSString(format: NSLocalizedString("%@ minutes", comment: "Multiple (@%) minutes"), "\(row + 1)") as String
+        return minuteDurationl10n[row]
     }
 
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         let targetedCellIndexPath = hasInlineDurationPicker() ? NSIndexPath(forRow: durationPickerIndexPath!.row - 1, inSection: 0) : tableView.indexPathForSelectedRow
         if let cell = tableView.cellForRowAtIndexPath(targetedCellIndexPath!) {
-            durationInMinutes = row + 1
+            durationInMinutes = minuteDurationsArray[row]
             if activityItem == nil {
                 // let's update the date to make it match. Only do this for new activities. 
                 // Probably need some smartness if someone has actually messed with the date.
@@ -231,8 +240,29 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
                     dateCell.detailTextLabel!.text = dateFormater.stringFromDate(activityDate!)
                 }
             }
-            cell.detailTextLabel!.text = numberFormatter.stringFromNumber(NSNumber(integer: durationInMinutes))
+            cell.detailTextLabel!.text = minuteDurationl10n[row]
             updateActivityImageCell()
+        }
+    }
+
+    private func indexForDuration() -> Int {
+        switch (durationInMinutes) {
+        case 0..<8: // 5 min
+            return 0
+        case 8..<23: // 15 min
+            return 1
+        case 23..<38: // 30 min
+            return 2
+        case 38..<52: // 45 min
+            return 3
+        case 52..<75: // 60 min
+            return 4
+        case 75..<106: // 90 min
+            return 5
+        case 106..<121: // 120
+            return 6
+        default:
+            return minuteDurationsArray.count - 1
         }
     }
 
@@ -240,10 +270,10 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
         if durationPickerIndexPath == nil {
             return
         }
-        
+
         if let associatiedDurationPickerCell = tableView.cellForRowAtIndexPath(durationPickerIndexPath!) {
             if let tmpPicker = associatiedDurationPickerCell.viewWithTag(kDurationPickerTag) as? UIPickerView {
-                tmpPicker.selectRow(durationInMinutes - 1, inComponent: 0, animated: false)
+                tmpPicker.selectRow(indexForDuration(), inComponent: 0, animated: false)
             }
         }
     }
@@ -397,7 +427,7 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
         case 0:
             if indexPathHasDuration(indexPath) {
                 retCell = tableView.dequeueReusableCellWithIdentifier(kDurationCellID)
-                retCell!.detailTextLabel!.text = numberFormatter.stringFromNumber(NSNumber(integer: durationInMinutes))
+                retCell!.detailTextLabel!.text = minuteDurationl10n[indexForDuration()]
                 retCell!.textLabel!.text = NSLocalizedString("Duration_Label", comment: "Duration_Label")
             } else if indexPathHasDurationPicker(indexPath) {
                 retCell = tableView.dequeueReusableCellWithIdentifier(kDurationPickerID)
