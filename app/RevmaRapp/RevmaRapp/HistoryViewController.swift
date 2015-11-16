@@ -36,6 +36,9 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource, CPTScat
                                                                 name:NSManagedObjectContextObjectsDidChangeNotification, object: managedObjectContext)
     }
 
+    deinit {
+        NSNotificationCenter.defaultCenter().removeObserver(self)
+    }
 
     func contextChanged(notification: NSNotification) {
         fetchPeriods()

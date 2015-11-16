@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -1065,15 +1065,83 @@
                     <connections>
                         <segue destination="lVg-5F-Fd5" kind="relationship" relationship="viewControllers" id="Icf-L1-mTU"/>
                         <segue destination="v7B-4J-UMG" kind="relationship" relationship="viewControllers" id="mTs-GE-VqE"/>
+                        <segue destination="whf-K0-wml" kind="relationship" relationship="viewControllers" id="qAM-2i-fec"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-3560" y="-514"/>
         </scene>
+        <!--Help_title-->
+        <scene sceneID="E31-Eh-KdW">
+            <objects>
+                <viewController id="whf-K0-wml" customClass="HelpViewController" customModule="revmarapp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5AZ-Pb-CuI"/>
+                        <viewControllerLayoutGuide type="bottom" id="RuC-O2-wNT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MRw-jm-Yq8">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cs7-bW-KFb">
+                                <rect key="frame" x="0.0" y="28" width="600" height="479"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sP8-I8-SPf">
+                                <rect key="frame" x="0.0" y="507" width="600" height="44"/>
+                                <items>
+                                    <barButtonItem title="Back" id="Ce6-Rr-M9f">
+                                        <connections>
+                                            <action selector="goBack" destination="Cs7-bW-KFb" id="42h-A1-XQQ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem title="Forward" id="BlL-bX-IaJ">
+                                        <connections>
+                                            <action selector="goForward" destination="Cs7-bW-KFb" id="JxK-Wl-FBN"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Cs7-bW-KFb" firstAttribute="leading" secondItem="MRw-jm-Yq8" secondAttribute="leading" id="4MW-13-81q"/>
+                            <constraint firstItem="RuC-O2-wNT" firstAttribute="top" secondItem="Cs7-bW-KFb" secondAttribute="bottom" constant="44" id="7bD-0d-cPM"/>
+                            <constraint firstItem="sP8-I8-SPf" firstAttribute="top" secondItem="Cs7-bW-KFb" secondAttribute="bottom" id="ANE-sS-qhR"/>
+                            <constraint firstItem="sP8-I8-SPf" firstAttribute="trailing" secondItem="Cs7-bW-KFb" secondAttribute="trailing" id="KmI-zd-vTY"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="Cs7-bW-KFb" secondAttribute="leading" id="bRq-tS-Zs9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Cs7-bW-KFb" secondAttribute="trailing" id="ey0-2L-7KT"/>
+                            <constraint firstItem="Cs7-bW-KFb" firstAttribute="top" secondItem="5AZ-Pb-CuI" secondAttribute="bottom" constant="8" id="ftU-ts-STc"/>
+                            <constraint firstItem="RuC-O2-wNT" firstAttribute="top" secondItem="sP8-I8-SPf" secondAttribute="bottom" id="h5a-gN-j0u"/>
+                            <constraint firstItem="RuC-O2-wNT" firstAttribute="top" secondItem="Cs7-bW-KFb" secondAttribute="bottom" id="iQV-zq-FaQ"/>
+                            <constraint firstAttribute="trailing" secondItem="Cs7-bW-KFb" secondAttribute="trailing" id="jf0-gb-Qvi"/>
+                            <constraint firstItem="sP8-I8-SPf" firstAttribute="leading" secondItem="Cs7-bW-KFb" secondAttribute="leading" id="tkD-0n-pmp"/>
+                            <constraint firstItem="Cs7-bW-KFb" firstAttribute="top" secondItem="5AZ-Pb-CuI" secondAttribute="bottom" constant="8" id="yau-HW-Rtl"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="bRq-tS-Zs9"/>
+                                <exclude reference="ey0-2L-7KT"/>
+                                <exclude reference="yau-HW-Rtl"/>
+                                <exclude reference="iQV-zq-FaQ"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Help_title" image="help" selectedImage="help" id="SLc-i0-81e"/>
+                    <connections>
+                        <outlet property="toolbar" destination="sP8-I8-SPf" id="R04-0Q-bMS"/>
+                        <outlet property="webview" destination="Cs7-bW-KFb" id="MkN-ZL-dbA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZUe-bj-hUj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2811" y="-514"/>
+        </scene>
     </scenes>
     <resources>
         <image name="activity" width="30" height="30"/>
+        <image name="help" width="31" height="31"/>
         <image name="history" width="30" height="30"/>
         <image name="smile-face" width="268" height="268"/>
         <image name="tongue-face" width="283" height="282"/>
