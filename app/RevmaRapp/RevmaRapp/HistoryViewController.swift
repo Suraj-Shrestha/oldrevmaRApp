@@ -32,6 +32,16 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource, CPTScat
         fetchPeriods()
         updateTitle()
         configureView()
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "contextChanged:",
+                                                                name:NSManagedObjectContextObjectsDidChangeNotification, object: managedObjectContext)
+    }
+
+
+    func contextChanged(notification: NSNotification) {
+        fetchPeriods()
+        if let hostedGraph = self.graphView.hostedGraph {
+            hostedGraph.reloadData()
+        }
     }
 
     override func viewWillAppear(animated: Bool) {
