@@ -3,3 +3,7 @@ syntax: glob
 xcuserdata
 *.zip
 ModelObjects2
+pollen-cache
+compiled
+helptext.html
+styles.css
