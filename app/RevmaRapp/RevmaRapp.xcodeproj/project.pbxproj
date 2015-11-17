@@ -281,6 +281,7 @@
 				C9DD9F3D1A1398070099B184 /* Generate Model Objects */,
 				C93F56DF1A0B70BE0030D481 /* Sources */,
 				C93F56E01A0B70BE0030D481 /* Frameworks */,
+				C95D75781BFB718100013B00 /* Build HTML Help */,
 				C93F56E11A0B70BE0030D481 /* Resources */,
 			);
 			buildRules = (
@@ -396,6 +397,25 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		C95D75781BFB718100013B00 /* Build HTML Help */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				$PROJECT_DIR/RevmaRapp/help/helptext.html.pm,
+				$PROJECT_DIR/RevmaRapp/help/styles.css.pp,
+				$PROJECT_DIR/RevmaRapp/help/pollen.rkt,
+			);
+			name = "Build HTML Help";
+			outputPaths = (
+				$PROJECT_DIR/RevmaRapp/help/helptext.html,
+				$PROJECT_DIR/RevmaRapp/help/styles.css,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd \"$PROJECT_DIR/RevmaRapp/help\"\nRACO=\"/Applications/Racket v6.2.1/bin/raco\"\n\"$RACO\" pollen render \"$SCRIPT_INPUT_FILE_1\" \"$SCRIPT_INPUT_FILE_2\"";
+		};
 		C9DD9F3D1A1398070099B184 /* Generate Model Objects */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 12;
