@@ -14,9 +14,10 @@ class HelpViewController : UIViewController {
     @IBOutlet weak var toolbar: UIToolbar!
 
     override func viewDidLoad() {
-        if let htmlFile = NSBundle.mainBundle().pathForResource("test", ofType: "html") {
+        if let htmlFile = NSBundle.mainBundle().pathForResource("helptext", ofType: "html") {
+            let mainBundleURL = NSURL.fileURLWithPath(NSBundle.mainBundle().bundlePath)
             do {
-                try webview.loadHTMLString(NSString(contentsOfFile: htmlFile, encoding: NSUTF8StringEncoding) as String, baseURL: nil)
+                try webview.loadHTMLString(NSString(contentsOfFile: htmlFile, encoding: NSUTF8StringEncoding) as String, baseURL: mainBundleURL)
             } catch let error as NSError {
                 print("Error \(error.domain)")
             }

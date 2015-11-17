@@ -26,12 +26,13 @@
 		C93F56F21A0B70BE0030D481 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C93F56F11A0B70BE0030D481 /* Images.xcassets */; };
 		C93F56F51A0B70BE0030D481 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C93F56F31A0B70BE0030D481 /* LaunchScreen.xib */; };
 		C93F57011A0B70BE0030D481 /* RevmaRappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93F57001A0B70BE0030D481 /* RevmaRappTests.swift */; };
+		C95D75741BFB6C8200013B00 /* styles.css in Resources */ = {isa = PBXBuildFile; fileRef = C95D75721BFB6C8200013B00 /* styles.css */; };
+		C95D75771BFB6C9B00013B00 /* helptext.html in Resources */ = {isa = PBXBuildFile; fileRef = C95D75761BFB6C9B00013B00 /* helptext.html */; };
 		C961CEB61B467199003EDBE0 /* app-icon-please-change.png in Resources */ = {isa = PBXBuildFile; fileRef = C961CEB51B467199003EDBE0 /* app-icon-please-change.png */; };
 		C961CEB81B467234003EDBE0 /* app-icon-please-change3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C961CEB71B467234003EDBE0 /* app-icon-please-change3x.png */; };
 		C961CEBA1B467266003EDBE0 /* app-icon-please-change-ipad2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C961CEB91B467266003EDBE0 /* app-icon-please-change-ipad2x.png */; };
 		C961CEBC1B467285003EDBE0 /* app-icon-please-change-ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = C961CEBB1B467285003EDBE0 /* app-icon-please-change-ipad.png */; };
 		C993EB261BFA268F004E8AFB /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C993EB251BFA268F004E8AFB /* HelpViewController.swift */; };
-		C993EB2B1BFA2A21004E8AFB /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = C993EB2A1BFA2A21004E8AFB /* test.html */; };
 		C9B7F6661B399E54000B86E9 /* PeriodGraphChooserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B7F6651B399E54000B86E9 /* PeriodGraphChooserController.swift */; };
 		C9C10BE41A0B831C00784666 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C10BE31A0B831C00784666 /* ActivityViewController.swift */; };
 		C9C93BA81B3841AF00857B87 /* QuadrantActivityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C93BA71B3841AF00857B87 /* QuadrantActivityTableViewController.swift */; };
@@ -97,12 +98,13 @@
 		C93F56FA1A0B70BE0030D481 /* RevmaRappTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RevmaRappTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C93F56FF1A0B70BE0030D481 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C93F57001A0B70BE0030D481 /* RevmaRappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevmaRappTests.swift; sourceTree = "<group>"; };
+		C95D75721BFB6C8200013B00 /* styles.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = styles.css; path = help/styles.css; sourceTree = "<group>"; };
+		C95D75761BFB6C9B00013B00 /* helptext.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = helptext.html; path = help/helptext.html; sourceTree = "<group>"; };
 		C961CEB51B467199003EDBE0 /* app-icon-please-change.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-icon-please-change.png"; sourceTree = "<group>"; };
 		C961CEB71B467234003EDBE0 /* app-icon-please-change3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-icon-please-change3x.png"; sourceTree = "<group>"; };
 		C961CEB91B467266003EDBE0 /* app-icon-please-change-ipad2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-icon-please-change-ipad2x.png"; sourceTree = "<group>"; };
 		C961CEBB1B467285003EDBE0 /* app-icon-please-change-ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-icon-please-change-ipad.png"; sourceTree = "<group>"; };
 		C993EB251BFA268F004E8AFB /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
-		C993EB2A1BFA2A21004E8AFB /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = test.html; path = help/test.html; sourceTree = "<group>"; };
 		C9B7F6651B399E54000B86E9 /* PeriodGraphChooserController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeriodGraphChooserController.swift; sourceTree = "<group>"; };
 		C9C10BE31A0B831C00784666 /* ActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		C9C93BA71B3841AF00857B87 /* QuadrantActivityTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuadrantActivityTableViewController.swift; sourceTree = "<group>"; };
@@ -242,7 +244,8 @@
 		C993EB291BFA2895004E8AFB /* Help Files */ = {
 			isa = PBXGroup;
 			children = (
-				C993EB2A1BFA2A21004E8AFB /* test.html */,
+				C95D75761BFB6C9B00013B00 /* helptext.html */,
+				C95D75721BFB6C8200013B00 /* styles.css */,
 			);
 			name = "Help Files";
 			sourceTree = "<group>";
@@ -371,12 +374,13 @@
 				C961CEB81B467234003EDBE0 /* app-icon-please-change3x.png in Resources */,
 				C961CEB61B467199003EDBE0 /* app-icon-please-change.png in Resources */,
 				C961CEBC1B467285003EDBE0 /* app-icon-please-change-ipad.png in Resources */,
+				C95D75741BFB6C8200013B00 /* styles.css in Resources */,
 				C93599401A19F66F00DE78BE /* Localizable.strings in Resources */,
+				C95D75771BFB6C9B00013B00 /* helptext.html in Resources */,
 				C935994A1A19F66F00DE78BE /* InfoPlist.strings in Resources */,
 				C93F56F01A0B70BE0030D481 /* Main.storyboard in Resources */,
 				C93F56F51A0B70BE0030D481 /* LaunchScreen.xib in Resources */,
 				C961CEBA1B467266003EDBE0 /* app-icon-please-change-ipad2x.png in Resources */,
-				C993EB2B1BFA2A21004E8AFB /* test.html in Resources */,
 				C93F56F21A0B70BE0030D481 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
