@@ -6,3 +6,5 @@
      #:string-proc (compose smart-quotes smart-dashes))))
 (provide root)
 
+(define rrap "RevmaRApp")
+(provide rrap)

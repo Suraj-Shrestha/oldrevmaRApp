@@ -7,3 +7,5 @@ pollen-cache
 compiled
 helptext.html
 styles.css
+app/RevmaRapp/RevmaRapp/help/*.html
+app/RevmaRapp/RevmaRapp/help/*.css

@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+<title>◊select['h1 doc]'</title>
 <meta charset="UTF-8">
 <link rel="stylesheet" type="text/css" media="all" href="styles.css" />
 </head>
@@ -8,5 +9,11 @@
 <div id="container">
 ◊->html[doc]
 </div>
+◊(define prev-page (previous here))
+◊when/block[prev-page]{
+<p>The previous is <a href="◊|prev-page|">◊|prev-page|</a>.</p>}
+◊(define next-page (next here))
+◊when/block[next-page]{
+<p>The next page is <a href="◊|next-page|">◊|next-page|</a>.</p>}
 </body>
 </html>
