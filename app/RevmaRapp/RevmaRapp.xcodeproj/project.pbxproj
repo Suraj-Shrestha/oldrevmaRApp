@@ -34,6 +34,7 @@
 		C95D75851BFC8FC200013B00 /* periods.html in Resources */ = {isa = PBXBuildFile; fileRef = C95D757D1BFC8FC200013B00 /* periods.html */; };
 		C95D75861BFC8FC200013B00 /* register-activity.html in Resources */ = {isa = PBXBuildFile; fileRef = C95D757E1BFC8FC200013B00 /* register-activity.html */; };
 		C95D75881BFC8FC200013B00 /* what-is-revmarapp.html in Resources */ = {isa = PBXBuildFile; fileRef = C95D75801BFC8FC200013B00 /* what-is-revmarapp.html */; };
+		C95D75951BFC93F200013B00 /* styles.css.pp in Sources */ = {isa = PBXBuildFile; fileRef = C95D758B1BFC93F200013B00 /* styles.css.pp */; };
 		C961CEB61B467199003EDBE0 /* app-icon-please-change.png in Resources */ = {isa = PBXBuildFile; fileRef = C961CEB51B467199003EDBE0 /* app-icon-please-change.png */; };
 		C961CEB81B467234003EDBE0 /* app-icon-please-change3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C961CEB71B467234003EDBE0 /* app-icon-please-change3x.png */; };
 		C961CEBA1B467266003EDBE0 /* app-icon-please-change-ipad2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C961CEB91B467266003EDBE0 /* app-icon-please-change-ipad2x.png */; };
@@ -112,6 +113,16 @@
 		C95D757D1BFC8FC200013B00 /* periods.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = periods.html; path = help/periods.html; sourceTree = "<group>"; };
 		C95D757E1BFC8FC200013B00 /* register-activity.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "register-activity.html"; path = "help/register-activity.html"; sourceTree = "<group>"; };
 		C95D75801BFC8FC200013B00 /* what-is-revmarapp.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "what-is-revmarapp.html"; path = "help/what-is-revmarapp.html"; sourceTree = "<group>"; };
+		C95D758A1BFC93F200013B00 /* index.ptree */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = index.ptree; path = help/index.ptree; sourceTree = "<group>"; };
+		C95D758B1BFC93F200013B00 /* styles.css.pp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.pascal; name = styles.css.pp; path = help/styles.css.pp; sourceTree = "<group>"; };
+		C95D758C1BFC93F200013B00 /* activity-periods.html.pm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.perl; name = "activity-periods.html.pm"; path = "help/activity-periods.html.pm"; sourceTree = "<group>"; };
+		C95D758D1BFC93F200013B00 /* evaluate-activity.html.pm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.perl; name = "evaluate-activity.html.pm"; path = "help/evaluate-activity.html.pm"; sourceTree = "<group>"; };
+		C95D758E1BFC93F200013B00 /* helptext.html.pm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.perl; name = helptext.html.pm; path = help/helptext.html.pm; sourceTree = "<group>"; };
+		C95D758F1BFC93F200013B00 /* history.html.pm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.perl; name = history.html.pm; path = help/history.html.pm; sourceTree = "<group>"; };
+		C95D75901BFC93F200013B00 /* periods.html.pm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.perl; name = periods.html.pm; path = help/periods.html.pm; sourceTree = "<group>"; };
+		C95D75911BFC93F200013B00 /* register-activity.html.pm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.perl; name = "register-activity.html.pm"; path = "help/register-activity.html.pm"; sourceTree = "<group>"; };
+		C95D75921BFC93F200013B00 /* what-is-revmarapp.html.pm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.perl; name = "what-is-revmarapp.html.pm"; path = "help/what-is-revmarapp.html.pm"; sourceTree = "<group>"; };
+		C95D75931BFC93F200013B00 /* pollen.rkt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = pollen.rkt; path = help/pollen.rkt; sourceTree = "<group>"; };
 		C961CEB51B467199003EDBE0 /* app-icon-please-change.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-icon-please-change.png"; sourceTree = "<group>"; };
 		C961CEB71B467234003EDBE0 /* app-icon-please-change3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-icon-please-change3x.png"; sourceTree = "<group>"; };
 		C961CEB91B467266003EDBE0 /* app-icon-please-change-ipad2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-icon-please-change-ipad2x.png"; sourceTree = "<group>"; };
@@ -227,6 +238,7 @@
 		C93F56E61A0B70BE0030D481 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C95D75891BFC93B000013B00 /* Help source */,
 				C993EB291BFA2895004E8AFB /* Help Files */,
 				C935994C1A19F66F00DE78BE /* InfoPlist.strings */,
 				C93599421A19F66F00DE78BE /* Localizable.strings */,
@@ -251,6 +263,23 @@
 				C93F56FF1A0B70BE0030D481 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C95D75891BFC93B000013B00 /* Help source */ = {
+			isa = PBXGroup;
+			children = (
+				C95D758A1BFC93F200013B00 /* index.ptree */,
+				C95D758B1BFC93F200013B00 /* styles.css.pp */,
+				C95D758C1BFC93F200013B00 /* activity-periods.html.pm */,
+				C95D758D1BFC93F200013B00 /* evaluate-activity.html.pm */,
+				C95D758E1BFC93F200013B00 /* helptext.html.pm */,
+				C95D758F1BFC93F200013B00 /* history.html.pm */,
+				C95D75901BFC93F200013B00 /* periods.html.pm */,
+				C95D75911BFC93F200013B00 /* register-activity.html.pm */,
+				C95D75921BFC93F200013B00 /* what-is-revmarapp.html.pm */,
+				C95D75931BFC93F200013B00 /* pollen.rkt */,
+			);
+			name = "Help source";
 			sourceTree = "<group>";
 		};
 		C993EB291BFA2895004E8AFB /* Help Files */ = {
@@ -497,6 +526,7 @@
 				C9DD9F431A13A3A00099B184 /* _ActivityItem.swift in Sources */,
 				C9C10BE41A0B831C00784666 /* ActivityViewController.swift in Sources */,
 				C90F589C1A24D0F600258424 /* ActivityNameTableController.swift in Sources */,
+				C95D75951BFC93F200013B00 /* styles.css.pp in Sources */,
 				C93F56EB1A0B70BE0030D481 /* ActivityTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
