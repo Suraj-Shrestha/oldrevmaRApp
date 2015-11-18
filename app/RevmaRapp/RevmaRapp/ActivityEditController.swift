@@ -14,10 +14,12 @@ protocol ActivityEditControllerDelegate {
     func activityEditControllerDidSave(controller: ActivityEditController)
 }
 
-class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIPickerViewDelegate, ActivityNameTableControllerDelegate {
+class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIPickerViewDelegate, ActivityNameTableControllerDelegate, HelpControllerEndDelegate {
     
     @IBOutlet weak var doneButton: UIBarButtonItem!
-    
+    let ShowHelpSegueID = "showHelp"
+    let ShowActivitySegueID = "showActivityNames"
+    let HelpFile = "register-activity"
     // CellIDs
     let kDatePickerID = "datePicker"
     let kDateCellID = "dateCell"
@@ -194,7 +196,7 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
 
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "localeChanged", name: NSCurrentLocaleDidChangeNotification, object: nil)
     }
-    
+
     private func localeChanged() {
         configureView()
         self.tableView.reloadData()
@@ -361,12 +363,19 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
         // TODO: Get the detail view hooked up.
         if let whichSegue = segue.identifier {
             switch (whichSegue) {
-            case "showActivityNames":
+            case ShowActivitySegueID:
                 if let navigationController = segue.destinationViewController as? UINavigationController {
                     if let nameTableController = navigationController.topViewController as? ActivityNameTableController {
                         nameTableController.selectedName = activityName
                         nameTableController.managedObjectContext = managedObjectContext
                         nameTableController.delegate = self
+                    }
+                }
+            case ShowHelpSegueID:
+                if let navigationController = segue.destinationViewController as? UINavigationController {
+                    if let helpController = navigationController.topViewController as? HelpViewController {
+                        helpController.delegate = self
+                        helpController.htmlFile = HelpFile
                     }
                 }
             default:
@@ -649,6 +658,11 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
         activityName = controller.selectedName
         tableView.reloadData()
         self.dismissViewControllerAnimated(true, completion: nil)
+    }
+
+    // MARK HelpViewControllerDone
+    func helpDone(controller: HelpViewController) {
+        controller.dismissViewControllerAnimated(true, completion: nil)
     }
 
 }

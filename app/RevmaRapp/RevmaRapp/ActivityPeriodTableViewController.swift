@@ -9,13 +9,15 @@
 import Foundation
 import CoreData
 
-class ActivityPeriodTableViewController : UITableViewController, NSFetchedResultsControllerDelegate, ActivityPeriodEditControllerDelegate {
+class ActivityPeriodTableViewController : UITableViewController, NSFetchedResultsControllerDelegate, ActivityPeriodEditControllerDelegate, HelpControllerEndDelegate {
     var managedObjectContext : NSManagedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
     var periods:[ActivityPeriod] = [];
     var suppressCreatePeriodDialog = false
     var dateFormatter: NSDateFormatter!
     let CreatePeriodSegueID = "createPeriod"
     let ShowPeriodSegueID = "showPeriod"
+    let ShowHelpSegueID = "showHelp"
+    let HelpFile = "activity-periods"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,6 +56,13 @@ class ActivityPeriodTableViewController : UITableViewController, NSFetchedResult
         // TODO: Get the detail view hooked up.
         if let whichSegue = segue.identifier {
             switch (whichSegue) {
+            case ShowHelpSegueID:
+                if let navigationController = segue.destinationViewController as? UINavigationController {
+                    if let helpController = navigationController.topViewController as? HelpViewController {
+                        helpController.delegate = self
+                        helpController.htmlFile = HelpFile
+                    }
+                }
             case ShowPeriodSegueID:
                 if let indexPath = self.tableView.indexPathForSelectedRow {
                     let period = self.periods[indexPath.row]
@@ -121,5 +130,10 @@ class ActivityPeriodTableViewController : UITableViewController, NSFetchedResult
                 selectAndShow(NSIndexPath(forRow: selectedIndex, inSection: 0))
             }
         }
+    }
+
+    // HelpController delegate
+    func helpDone(controller: HelpViewController) {
+        controller.dismissViewControllerAnimated(true, completion: nil)
     }
 }

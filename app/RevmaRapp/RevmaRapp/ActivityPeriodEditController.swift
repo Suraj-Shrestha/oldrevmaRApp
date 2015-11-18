@@ -14,8 +14,9 @@ protocol ActivityPeriodEditControllerDelegate {
     func periodEditControllerDidSave(controller: ActivityPeriodEditController)
 }
 
-class ActivityPeriodEditController : UIViewController, UITextFieldDelegate {
-
+class ActivityPeriodEditController : UIViewController, UITextFieldDelegate, HelpControllerEndDelegate {
+    let ShowHelpID = "showHelp"
+    let HelpFile = "periods"
     var delegate: ActivityPeriodEditControllerDelegate?
     var dateFormatter: NSDateFormatter!
     var dayPeriod = -1
@@ -113,6 +114,24 @@ class ActivityPeriodEditController : UIViewController, UITextFieldDelegate {
         updateLabels()
     }
 
+    // MARK: Segue
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        // TODO: Get the detail view hooked up.
+        if let whichSegue = segue.identifier {
+            switch (whichSegue) {
+            case ShowHelpID:
+                if let navigationController = segue.destinationViewController as? UINavigationController {
+                    if let helpController = navigationController.topViewController as? HelpViewController {
+                        helpController.delegate = self
+                        helpController.htmlFile = HelpFile
+                    }
+                }
+            default:
+                break;
+            }
+        }
+    }
+
     @IBAction func startDateChanged(datePicker: UIDatePicker) {
         // Make sure that we always start at 00:00
         let date = datePicker.date
@@ -181,5 +200,10 @@ class ActivityPeriodEditController : UIViewController, UITextFieldDelegate {
     func textFieldDidBeginEditing(textField: UITextField) {
         scrollView.contentSize = CGSizeMake(scrollView.frame.size.width, 900)
         scrollView.scrollRectToVisible(CGRectMake(0, TextFieldScrollY, 10, 10), animated: true)
+    }
+
+    // Mark: HelpControllerEndDelegate
+    func helpDone(controller: HelpViewController) {
+        controller.dismissViewControllerAnimated(true, completion: nil)
     }
 }

@@ -10,12 +10,16 @@
         <!--History_title-->
         <scene sceneID="bIQ-jy-ePl">
             <objects>
-                <navigationController id="v7B-4J-UMG" sceneMemberID="viewController">
+                <navigationController toolbarHidden="NO" id="v7B-4J-UMG" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="History_title" image="history" id="uIe-JJ-blb"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Fdv-UR-yA0">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="xTx-ul-I90">
+                        <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="rootViewController" id="B69-AS-uO3"/>
                     </connections>
@@ -36,7 +40,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8JD-wl-RUW" customClass="CPTGraphHostingView">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8JD-wl-RUW" customClass="CPTGraphHostingView">
                                 <rect key="frame" x="20" y="72" width="560" height="479"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -49,13 +53,19 @@
                             <constraint firstItem="8JD-wl-RUW" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" id="mfk-wm-Ktn"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="bSN-Sc-6Mc">
-                        <barButtonItem key="rightBarButtonItem" systemItem="edit" id="yOC-v3-VRy">
+                    <toolbarItems>
+                        <barButtonItem systemItem="edit" id="yOC-v3-VRy">
                             <connections>
                                 <segue destination="Ajf-oz-OAA" kind="presentation" identifier="showPeriodEdit" id="GA4-pS-Js1"/>
                             </connections>
                         </barButtonItem>
-                    </navigationItem>
+                        <barButtonItem title="Help" id="5HX-2c-64i">
+                            <connections>
+                                <segue destination="IIq-li-Psq" kind="presentation" identifier="showHelp" id="b2r-RO-cy9"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" id="bSN-Sc-6Mc"/>
                     <connections>
                         <outlet property="graphView" destination="8JD-wl-RUW" id="Nt5-ao-Spd"/>
                         <segue destination="TI1-0s-OYf" kind="show" identifier="showQuadrant" id="VCw-Ga-8P1"/>
@@ -107,6 +117,7 @@
                             <outlet property="delegate" destination="TI1-0s-OYf" id="emy-39-VLN"/>
                         </connections>
                     </tableView>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" title="Quadrant_results" id="7iV-dU-OjY"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ERM-2w-aHs" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -155,6 +166,13 @@
                             <outlet property="delegate" destination="FOK-em-nNR" id="kNP-q4-4nh"/>
                         </connections>
                     </tableView>
+                    <toolbarItems>
+                        <barButtonItem title="Help" id="hYD-cs-TsF">
+                            <connections>
+                                <segue destination="IIq-li-Psq" kind="presentation" identifier="showHelp" id="6VH-AC-kp3"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
                     <navigationItem key="navigationItem" title="Activity Periods" id="1fw-lw-0Ca">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="lKj-Ey-wxk">
                             <connections>
@@ -210,6 +228,13 @@
                             <outlet property="delegate" destination="dXw-Z8-FrB" id="CwQ-fF-aif"/>
                         </connections>
                     </tableView>
+                    <toolbarItems>
+                        <barButtonItem title="Help" id="l07-L4-kD1">
+                            <connections>
+                                <segue destination="IIq-li-Psq" kind="presentation" identifier="showHelp" id="uyg-mx-fS5"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
                     <navigationItem key="navigationItem" title="Period_table_title" id="EXF-tP-vvc">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="YEt-UJ-4PP">
                             <connections>
@@ -217,10 +242,11 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JJ1-TZ-RhY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3010" y="1861"/>
+            <point key="canvasLocation" x="-3228" y="1861"/>
         </scene>
         <!--Activities-->
         <scene sceneID="MWk-3N-Utw">
@@ -293,18 +319,22 @@
         <!--Navigation Controller-->
         <scene sceneID="76X-u7-KfG">
             <objects>
-                <navigationController id="72A-Vf-DXh" sceneMemberID="viewController">
+                <navigationController toolbarHidden="NO" id="72A-Vf-DXh" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="EET-sb-4iz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="QwJ-44-Z2o">
+                        <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="FVh-N2-pmI" kind="relationship" relationship="rootViewController" id="jal-wM-PCD"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LJO-MO-n5r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1257" y="2164"/>
+            <point key="canvasLocation" x="-1045" y="2480"/>
         </scene>
         <!--Add Activity-->
         <scene sceneID="9Yb-j9-jra">
@@ -563,6 +593,13 @@
                             <outlet property="delegate" destination="FVh-N2-pmI" id="Fek-cz-EA5"/>
                         </connections>
                     </tableView>
+                    <toolbarItems>
+                        <barButtonItem title="Help" id="j8q-5a-Cdi">
+                            <connections>
+                                <segue destination="IIq-li-Psq" kind="presentation" identifier="showHelp" id="rYR-C0-4RF"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
                     <navigationItem key="navigationItem" title="Add Activity" id="doj-l7-GMf">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Dgf-pN-mvW">
                             <connections>
@@ -749,6 +786,13 @@
                             </mask>
                         </variation>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem title="Help" id="uDa-ns-Qpd">
+                            <connections>
+                                <segue destination="IIq-li-Psq" kind="presentation" identifier="showHelp" id="Q6K-ju-ON0"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
                     <navigationItem key="navigationItem" id="jnC-8h-rTU">
                         <barButtonItem key="backBarButtonItem" title="Activities" id="tSH-gj-fJQ"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="edit" id="FGu-F8-Msf">
@@ -921,6 +965,13 @@
                             </mask>
                         </variation>
                     </view>
+                    <toolbarItems>
+                        <barButtonItem title="Help" id="ygc-8b-T1m">
+                            <connections>
+                                <segue destination="IIq-li-Psq" kind="presentation" identifier="showHelp" id="C7v-nS-1p9"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
                     <navigationItem key="navigationItem" id="hIx-3a-uEz">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Hms-5N-dpl">
                             <connections>
@@ -933,6 +984,7 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="datePicker" destination="TuK-sS-MLV" id="eKC-1v-B2R"/>
                         <outlet property="dayControl" destination="Wlb-Tp-dQM" id="WaR-Af-eaX"/>
@@ -943,16 +995,20 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DUI-ho-NeU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3252" y="2604"/>
+            <point key="canvasLocation" x="-2921" y="2778"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="H9a-3e-qoZ">
             <objects>
-                <navigationController id="9It-9Y-Mhz" sceneMemberID="viewController">
+                <navigationController toolbarHidden="NO" id="9It-9Y-Mhz" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="jGd-iw-d2A">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="hEA-xr-DaM">
+                        <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="Ygp-Uc-ctM" kind="relationship" relationship="rootViewController" id="2TP-FJ-Q0v"/>
                     </connections>
@@ -964,12 +1020,17 @@
         <!--Activities_title-->
         <scene sceneID="pcm-Pk-eCW">
             <objects>
-                <navigationController id="lVg-5F-Fd5" sceneMemberID="viewController">
+                <navigationController toolbarHidden="NO" id="lVg-5F-Fd5" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Activities_title" image="activity" id="JYO-ep-uMH"/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="1Dy-3Y-mhH">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Xu8-jV-ba8">
+                        <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
                     <connections>
                         <segue destination="FOK-em-nNR" kind="relationship" relationship="rootViewController" id="EmG-Ji-cTj"/>
                     </connections>
@@ -1065,12 +1126,31 @@
                     <connections>
                         <segue destination="lVg-5F-Fd5" kind="relationship" relationship="viewControllers" id="Icf-L1-mTU"/>
                         <segue destination="v7B-4J-UMG" kind="relationship" relationship="viewControllers" id="mTs-GE-VqE"/>
-                        <segue destination="whf-K0-wml" kind="relationship" relationship="viewControllers" id="qAM-2i-fec"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-3560" y="-514"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="15l-6m-68T">
+            <objects>
+                <navigationController toolbarHidden="NO" id="IIq-li-Psq" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="8mJ-3N-cg3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="4lV-Mg-gLO">
+                        <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="whf-K0-wml" kind="relationship" relationship="rootViewController" id="byh-f8-9VA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sKd-eX-G6V" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-340" y="1355"/>
         </scene>
         <!--Help_title-->
         <scene sceneID="E31-Eh-KdW">
@@ -1085,38 +1165,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cs7-bW-KFb">
-                                <rect key="frame" x="0.0" y="28" width="600" height="479"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
                             </webView>
-                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sP8-I8-SPf">
-                                <rect key="frame" x="0.0" y="507" width="600" height="44"/>
-                                <items>
-                                    <barButtonItem title="Back" id="Ce6-Rr-M9f">
-                                        <connections>
-                                            <action selector="goBack" destination="Cs7-bW-KFb" id="42h-A1-XQQ"/>
-                                        </connections>
-                                    </barButtonItem>
-                                    <barButtonItem title="Forward" id="BlL-bX-IaJ">
-                                        <connections>
-                                            <action selector="goForward" destination="Cs7-bW-KFb" id="JxK-Wl-FBN"/>
-                                        </connections>
-                                    </barButtonItem>
-                                </items>
-                            </toolbar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Cs7-bW-KFb" firstAttribute="leading" secondItem="MRw-jm-Yq8" secondAttribute="leading" id="4MW-13-81q"/>
-                            <constraint firstItem="RuC-O2-wNT" firstAttribute="top" secondItem="Cs7-bW-KFb" secondAttribute="bottom" constant="44" id="7bD-0d-cPM"/>
-                            <constraint firstItem="sP8-I8-SPf" firstAttribute="top" secondItem="Cs7-bW-KFb" secondAttribute="bottom" id="ANE-sS-qhR"/>
-                            <constraint firstItem="sP8-I8-SPf" firstAttribute="trailing" secondItem="Cs7-bW-KFb" secondAttribute="trailing" id="KmI-zd-vTY"/>
+                            <constraint firstAttribute="bottom" secondItem="Cs7-bW-KFb" secondAttribute="bottom" id="DlQ-v3-hIo"/>
+                            <constraint firstItem="Cs7-bW-KFb" firstAttribute="top" secondItem="MRw-jm-Yq8" secondAttribute="top" id="LE9-PW-glN"/>
+                            <constraint firstItem="Cs7-bW-KFb" firstAttribute="leading" secondItem="MRw-jm-Yq8" secondAttribute="leading" id="XD3-nX-HHk"/>
                             <constraint firstAttribute="leadingMargin" secondItem="Cs7-bW-KFb" secondAttribute="leading" id="bRq-tS-Zs9"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Cs7-bW-KFb" secondAttribute="trailing" id="ey0-2L-7KT"/>
-                            <constraint firstItem="Cs7-bW-KFb" firstAttribute="top" secondItem="5AZ-Pb-CuI" secondAttribute="bottom" constant="8" id="ftU-ts-STc"/>
-                            <constraint firstItem="RuC-O2-wNT" firstAttribute="top" secondItem="sP8-I8-SPf" secondAttribute="bottom" id="h5a-gN-j0u"/>
                             <constraint firstItem="RuC-O2-wNT" firstAttribute="top" secondItem="Cs7-bW-KFb" secondAttribute="bottom" id="iQV-zq-FaQ"/>
-                            <constraint firstAttribute="trailing" secondItem="Cs7-bW-KFb" secondAttribute="trailing" id="jf0-gb-Qvi"/>
-                            <constraint firstItem="sP8-I8-SPf" firstAttribute="leading" secondItem="Cs7-bW-KFb" secondAttribute="leading" id="tkD-0n-pmp"/>
+                            <constraint firstAttribute="trailing" secondItem="Cs7-bW-KFb" secondAttribute="trailing" id="mmY-xI-3XS"/>
                             <constraint firstItem="Cs7-bW-KFb" firstAttribute="top" secondItem="5AZ-Pb-CuI" secondAttribute="bottom" constant="8" id="yau-HW-Rtl"/>
                         </constraints>
                         <variation key="default">
@@ -1129,14 +1190,32 @@
                         </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="Help_title" image="help" selectedImage="help" id="SLc-i0-81e"/>
+                    <toolbarItems>
+                        <barButtonItem title="Back" id="Ce6-Rr-M9f">
+                            <connections>
+                                <action selector="goBack" destination="Cs7-bW-KFb" id="42h-A1-XQQ"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem title="Forward" id="BlL-bX-IaJ">
+                            <connections>
+                                <action selector="goForward" destination="Cs7-bW-KFb" id="JxK-Wl-FBN"/>
+                            </connections>
+                        </barButtonItem>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" id="tc1-Ij-68m">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="xQW-12-cij">
+                            <connections>
+                                <action selector="donePressed:" destination="whf-K0-wml" id="auy-su-L70"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
-                        <outlet property="toolbar" destination="sP8-I8-SPf" id="R04-0Q-bMS"/>
                         <outlet property="webview" destination="Cs7-bW-KFb" id="MkN-ZL-dbA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZUe-bj-hUj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2811" y="-514"/>
+            <point key="canvasLocation" x="425" y="1310"/>
         </scene>
     </scenes>
     <resources>
@@ -1147,7 +1226,8 @@
         <image name="tongue-face" width="283" height="282"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="dzs-5L-SPv"/>
+        <segue reference="b2r-RO-cy9"/>
+        <segue reference="f1e-3K-joC"/>
         <segue reference="XKB-0w-ybg"/>
     </inferredMetricsTieBreakers>
 </document>

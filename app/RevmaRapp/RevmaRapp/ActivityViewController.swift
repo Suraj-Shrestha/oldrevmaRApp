@@ -8,7 +8,11 @@
 
 import UIKit
 
-class ActivityViewController: UIViewController, ActivityEditControllerDelegate {
+class ActivityViewController: UIViewController, ActivityEditControllerDelegate, HelpControllerEndDelegate {
+    let ShowHelpSegueID = "showHelp"
+    let EditActivitySegueID = "editActivity"
+    let HelpFile = "evaluate-activity"
+
     var activityItem: ActivityItem? {
         didSet {
             configureView()
@@ -71,12 +75,19 @@ class ActivityViewController: UIViewController, ActivityEditControllerDelegate {
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if let whichSegue = segue.identifier {
             switch (whichSegue) {
-            case "editActivity":
+            case EditActivitySegueID:
                 if let navigationController = segue.destinationViewController as? UINavigationController {
                     if let editController = navigationController.topViewController as? ActivityEditController {
                         editController.title = NSLocalizedString("Edit Activity", comment: "Edit Activity Title")
                         editController.delegate = self
                         editController.activityItem = activityItem
+                    }
+                }
+            case ShowHelpSegueID:
+                if let navigationController = segue.destinationViewController as? UINavigationController {
+                    if let helpController = navigationController.topViewController as? HelpViewController {
+                        helpController.delegate = self
+                        helpController.htmlFile = HelpFile
                     }
                 }
             default:
@@ -97,9 +108,9 @@ class ActivityViewController: UIViewController, ActivityEditControllerDelegate {
         configureView()
     }
 
-    override func targetViewControllerForAction(action: Selector, sender: AnyObject?) -> UIViewController? {
-        print("I got called \(self) \(action), \(sender)")
-        return parentViewController
+    // Mark: HelpControllerDone
+    func helpDone(controller: HelpViewController) {
+        controller.dismissViewControllerAnimated(true, completion: nil)
     }
 }
 

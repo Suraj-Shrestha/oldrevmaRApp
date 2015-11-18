@@ -9,11 +9,13 @@
 import UIKit
 import CoreData
 
-class HistoryViewController: UIViewController, CPTScatterPlotDataSource, CPTScatterPlotDelegate, WhitespaceTouchDelegate, PeriodGraphChooserControllerDelegate {
+class HistoryViewController: UIViewController, CPTScatterPlotDataSource, CPTScatterPlotDelegate, WhitespaceTouchDelegate, PeriodGraphChooserControllerDelegate, HelpControllerEndDelegate {
 
     static let ShowQuadrantIdentifier = "showQuadrant"
     static let ShowPeriodEditIdentifier = "showPeriodEdit"
     static let SavedPeriodNamesKey = "selectedPeriodNames"
+    static let ShowHelpSegueID = "showHelp"
+    let HelpFile = "history"
     
     @IBOutlet weak var graphView: CPTGraphHostingView!
     var cacheCountSet = false
@@ -49,6 +51,9 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource, CPTScat
 
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+        if let navController = self.navigationController {
+            navController.navigationBarHidden = true
+        }
     }
 
     func configureView() {
@@ -184,6 +189,9 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource, CPTScat
         if let whichSegue = segue.identifier {
             switch (whichSegue) {
             case HistoryViewController.ShowQuadrantIdentifier:
+                if let navController = self.navigationController {
+                    navController.navigationBarHidden = false
+                }
                 if let activityViewController = segue.destinationViewController as? QuadrantActivityTableViewController {
                     activityViewController.activities = fetchActivitiesForQuadrant(selectedQuadrant)
                 }
@@ -192,6 +200,13 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource, CPTScat
                     if let periodController = navigationController.topViewController as? PeriodGraphChooserController {
                         periodController.delegate = self
                         periodController.selectedPeriods = Set<ActivityPeriod>(selectedPeriods)
+                    }
+                }
+            case HistoryViewController.ShowHelpSegueID:
+                if let navigationController = segue.destinationViewController as? UINavigationController {
+                    if let helpController = navigationController.topViewController as? HelpViewController {
+                        helpController.delegate = self
+                        helpController.htmlFile = HelpFile
                     }
                 }
             default:
@@ -362,6 +377,10 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource, CPTScat
     func periodChooserControllerDidDone(controller: PeriodGraphChooserController) {
         updatePeriods(controller.selectedPeriods)
         finishDismiss()
+    }
+
+    func helpDone(controller: HelpViewController) {
+        controller.dismissViewControllerAnimated(true, completion: nil)
     }
 }
 

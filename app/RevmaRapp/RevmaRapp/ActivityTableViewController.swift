@@ -10,11 +10,13 @@ import UIKit
 import CoreData
 
 
-class ActivityTableViewController: ActivityTableViewControllerBase, NSFetchedResultsControllerDelegate, ActivityEditControllerDelegate {
+class ActivityTableViewController: ActivityTableViewControllerBase, NSFetchedResultsControllerDelegate, ActivityEditControllerDelegate, HelpControllerEndDelegate {
 
     var managedObjectContext : NSManagedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
     let ShowActivitySegueID = "showActivity"
     let CreateActivitySegueID = "createActivity"
+    let ShowHelpSegueID = "showHelp"
+    let HelpFile = "activity-periods"
     
 
     var period: ActivityPeriod? {
@@ -111,6 +113,14 @@ class ActivityTableViewController: ActivityTableViewControllerBase, NSFetchedRes
                         editController.delegate = self
                     }
                 }
+            case ShowHelpSegueID:
+                if let navigationController = segue.destinationViewController as? UINavigationController {
+                    if let helpController = navigationController.topViewController as? HelpViewController {
+                        helpController.delegate = self
+                        helpController.htmlFile = HelpFile
+                    }
+                }
+
             default:
                 break;
             }
@@ -157,5 +167,10 @@ class ActivityTableViewController: ActivityTableViewControllerBase, NSFetchedRes
         fetchActivities()
         tableView.reloadData()
         self.dismissViewControllerAnimated(true, completion: nil)
+    }
+
+    // Mark: Helpview stuff
+    func helpDone(controller: HelpViewController) {
+        controller.dismissViewControllerAnimated(true, completion: nil)
     }
 }
