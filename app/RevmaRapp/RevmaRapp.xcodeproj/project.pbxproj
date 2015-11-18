@@ -28,6 +28,12 @@
 		C93F57011A0B70BE0030D481 /* RevmaRappTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C93F57001A0B70BE0030D481 /* RevmaRappTests.swift */; };
 		C95D75741BFB6C8200013B00 /* styles.css in Resources */ = {isa = PBXBuildFile; fileRef = C95D75721BFB6C8200013B00 /* styles.css */; };
 		C95D75771BFB6C9B00013B00 /* helptext.html in Resources */ = {isa = PBXBuildFile; fileRef = C95D75761BFB6C9B00013B00 /* helptext.html */; };
+		C95D75811BFC8FC200013B00 /* activity-periods.html in Resources */ = {isa = PBXBuildFile; fileRef = C95D75791BFC8FC200013B00 /* activity-periods.html */; };
+		C95D75821BFC8FC200013B00 /* evaluate-activity.html in Resources */ = {isa = PBXBuildFile; fileRef = C95D757A1BFC8FC200013B00 /* evaluate-activity.html */; };
+		C95D75841BFC8FC200013B00 /* history.html in Resources */ = {isa = PBXBuildFile; fileRef = C95D757C1BFC8FC200013B00 /* history.html */; };
+		C95D75851BFC8FC200013B00 /* periods.html in Resources */ = {isa = PBXBuildFile; fileRef = C95D757D1BFC8FC200013B00 /* periods.html */; };
+		C95D75861BFC8FC200013B00 /* register-activity.html in Resources */ = {isa = PBXBuildFile; fileRef = C95D757E1BFC8FC200013B00 /* register-activity.html */; };
+		C95D75881BFC8FC200013B00 /* what-is-revmarapp.html in Resources */ = {isa = PBXBuildFile; fileRef = C95D75801BFC8FC200013B00 /* what-is-revmarapp.html */; };
 		C961CEB61B467199003EDBE0 /* app-icon-please-change.png in Resources */ = {isa = PBXBuildFile; fileRef = C961CEB51B467199003EDBE0 /* app-icon-please-change.png */; };
 		C961CEB81B467234003EDBE0 /* app-icon-please-change3x.png in Resources */ = {isa = PBXBuildFile; fileRef = C961CEB71B467234003EDBE0 /* app-icon-please-change3x.png */; };
 		C961CEBA1B467266003EDBE0 /* app-icon-please-change-ipad2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C961CEB91B467266003EDBE0 /* app-icon-please-change-ipad2x.png */; };
@@ -100,6 +106,12 @@
 		C93F57001A0B70BE0030D481 /* RevmaRappTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RevmaRappTests.swift; sourceTree = "<group>"; };
 		C95D75721BFB6C8200013B00 /* styles.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; name = styles.css; path = help/styles.css; sourceTree = "<group>"; };
 		C95D75761BFB6C9B00013B00 /* helptext.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = helptext.html; path = help/helptext.html; sourceTree = "<group>"; };
+		C95D75791BFC8FC200013B00 /* activity-periods.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "activity-periods.html"; path = "help/activity-periods.html"; sourceTree = "<group>"; };
+		C95D757A1BFC8FC200013B00 /* evaluate-activity.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "evaluate-activity.html"; path = "help/evaluate-activity.html"; sourceTree = "<group>"; };
+		C95D757C1BFC8FC200013B00 /* history.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = history.html; path = help/history.html; sourceTree = "<group>"; };
+		C95D757D1BFC8FC200013B00 /* periods.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = periods.html; path = help/periods.html; sourceTree = "<group>"; };
+		C95D757E1BFC8FC200013B00 /* register-activity.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "register-activity.html"; path = "help/register-activity.html"; sourceTree = "<group>"; };
+		C95D75801BFC8FC200013B00 /* what-is-revmarapp.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = "what-is-revmarapp.html"; path = "help/what-is-revmarapp.html"; sourceTree = "<group>"; };
 		C961CEB51B467199003EDBE0 /* app-icon-please-change.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-icon-please-change.png"; sourceTree = "<group>"; };
 		C961CEB71B467234003EDBE0 /* app-icon-please-change3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-icon-please-change3x.png"; sourceTree = "<group>"; };
 		C961CEB91B467266003EDBE0 /* app-icon-please-change-ipad2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-icon-please-change-ipad2x.png"; sourceTree = "<group>"; };
@@ -244,6 +256,12 @@
 		C993EB291BFA2895004E8AFB /* Help Files */ = {
 			isa = PBXGroup;
 			children = (
+				C95D75791BFC8FC200013B00 /* activity-periods.html */,
+				C95D757A1BFC8FC200013B00 /* evaluate-activity.html */,
+				C95D757C1BFC8FC200013B00 /* history.html */,
+				C95D757D1BFC8FC200013B00 /* periods.html */,
+				C95D757E1BFC8FC200013B00 /* register-activity.html */,
+				C95D75801BFC8FC200013B00 /* what-is-revmarapp.html */,
 				C95D75761BFB6C9B00013B00 /* helptext.html */,
 				C95D75721BFB6C8200013B00 /* styles.css */,
 			);
@@ -373,13 +391,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				C961CEB81B467234003EDBE0 /* app-icon-please-change3x.png in Resources */,
+				C95D75841BFC8FC200013B00 /* history.html in Resources */,
+				C95D75881BFC8FC200013B00 /* what-is-revmarapp.html in Resources */,
 				C961CEB61B467199003EDBE0 /* app-icon-please-change.png in Resources */,
 				C961CEBC1B467285003EDBE0 /* app-icon-please-change-ipad.png in Resources */,
 				C95D75741BFB6C8200013B00 /* styles.css in Resources */,
+				C95D75851BFC8FC200013B00 /* periods.html in Resources */,
+				C95D75811BFC8FC200013B00 /* activity-periods.html in Resources */,
 				C93599401A19F66F00DE78BE /* Localizable.strings in Resources */,
 				C95D75771BFB6C9B00013B00 /* helptext.html in Resources */,
 				C935994A1A19F66F00DE78BE /* InfoPlist.strings in Resources */,
+				C95D75861BFC8FC200013B00 /* register-activity.html in Resources */,
 				C93F56F01A0B70BE0030D481 /* Main.storyboard in Resources */,
+				C95D75821BFC8FC200013B00 /* evaluate-activity.html in Resources */,
 				C93F56F51A0B70BE0030D481 /* LaunchScreen.xib in Resources */,
 				C961CEBA1B467266003EDBE0 /* app-icon-please-change-ipad2x.png in Resources */,
 				C93F56F21A0B70BE0030D481 /* Images.xcassets in Resources */,
@@ -406,15 +430,28 @@
 				$PROJECT_DIR/RevmaRapp/help/helptext.html.pm,
 				$PROJECT_DIR/RevmaRapp/help/styles.css.pp,
 				$PROJECT_DIR/RevmaRapp/help/pollen.rkt,
+				"$PROJECT_DIR/RevmaRapp/help/what-is-revmarapp.html.pm",
+				"$(PROJECT_DIR)/RevmaRapp/help/actvity-period.html.pm",
+				"$(PROJECT_DIR)/RevmaRapp/help/evaluate-activity.html.pm",
+				"$(PROJECT_DIR)/RevmaRapp/help/periods.html.pm",
+				"$(PROJECT_DIR)/RevmaRapp/help/history.html.pm",
+				"$(PROJECT_DIR)/RevmaRapp/help/register-activity.html.pm",
 			);
 			name = "Build HTML Help";
 			outputPaths = (
 				$PROJECT_DIR/RevmaRapp/help/helptext.html,
 				$PROJECT_DIR/RevmaRapp/help/styles.css,
+				"$PROJECT_DIR/RevmaRapp/help/what-is-revmarapp.html",
+				$PROJECT_DIR/RevmaRapp/help/periods.html,
+				$PROJECT_DIR/RevmaRapp/help/history.html,
+				"$PROJECT_DIR/RevmaRapp/help/register-activity.html",
+				"$PROJECT_DIR/RevmaRapp/help/what-is-revmarapp.html",
+				"$(PROJECT_DIR)/RevmaRapp/help/actvity-period.html",
+				"$(PROJECT_DIR)/RevmaRapp/help/evaluate-activity.html",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "cd \"$PROJECT_DIR/RevmaRapp/help\"\nRACO=\"/Applications/Racket v6.2.1/bin/raco\"\n\"$RACO\" pollen render \"$SCRIPT_INPUT_FILE_1\" \"$SCRIPT_INPUT_FILE_2\"";
+			shellScript = "cd \"$PROJECT_DIR/RevmaRapp/help\"\nRACO=\"/Applications/Racket v6.2.1/bin/raco\"\n\"$RACO\" pollen render";
 		};
 		C9DD9F3D1A1398070099B184 /* Generate Model Objects */ = {
 			isa = PBXShellScriptBuildPhase;
