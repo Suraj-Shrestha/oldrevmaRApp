@@ -10,7 +10,7 @@ Velg den eller de periodene du ønsker å studere.  De valgte periodene blir mar
 
 ◊h2[#:id "graph"]{Grafisk overskit}
 
-Grafen viser alle aktiviteter i den eller de periodene du har valgt. Hver aktivitet vises som et aktivitetssymbol. De aktivitetene som vises øverst til høyre er de aktivitetene som er viktigst og mest lystbetont, mens aktiviteter nederst til venstre er de aktivitetene som er mist viktige og som først og fremst oppleves som plikt.
+Grafen viser alle aktiviteter i den eller de periodene du har valgt. Hver aktivitet vises som et aktivitetssymbol. De aktivitetene som vises øverst til høyre er de aktivitetene som er viktigst og mest lystbetont, mens aktiviteter nederst til venstre er de aktivitetene som er minst viktige og som først og fremst oppleves som plikt. Grønne aktiviteter gir deg energi og røde aktiviteter ta energi. Aktivitetens størrelse viser hvor mye tid aktiviteten tok.
 
 Ved å trykke på et av de fire hoved områdene i grafen, øverst eller nederst til høyre eller venstre, kan du få listet opp alle aktivitetene i dette området.
 

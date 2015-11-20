@@ -19,7 +19,7 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
     @IBOutlet weak var doneButton: UIBarButtonItem!
     let ShowHelpSegueID = "showHelp"
     let ShowActivitySegueID = "showActivityNames"
-    let HelpFile = "register-activity"
+    let HelpFile = "evaluate-activity"
     // CellIDs
     let kDatePickerID = "datePicker"
     let kDateCellID = "dateCell"

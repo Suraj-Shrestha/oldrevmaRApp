@@ -16,8 +16,7 @@ class ActivityTableViewController: ActivityTableViewControllerBase, NSFetchedRes
     let ShowActivitySegueID = "showActivity"
     let CreateActivitySegueID = "createActivity"
     let ShowHelpSegueID = "showHelp"
-    let HelpFile = "activity-periods"
-    
+    let HelpFile = "what-is-revmarapp"
 
     var period: ActivityPeriod? {
         didSet {
@@ -34,6 +33,11 @@ class ActivityTableViewController: ActivityTableViewControllerBase, NSFetchedRes
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    override func viewWillAppear(animated: Bool) {
+        if let navConroller = self.navigationController {
+            navConroller.toolbarHidden = false
+        }
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

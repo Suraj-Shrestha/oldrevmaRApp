@@ -9,9 +9,7 @@
 import UIKit
 
 class ActivityViewController: UIViewController, ActivityEditControllerDelegate, HelpControllerEndDelegate {
-    let ShowHelpSegueID = "showHelp"
     let EditActivitySegueID = "editActivity"
-    let HelpFile = "evaluate-activity"
 
     var activityItem: ActivityItem? {
         didSet {
@@ -39,6 +37,13 @@ class ActivityViewController: UIViewController, ActivityEditControllerDelegate, 
         numberFormatter = NSNumberFormatter()
         configureView()
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "localeChanged", name: NSCurrentLocaleDidChangeNotification, object: nil)
+    }
+
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        if let navController = self.navigationController {
+            navController.toolbarHidden = true
+        }
     }
     
     func localeChanged() {
@@ -81,13 +86,6 @@ class ActivityViewController: UIViewController, ActivityEditControllerDelegate, 
                         editController.title = NSLocalizedString("Edit Activity", comment: "Edit Activity Title")
                         editController.delegate = self
                         editController.activityItem = activityItem
-                    }
-                }
-            case ShowHelpSegueID:
-                if let navigationController = segue.destinationViewController as? UINavigationController {
-                    if let helpController = navigationController.topViewController as? HelpViewController {
-                        helpController.delegate = self
-                        helpController.htmlFile = HelpFile
                     }
                 }
             default:

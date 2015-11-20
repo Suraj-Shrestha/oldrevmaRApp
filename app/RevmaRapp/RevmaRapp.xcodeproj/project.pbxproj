@@ -367,7 +367,7 @@
 			attributes = {
 				LastSwiftMigration = 0700;
 				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0710;
 				ORGANIZATIONNAME = "Norsk Regnesentral";
 				TargetAttributes = {
 					C93F56E21A0B70BE0030D481 = {
@@ -457,7 +457,7 @@
 			);
 			inputPaths = (
 				$PROJECT_DIR/RevmaRapp/help/helptext.html.pm,
-				$PROJECT_DIR/RevmaRapp/help/styles.css.pp,
+				"$(PROJECT_DIR)/RevmaRapp/help/styles.css.pp",
 				$PROJECT_DIR/RevmaRapp/help/pollen.rkt,
 				"$PROJECT_DIR/RevmaRapp/help/what-is-revmarapp.html.pm",
 				"$(PROJECT_DIR)/RevmaRapp/help/actvity-period.html.pm",
@@ -707,6 +707,7 @@
 				INFOPLIST_FILE = RevmaRapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "no.nr.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -722,6 +723,7 @@
 				INFOPLIST_FILE = RevmaRapp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_BUNDLE_IDENTIFIER = "no.nr.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -741,6 +743,7 @@
 				);
 				INFOPLIST_FILE = RevmaRappTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "no.nr.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RevmaRapp.app/RevmaRapp";
 			};
@@ -756,6 +759,7 @@
 				);
 				INFOPLIST_FILE = RevmaRappTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "no.nr.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RevmaRapp.app/RevmaRapp";
 			};
