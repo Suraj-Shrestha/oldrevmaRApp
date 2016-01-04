@@ -10,7 +10,7 @@ import Foundation
 import CoreData
 
 class ActivityPeriodTableViewController : UITableViewController, NSFetchedResultsControllerDelegate, ActivityPeriodEditControllerDelegate, HelpControllerEndDelegate {
-    var managedObjectContext : NSManagedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
+    var dataStore = (UIApplication.sharedApplication().delegate as! AppDelegate).dataStore
     var periods:[ActivityPeriod] = [];
     var suppressCreatePeriodDialog = false
     var dateFormatter: NSDateFormatter!
@@ -40,15 +40,7 @@ class ActivityPeriodTableViewController : UITableViewController, NSFetchedResult
     }
     
     final func fetchPeriods() {
-        // Probably need to page this by date at some point as well, for now get me everything
-        let fetchRequest = NSFetchRequest(entityName: ActivityPeriod.entityName())
-        fetchRequest.sortDescriptors = [NSSortDescriptor(key: ActivityPeriodAttributes.start.rawValue, ascending: false)]
-        do {
-            let results = try self.managedObjectContext.executeFetchRequest(fetchRequest)
-            periods = results as! [ActivityPeriod]
-        } catch let error as NSError {
-            print("Unresolved error \(error.localizedDescription), \(error.userInfo)\n Attempting to get activity names")
-        }
+        periods = dataStore.fetchPeriods()
     }
     
     // MARK: Segue

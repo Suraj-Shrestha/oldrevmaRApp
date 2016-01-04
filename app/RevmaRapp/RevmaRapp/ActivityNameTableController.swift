@@ -17,7 +17,7 @@ protocol ActivityNameTableControllerDelegate {
 class ActivityNameTableController : UITableViewController, NSFetchedResultsControllerDelegate, UIAlertViewDelegate {
     
     @IBOutlet weak var doneButton: UIBarButtonItem!
-    var managedObjectContext : NSManagedObjectContext?;
+    let dataStore = (UIApplication.sharedApplication().delegate as! AppDelegate).dataStore
     
     var activityNames: [ActivityName] = []
     var selectedName: ActivityName? {
@@ -40,14 +40,7 @@ class ActivityNameTableController : UITableViewController, NSFetchedResultsContr
     }
     
     func fetchActivityNames() {
-        let fetchRequest = NSFetchRequest(entityName: ActivityName.entityName())
-        do {
-            let results = try self.managedObjectContext?.executeFetchRequest(fetchRequest)
-            activityNames = results as! [ActivityName]
-            activityNames.sortInPlace({ $0.name! < $1.name! })
-        } catch let error as NSError {
-            print("Unresolved error \(error.localizedDescription), \(error.userInfo)\n Attempting to get activity names")
-        }
+        activityNames = dataStore.fetchActivityNames()
     }
 
     @IBAction func cancel(sender: UIBarButtonItem) {
@@ -165,15 +158,8 @@ class ActivityNameTableController : UITableViewController, NSFetchedResultsContr
             }
 
             // Otherwise, do the creation and selection
-            let newActivityName = ActivityName(managedObjectContext: managedObjectContext)
-            newActivityName.name = newName
-            var error: NSError?
-            do {
-                try managedObjectContext?.save()
-            } catch let error1 as NSError {
-                error = error1
-            }
-            ZAssert(error == nil, "Unresolved error \(error?.localizedDescription), \(error?.userInfo)\n Attempting to save new activity")
+            let newActivityName = dataStore.createActivity(newName)
+            dataStore.saveContext()
             fetchActivityNames()
             selectedName = newActivityName
             tableView.reloadData()

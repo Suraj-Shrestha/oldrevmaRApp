@@ -12,7 +12,7 @@ import CoreData
 
 class ActivityTableViewController: ActivityTableViewControllerBase, NSFetchedResultsControllerDelegate, ActivityEditControllerDelegate, HelpControllerEndDelegate {
 
-    var managedObjectContext : NSManagedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
+    let dataStore = (UIApplication.sharedApplication().delegate as! AppDelegate).dataStore
     let ShowActivitySegueID = "showActivity"
     let CreateActivitySegueID = "createActivity"
     let ShowHelpSegueID = "showHelp"
@@ -53,49 +53,7 @@ class ActivityTableViewController: ActivityTableViewControllerBase, NSFetchedRes
     }
 
     private func fetchActivities() {
-        // Probably need to page this by date at some point as well, for now get me everything
-        let fetchRequest = NSFetchRequest(entityName: ActivityItem.entityName())
-        fetchRequest.predicate = NSPredicate(format: "\(ActivityItemRelationships.period.rawValue) == %@", argumentArray: [self.period!])
-        fetchRequest.sortDescriptors = [NSSortDescriptor(key: ActivityItemAttributes.time_start.rawValue, ascending: false)]
-        var error: NSError?
-        do {
-            let results = try self.managedObjectContext.executeFetchRequest(fetchRequest)
-            let activities = results as! [ActivityItem]
-            activitiesByDays = [Int: [ActivityItem]]()
-            if !activities.isEmpty {
-                let calendar = NSCalendar.currentCalendar()
-                var sectionNum = 0
-                var currentDay:Int
-                if #available(iOS 8.0, *) {
-                    currentDay = calendar.component(NSCalendarUnit.Day, fromDate: activities[0].time_start!)
-                } else {
-                    let components = calendar.components(NSCalendarUnit.Day, fromDate: activities[0].time_start!)
-                    currentDay = components.day
-                }
-                var activitiesInDay:[ActivityItem] = []
-                for activity in activities {
-                    let day:Int
-                    if #available(iOS 8.0, *) {
-                        day = calendar.component(NSCalendarUnit.Day, fromDate: activity.time_start!)
-                    } else {
-                        let components = calendar.components(NSCalendarUnit.Day, fromDate: activity.time_start!)
-                        day = components.day
-                    }
-                    if day != currentDay {
-                        activitiesByDays[sectionNum] = activitiesInDay
-                        sectionNum = sectionNum + 1
-                        currentDay = day
-                        activitiesInDay = []
-                    }
-                    activitiesInDay.append(activity)
-                }
-                // The last set of activities wasn't added, so do that here.
-                activitiesByDays[sectionNum] = activitiesInDay
-            }
-        } catch let error1 as NSError {
-            error = error1
-            print("Unresolved error \(error?.localizedDescription), \(error?.userInfo)\n Attempting to get activity names")
-        }
+        activitiesByDays = dataStore.fetchActivitiesForPeriod(self.period!)
     }
 
     // MARK: Segue

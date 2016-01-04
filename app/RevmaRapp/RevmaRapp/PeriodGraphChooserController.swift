@@ -19,19 +19,11 @@ class PeriodGraphChooserController: UITableViewController, NSFetchedResultsContr
     var delegate: PeriodGraphChooserControllerDelegate? = nil
     var periods:[ActivityPeriod] = []
     var selectedPeriods = Set<ActivityPeriod>()
-    var managedObjectContext : NSManagedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
+    var dataStore = (UIApplication.sharedApplication().delegate as! AppDelegate).dataStore
     var dateFormatter: NSDateFormatter!
 
     final func fetchPeriods() {
-        // Probably need to page this by date at some point as well, for now get me everything
-        let fetchRequest = NSFetchRequest(entityName: ActivityPeriod.entityName())
-        fetchRequest.sortDescriptors = [NSSortDescriptor(key: ActivityPeriodAttributes.start.rawValue, ascending: false)]
-        do {
-            let results = try self.managedObjectContext.executeFetchRequest(fetchRequest)
-            periods = results as! [ActivityPeriod]
-        } catch let error as NSError {
-            print("Unresolved error \(error.localizedDescription), \(error.userInfo)\n Attempting to get activity names")
-        }
+        periods = dataStore.fetchPeriods()
     }
 
     override func viewDidLoad() {

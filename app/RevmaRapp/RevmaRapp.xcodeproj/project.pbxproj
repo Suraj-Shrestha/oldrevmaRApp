@@ -40,6 +40,7 @@
 		C961CEBA1B467266003EDBE0 /* app-icon-please-change-ipad2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C961CEB91B467266003EDBE0 /* app-icon-please-change-ipad2x.png */; };
 		C961CEBC1B467285003EDBE0 /* app-icon-please-change-ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = C961CEBB1B467285003EDBE0 /* app-icon-please-change-ipad.png */; };
 		C993EB261BFA268F004E8AFB /* HelpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C993EB251BFA268F004E8AFB /* HelpViewController.swift */; };
+		C99DBAF81C3AA6E200563B14 /* RevmaRappDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C99DBAF71C3AA6E200563B14 /* RevmaRappDataStore.swift */; };
 		C9B7F6661B399E54000B86E9 /* PeriodGraphChooserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9B7F6651B399E54000B86E9 /* PeriodGraphChooserController.swift */; };
 		C9C10BE41A0B831C00784666 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C10BE31A0B831C00784666 /* ActivityViewController.swift */; };
 		C9C93BA81B3841AF00857B87 /* QuadrantActivityTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9C93BA71B3841AF00857B87 /* QuadrantActivityTableViewController.swift */; };
@@ -128,6 +129,7 @@
 		C961CEB91B467266003EDBE0 /* app-icon-please-change-ipad2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-icon-please-change-ipad2x.png"; sourceTree = "<group>"; };
 		C961CEBB1B467285003EDBE0 /* app-icon-please-change-ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app-icon-please-change-ipad.png"; sourceTree = "<group>"; };
 		C993EB251BFA268F004E8AFB /* HelpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpViewController.swift; sourceTree = "<group>"; };
+		C99DBAF71C3AA6E200563B14 /* RevmaRappDataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RevmaRappDataStore.swift; sourceTree = "<group>"; };
 		C9B7F6651B399E54000B86E9 /* PeriodGraphChooserController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PeriodGraphChooserController.swift; sourceTree = "<group>"; };
 		C9C10BE31A0B831C00784666 /* ActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		C9C93BA71B3841AF00857B87 /* QuadrantActivityTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuadrantActivityTableViewController.swift; sourceTree = "<group>"; };
@@ -225,6 +227,7 @@
 				C9B7F6651B399E54000B86E9 /* PeriodGraphChooserController.swift */,
 				C931DB021A66BD0B00BCBE81 /* RevmaRapp-Bridging-Header.h */,
 				C993EB251BFA268F004E8AFB /* HelpViewController.swift */,
+				C99DBAF71C3AA6E200563B14 /* RevmaRappDataStore.swift */,
 				C93F56EE1A0B70BE0030D481 /* Main.storyboard */,
 				C93F56F11A0B70BE0030D481 /* Images.xcassets */,
 				C9FC49DC1AB3276A005385CE /* CorePlotImageLayer.swift */,
@@ -515,6 +518,7 @@
 				C9C93BA81B3841AF00857B87 /* QuadrantActivityTableViewController.swift in Sources */,
 				C993EB261BFA268F004E8AFB /* HelpViewController.swift in Sources */,
 				C9FC49DD1AB3276A005385CE /* CorePlotImageLayer.swift in Sources */,
+				C99DBAF81C3AA6E200563B14 /* RevmaRappDataStore.swift in Sources */,
 				C92B45F31B09CCD300B695FF /* ActivityPeriod.swift in Sources */,
 				C9B7F6661B399E54000B86E9 /* PeriodGraphChooserController.swift in Sources */,
 				C9DD9F441A13A3A00099B184 /* _ActivityName.swift in Sources */,

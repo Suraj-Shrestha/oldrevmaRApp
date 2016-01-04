@@ -66,7 +66,7 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
     ]
 
     var pickerCellRowHeight:CGFloat = 0.0
-    var managedObjectContext: NSManagedObjectContext = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
+    let dataStore = (UIApplication.sharedApplication().delegate as! AppDelegate).dataStore
     var delegate: ActivityEditControllerDelegate?
     var dateFormater: NSDateFormatter!
     var numberFormatter: NSNumberFormatter!
@@ -337,7 +337,7 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
 
     func save() {
         // Save this as a separate variable to stop us from cascading didSets.
-        let activityToSave: ActivityItem = activityItem != nil ? activityItem : ActivityItem(managedObjectContext: managedObjectContext)
+        let activityToSave: ActivityItem = activityItem != nil ? activityItem : dataStore.createEmptyActivity()
         if activityToSave.period == nil {
             activityToSave.period = period
         }
@@ -348,15 +348,7 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
         activityToSave.energy = valuesArray[kEnergyRow]
         activityToSave.mastery = valuesArray[kMasteryRow]
         activityToSave.importance = valuesArray[kMeaningRow]
-        var error: NSError?
-        do {
-            try managedObjectContext.save()
-        } catch let error1 as NSError {
-            error = error1
-        }
-        if let realError = error {
-            print("Unresolved error \(realError.localizedDescription), \(realError.userInfo)\n Trying to save activity")
-        }
+        dataStore.saveContext()
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -367,7 +359,6 @@ class ActivityEditController: UITableViewController, UIPickerViewDataSource, UIP
                 if let navigationController = segue.destinationViewController as? UINavigationController {
                     if let nameTableController = navigationController.topViewController as? ActivityNameTableController {
                         nameTableController.selectedName = activityName
-                        nameTableController.managedObjectContext = managedObjectContext
                         nameTableController.delegate = self
                     }
                 }

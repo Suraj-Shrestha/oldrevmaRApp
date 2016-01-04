@@ -22,24 +22,17 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource, CPTScat
     var cacheCount: UInt = 0
 
     var selectedQuadrant: ActivityItem.GraphQuadrant = .Unknown
-    weak var appDelegate:AppDelegate! = (UIApplication.sharedApplication().delegate as! AppDelegate)
-    
-    var managedObjectContext: NSManagedObjectContext?
+    let appDelegate:AppDelegate = (UIApplication.sharedApplication().delegate as! AppDelegate)
+
+    let dataStore = (UIApplication.sharedApplication().delegate as! AppDelegate).dataStore
 
     var selectedPeriods:[ActivityPeriod] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        managedObjectContext = appDelegate.managedObjectContext
         fetchPeriods()
         updateTitle()
         configureView()
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "contextChanged:",
-                                                                name:NSManagedObjectContextObjectsDidChangeNotification, object: managedObjectContext)
-    }
-
-    deinit {
-        NSNotificationCenter.defaultCenter().removeObserver(self)
     }
 
     func contextChanged(notification: NSNotification) {
@@ -63,28 +56,21 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource, CPTScat
     func fetchPeriods() {
         // Probably need to page this by date at some point as well, for now get me everything
         selectedPeriods = []
-        let fetchRequest = NSFetchRequest(entityName: ActivityPeriod.entityName())
-        fetchRequest.sortDescriptors = [NSSortDescriptor(key: ActivityPeriodAttributes.start.rawValue, ascending: false)]
-        do {
-            let results = try self.managedObjectContext?.executeFetchRequest(fetchRequest)
-            let defaults = NSUserDefaults.standardUserDefaults()
-            let allPeriods = results as! [ActivityPeriod]
-            if let periodNames = defaults.stringArrayForKey(HistoryViewController.SavedPeriodNamesKey) {
-                for name in periodNames {
-                    for period in allPeriods {
-                        if name == period.name! {
-                            selectedPeriods.append(period)
-                        }
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let allPeriods = dataStore.fetchPeriods()
+        if let periodNames = defaults.stringArrayForKey(HistoryViewController.SavedPeriodNamesKey) {
+            for name in periodNames {
+                for period in allPeriods {
+                    if name == period.name! {
+                        selectedPeriods.append(period)
                     }
                 }
-            } else if !allPeriods.isEmpty {
-                selectedPeriods.append(allPeriods.first!)
             }
-            selectedPeriods.sortInPlace({ (p1: ActivityPeriod, p2: ActivityPeriod) -> Bool in
-                        return p1.start!.compare(p2.start!) == .OrderedDescending })
-        } catch let error as NSError {
-            print("Unresolved error \(error.localizedDescription), \(error.userInfo)\n Attempting to get activity names")
+        } else if !allPeriods.isEmpty {
+            selectedPeriods.append(allPeriods.first!)
         }
+        selectedPeriods.sortInPlace({ (p1: ActivityPeriod, p2: ActivityPeriod) -> Bool in
+                    return p1.start!.compare(p2.start!) == .OrderedDescending })
     }
 
     func createAxisLabel(axis:CPTXYAxis, image:UIImage?, altText:String, altTextStyle:CPTTextStyle) {
@@ -96,7 +82,6 @@ class HistoryViewController: UIViewController, CPTScatterPlotDataSource, CPTScat
             axis.title = altText
             axis.titleTextStyle = altTextStyle
         }
-        
     }
     
     func setupGraph() {

@@ -22,6 +22,7 @@ class ActivityPeriodEditController : UIViewController, UITextFieldDelegate, Help
     var dayPeriod = -1
     var periodName = ""
     var startDate = NSDate()
+    let dataStore = (UIApplication.sharedApplication().delegate as! AppDelegate).dataStore
     var savedPeriod: ActivityPeriod? = nil
     let OriginalScrollSize:CGFloat = 600.0
     let TextFieldScrollY:CGFloat = 770.0
@@ -56,7 +57,9 @@ class ActivityPeriodEditController : UIViewController, UITextFieldDelegate, Help
             self.periodNameChanged(textField)
         }
         textField.placeholder = placeHolderText
-        if includesWeekend() {
+        if datesInOtherPeriods() {
+
+        } else if includesWeekend() {
             weekendWarningLabel.text = "";
         } else {
             weekendWarningLabel.text = NSLocalizedString("Period should include one day in a weekend", comment: "Warning to include a weekend.")
@@ -67,6 +70,10 @@ class ActivityPeriodEditController : UIViewController, UITextFieldDelegate, Help
         if let realDelegate = delegate {
             realDelegate.periodEditControllerDidCancel(self)
         }
+    }
+
+    private func datesInOtherPeriods() -> Bool {
+        return false
     }
 
     private func includesWeekend() -> Bool {
@@ -174,9 +181,7 @@ class ActivityPeriodEditController : UIViewController, UITextFieldDelegate, Help
 
     private func finishSave() {
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
-        let managedObjectContext = appDelegate.managedObjectContext
-        savedPeriod = ActivityPeriod(managedObjectContext: managedObjectContext)
-        savedPeriod!.name = periodName
+        savedPeriod = dataStore.createPeriod(periodName)
         savedPeriod!.start = startDate
         savedPeriod!.stop = startDate.dateByAddingTimeInterval(60.0 * 60.0 * 24.0 * Double(dayPeriod))
         appDelegate.saveContext()
