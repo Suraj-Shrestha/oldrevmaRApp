@@ -117,6 +117,8 @@
 /* "The period should include a weekend", comment:"Weekend warning" */
 "The period should include a weekend" = "Perioden bør innholde en dag i helgen";
 
+"Period overlaps with a current period.\n Please change start date or length" = "En perioden har disse datoene.\nVelg en annen.";
+
 /* "Use this period anyway?", comment:"" */
 "Use this period anyway?" = "Bruk perioden alikevel?";
 

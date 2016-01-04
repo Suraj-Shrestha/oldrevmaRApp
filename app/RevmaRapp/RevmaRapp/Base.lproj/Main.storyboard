@@ -982,6 +982,7 @@
                     <connections>
                         <outlet property="datePicker" destination="TuK-sS-MLV" id="eKC-1v-B2R"/>
                         <outlet property="dayControl" destination="Wlb-Tp-dQM" id="WaR-Af-eaX"/>
+                        <outlet property="doneButton" destination="npg-tp-6in" id="YUa-8x-IPj"/>
                         <outlet property="scrollView" destination="REl-9L-Kat" id="1Li-fg-pjJ"/>
                         <outlet property="textField" destination="8Jb-mR-9oB" id="Pve-wb-xDT"/>
                         <outlet property="weekendWarningLabel" destination="THG-PE-ABD" id="5np-2g-LeC"/>

@@ -214,6 +214,18 @@ class RevmaRappDataStore {
         return activitiesByDays
     }
 
+    func overlapDatesWithPeriod(startDate: NSDate, endDate: NSDate) -> Bool {
+        let fetchRequest = NSFetchRequest(entityName: ActivityPeriod.entityName())
+        fetchRequest.predicate = NSPredicate(format: "(%@ <= stop) AND (start <= %@)", startDate, endDate)
+        do {
+            let results = try managedObjectContext.executeFetchRequest(fetchRequest)
+            return results.count != 0
+        } catch let error as NSError {
+            print("Unresolved error \(error.localizedDescription), \(error.userInfo)\n Attempting to get activity names")
+        }
+        return false
+    }
+
     func fetchPeriods() -> [ActivityPeriod] {
         // Probably need to page this by date at some point as well, for now get me everything
         var periods: [ActivityPeriod] = []
@@ -242,7 +254,9 @@ class RevmaRappDataStore {
     }
 
     func createPeriod(periodName: String) -> ActivityPeriod {
-        return ActivityPeriod(managedObjectContext: managedObjectContext)
+        let period = ActivityPeriod(managedObjectContext: managedObjectContext)
+        period.name = periodName
+        return period
     }
 
     func createEmptyActivity() -> ActivityItem {

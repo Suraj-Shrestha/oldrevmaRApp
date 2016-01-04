@@ -27,6 +27,7 @@ class ActivityPeriodEditController : UIViewController, UITextFieldDelegate, Help
     let OriginalScrollSize:CGFloat = 600.0
     let TextFieldScrollY:CGFloat = 770.0
 
+    @IBOutlet weak var doneButton: UIBarButtonItem!
     @IBOutlet weak var dayControl: UISegmentedControl!
     @IBOutlet weak var weekendWarningLabel: UILabel!
     @IBOutlet weak var datePicker: UIDatePicker!
@@ -57,8 +58,10 @@ class ActivityPeriodEditController : UIViewController, UITextFieldDelegate, Help
             self.periodNameChanged(textField)
         }
         textField.placeholder = placeHolderText
-        if datesInOtherPeriods() {
-
+        let overLappingDates = datesInOtherPeriods()
+        doneButton.enabled = !overLappingDates
+        if overLappingDates {
+            weekendWarningLabel.text = NSLocalizedString("Period overlaps with a current period.\n Please change start date or length", comment: "Only one period per day")
         } else if includesWeekend() {
             weekendWarningLabel.text = "";
         } else {
@@ -73,7 +76,8 @@ class ActivityPeriodEditController : UIViewController, UITextFieldDelegate, Help
     }
 
     private func datesInOtherPeriods() -> Bool {
-        return false
+        let endDate = startDate.dateByAddingTimeInterval(60.0 * 60.0 * 24.0 * Double(dayPeriod))
+        return dataStore.overlapDatesWithPeriod(startDate, endDate: endDate)
     }
 
     private func includesWeekend() -> Bool {
@@ -147,7 +151,7 @@ class ActivityPeriodEditController : UIViewController, UITextFieldDelegate, Help
         let components = calendar.components(flags, fromDate: date)
         let hour = Double(components.hour)
         let minute = Double(components.minute)
-        let interval: NSTimeInterval = -1000.0 * hour * 60.0 * 60.0 - minute * 60.0
+        let interval: NSTimeInterval = -hour * 60.0 * 60.0 - minute * 60.0
         startDate = NSDate(timeInterval: interval, sinceDate: date)
         updateLabels()
     }
