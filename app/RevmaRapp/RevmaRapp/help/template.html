@@ -7,7 +7,7 @@
 </head>
 <body>
 <div id="container">
-◊->html[doc]
+◊(->html doc #:splice #t) 
 </div>
 ◊(define prev-page (previous here))
 ◊when/block[prev-page]{
@@ -15,5 +15,7 @@
 ◊(define next-page (next here))
 ◊when/block[next-page]{
 <p>Den neste siden er <a href="◊|next-page|">◊|next-page|</a>.</p>}
+
+
 </body>
 </html>
