@@ -126,7 +126,7 @@ class RevmaRappDataStore {
             catalogEntry.i18nable = true
         }
 
-        createDummyObjects()
+        //createDummyObjects()
 
         do {
             try self.managedObjectContext.save()
