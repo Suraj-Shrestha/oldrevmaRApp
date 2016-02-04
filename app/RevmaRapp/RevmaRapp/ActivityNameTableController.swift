@@ -71,12 +71,12 @@ class ActivityNameTableController : UITableViewController, NSFetchedResultsContr
         if (indexPath.row == 0) {
             cell.textLabel!.font = UIFont.boldSystemFontOfSize(cell.textLabel!.font.pointSize)
             cell.textLabel!.text = NSLocalizedString("Create a new activity…", comment: "Create new activity table cell")
-
             cell.accessoryView = UIImageView(image: UIImage(named:"Add"))
-
         } else {
             let name = activityNames[indexPath.row - 1]
+            cell.textLabel!.font = UIFont.systemFontOfSize(cell.textLabel!.font.pointSize)
             cell.textLabel!.text = NSLocalizedString(name.name!, comment:"")
+            cell.accessoryView = nil
             cell.accessoryType = (name == selectedName) ? .Checkmark : .None
         }
     }
